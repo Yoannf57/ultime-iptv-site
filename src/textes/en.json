@@ -2,7 +2,7 @@
   "meta": {
     "direction": "ltr",
     "titre": "Ulti — The ultimate IPTV experience",
-    "description": "Ulti, the IPTV player for iPhone and Apple TV: live TV, guide, movies and series in a simple app that's ready to use."
+    "description": "Ulti, the IPTV player for iPhone, iPad, Mac and Apple TV: live TV, guide, movies and series in a simple app that's ready to use."
   },
   "marque": {
     "nom": "Ulti",
@@ -21,7 +21,7 @@
     "telecharger": "Download"
   },
   "heros": {
-    "surtitre": "For iPhone and Apple TV",
+    "surtitre": "For iPhone, iPad, Mac and Apple TV",
     "accroche": "The ultimate\nIPTV experience.",
     "phrase": "Live TV, guide, movies and series: your IPTV subscription becomes an intuitive TV app. Just open it and watch.",
     "bientot": "Coming soon to the App Store",
@@ -87,11 +87,10 @@
     "pause": "Pause and rewind live TV",
     "replay": "Replay of previous days",
     "telechargements": "Downloads to watch offline",
-    "icloud": "iCloud sync between iPhone and Apple TV",
+    "icloud": "iCloud sync across all your devices",
     "plusieurs": "Multiple subscriptions and profiles",
     "themes": "Halo and Programme themes",
-    "multi": "Multiview, up to 4 live channels at once",
-    "bientot": "Soon"
+    "multi": "Multiview: up to 4 live channels at once (2 on iPhone)"
   },
   "etapes": {
     "titre": "Ready in a minute.",
@@ -100,7 +99,7 @@
     "e2Titre": "Ulti sorts everything",
     "e2Texte": "Channels, guide, movies and series are organised. Keep only the categories you care about.",
     "e3Titre": "Watch everywhere",
-    "e3Texte": "On iPhone, iPad and Apple TV. With Premium, your list and resume points follow you."
+    "e3Texte": "On iPhone, iPad, Mac and Apple TV. With Premium, your list and resume points follow you."
   },
   "tarifs": {
     "titre": "Free for the essentials.",
@@ -136,7 +135,7 @@
     "q1": "Does Ulti provide channels?",
     "r1": "No. Ulti is a player: it plays the sources you add yourself. Ulti does not provide any channels or content. You must have your own sources, and the right to watch them.",
     "q2": "Which devices?",
-    "r2": "iPhone, iPad and Apple TV. Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing.",
+    "r2": "iPhone, iPad, Mac (with Apple silicon) and Apple TV. Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing.",
     "q3": "Are my login details safe?",
     "r3": "They are kept in your device's Keychain and never go through an Ulti server.",
     "q4": "Which subscriptions are compatible?",
@@ -149,7 +148,7 @@
     "changerPays": "Change country or region (currently: {pays}, {langue})",
     "tmdb": "This product uses the TMDB API but is not endorsed or certified by TMDB.",
     "tmdbLogo": "The Movie Database (TMDB) logo",
-    "marques": "Apple, Apple TV, iPhone and iPad are trademarks of Apple Inc.",
+    "marques": "Apple, Apple TV, iPhone, iPad and Mac are trademarks of Apple Inc.",
     "copyright": "© 2026 Ulti",
     "liens": {
       "navigation": "Information",
@@ -282,16 +281,16 @@
       },
       "appareils": {
         "q": "Which devices does Ulti work on?",
-        "r": "iPhone, iPad and Apple TV, with iOS 17, iPadOS 17, tvOS 17 or later. Premium works on all your devices signed in with the same Apple Account."
+        "r": "iPhone, iPad, Mac and Apple TV: iPhone and iPad with iOS 17 or iPadOS 17 or later, Apple TV with tvOS 17 or later, and Macs with Apple silicon, which use the iPad app. Premium works on all your devices signed in with the same Apple Account."
       },
       "installer": {
         "q": "How do I install Ulti?",
-        "r": "Download Ulti from the App Store on your iPhone or iPad, and from the App Store on your Apple TV. On the Home Screen, the app is called “Ulti IPTV”.",
-        "rBientot": "Ulti is coming soon to the App Store, for iPhone, iPad and Apple TV. Once installed, the app is called “Ulti IPTV” on the Home Screen."
+        "r": "Download Ulti from the App Store on your iPhone, iPad or Mac, and from the App Store on your Apple TV. Once installed, the app is called “Ulti IPTV”.",
+        "rBientot": "Ulti is coming soon to the App Store, for iPhone, iPad, Mac and Apple TV. Once installed, the app is called “Ulti IPTV”."
       },
       "ajouter": {
         "q": "How do I add my IPTV subscription?",
-        "r": "Open Account › Subscriptions › Add a subscription. On iPhone, the easiest way is “Paste the message you received”: paste the text, WhatsApp message or email from your provider, and the server and login details fill in by themselves. The message is read on the iPhone, never sent or saved.\n\nYou can also enter the server, username and password, or paste an M3U link. On Apple TV, the easiest way is to send the subscription from your iPhone (see “Apple TV” below)."
+        "r": "Open Account › Subscriptions › Add a subscription. The easiest way, on iPhone: “Paste the message you received” (see the next question).\n\nYou can also enter the server, username and password, or paste an M3U link. On Apple TV, the easiest way is to send the subscription from your iPhone (see “Apple TV” below)."
       },
       "formats": {
         "q": "Which formats are supported?",
@@ -335,7 +334,7 @@
       },
       "inclus": {
         "q": "What does Premium include?",
-        "r": "Movies and series (catalogue, details with posters and summaries, playback, resume points, every version of a movie), replay, live pause, downloads on iPhone and iPad, iCloud sync, extra adult profiles and subscriptions, the “For you” and “Popular” rows, the Halo and Programme themes, and alternative icons. Multiview is coming soon.\n\nIn the free version, you can browse movies and series; playing them requires Premium."
+        "r": "Movies and series (catalogue, details with posters and summaries, playback, resume points, every version of a movie), multiview, replay, live pause, downloads on iPhone and iPad, iCloud sync, extra adult profiles and subscriptions, the “For you” and “Popular” rows, the Halo and Programme themes, and alternative icons.\n\nIn the free version, you can browse movies and series; playing them requires Premium."
       },
       "soloFamille": {
         "q": "Solo or Family: what's the difference?",
@@ -358,8 +357,8 @@
         "r": "No: Apple doesn't cancel a subscription on its own. If you had a monthly or yearly subscription before buying lifetime access, remember to cancel it so you're no longer charged. Ulti reminds you in Account › Premium."
       },
       "occupee": {
-        "q": "“No free connection left”: what's happening?",
-        "r": "Many subscriptions allow only one stream at a time. If another device is already watching, or you've just left a movie or another channel, the connection is still in use: your provider often takes 1 to 2 minutes to release the previous one. Stop playback on the other device, or wait a moment and try again.\n\nWith a single-connection subscription, a download pauses while you watch, then resumes on its own."
+        "q": "“Your previous stream is still open”: what should I do?",
+        "r": "Your subscription allows only one stream at a time, and your provider often takes 1 to 2 minutes to release the previous one, for example right after a movie or another channel. Ulti shows a countdown on the “Try Again” button: tap it once the countdown ends. If another device is already watching with the same subscription, stop playback on that device.\n\nIn multiview, “No free connection left” means all the connections of your subscriptions are already in use. With a single-connection subscription, a download pauses while you watch, then resumes on its own."
       },
       "refusee": {
         "q": "“Connection refused by the provider” or “This subscription has expired”",
@@ -376,12 +375,25 @@
       "donnees": {
         "q": "Does Ulti collect data?",
         "r": "No. No account to create, no advertising, no analytics. Everything is explained in [our privacy policy](privacy)."
+      },
+      "coller": {
+        "q": "How does “Paste the message you received” work?",
+        "r": "Did your provider send your login details by text, WhatsApp or email? On iPhone, copy the whole message, then, in Account › Subscriptions › Add a subscription, tap “Paste the message you received”. Ulti finds the server, username and password, or the M3U link, and fills in the fields by itself. Check them, then tap “Continue”.\n\nThe message is read on the iPhone, never sent or saved. Nothing connects before “Continue”."
+      },
+      "multi": {
+        "q": "How does multiview work?",
+        "r": "Multiview is part of Premium: watch up to 4 live channels at once on Apple TV, iPad and Mac, and 2 on iPhone. The number of screens also depends on your IPTV subscription: each live channel uses one connection, and many subscriptions allow only one. If you have several subscriptions, their connections add up."
+      },
+      "partage": {
+        "q": "How do I share Premium with my family?",
+        "r": "Choose the Family plan: it can be shared with up to 6 people through [Apple's Family Sharing](apple-partage). Each family member opens Ulti with their own Apple Account and gets Premium; if needed, they tap “Restore Purchases” in Account › Premium. The Solo plan can't be shared."
       }
     },
     "contact": {
       "titre": "Need help?",
-      "texte": "Write to us at [{contact}](contact). Tell us your device (iPhone, iPad or Apple TV) and, if possible, the message shown. Never send your login details or your subscription address."
-    }
+      "texte": "Write to us at [{contact}](contact). Tell us your device (iPhone, iPad, Mac or Apple TV) and, if possible, the message shown. Never send your login details or your subscription address."
+    },
+    "essentiel": "The essentials"
   },
   "confidentialite": {
     "sections": {
@@ -444,7 +456,6 @@
     }
   },
   "mentions": {
-    "aCompleter": "[To be completed]",
     "enCours": "This page is being written: the information in brackets will be completed before the app is released.",
     "champs": {
       "nom": "Name or company name",
@@ -470,7 +481,7 @@
       },
       "propriete": {
         "titre": "Intellectual property",
-        "texte": "The Ulti name, its logo, and the texts and design of this website are the property of the publisher. Apple, Apple TV, iPhone, iPad and App Store are trademarks of Apple Inc.\n\nThe movies and series shown in the example screens are free films from the [Blender Studio](blender) (© Blender Foundation), released under Creative Commons licences. The channels shown are made up."
+        "texte": "The Ulti name, its logo, and the texts and design of this website are the property of the publisher. Apple, Apple TV, iPhone, iPad, Mac and App Store are trademarks of Apple Inc.\n\nThe movies and series shown in the example screens are free films from the [Blender Studio](blender) (© Blender Foundation), released under Creative Commons licences. The channels shown are made up."
       },
       "tmdb": {
         "titre": "Movie and series data",
@@ -480,6 +491,14 @@
         "titre": "Content",
         "texte": "Ulti does not provide any channels or content. You must have your own sources, and the right to watch them."
       }
+    },
+    "blancs": {
+      "nom": "[NAME]",
+      "statut": "[STATUS]",
+      "adresse": "[ADDRESS]",
+      "siret": "[SIRET]",
+      "directeur": "[PUBLICATION DIRECTOR]",
+      "telephone": "[PHONE]"
     }
   },
   "erreur": {

@@ -2,7 +2,7 @@
   "meta": {
     "direction": "ltr",
     "titre": "Ulti — L'expérience IPTV ultime",
-    "description": "Ulti, le lecteur IPTV pour iPhone et Apple TV : direct, guide TV, films et séries, dans une app simple et prête à l'emploi."
+    "description": "Ulti, le lecteur IPTV pour iPhone, iPad, Mac et Apple TV : direct, guide TV, films et séries, dans une app simple et prête à l'emploi."
   },
   "marque": {
     "nom": "Ulti",
@@ -21,7 +21,7 @@
     "telecharger": "Télécharger"
   },
   "heros": {
-    "surtitre": "Pour iPhone et Apple TV",
+    "surtitre": "Pour iPhone, iPad, Mac et Apple TV",
     "accroche": "L'expérience\nIPTV ultime.",
     "phrase": "Direct, guide TV, films et séries : votre abonnement IPTV devient une app de télé intuitive. Vous l'ouvrez, vous regardez.",
     "bientot": "Bientôt sur l'App Store",
@@ -87,11 +87,10 @@
     "pause": "Pause et retour en arrière sur le direct",
     "replay": "Replay des jours passés",
     "telechargements": "Téléchargements pour regarder hors ligne",
-    "icloud": "Synchro iCloud entre iPhone et Apple TV",
+    "icloud": "Synchro iCloud entre tous vos appareils",
     "plusieurs": "Plusieurs abonnements et profils",
     "themes": "Thèmes Halo et Programme",
-    "multi": "Multi-écran, jusqu'à 4 directs à la fois",
-    "bientot": "Bientôt"
+    "multi": "Multi-écran : jusqu'à 4 directs à la fois (2 sur iPhone)"
   },
   "etapes": {
     "titre": "Prêt en une minute.",
@@ -100,7 +99,7 @@
     "e2Titre": "Ulti range tout",
     "e2Texte": "Chaînes, guide, films et séries sont triés. Gardez seulement les catégories qui vous intéressent.",
     "e3Titre": "Regardez partout",
-    "e3Texte": "Sur iPhone, iPad et Apple TV. Avec Premium, votre liste et vos reprises vous suivent."
+    "e3Texte": "Sur iPhone, iPad, Mac et Apple TV. Avec Premium, votre liste et vos reprises vous suivent."
   },
   "tarifs": {
     "titre": "Gratuit pour l'essentiel.",
@@ -136,7 +135,7 @@
     "q1": "Ulti fournit-il des chaînes ?",
     "r1": "Non. Ulti est un lecteur : il lit les sources que vous ajoutez vous-même. Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder.",
     "q2": "Sur quels appareils ?",
-    "r2": "iPhone, iPad et Apple TV. Premium vaut sur tous vos appareils avec le même identifiant Apple ; avec la formule Famille, jusqu'à 6 personnes en profitent grâce au Partage familial.",
+    "r2": "iPhone, iPad, Mac (avec puce Apple) et Apple TV. Premium vaut sur tous vos appareils avec le même identifiant Apple ; avec la formule Famille, jusqu'à 6 personnes en profitent grâce au Partage familial.",
     "q3": "Mes identifiants sont-ils en sécurité ?",
     "r3": "Ils sont gardés dans le Trousseau de votre appareil et ne passent jamais par un serveur Ulti.",
     "q4": "Quels abonnements sont compatibles ?",
@@ -149,7 +148,7 @@
     "changerPays": "Changer de pays ou de région (actuellement : {pays}, {langue})",
     "tmdb": "Ce produit utilise l'API TMDB mais n'est ni approuvé ni certifié par TMDB.",
     "tmdbLogo": "Logo de The Movie Database (TMDB)",
-    "marques": "Apple, Apple TV, iPhone et iPad sont des marques d'Apple Inc.",
+    "marques": "Apple, Apple TV, iPhone, iPad et Mac sont des marques d'Apple Inc.",
     "copyright": "© 2026 Ulti",
     "liens": {
       "navigation": "Informations",
@@ -282,16 +281,16 @@
       },
       "appareils": {
         "q": "Sur quels appareils fonctionne Ulti ?",
-        "r": "iPhone, iPad et Apple TV, avec iOS 17, iPadOS 17, tvOS 17 ou une version plus récente. Premium vaut sur tous vos appareils connectés au même identifiant Apple."
+        "r": "iPhone, iPad, Mac et Apple TV : iPhone et iPad avec iOS 17 ou iPadOS 17 ou plus récent, Apple TV avec tvOS 17 ou plus récent, et les Mac avec puce Apple, qui utilisent l'app iPad. Premium vaut sur tous vos appareils connectés au même identifiant Apple."
       },
       "installer": {
         "q": "Comment installer Ulti ?",
-        "r": "Téléchargez Ulti dans l'App Store de votre iPhone ou de votre iPad, et dans l'App Store de votre Apple TV. Sur l'écran d'accueil, l'app s'appelle « Ulti IPTV ».",
-        "rBientot": "Ulti arrive bientôt sur l'App Store, pour iPhone, iPad et Apple TV. Une fois installée, l'app s'appelle « Ulti IPTV » sur l'écran d'accueil."
+        "r": "Téléchargez Ulti dans l'App Store de votre iPhone, de votre iPad ou de votre Mac, et dans l'App Store de votre Apple TV. Une fois installée, l'app s'appelle « Ulti IPTV ».",
+        "rBientot": "Ulti arrive bientôt sur l'App Store, pour iPhone, iPad, Mac et Apple TV. Une fois installée, l'app s'appelle « Ulti IPTV »."
       },
       "ajouter": {
         "q": "Comment ajouter mon abonnement IPTV ?",
-        "r": "Ouvrez Compte › Abonnements › Ajouter un abonnement. Sur iPhone, le plus simple est « Coller le message reçu » : collez le SMS, le message WhatsApp ou l'e-mail de votre fournisseur, et le serveur et les identifiants se remplissent tout seuls. Le message est lu sur l'iPhone, jamais envoyé ni enregistré.\n\nVous pouvez aussi saisir le serveur, le nom d'utilisateur et le mot de passe, ou coller un lien M3U. Sur Apple TV, le plus simple est d'envoyer l'abonnement depuis votre iPhone (voir « Apple TV » plus bas)."
+        "r": "Ouvrez Compte › Abonnements › Ajouter un abonnement. Le plus simple, sur iPhone : « Coller le message reçu » (voir la question suivante).\n\nVous pouvez aussi saisir le serveur, le nom d'utilisateur et le mot de passe, ou coller un lien M3U. Sur Apple TV, le plus simple est d'envoyer l'abonnement depuis votre iPhone (voir « Apple TV » plus bas)."
       },
       "formats": {
         "q": "Quels formats sont compatibles ?",
@@ -335,7 +334,7 @@
       },
       "inclus": {
         "q": "Que comprend Premium ?",
-        "r": "Les films et séries (catalogue, fiches avec affiches et résumés, lecture, reprises, toutes les versions d'un film), le replay, la pause du direct, les téléchargements sur iPhone et iPad, la synchronisation iCloud, les profils adultes et les abonnements supplémentaires, les rangées « Pour vous » et « Populaires », les thèmes Halo et Programme et les icônes alternatives. Le multi-écran arrive bientôt.\n\nEn version gratuite, vous pouvez parcourir les films et séries ; leur lecture demande Premium."
+        "r": "Les films et séries (catalogue, fiches avec affiches et résumés, lecture, reprises, toutes les versions d'un film), le multi-écran, le replay, la pause du direct, les téléchargements sur iPhone et iPad, la synchronisation iCloud, les profils adultes et les abonnements supplémentaires, les rangées « Pour vous » et « Populaires », les thèmes Halo et Programme et les icônes alternatives.\n\nEn version gratuite, vous pouvez parcourir les films et séries ; leur lecture demande Premium."
       },
       "soloFamille": {
         "q": "Solo ou Famille : quelle différence ?",
@@ -358,8 +357,8 @@
         "r": "Non : Apple ne résilie pas un abonnement tout seul. Si vous aviez un abonnement mensuel ou annuel avant l'achat à vie, pensez à le résilier pour ne plus être prélevé. Ulti vous le rappelle dans Compte › Premium."
       },
       "occupee": {
-        "q": "« Plus aucune connexion libre » : que se passe-t-il ?",
-        "r": "Beaucoup d'abonnements n'autorisent qu'une lecture à la fois. Si un autre appareil regarde déjà, ou si vous venez de quitter un film ou une autre chaîne, la connexion est encore occupée : votre fournisseur met souvent 1 à 2 minutes à libérer la précédente. Arrêtez la lecture sur l'autre appareil, ou patientez un instant puis réessayez.\n\nAvec un abonnement à une seule connexion, un téléchargement se met en pause pendant que vous regardez, puis reprend tout seul."
+        "q": "« La lecture précédente est encore ouverte » : que faire ?",
+        "r": "Votre abonnement n'autorise qu'une lecture à la fois, et votre fournisseur met souvent 1 à 2 minutes à libérer la précédente, par exemple juste après un film ou une autre chaîne. Ulti affiche un décompte sur le bouton « Réessayer » : touchez-le quand le décompte est terminé. Si un autre appareil regarde déjà avec le même abonnement, arrêtez la lecture sur cet appareil.\n\nEn multi-écran, « Plus aucune connexion libre » veut dire que toutes les connexions de vos abonnements sont déjà utilisées. Avec un abonnement à une seule connexion, un téléchargement se met en pause pendant que vous regardez, puis reprend tout seul."
       },
       "refusee": {
         "q": "« Connexion refusée par le fournisseur » ou « Cet abonnement a expiré »",
@@ -376,12 +375,25 @@
       "donnees": {
         "q": "Ulti collecte-t-il des données ?",
         "r": "Non. Pas de compte à créer, pas de publicité, pas de mesure d'audience. Tout est détaillé dans [notre politique de confidentialité](privacy)."
+      },
+      "coller": {
+        "q": "Comment fonctionne « Coller le message reçu » ?",
+        "r": "Votre fournisseur vous a envoyé vos identifiants par SMS, WhatsApp ou e-mail ? Sur iPhone, copiez tout le message, puis, dans Compte › Abonnements › Ajouter un abonnement, touchez « Coller le message reçu ». Ulti y trouve le serveur, le nom d'utilisateur et le mot de passe, ou le lien M3U, et remplit les champs tout seul. Vérifiez, puis touchez « Continuer ».\n\nLe message est lu sur l'iPhone, jamais envoyé ni enregistré. Rien ne se connecte avant « Continuer »."
+      },
+      "multi": {
+        "q": "Comment fonctionne le multi-écran ?",
+        "r": "Le multi-écran fait partie de Premium : regardez jusqu'à 4 directs à la fois sur Apple TV, iPad et Mac, et 2 sur iPhone. Le nombre d'écrans dépend aussi de votre abonnement IPTV : chaque direct utilise une connexion, et beaucoup d'abonnements n'en autorisent qu'une. Si vous avez plusieurs abonnements, leurs connexions s'additionnent."
+      },
+      "partage": {
+        "q": "Comment partager Premium avec ma famille ?",
+        "r": "Choisissez la formule Famille : elle se partage avec jusqu'à 6 personnes grâce au [Partage familial d'Apple](apple-partage). Chaque membre de la famille ouvre Ulti avec son propre identifiant Apple et retrouve Premium ; au besoin, il touche « Restaurer les achats » dans Compte › Premium. La formule Solo ne se partage pas."
       }
     },
     "contact": {
       "titre": "Besoin d'aide ?",
-      "texte": "Écrivez-nous à [{contact}](contact). Indiquez votre appareil (iPhone, iPad ou Apple TV) et, si possible, le message affiché. N'envoyez jamais vos identifiants ni l'adresse de votre abonnement."
-    }
+      "texte": "Écrivez-nous à [{contact}](contact). Indiquez votre appareil (iPhone, iPad, Mac ou Apple TV) et, si possible, le message affiché. N'envoyez jamais vos identifiants ni l'adresse de votre abonnement."
+    },
+    "essentiel": "L'essentiel"
   },
   "confidentialite": {
     "sections": {
@@ -444,7 +456,6 @@
     }
   },
   "mentions": {
-    "aCompleter": "[À compléter]",
     "enCours": "Page en cours de rédaction : les informations entre crochets seront complétées avant la sortie de l'app.",
     "champs": {
       "nom": "Nom ou raison sociale",
@@ -470,7 +481,7 @@
       },
       "propriete": {
         "titre": "Propriété intellectuelle",
-        "texte": "Le nom Ulti, son logo, les textes et la présentation de ce site sont la propriété de l'éditeur. Apple, Apple TV, iPhone, iPad et App Store sont des marques d'Apple Inc.\n\nLes films et séries cités dans les écrans d'exemple sont des films libres du [Blender Studio](blender) (© Blender Foundation), publiés sous licence Creative Commons. Les chaînes montrées sont inventées."
+        "texte": "Le nom Ulti, son logo, les textes et la présentation de ce site sont la propriété de l'éditeur. Apple, Apple TV, iPhone, iPad, Mac et App Store sont des marques d'Apple Inc.\n\nLes films et séries cités dans les écrans d'exemple sont des films libres du [Blender Studio](blender) (© Blender Foundation), publiés sous licence Creative Commons. Les chaînes montrées sont inventées."
       },
       "tmdb": {
         "titre": "Données des films et séries",
@@ -480,6 +491,14 @@
         "titre": "Contenus",
         "texte": "Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder."
       }
+    },
+    "blancs": {
+      "nom": "[NOM]",
+      "statut": "[STATUT]",
+      "adresse": "[ADRESSE]",
+      "siret": "[SIRET]",
+      "directeur": "[DIRECTEUR DE LA PUBLICATION]",
+      "telephone": "[TÉLÉPHONE]"
     }
   },
   "erreur": {
