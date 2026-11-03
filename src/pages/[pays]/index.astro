@@ -1,0 +1,46 @@
+---
+// Une page statique par pays (fr-fr, en-gb, en…). Textes provisoires en S1 ; l'accueil complet arrive en S2.
+import config from "../../../site.config.mjs";
+import Base from "../../layouts/Base.astro";
+import Logo from "../../components/Logo.astro";
+import { t } from "../../lib/textes";
+import { pays, formaterPrix, type Pays } from "../../lib/pays";
+
+export function getStaticPaths() {
+  return pays.map((p) => ({ params: { pays: p.code }, props: { p } }));
+}
+const { p } = Astro.props as { p: Pays };
+const l = p.langue;
+const prix = p.prix
+  ? t(l, "prix.aPartirDe", { prix: formaterPrix(p.prix.solo.mensuel, p) })
+  : t(l, "prix.appStore");
+const bouton = config.disponible && p.lienAppStore ? t(l, "bouton.telecharger") : t(l, "bouton.bientot");
+---
+<Base langue={l} lang={p.code === "en" ? "en" : p.locale} titre={t(l, "meta.titre")} description={t(l, "meta.description")} chemin={`${p.code}/`} codePays={p.code} alternatives>
+  <header class="entete"><Logo langue={l} /></header>
+  <main class="heros">
+    <p class="surtitre">{t(l, "accueil.surtitre")}</p>
+    <h1>{t(l, "accueil.accroche")}</h1>
+    <p class="phrase">{t(l, "accueil.phrase")}</p>
+    {config.disponible && p.lienAppStore
+      ? <a class="bouton" href={p.lienAppStore}>{bouton}</a>
+      : <button class="bouton" type="button" disabled>{bouton}</button>}
+    <p class="prix chiffres">{t(l, "prix.gratuit")} {prix}</p>
+    <p class="provisoire">{t(l, "accueil.provisoire")}</p>
+  </main>
+</Base>
+
+<style>
+  .entete { max-width: 61.25rem; width: 100%; margin: 0 auto; padding: 1.25rem; }
+  .heros { max-width: 50rem; margin: 0 auto; padding: 5rem 1.25rem 6rem; text-align: center; }
+  .surtitre { margin: 0 0 1rem; color: var(--texte-2); font-weight: 600; font-size: 1.0625rem; }
+  h1 { margin: 0; font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 800; line-height: 1.02; letter-spacing: -0.035em; }
+  .phrase { margin: 1.5rem auto 2.25rem; max-width: 36rem; font-size: clamp(1.0625rem, 2.2vw, 1.3125rem); color: var(--texte-2); line-height: 1.45; }
+  .bouton {
+    display: inline-block; font: inherit; font-weight: 600; font-size: 1.0625rem; text-decoration: none;
+    background: var(--texte); color: var(--fond); border: 0; border-radius: 62rem; padding: 0.875rem 1.75rem;
+  }
+  .bouton:disabled { opacity: 0.85; cursor: default; }
+  .prix { margin: 1.5rem 0 0; color: var(--texte-2); font-size: 0.9375rem; }
+  .provisoire { margin: 3rem 0 0; font-size: 0.75rem; color: var(--texte-2); }
+</style>

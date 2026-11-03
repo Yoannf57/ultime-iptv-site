@@ -1,0 +1,69 @@
+---
+import config from "../../site.config.mjs";
+import { t } from "../lib/textes";
+import { pays } from "../lib/pays";
+import { lienAbsolu, lien } from "../lib/liens";
+import Bandeau from "../components/Bandeau.astro";
+import PiedDePage from "../components/PiedDePage.astro";
+
+interface Props {
+  langue: string;          // langue des textes (fr, en…)
+  lang?: string;           // attribut lang de la page (fr-FR…), par défaut = langue
+  titre: string;
+  description: string;
+  chemin: string;          // chemin de la page, sans la base (ex. « fr-fr/ »)
+  codePays?: string;       // pays affiché (absent sur les pages de choix)
+  alternatives?: boolean;  // balises hreflang vers les autres pays
+  languesPied?: string[];  // pages bilingues : langues du pied de page
+}
+const { langue, lang = langue, titre, description, chemin, codePays, alternatives = false, languesPied } = Astro.props;
+const direction = t(langue, "meta.direction");
+const canonique = lienAbsolu(chemin, Astro.site);
+---
+<!doctype html>
+<html lang={lang} dir={direction}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titre}</title>
+    <meta name="description" content={description} />
+    {!config.indexable && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonique} />
+    {alternatives && pays.map((p) => (
+      <link rel="alternate" hreflang={p.code === "en" ? "en" : p.locale} href={lienAbsolu(`${p.code}/`, Astro.site)} />
+    ))}
+    {alternatives && <link rel="alternate" hreflang="x-default" href={lienAbsolu("en/", Astro.site)} />}
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href={lien("favicon.svg")} type="image/svg+xml" />
+    <slot name="tete" />
+  </head>
+  <body>
+    {codePays && <Bandeau langue={langue} codePays={codePays} />}
+    <slot />
+    <PiedDePage langue={langue} codePays={codePays} langues={languesPied} />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --fond: #000000;
+    --surface: #141416;
+    --surface-2: #242428;
+    --texte: #f5f5f7;
+    --texte-2: #a1a1a6;
+    --police: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color-scheme: dark;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { background: var(--fond); color: var(--texte); font-family: var(--police); font-size: 100%; -webkit-text-size-adjust: 100%; }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; line-height: 1.5; }
+  main { flex: 1; }
+  a { color: inherit; }
+  :focus-visible { outline: 0.125rem solid var(--texte); outline-offset: 0.1875rem; border-radius: 0.25rem; }
+  .chiffres { font-variant-numeric: tabular-nums; }
+  .visuellement-cache { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>

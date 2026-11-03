@@ -1,0 +1,9 @@
+---
+// Page « Choisissez votre pays ou votre région », ouverte par le globe du pied de page.
+import Base from "../../layouts/Base.astro";
+import ChoixPays from "../../components/ChoixPays.astro";
+import { t } from "../../lib/textes";
+---
+<Base langue="en" titre={`${t("fr", "choix.titre")} · ${t("en", "choix.titre")}`} description={t("en", "meta.description")} chemin="pays/" languesPied={["fr", "en"]}>
+  <ChoixPays />
+</Base>

@@ -1,0 +1,20 @@
+---
+// Page racine : devine le pays et y envoie le visiteur (CLAUDE.md, section 3).
+// Sans JavaScript, elle EST la page « Choisissez votre pays ou votre région ».
+import Base from "../layouts/Base.astro";
+import ChoixPays from "../components/ChoixPays.astro";
+import { t } from "../lib/textes";
+import { paysPourNavigateur } from "../lib/pays";
+import { base } from "../lib/liens";
+import code from "../scripts/deviner-pays.js?raw";
+
+const script = `${code}
+(function () {
+  var g = devinerPays(${JSON.stringify(paysPourNavigateur)});
+  location.replace(${JSON.stringify(base)} + g.code + "/" + location.hash);
+})();`;
+---
+<Base langue="en" titre={`${t("fr", "choix.titre")} · ${t("en", "choix.titre")}`} description={t("en", "meta.description")} chemin="" languesPied={["fr", "en"]}>
+  <script slot="tete" is:inline set:html={script}></script>
+  <ChoixPays />
+</Base>

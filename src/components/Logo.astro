@@ -1,0 +1,13 @@
+---
+import { t } from "../lib/textes";
+interface Props { langue: string; taille?: "normal" | "grand" }
+const { langue, taille = "normal" } = Astro.props;
+---
+<span class:list={["logo", taille]}><strong>{t(langue, "marque.nom")}</strong> <span>{t(langue, "marque.suffixe")}</span></span>
+
+<style>
+  .logo { font-size: 1.375rem; letter-spacing: -0.02em; white-space: nowrap; }
+  .logo.grand { font-size: 2rem; }
+  strong { font-weight: 800; }
+  span span { font-weight: 300; color: var(--texte-2); }
+</style>

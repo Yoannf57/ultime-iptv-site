@@ -1,0 +1,41 @@
+---
+import config from "../../site.config.mjs";
+import { t } from "../lib/textes";
+import { trouverPays } from "../lib/pays";
+import { lien } from "../lib/liens";
+
+interface Props { langue: string; codePays?: string; langues?: string[] }
+// « langues » : sur les pages de choix (bilingues), les phrases obligatoires sont écrites dans chaque langue.
+const { langue, codePays, langues = [langue] } = Astro.props;
+const p = codePays ? trouverPays(codePays) : null;
+---
+<footer class="pied">
+  <div class="contenu">
+    {langues.map((l) => <p class="neutralite" lang={l}>{t(l, "neutralite")}</p>)}
+    <p class="contact">{t(langue, "pied.contact")} <a href={`mailto:${config.contact}`}>{config.contact}</a></p>
+    <div class="tmdb">
+      <img src={lien("tmdb.svg")} alt={t(langue, "pied.tmdbLogo")} width="96" height="12" loading="lazy" />
+      <div>{langues.map((l) => <p lang={l}>{t(l, "pied.tmdb")}</p>)}</div>
+    </div>
+    {p && (
+      <a class="globe" href={lien("pays/")} aria-label={t(langue, "pied.changerPays", { pays: p.nom })}>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="9.25" /><ellipse cx="12" cy="12" rx="4" ry="9.25" /><path d="M2.75 12h18.5M4.5 6.75h15M4.5 17.25h15" />
+        </svg>
+        <span lang={p.locale}>{p.nom}</span>
+      </a>
+    )}
+  </div>
+</footer>
+
+<style>
+  .pied { border-top: 1px solid var(--surface-2); color: var(--texte-2); font-size: 0.75rem; }
+  .contenu { max-width: 61.25rem; margin: 0 auto; padding: 1.5rem 1.25rem 2rem; display: grid; gap: 0.875rem; }
+  p { margin: 0; }
+  .neutralite { color: var(--texte); font-size: 0.8125rem; }
+  .tmdb { display: flex; align-items: flex-start; gap: 0.75rem; flex-wrap: wrap; }
+  .tmdb div { display: grid; gap: 0.25rem; }
+  .tmdb img { height: 0.75rem; width: auto; margin-top: 0.2rem; }
+  .globe { display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--texte); justify-self: start; padding: 0.25rem 0; }
+  .globe:hover span { text-decoration: underline; }
+</style>

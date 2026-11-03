@@ -1,0 +1,66 @@
+---
+// Bandeau « Vous êtes en … ? » (CLAUDE.md, section 3). Caché par défaut ; le script l'affiche seulement si
+// le visiteur n'a encore rien choisi et que le pays deviné (avec certitude) n'est pas celui de la page.
+import { t } from "../lib/textes";
+import { pays, paysPourNavigateur } from "../lib/pays";
+import { lienPays } from "../lib/liens";
+import code from "../scripts/deviner-pays.js?raw";
+
+interface Props { langue: string; codePays: string }
+const { langue, codePays } = Astro.props;
+
+const propositions = Object.fromEntries(
+  pays.filter((p) => p.code !== "en").map((p) => [p.code, {
+    question: t(langue, `bandeau.question.${p.code}`),
+    voir: t(langue, `bandeau.voir.${p.code}`),
+    lien: lienPays(p.code),
+    lang: p.locale,
+  }])
+);
+const donnees = JSON.stringify({ liste: paysPourNavigateur, actuel: codePays, propositions });
+const script = `${code}
+(function () {
+  var d = ${donnees};
+  var g = devinerPays(d.liste);
+  if (g.enregistre || !g.sur || g.code === d.actuel || !d.propositions[g.code]) return;
+  var b = document.getElementById("bandeau-pays");
+  var p = d.propositions[g.code];
+  b.querySelector("[data-question]").textContent = p.question;
+  var voir = b.querySelector("[data-voir]");
+  voir.textContent = p.voir;
+  voir.href = p.lien;
+  voir.hreflang = p.lang;
+  function choisir(c) { try { localStorage.setItem("ultime-pays", c); } catch (e) {} }
+  voir.addEventListener("click", function () { choisir(g.code); });
+  b.querySelectorAll("[data-rester]").forEach(function (bouton) {
+    bouton.addEventListener("click", function () { choisir(d.actuel); b.hidden = true; });
+  });
+  b.hidden = false;
+})();`;
+---
+<aside id="bandeau-pays" class="bandeau" aria-label={t(langue, "bandeau.etiquette")} hidden>
+  <p><span data-question></span> <a data-voir href="#"></a></p>
+  <div class="actions">
+    <button type="button" class="continuer" data-rester>{t(langue, "bandeau.continuer")}</button>
+    <button type="button" class="fermer" data-rester aria-label={t(langue, "bandeau.fermer")}>
+      <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3.5 3.5l9 9m0-9l-9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
+    </button>
+  </div>
+</aside>
+<script is:inline set:html={script}></script>
+
+<style>
+  .bandeau {
+    display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;
+    padding: 0.625rem 1rem; background: var(--surface); border-bottom: 1px solid var(--surface-2);
+    font-size: 0.875rem;
+  }
+  .bandeau[hidden] { display: none; }
+  p { margin: 0; color: var(--texte-2); }
+  a { color: var(--texte); font-weight: 600; text-underline-offset: 0.2em; }
+  .actions { display: flex; align-items: center; gap: 0.5rem; }
+  button { font: inherit; color: var(--texte); background: none; border: 0; cursor: pointer; }
+  .continuer { background: var(--texte); color: var(--fond); font-weight: 600; padding: 0.3rem 0.875rem; border-radius: 62rem; }
+  .fermer { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; color: var(--texte-2); }
+  .fermer:hover { background: var(--surface-2); color: var(--texte); }
+</style>
