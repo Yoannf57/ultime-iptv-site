@@ -88,6 +88,8 @@ for (const g of donneesPages.support) {
 }
 for (const id of donneesPages.confidentialite) { clesPages.add(`confidentialite.sections.${id}.titre`); clesPages.add(`confidentialite.sections.${id}.texte`); }
 for (const id of donneesPages.mentions) clesPages.add(`mentions.sections.${id}.titre`);
+for (const id of donneesPages.essentiel) clesPages.add(`support.q.${id}.q`);
+for (const champ of ["nom", "statut", "adresse", "siret", "directeur", "telephone"]) clesPages.add(`mentions.blancs.${champ}`);
 for (const page of ["support", "privacy", "legal"]) for (const c of ["titre", "metaTitre", "description", "chapeau"]) clesPages.add(`pages.${page}.${c}`);
 for (const langue of Object.keys(langues)) {
   for (const cle of clesPages) if (!(cle in cles(langue))) problemes.push(`[${langue}] clé manquante (appelée par pages.json) : ${cle}`);
