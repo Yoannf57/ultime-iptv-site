@@ -1,0 +1,23 @@
+---
+// Page Confidentialité (textes repris du dépôt de démo et de Notes/confidentialite-app-store.md de l'app).
+import config from "../../../site.config.mjs";
+import Article from "./Article.astro";
+import Paragraphes from "./Paragraphes.astro";
+import { t, tHtml } from "../../lib/textes";
+import { ciblesTextes } from "../../lib/liens";
+import type { Pays } from "../../lib/pays";
+import donnees from "../../donnees/pages.json";
+
+interface Props { p: Pays }
+const { p } = Astro.props;
+const l = p.langue;
+const cibles = ciblesTextes(p.code, config.contact);
+---
+<Article p={p} page="privacy">
+  {donnees.confidentialite.map((id) => (
+    <section aria-labelledby={`s-${id}`}>
+      <h2 id={`s-${id}`}>{t(l, `confidentialite.sections.${id}.titre`)}</h2>
+      <Paragraphes html={tHtml(l, `confidentialite.sections.${id}.texte`, cibles, { contact: config.contact })} />
+    </section>
+  ))}
+</Article>

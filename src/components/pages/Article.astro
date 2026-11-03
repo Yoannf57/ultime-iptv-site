@@ -1,0 +1,47 @@
+---
+// Mise en page commune des pages Support, Confidentialité et Mentions légales :
+// en-tête de l'accueil, grand titre, phrase d'introduction, date de mise à jour, puis le contenu.
+import Entete from "../accueil/Entete.astro";
+import { t } from "../../lib/textes";
+import type { Pays } from "../../lib/pays";
+import donnees from "../../donnees/pages.json";
+
+interface Props { p: Pays; page: string; sommaire?: { ancre: string; titre: string }[] }
+const { p, page, sommaire = [] } = Astro.props;
+const l = p.langue;
+const date = new Intl.DateTimeFormat(p.locale, { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })
+  .format(new Date(donnees.miseAJour));
+---
+<Entete langue={l} lienAppStore={p.lienAppStore} codePays={p.code} />
+<main class="article">
+  <header class="tete">
+    <h1>{t(l, `pages.${page}.titre`)}</h1>
+    <p class="chapeau">{t(l, `pages.${page}.chapeau`)}</p>
+    <p class="date"><time datetime={donnees.miseAJour}>{t(l, "pages.miseAJour", { date })}</time></p>
+  </header>
+  {sommaire.length > 0 && (
+    <nav class="sommaire" aria-label={t(l, "pages.sommaire")}>
+      <ul>{sommaire.map((s) => <li><a href={`#${s.ancre}`}>{s.titre}</a></li>)}</ul>
+    </nav>
+  )}
+  <slot />
+</main>
+
+<style>
+  .article { max-width: 47rem; width: 100%; margin: 0 auto; padding: 5rem 1.5rem 7.5rem; }
+  .tete { margin-bottom: 3rem; }
+  h1 { margin: 0; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.08; letter-spacing: -0.035em; font-weight: 800; }
+  .chapeau { margin: 1.5rem 0 0; font-size: 1.25rem; line-height: 1.5; color: #a1a1a6; }
+  .date { margin: 1rem 0 0; font-size: 0.875rem; color: #8e8e93; }
+  .sommaire { margin: 0 0 3.5rem; padding: 1.25rem 1.5rem; background: #141416; border-radius: 1.25rem; }
+  .sommaire ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+  .sommaire a { color: #f5f5f7; text-decoration: none; font-size: 0.9375rem; font-weight: 600; }
+  .sommaire a:hover { text-decoration: underline; }
+  /* Contenu des pages (rendu par les composants enfants). */
+  .article :global(h2) { margin: 3.5rem 0 1rem; font-size: clamp(1.5rem, 2.6vw, 2rem); letter-spacing: -0.025em; font-weight: 800; scroll-margin-top: 5rem; }
+  .article :global(section > p), .article :global(details p), .article :global(section > ul), .article :global(details ul) { font-size: 1.0625rem; line-height: 1.6; color: #c7c7cc; }
+  .article :global(p) { margin: 0 0 1rem; }
+  .article :global(ul) { margin: 0 0 1rem; padding-left: 1.25rem; }
+  .article :global(li) { margin-bottom: 0.5rem; }
+  .article :global(a) { color: #f5f5f7; text-underline-offset: 0.15em; }
+</style>

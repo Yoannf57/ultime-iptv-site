@@ -1,0 +1,67 @@
+---
+// Page Mentions légales. Les informations sur l'éditeur viennent de site.config.mjs (« editeur ») :
+// tant qu'une valeur vaut null, la page affiche « [À compléter] ». Rien n'est deviné.
+import config from "../../../site.config.mjs";
+import Article from "./Article.astro";
+import Paragraphes from "./Paragraphes.astro";
+import { t, tHtml } from "../../lib/textes";
+import { ciblesTextes, lien } from "../../lib/liens";
+import type { Pays } from "../../lib/pays";
+import donnees from "../../donnees/pages.json";
+
+interface Props { p: Pays }
+const { p } = Astro.props;
+const l = p.langue;
+const cibles = ciblesTextes(p.code, config.contact);
+const e = config.editeur as Record<string, string | null>;
+const h = config.hebergeur as { nom: string; telephone: string | null };
+const blancs = [...Object.values(e), h.telephone].some((v) => !v);
+
+type Ligne = { champ: string; valeur: string | null; lien?: string };
+const lignes: Record<string, Ligne[]> = {
+  editeur: [
+    { champ: "nom", valeur: e.nom }, { champ: "statut", valeur: e.statut }, { champ: "adresse", valeur: e.adresse },
+    { champ: "siret", valeur: e.siret }, { champ: "email", valeur: config.contact, lien: `mailto:${config.contact}` },
+  ],
+  directeur: [{ champ: "directeur", valeur: e.directeur }],
+  hebergeur: [
+    { champ: "societe", valeur: h.nom }, { champ: "adresse", valeur: t(l, "mentions.sections.hebergeur.adresse") },
+    { champ: "telephone", valeur: h.telephone },
+  ],
+};
+const textes = ["hebergeur", "propriete", "tmdb", "contenus"];
+---
+<Article p={p} page="legal">
+  {blancs && <p class="en-cours" role="note">{t(l, "mentions.enCours")}</p>}
+  {donnees.mentions.map((id) => (
+    <section aria-labelledby={`s-${id}`}>
+      <h2 id={`s-${id}`}>{t(l, `mentions.sections.${id}.titre`)}</h2>
+      {textes.includes(id) && <Paragraphes html={tHtml(l, `mentions.sections.${id}.texte`, cibles)} />}
+      {lignes[id] && (
+        <dl>
+          {lignes[id].map((x) => (
+            <div>
+              <dt>{t(l, `mentions.champs.${x.champ}`)}</dt>
+              <dd>{x.valeur
+                ? (x.lien ? <a href={x.lien}>{x.valeur}</a> : x.valeur)
+                : <span class="blanc">{t(l, "mentions.aCompleter")}</span>}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+      {id === "tmdb" && <img class="tmdb" src={lien("tmdb.svg")} alt={t(l, "pied.tmdbLogo")} width="123" height="16" decoding="async" />}
+    </section>
+  ))}
+</Article>
+
+<style>
+  .en-cours { margin: 0 0 1rem; padding: 1rem 1.25rem; border: 1px solid #3a3a3e; border-radius: 1rem; font-size: 0.9375rem; color: #c7c7cc; }
+  dl { margin: 0; }
+  dl div { display: grid; grid-template-columns: minmax(9rem, 14rem) 1fr; gap: 0.25rem 1.5rem; padding: 0.875rem 0; border-top: 1px solid #242428; }
+  dl div:last-child { border-bottom: 1px solid #242428; }
+  dt { color: #8e8e93; font-size: 0.9375rem; }
+  dd { margin: 0; font-size: 1.0625rem; color: #f5f5f7; }
+  .blanc { color: #8e8e93; font-style: italic; }
+  .tmdb { display: block; height: 1rem; width: auto; margin-top: 0.5rem; }
+  @media (max-width: 36rem) { dl div { grid-template-columns: 1fr; } }
+</style>

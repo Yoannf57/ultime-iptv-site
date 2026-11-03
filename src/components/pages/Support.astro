@@ -1,0 +1,51 @@
+---
+// Page Support : la FAQ complète, par groupes (ordre dans src/donnees/pages.json), puis le contact.
+import config from "../../../site.config.mjs";
+import Article from "./Article.astro";
+import Paragraphes from "./Paragraphes.astro";
+import { t, tHtml } from "../../lib/textes";
+import { ciblesTextes } from "../../lib/liens";
+import type { Pays } from "../../lib/pays";
+import donnees from "../../donnees/pages.json";
+
+interface Props { p: Pays }
+const { p } = Astro.props;
+const l = p.langue;
+const cibles = ciblesTextes(p.code, config.contact);
+// Tant que l'app n'est pas publiée, « Comment installer ? » dit « bientôt ».
+const reponse = (id: string) => `support.q.${id}.${id === "installer" && !config.disponible ? "rBientot" : "r"}`;
+const sommaire = [
+  ...donnees.support.map((g) => ({ ancre: g.groupe, titre: t(l, `support.groupes.${g.groupe}`) })),
+  { ancre: "contact", titre: t(l, "support.contact.titre") },
+];
+---
+<Article p={p} page="support" sommaire={sommaire}>
+  {donnees.support.map((g) => (
+    <section aria-labelledby={g.groupe}>
+      <h2 id={g.groupe}>{t(l, `support.groupes.${g.groupe}`)}</h2>
+      {g.questions.map((id) => (
+        <details id={`q-${id}`}>
+          <summary>{t(l, `support.q.${id}.q`)}<span class="plus" aria-hidden="true">+</span></summary>
+          <div class="reponse"><Paragraphes html={tHtml(l, reponse(id), cibles)} /></div>
+        </details>
+      ))}
+    </section>
+  ))}
+  <section aria-labelledby="contact" class="contact">
+    <h2 id="contact">{t(l, "support.contact.titre")}</h2>
+    <Paragraphes html={tHtml(l, "support.contact.texte", cibles, { contact: config.contact })} />
+  </section>
+</Article>
+
+<style>
+  details { border-top: 1px solid #242428; padding: 1.25rem 0; scroll-margin-top: 5rem; }
+  details:last-of-type { border-bottom: 1px solid #242428; }
+  summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 1.5rem; font-size: 1.1875rem; font-weight: 600; line-height: 1.35; }
+  summary::-webkit-details-marker { display: none; }
+  .plus { color: #8e8e93; font-size: 1.625rem; line-height: 1; transition: transform 0.2s; flex: none; }
+  details[open] .plus { transform: rotate(45deg); }
+  .reponse { margin-top: 0.875rem; }
+  .reponse :global(p:last-child) { margin-bottom: 0; }
+  .contact { margin-top: 4rem; padding: 0.5rem 2rem 1.5rem; background: #141416; border-radius: 1.75rem; }
+  .contact h2 { margin-top: 1.75rem; }
+</style>

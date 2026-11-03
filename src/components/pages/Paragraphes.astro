@@ -1,0 +1,14 @@
+---
+// Affiche un texte venu de tHtml() : une ligne vide sépare deux paragraphes ;
+// les lignes qui commencent par « • » forment une liste à puces.
+interface Props { html: string }
+const blocs = Astro.props.html.split(/\n\n+/).map((bloc) => {
+  const lignes = bloc.split("\n");
+  return lignes.every((x) => x.startsWith("• "))
+    ? { liste: lignes.map((x) => x.slice(2)) }
+    : { texte: bloc.replace(/\n/g, "<br>") };
+});
+---
+{blocs.map((b) => b.liste
+  ? <ul>{b.liste.map((x) => <li set:html={x} />)}</ul>
+  : <p set:html={b.texte} />)}
