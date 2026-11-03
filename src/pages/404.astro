@@ -1,0 +1,57 @@
+---
+// Page 404 (GitHub Pages la sert pour toute adresse inconnue du site). Bilingue, comme la page de choix.
+// « Accueil » mène à la racine, qui devine le pays ; avec JavaScript, le lien va directement à l'accueil du pays
+// enregistré ou deviné, et la langue du visiteur passe en premier.
+import Base from "../layouts/Base.astro";
+import Logo from "../components/Logo.astro";
+import { t } from "../lib/textes";
+import { paysPourNavigateur } from "../lib/pays";
+import { lien, base } from "../lib/liens";
+import code from "../scripts/deviner-pays.js?raw";
+
+const langues = ["fr", "en"];
+const script = `${code}
+(function () {
+  var g = devinerPays(${JSON.stringify(paysPourNavigateur)});
+  var langue = ${JSON.stringify(Object.fromEntries(paysPourNavigateur.map((p) => [p.code, p.langue])))}[g.code];
+  document.querySelectorAll("[data-accueil]").forEach(function (a) { a.href = ${JSON.stringify(base)} + g.code + "/"; });
+  var bloc = document.querySelector('[data-langue="' + langue + '"]');
+  if (bloc && bloc.parentNode.firstElementChild !== bloc) bloc.parentNode.insertBefore(bloc, bloc.parentNode.firstElementChild);
+})();`;
+---
+<Base langue="fr" titre={`${t("fr", "erreur.metaTitre")} · ${t("en", "erreur.metaTitre")}`} description={t("en", "meta.description")} chemin="404.html" languesPied={langues} erreur>
+  <header class="entete"><div class="entete-interieur"><a href={lien("")} data-accueil class="logo-lien"><Logo langue="fr" /></a></div></header>
+  <main class="erreur">
+    <p class="code" aria-hidden="true">404</p>
+    <div class="blocs">
+      {langues.map((l) => (
+        <section lang={l} data-langue={l}>
+          <h1>{t(l, "erreur.titre")}</h1>
+          <p class="texte">{t(l, "erreur.texte")}</p>
+          <p class="boutons">
+            <a class="bouton plein" href={lien("")} data-accueil>{t(l, "erreur.accueil")}</a>
+            <a class="bouton" href={lien("pays/")}>{t(l, "erreur.choix")}</a>
+          </p>
+        </section>
+      ))}
+    </div>
+  </main>
+  <script is:inline set:html={script}></script>
+</Base>
+
+<style>
+  .entete { border-bottom: 1px solid #1c1c1e; }
+  .entete-interieur { max-width: 75rem; margin: 0 auto; padding: 0 1.5rem; height: 4rem; display: flex; align-items: center; }
+  .logo-lien { text-decoration: none; border-radius: 0.5rem; }
+  .erreur { max-width: 75rem; width: 100%; margin: 0 auto; padding: 6rem 1.5rem 7.5rem; }
+  .code { margin: 0 0 1.5rem; font-size: 1rem; font-weight: 700; letter-spacing: 0.08em; color: #8e8e93; font-variant-numeric: tabular-nums; }
+  .blocs { display: flex; flex-direction: column; gap: 3.5rem; }
+  section + section { padding-top: 3.5rem; border-top: 1px solid #242428; }
+  h1 { margin: 0; font-size: clamp(2.25rem, 4.6vw, 3.75rem); line-height: 1.04; letter-spacing: -0.035em; font-weight: 800; }
+  section + section h1 { font-size: clamp(1.75rem, 3vw, 2.5rem); }
+  .texte { margin: 1rem 0 0; font-size: 1.1875rem; color: #a1a1a6; }
+  .boutons { margin: 2rem 0 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .bouton { display: inline-block; padding: 0.75rem 1.375rem; border-radius: 999px; border: 1px solid #3a3a3e; color: #f5f5f7; text-decoration: none; font-weight: 600; }
+  .bouton:hover { border-color: #8e8e93; }
+  .bouton.plein { background: #f5f5f7; color: #000; border-color: #f5f5f7; }
+</style>
