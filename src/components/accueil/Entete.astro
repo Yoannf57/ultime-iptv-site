@@ -1,0 +1,31 @@
+---
+import config from "../../../site.config.mjs";
+import { t } from "../../lib/textes";
+import Logo from "../Logo.astro";
+interface Props { langue: string; lienAppStore: string | null }
+const { langue: l, lienAppStore } = Astro.props;
+const liens = [["fonctions", "fonctions"], ["visite", "visite"], ["apple-tv", "appletv"], ["tarifs", "tarifs"], ["questions", "questions"]];
+---
+<header class="entete">
+  <nav aria-label={t(l, "entete.navigation")}>
+    <a href="#haut" class="accueil" aria-label={t(l, "marque.retourHaut")}><Logo langue={l} /></a>
+    <div class="liens">
+      {liens.map(([ancre, cle]) => <a href={`#${ancre}`}>{t(l, `entete.${cle}`)}</a>)}
+    </div>
+    {config.disponible && lienAppStore
+      ? <a class="pastille pleine" href={lienAppStore}>{t(l, "entete.telecharger")}</a>
+      : <span class="pastille">{t(l, "entete.bientot")}</span>}
+  </nav>
+</header>
+
+<style>
+  .entete { position: sticky; top: 0; z-index: 10; background: rgba(0,0,0,0.78); -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid #1c1c1e; }
+  nav { max-width: 75rem; margin: 0 auto; padding: 0 1.5rem; height: 4rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+  .accueil { text-decoration: none; border-radius: 0.5rem; }
+  .liens { display: flex; gap: 1.75rem; font-size: 0.875rem; }
+  .liens a { color: #a1a1a6; text-decoration: none; }
+  .liens a:hover { color: #fff; }
+  .pastille { border: 1px solid #3a3a3e; color: #a1a1a6; padding: 0.5rem 1rem; border-radius: 999px; font-size: 0.875rem; font-weight: 600; white-space: nowrap; }
+  .pastille.pleine { background: #f5f5f7; color: #000; border: 0; text-decoration: none; padding: 0.5625rem 1.125rem; }
+  @media (max-width: 45rem) { .liens { display: none; } }
+</style>

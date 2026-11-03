@@ -1,0 +1,57 @@
+---
+import { t } from "../../lib/textes";
+import { ecrans, codeQR } from "../../lib/ecrans";
+interface Props { langue: string }
+const { langue: l } = Astro.props;
+const qr = codeQR();
+---
+<section id="apple-tv" aria-labelledby="titre-tv" class="bande">
+  <div class="interieur apparition">
+    <div class="texte">
+      <p class="surtitre">{t(l, "appletv.surtitre")}</p>
+      <h2 id="titre-tv" class="titre-section">{t(l, "appletv.titre")}</h2>
+      <p class="chapeau">{t(l, "appletv.texte")}</p>
+      <ul>
+        {["point1", "point2", "point3"].map((p) => (
+          <li>
+            <svg class="coche" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5 6.5 12 13 4.5" /></svg>
+            {t(l, `appletv.${p}`)}
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div class="visuel">
+      <div class="tele">
+        <div class="ecran">
+          <svg class="qr" viewBox="0 0 21 21" role="img" aria-label={t(l, "appletv.qrEtiquette")} shape-rendering="crispEdges">
+            <rect width="21" height="21" fill="#F5F5F7" />
+            {qr.map(([r, c]) => <rect x={c} y={r} width="1" height="1" fill="#000" />)}
+          </svg>
+          <div class="qr-texte">
+            <p class="qr-titre">{t(l, "appletv.qrTitre")}</p>
+            <p class="qr-aide">{t(l, "appletv.qrTexte")}</p>
+            <p class="qr-code chiffres" aria-hidden="true">{ecrans.codeAppairage}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bande { background: #0a0a0b; border-top: 1px solid #1c1c1e; border-bottom: 1px solid #1c1c1e; }
+  .interieur { max-width: 75rem; margin: 0 auto; padding: 7.5rem 1.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 4rem; }
+  .texte { flex: 1 1 26.25rem; min-width: 0; }
+  .chapeau { margin-top: 1.5rem; }
+  ul { margin: 2rem 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.875rem; font-size: 1.0625rem; }
+  li { display: flex; gap: 0.75rem; align-items: baseline; }
+  .visuel { flex: 1 1 27.5rem; min-width: 0; display: flex; justify-content: center; }
+  .tele { width: 100%; max-width: 32.5rem; border-radius: 1.125rem; box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 1.875rem 5.625rem rgba(0,0,0,0.9), 0 0 8.75rem rgba(255,255,255,0.07); }
+  .ecran { aspect-ratio: 16 / 10; border-radius: 1.125rem; background: #000; display: flex; align-items: center; justify-content: center; gap: 8%; padding: 6%; }
+  .qr { flex: none; width: 38%; aspect-ratio: 1; border-radius: 0.625rem; background: #f5f5f7; padding: 4%; box-sizing: border-box; overflow: visible; }
+  .qr-texte { min-width: 0; }
+  .qr-texte p { margin: 0; }
+  .qr-titre { font-size: clamp(1rem, 2vw, 1.375rem); font-weight: 700; letter-spacing: -0.01em; }
+  .qr-aide { margin-top: 0.5rem !important; font-size: clamp(0.75rem, 1.3vw, 0.875rem); line-height: 1.45; color: #a1a1a6; }
+  .qr-code { margin-top: 1rem !important; font-size: clamp(1.25rem, 2.6vw, 1.875rem); font-weight: 700; letter-spacing: 0.12em; }
+</style>

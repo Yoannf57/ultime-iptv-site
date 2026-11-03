@@ -1,0 +1,26 @@
+---
+import { t } from "../../lib/textes";
+interface Props { langue: string }
+const { langue: l } = Astro.props;
+---
+<section id="questions" aria-labelledby="titre-questions" class="faq apparition">
+  <h2 id="titre-questions">{t(l, "faq.titre")}</h2>
+  {[1, 2, 3, 4, 5].map((n) => (
+    <details open={n === 1}>
+      <summary>{t(l, `faq.q${n}`)}<span class="plus" aria-hidden="true">+</span></summary>
+      <p>{t(l, `faq.r${n}`)}</p>
+    </details>
+  ))}
+</section>
+
+<style>
+  .faq { max-width: 53.75rem; margin: 0 auto; padding: 0 1.5rem 7.5rem; }
+  h2 { margin: 0 0 2rem; font-size: clamp(2rem, 3.6vw, 3rem); letter-spacing: -0.03em; font-weight: 800; }
+  details { border-top: 1px solid #242428; padding: 1.375rem 0; }
+  details:last-of-type { border-bottom: 1px solid #242428; }
+  summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 1.5rem; font-size: 1.25rem; font-weight: 600; }
+  summary::-webkit-details-marker { display: none; }
+  .plus { color: #8e8e93; font-size: 1.625rem; line-height: 1; transition: transform 0.2s; }
+  details[open] .plus { transform: rotate(45deg); }
+  p { margin: 0.875rem 0 0; font-size: 1.0625rem; line-height: 1.55; color: #a1a1a6; }
+</style>

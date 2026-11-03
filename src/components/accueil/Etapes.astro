@@ -1,0 +1,26 @@
+---
+import { t } from "../../lib/textes";
+interface Props { langue: string }
+const { langue: l } = Astro.props;
+---
+<section aria-labelledby="titre-etapes" class="section apparition">
+  <h2 id="titre-etapes" class="titre-section centre">{t(l, "etapes.titre")}</h2>
+  <ol>
+    {[1, 2, 3].map((n) => (
+      <li class:list={{ premier: n === 1 }}>
+        <p class="numero chiffres" aria-hidden="true">{String(n).padStart(2, "0")}</p>
+        <h3>{t(l, `etapes.e${n}Titre`)}</h3>
+        <p class="gris">{t(l, `etapes.e${n}Texte`)}</p>
+      </li>
+    ))}
+  </ol>
+</section>
+
+<style>
+  ol { margin: 3.5rem 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 1.25rem; }
+  li { flex: 1 1 18.75rem; min-width: 0; border-top: 2px solid #3a3a3e; padding-top: 1.5rem; }
+  li.premier { border-top-color: #f5f5f7; }
+  .numero { margin: 0; font-size: 0.9375rem; font-weight: 700; color: #8e8e93; }
+  h3 { margin: 0.625rem 0 0; font-size: 1.5rem; letter-spacing: -0.02em; font-weight: 700; }
+  li p.gris { margin: 0.625rem 0 0; font-size: 1.0625rem; line-height: 1.5; }
+</style>

@@ -1,0 +1,23 @@
+---
+import { t } from "../../lib/textes";
+interface Props { langue: string }
+const { langue: l } = Astro.props;
+---
+<section aria-labelledby="titre-vie-privee" class="section bas apparition">
+  <div class="carte cadre">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="#F5F5F7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="25" width="32" height="22" rx="5" /><path d="M19 25v-6a9 9 0 0 1 18 0v6" /><path d="M28 34v5" /></svg>
+    <div class="texte">
+      <h2 id="titre-vie-privee">{t(l, "viePrivee.titre")}</h2>
+      <p class="gris">{t(l, "viePrivee.texte")}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bas { padding-top: 0; }
+  .cadre { padding: 3.5rem 2.75rem; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; }
+  .texte { flex: 1 1 30rem; min-width: 0; }
+  h2 { margin: 0; font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.03em; font-weight: 800; }
+  @media (max-width: 45rem) { .cadre { padding: 2.25rem 1.75rem; gap: 1.25rem; } }
+  p { margin: 0.75rem 0 0; font-size: 1.0625rem; line-height: 1.5; }
+</style>

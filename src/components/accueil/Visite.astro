@@ -1,0 +1,45 @@
+---
+// « Faites le tour. » : onglets + légende + grand écran. Sans JavaScript, les cinq écrans s'affichent l'un sous l'autre.
+import { t } from "../../lib/textes";
+import { ecrans } from "../../lib/ecrans";
+import EcranTV from "./EcranTV.astro";
+import Halo from "./Halo.astro";
+interface Props { langue: string }
+const { langue: l } = Astro.props;
+const premier = ecrans.ongletsVisite[0];
+---
+<section id="visite" aria-labelledby="titre-visite" class="section visite apparition">
+  <h2 id="titre-visite" class="titre-section centre">{t(l, "visite.titre")}</h2>
+  <div class="onglets avec-js" role="group" aria-label={t(l, "visite.groupe")}>
+    {ecrans.ongletsVisite.map((o) => (
+      <button type="button" data-cible="visite" data-vue={o} aria-pressed={o === premier ? "true" : "false"}>{t(l, `onglets.${o}`)}</button>
+    ))}
+  </div>
+  <div data-groupe="visite">
+    {ecrans.ongletsVisite.map((o) => (
+      <div class="panneau" data-panneau={o} hidden={o !== premier}>
+        <h3 class="sans-js">{t(l, `onglets.${o}`)}</h3>
+        <p class="legende">{t(l, `visite.legendes.${o}`)}</p>
+        <div class="scene">
+          <Halo />
+          <div class="ecrin-tv"><EcranTV langue={l} id={`visite-${o}`} vues={[o]} /></div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .visite { padding-top: 0; }
+  .onglets { margin: 2.25rem auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.375rem; padding: 0.375rem; border-radius: 999px; background: #141416; width: fit-content; max-width: 100%; }
+  .onglets button { border: 0; cursor: pointer; padding: 0.625rem 1.25rem; border-radius: 999px; font: inherit; font-size: 0.9375rem; font-weight: 600; background: transparent; color: #d1d1d6; }
+  .onglets button[aria-pressed="true"] { background: #f5f5f7; color: #000; }
+  .panneau[hidden] { display: none; }
+  :global(html:not(.js)) .panneau[hidden] { display: block; }
+  .panneau.entree { animation: fondu 0.2s ease-out; }
+  @keyframes fondu { from { opacity: 0; } to { opacity: 1; } }
+  h3 { margin: 3rem 0 0; text-align: center; font-size: 1.5rem; font-weight: 700; }
+  .legende { margin: 1.25rem auto 0; max-width: 40rem; text-align: center; font-size: 1.0625rem; line-height: 1.5; color: #a1a1a6; min-height: 3.25rem; }
+  .scene { position: relative; margin-top: 1.5rem; }
+  @media (prefers-reduced-motion: reduce) { .panneau.entree { animation: none; } }
+</style>

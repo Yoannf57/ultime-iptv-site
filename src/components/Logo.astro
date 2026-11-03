@@ -1,13 +1,19 @@
 ---
+// Logo : anneau d'avancement + « Ulti » en gras + « IPTV » plus léger et gris (CLAUDE.md, « Nom de l'app »).
 import { t } from "../lib/textes";
-interface Props { langue: string; taille?: "normal" | "grand" }
-const { langue, taille = "normal" } = Astro.props;
+interface Props { langue: string }
+const { langue } = Astro.props;
 ---
-<span class:list={["logo", taille]}><strong>{t(langue, "marque.nom")}</strong> <span>{t(langue, "marque.suffixe")}</span></span>
+<span class="logo">
+  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+    <circle cx="13" cy="13" r="10" stroke="#3A3A3E" stroke-width="3" />
+    <circle cx="13" cy="13" r="10" stroke="#F5F5F7" stroke-width="3" stroke-linecap="round" stroke-dasharray="47 63" transform="rotate(-90 13 13)" />
+  </svg>
+  <span class="mot">{t(langue, "marque.nom")} <span class="suffixe">{t(langue, "marque.suffixe")}</span></span>
+</span>
 
 <style>
-  .logo { font-size: 1.375rem; letter-spacing: -0.02em; white-space: nowrap; }
-  .logo.grand { font-size: 2rem; }
-  strong { font-weight: 800; }
-  span span { font-weight: 300; color: var(--texte-2); }
+  .logo { display: inline-flex; align-items: center; gap: 0.625rem; color: var(--texte); }
+  .mot { font-size: 1.3125rem; font-weight: 800; letter-spacing: -0.02em; white-space: nowrap; }
+  .suffixe { font-weight: 600; color: #a1a1a6; }
 </style>
