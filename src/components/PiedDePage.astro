@@ -23,7 +23,7 @@ const p = codePays ? trouverPays(codePays) : null;
       <p class="legal" lang={l}>{t(l, "neutralite")} {t(l, "pied.tmdb")} {t(l, "pied.marques")}</p>
     ))}
     <div class="bas">
-      <img class="tmdb" src={lien("tmdb.svg")} alt={t(langue, "pied.tmdbLogo")} width="96" height="12" loading="lazy" />
+      <img class="tmdb" src={lien("tmdb.svg")} alt={t(langue, "pied.tmdbLogo")} width="123" height="16" decoding="async" />
       <p>{t(langue, "pied.copyright")} · <a href={`mailto:${config.contact}`}>{config.contact}</a></p>
     </div>
   </div>
@@ -37,6 +37,7 @@ const p = codePays ? trouverPays(codePays) : null;
   .globe:hover { border-color: #8e8e93; }
   p { margin: 0; line-height: 1.6; }
   .bas { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
-  .tmdb { height: 0.75rem; width: auto; }
+  /* Logo officiel TMDB (dégradé prévu pour fond sombre), plus petit que le logo Ulti. */
+  .tmdb { display: block; height: 1rem; width: auto; flex: none; }
   a { color: #a1a1a6; }
 </style>
