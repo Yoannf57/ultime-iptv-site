@@ -44,7 +44,7 @@ const textes = ["hebergeur", "propriete", "tmdb", "contenus"];
               <dt>{t(l, `mentions.champs.${x.champ}`)}</dt>
               <dd>{x.valeur
                 ? (x.lien ? <a href={x.lien}>{x.valeur}</a> : x.valeur)
-                : <span class="blanc">{t(l, "mentions.aCompleter")}</span>}</dd>
+                : <span class="blanc">{t(l, `mentions.blancs.${x.champ}`)}</span>}</dd>
             </div>
           ))}
         </dl>
@@ -61,7 +61,8 @@ const textes = ["hebergeur", "propriete", "tmdb", "contenus"];
   dl div:last-child { border-bottom: 1px solid #242428; }
   dt { color: #8e8e93; font-size: 0.9375rem; }
   dd { margin: 0; font-size: 1.0625rem; color: #f5f5f7; }
-  .blanc { color: #8e8e93; font-style: italic; }
+  /* Emplacement à remplir : bien visible (CLAUDE.md : jamais de rouge, donc blanc sur cadre pointillé). */
+  .blanc { display: inline-block; padding: 0.125rem 0.625rem; border: 1px dashed #f5f5f7; border-radius: 0.375rem; font-weight: 700; letter-spacing: 0.03em; color: #fff; background: #242428; }
   .tmdb { display: block; height: 1rem; width: auto; margin-top: 0.5rem; }
   @media (max-width: 36rem) { dl div { grid-template-columns: 1fr; } }
 </style>
