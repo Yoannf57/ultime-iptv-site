@@ -19,6 +19,9 @@ function choisir(cible, vue) {
       v.hidden = true;
     }
   });
+  document.querySelectorAll('[data-groupe="' + cible + '-legende"] [data-legende]').forEach(function (p) {
+    p.hidden = p.getAttribute("data-legende") !== vue;
+  });
 }
 
 document.addEventListener("click", function (e) {
