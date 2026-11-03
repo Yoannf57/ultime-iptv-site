@@ -4,31 +4,154 @@
     "titre": "Ulti — The ultimate IPTV experience",
     "description": "Ulti, the IPTV player for iPhone and Apple TV: live TV, guide, movies and series in a simple app that's ready to use."
   },
-  "marque": { "nom": "Ulti", "suffixe": "IPTV" },
-  "accueil": {
+  "marque": {
+    "nom": "Ulti",
+    "suffixe": "IPTV",
+    "retourHaut": "Ulti, back to top"
+  },
+  "entete": {
+    "navigation": "Main navigation",
+    "fonctions": "Features",
+    "visite": "Tour",
+    "appletv": "Apple TV",
+    "tarifs": "Pricing",
+    "questions": "Questions",
+    "bientot": "Coming soon",
+    "telecharger": "Download"
+  },
+  "heros": {
     "surtitre": "For iPhone and Apple TV",
-    "accroche": "The ultimate IPTV experience.",
+    "accroche": "The ultimate\nIPTV experience.",
     "phrase": "Live TV, guide, movies and series: your IPTV subscription becomes an intuitive TV app. Just open it and watch.",
-    "provisoire": "Temporary page: the full presentation is coming soon."
-  },
-  "bouton": {
     "bientot": "Coming soon to the App Store",
-    "telecharger": "Download on the App Store"
+    "telecharger": "Download on the App Store",
+    "voirTarifs": "See pricing",
+    "neutralite": "Ulti does not provide any channels or content."
   },
-  "prix": {
-    "gratuit": "Live TV is free.",
-    "aPartirDe": "Premium from {prix} per month.",
-    "appStore": "Premium: price shown on the App Store."
+  "apercu": {
+    "etiquette": "Preview of the app on Apple TV and iPhone",
+    "ongletsTV": "App tabs on Apple TV",
+    "ongletsTel": "App tabs on iPhone",
+    "indice": "Click the screens to try the app."
+  },
+  "onglets": {
+    "accueil": "Home",
+    "direct": "Live",
+    "guide": "TV Guide",
+    "replay": "Replay",
+    "films": "Movies",
+    "series": "Series"
+  },
+  "fonctions": {
+    "titre": "Your subscription, beautifully presented.",
+    "phrase": "Ulti turns the thousands of channels and movies in your subscription into clear screens, like a TV app you've always had.",
+    "directTitre": "Live TV at a glance",
+    "directTexte": "A ring around each channel shows how far the show has got. Filter by theme and flip from one channel to the next.",
+    "guideTitre": "A real TV guide",
+    "guideTexte": "Tonight, tomorrow, all week. Set a reminder in one gesture, or use your own XMLTV guide.",
+    "filmsTitre": "Movies and series, without duplicates",
+    "filmsTexte": "Posters and summaries, every version of a movie gathered in a single page, and you pick up right where you left off.",
+    "premium": "Premium"
+  },
+  "visite": {
+    "titre": "Take the tour.",
+    "groupe": "App screens",
+    "legendes": {
+      "direct": "All your channels as large tiles, with what's on now. Filter by theme, then flip through.",
+      "guide": "Tonight, tomorrow, all week. A reminder in one gesture, and a line shows where you are.",
+      "replay": "Missed a show? Go back to previous days, channel by channel. With Premium.",
+      "films": "Posters, summaries and every version of a movie gathered in a single page. With Premium.",
+      "series": "Seasons and episodes neatly organised, and you resume right where you left off. With Premium."
+    }
+  },
+  "appletv": {
+    "surtitre": "Apple TV",
+    "titre": "On the TV, you type nothing.",
+    "texte": "Scan the code shown on Apple TV with your iPhone: your subscription arrives on the TV, encrypted, directly over your local network.",
+    "point1": "Flip channels with the remote, up and down",
+    "point2": "Picture in Picture during live TV",
+    "point3": "Big posters, designed for the couch",
+    "qrEtiquette": "Pairing QR code (illustration)",
+    "qrTitre": "With my iPhone",
+    "qrTexte": "Point your iPhone's camera at this code."
+  },
+  "famille": {
+    "titre": "The whole family, each in their own space.",
+    "texte": "One profile per person with Premium, each with their own list and resume points. The Kids profile, included in the free version, sees no adult content and can only be exited with the parental code."
+  },
+  "premium": {
+    "surtitre": "Premium",
+    "titre": "Go even further.",
+    "films": "Movies and series, with posters, summaries and resume",
+    "pause": "Pause and rewind live TV",
+    "replay": "Replay of previous days",
+    "telechargements": "Downloads to watch offline",
+    "icloud": "iCloud sync between iPhone and Apple TV",
+    "plusieurs": "Multiple subscriptions and profiles",
+    "themes": "Halo and Programme themes",
+    "multi": "Multiview, up to 4 live channels at once",
+    "bientot": "Soon"
+  },
+  "etapes": {
+    "titre": "Ready in a minute.",
+    "e1Titre": "Add your subscription",
+    "e1Texte": "Paste the message from your IPTV provider, or enter its login details. Ulti fills in the rest.",
+    "e2Titre": "Ulti sorts everything",
+    "e2Texte": "Channels, guide, movies and series are organised. Keep only the categories you care about.",
+    "e3Titre": "Watch everywhere",
+    "e3Texte": "On iPhone, iPad and Apple TV. With Premium, your list and resume points follow you."
+  },
+  "tarifs": {
+    "titre": "Free for the essentials.",
+    "phrase": "Live TV is free. Try Premium for 7 days without paying.",
+    "gratuitTitre": "Free",
+    "gratuitTexte": "Live TV, TV guide and reminders, Picture in Picture, Apple TV via QR code, one Kids profile.",
+    "choix": "Choose a Premium plan",
+    "pourMoi": "For me",
+    "pourFamille": "For my family",
+    "soloLegende": "Solo: for you, on all your devices.",
+    "familleLegende": "Family: up to 6 people with Apple Family Sharing.",
+    "mensuel": "Monthly",
+    "annuel": "Yearly",
+    "vie": "Lifetime",
+    "parMois": "/ month",
+    "parAn": "/ year",
+    "mensuelTexte": "All of Premium. 7-day free trial.",
+    "annuelTexte": "All of Premium, just {prix} a month. 7-day free trial.",
+    "annuelTexteSansPrix": "All of Premium. 7-day free trial.",
+    "vieTexte": "All of Premium, paid once.",
+    "remise": "−{remise}%",
+    "prixAppStore": "Price shown on the App Store",
+    "noteTTC": "Prices include VAT.",
+    "noteAppStore": "The exact price for your country is shown on the App Store."
+  },
+  "viePrivee": {
+    "titre": "No data collected.",
+    "texte": "Your login details stay in your device's Keychain. No account to create, no Ulti server."
+  },
+  "faq": {
+    "titre": "Frequently asked questions",
+    "q1": "Does Ulti provide channels?",
+    "r1": "No. Ulti is a player: it plays the sources you add yourself. Ulti does not provide any channels or content. You must have your own sources, and the right to watch them.",
+    "q2": "Which devices?",
+    "r2": "iPhone, iPad and Apple TV. Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing.",
+    "q3": "Are my login details safe?",
+    "r3": "They are kept in your device's Keychain and never go through an Ulti server.",
+    "q4": "Which subscriptions are compatible?",
+    "r4": "Subscriptions provided as an M3U link or Xtream Codes login details, which covers the vast majority. The easiest way: paste your provider's message, and Ulti recognises the format on its own.",
+    "q5": "Can I try before I pay?",
+    "r5": "Yes. Live TV is free. Premium can be tried free for 7 days with the monthly and yearly subscriptions, Solo or Family."
   },
   "neutralite": "Ulti does not provide any channels or content. You must have your own sources, and the right to watch them.",
   "pied": {
-    "changerPays": "Change country or region (currently: {pays})",
-    "contact": "Contact:",
+    "changerPays": "Change country or region (currently: {pays}, {langue})",
     "tmdb": "This product uses the TMDB API but is not endorsed or certified by TMDB.",
-    "tmdbLogo": "The Movie Database (TMDB) logo"
+    "tmdbLogo": "The Movie Database (TMDB) logo",
+    "marques": "Apple, Apple TV, iPhone and iPad are trademarks of Apple Inc.",
+    "copyright": "© 2026 Ulti"
   },
   "bandeau": {
-    "etiquette": "Country suggestion",
+    "etiquette": "Country choice",
     "continuer": "Continue",
     "fermer": "Close",
     "question": {
@@ -59,7 +182,56 @@
     "regions": {
       "europe": "Europe",
       "ameriques": "Americas",
-      "international": "International"
+      "international": "Other countries"
+    }
+  },
+  "ecrans": {
+    "sintelGenre": "Movie · 2010 · Fantasy",
+    "sintelResume": "A young woman sets out alone to find the baby dragon she once rescued.",
+    "lecture": "Play",
+    "maListe": "My List",
+    "enDirect": "Live now",
+    "badgeDirect": "LIVE",
+    "filtres": {
+      "tout": "All",
+      "cinema": "Movies",
+      "info": "News",
+      "jeunesse": "Kids",
+      "sciences": "Science"
+    },
+    "guideDate": "Tonight · Tuesday 3 November",
+    "jours": {
+      "aujourdhui": "Today",
+      "hier": "Yesterday",
+      "dimanche": "Sunday",
+      "samedi": "Saturday",
+      "vendredi": "Friday"
+    },
+    "quand": "{jour} · {heure}",
+    "filmsGenres": "Animation · Fantasy · Science fiction",
+    "serieGenre": "Series · Animation · 2013–2016",
+    "serieGenreCourt": "Series · Animation",
+    "serieResume": "Koro, a llama from Patagonia, is always looking for greener grass on the other side.",
+    "episodes": "Episodes",
+    "version": "Version: Original · HD",
+    "episode": "Episode {numero} · {annee}",
+    "episodeCourt": "Episode {numero}",
+    "etats": {
+      "vu": "Watched",
+      "reprendre": "Resume",
+      "aVoir": "Up next"
+    },
+    "ceSoir": "Tonight",
+    "maintenant": "Now",
+    "programmes": {
+      "journal": "The evening news",
+      "journalCourt": "The news",
+      "lePoint": "The briefing",
+      "debat": "The big debate",
+      "etoiles": "The stars, up close"
+    },
+    "profils": {
+      "enfant": "Kids"
     }
   }
 }

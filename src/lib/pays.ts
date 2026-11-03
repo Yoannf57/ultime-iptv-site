@@ -7,6 +7,7 @@ export type Pays = {
   locale: string;
   region: "europe" | "ameriques" | "international";
   nom: string;
+  nomLangue: string;
   fuseaux: string[];
   devise: string | null;
   lienAppStore: string | null;
@@ -25,7 +26,11 @@ export function trouverPays(code: string): Pays {
 // Formate un prix tel qu'il est écrit dans pays.json (jamais de conversion de monnaie).
 export function formaterPrix(montant: number, p: Pays): string {
   if (!p.devise) throw new Error(`Pas de monnaie pour ${p.code}`);
-  return new Intl.NumberFormat(p.locale, { style: "currency", currency: p.devise }).format(montant);
+  const entier = Number.isInteger(montant);
+  return new Intl.NumberFormat(p.locale, {
+    style: "currency", currency: p.devise,
+    minimumFractionDigits: entier ? 0 : 2, maximumFractionDigits: entier ? 0 : 2,
+  }).format(montant);
 }
 
 // Données minimales envoyées au navigateur pour deviner le pays.

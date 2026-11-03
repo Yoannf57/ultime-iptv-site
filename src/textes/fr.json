@@ -4,31 +4,154 @@
     "titre": "Ulti — L'expérience IPTV ultime",
     "description": "Ulti, le lecteur IPTV pour iPhone et Apple TV : direct, guide TV, films et séries, dans une app simple et prête à l'emploi."
   },
-  "marque": { "nom": "Ulti", "suffixe": "IPTV" },
-  "accueil": {
+  "marque": {
+    "nom": "Ulti",
+    "suffixe": "IPTV",
+    "retourHaut": "Ulti, haut de la page"
+  },
+  "entete": {
+    "navigation": "Navigation principale",
+    "fonctions": "Fonctions",
+    "visite": "Visite",
+    "appletv": "Apple TV",
+    "tarifs": "Tarifs",
+    "questions": "Questions",
+    "bientot": "Bientôt disponible",
+    "telecharger": "Télécharger"
+  },
+  "heros": {
     "surtitre": "Pour iPhone et Apple TV",
-    "accroche": "L'expérience IPTV ultime.",
+    "accroche": "L'expérience\nIPTV ultime.",
     "phrase": "Direct, guide TV, films et séries : votre abonnement IPTV devient une app de télé intuitive. Vous l'ouvrez, vous regardez.",
-    "provisoire": "Page provisoire : la présentation complète arrive bientôt."
-  },
-  "bouton": {
     "bientot": "Bientôt sur l'App Store",
-    "telecharger": "Télécharger dans l'App Store"
+    "telecharger": "Télécharger dans l'App Store",
+    "voirTarifs": "Voir les tarifs",
+    "neutralite": "Ulti ne fournit aucune chaîne ni aucun contenu."
   },
-  "prix": {
-    "gratuit": "Le direct est gratuit.",
-    "aPartirDe": "Premium à partir de {prix} par mois.",
-    "appStore": "Premium : prix affiché dans l'App Store."
+  "apercu": {
+    "etiquette": "Aperçu de l'app sur Apple TV et iPhone",
+    "ongletsTV": "Onglets de l'app sur Apple TV",
+    "ongletsTel": "Onglets de l'app sur iPhone",
+    "indice": "Cliquez sur les écrans pour essayer l'app."
+  },
+  "onglets": {
+    "accueil": "Accueil",
+    "direct": "Direct",
+    "guide": "Guide TV",
+    "replay": "Replay",
+    "films": "Films",
+    "series": "Séries"
+  },
+  "fonctions": {
+    "titre": "Votre abonnement, enfin bien présenté.",
+    "phrase": "Ulti range les milliers de chaînes et de films de votre abonnement en écrans clairs, comme une app de télé que vous auriez toujours eue.",
+    "directTitre": "Le direct, d'un coup d'œil",
+    "directTexte": "Un anneau autour de chaque chaîne montre où en est le programme. Filtrez par thème et zappez d'une chaîne à l'autre.",
+    "guideTitre": "Un vrai guide TV",
+    "guideTexte": "Ce soir, demain, la semaine. Posez un rappel en un geste, ou utilisez votre propre guide XMLTV.",
+    "filmsTitre": "Films et séries, sans doublons",
+    "filmsTexte": "Affiches et résumés, toutes les versions d'un même film réunies en une seule fiche, reprise là où vous vous êtes arrêté.",
+    "premium": "Premium"
+  },
+  "visite": {
+    "titre": "Faites le tour.",
+    "groupe": "Écrans de l'app",
+    "legendes": {
+      "direct": "Toutes vos chaînes en grandes vignettes, avec le programme en cours. Filtrez par thème, puis zappez.",
+      "guide": "Ce soir, demain, toute la semaine. Un rappel en un geste, et une ligne montre où vous en êtes.",
+      "replay": "Ratez une émission ? Retrouvez les jours passés, chaîne par chaîne. Avec Premium.",
+      "films": "Affiches, résumés et toutes les versions d'un même film réunies dans une seule fiche. Avec Premium.",
+      "series": "Saisons et épisodes bien rangés, et la reprise là où vous vous êtes arrêté. Avec Premium."
+    }
+  },
+  "appletv": {
+    "surtitre": "Apple TV",
+    "titre": "Sur la télé, vous ne tapez rien.",
+    "texte": "Scannez le code affiché par l'Apple TV avec votre iPhone : votre abonnement arrive sur la télé, chiffré, directement sur votre réseau local.",
+    "point1": "Zapping avec la télécommande, haut et bas",
+    "point2": "Image dans l'image pendant le direct",
+    "point3": "Grandes affiches, pensées pour le canapé",
+    "qrEtiquette": "Code QR d'appairage (illustration)",
+    "qrTitre": "Avec mon iPhone",
+    "qrTexte": "Visez ce code avec l'appareil photo de votre iPhone."
+  },
+  "famille": {
+    "titre": "Toute la famille, chacun chez soi.",
+    "texte": "Un profil par personne avec Premium, chacun avec sa liste et ses reprises. Le profil Enfant, inclus dans la version gratuite, ne voit aucun contenu pour adultes et se quitte seulement avec le code parental."
+  },
+  "premium": {
+    "surtitre": "Premium",
+    "titre": "Encore plus loin.",
+    "films": "Films et séries, avec affiches, résumés et reprises",
+    "pause": "Pause et retour en arrière sur le direct",
+    "replay": "Replay des jours passés",
+    "telechargements": "Téléchargements pour regarder hors ligne",
+    "icloud": "Synchro iCloud entre iPhone et Apple TV",
+    "plusieurs": "Plusieurs abonnements et profils",
+    "themes": "Thèmes Halo et Programme",
+    "multi": "Multi-écran, jusqu'à 4 directs à la fois",
+    "bientot": "Bientôt"
+  },
+  "etapes": {
+    "titre": "Prêt en une minute.",
+    "e1Titre": "Ajoutez votre abonnement",
+    "e1Texte": "Collez le message reçu de votre fournisseur IPTV, ou saisissez ses identifiants. Ulti remplit le reste.",
+    "e2Titre": "Ulti range tout",
+    "e2Texte": "Chaînes, guide, films et séries sont triés. Gardez seulement les catégories qui vous intéressent.",
+    "e3Titre": "Regardez partout",
+    "e3Texte": "Sur iPhone, iPad et Apple TV. Avec Premium, votre liste et vos reprises vous suivent."
+  },
+  "tarifs": {
+    "titre": "Gratuit pour l'essentiel.",
+    "phrase": "Le direct est gratuit. Premium s'essaie 7 jours sans payer.",
+    "gratuitTitre": "Gratuit",
+    "gratuitTexte": "Direct, guide TV et rappels, image dans l'image, Apple TV par QR code, un profil Enfant.",
+    "choix": "Choisir une formule Premium",
+    "pourMoi": "Pour moi",
+    "pourFamille": "Pour la famille",
+    "soloLegende": "Solo : pour vous, sur tous vos appareils.",
+    "familleLegende": "Famille : jusqu'à 6 personnes avec le Partage familial d'Apple.",
+    "mensuel": "Mensuel",
+    "annuel": "Annuel",
+    "vie": "À vie",
+    "parMois": "/ mois",
+    "parAn": "/ an",
+    "mensuelTexte": "Tout Premium. 7 jours d'essai gratuit.",
+    "annuelTexte": "Tout Premium, soit {prix} par mois. 7 jours d'essai gratuit.",
+    "annuelTexteSansPrix": "Tout Premium. 7 jours d'essai gratuit.",
+    "vieTexte": "Tout Premium, payé une seule fois.",
+    "remise": "−{remise} %",
+    "prixAppStore": "Prix affiché dans l'App Store",
+    "noteTTC": "Prix TTC.",
+    "noteAppStore": "Le prix exact de votre pays s'affiche dans l'App Store."
+  },
+  "viePrivee": {
+    "titre": "Aucune donnée collectée.",
+    "texte": "Vos identifiants restent dans le Trousseau de votre appareil. Pas de compte à créer, pas de serveur Ulti."
+  },
+  "faq": {
+    "titre": "Questions fréquentes",
+    "q1": "Ulti fournit-il des chaînes ?",
+    "r1": "Non. Ulti est un lecteur : il lit les sources que vous ajoutez vous-même. Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder.",
+    "q2": "Sur quels appareils ?",
+    "r2": "iPhone, iPad et Apple TV. Premium vaut sur tous vos appareils avec le même identifiant Apple ; avec la formule Famille, jusqu'à 6 personnes en profitent grâce au Partage familial.",
+    "q3": "Mes identifiants sont-ils en sécurité ?",
+    "r3": "Ils sont gardés dans le Trousseau de votre appareil et ne passent jamais par un serveur Ulti.",
+    "q4": "Quels abonnements sont compatibles ?",
+    "r4": "Les abonnements fournis sous forme de lien M3U ou d'identifiants Xtream Codes, c'est-à-dire la grande majorité. Le plus simple : collez le message de votre fournisseur, Ulti reconnaît le format tout seul.",
+    "q5": "Puis-je essayer avant de payer ?",
+    "r5": "Oui. Le direct est gratuit. Premium s'essaie gratuitement pendant 7 jours avec les abonnements mensuels et annuels, Solo ou Famille."
   },
   "neutralite": "Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder.",
   "pied": {
-    "changerPays": "Changer de pays ou de région (actuellement : {pays})",
-    "contact": "Contact :",
+    "changerPays": "Changer de pays ou de région (actuellement : {pays}, {langue})",
     "tmdb": "Ce produit utilise l'API TMDB mais n'est ni approuvé ni certifié par TMDB.",
-    "tmdbLogo": "Logo de The Movie Database (TMDB)"
+    "tmdbLogo": "Logo de The Movie Database (TMDB)",
+    "marques": "Apple, Apple TV, iPhone et iPad sont des marques d'Apple Inc.",
+    "copyright": "© 2026 Ulti"
   },
   "bandeau": {
-    "etiquette": "Suggestion de pays",
+    "etiquette": "Choix du pays",
     "continuer": "Continuer",
     "fermer": "Fermer",
     "question": {
@@ -59,7 +182,56 @@
     "regions": {
       "europe": "Europe",
       "ameriques": "Amériques",
-      "international": "International"
+      "international": "Autres pays"
+    }
+  },
+  "ecrans": {
+    "sintelGenre": "Film · 2010 · Fantastique",
+    "sintelResume": "Une jeune femme part seule à la recherche du bébé dragon qu'elle a sauvé.",
+    "lecture": "Lecture",
+    "maListe": "Ma liste",
+    "enDirect": "En direct",
+    "badgeDirect": "EN DIRECT",
+    "filtres": {
+      "tout": "Tout",
+      "cinema": "Cinéma",
+      "info": "Info",
+      "jeunesse": "Jeunesse",
+      "sciences": "Sciences"
+    },
+    "guideDate": "Ce soir · mardi 3 novembre",
+    "jours": {
+      "aujourdhui": "Aujourd'hui",
+      "hier": "Hier",
+      "dimanche": "Dimanche",
+      "samedi": "Samedi",
+      "vendredi": "Vendredi"
+    },
+    "quand": "{jour} · {heure}",
+    "filmsGenres": "Animation · Fantastique · Science-fiction",
+    "serieGenre": "Série · Animation · 2013–2016",
+    "serieGenreCourt": "Série · Animation",
+    "serieResume": "Koro, un lama de Patagonie, cherche toujours l'herbe plus verte de l'autre côté.",
+    "episodes": "Épisodes",
+    "version": "Version : VO · HD",
+    "episode": "Épisode {numero} · {annee}",
+    "episodeCourt": "Épisode {numero}",
+    "etats": {
+      "vu": "Vu",
+      "reprendre": "Reprendre",
+      "aVoir": "À voir"
+    },
+    "ceSoir": "Ce soir",
+    "maintenant": "Maintenant",
+    "programmes": {
+      "journal": "Le journal du soir",
+      "journalCourt": "Le journal",
+      "lePoint": "Le point",
+      "debat": "Le grand débat",
+      "etoiles": "Les étoiles, de près"
+    },
+    "profils": {
+      "enfant": "Enfant"
     }
   }
 }
