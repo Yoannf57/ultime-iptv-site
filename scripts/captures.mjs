@@ -25,7 +25,7 @@ if (!process.argv.includes("--sans-captures")) {
   for (const p of pages) {
     for (const [taille, viewport] of Object.entries(tailles)) {
       const contexte = await navigateur.newContext({
-        viewport, locale: p.locale, timezoneId: p.fuseau,
+        viewport, locale: p.locale, timezoneId: p.fuseau, reducedMotion: "reduce",
         deviceScaleFactor: taille === "iphone" ? 3 : 1, isMobile: taille === "iphone", hasTouch: taille === "iphone",
       });
       const page = await contexte.newPage();
@@ -36,6 +36,42 @@ if (!process.argv.includes("--sans-captures")) {
       await contexte.close();
     }
   }
+}
+
+// États cliquables de l'accueil (captures d'éléments, ordinateur 1440 px) et page sans JavaScript.
+if (!process.argv.includes("--sans-captures")) {
+  const contexte = await navigateur.newContext({ viewport: tailles.ordi, locale: "fr-FR", timezoneId: "Europe/Paris" });
+  await contexte.addInitScript(() => localStorage.setItem("ultime-pays", "fr-fr"));
+  const page = await contexte.newPage();
+  await page.goto(adresse + "fr-fr/", { waitUntil: "networkidle" });
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  const etats = [
+    { nom: "tv", zone: ".apercu", boutons: '.ecran-tv [data-cible="tv"]' },
+    { nom: "tel", zone: ".apercu", boutons: '[data-cible="tel"]' },
+    { nom: "visite", zone: "#visite", boutons: '[data-cible="visite"]' },
+    { nom: "formule", zone: "#tarifs", boutons: '[data-cible="formule"]' },
+  ];
+  for (const e of etats) {
+    const boutons = page.locator(e.boutons);
+    for (let i = 0; i < (await boutons.count()); i++) {
+      const b = boutons.nth(i);
+      const vue = await b.getAttribute("data-vue");
+      await b.click();
+      const pressee = await b.getAttribute("aria-pressed");
+      if (pressee !== "true") { echecs++; console.log(`✗ ${e.nom}/${vue} : aria-pressed n'est pas passé à true`); }
+      const fichier = `${dossier}etat-${e.nom}-${vue}.png`;
+      await page.locator(e.zone).screenshot({ path: fichier });
+      console.log("📸 " + fichier);
+    }
+    await boutons.first().click();
+  }
+  await contexte.close();
+  const sansJS = await navigateur.newContext({ viewport: tailles.ordi, locale: "fr-FR", timezoneId: "Europe/Paris", javaScriptEnabled: false });
+  const p2 = await sansJS.newPage();
+  await p2.goto(adresse + "fr-fr/", { waitUntil: "networkidle" });
+  await p2.screenshot({ path: `${dossier}sans-js-fr-fr-ordi.png`, fullPage: true });
+  console.log("📸 " + `${dossier}sans-js-fr-fr-ordi.png`);
+  await sansJS.close();
 }
 
 // Page racine : où arrive-t-on ?

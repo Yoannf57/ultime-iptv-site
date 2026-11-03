@@ -60,6 +60,25 @@ for (const langue of Object.keys(langues)) {
   }
 }
 
+// 3 bis. Les textes appelés depuis les données des écrans dessinés (src/donnees/ecrans.json).
+const ecrans = JSON.parse(readFileSync(join(racine, "src/donnees/ecrans.json"), "utf8"));
+const clesEcrans = new Set();
+for (const o of [...ecrans.ongletsTV, ...ecrans.ongletsTel, ...ecrans.ongletsVisite]) clesEcrans.add(`onglets.${o}`);
+for (const o of ecrans.ongletsVisite) clesEcrans.add(`visite.legendes.${o}`);
+for (const j of ecrans.replayJours) clesEcrans.add(`ecrans.jours.${j}`);
+for (const e of ecrans.episodes) clesEcrans.add(`ecrans.etats.${e.etat}`);
+for (const p of ecrans.profils) if (p.cle) clesEcrans.add(`ecrans.profils.${p.cle}`);
+(function chercher(valeur, dansProfils) {
+  if (Array.isArray(valeur)) valeur.forEach((v) => chercher(v, dansProfils));
+  else if (valeur && typeof valeur === "object") {
+    if (typeof valeur.cle === "string" && !dansProfils) clesEcrans.add(`ecrans.programmes.${valeur.cle}`);
+    for (const [k, v] of Object.entries(valeur)) chercher(v, dansProfils || k === "profils");
+  }
+})(ecrans, false);
+for (const langue of Object.keys(langues)) {
+  for (const cle of clesEcrans) if (!(cle in cles(langue))) problemes.push(`[${langue}] clé manquante (appelée par ecrans.json) : ${cle}`);
+}
+
 // 4. Chaque clé écrite dans le code, t(…, "cle"), doit exister.
 function fichiers(dossier) {
   return readdirSync(dossier).flatMap((nom) => {
