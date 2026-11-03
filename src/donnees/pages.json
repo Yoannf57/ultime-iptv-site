@@ -1,0 +1,14 @@
+{
+  "miseAJour": "2026-11-03",
+  "support": [
+    { "groupe": "debut", "questions": ["chaines", "appareils", "installer"] },
+    { "groupe": "abonnement", "questions": ["ajouter", "formats", "replay", "trier", "plusieurs"] },
+    { "groupe": "appletv", "questions": ["qr", "qrBloque"] },
+    { "groupe": "profils", "questions": ["profils", "enfant", "codeOublie"] },
+    { "groupe": "premium", "questions": ["gratuit", "inclus", "soloFamille", "essai", "restaurer", "resilier", "vie"] },
+    { "groupe": "lecture", "questions": ["occupee", "refusee", "serveur"] },
+    { "groupe": "confidentialite", "questions": ["identifiants", "donnees"] }
+  ],
+  "confidentialite": ["bref", "identifiants", "contacts", "ip", "icloud", "appletv", "message", "fichiers", "achats", "plantages", "site", "droits", "changements", "contact"],
+  "mentions": ["editeur", "directeur", "hebergeur", "propriete", "tmdb", "contenus"]
+}

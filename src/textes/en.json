@@ -7,7 +7,8 @@
   "marque": {
     "nom": "Ulti",
     "suffixe": "IPTV",
-    "retourHaut": "Ulti, back to top"
+    "retourHaut": "Ulti, back to top",
+    "accueil": "Ulti, home"
   },
   "entete": {
     "navigation": "Main navigation",
@@ -127,7 +128,8 @@
   },
   "viePrivee": {
     "titre": "No data collected.",
-    "texte": "Your login details stay in your device's Keychain. No account to create, no Ulti server."
+    "texte": "Your login details stay in your device's Keychain. No account to create, no Ulti server.",
+    "lien": "Our privacy policy"
   },
   "faq": {
     "titre": "Frequently asked questions",
@@ -148,7 +150,13 @@
     "tmdb": "This product uses the TMDB API but is not endorsed or certified by TMDB.",
     "tmdbLogo": "The Movie Database (TMDB) logo",
     "marques": "Apple, Apple TV, iPhone and iPad are trademarks of Apple Inc.",
-    "copyright": "© 2026 Ulti"
+    "copyright": "© 2026 Ulti",
+    "liens": {
+      "navigation": "Information",
+      "support": "Support",
+      "privacy": "Privacy",
+      "legal": "Legal notice"
+    }
   },
   "bandeau": {
     "etiquette": "Country choice",
@@ -233,5 +241,252 @@
     "profils": {
       "enfant": "Kids"
     }
+  },
+  "pages": {
+    "miseAJour": "Updated {date}",
+    "sommaire": "On this page",
+    "support": {
+      "titre": "Support",
+      "metaTitre": "Support — Ulti",
+      "description": "Ulti help: installing, adding an IPTV subscription, Apple TV, profiles, Premium, purchases and playback.",
+      "chapeau": "Everything you need to get started with Ulti, and answers to the most common questions."
+    },
+    "privacy": {
+      "titre": "Privacy",
+      "metaTitre": "Privacy — Ulti",
+      "description": "Ulti privacy policy: no data collected, your login details stay on your device.",
+      "chapeau": "Ulti collects no data. Here is exactly what the app does, and what this website does."
+    },
+    "legal": {
+      "titre": "Legal notice",
+      "metaTitre": "Legal notice — Ulti",
+      "description": "Legal notice for the Ulti website and app.",
+      "chapeau": "Who publishes Ulti, who hosts this website, and the rights to what is shown on it."
+    }
+  },
+  "faqPlus": "All questions on the Support page",
+  "support": {
+    "groupes": {
+      "debut": "Getting started",
+      "abonnement": "Adding a subscription",
+      "appletv": "Apple TV",
+      "profils": "Profiles and parental code",
+      "premium": "Premium and purchases",
+      "lecture": "Playback issues",
+      "confidentialite": "Privacy"
+    },
+    "q": {
+      "chaines": {
+        "q": "Does Ulti provide channels?",
+        "r": "No. Ulti is a player: it plays the IPTV subscription you add yourself. Ulti does not provide any channels or content. You must have your own sources, and the right to watch them."
+      },
+      "appareils": {
+        "q": "Which devices does Ulti work on?",
+        "r": "iPhone, iPad and Apple TV, with iOS 17, iPadOS 17, tvOS 17 or later. Premium works on all your devices signed in with the same Apple Account."
+      },
+      "installer": {
+        "q": "How do I install Ulti?",
+        "r": "Download Ulti from the App Store on your iPhone or iPad, and from the App Store on your Apple TV. On the Home Screen, the app is called “Ulti IPTV”.",
+        "rBientot": "Ulti is coming soon to the App Store, for iPhone, iPad and Apple TV. Once installed, the app is called “Ulti IPTV” on the Home Screen."
+      },
+      "ajouter": {
+        "q": "How do I add my IPTV subscription?",
+        "r": "Open Account › Subscriptions › Add a subscription. On iPhone, the easiest way is “Paste the message you received”: paste the text, WhatsApp message or email from your provider, and the server and login details fill in by themselves. The message is read on the iPhone, never sent or saved.\n\nYou can also enter the server, username and password, or paste an M3U link. On Apple TV, the easiest way is to send the subscription from your iPhone (see “Apple TV” below)."
+      },
+      "formats": {
+        "q": "Which formats are supported?",
+        "r": "Xtream Codes accounts (server, username and password) and M3U playlist links. For the TV guide, Ulti uses your provider's; you can also enter the address of an XMLTV guide (.xml or .xml.gz) in Account › TV Guide.\n\nNot supported: subscriptions tied to a MAC address, and Stalker / Ministra portals."
+      },
+      "replay": {
+        "q": "Does replay work with my subscription?",
+        "r": "Replay is part of Premium. It works with an Xtream Codes account, for channels where your provider offers catch-up. It isn't available for M3U playlists yet."
+      },
+      "trier": {
+        "q": "My subscription has too many channels. How do I sort them?",
+        "r": "In Account › My Content, choose the countries, categories and channels to show. The rest of your subscription stays available, just hidden. Each profile has its own choices."
+      },
+      "plusieurs": {
+        "q": "Can I add several subscriptions?",
+        "r": "Yes, with Premium. In Account › Subscriptions, tap a subscription to use it. My Content, My List, resume points and reminders stay separate for each one."
+      },
+      "qr": {
+        "q": "How do I get my subscription onto Apple TV?",
+        "r": "Without typing anything with the remote: open Ulti on the Apple TV and a QR code appears. Scan it with your iPhone camera, tap the Ulti link, and the subscription arrives on its own, with your categories, favourites and appearance. If the Apple TV already has a subscription, the QR code is in Account › Subscriptions › Add a subscription.\n\nYour iPhone and Apple TV must be on the same Wi-Fi network. The transfer is encrypted and goes directly over your local network; the parental code is never sent. You can also enter the subscription with the remote."
+      },
+      "qrBloque": {
+        "q": "The QR code doesn't work. What should I do?",
+        "r": "Check that the Apple TV is on, on the same Wi-Fi network as the iPhone, and showing the QR code screen. The subscription must first be added on the iPhone.\n\nIf the iPhone was denied local network access, allow it in Settings › Ulti IPTV › Local Network, then scan the QR code again. A QR code eventually expires: always scan the one on screen."
+      },
+      "profils": {
+        "q": "How do profiles work?",
+        "r": "Each profile has its own My Content, My List, resume points and reminders. Profiles are managed in Account › Profiles. The free version includes a Kids profile; extra adult profiles are part of Premium."
+      },
+      "enfant": {
+        "q": "What is the Kids profile?",
+        "r": "A Kids profile sees no adult category or content, has no access to subscriptions and can't be left without the parental code. This 4-digit code is also asked to change profiles and, when a Kids profile exists, to open an adult profile (unless you turn this off for that profile).\n\nThe parental code stays on each device: it is never sent, neither through iCloud nor to the Apple TV."
+      },
+      "codeOublie": {
+        "q": "I forgot the parental code.",
+        "r": "On iPhone or iPad, tap “Forgot parental code”, confirm it's you with Face ID or the device passcode, then create a new code. The device passcode must be turned on in Settings.\n\nOn Apple TV, scan the QR code on screen with your iPhone, turn on “Allow a new parental code”, then confirm with Face ID or the iPhone passcode."
+      },
+      "gratuit": {
+        "q": "What does the free version include?",
+        "r": "Live TV, the TV guide and reminders, My Content, grouping of duplicate channels, pasting your provider's message, Picture in Picture, sending to Apple TV by QR code, a Kids profile with parental code, and the Black theme."
+      },
+      "inclus": {
+        "q": "What does Premium include?",
+        "r": "Movies and series (catalogue, details with posters and summaries, playback, resume points, every version of a movie), replay, live pause, downloads on iPhone and iPad, iCloud sync, extra adult profiles and subscriptions, the “For you” and “Popular” rows, the Halo and Programme themes, and alternative icons. Multiview is coming soon.\n\nIn the free version, you can browse movies and series; playing them requires Premium."
+      },
+      "soloFamille": {
+        "q": "Solo or Family: what's the difference?",
+        "r": "Both plans give the same Premium. Solo is for you, on all your devices with the same Apple Account. Family can be shared with up to 6 people through [Apple's Family Sharing](apple-partage). Each plan is available monthly, yearly or for life: see [pricing](tarifs)."
+      },
+      "essai": {
+        "q": "Can I try Premium for free?",
+        "r": "Yes: the monthly and yearly subscriptions, Solo or Family, start with a 7-day free trial. The lifetime purchase has no trial. If you cancel at least 24 hours before the trial ends, you won't be charged."
+      },
+      "restaurer": {
+        "q": "How do I restore my purchases?",
+        "r": "Premium usually comes back on its own on a new device. If not, open Account › Premium and tap “Restore Purchases”: Ulti finds a purchase made with the same Apple Account, or through Family Sharing with the Family plan."
+      },
+      "resilier": {
+        "q": "How do I cancel my subscription?",
+        "r": "Subscriptions are managed by Apple. In Ulti, open Account › Premium › “Manage my subscription”. Or, on iPhone or iPad: Settings › your name › Subscriptions, choose the Ulti subscription, then cancel it ([Apple help](apple-resilier)).\n\nCancel at least 24 hours before the end of the period to avoid renewal. Premium stays active until the end of the period you've already paid for."
+      },
+      "vie": {
+        "q": "I bought lifetime Premium: does my subscription stop on its own?",
+        "r": "No: Apple doesn't cancel a subscription on its own. If you had a monthly or yearly subscription before buying lifetime access, remember to cancel it so you're no longer charged. Ulti reminds you in Account › Premium."
+      },
+      "occupee": {
+        "q": "“No free connection left”: what's happening?",
+        "r": "Many subscriptions allow only one stream at a time. If another device is already watching, or you've just left a movie or another channel, the connection is still in use: your provider often takes 1 to 2 minutes to release the previous one. Stop playback on the other device, or wait a moment and try again.\n\nWith a single-connection subscription, a download pauses while you watch, then resumes on its own."
+      },
+      "refusee": {
+        "q": "“Connection refused by the provider” or “This subscription has expired”",
+        "r": "These messages come from your provider's server: expired subscription, changed login details, or something playing on another device. Check your login details in Account › Subscriptions, or contact your provider. Ulti can't change or renew your IPTV subscription."
+      },
+      "serveur": {
+        "q": "“Can't reach the server”",
+        "r": "Check your internet connection. If it works, your provider's server may be temporarily unavailable: try again a little later."
+      },
+      "identifiants": {
+        "q": "Are my login details safe?",
+        "r": "Yes. They are kept in your device's Keychain and never go through an Ulti server. With iCloud sync (Premium), they are end-to-end encrypted in your own iCloud account."
+      },
+      "donnees": {
+        "q": "Does Ulti collect data?",
+        "r": "No. No account to create, no advertising, no analytics. Everything is explained in [our privacy policy](privacy)."
+      }
+    },
+    "contact": {
+      "titre": "Need help?",
+      "texte": "Write to us at [{contact}](contact). Tell us your device (iPhone, iPad or Apple TV) and, if possible, the message shown. Never send your login details or your subscription address."
+    }
+  },
+  "confidentialite": {
+    "sections": {
+      "bref": {
+        "titre": "In short",
+        "texte": "Ulti does not collect any personal data. No account to create, no advertising, no ad tracking, no analytics. The app contains no statistics or crash-reporting tools from another company."
+      },
+      "identifiants": {
+        "titre": "Your login details",
+        "texte": "The server, username and password of your IPTV subscription are stored only on your device, in Apple's Keychain, and in your iCloud Keychain if you turn it on. They never go through an Ulti server: there isn't one."
+      },
+      "contacts": {
+        "titre": "What the app connects to",
+        "texte": "Ulti only connects to:\n\n• your IPTV provider, to play your channels, movies, series and TV guide. It's the service you chose: neither the developer nor a partner of the developer;\n• The Movie Database (TMDB), to show posters and summaries. The app only sends the title and year of the works shown, and the device's language and region: no identifier, and nothing you type in search;\n• Apple, for Premium purchases and, if you turn it on, for iCloud sync."
+      },
+      "ip": {
+        "titre": "Your IP address",
+        "texte": "As with any online service, your IPTV provider, TMDB and Apple receive your device's IP address when the app connects to them. Ulti keeps no record of it."
+      },
+      "icloud": {
+        "titre": "iCloud sync",
+        "texte": "With Premium, your profiles, subscriptions (login details included), My Content, My List, resume points, reminders, frequently watched channels and appearance settings can be synced across your devices. They are stored in the private part of your own iCloud account, end-to-end encrypted: the developer has no access to them. The parental code stays on each device."
+      },
+      "appletv": {
+        "titre": "Sending to Apple TV",
+        "texte": "When you send your subscription from iPhone to Apple TV by QR code, the data goes directly from one device to the other over your local network, encrypted. Nothing goes through a server. The parental code is never sent."
+      },
+      "message": {
+        "titre": "Your provider's message",
+        "texte": "When you paste your provider's message, it is analysed on your device, never sent or saved."
+      },
+      "fichiers": {
+        "titre": "Downloads and live pause",
+        "texte": "Downloaded videos stay on your device. For live pause, Ulti keeps the last minutes of the channel on the device; nothing is kept after the player closes."
+      },
+      "achats": {
+        "titre": "Purchases",
+        "texte": "Purchases are handled by Apple, on the App Store. Ulti only keeps your Premium status on the device, so it works offline, and sends it nowhere."
+      },
+      "plantages": {
+        "titre": "Crash reports",
+        "texte": "Ulti sends no reports itself. If you agreed, in your device settings, to share analytics with app developers, Apple may pass technical crash reports on to the developer. During TestFlight beta versions, feedback and reports you choose to send are passed on to the developer by Apple."
+      },
+      "site": {
+        "titre": "This website",
+        "texte": "This website uses no trackers, no cookies and no analytics, and loads nothing from another site. Only the country you choose is kept in your browser (local storage), to bring you back to the right version; it is erased with your browsing data.\n\nThe website is hosted by GitHub Pages. Like any host, GitHub receives technical connection data, including the IP address, to serve the pages ([GitHub's privacy statement](github-confidentialite))."
+      },
+      "droits": {
+        "titre": "Your data and your rights",
+        "texte": "As Ulti holds no data about you, there is nothing for us to access or delete. To erase everything from your devices, remove your subscriptions in Account › Subscriptions (which also erases them from iCloud), or delete the app."
+      },
+      "changements": {
+        "titre": "Changes",
+        "texte": "If this policy changes, the new version will be published on this page, with its date."
+      },
+      "contact": {
+        "titre": "Contact",
+        "texte": "A privacy question? Write to [{contact}](contact)."
+      }
+    }
+  },
+  "mentions": {
+    "aCompleter": "[To be completed]",
+    "enCours": "This page is being written: the information in brackets will be completed before the app is released.",
+    "champs": {
+      "nom": "Name or company name",
+      "statut": "Status",
+      "adresse": "Address",
+      "siret": "SIRET number",
+      "email": "Email",
+      "directeur": "Full name",
+      "telephone": "Phone",
+      "societe": "Company"
+    },
+    "sections": {
+      "editeur": {
+        "titre": "Publisher of the website and app"
+      },
+      "directeur": {
+        "titre": "Publication director"
+      },
+      "hebergeur": {
+        "titre": "Host",
+        "texte": "This website is hosted by GitHub Pages.",
+        "adresse": "88 Colin P. Kelly Jr. St., San Francisco, CA 94107, United States"
+      },
+      "propriete": {
+        "titre": "Intellectual property",
+        "texte": "The Ulti name, its logo, and the texts and design of this website are the property of the publisher. Apple, Apple TV, iPhone, iPad and App Store are trademarks of Apple Inc.\n\nThe movies and series shown in the example screens are free films from the [Blender Studio](blender) (© Blender Foundation), released under Creative Commons licences. The channels shown are made up."
+      },
+      "tmdb": {
+        "titre": "Movie and series data",
+        "texte": "The posters and summaries shown in the app come from [The Movie Database (TMDB)](tmdb). This product uses the TMDB API but is not endorsed or certified by TMDB."
+      },
+      "contenus": {
+        "titre": "Content",
+        "texte": "Ulti does not provide any channels or content. You must have your own sources, and the right to watch them."
+      }
+    }
+  },
+  "erreur": {
+    "metaTitre": "Page not found — Ulti",
+    "titre": "This page doesn't exist.",
+    "texte": "The address may be mistyped, or the page may have moved.",
+    "accueil": "Back to home",
+    "choix": "Choose a country or region"
   }
 }
