@@ -1,0 +1,130 @@
+---
+// Écran iPhone dessiné (maquette Main.dc.html) : 4 vues et la barre d'onglets du bas, cliquable.
+import { t } from "../../lib/textes";
+import { ecrans, chaine, titre, anneau, couleurAnneau } from "../../lib/ecrans";
+
+interface Props { langue: string; id: string; initiale?: string }
+const { langue: l, id, initiale = "accueil" } = Astro.props;
+---
+<div class="ecran-tel" data-ecran={id}>
+  <div class="vue" data-vue="accueil" hidden={initiale !== "accueil"} aria-hidden="true">
+    <div class="contenu">
+      <p class="titre">{t(l, "ecrans.ceSoir")}</p>
+      <div class="puces chiffres">
+        <span class="puce active">{t(l, "ecrans.maintenant")}</span>
+        {ecrans.telHeures.map((h) => <span class="puce">{h}</span>)}
+      </div>
+      <div class="liste">
+        {ecrans.telSoiree.map((s) => { const c = chaine(s.chaine); return (
+          <div class="ligne">
+            <div class="rond" style={`background:${anneau(s.avance, c.info)}`}>
+              <div class="rond-logo" style={`background:${c.fond};font-size:${s.taille}cqw;font-family:${c.police};letter-spacing:${s.espace}`}>{c.logo}</div>
+            </div>
+            <div class="texte">
+              <p class="ligne-titre">{titre(s, l)}</p>
+              <p class="ligne-sous chiffres">{c.nom} · {s.heure}</p>
+            </div>
+          </div>
+        ); })}
+      </div>
+    </div>
+  </div>
+
+  <div class="vue" data-vue="direct" hidden={initiale !== "direct"} aria-hidden="true">
+    <div class="contenu">
+      <p class="titre">{t(l, "onglets.direct")}</p>
+      <div class="liste serree">
+        {ecrans.telDirect.map((d) => { const c = chaine(d.chaine); return (
+          <div class="ligne direct">
+            <div class="carre" style={`background:${c.fond};font-size:${d.taille}cqw;font-family:${c.police}`}>{c.logo}</div>
+            <div class="texte large">
+              <p class="ligne-titre petit">{titre(d, l)}</p>
+              <div class="avance"><div style={`width:${d.avance}%;background:${couleurAnneau(c.info)}`}></div></div>
+            </div>
+          </div>
+        ); })}
+      </div>
+    </div>
+  </div>
+
+  <div class="vue" data-vue="films" hidden={initiale !== "films"} aria-hidden="true">
+    <div class="contenu">
+      <p class="titre">{t(l, "onglets.films")}</p>
+      <div class="affiches">
+        {ecrans.telFilms.map((f) => <div class="affiche" style={`background:${f.fond}`}>{f.affiche}</div>)}
+      </div>
+    </div>
+  </div>
+
+  <div class="vue" data-vue="series" hidden={initiale !== "series"} aria-hidden="true">
+    <div class="serie-haut">
+      <div>
+        <p class="serie-genre">{t(l, "ecrans.serieGenreCourt")}</p>
+        <p class="serie-titre">{ecrans.vedette.serie}</p>
+      </div>
+    </div>
+    <div class="episodes">
+      {ecrans.episodes.map((e) => (
+        <div class="episode">
+          <div class="episode-image" style={`background:${e.image}`}><div style={`width:${e.vu}%`}></div></div>
+          <div class="texte">
+            <p class="ep-num">{t(l, "ecrans.episodeCourt", { numero: String(e.numero) })}</p>
+            <p class="ep-titre">{e.titre}</p>
+            <p class="ep-etat">{t(l, `ecrans.etats.${e.etat}`)}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <nav class="barre" aria-label={t(l, "apercu.ongletsTel")}>
+    {ecrans.ongletsTel.map((o) => (
+      <button type="button" data-cible={id} data-vue={o} aria-pressed={o === initiale ? "true" : "false"}>{t(l, `onglets.${o}`)}</button>
+    ))}
+  </nav>
+</div>
+
+<style>
+  .ecran-tel { container-type: inline-size; position: relative; width: 100%; aspect-ratio: 9 / 19.5; overflow: hidden; background: #000; color: #f5f5f7; text-align: left; border-radius: 13% / 6%; }
+  .ecran-tel p { margin: 0; }
+  .vue { position: absolute; inset: 0; }
+  .vue[hidden] { display: none; }
+  .vue.entree { animation: fondu 0.2s ease-out; }
+  @keyframes fondu { from { opacity: 0; } to { opacity: 1; } }
+  .contenu { padding: 14cqw 6cqw 0; }
+  .titre { font-size: 11cqw; font-weight: 800; letter-spacing: -0.03em; }
+  .puces { margin-top: 4cqw; display: flex; gap: 2.4cqw; font-size: 4.2cqw; font-weight: 600; }
+  .puce { padding: 1.8cqw 3.6cqw; border-radius: 999px; background: #242428; color: #d1d1d6; }
+  .puce.active { background: #f5f5f7; color: #000; }
+  .liste { margin-top: 6cqw; display: flex; flex-direction: column; gap: 4.5cqw; }
+  .liste.serree { margin-top: 5cqw; gap: 4cqw; }
+  .ligne { display: flex; align-items: center; gap: 4cqw; }
+  .ligne.direct { gap: 3.5cqw; }
+  .rond { flex: none; width: 15cqw; height: 15cqw; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .rond-logo { width: 12.6cqw; height: 12.6cqw; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1; font-weight: 800; color: #fff; }
+  .carre { flex: none; width: 13cqw; height: 13cqw; border-radius: 3cqw; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1; font-weight: 800; color: #fff; }
+  .texte { min-width: 0; }
+  .texte.large { flex: 1; }
+  .ligne-titre { font-size: 4.6cqw; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ligne-titre.petit { font-size: 4.4cqw; }
+  .ligne-sous { margin-top: 0.8cqw !important; font-size: 3.8cqw; color: #8e8e93; }
+  .avance { margin-top: 1.6cqw; height: 0.9cqw; border-radius: 999px; background: #3a3a3e; overflow: hidden; }
+  .avance div { height: 100%; }
+  .affiches { margin-top: 5cqw; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3cqw; }
+  .affiche { aspect-ratio: 2 / 3; border-radius: 2.4cqw; display: flex; align-items: flex-end; padding: 2cqw; font-size: 3cqw; line-height: 1.05; font-weight: 800; color: #fff; }
+  .serie-haut { height: 62cqw; background: linear-gradient(160deg, #6e8f3c 0%, #3d5a22 60%, #1e2d12 100%); display: flex; align-items: flex-end; padding: 6cqw; }
+  .serie-genre { font-size: 3.2cqw; font-weight: 700; letter-spacing: 0.08em; color: #e5ead9; text-transform: uppercase; }
+  .serie-titre { margin-top: 1cqw !important; font-size: 10cqw; font-weight: 800; letter-spacing: -0.04em; line-height: 1; }
+  .episodes { padding: 5cqw 6cqw 0; display: flex; flex-direction: column; gap: 4cqw; }
+  .episode { display: flex; gap: 3.5cqw; align-items: center; }
+  .episode-image { flex: none; width: 30cqw; aspect-ratio: 16 / 9; border-radius: 2.4cqw; position: relative; overflow: hidden; }
+  .episode-image div { position: absolute; left: 0; bottom: 0; height: 1cqw; background: #f5f5f7; }
+  .ep-num { font-size: 3.4cqw; color: #8e8e93; }
+  .ep-titre { margin-top: 0.6cqw !important; font-size: 4.4cqw; font-weight: 700; }
+  .ep-etat { margin-top: 0.6cqw !important; font-size: 3.4cqw; color: #a1a1a6; }
+  .barre { position: absolute; left: 5cqw; right: 5cqw; bottom: 5cqw; height: 15cqw; border-radius: 999px; background: rgba(44,44,48,0.92); border: 1px solid #3a3a3e; display: flex; align-items: center; justify-content: space-around; padding: 0 2cqw; }
+  .barre button { border: 0; cursor: pointer; font: inherit; font-size: 3.3cqw; font-weight: 500; color: #a1a1a6; background: transparent; padding: 2.2cqw 3.4cqw; border-radius: 999px; }
+  .barre button[aria-pressed="true"] { font-weight: 700; color: #f5f5f7; background: rgba(120,120,128,0.36); }
+  .barre button:focus-visible { outline: 0.5cqw solid #f5f5f7; }
+  @media (prefers-reduced-motion: reduce) { .vue.entree { animation: none; } }
+</style>

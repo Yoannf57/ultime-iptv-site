@@ -1,0 +1,12 @@
+---
+// Halo de lumière blanche derrière les appareils (CLAUDE.md, section 5 : 10 à 15 % au centre).
+interface Props { intensite?: number; etendue?: "large" | "normal" }
+const { intensite = 0.14, etendue = "normal" } = Astro.props;
+const fond = `radial-gradient(ellipse 50% 50% at 50% 52%, rgba(255,255,255,${intensite}) 0%, rgba(255,255,255,${(intensite / 3).toFixed(3)}) 40%, rgba(255,255,255,0) 72%)`;
+---
+<div class:list={["halo", etendue]} aria-hidden="true" style={`background:${fond}`}></div>
+
+<style>
+  .halo { position: absolute; pointer-events: none; left: -10%; right: -10%; top: -12%; bottom: -12%; }
+  .halo.large { left: -12%; right: -12%; top: -18%; bottom: -14%; }
+</style>
