@@ -5,7 +5,8 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 03/11/2026 après-midi (formules Solo et Famille, films et séries passés en Premium).
+Dernière mise à jour : 03/11/2026 fin d'après-midi (formules Solo et Famille, films et séries en Premium, gratuit = le
+direct seulement).
 
 ## Nom de l'app (décidé par Yoann le 03/11/2026)
 
@@ -205,9 +206,13 @@ de référence, TTC). Deux formules Premium :
   Connect au Lot 11. Autres monnaies : « Prix affiché dans l'App Store » tant que Yoann n'a pas relevé les prix exacts.
 - Ne jamais calculer un prix par conversion de monnaie.
 
-**Gratuit = le direct** (décision de Yoann du 03/11 à 13 h 40, qui remplace le découpage du matin) : direct, guide TV et
-rappels, Mes contenus (catégories de chaînes), regroupement des doublons de chaînes, coller le message du fournisseur,
-image dans l'image, appairage Apple TV par QR code, un profil Enfant avec code parental, thème Noir.
+**Gratuit = le direct seulement** (confirmé par Yoann le 03/11 en fin d'après-midi) : direct, guide TV et rappels, un
+profil Enfant avec code parental, appairage Apple TV par QR code, thème Noir.
+
+**À confirmer par Yoann avant S2** : Mes contenus (catégories de chaînes), regroupement des doublons de chaînes, coller
+le message du fournisseur, image dans l'image. Ces fonctions ne figurent plus dans la liste du gratuit : ne pas les
+présenter comme gratuites tant que Yoann n'a pas dit si elles sont gratuites ou Premium. Attention, l'étape « Prêt en
+une minute » (section 4) et la section Apple TV citent « coller le message » et l'image dans l'image.
 
 **Premium** : **films et séries** (catalogue, fiches, lecture, reprises, toutes les versions d'un film, affiches et
 résumés TMDB), replay, pause du direct, multi-écran (**« Bientôt »** tant que le Lot 7c n'est pas publié), synchro
