@@ -79,6 +79,27 @@ for (const langue of Object.keys(langues)) {
   for (const cle of clesEcrans) if (!(cle in cles(langue))) problemes.push(`[${langue}] clé manquante (appelée par ecrans.json) : ${cle}`);
 }
 
+// 3 ter. Les textes appelés depuis l'ordre des pages Support, Confidentialité et Mentions (src/donnees/pages.json).
+const donneesPages = JSON.parse(readFileSync(join(racine, "src/donnees/pages.json"), "utf8"));
+const clesPages = new Set();
+for (const g of donneesPages.support) {
+  clesPages.add(`support.groupes.${g.groupe}`);
+  for (const q of g.questions) { clesPages.add(`support.q.${q}.q`); clesPages.add(`support.q.${q}.r`); }
+}
+for (const id of donneesPages.confidentialite) { clesPages.add(`confidentialite.sections.${id}.titre`); clesPages.add(`confidentialite.sections.${id}.texte`); }
+for (const id of donneesPages.mentions) clesPages.add(`mentions.sections.${id}.titre`);
+for (const page of ["support", "privacy", "legal"]) for (const c of ["titre", "metaTitre", "description", "chapeau"]) clesPages.add(`pages.${page}.${c}`);
+for (const langue of Object.keys(langues)) {
+  for (const cle of clesPages) if (!(cle in cles(langue))) problemes.push(`[${langue}] clé manquante (appelée par pages.json) : ${cle}`);
+  // Les liens « [libellé](cible) » doivent être les mêmes dans toutes les langues.
+  for (const [cle, valeur] of Object.entries(cles(langue))) {
+    const liens = (s) => JSON.stringify((String(s).match(/\]\(([\w-]+)\)/g) || []).sort());
+    for (const [autre, clesAutre] of Object.entries(langues)) {
+      if (autre > langue && cle in clesAutre && liens(valeur) !== liens(clesAutre[cle])) problemes.push(`[${langue}/${autre}] liens différents dans ${cle}`);
+    }
+  }
+}
+
 // 4. Chaque clé écrite dans le code, t(…, "cle"), doit exister.
 function fichiers(dossier) {
   return readdirSync(dossier).flatMap((nom) => {
@@ -88,7 +109,7 @@ function fichiers(dossier) {
 }
 for (const fichier of fichiers(join(racine, "src")).filter((f) => [".astro", ".ts", ".js"].includes(extname(f)))) {
   const contenu = readFileSync(fichier, "utf8");
-  for (const [, cle] of contenu.matchAll(/\bt\(\s*[^,()]+,\s*["']([^"'$]+)["']/g)) {
+  for (const [, cle] of contenu.matchAll(/\bt(?:Html)?\(\s*[^,()]+,\s*["']([^"'$]+)["']/g)) {
     if (!toutesLesCles.has(cle)) problemes.push(`${fichier.replace(racine, "")} : la clé « ${cle} » n'existe dans aucune langue`);
   }
 }

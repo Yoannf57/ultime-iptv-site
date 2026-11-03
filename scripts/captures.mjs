@@ -14,6 +14,13 @@ const pages = [
   { nom: "fr-fr", chemin: "fr-fr/", locale: "fr-FR", fuseau: "Europe/Paris" },
   { nom: "en", chemin: "en/", locale: "en-GB", fuseau: "Europe/London" },
   { nom: "choix", chemin: "pays/", locale: "fr-FR", fuseau: "Europe/Paris" },
+  // Pages obligatoires (S3).
+  ...["support", "privacy", "legal"].flatMap((page) => [
+    { nom: `${page}-fr-fr`, chemin: `fr-fr/${page}/`, locale: "fr-FR", fuseau: "Europe/Paris" },
+    { nom: `${page}-en`, chemin: `en/${page}/`, locale: "en-GB", fuseau: "Europe/London" },
+  ]),
+  { nom: "404-fr", chemin: "nexiste-pas/", locale: "fr-FR", fuseau: "Europe/Paris" },
+  { nom: "404-en", chemin: "nexiste-pas/", locale: "en-GB", fuseau: "Europe/London" },
   // Bandeau : navigateur belge qui arrive sur la page France.
   { nom: "bandeau-fr-be", chemin: "fr-fr/", locale: "fr-BE", fuseau: "Europe/Brussels" },
 ];
@@ -84,6 +91,23 @@ if (!process.argv.includes("--sans-captures")) {
     console.log("📸 " + `${dossier}pied-${taille}.png`);
     await c.close();
   }
+}
+
+// Page 404 : le lien « Accueil » doit suivre le pays enregistré, sinon le pays deviné.
+for (const c of [
+  { locale: "fr-FR", fuseau: "Europe/Paris", attendu: "fr-fr/" },
+  { locale: "en-US", fuseau: "America/New_York", attendu: "en-us/" },
+  { locale: "fr-FR", fuseau: "Europe/Paris", deja: "fr-ca", attendu: "fr-ca/" },
+]) {
+  const contexte = await navigateur.newContext({ locale: c.locale, timezoneId: c.fuseau });
+  if (c.deja) await contexte.addInitScript((code) => localStorage.setItem("ultime-pays", code), c.deja);
+  const page = await contexte.newPage();
+  const reponse = await page.goto(adresse + "nexiste-pas/", { waitUntil: "networkidle" });
+  const href = await page.locator("main [data-accueil]").first().getAttribute("href");
+  const ok = reponse.status() === 404 && href === new URL(adresse).pathname + c.attendu;
+  if (!ok) echecs++;
+  console.log(`${ok ? "✓" : "✗"} 404 (${c.locale}${c.deja ? `, choix ${c.deja}` : ""}) → Accueil = ${href} (code ${reponse.status()})`);
+  await contexte.close();
 }
 
 // Page racine : où arrive-t-on ?
