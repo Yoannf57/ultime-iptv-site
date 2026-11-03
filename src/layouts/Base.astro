@@ -13,12 +13,14 @@ interface Props {
   description: string;
   chemin: string;          // chemin de la page, sans la base (ex. « fr-fr/ »)
   codePays?: string;       // pays affiché (absent sur les pages de choix)
-  alternatives?: boolean;  // balises hreflang vers les autres pays
+  alternatives?: boolean | string;  // balises hreflang vers les autres pays (texte = sous-page, ex. « privacy/ »)
   languesPied?: string[];  // pages bilingues : langues du pied de page
+  erreur?: boolean;        // page 404 : jamais indexée, pas d'adresse canonique
 }
-const { langue, lang = langue, titre, description, chemin, codePays, alternatives = false, languesPied } = Astro.props;
+const { langue, lang = langue, titre, description, chemin, codePays, alternatives = false, languesPied, erreur = false } = Astro.props;
 const direction = t(langue, "meta.direction");
 const canonique = lienAbsolu(chemin, Astro.site);
+const sousChemin = typeof alternatives === "string" ? alternatives : "";
 ---
 <!doctype html>
 <html lang={lang} dir={direction}>
@@ -28,12 +30,12 @@ const canonique = lienAbsolu(chemin, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{titre}</title>
     <meta name="description" content={description} />
-    {!config.indexable && <meta name="robots" content="noindex" />}
-    <link rel="canonical" href={canonique} />
+    {(!config.indexable || erreur) && <meta name="robots" content="noindex" />}
+    {!erreur && <link rel="canonical" href={canonique} />}
     {alternatives && pays.map((p) => (
-      <link rel="alternate" hreflang={p.code === "en" ? "en" : p.locale} href={lienAbsolu(`${p.code}/`, Astro.site)} />
+      <link rel="alternate" hreflang={p.code === "en" ? "en" : p.locale} href={lienAbsolu(`${p.code}/${sousChemin}`, Astro.site)} />
     ))}
-    {alternatives && <link rel="alternate" hreflang="x-default" href={lienAbsolu("en/", Astro.site)} />}
+    {alternatives && <link rel="alternate" hreflang="x-default" href={lienAbsolu(`en/${sousChemin}`, Astro.site)} />}
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#000000" />
     <link rel="icon" href={lien("favicon.svg")} type="image/svg+xml" />

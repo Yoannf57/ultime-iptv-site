@@ -2,15 +2,18 @@
 import config from "../../../site.config.mjs";
 import { t } from "../../lib/textes";
 import Logo from "../Logo.astro";
-interface Props { langue: string; lienAppStore: string | null }
-const { langue: l, lienAppStore } = Astro.props;
+import { lienPays } from "../../lib/liens";
+// « codePays » : sur les sous-pages (support, confidentialité…), le logo et les liens mènent à l'accueil du pays.
+interface Props { langue: string; lienAppStore: string | null; codePays?: string }
+const { langue: l, lienAppStore, codePays } = Astro.props;
+const accueil = codePays ? lienPays(codePays) : "";
 const liens = [["fonctions", "fonctions"], ["visite", "visite"], ["apple-tv", "appletv"], ["tarifs", "tarifs"], ["questions", "questions"]];
 ---
 <header class="entete">
   <nav aria-label={t(l, "entete.navigation")}>
-    <a href="#haut" class="accueil" aria-label={t(l, "marque.retourHaut")}><Logo langue={l} /></a>
+    <a href={codePays ? accueil : "#haut"} class="accueil" aria-label={t(l, codePays ? "marque.accueil" : "marque.retourHaut")}><Logo langue={l} /></a>
     <div class="liens">
-      {liens.map(([ancre, cle]) => <a href={`#${ancre}`}>{t(l, `entete.${cle}`)}</a>)}
+      {liens.map(([ancre, cle]) => <a href={`${accueil}#${ancre}`}>{t(l, `entete.${cle}`)}</a>)}
     </div>
     {config.disponible && lienAppStore
       ? <a class="pastille pleine" href={lienAppStore}>{t(l, "entete.telecharger")}</a>
