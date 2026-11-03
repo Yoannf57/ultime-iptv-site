@@ -24,6 +24,12 @@ function cartes(id: "solo" | "famille") {
 <section id="tarifs" aria-labelledby="titre-tarifs" class="section apparition">
   <h2 id="titre-tarifs" class="titre-section centre">{t(l, "tarifs.titre")}</h2>
   <p class="chapeau centre">{t(l, "tarifs.phrase")}</p>
+  <div class="choix-bloc avec-js" data-groupe="formule-legende">
+    <div class="choix" role="group" aria-label={t(l, "tarifs.choix")}>
+      {formules.map((f, i) => <button type="button" data-cible="formule" data-vue={f.id} aria-pressed={i === 0 ? "true" : "false"}>{t(l, f.bouton)}</button>)}
+    </div>
+    {formules.map((f, i) => <p class="legende" data-legende={f.id} hidden={i > 0}>{t(l, f.legende)}</p>)}
+  </div>
   <div class="grille">
     <article class="carte offre gratuit">
       <h3>{t(l, "tarifs.gratuitTitre")}</h3>
@@ -31,13 +37,10 @@ function cartes(id: "solo" | "famille") {
       <p class="detail">{t(l, "tarifs.gratuitTexte")}</p>
     </article>
     <div class="payant">
-      <div class="choix avec-js" role="group" aria-label={t(l, "tarifs.choix")}>
-        {formules.map((f, i) => <button type="button" data-cible="formule" data-vue={f.id} aria-pressed={i === 0 ? "true" : "false"}>{t(l, f.bouton)}</button>)}
-      </div>
-      <div data-groupe="formule">
+      <div data-groupe="formule" class="panneaux">
         {formules.map((f, i) => (
           <div class="formule" data-panneau={f.id} hidden={i > 0}>
-            <p class="legende"><span class="sans-js">{t(l, f.bouton)} · </span>{t(l, f.legende)}</p>
+            <p class="legende sans-js">{t(l, f.bouton)} · {t(l, f.legende)}</p>
             <div class="trois">
               {cartes(f.id).map((c) => (
                 <article class:list={["carte", "offre", { mis: c.mis }]}>
@@ -63,22 +66,26 @@ function cartes(id: "solo" | "famille") {
 <style>
   .centre { text-align: center; margin-left: auto; margin-right: auto; }
   .chapeau.centre { margin-top: 1.125rem; max-width: 36rem; }
-  .grille { margin-top: 3.5rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: 1rem; }
-  :global(html.js) .grille { align-items: end; }
-  .payant { min-width: 0; }
-  .choix { margin: 0 auto 1rem; display: flex; gap: 0.375rem; padding: 0.375rem; border-radius: 999px; background: #141416; width: fit-content; }
+  .choix-bloc { margin-top: 2.5rem; text-align: center; }
+  .grille { margin-top: 2rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: 1rem; align-items: stretch; }
+  :global(html:not(.js)) .grille { margin-top: 3.5rem; align-items: start; }
+  .payant, .panneaux { min-width: 0; }
+  /* Cartes de même hauteur : seulement quand une seule formule est affichée (avec JavaScript). */
+  :global(html.js) .payant, :global(html.js) .panneaux, :global(html.js) .formule, :global(html.js) .trois { height: 100%; }
+  .choix { margin: 0 auto; display: flex; gap: 0.375rem; padding: 0.375rem; border-radius: 999px; background: #141416; width: fit-content; }
   .choix button { border: 0; cursor: pointer; padding: 0.5625rem 1.25rem; border-radius: 999px; font: inherit; font-size: 0.9375rem; font-weight: 600; background: transparent; color: #d1d1d6; }
   .choix button[aria-pressed="true"] { background: #f5f5f7; color: #000; }
+  .legende { margin: 1rem 0 0; text-align: center; font-size: 0.9375rem; color: #a1a1a6; }
+  .legende[hidden] { display: none; }
   .formule[hidden] { display: none; }
   :global(html:not(.js)) .formule[hidden] { display: block; }
   .formule.entree { animation: fondu 0.2s ease-out; }
-  .formule + .formule { margin-top: 1.5rem; }
+  :global(html:not(.js)) .formule + .formule { margin-top: 1.5rem; }
+  .formule .legende { margin: 0 0 1rem; }
   @keyframes fondu { from { opacity: 0; } to { opacity: 1; } }
-  .legende { margin: 0 0 1rem; text-align: center; font-size: 0.9375rem; color: #a1a1a6; }
   .trois { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
   .offre { border-radius: 1.5rem; padding: 2rem; display: flex; flex-direction: column; gap: 0.5rem; }
   .offre.mis { border: 2px solid #fff; padding: 1.875rem; }
-  @media (min-width: 68.0625rem) { .offre { min-height: 16rem; } }
   .ligne-titre { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
   h3 { margin: 0; font-size: 1.1875rem; font-weight: 700; }
   .remise { font-size: 0.8125rem; font-weight: 700; background: #fff; color: #000; padding: 0.25rem 0.625rem; border-radius: 999px; white-space: nowrap; }
@@ -89,7 +96,6 @@ function cartes(id: "solo" | "famille") {
   .note { margin: 1.25rem 0 0; text-align: center; font-size: 0.8125rem; color: #8e8e93; }
   @media (max-width: 68rem) {
     .grille { grid-template-columns: minmax(0, 1fr); }
-    :global(html.js) .grille { align-items: stretch; }
   }
   @media (max-width: 45rem) { .trois { grid-template-columns: minmax(0, 1fr); } }
   @media (prefers-reduced-motion: reduce) { .formule.entree { animation: none; } }
