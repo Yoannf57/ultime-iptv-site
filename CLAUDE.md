@@ -275,5 +275,5 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 
 - [x] S1 — Socle
 - [x] S2 — Accueil
-- [ ] S3 — Pages obligatoires
+- [x] S3 — Pages obligatoires
 - [ ] S4 — Captures et finitions
