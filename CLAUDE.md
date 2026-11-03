@@ -267,7 +267,7 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 
 ## 10. Avancement
 
-- [ ] S1 — Socle
+- [x] S1 — Socle
 - [ ] S2 — Accueil
 - [ ] S3 — Pages obligatoires
 - [ ] S4 — Captures et finitions
