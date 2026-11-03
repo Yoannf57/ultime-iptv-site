@@ -15,4 +15,17 @@ export default {
   github: { site: "https://yoannf57.github.io", base: "/ultime-iptv-site/" },
 
   contact: "contact@ultitv.com",
+
+  // Mentions légales (page /<pays>/legal/). À remplir par Yoann : tant qu'une valeur vaut null,
+  // la page affiche « [À compléter] ». Ne jamais deviner ces informations.
+  editeur: {
+    nom: null,        // nom et prénom, ou raison sociale
+    statut: null,     // ex. « Entrepreneur individuel (micro-entreprise) », « SAS au capital de … »
+    adresse: null,    // adresse postale
+    siret: null,      // numéro SIRET, si entreprise
+    directeur: null,  // directeur de la publication (nom et prénom)
+  },
+  // Hébergeur : GitHub, Inc. (adresse dans les textes). Aucun numéro de téléphone publié sur les pages officielles
+  // de GitHub au 03/11/2026 : à compléter si Yoann en obtient un auprès de GitHub.
+  hebergeur: { nom: "GitHub, Inc.", telephone: null },
 };
