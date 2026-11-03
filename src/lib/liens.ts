@@ -17,3 +17,29 @@ export function lienAbsolu(chemin: string, site: URL | undefined): string {
 }
 
 export { base };
+
+// Sous-pages d'un pays (mêmes noms dans toutes les langues, comme apple.com).
+export const sousPages = ["support", "privacy", "legal"] as const;
+export type SousPage = (typeof sousPages)[number];
+export function lienSousPage(code: string, page: SousPage): string {
+  return lien(`${code}/${page}/`);
+}
+
+// Cibles des liens écrits dans les textes (« [libellé](cible) »), pour un pays donné.
+export function ciblesTextes(code: string, contact: string): Record<string, string> {
+  const apple = code === "en" ? "en-us" : code;
+  return {
+    contact: `mailto:${contact}`,
+    support: lienSousPage(code, "support"),
+    privacy: lienSousPage(code, "privacy"),
+    legal: lienSousPage(code, "legal"),
+    accueil: lien(`${code}/`),
+    tarifs: lien(`${code}/#tarifs`),
+    pays: lien("pays/"),
+    "apple-resilier": `https://support.apple.com/${apple}/118428`,
+    "apple-partage": `https://support.apple.com/${apple}/108380`,
+    "github-confidentialite": "https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement",
+    "blender": "https://studio.blender.org/films/",
+    "tmdb": "https://www.themoviedb.org/",
+  };
+}
