@@ -5,8 +5,8 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 03/11/2026 fin d'après-midi (formules Solo et Famille, films et séries en Premium, gratuit = le
-direct seulement).
+Dernière mise à jour : 03/11/2026 en soirée (iPad, Mac et multi-écran dans la V1 ; formules Solo et Famille, films et
+séries en Premium, gratuit = le direct seulement).
 
 ## Nom de l'app (décidé par Yoann le 03/11/2026)
 
@@ -44,7 +44,7 @@ phrases, sans jargon.
    - captures d'écran faites **uniquement avec la liste de démonstration** (films Blender, série *Caminandes*, chaînes de
      test d'Apple), jamais avec l'abonnement de Yoann.
 5. **Ne jamais promettre ce que l'app ne fait pas.** Chaque fonction citée doit exister dans l'app (voir section 6).
-   Si une fonction n'est pas encore faite (multi-écran, grands écrans…), elle n'apparaît pas, ou avec « Bientôt ».
+   Si une fonction n'est pas encore faite, elle n'apparaît pas, ou avec « Bientôt ».
 6. **Ne jamais proposer une langue que l'app n'a pas.** Aujourd'hui : français et anglais seulement.
 7. Git : commits avec les fichiers nommés un par un (pas de `git add -A`), jamais d'envoi forcé, jamais de secret dans
    le dépôt. Push à la fin de chaque étape validée.
@@ -117,7 +117,7 @@ une langue.
    movies and series: your IPTV subscription becomes an intuitive TV app. Just open it and watch. » Idée à garder :
    une app simple, prête à l'emploi, sans réglages compliqués.
    Sections, dans l'ordre :
-   1. Grand visuel : petite ligne « Pour iPhone et Apple TV », l'accroche, une phrase, bouton App Store (ou
+   1. Grand visuel : petite ligne « Pour iPhone, iPad, Mac et Apple TV », l'accroche, une phrase, bouton App Store (ou
       « Bientôt »), iPhone et Apple TV qui montrent l'app.
       **Écrans cliquables** (demande de Yoann, 03/11/2026) : sur l'Apple TV, la barre Accueil · Direct · Replay ·
       Films · Séries change l'écran ; sur l'iPhone, la barre du bas (Accueil · Direct · Films · Séries). Petite phrase
@@ -135,8 +135,8 @@ une langue.
    3. Apple TV : appairage par QR code depuis l'iPhone (on ne tape rien à la télécommande), zapping, image dans l'image.
    4. Famille : profils, profil Enfant avec code parental.
    5. Premium : **films et séries** (affiches, résumés, reprises), pause du direct, replay, téléchargements, synchro
-      iCloud, plusieurs abonnements et profils, thèmes ; dernière ligne grisée « Multi-écran, jusqu'à 4 directs à la
-      fois · BIENTÔT » (à activer quand le Lot 7c est publié).
+      iCloud, plusieurs abonnements et profils, thèmes, et le multi-écran comme les autres fonctions (« jusqu'à 4
+      directs à la fois (2 sur iPhone) »).
    6. « Prêt en une minute », 3 étapes : « Ajoutez votre abonnement » (collez le message du fournisseur, ou saisissez
       ses identifiants) → « Ulti range tout » → « Regardez partout ».
    7. Tarifs (section 6).
@@ -216,13 +216,16 @@ de référence, TTC). Deux formules Premium :
 appairage Apple TV par QR code, un profil Enfant avec code parental, thème Noir.
 
 **Premium** : **films et séries** (catalogue, fiches, lecture, reprises, toutes les versions d'un film, affiches et
-résumés TMDB), replay, pause du direct, multi-écran (**« Bientôt »** tant que le Lot 7c n'est pas publié), synchro
+résumés TMDB), replay, pause du direct, multi-écran (dans la V1, décidé par Yoann le 03/11/2026 : jusqu'à 4 directs à la fois sur Apple TV, iPad et Mac,
+2 sur iPhone, dans la limite des connexions de l'abonnement), synchro
 iCloud, profils adultes supplémentaires, plusieurs abonnements, téléchargements, rangées « Pour vous » et
 « Populaires », thèmes Halo et Programme, icônes alternatives. En version gratuite, l'app laisse parcourir les films et
 séries mais la lecture demande Premium : sur le site, on peut dire « parcourez le catalogue, regardez avec Premium »
 sans jamais laisser croire que les films sont gratuits.
 
-**Appareils** : iPhone et Apple TV. iPad (même app agrandie). Mac et Vision Pro : seulement quand le Lot 7b est fait.
+**Appareils** (décidé par Yoann le 03/11/2026) : iPhone, iPad, Mac et Apple TV dès la V1. Écrire « iPhone, iPad, Mac
+et Apple TV » partout où on liste les appareils. Mac = Mac avec puce Apple, qui utilise l'app iPad. Vision Pro : pas
+avant que Yoann le dise.
 
 **Mention TMDB obligatoire** dans le pied de page : « Ce produit utilise l'API TMDB mais n'est ni approuvé ni certifié
 par TMDB », avec le logo TMDB selon leurs règles.
