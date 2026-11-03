@@ -206,13 +206,9 @@ de référence, TTC). Deux formules Premium :
   Connect au Lot 11. Autres monnaies : « Prix affiché dans l'App Store » tant que Yoann n'a pas relevé les prix exacts.
 - Ne jamais calculer un prix par conversion de monnaie.
 
-**Gratuit = le direct seulement** (confirmé par Yoann le 03/11 en fin d'après-midi) : direct, guide TV et rappels, un
-profil Enfant avec code parental, appairage Apple TV par QR code, thème Noir.
-
-**À confirmer par Yoann avant S2** : Mes contenus (catégories de chaînes), regroupement des doublons de chaînes, coller
-le message du fournisseur, image dans l'image. Ces fonctions ne figurent plus dans la liste du gratuit : ne pas les
-présenter comme gratuites tant que Yoann n'a pas dit si elles sont gratuites ou Premium. Attention, l'étape « Prêt en
-une minute » (section 4) et la section Apple TV citent « coller le message » et l'image dans l'image.
+**Gratuit = le direct** (confirmé par Yoann le 03/11 en fin d'après-midi) : direct, guide TV et rappels, Mes contenus
+(catégories de chaînes), regroupement des doublons de chaînes, coller le message du fournisseur, image dans l'image,
+appairage Apple TV par QR code, un profil Enfant avec code parental, thème Noir.
 
 **Premium** : **films et séries** (catalogue, fiches, lecture, reprises, toutes les versions d'un film, affiches et
 résumés TMDB), replay, pause du direct, multi-écran (**« Bientôt »** tant que le Lot 7c n'est pas publié), synchro
