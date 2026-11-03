@@ -1,7 +1,8 @@
 ---
 import { t } from "../../lib/textes";
-interface Props { langue: string }
-const { langue: l } = Astro.props;
+import { lienSousPage } from "../../lib/liens";
+interface Props { langue: string; codePays: string }
+const { langue: l, codePays } = Astro.props;
 ---
 <section aria-labelledby="titre-vie-privee" class="section bas apparition">
   <div class="carte cadre">
@@ -10,6 +11,7 @@ const { langue: l } = Astro.props;
       <h2 id="titre-vie-privee">{t(l, "viePrivee.titre")}</h2>
       <p class="gris">{t(l, "viePrivee.texte")}</p>
     </div>
+    <a class="lien" href={lienSousPage(codePays, "privacy")}>{t(l, "viePrivee.lien")}</a>
   </div>
 </section>
 
@@ -20,4 +22,5 @@ const { langue: l } = Astro.props;
   h2 { margin: 0; font-size: clamp(1.75rem, 3vw, 2.5rem); letter-spacing: -0.03em; font-weight: 800; }
   @media (max-width: 45rem) { .cadre { padding: 2.25rem 1.75rem; gap: 1.25rem; } }
   p { margin: 0.75rem 0 0; font-size: 1.0625rem; line-height: 1.5; }
+  .lien { color: #f5f5f7; font-size: 1.0625rem; font-weight: 600; }
 </style>

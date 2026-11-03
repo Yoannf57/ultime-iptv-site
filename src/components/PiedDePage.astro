@@ -2,23 +2,32 @@
 import config from "../../site.config.mjs";
 import { t } from "../lib/textes";
 import { trouverPays } from "../lib/pays";
-import { lien } from "../lib/liens";
+import { lien, lienSousPage, sousPages } from "../lib/liens";
 
 interface Props { langue: string; codePays?: string; langues?: string[] }
 // « langues » : sur les pages de choix (bilingues), les phrases obligatoires sont écrites dans chaque langue.
 const { langue, codePays, langues = [langue] } = Astro.props;
 const p = codePays ? trouverPays(codePays) : null;
+// Liens Support · Confidentialité · Mentions légales : ceux du pays, ou la version internationale (en) sur les pages
+// bilingues (choix du pays, 404).
+const codeLiens = p ? p.code : "en";
+const langueLiens = p ? langue : "en";
 ---
 <footer class="pied">
   <div class="contenu">
-    {p && (
-      <div class="haut">
+    <div class="haut">
+      <nav aria-label={t(langueLiens, "pied.liens.navigation")} lang={langueLiens}>
+        <ul class="liens">
+          {sousPages.map((page) => <li><a href={lienSousPage(codeLiens, page)}>{t(langueLiens, `pied.liens.${page}`)}</a></li>)}
+        </ul>
+      </nav>
+      {p && (
         <a class="globe" href={lien("pays/")} aria-label={t(langue, "pied.changerPays", { pays: p.nom, langue: p.nomLangue })}>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="8" cy="8" r="6.5" /><path d="M1.5 8h13M8 1.5c2 2 2.8 4 2.8 6.5S10 12.5 8 14.5C6 12.5 5.2 10.5 5.2 8S6 3.5 8 1.5Z" /></svg>
           <span lang={p.locale}>{p.nom} · {p.nomLangue}</span>
         </a>
-      </div>
-    )}
+      )}
+    </div>
     {langues.map((l) => (
       <p class="legal" lang={l}>{t(l, "neutralite")} {t(l, "pied.tmdb")} {t(l, "pied.marques")}</p>
     ))}
@@ -32,7 +41,10 @@ const p = codePays ? trouverPays(codePays) : null;
 <style>
   .pied { border-top: 1px solid #1c1c1e; background: #000; }
   .contenu { max-width: 75rem; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; display: flex; flex-direction: column; gap: 1.5rem; font-size: 0.8125rem; color: #8e8e93; }
-  .haut { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 1rem; }
+  .haut { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
+  .liens { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+  .liens a { text-decoration: none; }
+  .liens a:hover { color: #f5f5f7; text-decoration: underline; }
   .globe { display: inline-flex; align-items: center; gap: 0.5rem; color: #f5f5f7; text-decoration: none; padding: 0.5rem 0.875rem; border: 1px solid #3a3a3e; border-radius: 999px; }
   .globe:hover { border-color: #8e8e93; }
   p { margin: 0; line-height: 1.6; }
