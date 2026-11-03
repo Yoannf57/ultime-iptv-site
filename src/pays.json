@@ -1,0 +1,68 @@
+[
+  {
+    "code": "fr-fr", "langue": "fr", "locale": "fr-FR", "region": "europe", "nom": "France",
+    "fuseaux": ["Europe/Paris", "Europe/Monaco"],
+    "devise": "EUR", "lienAppStore": null,
+    "prix": {
+      "solo":    { "mensuel": 2.99, "annuel": 29.99, "vie": 49.99, "annuelParMois": 2.50, "remise": 16 },
+      "famille": { "mensuel": 3.99, "annuel": 39.99, "vie": 59.99, "annuelParMois": 3.33, "remise": 16 }
+    }
+  },
+  {
+    "code": "fr-be", "langue": "fr", "locale": "fr-BE", "region": "europe", "nom": "Belgique",
+    "fuseaux": ["Europe/Brussels"],
+    "devise": "EUR", "lienAppStore": null,
+    "prix": {
+      "solo":    { "mensuel": 2.99, "annuel": 29.99, "vie": 49.99, "annuelParMois": 2.50, "remise": 16 },
+      "famille": { "mensuel": 3.99, "annuel": 39.99, "vie": 59.99, "annuelParMois": 3.33, "remise": 16 }
+    }
+  },
+  {
+    "code": "fr-lu", "langue": "fr", "locale": "fr-LU", "region": "europe", "nom": "Luxembourg",
+    "fuseaux": ["Europe/Luxembourg"],
+    "devise": "EUR", "lienAppStore": null,
+    "prix": {
+      "solo":    { "mensuel": 2.99, "annuel": 29.99, "vie": 49.99, "annuelParMois": 2.50, "remise": 16 },
+      "famille": { "mensuel": 3.99, "annuel": 39.99, "vie": 59.99, "annuelParMois": 3.33, "remise": 16 }
+    }
+  },
+  {
+    "code": "fr-ch", "langue": "fr", "locale": "fr-CH", "region": "europe", "nom": "Suisse",
+    "fuseaux": ["Europe/Zurich"],
+    "devise": "CHF", "lienAppStore": null, "prix": null
+  },
+  {
+    "code": "en-gb", "langue": "en", "locale": "en-GB", "region": "europe", "nom": "United Kingdom",
+    "fuseaux": ["Europe/London", "Europe/Belfast", "Europe/Guernsey", "Europe/Jersey", "Europe/Isle_of_Man"],
+    "devise": "GBP", "lienAppStore": null, "prix": null
+  },
+  {
+    "code": "en-ie", "langue": "en", "locale": "en-IE", "region": "europe", "nom": "Ireland",
+    "fuseaux": ["Europe/Dublin"],
+    "devise": "EUR", "lienAppStore": null,
+    "prix": {
+      "solo":    { "mensuel": 2.99, "annuel": 29.99, "vie": 49.99, "annuelParMois": 2.50, "remise": 16 },
+      "famille": { "mensuel": 3.99, "annuel": 39.99, "vie": 59.99, "annuelParMois": 3.33, "remise": 16 }
+    }
+  },
+  {
+    "code": "fr-ca", "langue": "fr", "locale": "fr-CA", "region": "ameriques", "nom": "Canada (français)",
+    "fuseaux": ["America/Toronto", "America/Montreal", "America/Vancouver", "America/Edmonton", "America/Winnipeg", "America/Regina", "America/Halifax", "America/Moncton", "America/St_Johns", "America/Whitehorse", "America/Yellowknife", "America/Iqaluit", "America/Glace_Bay", "America/Goose_Bay", "America/Swift_Current", "America/Dawson_Creek", "America/Creston", "America/Fort_Nelson", "America/Inuvik", "America/Cambridge_Bay", "America/Rankin_Inlet", "America/Resolute", "America/Atikokan", "America/Blanc-Sablon", "America/Nipigon", "America/Thunder_Bay", "America/Rainy_River", "America/Pangnirtung", "America/Dawson", "America/Coral_Harbour"],
+    "devise": "CAD", "lienAppStore": null, "prix": null
+  },
+  {
+    "code": "en-ca", "langue": "en", "locale": "en-CA", "region": "ameriques", "nom": "Canada (English)",
+    "fuseaux": ["America/Toronto", "America/Montreal", "America/Vancouver", "America/Edmonton", "America/Winnipeg", "America/Regina", "America/Halifax", "America/Moncton", "America/St_Johns", "America/Whitehorse", "America/Yellowknife", "America/Iqaluit", "America/Glace_Bay", "America/Goose_Bay", "America/Swift_Current", "America/Dawson_Creek", "America/Creston", "America/Fort_Nelson", "America/Inuvik", "America/Cambridge_Bay", "America/Rankin_Inlet", "America/Resolute", "America/Atikokan", "America/Blanc-Sablon", "America/Nipigon", "America/Thunder_Bay", "America/Rainy_River", "America/Pangnirtung", "America/Dawson", "America/Coral_Harbour"],
+    "devise": "CAD", "lienAppStore": null, "prix": null
+  },
+  {
+    "code": "en-us", "langue": "en", "locale": "en-US", "region": "ameriques", "nom": "United States",
+    "fuseaux": ["America/New_York", "America/Chicago", "America/Denver", "America/Los_Angeles", "America/Phoenix", "America/Anchorage", "America/Juneau", "America/Sitka", "America/Nome", "America/Yakutat", "America/Metlakatla", "America/Adak", "America/Boise", "America/Detroit", "America/Menominee", "America/Indiana/Indianapolis", "America/Indiana/Knox", "America/Indiana/Marengo", "America/Indiana/Petersburg", "America/Indiana/Tell_City", "America/Indiana/Vevay", "America/Indiana/Vincennes", "America/Indiana/Winamac", "America/Kentucky/Louisville", "America/Kentucky/Monticello", "America/North_Dakota/Beulah", "America/North_Dakota/Center", "America/North_Dakota/New_Salem", "America/Puerto_Rico", "Pacific/Honolulu", "US/Eastern", "US/Central", "US/Mountain", "US/Pacific", "US/Alaska", "US/Hawaii", "US/Arizona"],
+    "devise": "USD", "lienAppStore": null, "prix": null
+  },
+  {
+    "code": "en", "langue": "en", "locale": "en", "region": "international", "nom": "International (English)",
+    "fuseaux": [],
+    "devise": null, "lienAppStore": null, "prix": null
+  }
+]

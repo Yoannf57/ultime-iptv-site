@@ -1,0 +1,19 @@
+{
+  "name": "ultime-iptv-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "verifier-textes": "node scripts/verifier-textes.mjs",
+    "verifier-liens": "node scripts/verifier-liens.mjs",
+    "captures": "node scripts/captures.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.4.5"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1"
+  }
+}
