@@ -3,7 +3,7 @@ import { t } from "../../lib/textes";
 import { ecrans } from "../../lib/ecrans";
 interface Props { langue: string }
 const { langue: l } = Astro.props;
-const lignes = ["films", "pause", "replay", "telechargements", "icloud", "plusieurs", "themes"];
+const lignes = ["films", "multi", "pause", "replay", "telechargements", "icloud", "plusieurs", "themes"];
 ---
 <section aria-labelledby="titre-famille" class="section deux apparition">
   <article class="carte">
@@ -21,7 +21,6 @@ const lignes = ["films", "pause", "replay", "telechargements", "icloud", "plusie
     <h2 id="titre-premium" class="avec-etiquette">{t(l, "premium.titre")}</h2>
     <ul>
       {lignes.map((c) => <li>{t(l, `premium.${c}`)}</li>)}
-      <li class="bientot">{t(l, "premium.multi")}<span class="pastille">{t(l, "premium.bientot")}</span></li>
     </ul>
   </article>
 </section>
@@ -38,6 +37,5 @@ const lignes = ["films", "pause", "replay", "telechargements", "icloud", "plusie
   .etiquette { margin: 0; font-size: 0.9375rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; }
   ul { margin: 1.75rem 0 0; padding: 0; list-style: none; font-size: 1.0625rem; }
   li { padding: 0.875rem 0; border-top: 1px solid #242428; }
-  li.bientot { border-bottom: 1px solid #242428; display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; color: #a1a1a6; }
-  .pastille { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; border: 1px solid #3a3a3e; border-radius: 999px; padding: 0.1875rem 0.5625rem; white-space: nowrap; }
+  li:last-child { border-bottom: 1px solid #242428; }
 </style>
