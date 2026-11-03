@@ -20,6 +20,11 @@ const sommaire = [
 ];
 ---
 <Article p={p} page="support" sommaire={sommaire}>
+  <p class="neutralite">{t(l, "neutralite")}</p>
+  <section aria-labelledby="essentiel" class="essentiel">
+    <h2 id="essentiel">{t(l, "support.essentiel")}</h2>
+    <ul>{donnees.essentiel.map((id) => <li><a href={`#q-${id}`} data-ouvrir>{t(l, `support.q.${id}.q`)}</a></li>)}</ul>
+  </section>
   {donnees.support.map((g) => (
     <section aria-labelledby={g.groupe}>
       <h2 id={g.groupe}>{t(l, `support.groupes.${g.groupe}`)}</h2>
@@ -37,6 +42,18 @@ const sommaire = [
   </section>
 </Article>
 
+<script is:inline>
+  // Un lien vers une question (#q-…) ouvre sa réponse.
+  (function () {
+    function ouvrir() {
+      var cible = location.hash && document.getElementById(location.hash.slice(1));
+      if (cible && cible.tagName === "DETAILS") cible.open = true;
+    }
+    window.addEventListener("hashchange", ouvrir);
+    ouvrir();
+  })();
+</script>
+
 <style>
   details { border-top: 1px solid #242428; padding: 1.25rem 0; scroll-margin-top: 5rem; }
   details:last-of-type { border-bottom: 1px solid #242428; }
@@ -46,6 +63,13 @@ const sommaire = [
   details[open] .plus { transform: rotate(45deg); }
   .reponse { margin-top: 0.875rem; }
   .reponse :global(p:last-child) { margin-bottom: 0; }
+  .neutralite { margin: 0 0 2.5rem; font-size: 1.0625rem; font-weight: 600; color: #f5f5f7; }
+  .essentiel { margin-bottom: 1rem; }
+  .essentiel h2 { margin-top: 0; }
+  .essentiel ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 0.75rem; }
+  .essentiel li { margin: 0; }
+  .essentiel a { display: block; height: 100%; padding: 1rem 1.25rem; background: #141416; border-radius: 1rem; text-decoration: none; font-size: 1rem; font-weight: 600; line-height: 1.35; }
+  .essentiel a:hover { background: #242428; }
   .contact { margin-top: 4rem; padding: 0.5rem 2rem 1.5rem; background: #141416; border-radius: 1.75rem; }
   .contact h2 { margin-top: 1.75rem; }
 </style>
