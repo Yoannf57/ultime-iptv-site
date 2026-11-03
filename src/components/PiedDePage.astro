@@ -11,31 +11,32 @@ const p = codePays ? trouverPays(codePays) : null;
 ---
 <footer class="pied">
   <div class="contenu">
-    {langues.map((l) => <p class="neutralite" lang={l}>{t(l, "neutralite")}</p>)}
-    <p class="contact">{t(langue, "pied.contact")} <a href={`mailto:${config.contact}`}>{config.contact}</a></p>
-    <div class="tmdb">
-      <img src={lien("tmdb.svg")} alt={t(langue, "pied.tmdbLogo")} width="96" height="12" loading="lazy" />
-      <div>{langues.map((l) => <p lang={l}>{t(l, "pied.tmdb")}</p>)}</div>
-    </div>
     {p && (
-      <a class="globe" href={lien("pays/")} aria-label={t(langue, "pied.changerPays", { pays: p.nom })}>
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
-          <circle cx="12" cy="12" r="9.25" /><ellipse cx="12" cy="12" rx="4" ry="9.25" /><path d="M2.75 12h18.5M4.5 6.75h15M4.5 17.25h15" />
-        </svg>
-        <span lang={p.locale}>{p.nom}</span>
-      </a>
+      <div class="haut">
+        <a class="globe" href={lien("pays/")} aria-label={t(langue, "pied.changerPays", { pays: p.nom, langue: p.nomLangue })}>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="8" cy="8" r="6.5" /><path d="M1.5 8h13M8 1.5c2 2 2.8 4 2.8 6.5S10 12.5 8 14.5C6 12.5 5.2 10.5 5.2 8S6 3.5 8 1.5Z" /></svg>
+          <span lang={p.locale}>{p.nom} · {p.nomLangue}</span>
+        </a>
+      </div>
     )}
+    {langues.map((l) => (
+      <p class="legal" lang={l}>{t(l, "neutralite")} {t(l, "pied.tmdb")} {t(l, "pied.marques")}</p>
+    ))}
+    <div class="bas">
+      <img class="tmdb" src={lien("tmdb.svg")} alt={t(langue, "pied.tmdbLogo")} width="96" height="12" loading="lazy" />
+      <p>{t(langue, "pied.copyright")} · <a href={`mailto:${config.contact}`}>{config.contact}</a></p>
+    </div>
   </div>
 </footer>
 
 <style>
-  .pied { border-top: 1px solid var(--surface-2); color: var(--texte-2); font-size: 0.75rem; }
-  .contenu { max-width: 61.25rem; margin: 0 auto; padding: 1.5rem 1.25rem 2rem; display: grid; gap: 0.875rem; }
-  p { margin: 0; }
-  .neutralite { color: var(--texte); font-size: 0.8125rem; }
-  .tmdb { display: flex; align-items: flex-start; gap: 0.75rem; flex-wrap: wrap; }
-  .tmdb div { display: grid; gap: 0.25rem; }
-  .tmdb img { height: 0.75rem; width: auto; margin-top: 0.2rem; }
-  .globe { display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--texte); justify-self: start; padding: 0.25rem 0; }
-  .globe:hover span { text-decoration: underline; }
+  .pied { border-top: 1px solid #1c1c1e; background: #000; }
+  .contenu { max-width: 75rem; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; display: flex; flex-direction: column; gap: 1.5rem; font-size: 0.8125rem; color: #8e8e93; }
+  .haut { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 1rem; }
+  .globe { display: inline-flex; align-items: center; gap: 0.5rem; color: #f5f5f7; text-decoration: none; padding: 0.5rem 0.875rem; border: 1px solid #3a3a3e; border-radius: 999px; }
+  .globe:hover { border-color: #8e8e93; }
+  p { margin: 0; line-height: 1.6; }
+  .bas { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
+  .tmdb { height: 0.75rem; width: auto; }
+  a { color: #a1a1a6; }
 </style>
