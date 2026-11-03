@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Ulti — écrans de l'app</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;background:#000000}
+</style>
+</helmet>
+<div style="container-type: inline-size; position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #000000; color: #F5F5F7; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; text-align: left">
+        <sc-if value="{{barre}}" hint-placeholder-val="{{ true }}">
+          <nav aria-label="Onglets de l'app" style="position: absolute; z-index: 3; top: 3.2cqw; left: 0; right: 0; display: flex; justify-content: center">
+            <div style="display: flex; gap: 0.4cqw; padding: 0.45cqw; border-radius: 999px; background: rgba(60,60,67,0.62); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px)">
+              <sc-for list="{{onglets}}" as="o" hint-placeholder-count="5">
+                <button type="button" onClick="{{o.choisir}}" aria-pressed="{{o.actif}}" style="border: 0; cursor: pointer; font: inherit; font-size: 1.15cqw; font-weight: 600; padding: 0.55cqw 1.4cqw; border-radius: 999px; background: {{o.fond}}; color: {{o.couleur}}">{{o.nom}}</button>
+              </sc-for>
+            </div>
+          </nav>
+        </sc-if>
+
+        <sc-if value="{{vueAccueil}}" hint-placeholder-val="{{ true }}">
+          <div style="position: absolute; inset: 0">
+
+            <div style="position: absolute; inset: 0; background: #1B2A3A"></div>
+            <div style="position: absolute; left: 0; right: 0; top: 0; height: 62%; background: linear-gradient(90deg, #41698C 0%, #29486A 50%, #15263A 100%)"></div>
+            <div style="position: absolute; left: 0; right: 0; top: 38%; bottom: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 48%)"></div>
+            <div style="position: absolute; left: 4.5cqw; top: 11cqw; text-align: left">
+              <p style="margin: 0; font-size: 1.1cqw; font-weight: 700; letter-spacing: 0.08em; color: #A1A1A6">FILM · 2010 · FANTASTIQUE</p>
+              <p style="margin: 0.6cqw 0 0; font-size: 5.2cqw; font-weight: 800; letter-spacing: -0.04em; line-height: 1">Sintel</p>
+              <p style="margin: 1cqw 0 0; max-width: 34cqw; font-size: 1.25cqw; line-height: 1.4; color: #C7C7CC">Une jeune femme part seule à la recherche du bébé dragon qu'elle a sauvé.</p>
+              <div style="margin-top: 1.6cqw; display: flex; gap: 0.8cqw">
+                <span style="background: #F5F5F7; color: #000000; font-size: 1.2cqw; font-weight: 700; padding: 0.8cqw 2cqw; border-radius: 0.7cqw">Lecture</span>
+                <span style="background: rgba(120,120,128,0.36); color: #F5F5F7; font-size: 1.2cqw; font-weight: 700; padding: 0.8cqw 2cqw; border-radius: 0.7cqw">Ma liste</span>
+              </div>
+            </div>
+            <div style="position: absolute; left: 4.5cqw; right: 0; bottom: 3cqw; text-align: left">
+              <p style="margin: 0 0 1.2cqw; font-size: 1.45cqw; font-weight: 700">En direct</p>
+              <div style="display: flex; gap: 2cqw">
+                <sc-for list="{{chaines}}" as="c" hint-placeholder-count="8">
+                  <div style="display: flex; flex-direction: column; align-items: center; gap: 0.7cqw; width: 8cqw">
+                    <div style="width: 7cqw; height: 7cqw; border-radius: 50%; background: {{c.anneau}}; display: flex; align-items: center; justify-content: center">
+                      <div style="width: 6.1cqw; height: 6.1cqw; border-radius: 50%; background: {{c.fond}}; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1; font-size: {{c.taille}}cqw; font-weight: 800; color: #FFFFFF; font-family: {{c.police}}; letter-spacing: {{c.espace}}">{{c.logo}}</div>
+                    </div>
+                    <span style="font-size: 0.95cqw; color: #A1A1A6; white-space: nowrap">{{c.programme}}</span>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+
+            <sc-if value="{{vueDirect}}" hint-placeholder-val="{{ true }}">
+              <div style="position: absolute; inset: 0; padding: {{haut}}cqw 4.5cqw 4cqw">
+                <p style="margin: 0; font-size: 3cqw; font-weight: 800; letter-spacing: -0.03em">Direct</p>
+                <div style="margin-top: 1.2cqw; display: flex; gap: 0.8cqw; font-size: 1.2cqw; font-weight: 600">
+                  <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #F5F5F7; color: #000000">Tout</span>
+                  <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #242428; color: #D1D1D6">Cinéma</span>
+                  <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #242428; color: #D1D1D6">Info</span>
+                  <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #242428; color: #D1D1D6">Jeunesse</span>
+                  <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #242428; color: #D1D1D6">Sciences</span>
+                </div>
+                <div style="margin-top: 2cqw; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.4cqw">
+                  <sc-for list="{{direct}}" as="d" hint-placeholder-count="8">
+                    <div style="border-radius: 1.2cqw; overflow: hidden; background: #141416">
+                      <div style="position: relative; aspect-ratio: 16 / 9; background: {{d.image}}">
+                        <span style="position: absolute; left: 0.9cqw; top: 0.9cqw; padding: 0.35cqw 0.9cqw; border-radius: 0.5cqw; background: {{d.fond}}; font-size: 0.95cqw; font-weight: 800; letter-spacing: 0.03em; color: #FFFFFF; font-family: {{d.police}}">{{d.logo}}</span>
+                        <sc-if value="{{d.badge}}" hint-placeholder-val="{{ false }}"><span style="position: absolute; right: 0.9cqw; top: 0.9cqw; padding: 0.35cqw 0.8cqw; border-radius: 0.5cqw; background: #FF3B30; font-size: 0.85cqw; font-weight: 800; color: #FFFFFF">EN DIRECT</span></sc-if>
+                      </div>
+                      <div style="padding: 0.8cqw 1.1cqw 1cqw">
+                        <p style="margin: 0; font-size: 1.3cqw; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{d.titre}}</p>
+                        <p style="margin: 0.3cqw 0 0; font-size: 1.05cqw; color: #8E8E93">{{d.heure}}</p>
+                        <div style="margin-top: 0.8cqw; height: 0.35cqw; border-radius: 999px; background: #3A3A3E; overflow: hidden"><div style="height: 100%; width: {{d.avance}}; background: #F5F5F7"></div></div>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{vueGuide}}" hint-placeholder-val="{{ false }}">
+              <div style="position: absolute; inset: 0; padding: {{haut}}cqw 4.5cqw 4cqw">
+                <div style="display: flex; justify-content: space-between; align-items: baseline">
+                  <p style="margin: 0; font-size: 3cqw; font-weight: 800; letter-spacing: -0.03em">Guide TV</p>
+                  <p style="margin: 0; font-size: 1.3cqw; color: #A1A1A6">Ce soir · mardi 3 novembre</p>
+                </div>
+                <div style="margin-top: 2.2cqw; position: relative">
+                  <div style="display: flex; padding-left: 11cqw; font-size: 1.1cqw; color: #8E8E93; font-variant-numeric: tabular-nums">
+                    <span style="flex: 1">20:00</span><span style="flex: 1">20:30</span><span style="flex: 1">21:00</span><span style="flex: 1">21:30</span>
+                  </div>
+                  <div style="margin-top: 1cqw; display: flex; flex-direction: column; gap: 0.8cqw">
+                    <sc-for list="{{guide}}" as="g" hint-placeholder-count="6">
+                      <div style="display: flex; gap: 0.8cqw; height: 4.6cqw">
+                        <div style="flex: none; width: 10.2cqw; border-radius: 0.8cqw; background: {{g.fond}}; display: flex; align-items: center; justify-content: center; font-size: 1.15cqw; font-weight: 800; color: #FFFFFF; font-family: {{g.police}}">{{g.logo}}</div>
+                        <div style="flex: 1; display: flex; gap: 0.5cqw; min-width: 0">
+                          <sc-for list="{{g.progs}}" as="pg" hint-placeholder-count="3">
+                            <div style="flex: {{pg.duree}} 1 0; min-width: 0; border-radius: 0.8cqw; background: {{pg.fond}}; padding: 0.8cqw 1cqw; box-sizing: border-box; overflow: hidden">
+                              <p style="margin: 0; font-size: 1.15cqw; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{pg.titre}}</p>
+                              <p style="margin: 0.3cqw 0 0; font-size: 0.95cqw; color: #8E8E93; white-space: nowrap">{{pg.heure}}</p>
+                            </div>
+                          </sc-for>
+                        </div>
+                      </div>
+                    </sc-for>
+                  </div>
+                  <div aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: calc(11cqw + 37%); width: 0.2cqw; background: #FF3B30"></div>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{vueReplay}}" hint-placeholder-val="{{ false }}">
+              <div style="position: absolute; inset: 0; padding: {{haut}}cqw 4.5cqw 4cqw">
+                <p style="margin: 0; font-size: 3cqw; font-weight: 800; letter-spacing: -0.03em">Replay</p>
+                <div style="margin-top: 1.6cqw; display: flex; gap: 0.8cqw; font-size: 1.2cqw; font-weight: 600">
+                  <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #242428; color: #D1D1D6">Aujourd'hui</span>
+                  <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #F5F5F7; color: #000000">Hier</span>
+                  <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #242428; color: #D1D1D6">Dimanche</span>
+                  <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #242428; color: #D1D1D6">Samedi</span>
+                  <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #242428; color: #D1D1D6">Vendredi</span>
+                </div>
+                <div style="margin-top: 2cqw; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.4cqw">
+                  <sc-for list="{{replay}}" as="r" hint-placeholder-count="8">
+                    <div>
+                      <div style="position: relative; aspect-ratio: 16 / 9; border-radius: 1.2cqw; background: {{r.image}}">
+                        <span style="position: absolute; left: 0.9cqw; bottom: 0.9cqw; padding: 0.35cqw 0.9cqw; border-radius: 0.5cqw; background: {{r.fond}}; font-size: 0.95cqw; font-weight: 800; color: #FFFFFF; font-family: {{r.police}}">{{r.logo}}</span>
+                        <span style="position: absolute; right: 0.9cqw; bottom: 0.9cqw; padding: 0.35cqw 0.8cqw; border-radius: 0.5cqw; background: rgba(0,0,0,0.6); font-size: 0.95cqw; font-weight: 700; color: #FFFFFF; font-variant-numeric: tabular-nums">{{r.duree}}</span>
+                      </div>
+                      <p style="margin: 1cqw 0 0; font-size: 1.35cqw; font-weight: 700">{{r.titre}}</p>
+                      <p style="margin: 0.3cqw 0 0; font-size: 1.1cqw; color: #8E8E93">{{r.quand}}</p>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{vueFilms}}" hint-placeholder-val="{{ false }}">
+              <div style="position: absolute; inset: 0; padding: {{haut}}cqw 4.5cqw 4cqw">
+                <div style="display: flex; justify-content: space-between; align-items: baseline">
+                  <p style="margin: 0; font-size: 3cqw; font-weight: 800; letter-spacing: -0.03em">Films</p>
+                  <p style="margin: 0; font-size: 1.3cqw; color: #A1A1A6">Animation · Fantastique · Science-fiction</p>
+                </div>
+                <div style="margin-top: 2cqw; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 1.4cqw">
+                  <sc-for list="{{films}}" as="f" hint-placeholder-count="14">
+                    <div>
+                      <div style="aspect-ratio: 2 / 3; border-radius: 1cqw; background: {{f.fond}}; display: flex; align-items: flex-end; padding: 1cqw; box-sizing: border-box; font-size: 1.25cqw; line-height: 1.05; font-weight: 800; letter-spacing: 0.02em; color: #FFFFFF">{{f.affiche}}</div>
+                      <p style="margin: 0.7cqw 0 0; font-size: 1.1cqw; color: #8E8E93">{{f.annee}}</p>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+
+            <sc-if value="{{vueSeries}}" hint-placeholder-val="{{ false }}">
+              <div style="position: absolute; inset: 0; display: flex">
+                <div style="flex: 0 0 44%; background: linear-gradient(160deg, #6E8F3C 0%, #3D5A22 60%, #1E2D12 100%); display: flex; align-items: flex-end; padding: 4.5cqw; box-sizing: border-box">
+                  <div>
+                    <p style="margin: 0; font-size: 1.1cqw; font-weight: 700; letter-spacing: 0.08em; color: #E5EAD9">SÉRIE · ANIMATION · 2013–2016</p>
+                    <p style="margin: 0.6cqw 0 0; font-size: 5cqw; font-weight: 800; letter-spacing: -0.04em; line-height: 1">Caminandes</p>
+                    <p style="margin: 1cqw 0 0; font-size: 1.25cqw; line-height: 1.4; color: #E5EAD9">Koro, un lama de Patagonie, cherche toujours l'herbe plus verte de l'autre côté.</p>
+                  </div>
+                </div>
+                <div style="flex: 1; padding: {{hautSerie}}cqw 4.5cqw 4.5cqw; box-sizing: border-box">
+                  <div style="display: flex; gap: 0.8cqw; font-size: 1.2cqw; font-weight: 600">
+                    <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #F5F5F7; color: #000000">Épisodes</span>
+                    <span style="padding: 0.6cqw 1.5cqw; border-radius: 999px; background: #242428; color: #D1D1D6">Version : VO · HD</span>
+                  </div>
+                  <div style="margin-top: 2.4cqw; display: flex; flex-direction: column; gap: 1.6cqw">
+                    <sc-for list="{{episodes}}" as="e" hint-placeholder-count="3">
+                      <div style="display: flex; gap: 1.6cqw; align-items: center">
+                        <div style="flex: none; width: 16cqw; aspect-ratio: 16 / 9; border-radius: 1cqw; background: {{e.image}}; position: relative; overflow: hidden">
+                          <div style="position: absolute; left: 0; bottom: 0; height: 0.4cqw; width: {{e.vu}}; background: #F5F5F7"></div>
+                        </div>
+                        <div style="min-width: 0">
+                          <p style="margin: 0; font-size: 1.1cqw; color: #8E8E93">Épisode {{e.numero}} · {{e.annee}}</p>
+                          <p style="margin: 0.3cqw 0 0; font-size: 1.5cqw; font-weight: 700">{{e.titre}}</p>
+                          <p style="margin: 0.3cqw 0 0; font-size: 1.1cqw; color: #A1A1A6">{{e.etat}}</p>
+                        </div>
+                      </div>
+                    </sc-for>
+                  </div>
+                </div>
+              </div>
+            </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"vue":{"editor":"enum","options":["accueil","direct","guide","replay","films","series"],"default":"accueil"},"barre":{"editor":"boolean","default":true},"choisir":{"editor":null},"$preview":{"width":1280,"height":720}}'>
+class Component extends DCLogic {
+  anneau(pourcent, couleur) {
+    return 'conic-gradient(' + couleur + ' 0 ' + pourcent + '%, #3A3A3E ' + pourcent + '% 100%)';
+  }
+  renderVals() {
+    var vue = this.props.vue ?? 'accueil';
+    var barre = this.props.barre ?? true;
+    var choisir = this.props.choisir;
+    var a = this.anneau.bind(this);
+    return {
+      barre: barre,
+      haut: barre ? 8 : 4,
+      hautSerie: barre ? 8 : 4.5,
+      vueAccueil: vue === 'accueil',
+      vueDirect: vue === 'direct',
+      vueGuide: vue === 'guide',
+      vueReplay: vue === 'replay',
+      vueFilms: vue === 'films',
+      vueSeries: vue === 'series',
+      onglets: [['accueil', 'Accueil'], ['direct', 'Direct'], ['replay', 'Replay'], ['films', 'Films'], ['series', 'Séries']].map(function (o) {
+        var actif = vue === o[0];
+        return {
+          nom: o[1],
+          actif: actif ? 'true' : 'false',
+          fond: actif ? '#F5F5F7' : 'transparent',
+          couleur: actif ? '#000000' : '#D1D1D6',
+          choisir: function () { if (typeof choisir === 'function') choisir(o[0]); }
+        };
+      }),
+      direct: [
+        { logo: 'Pellicule', fond: '#8C1C2B', police: "Georgia, serif", titre: 'Sintel', heure: '20:45 – 21:00', avance: '72%', image: 'linear-gradient(135deg, #4F6E8C, #1E2E40)' },
+        { logo: 'LE FIL', fond: '#0A4D8C', police: 'inherit', titre: 'Le journal du soir', heure: '20:30 – 21:10', avance: '45%', badge: true, image: 'linear-gradient(135deg, #2E4A6B, #14202E)' },
+        { logo: 'animo', fond: '#E0791B', police: 'ui-rounded, inherit', titre: 'Big Buck Bunny', heure: '20:50 – 21:00', avance: '20%', image: 'linear-gradient(135deg, #7FA34A, #3D5A22)' },
+        { logo: 'ORBITE', fond: '#2B2F6B', police: 'inherit', titre: 'Cosmos Laundromat', heure: '20:40 – 20:55', avance: '88%', image: 'linear-gradient(135deg, #6B4A8C, #2B1E40)' },
+        { logo: 'Petit Pois', fond: '#3E8E3A', police: 'ui-rounded, inherit', titre: 'Caminandes', heure: '20:52 – 20:55', avance: '60%', image: 'linear-gradient(135deg, #A3B85A, #5A6E2E)' },
+        { logo: 'RÉTRO', fond: '#6B4A2B', police: 'Georgia, serif', titre: 'Elephants Dream', heure: '20:35 – 20:50', avance: '95%', image: 'linear-gradient(135deg, #8C6E4A, #3A2A1A)' },
+        { logo: 'Atelier', fond: '#4A4A50', police: 'Georgia, serif', titre: 'Tears of Steel', heure: '20:48 – 21:00', avance: '35%', image: 'linear-gradient(135deg, #5A6E7A, #222B30)' },
+        { logo: 'LE FIL 24', fond: '#C0262D', police: 'inherit', titre: 'Le point', heure: '20:30 – 21:00', avance: '62%', badge: true, image: 'linear-gradient(135deg, #7A3A3A, #2E1414)' }
+      ],
+      guide: [
+        { logo: 'Pellicule', fond: '#8C1C2B', police: 'Georgia, serif', progs: [
+          { titre: 'Elephants Dream', heure: '20:00', duree: 3, fond: '#1C1C1E' }, { titre: 'Sintel', heure: '20:45', duree: 3, fond: '#2C2C30' }, { titre: 'Tears of Steel', heure: '21:30', duree: 2, fond: '#1C1C1E' } ] },
+        { logo: 'LE FIL', fond: '#0A4D8C', police: 'inherit', progs: [
+          { titre: 'Le journal du soir', heure: '20:00', duree: 5, fond: '#2C2C30' }, { titre: 'Le grand débat', heure: '21:10', duree: 3, fond: '#1C1C1E' } ] },
+        { logo: 'animo', fond: '#E0791B', police: 'ui-rounded, inherit', progs: [
+          { titre: 'Sprite Fright', heure: '20:00', duree: 2, fond: '#1C1C1E' }, { titre: 'Big Buck Bunny', heure: '20:30', duree: 2, fond: '#2C2C30' }, { titre: 'Charge', heure: '21:00', duree: 2, fond: '#1C1C1E' }, { titre: 'Wing It!', heure: '21:30', duree: 2, fond: '#1C1C1E' } ] },
+        { logo: 'ORBITE', fond: '#2B2F6B', police: 'inherit', progs: [
+          { titre: 'Cosmos Laundromat', heure: '20:00', duree: 4, fond: '#2C2C30' }, { titre: 'Les étoiles, de près', heure: '21:00', duree: 4, fond: '#1C1C1E' } ] },
+        { logo: 'Petit Pois', fond: '#3E8E3A', police: 'ui-rounded, inherit', progs: [
+          { titre: 'Caminandes', heure: '20:00', duree: 2, fond: '#1C1C1E' }, { titre: 'Caminandes', heure: '20:30', duree: 2, fond: '#2C2C30' }, { titre: 'Spring', heure: '21:00', duree: 4, fond: '#1C1C1E' } ] },
+        { logo: 'RÉTRO', fond: '#6B4A2B', police: 'Georgia, serif', progs: [
+          { titre: 'Coffee Run', heure: '20:00', duree: 3, fond: '#2C2C30' }, { titre: 'Agent 327', heure: '20:45', duree: 5, fond: '#1C1C1E' } ] }
+      ],
+      replay: [
+        { logo: 'LE FIL', fond: '#0A4D8C', police: 'inherit', titre: 'Le journal du soir', quand: 'Hier · 20:00', duree: '40 min', image: 'linear-gradient(135deg, #2E4A6B, #14202E)' },
+        { logo: 'Pellicule', fond: '#8C1C2B', police: 'Georgia, serif', titre: 'Tears of Steel', quand: 'Hier · 21:10', duree: '12 min', image: 'linear-gradient(135deg, #5A6E7A, #222B30)' },
+        { logo: 'animo', fond: '#E0791B', police: 'ui-rounded, inherit', titre: 'Sprite Fright', quand: 'Hier · 18:30', duree: '10 min', image: 'linear-gradient(135deg, #7FA34A, #2E4A22)' },
+        { logo: 'ORBITE', fond: '#2B2F6B', police: 'inherit', titre: 'Les étoiles, de près', quand: 'Hier · 22:00', duree: '52 min', image: 'linear-gradient(135deg, #3A3A7A, #14142E)' },
+        { logo: 'Petit Pois', fond: '#3E8E3A', police: 'ui-rounded, inherit', titre: 'Caminandes', quand: 'Hier · 17:45', duree: '3 min', image: 'linear-gradient(135deg, #A3B85A, #5A6E2E)' },
+        { logo: 'RÉTRO', fond: '#6B4A2B', police: 'Georgia, serif', titre: 'Elephants Dream', quand: 'Hier · 23:15', duree: '11 min', image: 'linear-gradient(135deg, #8C6E4A, #3A2A1A)' },
+        { logo: 'Atelier', fond: '#4A4A50', police: 'Georgia, serif', titre: 'Charge', quand: 'Hier · 19:20', duree: '4 min', image: 'linear-gradient(135deg, #7A3A3A, #2E1414)' },
+        { logo: 'LE FIL 24', fond: '#C0262D', police: 'inherit', titre: 'Le point', quand: 'Hier · 20:30', duree: '30 min', image: 'linear-gradient(135deg, #6B2E2E, #2E1414)' }
+      ],
+      films: [
+        { affiche: 'SINTEL', annee: '2010', fond: '#5A3A2A' },
+        { affiche: 'BIG BUCK BUNNY', annee: '2008', fond: '#4A7A2E' },
+        { affiche: 'TEARS OF STEEL', annee: '2012', fond: '#3A4A5A' },
+        { affiche: 'COSMOS LAUNDROMAT', annee: '2015', fond: '#4A2E6B' },
+        { affiche: 'SPRING', annee: '2019', fond: '#2E5E7A' },
+        { affiche: 'SPRITE FRIGHT', annee: '2021', fond: '#3D5A2A' },
+        { affiche: 'CHARGE', annee: '2022', fond: '#7A2E2E' },
+        { affiche: 'COFFEE RUN', annee: '2020', fond: '#6B4E2E' },
+        { affiche: 'ELEPHANTS DREAM', annee: '2006', fond: '#6B5A3A' },
+        { affiche: 'AGENT 327', annee: '2017', fond: '#2E3A5A' },
+        { affiche: 'WING IT!', annee: '2023', fond: '#7A5A2E' },
+        { affiche: 'CAMINANDES', annee: '2013', fond: '#5A6E2E' },
+        { affiche: 'HERO', annee: '2018', fond: '#3A2E5A' },
+        { affiche: 'GLASS HALF', annee: '2015', fond: '#2E5A4A' }
+      ],
+      episodes: [
+        { numero: 1, annee: '2013', titre: 'Llama Drama', etat: 'Vu', vu: '100%', image: 'linear-gradient(135deg, #A3B85A, #5A6E2E)' },
+        { numero: 2, annee: '2013', titre: 'Gran Dillama', etat: 'Reprendre', vu: '45%', image: 'linear-gradient(135deg, #C2A35A, #6E5A2E)' },
+        { numero: 3, annee: '2016', titre: 'Llamigos', etat: 'À voir', vu: '0%', image: 'linear-gradient(135deg, #8CB8C2, #3A5A6E)' }
+      ],
+      chaines: [
+        { logo: 'Pellicule', programme: 'Sintel', fond: '#8C1C2B', police: "Georgia, 'Times New Roman', serif", taille: 0.95, espace: '0', anneau: a(72, '#F5F5F7') },
+        { logo: 'LE FIL', programme: 'Le journal', fond: '#0A4D8C', police: 'inherit', taille: 1.15, espace: '0.04em', anneau: a(40, '#FF3B30') },
+        { logo: 'animo', programme: 'Big Buck Bunny', fond: '#E0791B', police: 'ui-rounded, inherit', taille: 1.3, espace: '-0.02em', anneau: a(18, '#F5F5F7') },
+        { logo: 'ORBITE', programme: 'Cosmos Laundromat', fond: '#2B2F6B', police: 'inherit', taille: 0.95, espace: '0.12em', anneau: a(90, '#F5F5F7') },
+        { logo: 'Petit Pois', programme: 'Caminandes', fond: '#3E8E3A', police: 'ui-rounded, inherit', taille: 0.95, espace: '0', anneau: a(55, '#F5F5F7') },
+        { logo: 'RÉTRO', programme: 'Elephants Dream', fond: '#6B4A2B', police: "Georgia, serif", taille: 1.0, espace: '0.08em', anneau: a(30, '#F5F5F7') },
+        { logo: 'Atelier', programme: 'Tears of Steel', fond: '#4A4A50', police: "Georgia, serif", taille: 1.05, espace: '0', anneau: a(64, '#F5F5F7') },
+        { logo: 'LE FIL 24', programme: 'Le point', fond: '#C0262D', police: 'inherit', taille: 0.85, espace: '0.02em', anneau: a(85, '#FF3B30') }
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

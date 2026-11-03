@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Ulti — Accueil</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;background:#000000}
+a{color:#F5F5F7}a:hover{color:#FFFFFF}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+@media (max-width: 720px){ .hide-sm{display:none !important} }
+</style>
+</helmet>
+<div style="background: #000000; color: #F5F5F7; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; -webkit-font-smoothing: antialiased; min-width: 0; overflow-x: hidden">
+
+  <sc-if value="{{showBanner}}" hint-placeholder-val="{{ true }}">
+    <div role="region" aria-label="Choix du pays" style="background: #141416; border-bottom: 1px solid #242428">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 20px; font-size: 15px">
+        <span style="color: #A1A1A6">Vous êtes en Belgique ? Voir le site pour la Belgique.</span>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <a href="Pays.dc.html" style="background: #F5F5F7; color: #000000; text-decoration: none; padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 14px">Continuer</a>
+          <button type="button" onClick="{{closeBanner}}" aria-label="Fermer" style="width: 36px; height: 36px; border-radius: 999px; border: 1px solid #3A3A3E; background: transparent; color: #A1A1A6; display: flex; align-items: center; justify-content: center; cursor: pointer">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <header style="position: sticky; top: 0; z-index: 10; background: rgba(0,0,0,0.78); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid #1C1C1E">
+    <nav aria-label="Navigation principale" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+      <a href="#haut" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #F5F5F7">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="13" cy="13" r="10" stroke="#3A3A3E" stroke-width="3"></circle><circle cx="13" cy="13" r="10" stroke="#F5F5F7" stroke-width="3" stroke-linecap="round" stroke-dasharray="47 63" transform="rotate(-90 13 13)"></circle></svg>
+        <span style="font-size: 21px; font-weight: 800; letter-spacing: -0.02em">Ulti <span style="font-weight: 600; color: #A1A1A6">IPTV</span></span>
+      </a>
+      <div class="hide-sm" style="display: flex; gap: 28px; font-size: 14px">
+        <a href="#fonctions" style="color: #A1A1A6; text-decoration: none">Fonctions</a>
+        <a href="#visite" style="color: #A1A1A6; text-decoration: none">Visite</a>
+        <a href="#apple-tv" style="color: #A1A1A6; text-decoration: none">Apple TV</a>
+        <a href="#tarifs" style="color: #A1A1A6; text-decoration: none">Tarifs</a>
+        <a href="#questions" style="color: #A1A1A6; text-decoration: none">Questions</a>
+      </div>
+      <sc-if value="{{disponible}}" hint-placeholder-val="{{ false }}">
+        <a href="#tarifs" style="background: #F5F5F7; color: #000000; text-decoration: none; padding: 9px 18px; border-radius: 999px; font-size: 14px; font-weight: 600; white-space: nowrap">Télécharger</a>
+      </sc-if>
+      <sc-if value="{{bientot}}" hint-placeholder-val="{{ true }}">
+        <span style="border: 1px solid #3A3A3E; color: #A1A1A6; padding: 8px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; white-space: nowrap">Bientôt disponible</span>
+      </sc-if>
+    </nav>
+  </header>
+
+  <main id="haut">
+
+    <section aria-labelledby="titre-principal" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px 40px; text-align: center">
+      <p style="margin: 0 0 20px; font-size: 17px; font-weight: 600; color: {{accent}}">Pour iPhone et Apple TV</p>
+      <h1 id="titre-principal" style="margin: 0 auto; max-width: 15ch; font-size: clamp(48px, 7.4vw, 104px); line-height: 0.98; letter-spacing: -0.045em; font-weight: 800; white-space: pre-line">L'expérience
+IPTV ultime.</h1>
+      <p style="margin: 28px auto 0; max-width: 40rem; font-size: clamp(18px, 1.8vw, 22px); line-height: 1.45; color: #A1A1A6">Direct, guide TV, films et séries : votre abonnement IPTV devient une app de télé intuitive. Vous l'ouvrez, vous regardez.</p>
+      <div style="margin-top: 36px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
+        <sc-if value="{{disponible}}" hint-placeholder-val="{{ false }}">
+          <a href="#tarifs" style="display: inline-flex; align-items: center; gap: 10px; background: #F5F5F7; color: #000000; text-decoration: none; padding: 15px 28px; border-radius: 999px; font-size: 17px; font-weight: 600">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v10M4.5 8 9 12.5 13.5 8M3 16h12"></path></svg>
+            Télécharger dans l'App Store
+          </a>
+        </sc-if>
+        <sc-if value="{{bientot}}" hint-placeholder-val="{{ true }}">
+          <span style="display: inline-flex; align-items: center; background: #F5F5F7; color: #000000; padding: 15px 28px; border-radius: 999px; font-size: 17px; font-weight: 600; opacity: 0.92">Bientôt sur l'App Store</span>
+        </sc-if>
+        <a href="#tarifs" style="display: inline-flex; align-items: center; color: #F5F5F7; text-decoration: none; padding: 15px 28px; border-radius: 999px; font-size: 17px; font-weight: 600; border: 1px solid #3A3A3E">Voir les tarifs</a>
+      </div>
+      <p style="margin: 20px 0 0; font-size: 13px; color: #8E8E93">Ulti ne fournit aucune chaîne ni aucun contenu.</p>
+    </section>
+
+    <section aria-label="Aperçu de l'app sur Apple TV et iPhone" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 120px">
+      <div style="position: relative; padding: 0 6% 7% 0">
+        <div aria-hidden="true" style="position: absolute; left: -12%; right: -12%; top: -18%; bottom: -14%; background: {{haloStyle}}; pointer-events: none"></div>
+        <div style="position: relative; z-index: 1; border-radius: 20px; box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 40px 120px rgba(0,0,0,0.9)">
+          <div style="aspect-ratio: 16 / 9; border-radius: 20px; overflow: hidden; background: #000000; position: relative">
+            <dc-import name="Ecran" vue="{{ecranTV}}" barre="{{ true }}" choisir="{{choisirTV}}" hint-size="100%,620px"></dc-import>
+          </div>
+        </div>
+
+        <div class="hide-sm" style="position: absolute; z-index: 2; right: 0; bottom: 0; width: 22%; border-radius: 13% / 6%; box-shadow: 0 0 0 1px rgba(255,255,255,0.22), 0 0 0 7px #000000, 0 30px 80px rgba(0,0,0,0.95)">
+          <div style="container-type: inline-size; aspect-ratio: 9 / 19.5; border-radius: 13% / 6%; overflow: hidden; background: #000000; position: relative; text-align: left">
+            <sc-if value="{{telAccueil}}" hint-placeholder-val="{{ true }}">
+            <div style="padding: 14cqw 6cqw 0">
+              <p style="margin: 0; font-size: 11cqw; font-weight: 800; letter-spacing: -0.03em">Ce soir</p>
+              <div style="margin-top: 4cqw; display: flex; gap: 2.4cqw; font-size: 4.2cqw; font-weight: 600">
+                <span style="padding: 1.8cqw 3.6cqw; border-radius: 999px; background: #F5F5F7; color: #000000">Maintenant</span>
+                <span style="padding: 1.8cqw 3.6cqw; border-radius: 999px; background: #242428; color: #D1D1D6">18:00</span>
+                <span style="padding: 1.8cqw 3.6cqw; border-radius: 999px; background: #242428; color: #D1D1D6">21:10</span>
+              </div>
+              <div style="margin-top: 6cqw; display: flex; flex-direction: column; gap: 4.5cqw">
+                <sc-for list="{{soiree}}" as="s" hint-placeholder-count="5">
+                  <div style="display: flex; align-items: center; gap: 4cqw">
+                    <div style="flex: none; width: 15cqw; height: 15cqw; border-radius: 50%; background: {{s.anneau}}; display: flex; align-items: center; justify-content: center">
+                      <div style="width: 12.6cqw; height: 12.6cqw; border-radius: 50%; background: {{s.fond}}; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1; font-size: {{s.tailleTel}}cqw; font-weight: 800; color: #FFFFFF; font-family: {{s.police}}; letter-spacing: {{s.espace}}">{{s.logo}}</div>
+                    </div>
+                    <div style="min-width: 0">
+                      <p style="margin: 0; font-size: 4.6cqw; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{s.titre}}</p>
+                      <p style="margin: 0.8cqw 0 0; font-size: 3.8cqw; color: #8E8E93">{{s.nom}} · {{s.heure}}</p>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            </sc-if>
+            <sc-if value="{{telDirect}}" hint-placeholder-val="{{ false }}">
+              <div style="padding: 14cqw 6cqw 0">
+                <p style="margin: 0; font-size: 11cqw; font-weight: 800; letter-spacing: -0.03em">Direct</p>
+                <div style="margin-top: 5cqw; display: flex; flex-direction: column; gap: 4cqw">
+                  <sc-for list="{{telChaines}}" as="c" hint-placeholder-count="6">
+                    <div style="display: flex; align-items: center; gap: 3.5cqw">
+                      <div style="flex: none; width: 13cqw; height: 13cqw; border-radius: 3cqw; background: {{c.fond}}; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1; font-size: {{c.tailleTel}}cqw; font-weight: 800; color: #FFFFFF; font-family: {{c.police}}">{{c.logo}}</div>
+                      <div style="flex: 1; min-width: 0">
+                        <p style="margin: 0; font-size: 4.4cqw; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{c.titre}}</p>
+                        <div style="margin-top: 1.6cqw; height: 0.9cqw; border-radius: 999px; background: #3A3A3E; overflow: hidden"><div style="height: 100%; width: {{c.avance}}; background: {{c.barre}}"></div></div>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+            <sc-if value="{{telFilms}}" hint-placeholder-val="{{ false }}">
+              <div style="padding: 14cqw 6cqw 0">
+                <p style="margin: 0; font-size: 11cqw; font-weight: 800; letter-spacing: -0.03em">Films</p>
+                <div style="margin-top: 5cqw; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3cqw">
+                  <sc-for list="{{telAffiches}}" as="f" hint-placeholder-count="9">
+                    <div style="aspect-ratio: 2 / 3; border-radius: 2.4cqw; background: {{f.fond}}; display: flex; align-items: flex-end; padding: 2cqw; box-sizing: border-box; font-size: 3cqw; line-height: 1.05; font-weight: 800; color: #FFFFFF">{{f.affiche}}</div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+            <sc-if value="{{telSeries}}" hint-placeholder-val="{{ false }}">
+              <div>
+                <div style="height: 62cqw; background: linear-gradient(160deg, #6E8F3C 0%, #3D5A22 60%, #1E2D12 100%); display: flex; align-items: flex-end; padding: 6cqw; box-sizing: border-box">
+                  <div>
+                    <p style="margin: 0; font-size: 3.2cqw; font-weight: 700; letter-spacing: 0.08em; color: #E5EAD9">SÉRIE · ANIMATION</p>
+                    <p style="margin: 1cqw 0 0; font-size: 10cqw; font-weight: 800; letter-spacing: -0.04em; line-height: 1">Caminandes</p>
+                  </div>
+                </div>
+                <div style="padding: 5cqw 6cqw 0; display: flex; flex-direction: column; gap: 4cqw">
+                  <sc-for list="{{telEpisodes}}" as="e" hint-placeholder-count="3">
+                    <div style="display: flex; gap: 3.5cqw; align-items: center">
+                      <div style="flex: none; width: 30cqw; aspect-ratio: 16 / 9; border-radius: 2.4cqw; background: {{e.image}}; position: relative; overflow: hidden"><div style="position: absolute; left: 0; bottom: 0; height: 1cqw; width: {{e.vu}}; background: #F5F5F7"></div></div>
+                      <div style="min-width: 0">
+                        <p style="margin: 0; font-size: 3.4cqw; color: #8E8E93">Épisode {{e.numero}}</p>
+                        <p style="margin: 0.6cqw 0 0; font-size: 4.4cqw; font-weight: 700">{{e.titre}}</p>
+                        <p style="margin: 0.6cqw 0 0; font-size: 3.4cqw; color: #A1A1A6">{{e.etat}}</p>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </sc-if>
+            <nav aria-label="Onglets de l'app sur iPhone" style="position: absolute; left: 5cqw; right: 5cqw; bottom: 5cqw; height: 15cqw; border-radius: 999px; background: rgba(44,44,48,0.92); border: 1px solid #3A3A3E; display: flex; align-items: center; justify-content: space-around; padding: 0 2cqw">
+              <sc-for list="{{telOnglets}}" as="t" hint-placeholder-count="4">
+                <button type="button" onClick="{{t.choisir}}" aria-pressed="{{t.actif}}" style="border: 0; cursor: pointer; font: inherit; font-size: 3.3cqw; font-weight: {{t.poids}}; color: {{t.couleur}}; background: {{t.fond}}; padding: 2.2cqw 3.4cqw; border-radius: 999px">{{t.nom}}</button>
+              </sc-for>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <p style="margin: 28px 0 0; text-align: center; font-size: 14px; color: #8E8E93; display: flex; justify-content: center; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M3 2.5 13 7.2 8.6 8.6 7.2 13Z"></path></svg>Cliquez sur les écrans pour essayer l'app.</p>
+    </section>
+
+    <section id="fonctions" aria-labelledby="titre-fonctions" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 120px">
+      <h2 id="titre-fonctions" style="margin: 0; max-width: 18ch; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 800">Votre abonnement, enfin bien présenté.</h2>
+      <p style="margin: 20px 0 0; max-width: 38rem; font-size: 19px; line-height: 1.5; color: #A1A1A6">Ulti range les milliers de chaînes et de films de votre abonnement en écrans clairs, comme une app de télé que vous auriez toujours eue.</p>
+      <div style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 20px">
+        <article style="flex: 1 1 320px; min-width: 0; background: #141416; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; gap: 10px" aria-hidden="true">
+            <div style="width: 56px; height: 56px; border-radius: 50%; background: conic-gradient(#F5F5F7 0 70%, #3A3A3E 70% 100%); display: flex; align-items: center; justify-content: center"><div style="width: 48px; height: 48px; border-radius: 50%; background: #141416"></div></div>
+            <div style="width: 56px; height: 56px; border-radius: 50%; background: conic-gradient(#FF3B30 0 35%, #3A3A3E 35% 100%); display: flex; align-items: center; justify-content: center"><div style="width: 48px; height: 48px; border-radius: 50%; background: #141416"></div></div>
+            <div style="width: 56px; height: 56px; border-radius: 50%; background: conic-gradient(#F5F5F7 0 88%, #3A3A3E 88% 100%); display: flex; align-items: center; justify-content: center"><div style="width: 48px; height: 48px; border-radius: 50%; background: #141416"></div></div>
+          </div>
+          <h3 style="margin: 8px 0 0; font-size: 26px; letter-spacing: -0.02em; font-weight: 700">Le direct, d'un coup d'œil</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #A1A1A6">Un anneau autour de chaque chaîne montre où en est le programme. Filtrez par thème et zappez d'une chaîne à l'autre.</p>
+        </article>
+        <article style="flex: 1 1 320px; min-width: 0; background: #141416; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; flex-direction: column; gap: 6px" aria-hidden="true">
+            <div style="display: flex; gap: 6px"><span style="flex: 3; height: 20px; border-radius: 6px; background: #3A3A3E"></span><span style="flex: 2; height: 20px; border-radius: 6px; background: #242428"></span></div>
+            <div style="display: flex; gap: 6px"><span style="flex: 1; height: 20px; border-radius: 6px; background: #242428"></span><span style="flex: 4; height: 20px; border-radius: 6px; background: {{accent}}; opacity: 0.85"></span></div>
+            <div style="display: flex; gap: 6px"><span style="flex: 2; height: 20px; border-radius: 6px; background: #242428"></span><span style="flex: 3; height: 20px; border-radius: 6px; background: #3A3A3E"></span></div>
+          </div>
+          <h3 style="margin: 8px 0 0; font-size: 26px; letter-spacing: -0.02em; font-weight: 700">Un vrai guide TV</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #A1A1A6">Ce soir, demain, la semaine. Posez un rappel en un geste, ou utilisez votre propre guide XMLTV.</p>
+        </article>
+        <article style="flex: 1 1 320px; min-width: 0; background: #141416; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; gap: 8px" aria-hidden="true">
+            <sc-for list="{{affiches}}" as="f" hint-placeholder-count="4">
+              <span style="width: 54px; height: 80px; border-radius: 8px; background: {{f.fond}}; display: flex; align-items: flex-end; padding: 6px; box-sizing: border-box; font-size: 9px; line-height: 1.1; font-weight: 800; color: #FFFFFF; letter-spacing: 0.02em">{{f.titre}}</span>
+            </sc-for>
+          </div>
+          <h3 style="margin: 8px 0 0; font-size: 26px; letter-spacing: -0.02em; font-weight: 700">Films et séries, sans doublons</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #A1A1A6">Affiches et résumés, toutes les versions d'un même film réunies en une seule fiche, reprise là où vous vous êtes arrêté.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="visite" aria-labelledby="titre-visite" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 120px">
+      <h2 id="titre-visite" style="margin: 0; text-align: center; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 800">Faites le tour.</h2>
+      <div role="group" aria-label="Écrans de l'app" style="margin: 36px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; padding: 6px; border-radius: 999px; background: #141416; width: fit-content; max-width: 100%">
+        <sc-for list="{{onglets}}" as="o" hint-placeholder-count="5">
+          <button type="button" onClick="{{o.choisir}}" aria-pressed="{{o.actif}}" style="border: 0; cursor: pointer; padding: 10px 20px; border-radius: 999px; font: inherit; font-size: 15px; font-weight: 600; background: {{o.fond}}; color: {{o.couleur}}">{{o.nom}}</button>
+        </sc-for>
+      </div>
+      <p style="margin: 20px auto 0; max-width: 40rem; text-align: center; font-size: 17px; line-height: 1.5; color: #A1A1A6; min-height: 52px">{{legende}}</p>
+
+      <div style="position: relative; margin-top: 24px">
+        <div aria-hidden="true" style="position: absolute; left: -10%; right: -10%; top: -12%; bottom: -12%; background: {{haloStyle}}; pointer-events: none"></div>
+        <div style="position: relative; border-radius: 20px; box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 40px 120px rgba(0,0,0,0.9)">
+          <div style="container-type: inline-size; aspect-ratio: 16 / 9; border-radius: 20px; overflow: hidden; background: #000000; position: relative; text-align: left">
+
+            <dc-import name="Ecran" vue="{{ongletVue}}" barre="{{ false }}" hint-size="100%,620px"></dc-import>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apple-tv" aria-labelledby="titre-tv" style="background: #0A0A0B; border-top: 1px solid #1C1C1E; border-bottom: 1px solid #1C1C1E">
+      <div style="max-width: 1200px; margin: 0 auto; padding: 120px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+        <div style="flex: 1 1 420px; min-width: 0">
+          <p style="margin: 0 0 16px; font-size: 17px; font-weight: 600; color: {{accent}}">Apple TV</p>
+          <h2 id="titre-tv" style="margin: 0; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 800">Sur la télé, vous ne tapez rien.</h2>
+          <p style="margin: 24px 0 0; font-size: 19px; line-height: 1.5; color: #A1A1A6">Scannez le code affiché par l'Apple TV avec votre iPhone : votre abonnement arrive sur la télé, chiffré, sans passer par Internet.</p>
+          <ul style="margin: 32px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 17px">
+            <li style="display: flex; gap: 12px; align-items: baseline"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5 6.5 12 13 4.5"></path></svg>Zapping avec la télécommande, haut et bas</li>
+            <li style="display: flex; gap: 12px; align-items: baseline"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5 6.5 12 13 4.5"></path></svg>Image dans l'image pendant le direct</li>
+            <li style="display: flex; gap: 12px; align-items: baseline"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="{{accent}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5 6.5 12 13 4.5"></path></svg>Grandes affiches, pensées pour le canapé</li>
+          </ul>
+        </div>
+        <div style="flex: 1 1 440px; min-width: 0; display: flex; justify-content: center">
+          <div style="width: 100%; max-width: 520px; border-radius: 18px; box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 30px 90px rgba(0,0,0,0.9), 0 0 140px rgba(255,255,255,0.07)">
+            <div style="aspect-ratio: 16 / 10; border-radius: 18px; background: #000000; display: flex; align-items: center; justify-content: center; gap: 8%; padding: 6%; box-sizing: border-box">
+              <div role="img" aria-label="Code QR d'appairage (illustration)" style="flex: none; width: 38%; aspect-ratio: 1; background: #F5F5F7; border-radius: 10px; padding: 4%; box-sizing: border-box; display: grid; grid-template-columns: repeat(21, minmax(0, 1fr)); gap: 0">
+                <sc-for list="{{qr}}" as="q" hint-placeholder-count="441">
+                  <span style="aspect-ratio: 1; background: {{q.fond}}"></span>
+                </sc-for>
+              </div>
+              <div style="min-width: 0">
+                <p style="margin: 0; font-size: clamp(16px, 2vw, 22px); font-weight: 700; letter-spacing: -0.01em">Avec mon iPhone</p>
+                <p style="margin: 8px 0 0; font-size: clamp(12px, 1.3vw, 14px); line-height: 1.45; color: #A1A1A6">Visez ce code avec l'appareil photo de votre iPhone.</p>
+                <p style="margin: 16px 0 0; font-size: clamp(20px, 2.6vw, 30px); font-weight: 700; letter-spacing: 0.12em; font-variant-numeric: tabular-nums">482 913</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="titre-famille" style="max-width: 1200px; margin: 0 auto; padding: 120px 24px; display: flex; flex-wrap: wrap; gap: 20px">
+      <article style="flex: 1 1 460px; min-width: 0; background: #141416; border-radius: 28px; padding: 44px">
+        <h2 id="titre-famille" style="margin: 0; font-size: clamp(30px, 3.2vw, 44px); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800">Toute la famille, chacun chez soi.</h2>
+        <p style="margin: 18px 0 0; font-size: 17px; line-height: 1.5; color: #A1A1A6">Un profil par personne, avec sa liste et ses reprises. Le profil Enfant ne montre que ce que vous avez choisi, protégé par un code.</p>
+        <div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 20px" aria-hidden="true">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 8px"><span style="width: 64px; height: 64px; border-radius: 50%; background: #2E4A6B; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 700">A</span><span style="font-size: 14px; color: #A1A1A6">Alex</span></div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 8px"><span style="width: 64px; height: 64px; border-radius: 50%; background: #6B4E2E; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 700">C</span><span style="font-size: 14px; color: #A1A1A6">Camille</span></div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 8px"><span style="width: 64px; height: 64px; border-radius: 50%; background: #2E6B5A; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 700">E</span><span style="font-size: 14px; color: #A1A1A6">Enfant</span></div>
+        </div>
+      </article>
+      <article style="flex: 1 1 460px; min-width: 0; background: #141416; border-radius: 28px; padding: 44px">
+        <p style="margin: 0; font-size: 15px; font-weight: 700; letter-spacing: 0.06em; color: {{accent}}">PREMIUM</p>
+        <h2 style="margin: 12px 0 0; font-size: clamp(30px, 3.2vw, 44px); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800">Encore plus loin.</h2>
+        <ul style="margin: 28px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0; font-size: 17px">
+          <li style="padding: 14px 0; border-top: 1px solid #242428">Pause et retour en arrière sur le direct</li>
+          <li style="padding: 14px 0; border-top: 1px solid #242428">Replay des jours passés</li>
+          <li style="padding: 14px 0; border-top: 1px solid #242428">Téléchargements pour regarder hors ligne</li>
+          <li style="padding: 14px 0; border-top: 1px solid #242428">Synchro iCloud entre iPhone et Apple TV</li>
+          <li style="padding: 14px 0; border-top: 1px solid #242428">Plusieurs abonnements et profils</li>
+          <li style="padding: 14px 0; border-top: 1px solid #242428">Thèmes Halo et Programme</li>
+          <li style="padding: 14px 0; border-top: 1px solid #242428; border-bottom: 1px solid #242428; display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #A1A1A6">Multi-écran, jusqu'à 4 directs à la fois<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.04em; border: 1px solid #3A3A3E; border-radius: 999px; padding: 3px 9px">BIENTÔT</span></li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="titre-etapes" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 120px">
+      <h2 id="titre-etapes" style="margin: 0; text-align: center; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 800">Prêt en une minute.</h2>
+      <ol style="margin: 56px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 20px">
+        <li style="flex: 1 1 300px; min-width: 0; border-top: 2px solid #F5F5F7; padding-top: 24px">
+          <p style="margin: 0; font-size: 15px; font-weight: 700; color: #8E8E93; font-variant-numeric: tabular-nums">01</p>
+          <h3 style="margin: 10px 0 0; font-size: 24px; letter-spacing: -0.02em; font-weight: 700">Ajoutez votre abonnement</h3>
+          <p style="margin: 10px 0 0; font-size: 17px; line-height: 1.5; color: #A1A1A6">Collez le message reçu de votre fournisseur IPTV, ou saisissez ses identifiants. Ulti remplit le reste.</p>
+        </li>
+        <li style="flex: 1 1 300px; min-width: 0; border-top: 2px solid #3A3A3E; padding-top: 24px">
+          <p style="margin: 0; font-size: 15px; font-weight: 700; color: #8E8E93; font-variant-numeric: tabular-nums">02</p>
+          <h3 style="margin: 10px 0 0; font-size: 24px; letter-spacing: -0.02em; font-weight: 700">Ulti range tout</h3>
+          <p style="margin: 10px 0 0; font-size: 17px; line-height: 1.5; color: #A1A1A6">Chaînes, guide, films et séries sont triés. Gardez seulement les catégories qui vous intéressent.</p>
+        </li>
+        <li style="flex: 1 1 300px; min-width: 0; border-top: 2px solid #3A3A3E; padding-top: 24px">
+          <p style="margin: 0; font-size: 15px; font-weight: 700; color: #8E8E93; font-variant-numeric: tabular-nums">03</p>
+          <h3 style="margin: 10px 0 0; font-size: 24px; letter-spacing: -0.02em; font-weight: 700">Regardez partout</h3>
+          <p style="margin: 10px 0 0; font-size: 17px; line-height: 1.5; color: #A1A1A6">Sur iPhone, iPad et Apple TV. Avec Premium, votre liste et vos reprises vous suivent.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="tarifs" aria-labelledby="titre-tarifs" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 120px">
+      <h2 id="titre-tarifs" style="margin: 0; text-align: center; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 800">Gratuit pour l'essentiel.</h2>
+      <p style="margin: 18px auto 0; max-width: 36rem; text-align: center; font-size: 19px; line-height: 1.5; color: #A1A1A6">Premium s'essaie 7 jours sans payer. Partage familial inclus.</p>
+      <div style="margin-top: 56px; display: flex; flex-wrap: wrap; gap: 16px">
+        <article style="flex: 1 1 250px; min-width: 0; background: #141416; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-size: 19px; font-weight: 700">Gratuit</h3>
+          <p style="margin: 8px 0 0; font-size: 44px; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums">0 €</p>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A1A1A6">Direct, guide TV, films et séries, Apple TV par QR code, un profil Enfant.</p>
+        </article>
+        <article style="flex: 1 1 250px; min-width: 0; background: #141416; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-size: 19px; font-weight: 700">Mensuel</h3>
+          <p style="margin: 8px 0 0; font-size: 44px; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums">2,99 €<span style="font-size: 17px; font-weight: 600; color: #A1A1A6; letter-spacing: 0"> / mois</span></p>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A1A1A6">Tout Premium. 7 jours d'essai gratuit.</p>
+        </article>
+        <article style="flex: 1 1 250px; min-width: 0; background: #141416; border-radius: 24px; padding: 30px; display: flex; flex-direction: column; gap: 8px; border: 2px solid {{accent}}">
+          <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px">
+            <h3 style="margin: 0; font-size: 19px; font-weight: 700">Annuel</h3>
+            <span style="font-size: 13px; font-weight: 700; background: {{accent}}; color: #000000; padding: 4px 10px; border-radius: 999px">−16 %</span>
+          </div>
+          <p style="margin: 8px 0 0; font-size: 44px; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums">29,99 €<span style="font-size: 17px; font-weight: 600; color: #A1A1A6; letter-spacing: 0"> / an</span></p>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A1A1A6">Tout Premium, soit 2,50 € par mois. 7 jours d'essai gratuit.</p>
+        </article>
+        <article style="flex: 1 1 250px; min-width: 0; background: #141416; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 8px">
+          <h3 style="margin: 0; font-size: 19px; font-weight: 700">À vie</h3>
+          <p style="margin: 8px 0 0; font-size: 44px; font-weight: 800; letter-spacing: -0.03em; font-variant-numeric: tabular-nums">49,99 €</p>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #A1A1A6">Tout Premium, payé une seule fois.</p>
+        </article>
+      </div>
+      <p style="margin: 20px 0 0; text-align: center; font-size: 13px; color: #8E8E93">Prix TTC en France. Le prix exact de votre pays s'affiche dans l'App Store.</p>
+    </section>
+
+    <section aria-labelledby="titre-vie-privee" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 120px">
+      <div style="background: #141416; border-radius: 28px; padding: 56px 44px; display: flex; flex-wrap: wrap; align-items: center; gap: 32px">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="#F5F5F7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="25" width="32" height="22" rx="5"></rect><path d="M19 25v-6a9 9 0 0 1 18 0v6"></path><path d="M28 34v5"></path></svg>
+        <div style="flex: 1 1 480px; min-width: 0">
+          <h2 id="titre-vie-privee" style="margin: 0; font-size: clamp(28px, 3vw, 40px); letter-spacing: -0.03em; font-weight: 800">Aucune donnée collectée.</h2>
+          <p style="margin: 12px 0 0; font-size: 17px; line-height: 1.5; color: #A1A1A6">Vos identifiants restent dans le trousseau de votre appareil. Pas de compte à créer, pas de serveur Ulti.</p>
+        </div>
+        <a href="#questions" style="color: #F5F5F7; font-size: 17px; font-weight: 600">Notre politique de confidentialité</a>
+      </div>
+    </section>
+
+    <section id="questions" aria-labelledby="titre-questions" style="max-width: 860px; margin: 0 auto; padding: 0 24px 120px">
+      <h2 id="titre-questions" style="margin: 0 0 32px; font-size: clamp(32px, 3.6vw, 48px); letter-spacing: -0.03em; font-weight: 800">Questions fréquentes</h2>
+      <details open style="border-top: 1px solid #242428; padding: 22px 0">
+        <summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 600">Ulti fournit-il des chaînes ?<span class="faq-plus" aria-hidden="true" style="color: #8E8E93; font-size: 26px; line-height: 1; transition: transform 0.2s">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 17px; line-height: 1.55; color: #A1A1A6">Non. Ulti est un lecteur : il lit les sources que vous ajoutez vous-même. Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder.</p>
+      </details>
+      <details style="border-top: 1px solid #242428; padding: 22px 0">
+        <summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 600">Sur quels appareils ?<span class="faq-plus" aria-hidden="true" style="color: #8E8E93; font-size: 26px; line-height: 1; transition: transform 0.2s">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 17px; line-height: 1.55; color: #A1A1A6">iPhone, iPad et Apple TV. Un achat Premium vaut sur tous vos appareils avec le même identifiant Apple, et pour votre famille avec le Partage familial.</p>
+      </details>
+      <details style="border-top: 1px solid #242428; padding: 22px 0">
+        <summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 600">Mes identifiants sont-ils en sécurité ?<span class="faq-plus" aria-hidden="true" style="color: #8E8E93; font-size: 26px; line-height: 1; transition: transform 0.2s">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 17px; line-height: 1.55; color: #A1A1A6">Ils sont gardés dans le trousseau de votre appareil et ne passent jamais par un serveur Ulti.</p>
+      </details>
+      <details style="border-top: 1px solid #242428; padding: 22px 0">
+        <summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 600">Quels abonnements sont compatibles ?<span class="faq-plus" aria-hidden="true" style="color: #8E8E93; font-size: 26px; line-height: 1; transition: transform 0.2s">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 17px; line-height: 1.55; color: #A1A1A6">Les abonnements fournis sous forme de lien M3U ou d'identifiants Xtream Codes, c'est-à-dire la grande majorité. Le plus simple : collez le message de votre fournisseur, Ulti reconnaît le format tout seul.</p>
+      </details>
+      <details style="border-top: 1px solid #242428; border-bottom: 1px solid #242428; padding: 22px 0">
+        <summary style="display: flex; justify-content: space-between; gap: 24px; font-size: 20px; font-weight: 600">Puis-je essayer avant de payer ?<span class="faq-plus" aria-hidden="true" style="color: #8E8E93; font-size: 26px; line-height: 1; transition: transform 0.2s">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 17px; line-height: 1.55; color: #A1A1A6">Oui. La version gratuite couvre l'essentiel, et Premium s'essaie gratuitement pendant 7 jours avec l'abonnement mensuel ou annuel.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer style="border-top: 1px solid #1C1C1E; background: #000000">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 48px; display: flex; flex-direction: column; gap: 24px; font-size: 13px; color: #8E8E93">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px">
+        <div style="display: flex; flex-wrap: wrap; gap: 24px">
+          <a href="#questions" style="color: #A1A1A6; text-decoration: none">Support</a>
+          <a href="#questions" style="color: #A1A1A6; text-decoration: none">Confidentialité</a>
+          <a href="#questions" style="color: #A1A1A6; text-decoration: none">Mentions légales</a>
+        </div>
+        <a href="Pays.dc.html" style="display: inline-flex; align-items: center; gap: 8px; color: #F5F5F7; text-decoration: none; padding: 8px 14px; border: 1px solid #3A3A3E; border-radius: 999px">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="8" cy="8" r="6.5"></circle><path d="M1.5 8h13M8 1.5c2 2 2.8 4 2.8 6.5S10 12.5 8 14.5C6 12.5 5.2 10.5 5.2 8S6 3.5 8 1.5Z"></path></svg>
+          France · Français
+        </a>
+      </div>
+      <p style="margin: 0; line-height: 1.6">Ulti ne fournit aucune chaîne ni aucun contenu. Ce produit utilise l'API TMDB mais n'est ni approuvé ni certifié par TMDB. Apple, Apple TV, iPhone et iPad sont des marques d'Apple Inc.</p>
+      <p style="margin: 0">© 2026 Ulti · <a href="mailto:contact@ultitv.com" style="color: #A1A1A6">contact@ultitv.com</a></p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#FFFFFF","options":["#FFFFFF","#5AC8FA","#F5A524","#34D399"],"section":"Style"},"disponible":{"editor":"boolean","default":false,"section":"Lancement"},"bandeau":{"editor":"boolean","default":true,"section":"Lancement"},"halo":{"editor":"range","default":14,"min":0,"max":30,"step":1,"unit":"%","section":"Style"},"$preview":{"width":1440,"height":6600}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { bandeauFerme: false, onglet: 'direct', ecranTV: 'accueil', ecranTel: 'accueil' };
+  }
+  anneau(pourcent, couleur) {
+    return 'conic-gradient(' + couleur + ' 0 ' + pourcent + '%, #3A3A3E ' + pourcent + '% 100%)';
+  }
+  codeQR() {
+    var n = 21, cells = [];
+    var finder = function (r, c) {
+      var zones = [[0, 0], [0, n - 7], [n - 7, 0]];
+      for (var i = 0; i < zones.length; i++) {
+        var r0 = zones[i][0], c0 = zones[i][1];
+        if (r >= r0 && r < r0 + 7 && c >= c0 && c < c0 + 7) {
+          var dr = r - r0, dc = c - c0;
+          var bord = dr === 0 || dr === 6 || dc === 0 || dc === 6;
+          var centre = dr >= 2 && dr <= 4 && dc >= 2 && dc <= 4;
+          return bord || centre ? 1 : 0;
+        }
+        if (r >= r0 - 1 && r <= r0 + 7 && c >= c0 - 1 && c <= c0 + 7) return 0;
+      }
+      return -1;
+    };
+    var graine = 7;
+    for (var r = 0; r < n; r++) {
+      for (var c = 0; c < n; c++) {
+        var f = finder(r, c);
+        var plein;
+        if (f >= 0) { plein = f === 1; }
+        else { graine = (graine * 1103515245 + 12345) % 2147483648; plein = (graine >> 16) % 2 === 0; }
+        cells.push({ fond: plein ? '#000000' : 'transparent' });
+      }
+    }
+    return cells;
+  }
+  renderVals() {
+    var accent = this.props.accent ?? '#FFFFFF';
+    var disponible = this.props.disponible ?? false;
+    var bandeau = this.props.bandeau ?? true;
+    var halo = (this.props.halo ?? 14) / 100;
+    var a = this.anneau.bind(this);
+    var onglet = this.state.onglet;
+    var tel = this.state.ecranTel;
+    return {
+      accent: accent,
+      haloStyle: 'radial-gradient(ellipse 50% 50% at 50% 52%, rgba(255,255,255,' + halo + ') 0%, rgba(255,255,255,' + (halo / 3) + ') 40%, rgba(255,255,255,0) 72%)',
+      disponible: disponible,
+      bientot: !disponible,
+      showBanner: bandeau && !this.state.bandeauFerme,
+      closeBanner: () => this.setState({ bandeauFerme: true }),
+
+      ecranTV: this.state.ecranTV,
+      choisirTV: (id) => this.setState({ ecranTV: id }),
+
+      telAccueil: tel === 'accueil',
+      telDirect: tel === 'direct',
+      telFilms: tel === 'films',
+      telSeries: tel === 'series',
+      telOnglets: [['accueil', 'Accueil'], ['direct', 'Direct'], ['films', 'Films'], ['series', 'Séries']].map((o) => ({
+        nom: o[1],
+        actif: tel === o[0] ? 'true' : 'false',
+        poids: tel === o[0] ? 700 : 500,
+        couleur: tel === o[0] ? '#F5F5F7' : '#A1A1A6',
+        fond: tel === o[0] ? 'rgba(120,120,128,0.36)' : 'transparent',
+        choisir: () => this.setState({ ecranTel: o[0] })
+      })),
+      telChaines: [
+        { logo: 'Pellicule', fond: '#8C1C2B', police: 'Georgia, serif', tailleTel: 2.2, titre: 'Sintel', avance: '72%', barre: '#F5F5F7' },
+        { logo: 'LE FIL', fond: '#0A4D8C', police: 'inherit', tailleTel: 2.8, titre: 'Le journal du soir', avance: '45%', barre: '#FF3B30' },
+        { logo: 'animo', fond: '#E0791B', police: 'ui-rounded, inherit', tailleTel: 3.2, titre: 'Big Buck Bunny', avance: '20%', barre: '#F5F5F7' },
+        { logo: 'ORBITE', fond: '#2B2F6B', police: 'inherit', tailleTel: 2.2, titre: 'Cosmos Laundromat', avance: '88%', barre: '#F5F5F7' },
+        { logo: 'Petit Pois', fond: '#3E8E3A', police: 'ui-rounded, inherit', tailleTel: 2.2, titre: 'Caminandes', avance: '60%', barre: '#F5F5F7' },
+        { logo: 'RÉTRO', fond: '#6B4A2B', police: 'Georgia, serif', tailleTel: 2.4, titre: 'Elephants Dream', avance: '95%', barre: '#F5F5F7' }
+      ],
+      telAffiches: [
+        { affiche: 'SINTEL', fond: '#5A3A2A' }, { affiche: 'BIG BUCK BUNNY', fond: '#4A7A2E' }, { affiche: 'TEARS OF STEEL', fond: '#3A4A5A' },
+        { affiche: 'COSMOS LAUNDROMAT', fond: '#4A2E6B' }, { affiche: 'SPRING', fond: '#2E5E7A' }, { affiche: 'SPRITE FRIGHT', fond: '#3D5A2A' },
+        { affiche: 'CHARGE', fond: '#7A2E2E' }, { affiche: 'COFFEE RUN', fond: '#6B4E2E' }, { affiche: 'WING IT!', fond: '#7A5A2E' }
+      ],
+      telEpisodes: [
+        { numero: 1, titre: 'Llama Drama', etat: 'Vu', vu: '100%', image: 'linear-gradient(135deg, #A3B85A, #5A6E2E)' },
+        { numero: 2, titre: 'Gran Dillama', etat: 'Reprendre', vu: '45%', image: 'linear-gradient(135deg, #C2A35A, #6E5A2E)' },
+        { numero: 3, titre: 'Llamigos', etat: 'À voir', vu: '0%', image: 'linear-gradient(135deg, #8CB8C2, #3A5A6E)' }
+      ],
+
+      onglets: [['direct', 'Direct'], ['guide', 'Guide TV'], ['replay', 'Replay'], ['films', 'Films'], ['series', 'Séries']].map((o) => ({
+        nom: o[1],
+        actif: onglet === o[0] ? 'true' : 'false',
+        fond: onglet === o[0] ? '#F5F5F7' : 'transparent',
+        couleur: onglet === o[0] ? '#000000' : '#D1D1D6',
+        choisir: () => this.setState({ onglet: o[0] })
+      })),
+      ongletVue: onglet,
+      legende: ({
+        direct: 'Toutes vos chaînes en grandes vignettes, avec le programme en cours. Filtrez par thème, puis zappez.',
+        guide: 'Ce soir, demain, toute la semaine. Un rappel en un geste, et la ligne rouge montre où vous en êtes.',
+        replay: 'Ratez une émission ? Retrouvez les jours passés, chaîne par chaîne.',
+        films: 'Affiches, résumés et toutes les versions d\'un même film réunies dans une seule fiche.',
+        series: 'Saisons et épisodes bien rangés, et la reprise là où vous vous êtes arrêté.'
+      })[onglet],
+
+      soiree: [
+        { nom: 'Pellicule', logo: 'Pellicule', titre: 'Sintel', heure: '20:45 – 21:00', fond: '#8C1C2B', police: "Georgia, 'Times New Roman', serif", tailleTel: 2.3, espace: '0', anneau: a(70, '#F5F5F7') },
+        { nom: 'Le Fil', logo: 'LE FIL', titre: 'Le journal du soir', heure: '20:30 – 21:10', fond: '#0A4D8C', police: 'inherit', tailleTel: 2.8, espace: '0.04em', anneau: a(55, '#FF3B30') },
+        { nom: 'Animo', logo: 'animo', titre: 'Sprite Fright', heure: '20:50 – 21:05', fond: '#E0791B', police: 'ui-rounded, inherit', tailleTel: 3.2, espace: '-0.02em', anneau: a(30, '#F5F5F7') },
+        { nom: 'Orbite', logo: 'ORBITE', titre: 'Cosmos Laundromat', heure: '20:40 – 20:55', fond: '#2B2F6B', police: 'inherit', tailleTel: 2.3, espace: '0.12em', anneau: a(82, '#F5F5F7') },
+        { nom: 'Petit Pois', logo: 'Petit Pois', titre: 'Caminandes', heure: '20:35 – 20:50', fond: '#3E8E3A', police: 'ui-rounded, inherit', tailleTel: 2.3, espace: '0', anneau: a(90, '#F5F5F7') }
+      ],
+      affiches: [
+        { titre: 'SPRITE FRIGHT', fond: '#3D5A2A' },
+        { titre: 'SPRING', fond: '#2E5E7A' },
+        { titre: 'CHARGE', fond: '#7A2E2E' },
+        { titre: 'COFFEE RUN', fond: '#6B4E2E' }
+      ],
+      qr: this.codeQR()
+    };
+  }
+}
+</script>
+</body>
+</html>
