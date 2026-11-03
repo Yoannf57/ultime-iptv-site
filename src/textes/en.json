@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "direction": "ltr",
+    "titre": "Ulti — The ultimate IPTV experience",
+    "description": "Ulti, the IPTV player for iPhone and Apple TV: live TV, guide, movies and series in a simple app that's ready to use."
+  },
+  "marque": { "nom": "Ulti", "suffixe": "IPTV" },
+  "accueil": {
+    "surtitre": "For iPhone and Apple TV",
+    "accroche": "The ultimate IPTV experience.",
+    "phrase": "Live TV, guide, movies and series: your IPTV subscription becomes an intuitive TV app. Just open it and watch.",
+    "provisoire": "Temporary page: the full presentation is coming soon."
+  },
+  "bouton": {
+    "bientot": "Coming soon to the App Store",
+    "telecharger": "Download on the App Store"
+  },
+  "prix": {
+    "gratuit": "Live TV is free.",
+    "aPartirDe": "Premium from {prix} per month.",
+    "appStore": "Premium: price shown on the App Store."
+  },
+  "neutralite": "Ulti does not provide any channels or content. You must have your own sources, and the right to watch them.",
+  "pied": {
+    "changerPays": "Change country or region (currently: {pays})",
+    "contact": "Contact:",
+    "tmdb": "This product uses the TMDB API but is not endorsed or certified by TMDB.",
+    "tmdbLogo": "The Movie Database (TMDB) logo"
+  },
+  "bandeau": {
+    "etiquette": "Country suggestion",
+    "continuer": "Continue",
+    "fermer": "Close",
+    "question": {
+      "fr-fr": "Are you in France?",
+      "fr-be": "Are you in Belgium?",
+      "fr-lu": "Are you in Luxembourg?",
+      "fr-ch": "Are you in Switzerland?",
+      "fr-ca": "Are you in Canada?",
+      "en-gb": "Are you in the United Kingdom?",
+      "en-ie": "Are you in Ireland?",
+      "en-us": "Are you in the United States?",
+      "en-ca": "Are you in Canada?"
+    },
+    "voir": {
+      "fr-fr": "View the site for France (in French)",
+      "fr-be": "View the site for Belgium (in French)",
+      "fr-lu": "View the site for Luxembourg (in French)",
+      "fr-ch": "View the site for Switzerland (in French)",
+      "fr-ca": "View the site for Canada (in French)",
+      "en-gb": "View the site for the United Kingdom",
+      "en-ie": "View the site for Ireland",
+      "en-us": "View the site for the United States",
+      "en-ca": "View the site for Canada"
+    }
+  },
+  "choix": {
+    "titre": "Choose your country or region",
+    "regions": {
+      "europe": "Europe",
+      "ameriques": "Americas",
+      "international": "International"
+    }
+  }
+}

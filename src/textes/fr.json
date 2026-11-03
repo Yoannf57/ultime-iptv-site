@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "direction": "ltr",
+    "titre": "Ulti — L'expérience IPTV ultime",
+    "description": "Ulti, le lecteur IPTV pour iPhone et Apple TV : direct, guide TV, films et séries, dans une app simple et prête à l'emploi."
+  },
+  "marque": { "nom": "Ulti", "suffixe": "IPTV" },
+  "accueil": {
+    "surtitre": "Pour iPhone et Apple TV",
+    "accroche": "L'expérience IPTV ultime.",
+    "phrase": "Direct, guide TV, films et séries : votre abonnement IPTV devient une app de télé intuitive. Vous l'ouvrez, vous regardez.",
+    "provisoire": "Page provisoire : la présentation complète arrive bientôt."
+  },
+  "bouton": {
+    "bientot": "Bientôt sur l'App Store",
+    "telecharger": "Télécharger dans l'App Store"
+  },
+  "prix": {
+    "gratuit": "Le direct est gratuit.",
+    "aPartirDe": "Premium à partir de {prix} par mois.",
+    "appStore": "Premium : prix affiché dans l'App Store."
+  },
+  "neutralite": "Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder.",
+  "pied": {
+    "changerPays": "Changer de pays ou de région (actuellement : {pays})",
+    "contact": "Contact :",
+    "tmdb": "Ce produit utilise l'API TMDB mais n'est ni approuvé ni certifié par TMDB.",
+    "tmdbLogo": "Logo de The Movie Database (TMDB)"
+  },
+  "bandeau": {
+    "etiquette": "Suggestion de pays",
+    "continuer": "Continuer",
+    "fermer": "Fermer",
+    "question": {
+      "fr-fr": "Vous êtes en France ?",
+      "fr-be": "Vous êtes en Belgique ?",
+      "fr-lu": "Vous êtes au Luxembourg ?",
+      "fr-ch": "Vous êtes en Suisse ?",
+      "fr-ca": "Vous êtes au Canada ?",
+      "en-gb": "Vous êtes au Royaume-Uni ?",
+      "en-ie": "Vous êtes en Irlande ?",
+      "en-us": "Vous êtes aux États-Unis ?",
+      "en-ca": "Vous êtes au Canada ?"
+    },
+    "voir": {
+      "fr-fr": "Voir le site pour la France",
+      "fr-be": "Voir le site pour la Belgique",
+      "fr-lu": "Voir le site pour le Luxembourg",
+      "fr-ch": "Voir le site pour la Suisse",
+      "fr-ca": "Voir le site pour le Canada",
+      "en-gb": "Voir le site pour le Royaume-Uni (en anglais)",
+      "en-ie": "Voir le site pour l'Irlande (en anglais)",
+      "en-us": "Voir le site pour les États-Unis (en anglais)",
+      "en-ca": "Voir le site pour le Canada (en anglais)"
+    }
+  },
+  "choix": {
+    "titre": "Choisissez votre pays ou votre région",
+    "regions": {
+      "europe": "Europe",
+      "ameriques": "Amériques",
+      "international": "International"
+    }
+  }
+}
