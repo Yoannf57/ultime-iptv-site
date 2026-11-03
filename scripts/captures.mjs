@@ -72,6 +72,18 @@ if (!process.argv.includes("--sans-captures")) {
   await p2.screenshot({ path: `${dossier}sans-js-fr-fr-ordi.png`, fullPage: true });
   console.log("📸 " + `${dossier}sans-js-fr-fr-ordi.png`);
   await sansJS.close();
+
+  // Pied de page zoomé (×2) : le logo TMDB doit être chargé.
+  for (const [taille, viewport] of Object.entries(tailles)) {
+    const c = await navigateur.newContext({ viewport, deviceScaleFactor: 2, locale: "fr-FR", timezoneId: "Europe/Paris", reducedMotion: "reduce" });
+    const p = await c.newPage();
+    await p.goto(adresse + "fr-fr/", { waitUntil: "networkidle" });
+    const charge = await p.locator("footer img.tmdb").evaluate((i) => i.complete && i.naturalWidth > 0);
+    if (!charge) { echecs++; console.log(`✗ logo TMDB non chargé (${taille})`); }
+    await p.locator("footer").screenshot({ path: `${dossier}pied-${taille}.png` });
+    console.log("📸 " + `${dossier}pied-${taille}.png`);
+    await c.close();
+  }
 }
 
 // Page racine : où arrive-t-on ?
