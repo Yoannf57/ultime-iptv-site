@@ -175,7 +175,12 @@ une langue.
 - **Pas de cadre dessiné à la main** (Yoann trouve le cadre de la première maquette « pas très beau ») : soit des
   écrans qui flottent, aux coins arrondis, avec un liseré blanc très fin (comme la maquette actuelle), soit les cadres
   officiels des ressources marketing d'Apple, en respectant leurs règles. En S2, montrer les deux en captures et
-  laisser Yoann choisir. Badge App Store : uniquement le badge officiel d'Apple, dans la langue de la page, une fois
+  laisser Yoann choisir.
+  **Constat de S2 (03/11/2026)** : les cadres d'Apple (Design Resources, « Product Bezels ») sont livrés avec un
+  contrat de licence (« App Store Marketing Artwork License ») réservé aux apps **déjà disponibles sur l'App Store**,
+  à accepter par Yoann lui-même (titulaire du compte développeur) ; ne jamais l'accepter à sa place. Règles d'usage :
+  image non modifiée, rien de caché (l'iPhone ne peut pas passer devant l'Apple TV), pas d'ombre ni de halo sur le
+  cadre, pas de cadre transformé en bouton, et uniquement de vraies captures de l'app. En attendant : écrans flottants. Badge App Store : uniquement le badge officiel d'Apple, dans la langue de la page, une fois
   l'app publiée.
 - **Chaînes montrées sur le site : des marques inventées**, jamais une vraie chaîne (même gratuite ou publique : ce
   sont des marques déposées, et le site doit rester neutre). Celles de la maquette : Pellicule (cinéma), Le Fil et
@@ -269,6 +274,6 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 ## 10. Avancement
 
 - [x] S1 — Socle
-- [ ] S2 — Accueil
+- [x] S2 — Accueil
 - [ ] S3 — Pages obligatoires
 - [ ] S4 — Captures et finitions
