@@ -3,7 +3,8 @@
 // Par défaut : le site local lancé par « npm run preview » (http://localhost:4321/ultime-iptv-site/).
 // Les images vont dans captures/ (non versionné).
 import { chromium } from "playwright";
-import { mkdirSync } from "node:fs";
+import { mkdirSync, readFileSync } from "node:fs";
+const nombrePays = JSON.parse(readFileSync(new URL("../src/pays.json", import.meta.url), "utf8")).length;
 
 const adresse = (process.argv[2] || "http://localhost:4321/ultime-iptv-site/").replace(/\/?$/, "/");
 const dossier = new URL("../captures/", import.meta.url).pathname;
@@ -25,6 +26,16 @@ const pages = [
   { nom: "bandeau-fr-be", chemin: "fr-fr/", locale: "fr-BE", fuseau: "Europe/Brussels" },
 ];
 
+// Fait défiler toute la page pour que les captures « lazy » visibles se chargent avant la photo.
+async function chargerImages(page) {
+  await page.evaluate(async () => {
+    for (let y = 0; y < document.body.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)); }
+    window.scrollTo(0, 0);
+  });
+  await page.waitForLoadState("networkidle");
+  await page.waitForFunction(() => [...document.images].every((i) => !i.checkVisibility() || (i.complete && i.naturalWidth > 0)), null, { timeout: 15000 }).catch(() => console.log("  (images encore en chargement)"));
+}
+
 const navigateur = await chromium.launch();
 let echecs = 0;
 
@@ -37,6 +48,7 @@ if (!process.argv.includes("--sans-captures")) {
       });
       const page = await contexte.newPage();
       await page.goto(adresse + p.chemin, { waitUntil: "networkidle" });
+      await chargerImages(page);
       const fichier = `${dossier}${p.nom}-${taille}.png`;
       await page.screenshot({ path: fichier, fullPage: true });
       console.log("📸 " + fichier);
@@ -53,8 +65,7 @@ if (!process.argv.includes("--sans-captures")) {
   await page.goto(adresse + "fr-fr/", { waitUntil: "networkidle" });
   await page.emulateMedia({ reducedMotion: "reduce" });
   const etats = [
-    { nom: "tv", zone: ".apercu", boutons: '.ecran-tv [data-cible="tv"]' },
-    { nom: "tel", zone: ".apercu", boutons: '[data-cible="tel"]' },
+    { nom: "apercu", zone: ".apercu", boutons: '[data-cible="apercu"]' },
     { nom: "visite", zone: "#visite", boutons: '[data-cible="visite"]' },
     { nom: "formule", zone: "#tarifs", boutons: '[data-cible="formule"]' },
   ];
@@ -64,6 +75,8 @@ if (!process.argv.includes("--sans-captures")) {
       const b = boutons.nth(i);
       const vue = await b.getAttribute("data-vue");
       await b.click();
+      await page.waitForLoadState("networkidle");
+      await page.waitForFunction((z) => [...document.querySelectorAll(z + " img")].every((i) => !i.checkVisibility() || (i.complete && i.naturalWidth > 0)), e.zone);
       const pressee = await b.getAttribute("aria-pressed");
       if (pressee !== "true") { echecs++; console.log(`✗ ${e.nom}/${vue} : aria-pressed n'est pas passé à true`); }
       const fichier = `${dossier}etat-${e.nom}-${vue}.png`;
@@ -136,7 +149,7 @@ for (const c of cas) {
   const arrivee = page.url().slice(adresse.length);
   // Sans JavaScript, on reste sur la racine, qui doit montrer la liste des pays.
   const ok = c.js === false
-    ? arrivee === "" && (await page.locator("[data-pays]").count()) === 10
+    ? arrivee === "" && (await page.locator("[data-pays]").count()) === nombrePays
     : arrivee === c.attendu;
   if (!ok) echecs++;
   console.log(`${ok ? "✓" : "✗"} ${c.nom || `${c.locale} + ${c.fuseau} → ${c.attendu}`}${ok ? "" : ` (arrivé sur « ${arrivee} »)`}`);

@@ -30,18 +30,19 @@
     "neutralite": "Ulti does not provide any channels or content."
   },
   "apercu": {
-    "etiquette": "Preview of the app on Apple TV and iPhone",
-    "ongletsTV": "App tabs on Apple TV",
-    "ongletsTel": "App tabs on iPhone",
-    "indice": "Click the screens to try the app."
+    "etiquette": "Preview of the app on Apple TV, iPad and iPhone",
+    "appareils": "Apple TV, iPad and Mac with Apple silicon, iPhone: the same app, everywhere.",
+    "onglets": "App screens",
+    "indice": "Pick a screen to discover the app."
   },
   "onglets": {
     "accueil": "Home",
     "direct": "Live",
     "guide": "TV Guide",
-    "replay": "Replay",
-    "films": "Movies",
-    "series": "Series"
+    "profils": "Profiles",
+    "pause": "Pause live TV",
+    "films": "Movies & Series",
+    "multi": "Multi-screen"
   },
   "fonctions": {
     "titre": "Your subscription, beautifully presented.",
@@ -60,9 +61,28 @@
     "legendes": {
       "direct": "All your channels as large tiles, with what's on now. Filter by theme, then flip through.",
       "guide": "Tonight, tomorrow, all week. A reminder in one gesture, and a line shows where you are.",
-      "replay": "Missed a show? Go back to previous days, channel by channel. With Premium.",
-      "films": "Posters, summaries and every version of a movie gathered in a single page. With Premium.",
-      "series": "Seasons and episodes neatly organised, and you resume right where you left off. With Premium."
+      "pause": "Pause live TV, rewind or start the show from the beginning, then jump back to live.",
+      "films": "Browse the catalogue with posters and summaries, every version of a movie in one place, and resume where you left off.",
+      "multi": "Up to 4 live channels at once on Apple TV, iPad and Mac, 2 on iPhone, within the connection limit of your subscription."
+    },
+    "credits": "Real app screens, with made-up channels and images from free films by the Blender Studio (CC BY licence). [Image credits](credits)."
+  },
+  "captures": {
+    "alt": "Ulti on {appareil}: {ecran}",
+    "appareils": {
+      "appletv": "Apple TV",
+      "ipad": "iPad",
+      "iphone": "iPhone"
+    },
+    "vues": {
+      "accueil": "the home screen, with the featured movie and live channels",
+      "direct-bandeau": "a live channel, with the banner showing what's on",
+      "direct": "the list of live channels",
+      "guide": "the TV guide",
+      "profils": "choosing a profile, “Who's watching?”",
+      "pause-direct": "live TV paused, with the button to go back to live",
+      "films-series": "the movies and series catalogue",
+      "multi-ecran": "four live channels at once"
     }
   },
   "appletv": {
@@ -71,10 +91,7 @@
     "texte": "Scan the code shown on Apple TV with your iPhone: your subscription arrives on the TV, encrypted, directly over your local network.",
     "point1": "Flip channels with the remote, up and down",
     "point2": "Picture in Picture during live TV",
-    "point3": "Big posters, designed for the couch",
-    "qrEtiquette": "Pairing QR code (illustration)",
-    "qrTitre": "With my iPhone",
-    "qrTexte": "Point your iPhone's camera at this code."
+    "point3": "Big posters, designed for the couch"
   },
   "famille": {
     "titre": "The whole family, each in their own space.",
@@ -90,7 +107,7 @@
     "icloud": "iCloud sync across all your devices",
     "plusieurs": "Multiple subscriptions and profiles",
     "themes": "Halo and Programme themes",
-    "multi": "Multiview: up to 4 live channels at once (2 on iPhone)"
+    "multi": "Multi-screen: up to 4 live channels at once (2 on iPhone)"
   },
   "etapes": {
     "titre": "Ready in a minute.",
@@ -192,55 +209,6 @@
       "international": "Other countries"
     }
   },
-  "ecrans": {
-    "sintelGenre": "Movie · 2010 · Fantasy",
-    "sintelResume": "A young woman sets out alone to find the baby dragon she once rescued.",
-    "lecture": "Play",
-    "maListe": "My List",
-    "enDirect": "Live now",
-    "badgeDirect": "LIVE",
-    "filtres": {
-      "tout": "All",
-      "cinema": "Movies",
-      "info": "News",
-      "jeunesse": "Kids",
-      "sciences": "Science"
-    },
-    "guideDate": "Tonight · Tuesday 3 November",
-    "jours": {
-      "aujourdhui": "Today",
-      "hier": "Yesterday",
-      "dimanche": "Sunday",
-      "samedi": "Saturday",
-      "vendredi": "Friday"
-    },
-    "quand": "{jour} · {heure}",
-    "filmsGenres": "Animation · Fantasy · Science fiction",
-    "serieGenre": "Series · Animation · 2013–2016",
-    "serieGenreCourt": "Series · Animation",
-    "serieResume": "Koro, a llama from Patagonia, is always looking for greener grass on the other side.",
-    "episodes": "Episodes",
-    "version": "Version: Original · HD",
-    "episode": "Episode {numero} · {annee}",
-    "episodeCourt": "Episode {numero}",
-    "etats": {
-      "vu": "Watched",
-      "reprendre": "Resume",
-      "aVoir": "Up next"
-    },
-    "ceSoir": "Tonight",
-    "maintenant": "Now",
-    "programmes": {
-      "journal": "The evening news",
-      "journalCourt": "The news",
-      "lePoint": "The briefing",
-      "debat": "The big debate",
-      "etoiles": "The stars, up close"
-    },
-    "profils": {
-      "enfant": "Kids"
-    }
-  },
   "pages": {
     "miseAJour": "Updated {date}",
     "sommaire": "On this page",
@@ -334,7 +302,7 @@
       },
       "inclus": {
         "q": "What does Premium include?",
-        "r": "Movies and series (catalogue, details with posters and summaries, playback, resume points, every version of a movie), multiview, replay, live pause, downloads on iPhone and iPad, iCloud sync, extra adult profiles and subscriptions, the “For you” and “Popular” rows, the Halo and Programme themes, and alternative icons.\n\nIn the free version, you can browse movies and series; playing them requires Premium."
+        "r": "Movies and series (catalogue, details with posters and summaries, playback, resume points, every version of a movie), multi-screen, replay, live pause, downloads on iPhone and iPad, iCloud sync, extra adult profiles and subscriptions, the “For you” and “Popular” rows, the Halo and Programme themes, and alternative icons.\n\nIn the free version, you can browse movies and series; playing them requires Premium."
       },
       "soloFamille": {
         "q": "Solo or Family: what's the difference?",
@@ -358,7 +326,7 @@
       },
       "occupee": {
         "q": "“Your previous stream is still open”: what should I do?",
-        "r": "Your subscription allows only one stream at a time, and your provider often takes 1 to 2 minutes to release the previous one, for example right after a movie or another channel. Ulti shows a countdown on the “Try Again” button: tap it once the countdown ends. If another device is already watching with the same subscription, stop playback on that device.\n\nIn multiview, “No free connection left” means all the connections of your subscriptions are already in use. With a single-connection subscription, a download pauses while you watch, then resumes on its own."
+        "r": "Your subscription allows only one stream at a time, and your provider often takes 1 to 2 minutes to release the previous one, for example right after a movie or another channel. Ulti shows a countdown on the “Try Again” button: tap it once the countdown ends. If another device is already watching with the same subscription, stop playback on that device.\n\nIn multi-screen, “No free connection left” means all the connections of your subscriptions are already in use. With a single-connection subscription, a download pauses while you watch, then resumes on its own."
       },
       "refusee": {
         "q": "“Connection refused by the provider” or “This subscription has expired”",
@@ -381,8 +349,8 @@
         "r": "Did your provider send your login details by text, WhatsApp or email? On iPhone, copy the whole message, then, in Account › Subscriptions › Add a subscription, tap “Paste the message you received”. Ulti finds the server, username and password, or the M3U link, and fills in the fields by itself. Check them, then tap “Continue”.\n\nThe message is read on the iPhone, never sent or saved. Nothing connects before “Continue”."
       },
       "multi": {
-        "q": "How does multiview work?",
-        "r": "Multiview is part of Premium: watch up to 4 live channels at once on Apple TV, iPad and Mac, and 2 on iPhone. The number of screens also depends on your IPTV subscription: each live channel uses one connection, and many subscriptions allow only one. If you have several subscriptions, their connections add up."
+        "q": "How does multi-screen work?",
+        "r": "Multi-screen is part of Premium: watch up to 4 live channels at once on Apple TV, iPad and Mac, and 2 on iPhone. The number of screens also depends on your IPTV subscription: each live channel uses one connection, and many subscriptions allow only one. If you have several subscriptions, their connections add up."
       },
       "partage": {
         "q": "How do I share Premium with my family?",
@@ -481,7 +449,7 @@
       },
       "propriete": {
         "titre": "Intellectual property",
-        "texte": "The Ulti name, its logo, and the texts and design of this website are the property of the publisher. Apple, Apple TV, iPhone, iPad, Mac and App Store are trademarks of Apple Inc.\n\nThe movies and series shown in the example screens are free films from the [Blender Studio](blender) (© Blender Foundation), released under Creative Commons licences. The channels shown are made up."
+        "texte": "The Ulti name, its logo, and the texts and design of this website are the property of the publisher. Apple, Apple TV, iPhone, iPad, Mac and App Store are trademarks of Apple Inc.\n\nThe movies and series shown in the screens are free films from the [Blender Studio](blender) (© Blender Foundation), released under Creative Commons licences (see the credits below). The channels shown are made up."
       },
       "tmdb": {
         "titre": "Movie and series data",
@@ -490,6 +458,10 @@
       "contenus": {
         "titre": "Content",
         "texte": "Ulti does not provide any channels or content. You must have your own sources, and the right to watch them."
+      },
+      "credits": {
+        "titre": "Image credits",
+        "texte": "The screens shown on this website are real captures of the app, made with a demo playlist: the channels and their shows are made up.\n\nThe live TV images are excerpts from films by the [Blender Studio](blender), with no other changes:\n\n• Big Buck Bunny (2008), © Blender Foundation, www.bigbuckbunny.org, licence [CC BY 3.0](cc-by-3);\n• Elephants Dream (2006), © Blender Foundation / Netherlands Media Art Institute, www.elephantsdream.org, licence [CC BY 2.5](cc-by-25);\n• Sintel (2010), © Blender Foundation, www.sintel.org, licence [CC BY 3.0](cc-by-3);\n• Cosmos Laundromat (2015), © Blender Institute, gooseberry.blender.org, licence [CC BY 4.0](cc-by-4).\n\nMovie posters and summaries: The Movie Database (TMDB)."
       }
     },
     "blancs": {

@@ -35,11 +35,15 @@ export function ciblesTextes(code: string, contact: string): Record<string, stri
     legal: lienSousPage(code, "legal"),
     accueil: lien(`${code}/`),
     tarifs: lien(`${code}/#tarifs`),
+    credits: lien(`${code}/legal/#s-credits`),
     pays: lien("pays/"),
     "apple-resilier": `https://support.apple.com/${apple}/118428`,
     "apple-partage": `https://support.apple.com/${apple}/108380`,
     "github-confidentialite": "https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement",
     "blender": "https://studio.blender.org/films/",
     "tmdb": "https://www.themoviedb.org/",
+    "cc-by-25": "https://creativecommons.org/licenses/by/2.5/",
+    "cc-by-3": "https://creativecommons.org/licenses/by/3.0/",
+    "cc-by-4": "https://creativecommons.org/licenses/by/4.0/",
   };
 }

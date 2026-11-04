@@ -30,18 +30,19 @@
     "neutralite": "Ulti ne fournit aucune chaîne ni aucun contenu."
   },
   "apercu": {
-    "etiquette": "Aperçu de l'app sur Apple TV et iPhone",
-    "ongletsTV": "Onglets de l'app sur Apple TV",
-    "ongletsTel": "Onglets de l'app sur iPhone",
-    "indice": "Cliquez sur les écrans pour essayer l'app."
+    "etiquette": "Aperçu de l'app sur Apple TV, iPad et iPhone",
+    "appareils": "Apple TV, iPad et Mac avec puce Apple, iPhone : la même app, partout.",
+    "onglets": "Écrans de l'app",
+    "indice": "Choisissez un écran pour découvrir l'app."
   },
   "onglets": {
     "accueil": "Accueil",
     "direct": "Direct",
     "guide": "Guide TV",
-    "replay": "Replay",
-    "films": "Films",
-    "series": "Séries"
+    "profils": "Profils",
+    "pause": "Pause du direct",
+    "films": "Films et séries",
+    "multi": "Multi-écran"
   },
   "fonctions": {
     "titre": "Votre abonnement, enfin bien présenté.",
@@ -60,9 +61,28 @@
     "legendes": {
       "direct": "Toutes vos chaînes en grandes vignettes, avec le programme en cours. Filtrez par thème, puis zappez.",
       "guide": "Ce soir, demain, toute la semaine. Un rappel en un geste, et une ligne montre où vous en êtes.",
-      "replay": "Ratez une émission ? Retrouvez les jours passés, chaîne par chaîne. Avec Premium.",
-      "films": "Affiches, résumés et toutes les versions d'un même film réunies dans une seule fiche. Avec Premium.",
-      "series": "Saisons et épisodes bien rangés, et la reprise là où vous vous êtes arrêté. Avec Premium."
+      "pause": "Mettez le direct en pause, revenez en arrière ou reprenez au début de l'émission, puis revenez au direct.",
+      "films": "Parcourez le catalogue avec affiches et résumés, toutes les versions d'un film réunies, et reprenez là où vous vous êtes arrêté.",
+      "multi": "Jusqu'à 4 directs à la fois sur Apple TV, iPad et Mac, 2 sur iPhone, dans la limite des connexions de votre abonnement."
+    },
+    "credits": "Vrais écrans de l'app, avec des chaînes inventées et des images de films libres du Blender Studio (licence CC BY). [Crédits des images](credits)."
+  },
+  "captures": {
+    "alt": "Ulti sur {appareil} : {ecran}",
+    "appareils": {
+      "appletv": "Apple TV",
+      "ipad": "iPad",
+      "iphone": "iPhone"
+    },
+    "vues": {
+      "accueil": "l'accueil, avec le film à la une et les chaînes en direct",
+      "direct-bandeau": "une chaîne en direct, avec le bandeau du programme en cours",
+      "direct": "la liste des chaînes en direct",
+      "guide": "le guide TV",
+      "profils": "le choix du profil, « Qui regarde ? »",
+      "pause-direct": "le direct en pause, avec le retour au direct",
+      "films-series": "le catalogue des films et séries",
+      "multi-ecran": "quatre directs à la fois"
     }
   },
   "appletv": {
@@ -71,10 +91,7 @@
     "texte": "Scannez le code affiché par l'Apple TV avec votre iPhone : votre abonnement arrive sur la télé, chiffré, directement sur votre réseau local.",
     "point1": "Zapping avec la télécommande, haut et bas",
     "point2": "Image dans l'image pendant le direct",
-    "point3": "Grandes affiches, pensées pour le canapé",
-    "qrEtiquette": "Code QR d'appairage (illustration)",
-    "qrTitre": "Avec mon iPhone",
-    "qrTexte": "Visez ce code avec l'appareil photo de votre iPhone."
+    "point3": "Grandes affiches, pensées pour le canapé"
   },
   "famille": {
     "titre": "Toute la famille, chacun chez soi.",
@@ -190,55 +207,6 @@
       "europe": "Europe",
       "ameriques": "Amériques",
       "international": "Autres pays"
-    }
-  },
-  "ecrans": {
-    "sintelGenre": "Film · 2010 · Fantastique",
-    "sintelResume": "Une jeune femme part seule à la recherche du bébé dragon qu'elle a sauvé.",
-    "lecture": "Lecture",
-    "maListe": "Ma liste",
-    "enDirect": "En direct",
-    "badgeDirect": "EN DIRECT",
-    "filtres": {
-      "tout": "Tout",
-      "cinema": "Cinéma",
-      "info": "Info",
-      "jeunesse": "Jeunesse",
-      "sciences": "Sciences"
-    },
-    "guideDate": "Ce soir · mardi 3 novembre",
-    "jours": {
-      "aujourdhui": "Aujourd'hui",
-      "hier": "Hier",
-      "dimanche": "Dimanche",
-      "samedi": "Samedi",
-      "vendredi": "Vendredi"
-    },
-    "quand": "{jour} · {heure}",
-    "filmsGenres": "Animation · Fantastique · Science-fiction",
-    "serieGenre": "Série · Animation · 2013–2016",
-    "serieGenreCourt": "Série · Animation",
-    "serieResume": "Koro, un lama de Patagonie, cherche toujours l'herbe plus verte de l'autre côté.",
-    "episodes": "Épisodes",
-    "version": "Version : VO · HD",
-    "episode": "Épisode {numero} · {annee}",
-    "episodeCourt": "Épisode {numero}",
-    "etats": {
-      "vu": "Vu",
-      "reprendre": "Reprendre",
-      "aVoir": "À voir"
-    },
-    "ceSoir": "Ce soir",
-    "maintenant": "Maintenant",
-    "programmes": {
-      "journal": "Le journal du soir",
-      "journalCourt": "Le journal",
-      "lePoint": "Le point",
-      "debat": "Le grand débat",
-      "etoiles": "Les étoiles, de près"
-    },
-    "profils": {
-      "enfant": "Enfant"
     }
   },
   "pages": {
@@ -481,7 +449,7 @@
       },
       "propriete": {
         "titre": "Propriété intellectuelle",
-        "texte": "Le nom Ulti, son logo, les textes et la présentation de ce site sont la propriété de l'éditeur. Apple, Apple TV, iPhone, iPad, Mac et App Store sont des marques d'Apple Inc.\n\nLes films et séries cités dans les écrans d'exemple sont des films libres du [Blender Studio](blender) (© Blender Foundation), publiés sous licence Creative Commons. Les chaînes montrées sont inventées."
+        "texte": "Le nom Ulti, son logo, les textes et la présentation de ce site sont la propriété de l'éditeur. Apple, Apple TV, iPhone, iPad, Mac et App Store sont des marques d'Apple Inc.\n\nLes films et séries montrés dans les écrans sont des films libres du [Blender Studio](blender) (© Blender Foundation), publiés sous licence Creative Commons (voir les crédits ci-dessous). Les chaînes montrées sont inventées."
       },
       "tmdb": {
         "titre": "Données des films et séries",
@@ -490,6 +458,10 @@
       "contenus": {
         "titre": "Contenus",
         "texte": "Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder."
+      },
+      "credits": {
+        "titre": "Crédits des images",
+        "texte": "Les écrans montrés sur ce site sont de vraies captures de l'app, faites avec une liste de démonstration : les chaînes et leurs programmes sont inventés.\n\nLes images des directs sont des extraits de films du [Blender Studio](blender), sans autre modification :\n\n• Big Buck Bunny (2008), © Blender Foundation, www.bigbuckbunny.org, licence [CC BY 3.0](cc-by-3) ;\n• Elephants Dream (2006), © Blender Foundation / Netherlands Media Art Institute, www.elephantsdream.org, licence [CC BY 2.5](cc-by-25) ;\n• Sintel (2010), © Blender Foundation, www.sintel.org, licence [CC BY 3.0](cc-by-3) ;\n• Cosmos Laundromat (2015), © Blender Institute, gooseberry.blender.org, licence [CC BY 4.0](cc-by-4).\n\nAffiches et résumés des films : The Movie Database (TMDB)."
       }
     },
     "blancs": {

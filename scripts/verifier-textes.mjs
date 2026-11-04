@@ -60,23 +60,21 @@ for (const langue of Object.keys(langues)) {
   }
 }
 
-// 3 bis. Les textes appelés depuis les données des écrans dessinés (src/donnees/ecrans.json).
-const ecrans = JSON.parse(readFileSync(join(racine, "src/donnees/ecrans.json"), "utf8"));
-const clesEcrans = new Set();
-for (const o of [...ecrans.ongletsTV, ...ecrans.ongletsTel, ...ecrans.ongletsVisite]) clesEcrans.add(`onglets.${o}`);
-for (const o of ecrans.ongletsVisite) clesEcrans.add(`visite.legendes.${o}`);
-for (const j of ecrans.replayJours) clesEcrans.add(`ecrans.jours.${j}`);
-for (const e of ecrans.episodes) clesEcrans.add(`ecrans.etats.${e.etat}`);
-for (const p of ecrans.profils) if (p.cle) clesEcrans.add(`ecrans.profils.${p.cle}`);
-(function chercher(valeur, dansProfils) {
-  if (Array.isArray(valeur)) valeur.forEach((v) => chercher(v, dansProfils));
-  else if (valeur && typeof valeur === "object") {
-    if (typeof valeur.cle === "string" && !dansProfils) clesEcrans.add(`ecrans.programmes.${valeur.cle}`);
-    for (const [k, v] of Object.entries(valeur)) chercher(v, dansProfils || k === "profils");
-  }
-})(ecrans, false);
+// 3 bis. Les textes appelés depuis la liste des vraies captures (src/donnees/captures.json).
+const captures = JSON.parse(readFileSync(join(racine, "src/donnees/captures.json"), "utf8"));
+const clesCaptures = new Set();
+for (const v of captures.apercu.vues) clesCaptures.add(`onglets.${v}`);
+for (const [appareil, vues] of Object.entries(captures.apercu.ecrans)) {
+  clesCaptures.add(`captures.appareils.${appareil}`);
+  for (const c of Object.values(vues)) clesCaptures.add(`captures.vues.${c}`);
+}
+for (const v of captures.visite) {
+  clesCaptures.add(`onglets.${v.vue}`); clesCaptures.add(`visite.legendes.${v.vue}`);
+  clesCaptures.add(`captures.appareils.${v.appareil}`); clesCaptures.add(`captures.vues.${v.capture}`);
+}
+for (const e of [captures.appletv, captures.famille]) { clesCaptures.add(`captures.appareils.${e.appareil}`); clesCaptures.add(`captures.vues.${e.capture}`); }
 for (const langue of Object.keys(langues)) {
-  for (const cle of clesEcrans) if (!(cle in cles(langue))) problemes.push(`[${langue}] clé manquante (appelée par ecrans.json) : ${cle}`);
+  for (const cle of clesCaptures) if (!(cle in cles(langue))) problemes.push(`[${langue}] clé manquante (appelée par captures.json) : ${cle}`);
 }
 
 // 3 ter. Les textes appelés depuis l'ordre des pages Support, Confidentialité et Mentions (src/donnees/pages.json).
