@@ -183,22 +183,26 @@
       "fr-be": "Vous êtes en Belgique ?",
       "fr-lu": "Vous êtes au Luxembourg ?",
       "fr-ch": "Vous êtes en Suisse ?",
-      "fr-ca": "Vous êtes au Canada ?",
       "en-gb": "Vous êtes au Royaume-Uni ?",
       "en-ie": "Vous êtes en Irlande ?",
+      "fr-ca": "Vous êtes au Canada ?",
+      "en-ca": "Vous êtes au Canada ?",
       "en-us": "Vous êtes aux États-Unis ?",
-      "en-ca": "Vous êtes au Canada ?"
+      "nl-nl": "Vous êtes aux Pays-Bas ?",
+      "nl-be": "Vous êtes en Belgique ?"
     },
     "voir": {
       "fr-fr": "Voir le site pour la France",
       "fr-be": "Voir le site pour la Belgique",
       "fr-lu": "Voir le site pour le Luxembourg",
       "fr-ch": "Voir le site pour la Suisse",
-      "fr-ca": "Voir le site pour le Canada",
       "en-gb": "Voir le site pour le Royaume-Uni (en anglais)",
       "en-ie": "Voir le site pour l'Irlande (en anglais)",
+      "fr-ca": "Voir le site pour le Canada",
+      "en-ca": "Voir le site pour le Canada (en anglais)",
       "en-us": "Voir le site pour les États-Unis (en anglais)",
-      "en-ca": "Voir le site pour le Canada (en anglais)"
+      "nl-nl": "Voir le site pour les Pays-Bas (en néerlandais)",
+      "nl-be": "Voir le site pour la Belgique (en néerlandais)"
     }
   },
   "choix": {

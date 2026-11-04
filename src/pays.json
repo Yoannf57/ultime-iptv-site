@@ -61,6 +61,24 @@
     "devise": "USD", "lienAppStore": null, "prix": null
   },
   {
+    "code": "nl-nl", "langue": "nl", "locale": "nl-NL", "region": "europe", "nom": "Nederland", "nomLangue": "Nederlands",
+    "fuseaux": ["Europe/Amsterdam"],
+    "devise": "EUR", "lienAppStore": null,
+    "prix": {
+      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
+      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+    }
+  },
+  {
+    "code": "nl-be", "langue": "nl", "locale": "nl-BE", "region": "europe", "nom": "België", "nomLangue": "Nederlands",
+    "fuseaux": ["Europe/Brussels"],
+    "devise": "EUR", "lienAppStore": null,
+    "prix": {
+      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
+      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+    }
+  },
+  {
     "code": "en", "langue": "en", "locale": "en", "region": "international", "nom": "International", "nomLangue": "English",
     "fuseaux": [],
     "devise": null, "lienAppStore": null, "prix": null

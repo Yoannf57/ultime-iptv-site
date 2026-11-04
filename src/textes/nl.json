@@ -1,0 +1,487 @@
+{
+  "meta": {
+    "direction": "ltr",
+    "titre": "Ulti — De ultieme IPTV-ervaring",
+    "description": "Ulti, de IPTV-speler voor iPhone, iPad, Mac en Apple TV: live tv, tv-gids, films en series, in een eenvoudige app die meteen klaar is voor gebruik."
+  },
+  "marque": {
+    "nom": "Ulti",
+    "suffixe": "IPTV",
+    "retourHaut": "Ulti, naar boven",
+    "accueil": "Ulti, home"
+  },
+  "entete": {
+    "navigation": "Hoofdnavigatie",
+    "fonctions": "Functies",
+    "visite": "Rondleiding",
+    "appletv": "Apple TV",
+    "tarifs": "Prijzen",
+    "questions": "Vragen",
+    "bientot": "Binnenkort beschikbaar",
+    "telecharger": "Download"
+  },
+  "heros": {
+    "surtitre": "Voor iPhone, iPad, Mac en Apple TV",
+    "accroche": "De ultieme\nIPTV-ervaring.",
+    "phrase": "Live tv, tv-gids, films en series: je IPTV-abonnement wordt een intuïtieve tv-app. Openen en kijken.",
+    "bientot": "Binnenkort in de App Store",
+    "telecharger": "Download in de App Store",
+    "voirTarifs": "Bekijk de prijzen",
+    "neutralite": "Ulti levert geen zenders en geen content."
+  },
+  "apercu": {
+    "etiquette": "Voorproefje van de app op Apple TV, iPad en iPhone",
+    "appareils": "Apple TV, iPad en Mac met Apple-chip, iPhone: dezelfde app, overal.",
+    "onglets": "Schermen van de app",
+    "indice": "Kies een scherm om de app te ontdekken."
+  },
+  "onglets": {
+    "accueil": "Home",
+    "direct": "Live",
+    "guide": "Tv-gids",
+    "profils": "Profielen",
+    "pause": "Live pauzeren",
+    "films": "Films en series",
+    "multi": "Multiscreen"
+  },
+  "fonctions": {
+    "titre": "Je abonnement, eindelijk overzichtelijk.",
+    "phrase": "Ulti zet de duizenden zenders en films van je abonnement in heldere schermen, als een tv-app die je altijd al had.",
+    "directTitre": "Live tv in één oogopslag",
+    "directTexte": "Een ring rond elke zender laat zien hoe ver het programma is. Filter op thema en zap van zender naar zender.",
+    "guideTitre": "Een echte tv-gids",
+    "guideTexte": "Vanavond, morgen, de hele week. Stel met één gebaar een herinnering in, of gebruik je eigen XMLTV-gids.",
+    "filmsTitre": "Films en series, zonder dubbels",
+    "filmsTexte": "Posters en samenvattingen, alle versies van een film samen op één pagina, verder kijken waar je was gebleven.",
+    "premium": "Premium"
+  },
+  "visite": {
+    "titre": "Neem een kijkje.",
+    "groupe": "Schermen van de app",
+    "legendes": {
+      "direct": "Al je zenders als grote tegels, met het programma van dit moment. Filter op thema en zap.",
+      "guide": "Vanavond, morgen, de hele week. Een herinnering met één gebaar, en een lijn toont waar je bent.",
+      "pause": "Pauzeer live tv, spoel terug of begin het programma vanaf het begin, en ga daarna terug naar live.",
+      "films": "Blader door de catalogus met posters en samenvattingen, alle versies van een film samen, en kijk verder waar je was gebleven.",
+      "multi": "Tot 4 livezenders tegelijk op Apple TV, iPad en Mac, 2 op iPhone, binnen het aantal verbindingen van je abonnement."
+    },
+    "credits": "Echte schermen van de app, met verzonnen zenders en beelden uit vrije films van de Blender Studio (licentie CC BY). [Beeldcredits](credits)."
+  },
+  "captures": {
+    "alt": "Ulti op {appareil}: {ecran}",
+    "appareils": {
+      "appletv": "Apple TV",
+      "ipad": "iPad",
+      "iphone": "iPhone"
+    },
+    "vues": {
+      "accueil": "het beginscherm, met de uitgelichte film en de livezenders",
+      "direct-bandeau": "een livezender, met de balk van het huidige programma",
+      "direct": "de lijst met livezenders",
+      "guide": "de tv-gids",
+      "profils": "de profielkeuze, „Wie kijkt er?”",
+      "pause-direct": "gepauzeerde live tv, met de knop terug naar live",
+      "films-series": "de catalogus met films en series",
+      "multi-ecran": "vier livezenders tegelijk"
+    }
+  },
+  "appletv": {
+    "surtitre": "Apple TV",
+    "titre": "Op de tv typ je niets.",
+    "texte": "Scan de code op de Apple TV met je iPhone: je abonnement komt versleuteld op de tv, rechtstreeks via je lokale netwerk.",
+    "point1": "Zappen met de afstandsbediening, omhoog en omlaag",
+    "point2": "Beeld-in-beeld tijdens live tv",
+    "point3": "Grote posters, gemaakt voor de bank"
+  },
+  "famille": {
+    "titre": "Het hele gezin, ieder zijn eigen plek.",
+    "texte": "Eén profiel per persoon met Premium, ieder met een eigen lijst en eigen hervatpunten. Het Kinderprofiel, inbegrepen in de gratis versie, ziet geen content voor volwassenen en kan alleen met de ouderlijke code worden verlaten."
+  },
+  "premium": {
+    "surtitre": "Premium",
+    "titre": "Nog een stap verder.",
+    "films": "Films en series, met posters, samenvattingen en hervatten",
+    "pause": "Live tv pauzeren en terugspoelen",
+    "replay": "Terugkijken van afgelopen dagen",
+    "telechargements": "Downloads om offline te kijken",
+    "icloud": "iCloud-synchronisatie tussen al je apparaten",
+    "plusieurs": "Meerdere abonnementen en profielen",
+    "themes": "Thema's Halo en Programma",
+    "multi": "Multiscreen: tot 4 livezenders tegelijk (2 op iPhone)"
+  },
+  "etapes": {
+    "titre": "Klaar in een minuut.",
+    "e1Titre": "Voeg je abonnement toe",
+    "e1Texte": "Plak het bericht van je IPTV-aanbieder, of vul de inloggegevens in. Ulti doet de rest.",
+    "e2Titre": "Ulti zet alles op orde",
+    "e2Texte": "Zenders, gids, films en series worden gesorteerd. Houd alleen de categorieën die je interesseren.",
+    "e3Titre": "Kijk overal",
+    "e3Texte": "Op iPhone, iPad, Mac en Apple TV. Met Premium gaan je lijst en hervatpunten met je mee."
+  },
+  "tarifs": {
+    "titre": "Gratis voor de basis.",
+    "phrase": "Live tv is gratis. Premium probeer je 7 dagen zonder te betalen.",
+    "gratuitTitre": "Gratis",
+    "gratuitTexte": "Live tv, tv-gids en herinneringen, beeld-in-beeld, Apple TV via QR-code, een Kinderprofiel.",
+    "choix": "Kies een Premium-formule",
+    "pourMoi": "Voor mij",
+    "pourFamille": "Voor het gezin",
+    "soloLegende": "Solo: voor jou, op al je apparaten.",
+    "familleLegende": "Gezin: tot 6 personen met Delen met gezin van Apple.",
+    "mensuel": "Maandelijks",
+    "annuel": "Jaarlijks",
+    "vie": "Levenslang",
+    "parMois": "/ maand",
+    "parAn": "/ jaar",
+    "mensuelTexte": "Alles van Premium. 7 dagen gratis proberen.",
+    "annuelTexte": "Alles van Premium, dus {prix} per maand. 7 dagen gratis proberen.",
+    "annuelTexteSansPrix": "Alles van Premium. 7 dagen gratis proberen.",
+    "vieTexte": "Alles van Premium, één keer betaald.",
+    "remise": "−{remise}%",
+    "prixAppStore": "Prijzen staan in de App Store",
+    "noteTTC": "Prijzen inclusief btw.",
+    "noteAppStore": "De exacte prijs voor jouw land staat in de App Store."
+  },
+  "viePrivee": {
+    "titre": "Er worden geen gegevens verzameld.",
+    "texte": "Je inloggegevens blijven in de sleutelhanger van je apparaat. Geen account aanmaken, geen server van Ulti.",
+    "lien": "Ons privacybeleid"
+  },
+  "faq": {
+    "titre": "Veelgestelde vragen",
+    "q1": "Levert Ulti zenders?",
+    "r1": "Nee. Ulti is een speler: hij speelt de bronnen af die je zelf toevoegt. Ulti levert geen zenders en geen content. Je moet over je eigen bronnen beschikken en het recht hebben om ze te bekijken.",
+    "q2": "Op welke apparaten?",
+    "r2": "iPhone, iPad, Mac (met Apple-chip) en Apple TV. Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin.",
+    "q3": "Zijn mijn inloggegevens veilig?",
+    "r3": "Ze worden bewaard in de sleutelhanger van je apparaat en gaan nooit via een server van Ulti.",
+    "q4": "Welke abonnementen werken?",
+    "r4": "Abonnementen die je krijgt als M3U-link of als Xtream Codes-inloggegevens, dus verreweg de meeste. Het makkelijkst: plak het bericht van je aanbieder, Ulti herkent het formaat zelf.",
+    "q5": "Kan ik het proberen voordat ik betaal?",
+    "r5": "Ja. Live tv is gratis. Premium probeer je 7 dagen gratis met de maand- en jaarabonnementen, Solo of Gezin."
+  },
+  "neutralite": "Ulti levert geen zenders en geen content. Je moet over je eigen bronnen beschikken en het recht hebben om ze te bekijken.",
+  "pied": {
+    "changerPays": "Ander land of andere regio kiezen (nu: {pays}, {langue})",
+    "tmdb": "Dit product gebruikt de TMDB-API, maar is niet goedgekeurd of gecertificeerd door TMDB.",
+    "tmdbLogo": "Logo van The Movie Database (TMDB)",
+    "marques": "Apple, Apple TV, iPhone, iPad en Mac zijn handelsmerken van Apple Inc.",
+    "copyright": "© 2026 Ulti",
+    "liens": {
+      "navigation": "Informatie",
+      "support": "Support",
+      "privacy": "Privacy",
+      "legal": "Juridische informatie"
+    }
+  },
+  "bandeau": {
+    "etiquette": "Landkeuze",
+    "continuer": "Doorgaan",
+    "fermer": "Sluiten",
+    "question": {
+      "fr-fr": "Ben je in Frankrijk?",
+      "fr-be": "Ben je in België?",
+      "fr-lu": "Ben je in Luxemburg?",
+      "fr-ch": "Ben je in Zwitserland?",
+      "en-gb": "Ben je in het Verenigd Koninkrijk?",
+      "en-ie": "Ben je in Ierland?",
+      "fr-ca": "Ben je in Canada?",
+      "en-ca": "Ben je in Canada?",
+      "en-us": "Ben je in de Verenigde Staten?",
+      "nl-nl": "Ben je in Nederland?",
+      "nl-be": "Ben je in België?"
+    },
+    "voir": {
+      "fr-fr": "Bekijk de site voor Frankrijk (in het Frans)",
+      "fr-be": "Bekijk de site voor België (in het Frans)",
+      "fr-lu": "Bekijk de site voor Luxemburg (in het Frans)",
+      "fr-ch": "Bekijk de site voor Zwitserland (in het Frans)",
+      "en-gb": "Bekijk de site voor het Verenigd Koninkrijk (in het Engels)",
+      "en-ie": "Bekijk de site voor Ierland (in het Engels)",
+      "fr-ca": "Bekijk de site voor Canada (in het Frans)",
+      "en-ca": "Bekijk de site voor Canada (in het Engels)",
+      "en-us": "Bekijk de site voor de Verenigde Staten (in het Engels)",
+      "nl-nl": "Bekijk de site voor Nederland",
+      "nl-be": "Bekijk de site voor België"
+    }
+  },
+  "choix": {
+    "titre": "Kies je land of regio",
+    "regions": {
+      "europe": "Europa",
+      "ameriques": "Amerika",
+      "international": "Andere landen"
+    }
+  },
+  "pages": {
+    "miseAJour": "Bijgewerkt op {date}",
+    "sommaire": "Op deze pagina",
+    "support": {
+      "titre": "Support",
+      "metaTitre": "Support — Ulti",
+      "description": "Hulp bij Ulti: installeren, een IPTV-abonnement toevoegen, Apple TV, profielen, Premium, aankopen en afspelen.",
+      "chapeau": "Alles om goed te beginnen met Ulti, en antwoorden op de meestgestelde vragen."
+    },
+    "privacy": {
+      "titre": "Privacy",
+      "metaTitre": "Privacy — Ulti",
+      "description": "Privacybeleid van Ulti: er worden geen gegevens verzameld, je inloggegevens blijven op je apparaat.",
+      "chapeau": "Ulti verzamelt geen gegevens. Dit is precies wat de app doet, en wat deze website doet."
+    },
+    "legal": {
+      "titre": "Juridische informatie",
+      "metaTitre": "Juridische informatie — Ulti",
+      "description": "Juridische informatie over de website en de app Ulti.",
+      "chapeau": "Wie Ulti uitgeeft, wie deze website host, en de rechten op wat hier wordt getoond. Bij verschillen is de Franse versie van deze pagina leidend."
+    }
+  },
+  "faqPlus": "Alle vragen op de supportpagina",
+  "support": {
+    "groupes": {
+      "debut": "Aan de slag",
+      "abonnement": "Een abonnement toevoegen",
+      "appletv": "Apple TV",
+      "profils": "Profielen en ouderlijke code",
+      "premium": "Premium en aankopen",
+      "lecture": "Problemen met afspelen",
+      "confidentialite": "Privacy"
+    },
+    "q": {
+      "chaines": {
+        "q": "Levert Ulti zenders?",
+        "r": "Nee. Ulti is een speler: hij speelt het IPTV-abonnement af dat je zelf toevoegt. Ulti levert geen zenders en geen content. Je moet over je eigen bronnen beschikken en het recht hebben om ze te bekijken."
+      },
+      "appareils": {
+        "q": "Op welke apparaten werkt Ulti?",
+        "r": "iPhone, iPad, Mac en Apple TV: iPhone en iPad met iOS 17 of iPadOS 17 of nieuwer, Apple TV met tvOS 17 of nieuwer, en Macs met Apple-chip, die de iPad-app gebruiken. Premium geldt op al je apparaten die met dezelfde Apple Account zijn verbonden."
+      },
+      "installer": {
+        "q": "Hoe installeer ik Ulti?",
+        "r": "Download Ulti in de App Store van je iPhone, iPad of Mac, en in de App Store van je Apple TV. Na de installatie heet de app „Ulti IPTV”.",
+        "rBientot": "Ulti komt binnenkort naar de App Store, voor iPhone, iPad, Mac en Apple TV. Na de installatie heet de app „Ulti IPTV”."
+      },
+      "ajouter": {
+        "q": "Hoe voeg ik mijn IPTV-abonnement toe?",
+        "r": "Open Account › Abonnementen › Abonnement toevoegen. Het makkelijkst, op iPhone: „Ontvangen bericht plakken” (zie de volgende vraag).\n\nJe kunt ook de server, gebruikersnaam en het wachtwoord invullen, of een M3U-link plakken. Op Apple TV stuur je het abonnement het makkelijkst vanaf je iPhone (zie „Apple TV” hieronder)."
+      },
+      "formats": {
+        "q": "Welke formaten worden ondersteund?",
+        "r": "Xtream Codes-accounts (server, gebruikersnaam en wachtwoord) en M3U-playlistlinks. Voor de tv-gids gebruikt Ulti die van je aanbieder; je kunt ook het adres van een gids in XMLTV-formaat (.xml of .xml.gz) opgeven in Account › Tv-gids.\n\nNiet ondersteund: abonnementen die aan een MAC-adres zijn gekoppeld en Stalker/Ministra-portalen."
+      },
+      "replay": {
+        "q": "Werkt terugkijken met mijn abonnement?",
+        "r": "Terugkijken hoort bij Premium. Het werkt met een Xtream Codes-account, voor de zenders waarvoor je aanbieder terugkijken aanbiedt. Met M3U-playlists is het nog niet beschikbaar."
+      },
+      "trier": {
+        "q": "Mijn abonnement heeft te veel zenders. Hoe maak ik een selectie?",
+        "r": "Kies in Account › Mijn content welke landen, categorieën en zenders je wilt zien. De rest van je abonnement blijft beschikbaar, alleen verborgen. Elk profiel heeft zijn eigen keuzes."
+      },
+      "plusieurs": {
+        "q": "Kan ik meerdere abonnementen toevoegen?",
+        "r": "Ja, met Premium. Tik in Account › Abonnementen op een abonnement om het te gebruiken. Mijn content, Mijn lijst, hervatpunten en herinneringen blijven per abonnement gescheiden."
+      },
+      "qr": {
+        "q": "Hoe zet ik mijn abonnement op de Apple TV?",
+        "r": "Zonder iets te typen met de afstandsbediening: open Ulti op de Apple TV, er verschijnt een QR-code. Scan die met de camera van je iPhone, tik op de Ulti-link en het abonnement komt vanzelf binnen, met je categorieën, favorieten en weergave. Heeft de Apple TV al een abonnement, dan staat de QR-code in Account › Abonnementen › Abonnement toevoegen.\n\nDe iPhone en de Apple TV moeten op hetzelfde wifinetwerk zitten. De overdracht is versleuteld en loopt rechtstreeks via je lokale netwerk; de ouderlijke code wordt nooit verstuurd. Je kunt het abonnement ook met de afstandsbediening invoeren."
+      },
+      "qrBloque": {
+        "q": "De QR-code werkt niet. Wat nu?",
+        "r": "Controleer of de Apple TV aanstaat, op hetzelfde wifinetwerk zit als de iPhone en het scherm met de QR-code toont. Het abonnement moet eerst op de iPhone zijn toegevoegd.\n\nHeeft de iPhone de toegang tot het lokale netwerk geweigerd, sta die dan toe in Instellingen › Ulti IPTV › Lokaal netwerk en scan de QR-code opnieuw. Een QR-code verloopt na een tijdje: scan altijd de code die op het scherm staat."
+      },
+      "profils": {
+        "q": "Hoe werken profielen?",
+        "r": "Elk profiel heeft zijn eigen Mijn content, Mijn lijst, hervatpunten en herinneringen. Profielen beheer je in Account › Profielen. De gratis versie bevat een Kinderprofiel; extra profielen voor volwassenen horen bij Premium."
+      },
+      "enfant": {
+        "q": "Wat is het Kinderprofiel?",
+        "r": "Een Kinderprofiel ziet geen categorieën en geen content voor volwassenen, heeft geen toegang tot de abonnementen en kan niet worden verlaten zonder de ouderlijke code. Die 4-cijferige code is ook nodig om profielen te wijzigen en, als er een Kinderprofiel is, om een profiel voor volwassenen te openen (tenzij je dat voor dat profiel uitzet).\n\nDe ouderlijke code blijft op elk apparaat: hij wordt nooit verstuurd, niet via iCloud en niet naar de Apple TV."
+      },
+      "codeOublie": {
+        "q": "Ik ben de ouderlijke code vergeten.",
+        "r": "Tik op iPhone of iPad op „Ouderlijke code vergeten”, bevestig met Face ID of de toegangscode van het apparaat dat jij het bent, en maak een nieuwe code. De toegangscode van het apparaat moet zijn ingeschakeld in Instellingen.\n\nScan op Apple TV met je iPhone de QR-code op het scherm, zet „Nieuwe ouderlijke code toestaan” aan en bevestig met Face ID of de toegangscode van de iPhone."
+      },
+      "gratuit": {
+        "q": "Wat zit er in de gratis versie?",
+        "r": "Live tv, de tv-gids en herinneringen, Mijn content, het samenvoegen van dubbele zenders, het plakken van het bericht van je aanbieder, beeld-in-beeld, het versturen naar de Apple TV via QR-code, een Kinderprofiel met ouderlijke code en het thema Zwart."
+      },
+      "inclus": {
+        "q": "Wat zit er in Premium?",
+        "r": "Films en series (catalogus, pagina's met posters en samenvattingen, afspelen, hervatten, alle versies van een film), multiscreen, terugkijken, live tv pauzeren, downloads op iPhone en iPad, iCloud-synchronisatie, extra profielen voor volwassenen en extra abonnementen, de rijen „Voor jou” en „Populair”, de thema's Halo en Programma en alternatieve app-symbolen.\n\nIn de gratis versie kun je door de films en series bladeren; om ze af te spelen heb je Premium nodig."
+      },
+      "soloFamille": {
+        "q": "Solo of Gezin: wat is het verschil?",
+        "r": "Beide formules geven hetzelfde Premium. Solo is voor jou, op al je apparaten met dezelfde Apple Account. Gezin deel je met tot 6 personen dankzij [Delen met gezin van Apple](apple-partage). Elke formule bestaat als maand-, jaar- en levenslang abonnement: zie de [prijzen](tarifs)."
+      },
+      "essai": {
+        "q": "Kan ik Premium gratis proberen?",
+        "r": "Ja: de maand- en jaarabonnementen, Solo of Gezin, beginnen met 7 dagen gratis proberen. De levenslange aankoop heeft geen proefperiode. Zeg je minstens 24 uur voor het einde van de proefperiode op, dan betaal je niets."
+      },
+      "restaurer": {
+        "q": "Hoe herstel ik mijn aankopen?",
+        "r": "Meestal komt Premium vanzelf terug op een nieuw apparaat. Zo niet, open dan Account › Premium en tik op „Aankopen herstellen”: Ulti vindt een aankoop met dezelfde Apple Account terug, of via Delen met gezin met de Gezin-formule."
+      },
+      "resilier": {
+        "q": "Hoe zeg ik mijn abonnement op?",
+        "r": "Abonnementen worden beheerd door Apple. Open in Ulti Account › Premium › „Mijn abonnement beheren”. Of op iPhone of iPad: Instellingen › je naam › Abonnementen, kies het Ulti-abonnement en zeg het op ([hulp van Apple](apple-resilier)).\n\nZeg minstens 24 uur voor het einde van de periode op om verlenging te voorkomen. Premium blijft actief tot het einde van de al betaalde periode."
+      },
+      "vie": {
+        "q": "Ik heb Premium levenslang gekocht: stopt mijn abonnement vanzelf?",
+        "r": "Nee: Apple zegt een abonnement niet vanzelf op. Had je een maand- of jaarabonnement voor je levenslange aankoop, zeg dat dan op zodat je niet meer betaalt. Ulti herinnert je eraan in Account › Premium."
+      },
+      "occupee": {
+        "q": "„Het vorige afspelen is nog open”: wat nu?",
+        "r": "Je abonnement staat maar één stream tegelijk toe, en je aanbieder heeft vaak 1 tot 2 minuten nodig om de vorige vrij te geven, bijvoorbeeld net na een film of een andere zender. Ulti toont een aftelling op de knop „Opnieuw proberen”: tik erop als de aftelling voorbij is. Kijkt een ander apparaat al met hetzelfde abonnement, stop dan het afspelen op dat apparaat.\n\nIn multiscreen betekent „Geen vrije verbinding meer” dat alle verbindingen van je abonnementen al in gebruik zijn. Met een abonnement met één verbinding pauzeert een download terwijl je kijkt en gaat daarna vanzelf verder."
+      },
+      "refusee": {
+        "q": "„Verbinding geweigerd door de aanbieder” of „Dit abonnement is verlopen”",
+        "r": "Deze meldingen komen van de server van je aanbieder: verlopen abonnement, gewijzigde inloggegevens, of er wordt al gekeken op een ander apparaat. Controleer je inloggegevens in Account › Abonnementen, of neem contact op met je aanbieder. Ulti kan je IPTV-abonnement niet wijzigen of verlengen."
+      },
+      "serveur": {
+        "q": "„Kan de server niet bereiken”",
+        "r": "Controleer je internetverbinding. Werkt die, dan is de server van je aanbieder misschien tijdelijk onbereikbaar: probeer het later opnieuw."
+      },
+      "identifiants": {
+        "q": "Zijn mijn inloggegevens veilig?",
+        "r": "Ja. Ze worden bewaard in de sleutelhanger van je apparaat en gaan nooit via een server van Ulti. Met iCloud-synchronisatie (Premium) zijn ze end-to-end versleuteld in je eigen iCloud-account."
+      },
+      "donnees": {
+        "q": "Verzamelt Ulti gegevens?",
+        "r": "Nee. Geen account aanmaken, geen advertenties, geen bezoekersmetingen. Alles staat in [ons privacybeleid](privacy)."
+      },
+      "coller": {
+        "q": "Hoe werkt „Ontvangen bericht plakken”?",
+        "r": "Heeft je aanbieder je inloggegevens gestuurd per sms, WhatsApp of e-mail? Kopieer op iPhone het hele bericht en tik dan in Account › Abonnementen › Abonnement toevoegen op „Ontvangen bericht plakken”. Ulti haalt er de server, gebruikersnaam en het wachtwoord uit, of de M3U-link, en vult de velden zelf in. Controleer en tik op „Doorgaan”.\n\nHet bericht wordt op de iPhone gelezen, nooit verstuurd of bewaard. Er wordt pas verbinding gemaakt na „Doorgaan”."
+      },
+      "multi": {
+        "q": "Hoe werkt multiscreen?",
+        "r": "Multiscreen hoort bij Premium: kijk tot 4 livezenders tegelijk op Apple TV, iPad en Mac, en 2 op iPhone. Het aantal schermen hangt ook af van je IPTV-abonnement: elke livezender gebruikt een verbinding, en veel abonnementen staan er maar één toe. Heb je meerdere abonnementen, dan tellen hun verbindingen op."
+      },
+      "partage": {
+        "q": "Hoe deel ik Premium met mijn gezin?",
+        "r": "Kies de Gezin-formule: die deel je met tot 6 personen dankzij [Delen met gezin van Apple](apple-partage). Elk gezinslid opent Ulti met de eigen Apple Account en krijgt Premium; zo nodig tikt het op „Aankopen herstellen” in Account › Premium. De Solo-formule kan niet worden gedeeld."
+      }
+    },
+    "contact": {
+      "titre": "Hulp nodig?",
+      "texte": "Schrijf ons op [{contact}](contact). Vermeld je apparaat (iPhone, iPad, Mac of Apple TV) en, als het kan, de melding die je ziet. Stuur nooit je inloggegevens of het adres van je abonnement."
+    },
+    "essentiel": "Het belangrijkste"
+  },
+  "confidentialite": {
+    "sections": {
+      "bref": {
+        "titre": "In het kort",
+        "texte": "Ulti verzamelt geen persoonsgegevens. Geen account aanmaken, geen advertenties, geen advertentietracking, geen bezoekersmetingen. De app bevat geen statistiek- of crashrapportagetools van een ander bedrijf."
+      },
+      "identifiants": {
+        "titre": "Je inloggegevens",
+        "texte": "De server, gebruikersnaam en het wachtwoord van je IPTV-abonnement worden alleen op je apparaat bewaard, in de sleutelhanger van Apple, en in je iCloud-sleutelhanger als je die inschakelt. Ze gaan nooit via een server van Ulti: die bestaat niet."
+      },
+      "contacts": {
+        "titre": "Waarmee de app contact maakt",
+        "texte": "Ulti maakt alleen contact met:\n\n• je IPTV-aanbieder, om je zenders, films, series en tv-gids af te spelen. Dat is de dienst die jij hebt gekozen: het is niet de ontwikkelaar en geen partner van de ontwikkelaar;\n• The Movie Database (TMDB), om posters en samenvattingen te tonen. De app stuurt alleen de titel en het jaar van de getoonde werken, plus de taal en regio van het apparaat: geen inloggegevens, en niets van wat je in het zoekveld typt;\n• Apple, voor Premium-aankopen en, als je die inschakelt, voor iCloud-synchronisatie."
+      },
+      "ip": {
+        "titre": "Je IP-adres",
+        "texte": "Zoals bij elke onlinedienst ontvangen je IPTV-aanbieder, TMDB en Apple het IP-adres van je apparaat wanneer de app contact met hen maakt. Ulti bewaart daar niets van."
+      },
+      "icloud": {
+        "titre": "iCloud-synchronisatie",
+        "texte": "Met Premium kunnen je profielen, abonnementen (inclusief inloggegevens), Mijn content, Mijn lijst, hervatpunten, herinneringen, vaak bekeken zenders en weergave-instellingen tussen je apparaten worden gesynchroniseerd. Ze worden bewaard in het privégedeelte van je eigen iCloud-account, end-to-end versleuteld: de ontwikkelaar heeft er geen toegang toe. De ouderlijke code blijft op elk apparaat."
+      },
+      "appletv": {
+        "titre": "Versturen naar de Apple TV",
+        "texte": "Als je je abonnement via een QR-code van de iPhone naar de Apple TV stuurt, gaan de gegevens versleuteld rechtstreeks van het ene apparaat naar het andere via je lokale netwerk. Er gaat niets via een server. De ouderlijke code wordt nooit verstuurd."
+      },
+      "message": {
+        "titre": "Bericht van de aanbieder",
+        "texte": "Als je het bericht van je aanbieder plakt, wordt het op je apparaat geanalyseerd, nooit verstuurd of bewaard."
+      },
+      "fichiers": {
+        "titre": "Downloads en live tv pauzeren",
+        "texte": "Gedownloade video's blijven op je apparaat. Om live tv te kunnen pauzeren bewaart Ulti de laatste minuten van de zender op het apparaat; na het sluiten van de speler wordt niets bewaard."
+      },
+      "achats": {
+        "titre": "Aankopen",
+        "texte": "Aankopen worden beheerd door Apple, in de App Store. Ulti bewaart alleen de status van Premium op het apparaat, om offline te werken, en stuurt die nergens heen."
+      },
+      "plantages": {
+        "titre": "Crashrapporten",
+        "texte": "Ulti verstuurt zelf geen rapporten. Heb je in de instellingen van je apparaat ingestemd met het delen van analysegegevens met app-ontwikkelaars, dan kan Apple technische crashrapporten aan de ontwikkelaar doorgeven. Tijdens TestFlight-testversies geeft Apple de feedback en rapporten die je zelf kiest te versturen door aan de ontwikkelaar."
+      },
+      "site": {
+        "titre": "Deze website",
+        "texte": "Deze website gebruikt geen trackers, geen cookies en geen bezoekersmetingen, en laadt niets van een andere website. Alleen het land dat je kiest wordt in je browser bewaard (lokale opslag), om je naar de juiste versie te brengen; het wordt gewist met je browsegegevens.\n\nDe website wordt gehost door GitHub Pages. Zoals elke host ontvangt GitHub technische verbindingsgegevens, waaronder het IP-adres, om de pagina's te leveren ([privacybeleid van GitHub](github-confidentialite))."
+      },
+      "droits": {
+        "titre": "Je gegevens en je rechten",
+        "texte": "Omdat Ulti geen gegevens over jou heeft, is er bij ons niets in te zien of te wissen. Om alles van je apparaten te wissen, verwijder je je abonnementen in Account › Abonnementen (waardoor ze ook uit iCloud verdwijnen), of verwijder je de app."
+      },
+      "changements": {
+        "titre": "Wijzigingen",
+        "texte": "Als dit beleid verandert, wordt de nieuwe versie met datum op deze pagina gepubliceerd."
+      },
+      "contact": {
+        "titre": "Contact",
+        "texte": "Een vraag over privacy? Schrijf naar [{contact}](contact)."
+      }
+    }
+  },
+  "mentions": {
+    "enCours": "Pagina in voorbereiding: de gegevens tussen haken worden aangevuld voordat de app uitkomt.",
+    "champs": {
+      "nom": "Naam of bedrijfsnaam",
+      "statut": "Rechtsvorm",
+      "adresse": "Adres",
+      "siret": "SIRET",
+      "email": "E-mail",
+      "directeur": "Naam",
+      "telephone": "Telefoon",
+      "societe": "Bedrijf"
+    },
+    "sections": {
+      "editeur": {
+        "titre": "Uitgever van de website en de app"
+      },
+      "directeur": {
+        "titre": "Verantwoordelijke uitgever"
+      },
+      "hebergeur": {
+        "titre": "Hosting",
+        "texte": "Deze website wordt gehost door GitHub Pages.",
+        "adresse": "88 Colin P. Kelly Jr. St., San Francisco, CA 94107, Verenigde Staten"
+      },
+      "propriete": {
+        "titre": "Intellectueel eigendom",
+        "texte": "De naam Ulti, het logo, de teksten en de vormgeving van deze website zijn eigendom van de uitgever. Apple, Apple TV, iPhone, iPad, Mac en App Store zijn handelsmerken van Apple Inc.\n\nDe films en series in de schermen zijn vrije films van de [Blender Studio](blender) (© Blender Foundation), gepubliceerd onder een Creative Commons-licentie (zie de credits hieronder). De getoonde zenders zijn verzonnen."
+      },
+      "tmdb": {
+        "titre": "Gegevens over films en series",
+        "texte": "De posters en samenvattingen in de app komen van [The Movie Database (TMDB)](tmdb). Dit product gebruikt de TMDB-API, maar is niet goedgekeurd of gecertificeerd door TMDB."
+      },
+      "contenus": {
+        "titre": "Content",
+        "texte": "Ulti levert geen zenders en geen content. Je moet over je eigen bronnen beschikken en het recht hebben om ze te bekijken."
+      },
+      "credits": {
+        "titre": "Beeldcredits",
+        "texte": "De schermen op deze website zijn echte schermafbeeldingen van de app, gemaakt met een demonstratielijst: de zenders en hun programma's zijn verzonnen.\n\nDe beelden van de livezenders zijn fragmenten uit films van de [Blender Studio](blender), zonder andere wijzigingen:\n\n• Big Buck Bunny (2008), © Blender Foundation, www.bigbuckbunny.org, licentie [CC BY 3.0](cc-by-3);\n• Elephants Dream (2006), © Blender Foundation / Netherlands Media Art Institute, www.elephantsdream.org, licentie [CC BY 2.5](cc-by-25);\n• Sintel (2010), © Blender Foundation, www.sintel.org, licentie [CC BY 3.0](cc-by-3);\n• Cosmos Laundromat (2015), © Blender Institute, gooseberry.blender.org, licentie [CC BY 4.0](cc-by-4).\n\nFilmposters en samenvattingen: The Movie Database (TMDB)."
+      }
+    },
+    "blancs": {
+      "nom": "[NAAM]",
+      "statut": "[RECHTSVORM]",
+      "adresse": "[ADRES]",
+      "siret": "[SIRET]",
+      "directeur": "[VERANTWOORDELIJKE UITGEVER]",
+      "telephone": "[TELEFOON]"
+    }
+  },
+  "erreur": {
+    "metaTitre": "Pagina niet gevonden — Ulti",
+    "titre": "Deze pagina bestaat niet.",
+    "texte": "Misschien is het adres verkeerd getypt, of is de pagina verplaatst.",
+    "accueil": "Terug naar home",
+    "choix": "Kies een land of regio"
+  }
+}
