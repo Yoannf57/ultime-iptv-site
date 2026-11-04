@@ -63,9 +63,14 @@
       "guide": "I kveld, i morgen, hele uken. En påminnelse med én bevegelse, og en linje viser hvor du er.",
       "pause": "Sett direkte-TV på pause, spol tilbake eller start programmet fra begynnelsen, og gå så tilbake til direkte.",
       "films": "Bla i katalogen med plakater og sammendrag, alle versjoner av en film samlet, og fortsett der du slapp.",
-      "multi": "Opptil 4 direktekanaler samtidig på Apple TV, iPad og Mac, 2 på iPhone, innenfor antall tilkoblinger i abonnementet ditt."
+      "multi": "Opptil 4 direktekanaler samtidig på Apple TV, iPad og Mac, 2 på iPhone, innenfor antall tilkoblinger i abonnementet ditt.",
+      "accueil": "Med en gang du åpner appen: den utvalgte filmen og direktekanalene dine, med det som går nå.",
+      "profils": "En barneprofil som er beskyttet med en foreldrekode og, med Premium, en profil for hver person."
     },
-    "credits": "Ekte skjermer fra appen, med oppdiktede kanaler og bilder fra frie filmer fra Blender Studio (lisens CC BY). [Bildekreditering](credits)."
+    "credits": "Ekte skjermer fra appen, med oppdiktede kanaler og bilder fra frie filmer fra Blender Studio (lisens CC BY). [Bildekreditering](credits).",
+    "pause": "Sett omvisningen på pause",
+    "lecture": "Fortsett omvisningen",
+    "mac": "Også på Mac med Apple-brikke."
   },
   "captures": {
     "alt": "Ulti på {appareil}: {ecran}",

@@ -9,7 +9,7 @@ export type Appareil = "appletv" | "ipad" | "iphone";
 export type Ecran = { appareil: Appareil; capture: string };
 export const captures = donnees as {
   apercu: { vues: string[]; ecrans: Record<Appareil, Record<string, string>> };
-  visite: { vue: string; appareil: Appareil; capture: string; premium: boolean }[];
+  visite: { vue: string; capture: string; premium: boolean }[];
   appletv: Ecran;
   famille: Ecran;
 };

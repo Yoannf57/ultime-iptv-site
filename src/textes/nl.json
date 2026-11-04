@@ -63,9 +63,14 @@
       "guide": "Vanavond, morgen, de hele week. Een herinnering met één gebaar, en een lijn toont waar je bent.",
       "pause": "Pauzeer live tv, spoel terug of begin het programma vanaf het begin, en ga daarna terug naar live.",
       "films": "Blader door de catalogus met posters en samenvattingen, alle versies van een film samen, en kijk verder waar je was gebleven.",
-      "multi": "Tot 4 livezenders tegelijk op Apple TV, iPad en Mac, 2 op iPhone, binnen het aantal verbindingen van je abonnement."
+      "multi": "Tot 4 livezenders tegelijk op Apple TV, iPad en Mac, 2 op iPhone, binnen het aantal verbindingen van je abonnement.",
+      "accueil": "Zodra je de app opent: de uitgelichte film en je livezenders, met het programma van nu.",
+      "profils": "Een Kinderprofiel dat beschermd is met een ouderlijke code en, met Premium, een profiel per persoon."
     },
-    "credits": "Echte schermen van de app, met verzonnen zenders en beelden uit vrije films van de Blender Studio (licentie CC BY). [Beeldcredits](credits)."
+    "credits": "Echte schermen van de app, met verzonnen zenders en beelden uit vrije films van de Blender Studio (licentie CC BY). [Beeldcredits](credits).",
+    "pause": "Rondleiding pauzeren",
+    "lecture": "Rondleiding hervatten",
+    "mac": "Ook op een Mac met Apple-chip."
   },
   "captures": {
     "alt": "Ulti op {appareil}: {ecran}",

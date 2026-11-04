@@ -63,9 +63,14 @@
       "guide": "Ce soir, demain, toute la semaine. Un rappel en un geste, et une ligne montre où vous en êtes.",
       "pause": "Mettez le direct en pause, revenez en arrière ou reprenez au début de l'émission, puis revenez au direct.",
       "films": "Parcourez le catalogue avec affiches et résumés, toutes les versions d'un film réunies, et reprenez là où vous vous êtes arrêté.",
-      "multi": "Jusqu'à 4 directs à la fois sur Apple TV, iPad et Mac, 2 sur iPhone, dans la limite des connexions de votre abonnement."
+      "multi": "Jusqu'à 4 directs à la fois sur Apple TV, iPad et Mac, 2 sur iPhone, dans la limite des connexions de votre abonnement.",
+      "accueil": "Dès l'ouverture : le film à la une et vos chaînes en direct, avec le programme en cours.",
+      "profils": "Un profil Enfant protégé par un code parental et, avec Premium, un profil pour chaque personne."
     },
-    "credits": "Vrais écrans de l'app, avec des chaînes inventées et des images de films libres du Blender Studio (licence CC BY). [Crédits des images](credits)."
+    "credits": "Vrais écrans de l'app, avec des chaînes inventées et des images de films libres du Blender Studio (licence CC BY). [Crédits des images](credits).",
+    "pause": "Mettre la visite en pause",
+    "lecture": "Reprendre la visite",
+    "mac": "Aussi sur Mac avec puce Apple."
   },
   "captures": {
     "alt": "Ulti sur {appareil} : {ecran}",

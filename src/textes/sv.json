@@ -63,9 +63,14 @@
       "guide": "I kväll, i morgon, hela veckan. En påminnelse med en gest, och en linje visar var du är.",
       "pause": "Pausa live-tv, spola tillbaka eller starta programmet från början, och gå sedan tillbaka till live.",
       "films": "Bläddra i katalogen med affischer och sammanfattningar, alla versioner av en film samlade, och fortsätt där du slutade.",
-      "multi": "Upp till 4 livekanaler samtidigt på Apple TV, iPad och Mac, 2 på iPhone, inom ramen för ditt abonnemangs anslutningar."
+      "multi": "Upp till 4 livekanaler samtidigt på Apple TV, iPad och Mac, 2 på iPhone, inom ramen för ditt abonnemangs anslutningar.",
+      "accueil": "Direkt när du öppnar appen: den utvalda filmen och dina livekanaler, med det som sänds nu.",
+      "profils": "En barnprofil som skyddas med en föräldrakod och, med Premium, en profil för varje person."
     },
-    "credits": "Riktiga skärmar från appen, med påhittade kanaler och bilder från fria filmer från Blender Studio (licens CC BY). [Bildkrediter](credits)."
+    "credits": "Riktiga skärmar från appen, med påhittade kanaler och bilder från fria filmer från Blender Studio (licens CC BY). [Bildkrediter](credits).",
+    "pause": "Pausa visningen",
+    "lecture": "Fortsätt visningen",
+    "mac": "Även på Mac med Apple-chip."
   },
   "captures": {
     "alt": "Ulti på {appareil}: {ecran}",

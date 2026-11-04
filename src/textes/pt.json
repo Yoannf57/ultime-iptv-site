@@ -63,9 +63,14 @@
       "guide": "Esta noite, amanhã, a semana inteira. Um lembrete com um gesto, e uma linha mostra onde está.",
       "pause": "Coloque o direto em pausa, recue ou comece o programa do início e depois volte ao direto.",
       "films": "Explore o catálogo com cartazes e sinopses, todas as versões de um filme juntas, e continue onde parou.",
-      "multi": "Até 4 canais em direto ao mesmo tempo no Apple TV, iPad e Mac, 2 no iPhone, dentro do limite de ligações da sua subscrição."
+      "multi": "Até 4 canais em direto ao mesmo tempo no Apple TV, iPad e Mac, 2 no iPhone, dentro do limite de ligações da sua subscrição.",
+      "accueil": "Assim que abre a app: o filme em destaque e os seus canais em direto, com o que está a dar agora.",
+      "profils": "Um perfil Criança protegido por um código parental e, com o Premium, um perfil para cada pessoa."
     },
-    "credits": "Ecrãs reais da app, com canais inventados e imagens de filmes livres do Blender Studio (licença CC BY). [Créditos das imagens](credits)."
+    "credits": "Ecrãs reais da app, com canais inventados e imagens de filmes livres do Blender Studio (licença CC BY). [Créditos das imagens](credits).",
+    "pause": "Pausar a visita",
+    "lecture": "Retomar a visita",
+    "mac": "Também no Mac com chip da Apple."
   },
   "captures": {
     "alt": "Ulti no {appareil}: {ecran}",

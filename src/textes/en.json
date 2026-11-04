@@ -63,9 +63,14 @@
       "guide": "Tonight, tomorrow, all week. A reminder in one gesture, and a line shows where you are.",
       "pause": "Pause live TV, rewind or start the show from the beginning, then jump back to live.",
       "films": "Browse the catalogue with posters and summaries, every version of a movie in one place, and resume where you left off.",
-      "multi": "Up to 4 live channels at once on Apple TV, iPad and Mac, 2 on iPhone, within the connection limit of your subscription."
+      "multi": "Up to 4 live channels at once on Apple TV, iPad and Mac, 2 on iPhone, within the connection limit of your subscription.",
+      "accueil": "As soon as you open it: the featured movie and your live channels, with what's on now.",
+      "profils": "A Kids profile protected by a parental code and, with Premium, a profile for each person."
     },
-    "credits": "Real app screens, with made-up channels and images from free films by the Blender Studio (CC BY licence). [Image credits](credits)."
+    "credits": "Real app screens, with made-up channels and images from free films by the Blender Studio (CC BY licence). [Image credits](credits).",
+    "pause": "Pause the tour",
+    "lecture": "Resume the tour",
+    "mac": "Also on Mac with Apple silicon."
   },
   "captures": {
     "alt": "Ulti on {appareil}: {ecran}",

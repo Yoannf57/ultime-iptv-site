@@ -63,9 +63,14 @@
       "guide": "Stasera, domani, tutta la settimana. Un promemoria con un gesto, e una linea mostra a che punto sei.",
       "pause": "Metti in pausa la diretta, torna indietro o riparti dall'inizio del programma, poi torna alla diretta.",
       "films": "Sfoglia il catalogo con locandine e trame, tutte le versioni di un film insieme, e riprendi da dove avevi interrotto.",
-      "multi": "Fino a 4 dirette contemporaneamente su Apple TV, iPad e Mac, 2 su iPhone, nei limiti delle connessioni del tuo abbonamento."
+      "multi": "Fino a 4 dirette contemporaneamente su Apple TV, iPad e Mac, 2 su iPhone, nei limiti delle connessioni del tuo abbonamento.",
+      "accueil": "Appena apri l'app: il film in evidenza e i tuoi canali in diretta, con il programma in onda.",
+      "profils": "Un profilo Bambini protetto da un codice genitori e, con Premium, un profilo per ogni persona."
     },
-    "credits": "Schermate reali dell'app, con canali inventati e immagini di film liberi del Blender Studio (licenza CC BY). [Crediti delle immagini](credits)."
+    "credits": "Schermate reali dell'app, con canali inventati e immagini di film liberi del Blender Studio (licenza CC BY). [Crediti delle immagini](credits).",
+    "pause": "Metti in pausa la visita",
+    "lecture": "Riprendi la visita",
+    "mac": "Anche su Mac con chip Apple."
   },
   "captures": {
     "alt": "Ulti su {appareil}: {ecran}",

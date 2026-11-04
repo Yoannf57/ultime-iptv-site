@@ -1,4 +1,4 @@
-// Écrans cliquables (aperçu Apple TV / iPhone, « Faites le tour ») et choix « Pour moi / Pour la famille ».
+// Écrans cliquables (aperçu Apple TV / iPhone) et choix « Pour moi / Pour la famille ».
 // Tout bouton [data-cible][data-vue] affiche la vue correspondante dans l'élément [data-ecran] ou
 // [data-groupe] du même nom, et met à jour aria-pressed sur tous les boutons de ce groupe.
 document.documentElement.classList.add("js");

@@ -63,9 +63,14 @@
       "guide": "Heute Abend, morgen, die ganze Woche. Eine Erinnerung mit einer Geste, und eine Linie zeigt, wo du gerade bist.",
       "pause": "Pausiere Live-TV, spule zurück oder starte die Sendung von vorn, dann zurück zu Live.",
       "films": "Stöbere im Katalog mit Postern und Inhaltsangaben, alle Versionen eines Films zusammen, und schau weiter, wo du aufgehört hast.",
-      "multi": "Bis zu 4 Live-Sender gleichzeitig auf Apple TV, iPad und Mac, 2 auf dem iPhone, im Rahmen der Verbindungen deines Abonnements."
+      "multi": "Bis zu 4 Live-Sender gleichzeitig auf Apple TV, iPad und Mac, 2 auf dem iPhone, im Rahmen der Verbindungen deines Abonnements.",
+      "accueil": "Gleich beim Öffnen: der Film des Tages und deine Live-Sender mit dem laufenden Programm.",
+      "profils": "Ein Kinderprofil, geschützt durch einen Elterncode, und mit Premium ein Profil für jede Person."
     },
-    "credits": "Echte Bildschirme der App, mit erfundenen Sendern und Bildern aus freien Filmen des Blender Studio (Lizenz CC BY). [Bildnachweise](credits)."
+    "credits": "Echte Bildschirme der App, mit erfundenen Sendern und Bildern aus freien Filmen des Blender Studio (Lizenz CC BY). [Bildnachweise](credits).",
+    "pause": "Rundgang pausieren",
+    "lecture": "Rundgang fortsetzen",
+    "mac": "Auch auf dem Mac mit Apple Chip."
   },
   "captures": {
     "alt": "Ulti auf {appareil}: {ecran}",

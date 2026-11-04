@@ -1,5 +1,5 @@
 {
-  "_note": "Quelles vraies captures montrer où (fichiers dans src/assets/captures/<fr|en>/<appareil>/). Les textes (onglets, légendes, textes alternatifs) sont dans src/textes/*.json : onglets.<vue>, visite.legendes.<vue>, captures.vues.<capture>, captures.appareils.<appareil>. Écartées : 04-fiche-film et 07-films-series sur iPad (photos de vraies personnes).",
+  "_note": "Quelles vraies captures montrer où (fichiers dans src/assets/captures/<langue>/<appareil>/). Les textes (onglets, légendes, textes alternatifs) sont dans src/textes/*.json : onglets.<vue>, visite.legendes.<vue>, captures.vues.<capture>, captures.appareils.<appareil>. « visite » : démo sur iPad, dans l'ordre de l'histoire (pas de capture multi-écran sur iPad : étape sautée). Écartée : 04-fiche-film (photos de vraies personnes).",
   "apercu": {
     "vues": [
       "accueil",
@@ -24,34 +24,34 @@
   },
   "visite": [
     {
+      "vue": "accueil",
+      "capture": "accueil",
+      "premium": false
+    },
+    {
       "vue": "direct",
-      "appareil": "ipad",
       "capture": "direct",
       "premium": false
     },
     {
       "vue": "guide",
-      "appareil": "appletv",
       "capture": "guide",
       "premium": false
     },
     {
       "vue": "pause",
-      "appareil": "ipad",
       "capture": "pause-direct",
       "premium": true
     },
     {
       "vue": "films",
-      "appareil": "iphone",
       "capture": "films-series",
       "premium": true
     },
     {
-      "vue": "multi",
-      "appareil": "appletv",
-      "capture": "multi-ecran",
-      "premium": true
+      "vue": "profils",
+      "capture": "profils",
+      "premium": false
     }
   ],
   "appletv": {

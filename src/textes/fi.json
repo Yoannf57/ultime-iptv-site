@@ -63,9 +63,14 @@
       "guide": "Tänä iltana, huomenna, koko viikon. Muistutus yhdellä eleellä, ja viiva näyttää, missä olet menossa.",
       "pause": "Pysäytä suora lähetys, kelaa taaksepäin tai aloita ohjelma alusta, ja palaa sitten suoraan lähetykseen.",
       "films": "Selaa luetteloa julisteineen ja juonikuvauksineen, elokuvan kaikki versiot yhdessä, ja jatka siitä, mihin jäit.",
-      "multi": "Jopa 4 suoraa lähetystä yhtä aikaa Apple TV:ssä, iPadissa ja Macissa, 2 iPhonessa, tilauksesi yhteyksien rajoissa."
+      "multi": "Jopa 4 suoraa lähetystä yhtä aikaa Apple TV:ssä, iPadissa ja Macissa, 2 iPhonessa, tilauksesi yhteyksien rajoissa.",
+      "accueil": "Heti avattaessa: nostettu elokuva ja suorat kanavasi sekä parhaillaan menevä ohjelma.",
+      "profils": "Lapsilukkokoodilla suojattu lapsiprofiili ja Premiumilla oma profiili jokaiselle."
     },
-    "credits": "Sovelluksen oikeat näkymät, keksityt kanavat ja kuvat Blender Studion vapaista elokuvista (lisenssi CC BY). [Kuvien tekijät](credits)."
+    "credits": "Sovelluksen oikeat näkymät, keksityt kanavat ja kuvat Blender Studion vapaista elokuvista (lisenssi CC BY). [Kuvien tekijät](credits).",
+    "pause": "Keskeytä esittely",
+    "lecture": "Jatka esittelyä",
+    "mac": "Myös Macilla, jossa on Apple-siru."
   },
   "captures": {
     "alt": "Ulti, {appareil}: {ecran}",

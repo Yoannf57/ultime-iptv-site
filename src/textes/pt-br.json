@@ -63,9 +63,14 @@
       "guide": "Hoje à noite, amanhã, a semana toda. Um lembrete com um gesto, e uma linha mostra onde você está.",
       "pause": "Pause a TV ao vivo, volte ou comece o programa do início e depois volte ao vivo.",
       "films": "Explore o catálogo com pôsteres e sinopses, todas as versões de um filme juntas, e continue de onde parou.",
-      "multi": "Até 4 canais ao vivo ao mesmo tempo no Apple TV, iPad e Mac, 2 no iPhone, dentro do limite de conexões da sua assinatura."
+      "multi": "Até 4 canais ao vivo ao mesmo tempo no Apple TV, iPad e Mac, 2 no iPhone, dentro do limite de conexões da sua assinatura.",
+      "accueil": "Assim que você abre o app: o filme em destaque e seus canais ao vivo, com o que está passando agora.",
+      "profils": "Um perfil Infantil protegido por um código parental e, com o Premium, um perfil para cada pessoa."
     },
-    "credits": "Telas reais do app, com canais inventados e imagens de filmes livres do Blender Studio (licença CC BY). [Créditos das imagens](credits)."
+    "credits": "Telas reais do app, com canais inventados e imagens de filmes livres do Blender Studio (licença CC BY). [Créditos das imagens](credits).",
+    "pause": "Pausar o tour",
+    "lecture": "Retomar o tour",
+    "mac": "Também no Mac com chip da Apple."
   },
   "captures": {
     "alt": "Ulti no {appareil}: {ecran}",

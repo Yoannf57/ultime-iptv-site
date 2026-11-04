@@ -1,57 +1,107 @@
 ---
-// « Faites le tour. » : onglets + légende + une vraie capture par onglet (Apple TV, iPad ou iPhone selon l'écran).
-// Sans JavaScript, toutes les captures s'affichent l'une sous l'autre.
+// « Faites le tour. » : démo sur un seul iPad, dans son cadre officiel d'Apple (immobile ; seul l'écran change, en
+// fondu). La visite avance seule (src/scripts/visite.js) ; dessous : onglets avec barre de progression, bouton
+// Pause/Lecture, légende, mention « Avec Premium ». Sans JavaScript : les écrans l'un sous l'autre.
 import config from "../../../site.config.mjs";
 import { t, tHtml } from "../../lib/textes";
 import { ciblesTextes } from "../../lib/liens";
 import { captures } from "../../lib/captures";
 import Capture from "./Capture.astro";
+import Cadre from "./Cadre.astro";
 import Halo from "./Halo.astro";
 interface Props { langue: string; codePays: string }
 const { langue: l, codePays } = Astro.props;
 const vues = captures.visite;
-const premier = vues[0].vue;
-const classes = { appletv: "ecrin-tv", ipad: "ecrin-ipad", iphone: "ecrin-tel" } as const;
-const tailles = { appletv: "min(92vw, 72rem)", ipad: "min(92vw, 52rem)", iphone: "min(70vw, 20rem)" } as const;
+const taille = "min(92vw, 60rem)";
+const tailleListe = "min(92vw, 40rem)";
 ---
 <section id="visite" aria-labelledby="titre-visite" class="section visite apparition">
   <h2 id="titre-visite" class="titre-section centre">{t(l, "visite.titre")}</h2>
-  <div class="pastilles avec-js" role="group" aria-label={t(l, "visite.groupe")}>
-    {vues.map(({ vue }) => (
-      <button type="button" data-cible="visite" data-vue={vue} aria-pressed={vue === premier ? "true" : "false"}>{t(l, `onglets.${vue}`)}</button>
-    ))}
-  </div>
-  <div data-groupe="visite">
-    {vues.map(({ vue, appareil, capture, premium }) => (
-      <div class="panneau" data-panneau={vue} hidden={vue !== premier}>
-        <h3 class="sans-js">{t(l, `onglets.${vue}`)}</h3>
-        <p class="legende">{t(l, `visite.legendes.${vue}`)}{premium && <span class="premium">{t(l, "fonctions.premium")}</span>}</p>
-        <div class:list={["scene", appareil]}>
-          <Halo />
-          <div class={classes[appareil]}>
-            <Capture langue={l} appareil={appareil} capture={capture} sizes={tailles[appareil]} />
+
+  <div class="demo avec-js" data-visite>
+    <div class="scene">
+      <Halo />
+      <Cadre appareil="ipad" sizes={taille}>
+        {vues.map(({ vue, capture }, i) => (
+          <div class:list={["diapo", { active: i === 0 }]} data-diapo={vue} hidden={i > 0}>
+            <Capture langue={l} appareil="ipad" capture={capture} sizes={taille} />
           </div>
-        </div>
+        ))}
+      </Cadre>
+    </div>
+    <div class="commandes">
+      <div class="pastilles onglets" role="group" aria-label={t(l, "visite.groupe")}>
+        {vues.map(({ vue }, i) => (
+          <button type="button" data-onglet={vue} aria-pressed={i === 0 ? "true" : "false"}>
+            {t(l, `onglets.${vue}`)}<span class="barre" aria-hidden="true"></span>
+          </button>
+        ))}
+      </div>
+      <button type="button" class="lecture" data-lecture data-pause-texte={t(l, "visite.pause")} data-lecture-texte={t(l, "visite.lecture")} aria-label={t(l, "visite.pause")} title={t(l, "visite.pause")}>
+        <svg class="icone-pause" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect x="2.5" y="1.5" width="3" height="11" rx="1" fill="currentColor" /><rect x="8.5" y="1.5" width="3" height="11" rx="1" fill="currentColor" /></svg>
+        <svg class="icone-lecture" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3.5 1.8v10.4a.8.8 0 0 0 1.2.7l8.4-5.2a.8.8 0 0 0 0-1.4L4.7 1.1a.8.8 0 0 0-1.2.7Z" fill="currentColor" /></svg>
+      </button>
+    </div>
+    <div class="legendes" data-legendes aria-live="off">
+      {vues.map(({ vue, premium }, i) => (
+        <p class:list={["legende", { active: i === 0 }]} data-legende={vue}>
+          {t(l, `visite.legendes.${vue}`)}{premium && <span class="avec-premium"> · {t(l, "fonctions.premium")}</span>}
+        </p>
+      ))}
+    </div>
+  </div>
+
+  <div class="liste sans-js">
+    {vues.map(({ vue, capture, premium }) => (
+      <div class="element">
+        <h3>{t(l, `onglets.${vue}`)}</h3>
+        <p class="legende">{t(l, `visite.legendes.${vue}`)}{premium && <span class="avec-premium"> · {t(l, "fonctions.premium")}</span>}</p>
+        <Cadre appareil="ipad" sizes={tailleListe} classe="petit">
+          <Capture langue={l} appareil="ipad" capture={capture} sizes={tailleListe} />
+        </Cadre>
       </div>
     ))}
   </div>
+
+  <p class="mac">{t(l, "visite.mac")}</p>
   <p class="credits" set:html={tHtml(l, "visite.credits", ciblesTextes(codePays, config.contact))} />
 </section>
 
 <style>
   .visite { padding-top: 0; }
-  .pastilles { margin-top: 2.25rem; }
-  .panneau[hidden] { display: none; }
-  :global(html:not(.js)) .panneau[hidden] { display: block; }
-  .panneau.entree { animation: fondu 0.2s ease-out; }
-  h3 { margin: 3rem 0 0; text-align: center; font-size: 1.5rem; font-weight: 700; }
-  .legende { margin: 1.25rem auto 0; max-width: 40rem; text-align: center; font-size: 1.0625rem; line-height: 1.5; color: #a1a1a6; min-height: 3.25rem; }
-  .premium { display: inline-block; vertical-align: 0.0625rem; margin-left: 0.5rem; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #a1a1a6; border: 1px solid #3a3a3e; border-radius: 999px; padding: 0.1875rem 0.5625rem; }
-  .scene { position: relative; margin: 1.5rem auto 0; }
-  .scene.ipad { max-width: 52rem; }
-  .scene.iphone { max-width: 20rem; }
-  .credits { margin: 2.5rem auto 0; max-width: 46rem; text-align: center; font-size: 0.8125rem; line-height: 1.5; color: #8e8e93; }
+  .scene { position: relative; margin: 2.5rem auto 0; max-width: 60rem; }
+  .diapo { position: absolute; inset: 0; opacity: 0; transition: opacity 0.6s ease; }
+  .diapo.active { opacity: 1; z-index: 1; }
+  .diapo[hidden] { display: none; }
+
+  .commandes { margin: 2rem auto 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.75rem; }
+  .onglets { margin: 0; }
+  .onglets button { position: relative; overflow: hidden; }
+  .barre { position: absolute; left: 1rem; right: 1rem; bottom: 0.3125rem; height: 2px; border-radius: 1px; background: rgba(0, 0, 0, 0.45); transform: scaleX(0); transform-origin: left; }
+  :global(.joue) .onglets button[aria-pressed="true"] .barre { animation: progression var(--duree, 4.5s) linear forwards; }
+  @keyframes progression { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  .lecture { flex: none; width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1px solid #3a3a3e; background: #141416; color: #f5f5f7; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+  .lecture:hover { border-color: #8e8e93; }
+  .lecture .icone-lecture { display: none; }
+  .lecture.arretee .icone-pause { display: none; }
+  .lecture.arretee .icone-lecture { display: block; }
+  .lecture.cache { display: none; }
+
+  .legendes { display: grid; margin: 1.25rem auto 0; max-width: 40rem; }
+  .legendes .legende { grid-area: 1 / 1; visibility: hidden; }
+  .legendes .legende.active { visibility: visible; }
+  .legende { margin: 0; text-align: center; font-size: 1.0625rem; line-height: 1.5; color: #a1a1a6; }
+  .avec-premium { color: #8e8e93; font-size: 0.9375rem; white-space: nowrap; }
+
+  .liste .element { margin-top: 3.5rem; }
+  .liste h3 { margin: 0; text-align: center; font-size: 1.5rem; font-weight: 700; }
+  .liste .legende { margin: 0.75rem auto 1.5rem; max-width: 40rem; }
+  .liste :global(.petit) { max-width: 40rem; margin: 0 auto; }
+
+  .mac { margin: 1.75rem 0 0; text-align: center; font-size: 0.9375rem; color: #a1a1a6; }
+  .credits { margin: 1.5rem auto 0; max-width: 46rem; text-align: center; font-size: 0.8125rem; line-height: 1.5; color: #8e8e93; }
   .credits :global(a) { color: #c7c7cc; }
-  @media (max-width: 45rem) { .scene.iphone { max-width: 70vw; } }
-  @media (prefers-reduced-motion: reduce) { .panneau.entree { animation: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .diapo { transition: none; }
+  }
 </style>

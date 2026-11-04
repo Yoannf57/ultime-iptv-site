@@ -70,7 +70,7 @@ for (const [appareil, vues] of Object.entries(captures.apercu.ecrans)) {
 }
 for (const v of captures.visite) {
   clesCaptures.add(`onglets.${v.vue}`); clesCaptures.add(`visite.legendes.${v.vue}`);
-  clesCaptures.add(`captures.appareils.${v.appareil}`); clesCaptures.add(`captures.vues.${v.capture}`);
+  clesCaptures.add("captures.appareils.ipad"); clesCaptures.add(`captures.vues.${v.capture}`);
 }
 for (const e of [captures.appletv, captures.famille]) { clesCaptures.add(`captures.appareils.${e.appareil}`); clesCaptures.add(`captures.vues.${e.capture}`); }
 for (const langue of Object.keys(langues)) {

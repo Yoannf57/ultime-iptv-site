@@ -8,14 +8,11 @@
 .gris { color: #a1a1a6; }
 .coche { flex: none; }
 
-/* Écrans flottants : vraies captures, coins arrondis, liseré blanc très fin, ombre profonde (CLAUDE.md, section 5).
-   Le fin contour noir (0 0 0 6px #000) détache l'iPad et l'iPhone quand ils passent devant l'Apple TV. */
-.ecrin-tv, .ecrin-ipad, .ecrin-tel { position: relative; z-index: 1; overflow: hidden; background: #000; }
-.ecrin-tv { border-radius: 1.25rem; box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 2.5rem 7.5rem rgba(0,0,0,0.9); }
-.ecrin-ipad { border-radius: 4.5% / 6%; box-shadow: 0 0 0 1px rgba(255,255,255,0.22), 0 0 0 6px #000, 0 1.875rem 5rem rgba(0,0,0,0.95); }
-.ecrin-tel { border-radius: 13% / 6%; box-shadow: 0 0 0 1px rgba(255,255,255,0.22), 0 0 0 6px #000, 0 1.875rem 5rem rgba(0,0,0,0.95); }
-.ecrin-tv .vue, .ecrin-ipad .vue, .ecrin-tel .vue { display: block; }
-.ecrin-tv picture, .ecrin-ipad picture, .ecrin-tel picture { display: block; }
+/* Apple TV : écran flottant (vraie capture, coins arrondis, liseré blanc très fin, ombre profonde ; CLAUDE.md,
+   section 5). iPhone et iPad : cadres officiels d'Apple (Cadre.astro), sans rien ajouter dessus. */
+.ecrin-tv { position: relative; z-index: 1; overflow: hidden; background: #000; border-radius: 1.25rem; box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 2.5rem 7.5rem rgba(0,0,0,0.9); }
+.ecrin-tv .vue { display: block; }
+.ecrin-tv picture { display: block; }
 .capture { display: block; width: 100%; height: auto; }
 .capture.appletv { aspect-ratio: 16 / 9; }
 .capture.ipad { aspect-ratio: 4 / 3; }
@@ -40,6 +37,8 @@
 /* Apparition douce : seulement avec JavaScript et sans « réduire les animations ». */
 .apparition.a-venir { opacity: 0; transform: translateY(1.25rem); transition: opacity 0.7s ease, transform 0.7s ease; }
 .apparition.a-venir.visible { opacity: 1; transform: none; }
+/* Section avec le cadre officiel de l'iPad : simple fondu, sans glissé (règles d'Apple : le cadre ne bouge pas). */
+.visite.apparition.a-venir { transform: none; transition: opacity 0.7s ease; }
 
 /* Sans JavaScript, les éléments qui n'ont de sens qu'avec un clic sont masqués. */
 html:not(.js) .avec-js { display: none !important; }
