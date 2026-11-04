@@ -112,6 +112,11 @@
     "devise": "NOK", "lienAppStore": null, "prix": null
   },
   {
+    "code": "da-dk", "langue": "da", "locale": "da-DK", "region": "europe", "nom": "Danmark", "nomLangue": "Dansk",
+    "fuseaux": ["Europe/Copenhagen"],
+    "devise": "DKK", "lienAppStore": null, "prix": null
+  },
+  {
     "code": "en", "langue": "en", "locale": "en", "region": "international", "nom": "International", "nomLangue": "English",
     "fuseaux": [],
     "devise": null, "lienAppStore": null, "prix": null

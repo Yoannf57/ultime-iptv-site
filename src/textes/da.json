@@ -1,0 +1,499 @@
+{
+  "meta": {
+    "direction": "ltr",
+    "titre": "Ulti — Den ultimative IPTV-oplevelse",
+    "description": "Ulti, IPTV-afspilleren til iPhone, iPad, Mac og Apple TV: live-tv, tv-guide, film og serier i en enkel app, der er klar til brug med det samme."
+  },
+  "marque": {
+    "nom": "Ulti",
+    "suffixe": "IPTV",
+    "retourHaut": "Ulti, til toppen",
+    "accueil": "Ulti, forside"
+  },
+  "entete": {
+    "navigation": "Hovednavigation",
+    "fonctions": "Funktioner",
+    "visite": "Rundvisning",
+    "appletv": "Apple TV",
+    "tarifs": "Priser",
+    "questions": "Spørgsmål",
+    "bientot": "Kommer snart",
+    "telecharger": "Hent"
+  },
+  "heros": {
+    "surtitre": "Til iPhone, iPad, Mac og Apple TV",
+    "accroche": "Den ultimative\nIPTV-oplevelse.",
+    "phrase": "Live-tv, tv-guide, film og serier: Dit IPTV-abonnement bliver en intuitiv tv-app. Åbn den, og se.",
+    "bientot": "Kommer snart i App Store",
+    "telecharger": "Hent i App Store",
+    "voirTarifs": "Se priserne",
+    "neutralite": "Ulti leverer ingen kanaler og intet indhold."
+  },
+  "apercu": {
+    "etiquette": "Smugkig på appen på Apple TV, iPad og iPhone",
+    "appareils": "Apple TV, iPad og Mac med Apple-chip, iPhone: den samme app, overalt.",
+    "onglets": "Appens skærme",
+    "indice": "Vælg en skærm for at udforske appen."
+  },
+  "onglets": {
+    "accueil": "Hjem",
+    "direct": "Live",
+    "guide": "Tv-guide",
+    "profils": "Profiler",
+    "pause": "Sæt live på pause",
+    "films": "Film og serier",
+    "multi": "Flere skærme"
+  },
+  "fonctions": {
+    "titre": "Dit abonnement, endelig præsenteret ordentligt.",
+    "phrase": "Ulti ordner de tusindvis af kanaler og film i dit abonnement i overskuelige skærme, som en tv-app, du altid har haft.",
+    "directTitre": "Live-tv med ét blik",
+    "directTexte": "En ring om hver kanal viser, hvor langt programmet er nået. Filtrér efter tema, og zap fra kanal til kanal.",
+    "guideTitre": "En rigtig tv-guide",
+    "guideTexte": "I aften, i morgen, hele ugen. Sæt en påmindelse med én bevægelse, eller brug din egen XMLTV-guide.",
+    "filmsTitre": "Film og serier, uden dubletter",
+    "filmsTexte": "Plakater og resuméer, alle versioner af en film samlet på én side, fortsæt, hvor du slap.",
+    "premium": "Premium"
+  },
+  "visite": {
+    "titre": "Tag en rundtur.",
+    "groupe": "Appens skærme",
+    "legendes": {
+      "direct": "Alle dine kanaler som store felter, med det program, der kører nu. Filtrér efter tema, og zap.",
+      "guide": "I aften, i morgen, hele ugen. En påmindelse med én bevægelse, og en linje viser, hvor du er.",
+      "pause": "Sæt live-tv på pause, spol tilbage, eller start programmet forfra, og gå så tilbage til live.",
+      "films": "Gennemse kataloget med plakater og resuméer, alle versioner af en film samlet, og fortsæt, hvor du slap.",
+      "multi": "Op til 4 livekanaler på én gang på Apple TV, iPad og Mac, 2 på iPhone, inden for dit abonnements antal forbindelser."
+    },
+    "credits": "Rigtige skærme fra appen, med opdigtede kanaler og billeder fra frie film fra Blender Studio (licens CC BY). [Billedkreditering](credits)."
+  },
+  "captures": {
+    "alt": "Ulti på {appareil}: {ecran}",
+    "appareils": {
+      "appletv": "Apple TV",
+      "ipad": "iPad",
+      "iphone": "iPhone"
+    },
+    "vues": {
+      "accueil": "forsiden med den fremhævede film og livekanalerne",
+      "direct-bandeau": "en livekanal med bjælken for det aktuelle program",
+      "direct": "listen over livekanaler",
+      "guide": "tv-guiden",
+      "profils": "valg af profil, »Hvem ser med?«",
+      "pause-direct": "live-tv på pause med knappen tilbage til live",
+      "films-series": "kataloget med film og serier",
+      "multi-ecran": "fire livekanaler på én gang"
+    }
+  },
+  "appletv": {
+    "surtitre": "Apple TV",
+    "titre": "På tv'et skriver du ingenting.",
+    "texte": "Scan koden, som Apple TV viser, med din iPhone: Dit abonnement kommer krypteret over på tv'et, direkte via dit lokale netværk.",
+    "point1": "Zap med fjernbetjeningen, op og ned",
+    "point2": "Billede-i-billede under live-tv",
+    "point3": "Store plakater, lavet til sofaen"
+  },
+  "famille": {
+    "titre": "Hele familien, hver for sig.",
+    "texte": "Én profil pr. person med Premium, hver med sin egen liste og sine egne genoptagelsespunkter. Børneprofilen, som er med i gratisversionen, ser intet indhold for voksne og kan kun forlades med forældrekoden."
+  },
+  "premium": {
+    "surtitre": "Premium",
+    "titre": "Endnu mere.",
+    "films": "Film og serier, med plakater, resuméer og genoptagelse",
+    "pause": "Pause og tilbagespoling i live-tv",
+    "replay": "Genudsendelser fra tidligere dage",
+    "telechargements": "Downloads til at se offline",
+    "icloud": "iCloud-synkronisering mellem alle dine enheder",
+    "plusieurs": "Flere abonnementer og profiler",
+    "themes": "Temaerne Halo og Program",
+    "multi": "Flere skærme: op til 4 livekanaler på én gang (2 på iPhone)"
+  },
+  "etapes": {
+    "titre": "Klar på et minut.",
+    "e1Titre": "Tilføj dit abonnement",
+    "e1Texte": "Indsæt beskeden fra din IPTV-udbyder, eller skriv loginoplysningerne. Ulti klarer resten.",
+    "e2Titre": "Ulti rydder op i det hele",
+    "e2Texte": "Kanaler, guide, film og serier bliver sorteret. Behold kun de kategorier, der interesserer dig.",
+    "e3Titre": "Se overalt",
+    "e3Texte": "På iPhone, iPad, Mac og Apple TV. Med Premium følger din liste og dine genoptagelsespunkter med dig."
+  },
+  "tarifs": {
+    "titre": "Gratis for det vigtigste.",
+    "phrase": "Live-tv er gratis. Premium kan du prøve i 7 dage uden at betale.",
+    "gratuitTitre": "Gratis",
+    "gratuitTexte": "Live-tv, tv-guide og påmindelser, billede-i-billede, Apple TV via QR-kode, en børneprofil.",
+    "choix": "Vælg en Premium-løsning",
+    "pourMoi": "Til mig",
+    "pourFamille": "Til familien",
+    "soloLegende": "Solo: til dig, på alle dine enheder.",
+    "familleLegende": "Familie: op til 6 personer med Familiedeling fra Apple.",
+    "mensuel": "Månedlig",
+    "annuel": "Årlig",
+    "vie": "Livstid",
+    "parMois": "/ md.",
+    "parAn": "/ år",
+    "mensuelTexte": "Alt i Premium. 7 dages gratis prøveperiode.",
+    "annuelTexte": "Alt i Premium, altså {prix} om måneden. 7 dages gratis prøveperiode.",
+    "annuelTexteSansPrix": "Alt i Premium. 7 dages gratis prøveperiode.",
+    "vieTexte": "Alt i Premium, betalt én gang.",
+    "remise": "−{remise} %",
+    "prixAppStore": "Priserne vises i App Store",
+    "noteTTC": "Priser inkl. moms.",
+    "noteAppStore": "Den præcise pris for dit land vises i App Store."
+  },
+  "viePrivee": {
+    "titre": "Ingen data indsamles.",
+    "texte": "Dine loginoplysninger bliver i nøgleringen på din enhed. Ingen konto at oprette, ingen Ulti-server.",
+    "lien": "Vores privatlivspolitik"
+  },
+  "faq": {
+    "titre": "Ofte stillede spørgsmål",
+    "q1": "Leverer Ulti kanaler?",
+    "r1": "Nej. Ulti er en afspiller: Den afspiller de kilder, du selv tilføjer. Ulti leverer ingen kanaler og intet indhold. Du skal have dine egne kilder og have ret til at se dem.",
+    "q2": "På hvilke enheder?",
+    "r2": "iPhone, iPad, Mac (med Apple-chip) og Apple TV. Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling.",
+    "q3": "Er mine loginoplysninger sikre?",
+    "r3": "De gemmes i nøgleringen på din enhed og går aldrig via en Ulti-server.",
+    "q4": "Hvilke abonnementer virker?",
+    "r4": "Abonnementer, der leveres som et M3U-link eller som Xtream Codes-loginoplysninger, altså langt de fleste. Nemmest: Indsæt beskeden fra din udbyder, så genkender Ulti selv formatet.",
+    "q5": "Kan jeg prøve, før jeg betaler?",
+    "r5": "Ja. Live-tv er gratis. Premium kan du prøve gratis i 7 dage med måneds- og årsabonnementerne, Solo eller Familie."
+  },
+  "neutralite": "Ulti leverer ingen kanaler og intet indhold. Du skal have dine egne kilder og have ret til at se dem.",
+  "pied": {
+    "changerPays": "Skift land eller område (nu: {pays}, {langue})",
+    "tmdb": "Dette produkt bruger TMDB's API, men er ikke godkendt eller certificeret af TMDB.",
+    "tmdbLogo": "Logo for The Movie Database (TMDB)",
+    "marques": "Apple, Apple TV, iPhone, iPad og Mac er varemærker tilhørende Apple Inc.",
+    "copyright": "© 2026 Ulti",
+    "liens": {
+      "navigation": "Information",
+      "support": "Support",
+      "privacy": "Anonymitet",
+      "legal": "Juridiske oplysninger"
+    }
+  },
+  "bandeau": {
+    "etiquette": "Valg af land",
+    "continuer": "Fortsæt",
+    "fermer": "Luk",
+    "question": {
+      "fr-fr": "Er du i Frankrig?",
+      "fr-be": "Er du i Belgien?",
+      "fr-lu": "Er du i Luxembourg?",
+      "fr-ch": "Er du i Schweiz?",
+      "en-gb": "Er du i Storbritannien?",
+      "en-ie": "Er du i Irland?",
+      "fr-ca": "Er du i Canada?",
+      "en-ca": "Er du i Canada?",
+      "en-us": "Er du i USA?",
+      "nl-nl": "Er du i Nederlandene?",
+      "nl-be": "Er du i Belgien?",
+      "de-de": "Er du i Tyskland?",
+      "de-at": "Er du i Østrig?",
+      "de-ch": "Er du i Schweiz?",
+      "sv-se": "Er du i Sverige?",
+      "nb-no": "Er du i Norge?",
+      "da-dk": "Er du i Danmark?"
+    },
+    "voir": {
+      "fr-fr": "Se webstedet for Frankrig (på fransk)",
+      "fr-be": "Se webstedet for Belgien (på fransk)",
+      "fr-lu": "Se webstedet for Luxembourg (på fransk)",
+      "fr-ch": "Se webstedet for Schweiz (på fransk)",
+      "en-gb": "Se webstedet for Storbritannien (på engelsk)",
+      "en-ie": "Se webstedet for Irland (på engelsk)",
+      "fr-ca": "Se webstedet for Canada (på fransk)",
+      "en-ca": "Se webstedet for Canada (på engelsk)",
+      "en-us": "Se webstedet for USA (på engelsk)",
+      "nl-nl": "Se webstedet for Nederlandene (på nederlandsk)",
+      "nl-be": "Se webstedet for Belgien (på nederlandsk)",
+      "de-de": "Se webstedet for Tyskland (på tysk)",
+      "de-at": "Se webstedet for Østrig (på tysk)",
+      "de-ch": "Se webstedet for Schweiz (på tysk)",
+      "sv-se": "Se webstedet for Sverige (på svensk)",
+      "nb-no": "Se webstedet for Norge (på norsk)",
+      "da-dk": "Se webstedet for Danmark"
+    }
+  },
+  "choix": {
+    "titre": "Vælg dit land eller område",
+    "regions": {
+      "europe": "Europa",
+      "ameriques": "Nord- og Sydamerika",
+      "international": "Andre lande"
+    }
+  },
+  "pages": {
+    "miseAJour": "Opdateret {date}",
+    "sommaire": "På denne side",
+    "support": {
+      "titre": "Support",
+      "metaTitre": "Support — Ulti",
+      "description": "Hjælp til Ulti: installation, tilføjelse af et IPTV-abonnement, Apple TV, profiler, Premium, køb og afspilning.",
+      "chapeau": "Alt, du behøver for at komme godt i gang med Ulti, og svar på de mest stillede spørgsmål."
+    },
+    "privacy": {
+      "titre": "Anonymitet",
+      "metaTitre": "Anonymitet — Ulti",
+      "description": "Ultis privatlivspolitik: ingen data indsamles, dine loginoplysninger bliver på din enhed.",
+      "chapeau": "Ulti indsamler ingen data. Her kan du se præcis, hvad appen gør, og hvad dette websted gør."
+    },
+    "legal": {
+      "titre": "Juridiske oplysninger",
+      "metaTitre": "Juridiske oplysninger — Ulti",
+      "description": "Juridiske oplysninger om webstedet og appen Ulti.",
+      "chapeau": "Hvem der udgiver Ulti, hvem der hoster webstedet, og rettighederne til det, der vises her. Ved uoverensstemmelser gælder den franske version af siden."
+    }
+  },
+  "faqPlus": "Alle spørgsmål på supportsiden",
+  "support": {
+    "groupes": {
+      "debut": "Kom i gang",
+      "abonnement": "Tilføj et abonnement",
+      "appletv": "Apple TV",
+      "profils": "Profiler og forældrekode",
+      "premium": "Premium og køb",
+      "lecture": "Problemer med afspilning",
+      "confidentialite": "Anonymitet"
+    },
+    "q": {
+      "chaines": {
+        "q": "Leverer Ulti kanaler?",
+        "r": "Nej. Ulti er en afspiller: Den afspiller det IPTV-abonnement, du selv tilføjer. Ulti leverer ingen kanaler og intet indhold. Du skal have dine egne kilder og have ret til at se dem."
+      },
+      "appareils": {
+        "q": "Hvilke enheder virker Ulti på?",
+        "r": "iPhone, iPad, Mac og Apple TV: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere og Mac-computere med Apple-chip, som bruger iPad-appen. Premium gælder på alle dine enheder, der er logget ind med den samme Apple-konto."
+      },
+      "installer": {
+        "q": "Hvordan installerer jeg Ulti?",
+        "r": "Hent Ulti i App Store på din iPhone, iPad eller Mac og i App Store på dit Apple TV. Når den er installeret, hedder appen »Ulti IPTV«.",
+        "rBientot": "Ulti kommer snart i App Store til iPhone, iPad, Mac og Apple TV. Når den er installeret, hedder appen »Ulti IPTV«."
+      },
+      "ajouter": {
+        "q": "Hvordan tilføjer jeg mit IPTV-abonnement?",
+        "r": "Åbn Konto › Abonnementer › Tilføj abonnement. Nemmest på iPhone: »Indsæt modtaget besked« (se næste spørgsmål).\n\nDu kan også skrive server, brugernavn og adgangskode eller indsætte et M3U-link. På Apple TV er det nemmest at sende abonnementet fra din iPhone (se »Apple TV« længere nede)."
+      },
+      "formats": {
+        "q": "Hvilke formater understøttes?",
+        "r": "Xtream Codes-konti (server, brugernavn og adgangskode) og M3U-playlistelinks. Til tv-guiden bruger Ulti din udbyders guide; du kan også angive adressen på en guide i XMLTV-format (.xml eller .xml.gz) under Konto › Tv-guide.\n\nUnderstøttes ikke: abonnementer, der er knyttet til en MAC-adresse, og Stalker/Ministra-portaler."
+      },
+      "replay": {
+        "q": "Virker genudsendelser med mit abonnement?",
+        "r": "Genudsendelser er en del af Premium. Det virker med en Xtream Codes-konto til de kanaler, hvor din udbyder tilbyder catch-up. Med M3U-playlister er det endnu ikke tilgængeligt."
+      },
+      "trier": {
+        "q": "Mit abonnement har for mange kanaler. Hvordan sorterer jeg?",
+        "r": "Under Konto › Mit indhold vælger du, hvilke lande, kategorier og kanaler der skal vises. Resten af abonnementet er stadig tilgængeligt, bare skjult. Hver profil har sine egne valg."
+      },
+      "plusieurs": {
+        "q": "Kan jeg tilføje flere abonnementer?",
+        "r": "Ja, med Premium. Under Konto › Abonnementer trykker du på et abonnement for at bruge det. Mit indhold, Min liste, genoptagelsespunkter og påmindelser holdes adskilt for hvert af dem."
+      },
+      "qr": {
+        "q": "Hvordan får jeg mit abonnement over på Apple TV?",
+        "r": "Uden at skrive noget med fjernbetjeningen: Åbn Ulti på Apple TV, så vises en QR-kode. Scan den med kameraet på din iPhone, tryk på Ulti-linket, og abonnementet kommer af sig selv, med dine kategorier, favoritter og dit udseende. Hvis Apple TV allerede har et abonnement, finder du QR-koden under Konto › Abonnementer › Tilføj abonnement.\n\niPhone og Apple TV skal være på det samme Wi-Fi-netværk. Overførslen er krypteret og går direkte via dit lokale netværk; forældrekoden sendes aldrig. Du kan også indtaste abonnementet med fjernbetjeningen."
+      },
+      "qrBloque": {
+        "q": "QR-koden virker ikke. Hvad gør jeg?",
+        "r": "Kontrollér, at Apple TV er tændt, er på det samme Wi-Fi-netværk som iPhone og viser skærmen med QR-koden. Abonnementet skal først være tilføjet på iPhone.\n\nHvis iPhone har afvist adgang til det lokale netværk, så tillad det under Indstillinger › Ulti IPTV › Lokalt netværk, og scan QR-koden igen. En QR-kode udløber efter et stykke tid: Scan altid den, der vises."
+      },
+      "profils": {
+        "q": "Hvordan fungerer profiler?",
+        "r": "Hver profil har sit eget Mit indhold, Min liste, sine genoptagelsespunkter og påmindelser. Profiler administreres under Konto › Profiler. Gratisversionen har en børneprofil; ekstra voksenprofiler er en del af Premium."
+      },
+      "enfant": {
+        "q": "Hvad er børneprofilen?",
+        "r": "En børneprofil ser ingen kategorier og intet indhold for voksne, har ikke adgang til abonnementerne og kan ikke forlades uden forældrekoden. Den firecifrede kode kræves også for at ændre profiler og, når der findes en børneprofil, for at åbne en voksenprofil (medmindre du slår det fra for den profil).\n\nForældrekoden bliver på hver enhed: Den sendes aldrig, hverken via iCloud eller til Apple TV."
+      },
+      "codeOublie": {
+        "q": "Jeg har glemt forældrekoden.",
+        "r": "På iPhone eller iPad trykker du på »Glemt forældrekode«, bekræfter med Face ID eller enhedens kode, at det er dig, og opretter en ny kode. Enhedens kode skal være slået til i Indstillinger.\n\nPå Apple TV scanner du den viste QR-kode med din iPhone, slår »Tillad ny forældrekode« til og bekræfter med Face ID eller iPhonens kode."
+      },
+      "gratuit": {
+        "q": "Hvad er med i gratisversionen?",
+        "r": "Live-tv, tv-guiden og påmindelser, Mit indhold, sammenlægning af dobbelte kanaler, indsættelse af beskeden fra udbyderen, billede-i-billede, overførsel til Apple TV via QR-kode, en børneprofil med forældrekode og temaet Sort."
+      },
+      "inclus": {
+        "q": "Hvad er med i Premium?",
+        "r": "Film og serier (katalog, sider med plakater og resuméer, afspilning, genoptagelse, alle versioner af en film), flere skærme, genudsendelser, pause i live-tv, downloads på iPhone og iPad, iCloud-synkronisering, ekstra voksenprofiler og ekstra abonnementer, rækkerne »Til dig« og »Populært«, temaerne Halo og Program og alternative appsymboler.\n\nI gratisversionen kan du gennemse film og serier; for at afspille dem kræves Premium."
+      },
+      "soloFamille": {
+        "q": "Solo eller Familie: Hvad er forskellen?",
+        "r": "Begge løsninger giver det samme Premium. Solo er til dig, på alle dine enheder med den samme Apple-konto. Familie deles med op til 6 personer takket være [Familiedeling fra Apple](apple-partage). Hver løsning findes som måneds-, års- og livstidskøb: se [priserne](tarifs)."
+      },
+      "essai": {
+        "q": "Kan jeg prøve Premium gratis?",
+        "r": "Ja: Måneds- og årsabonnementerne, Solo eller Familie, starter med 7 dages gratis prøveperiode. Livstidskøbet har ingen prøveperiode. Hvis du opsiger mindst 24 timer før prøveperioden slutter, bliver du ikke opkrævet noget."
+      },
+      "restaurer": {
+        "q": "Hvordan gendanner jeg mine køb?",
+        "r": "Som regel kommer Premium tilbage af sig selv på en ny enhed. Ellers åbner du Konto › Premium og trykker på »Gendan køb«: Ulti finder et køb foretaget med den samme Apple-konto eller via Familiedeling med Familie-løsningen."
+      },
+      "resilier": {
+        "q": "Hvordan opsiger jeg mit abonnement?",
+        "r": "Abonnementerne administreres af Apple. I Ulti åbner du Konto › Premium › »Administrer mit abonnement«. Eller på iPhone eller iPad: Indstillinger › dit navn › Abonnementer, vælg Ulti-abonnementet, og opsig det ([hjælp fra Apple](apple-resilier)).\n\nOpsig mindst 24 timer før periodens udløb for at undgå fornyelse. Premium er aktivt til slutningen af den periode, du allerede har betalt for."
+      },
+      "vie": {
+        "q": "Jeg har købt Premium for livstid: Stopper mit abonnement af sig selv?",
+        "r": "Nej: Apple opsiger ikke et abonnement af sig selv. Hvis du havde et måneds- eller årsabonnement før livstidskøbet, så husk at opsige det, så du ikke bliver opkrævet igen. Ulti minder dig om det under Konto › Premium."
+      },
+      "occupee": {
+        "q": "»Den forrige afspilning er stadig åben«: Hvad gør jeg?",
+        "r": "Dit abonnement tillader kun én afspilning ad gangen, og din udbyder er ofte 1 til 2 minutter om at frigive den forrige, for eksempel lige efter en film eller en anden kanal. Ulti viser en nedtælling på knappen »Prøv igen«: Tryk på den, når nedtællingen er slut. Hvis en anden enhed allerede ser med det samme abonnement, så stop afspilningen der.\n\nMed flere skærme betyder »Ingen ledig forbindelse tilbage«, at alle forbindelser i dine abonnementer allerede er i brug. Med et abonnement med kun én forbindelse sættes en download på pause, mens du ser, og fortsætter derefter af sig selv."
+      },
+      "refusee": {
+        "q": "»Forbindelsen blev afvist af udbyderen« eller »Dette abonnement er udløbet«",
+        "r": "Disse beskeder kommer fra din udbyders server: abonnementet er udløbet, loginoplysningerne er ændret, eller der er en afspilning i gang på en anden enhed. Kontrollér dine loginoplysninger under Konto › Abonnementer, eller kontakt din udbyder. Ulti kan hverken ændre eller forny dit IPTV-abonnement."
+      },
+      "serveur": {
+        "q": "»Kan ikke få forbindelse til serveren«",
+        "r": "Kontrollér din internetforbindelse. Hvis den virker, er din udbyders server måske midlertidigt utilgængelig: Prøv igen lidt senere."
+      },
+      "identifiants": {
+        "q": "Er mine loginoplysninger sikre?",
+        "r": "Ja. De gemmes i nøgleringen på din enhed og går aldrig via en Ulti-server. Med iCloud-synkronisering (Premium) er de end-to-end-krypteret i din egen iCloud-konto."
+      },
+      "donnees": {
+        "q": "Indsamler Ulti data?",
+        "r": "Nej. Ingen konto at oprette, ingen reklamer, ingen trafikmåling. Det hele står i [vores privatlivspolitik](privacy)."
+      },
+      "coller": {
+        "q": "Hvordan fungerer »Indsæt modtaget besked«?",
+        "r": "Har din udbyder sendt dig loginoplysningerne via sms, WhatsApp eller e-mail? Kopiér hele beskeden på iPhone, og tryk derefter på »Indsæt modtaget besked« under Konto › Abonnementer › Tilføj abonnement. Ulti finder serveren, brugernavnet og adgangskoden eller M3U-linket og udfylder selv felterne. Kontrollér, og tryk på »Fortsæt«.\n\nBeskeden læses på iPhone og sendes eller gemmes aldrig. Der oprettes ingen forbindelse før »Fortsæt«."
+      },
+      "multi": {
+        "q": "Hvordan fungerer flere skærme?",
+        "r": "Flere skærme er en del af Premium: Se op til 4 livekanaler på én gang på Apple TV, iPad og Mac og 2 på iPhone. Antallet af skærme afhænger også af dit IPTV-abonnement: Hver livekanal bruger én forbindelse, og mange abonnementer tillader kun én. Har du flere abonnementer, lægges deres forbindelser sammen."
+      },
+      "partage": {
+        "q": "Hvordan deler jeg Premium med min familie?",
+        "r": "Vælg Familie-løsningen: Den deles med op til 6 personer takket være [Familiedeling fra Apple](apple-partage). Hvert familiemedlem åbner Ulti med sin egen Apple-konto og får Premium; om nødvendigt trykker de på »Gendan køb« under Konto › Premium. Solo-løsningen kan ikke deles."
+      }
+    },
+    "contact": {
+      "titre": "Brug for hjælp?",
+      "texte": "Skriv til os på [{contact}](contact). Angiv din enhed (iPhone, iPad, Mac eller Apple TV) og om muligt den besked, der vises. Send aldrig dine loginoplysninger eller adressen på dit abonnement."
+    },
+    "essentiel": "Det vigtigste"
+  },
+  "confidentialite": {
+    "sections": {
+      "bref": {
+        "titre": "Kort fortalt",
+        "texte": "Ulti indsamler ingen personoplysninger. Ingen konto at oprette, ingen reklamer, ingen annoncesporing, ingen trafikmåling. Appen indeholder ingen statistik- eller nedbrudsrapportværktøjer fra andre virksomheder."
+      },
+      "identifiants": {
+        "titre": "Dine loginoplysninger",
+        "texte": "Server, brugernavn og adgangskode til dit IPTV-abonnement gemmes kun på din enhed, i Apples nøglering, og i din iCloud-nøglering, hvis du slår den til. De går aldrig via en Ulti-server: Der findes ingen."
+      },
+      "contacts": {
+        "titre": "Hvad appen kontakter",
+        "texte": "Ulti kontakter kun:\n\n• din IPTV-udbyder for at afspille dine kanaler, film, serier og tv-guide. Det er den tjeneste, du har valgt: Den er hverken udvikleren eller en partner af udvikleren;\n• The Movie Database (TMDB) for at vise plakater og resuméer. Appen sender kun titel og år for de viste værker samt enhedens sprog og område: ingen loginoplysninger og intet af det, du skriver i søgningen;\n• Apple for Premium-køb og, hvis du slår det til, for iCloud-synkronisering."
+      },
+      "ip": {
+        "titre": "Din IP-adresse",
+        "texte": "Som ved alle onlinetjenester modtager din IPTV-udbyder, TMDB og Apple din enheds IP-adresse, når appen kontakter dem. Ulti gemmer intet af den."
+      },
+      "icloud": {
+        "titre": "iCloud-synkronisering",
+        "texte": "Med Premium kan dine profiler, abonnementer (inklusive loginoplysninger), Mit indhold, Min liste, genoptagelsespunkter, påmindelser, ofte sete kanaler og indstillinger for udseende synkroniseres mellem dine enheder. De gemmes i den private del af din egen iCloud-konto, end-to-end-krypteret: Udvikleren har ikke adgang til dem. Forældrekoden bliver på hver enhed."
+      },
+      "appletv": {
+        "titre": "Overførsel til Apple TV",
+        "texte": "Når du sender dit abonnement fra iPhone til Apple TV via QR-kode, går dataene krypteret direkte fra den ene enhed til den anden via dit lokale netværk. Intet går via en server. Forældrekoden sendes aldrig."
+      },
+      "message": {
+        "titre": "Beskeden fra udbyderen",
+        "texte": "Når du indsætter beskeden fra din udbyder, analyseres den på din enhed og sendes eller gemmes aldrig."
+      },
+      "fichiers": {
+        "titre": "Downloads og pause i live-tv",
+        "texte": "Downloadede videoer bliver på din enhed. For at kunne sætte live-tv på pause gemmer Ulti de seneste minutter af kanalen på enheden; intet gemmes, efter at afspilleren er lukket."
+      },
+      "achats": {
+        "titre": "Køb",
+        "texte": "Køb administreres af Apple i App Store. Ulti gemmer kun Premium-status på enheden for at fungere offline og sender den ingen steder hen."
+      },
+      "plantages": {
+        "titre": "Nedbrudsrapporter",
+        "texte": "Ulti sender ikke selv nogen rapporter. Hvis du i enhedens indstillinger har accepteret at dele analysedata med appudviklere, kan Apple videresende tekniske nedbrudsrapporter til udvikleren. Under TestFlight-testversioner videresender Apple den feedback og de rapporter, du selv vælger at sende, til udvikleren."
+      },
+      "site": {
+        "titre": "Dette websted",
+        "texte": "Dette websted bruger ingen sporingsværktøjer, ingen cookies og ingen trafikmåling og indlæser intet fra andre websteder. Kun det land, du vælger, gemmes i din browser (lokal lagring) for at sende dig til den rigtige version; det slettes sammen med dine browserdata.\n\nWebstedet hostes af GitHub Pages. Som alle hostingudbydere modtager GitHub tekniske forbindelsesdata, herunder IP-adressen, for at levere siderne ([GitHubs privatlivspolitik](github-confidentialite))."
+      },
+      "droits": {
+        "titre": "Dine data og dine rettigheder",
+        "texte": "Da Ulti ikke har nogen data om dig, er der intet at se eller slette hos os. For at slette alt fra dine enheder fjerner du dine abonnementer under Konto › Abonnementer (så forsvinder de også fra iCloud), eller du sletter appen."
+      },
+      "changements": {
+        "titre": "Ændringer",
+        "texte": "Hvis denne politik ændres, offentliggøres den nye version på denne side med dato."
+      },
+      "contact": {
+        "titre": "Kontakt",
+        "texte": "Et spørgsmål om privatliv? Skriv til [{contact}](contact)."
+      }
+    }
+  },
+  "mentions": {
+    "enCours": "Siden er under udarbejdelse: Oplysningerne i kantede parenteser udfyldes, før appen udkommer.",
+    "champs": {
+      "nom": "Navn eller firmanavn",
+      "statut": "Selskabsform",
+      "adresse": "Adresse",
+      "siret": "SIRET",
+      "email": "E-mail",
+      "directeur": "Fulde navn",
+      "telephone": "Telefon",
+      "societe": "Virksomhed"
+    },
+    "sections": {
+      "editeur": {
+        "titre": "Udgiver af webstedet og appen"
+      },
+      "directeur": {
+        "titre": "Ansvarshavende redaktør"
+      },
+      "hebergeur": {
+        "titre": "Hosting",
+        "texte": "Dette websted hostes af GitHub Pages.",
+        "adresse": "88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA"
+      },
+      "propriete": {
+        "titre": "Immaterielle rettigheder",
+        "texte": "Navnet Ulti, logoet, teksterne og udformningen af dette websted tilhører udgiveren. Apple, Apple TV, iPhone, iPad, Mac og App Store er varemærker tilhørende Apple Inc.\n\nFilmene og serierne på skærmene er frie film fra [Blender Studio](blender) (© Blender Foundation), udgivet under Creative Commons-licens (se billedkrediteringen nedenfor). De viste kanaler er opdigtede."
+      },
+      "tmdb": {
+        "titre": "Data om film og serier",
+        "texte": "Plakaterne og resuméerne i appen kommer fra [The Movie Database (TMDB)](tmdb). Dette produkt bruger TMDB's API, men er ikke godkendt eller certificeret af TMDB."
+      },
+      "contenus": {
+        "titre": "Indhold",
+        "texte": "Ulti leverer ingen kanaler og intet indhold. Du skal have dine egne kilder og have ret til at se dem."
+      },
+      "credits": {
+        "titre": "Billedkreditering",
+        "texte": "Skærmene på dette websted er rigtige skærmbilleder fra appen, lavet med en demoliste: Kanalerne og deres programmer er opdigtede.\n\nBillederne fra livekanalerne er uddrag af film fra [Blender Studio](blender), uden andre ændringer:\n\n• Big Buck Bunny (2008), © Blender Foundation, www.bigbuckbunny.org, licens [CC BY 3.0](cc-by-3);\n• Elephants Dream (2006), © Blender Foundation / Netherlands Media Art Institute, www.elephantsdream.org, licens [CC BY 2.5](cc-by-25);\n• Sintel (2010), © Blender Foundation, www.sintel.org, licens [CC BY 3.0](cc-by-3);\n• Cosmos Laundromat (2015), © Blender Institute, gooseberry.blender.org, licens [CC BY 4.0](cc-by-4).\n\nFilmplakater og resuméer: The Movie Database (TMDB)."
+      }
+    },
+    "blancs": {
+      "nom": "[NAVN]",
+      "statut": "[SELSKABSFORM]",
+      "adresse": "[ADRESSE]",
+      "siret": "[SIRET]",
+      "directeur": "[ANSVARSHAVENDE REDAKTØR]",
+      "telephone": "[TELEFON]"
+    }
+  },
+  "erreur": {
+    "metaTitre": "Siden blev ikke fundet — Ulti",
+    "titre": "Denne side findes ikke.",
+    "texte": "Adressen er måske stavet forkert, eller siden er blevet flyttet.",
+    "accueil": "Til forsiden",
+    "choix": "Vælg land eller område"
+  }
+}
