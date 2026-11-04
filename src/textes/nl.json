@@ -424,7 +424,7 @@
       },
       "contacts": {
         "titre": "Waarmee de app contact maakt",
-        "texte": "Ulti maakt alleen contact met:\n\n• je IPTV-aanbieder, om je zenders, films, series en tv-gids af te spelen. Dat is de dienst die jij hebt gekozen: het is niet de ontwikkelaar en geen partner van de ontwikkelaar;\n• de relay van Ulti (api.ultitv.com), om posters en samenvattingen van The Movie Database (TMDB) te tonen. Die stuurt het verzoek alleen door naar TMDB en bewaart niets: geen logboek. De app stuurt alleen de titel en het jaar van de getoonde werken, plus de taal en regio van het apparaat: geen inloggegevens, en niets van wat je in het zoekveld typt. Afbeeldingen worden rechtstreeks van TMDB geladen (image.tmdb.org);\n• Apple, voor Premium-aankopen en, als je die inschakelt, voor iCloud-synchronisatie."
+        "texte": "Ulti maakt alleen contact met:\n\n• je IPTV-aanbieder, om je zenders, films, series en tv-gids af te spelen. Dat is de dienst die jij hebt gekozen: het is niet de ontwikkelaar en geen partner van de ontwikkelaar;\n• de relay van Ulti (api.ultitv.com, gehost door Cloudflare), om posters en samenvattingen van The Movie Database (TMDB) te tonen. Die stuurt het verzoek alleen door naar TMDB en bewaart niets: geen logboek. De app stuurt alleen de titel en het jaar van de getoonde werken, plus de taal en regio van het apparaat: geen inloggegevens, en niets van wat je in het zoekveld typt. Afbeeldingen worden rechtstreeks van TMDB geladen (image.tmdb.org);\n• Apple, voor Premium-aankopen en, als je die inschakelt, voor iCloud-synchronisatie."
       },
       "ip": {
         "titre": "Je IP-adres",
@@ -468,20 +468,21 @@
       },
       "contact": {
         "titre": "Contact",
-        "texte": "Een vraag over privacy? Schrijf naar [{contact}](contact)."
+        "texte": "Een vraag over privacy? Schrijf naar [{contact}](contact).\n\nUitgever van de app en deze site: {editeur}, {adresse}."
       }
     }
   },
   "mentions": {
-    "enCours": "Pagina in voorbereiding: de gegevens tussen haken worden aangevuld voordat de app uitkomt.",
+    "enCours": "Pagina wordt afgerond: het telefoonnummer en het SIREN-nummer (inschrijving loopt) worden binnenkort toegevoegd.",
     "champs": {
-      "nom": "Naam of bedrijfsnaam",
+      "nom": "Naam",
+      "nomCommercial": "Handelsnaam",
       "statut": "Rechtsvorm",
       "adresse": "Adres",
-      "siret": "SIRET",
+      "siren": "SIREN",
+      "telephone": "Telefoon",
       "email": "E-mail",
       "directeur": "Naam",
-      "telephone": "Telefoon",
       "societe": "Bedrijf"
     },
     "sections": {
@@ -493,8 +494,7 @@
       },
       "hebergeur": {
         "titre": "Hosting",
-        "texte": "Deze website wordt gehost door GitHub Pages.",
-        "adresse": "88 Colin P. Kelly Jr. St., San Francisco, CA 94107, Verenigde Staten"
+        "texte": "Deze site wordt gehost door GitHub Pages. De relay api.ultitv.com, waarmee de app posters en samenvattingen van films en series toont, wordt gehost door Cloudflare."
       },
       "propriete": {
         "titre": "Intellectueel eigendom",
@@ -514,12 +514,15 @@
       }
     },
     "blancs": {
-      "nom": "[NAAM]",
-      "statut": "[RECHTSVORM]",
-      "adresse": "[ADRES]",
-      "siret": "[SIRET]",
-      "directeur": "[VERANTWOORDELIJKE UITGEVER]",
-      "telephone": "[TELEFOON]"
+      "telephone": "[TELEFOON]",
+      "siren": "[SIREN — inschrijving loopt]"
+    },
+    "statuts": {
+      "micro-entrepreneur": "Eenmanszaak (Franse micro-entrepreneur)"
+    },
+    "hebergeurs": {
+      "site": "Site",
+      "relais": "Relay api.ultitv.com"
     }
   },
   "erreur": {
@@ -530,7 +533,6 @@
     "choix": "Kies een land of regio"
   },
   "conditions": {
-    "enCours": "Overeenkomst in herziening: de gegevens tussen haken worden aangevuld voordat de app verschijnt.",
     "enAnglais": "Deze overeenkomst is beschikbaar in het Engels."
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_note": "End User License Agreement from ~/Developer/ultime-iptv/Notes/app-store/contrat-licence.md (written 04/11/2026, to be reviewed by a lawyer). {editeur} and {adresse} come from site.config.mjs (editeur.nom, editeur.adresse). Links: [label](target). Bold: **text**.",
+  "_note": "End User License Agreement from ~/Developer/ultime-iptv/Notes/app-store/contrat-licence.md (written 04/11/2026, to be reviewed by a lawyer). {editeur} and {adresse} come from site.config.mjs (editeur.nom, editeur.adresse, editeur.pays). Links: [label](target). Bold: **text**.",
   "titre": "End User License Agreement — Ulti",
   "articles": [
     {

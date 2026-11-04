@@ -424,7 +424,7 @@
       },
       "contacts": {
         "titre": "What the app connects to",
-        "texte": "Ulti only connects to:\n\n• your IPTV provider, to play your channels, movies, series and TV guide. It's the service you chose: neither the developer nor a partner of the developer;\n• Ulti's relay (api.ultitv.com), to show posters and summaries from The Movie Database (TMDB). It only passes the request on to TMDB and keeps nothing: no logs. The app only sends the title and year of the works shown, and the device's language and region: no identifier, and nothing you type in search. Images load directly from TMDB (image.tmdb.org);\n• Apple, for Premium purchases and, if you turn it on, for iCloud sync."
+        "texte": "Ulti only connects to:\n\n• your IPTV provider, to play your channels, movies, series and TV guide. It's the service you chose: neither the developer nor a partner of the developer;\n• Ulti's relay (api.ultitv.com, hosted by Cloudflare), to show posters and summaries from The Movie Database (TMDB). It only passes the request on to TMDB and keeps nothing: no logs. The app only sends the title and year of the works shown, and the device's language and region: no identifier, and nothing you type in search. Images load directly from TMDB (image.tmdb.org);\n• Apple, for Premium purchases and, if you turn it on, for iCloud sync."
       },
       "ip": {
         "titre": "Your IP address",
@@ -468,20 +468,21 @@
       },
       "contact": {
         "titre": "Contact",
-        "texte": "A privacy question? Write to [{contact}](contact)."
+        "texte": "A privacy question? Write to [{contact}](contact).\n\nPublisher of the app and this site: {editeur}, {adresse}."
       }
     }
   },
   "mentions": {
-    "enCours": "This page is being written: the information in brackets will be completed before the app is released.",
+    "enCours": "Page being finalised: the phone number and the SIREN number (registration in progress) will be added soon.",
     "champs": {
-      "nom": "Name or company name",
+      "nom": "Name",
+      "nomCommercial": "Trade name",
       "statut": "Status",
       "adresse": "Address",
-      "siret": "SIRET number",
+      "siren": "SIREN",
+      "telephone": "Phone",
       "email": "Email",
       "directeur": "Full name",
-      "telephone": "Phone",
       "societe": "Company"
     },
     "sections": {
@@ -493,8 +494,7 @@
       },
       "hebergeur": {
         "titre": "Host",
-        "texte": "This website is hosted by GitHub Pages.",
-        "adresse": "88 Colin P. Kelly Jr. St., San Francisco, CA 94107, United States"
+        "texte": "This site is hosted by GitHub Pages. The api.ultitv.com relay, which lets the app show movie and series posters and summaries, is hosted by Cloudflare."
       },
       "propriete": {
         "titre": "Intellectual property",
@@ -514,12 +514,15 @@
       }
     },
     "blancs": {
-      "nom": "[NAME]",
-      "statut": "[STATUS]",
-      "adresse": "[ADDRESS]",
-      "siret": "[SIRET]",
-      "directeur": "[PUBLICATION DIRECTOR]",
-      "telephone": "[PHONE]"
+      "telephone": "[PHONE]",
+      "siren": "[SIREN — registration in progress]"
+    },
+    "statuts": {
+      "micro-entrepreneur": "Sole trader (French micro-entrepreneur)"
+    },
+    "hebergeurs": {
+      "site": "Site",
+      "relais": "api.ultitv.com relay"
     }
   },
   "erreur": {
@@ -530,7 +533,6 @@
     "choix": "Choose a country or region"
   },
   "conditions": {
-    "enCours": "This agreement is under review: the information in brackets will be completed before the app is released.",
     "enAnglais": "This agreement is available in English."
   }
 }

@@ -424,7 +424,7 @@
       },
       "contacts": {
         "titre": "Mihin sovellus ottaa yhteyttä",
-        "texte": "Ulti ottaa yhteyttä vain:\n\n• IPTV-palveluntarjoajaasi kanaviesi, elokuviesi, sarjojesi ja TV-oppaasi toistamiseksi. Se on valitsemasi palvelu: se ei ole kehittäjä eikä kehittäjän kumppani;\n• Ultin välityspalvelimeen (api.ultitv.com) The Movie Databasen (TMDB) julisteiden ja juonikuvausten näyttämiseksi. Se vain välittää pyynnön TMDB:lle eikä tallenna mitään: ei lokia. Sovellus lähettää vain näytettävien teosten nimen ja vuoden sekä laitteen kielen ja alueen: ei kirjautumistietoja eikä mitään hakukenttään kirjoittamaasi. Kuvat ladataan suoraan TMDB:stä (image.tmdb.org);\n• Appleen Premium-ostoja varten ja, jos otat sen käyttöön, iCloud-synkronointia varten."
+        "texte": "Ulti ottaa yhteyttä vain:\n\n• IPTV-palveluntarjoajaasi kanaviesi, elokuviesi, sarjojesi ja TV-oppaasi toistamiseksi. Se on valitsemasi palvelu: se ei ole kehittäjä eikä kehittäjän kumppani;\n• Ultin välityspalvelimeen (api.ultitv.com, palveluntarjoaja Cloudflare) The Movie Databasen (TMDB) julisteiden ja juonikuvausten näyttämiseksi. Se vain välittää pyynnön TMDB:lle eikä tallenna mitään: ei lokia. Sovellus lähettää vain näytettävien teosten nimen ja vuoden sekä laitteen kielen ja alueen: ei kirjautumistietoja eikä mitään hakukenttään kirjoittamaasi. Kuvat ladataan suoraan TMDB:stä (image.tmdb.org);\n• Appleen Premium-ostoja varten ja, jos otat sen käyttöön, iCloud-synkronointia varten."
       },
       "ip": {
         "titre": "IP-osoitteesi",
@@ -468,20 +468,21 @@
       },
       "contact": {
         "titre": "Yhteystiedot",
-        "texte": "Kysyttävää tietosuojasta? Kirjoita osoitteeseen [{contact}](contact)."
+        "texte": "Kysyttävää tietosuojasta? Kirjoita osoitteeseen [{contact}](contact).\n\nSovelluksen ja tämän sivuston julkaisija: {editeur}, {adresse}."
       }
     }
   },
   "mentions": {
-    "enCours": "Sivu on työn alla: hakasulkeissa olevat tiedot täydennetään ennen sovelluksen julkaisua.",
+    "enCours": "Sivua viimeistellään: puhelinnumero ja SIREN-numero (rekisteröinti käynnissä) lisätään pian.",
     "champs": {
-      "nom": "Nimi tai toiminimi",
+      "nom": "Nimi",
+      "nomCommercial": "Aputoiminimi",
       "statut": "Yritysmuoto",
       "adresse": "Osoite",
-      "siret": "SIRET",
+      "siren": "SIREN",
+      "telephone": "Puhelin",
       "email": "Sähköposti",
       "directeur": "Etu- ja sukunimi",
-      "telephone": "Puhelin",
       "societe": "Yritys"
     },
     "sections": {
@@ -493,8 +494,7 @@
       },
       "hebergeur": {
         "titre": "Palvelin",
-        "texte": "Tätä sivustoa ylläpitää GitHub Pages.",
-        "adresse": "88 Colin P. Kelly Jr. St., San Francisco, CA 94107, Yhdysvallat"
+        "texte": "Sivuston palveluntarjoaja on GitHub Pages. Välityspalvelimen api.ultitv.com, jonka avulla sovellus näyttää elokuvien ja sarjojen julisteet ja juonikuvaukset, palveluntarjoaja on Cloudflare."
       },
       "propriete": {
         "titre": "Immateriaalioikeudet",
@@ -514,12 +514,15 @@
       }
     },
     "blancs": {
-      "nom": "[NIMI]",
-      "statut": "[YRITYSMUOTO]",
-      "adresse": "[OSOITE]",
-      "siret": "[SIRET]",
-      "directeur": "[VASTAAVA JULKAISIJA]",
-      "telephone": "[PUHELIN]"
+      "telephone": "[PUHELIN]",
+      "siren": "[SIREN — rekisteröinti käynnissä]"
+    },
+    "statuts": {
+      "micro-entrepreneur": "Yksityinen elinkeinonharjoittaja (ranskalainen micro-entrepreneur)"
+    },
+    "hebergeurs": {
+      "site": "Sivusto",
+      "relais": "Välityspalvelin api.ultitv.com"
     }
   },
   "erreur": {
@@ -530,7 +533,6 @@
     "choix": "Valitse maa tai alue"
   },
   "conditions": {
-    "enCours": "Sopimus on tarkistettavana: hakasulkeissa olevat tiedot täydennetään ennen sovelluksen julkaisua.",
     "enAnglais": "Tämä sopimus on saatavilla englanniksi."
   }
 }

@@ -424,7 +424,7 @@
       },
       "contacts": {
         "titre": "Ce que l'app contacte",
-        "texte": "Ulti contacte seulement :\n\n• votre fournisseur IPTV, pour lire vos chaînes, films, séries et guide TV. C'est le service que vous avez choisi : ce n'est ni le développeur ni un partenaire du développeur ;\n• le relais d'Ulti (api.ultitv.com), pour afficher les affiches et résumés de The Movie Database (TMDB). Il transmet seulement la demande à TMDB et ne garde rien : aucun journal. L'app envoie seulement le titre et l'année des œuvres affichées, ainsi que la langue et la région de l'appareil : aucun identifiant, et rien de ce que vous tapez dans la recherche. Les images sont chargées directement depuis TMDB (image.tmdb.org) ;\n• Apple, pour les achats Premium et, si vous l'activez, pour la synchronisation iCloud."
+        "texte": "Ulti contacte seulement :\n\n• votre fournisseur IPTV, pour lire vos chaînes, films, séries et guide TV. C'est le service que vous avez choisi : ce n'est ni le développeur ni un partenaire du développeur ;\n• le relais d'Ulti (api.ultitv.com, hébergé par Cloudflare), pour afficher les affiches et résumés de The Movie Database (TMDB). Il transmet seulement la demande à TMDB et ne garde rien : aucun journal. L'app envoie seulement le titre et l'année des œuvres affichées, ainsi que la langue et la région de l'appareil : aucun identifiant, et rien de ce que vous tapez dans la recherche. Les images sont chargées directement depuis TMDB (image.tmdb.org) ;\n• Apple, pour les achats Premium et, si vous l'activez, pour la synchronisation iCloud."
       },
       "ip": {
         "titre": "Votre adresse IP",
@@ -468,20 +468,21 @@
       },
       "contact": {
         "titre": "Contact",
-        "texte": "Une question sur la confidentialité ? Écrivez à [{contact}](contact)."
+        "texte": "Une question sur la confidentialité ? Écrivez à [{contact}](contact).\n\nÉditeur de l'app et de ce site : {editeur}, {adresse}."
       }
     }
   },
   "mentions": {
-    "enCours": "Page en cours de rédaction : les informations entre crochets seront complétées avant la sortie de l'app.",
+    "enCours": "Page en cours de finalisation : le numéro de téléphone et le numéro SIREN (immatriculation en cours) seront ajoutés prochainement.",
     "champs": {
-      "nom": "Nom ou raison sociale",
+      "nom": "Nom",
+      "nomCommercial": "Nom commercial",
       "statut": "Statut",
       "adresse": "Adresse",
-      "siret": "SIRET",
+      "siren": "SIREN",
+      "telephone": "Téléphone",
       "email": "E-mail",
       "directeur": "Nom et prénom",
-      "telephone": "Téléphone",
       "societe": "Société"
     },
     "sections": {
@@ -493,8 +494,7 @@
       },
       "hebergeur": {
         "titre": "Hébergeur",
-        "texte": "Ce site est hébergé par GitHub Pages.",
-        "adresse": "88 Colin P. Kelly Jr. St., San Francisco, CA 94107, États-Unis"
+        "texte": "Le site est hébergé par GitHub Pages. Le relais api.ultitv.com, qui permet à l'app d'afficher les affiches et résumés des films et séries, est hébergé par Cloudflare."
       },
       "propriete": {
         "titre": "Propriété intellectuelle",
@@ -514,12 +514,15 @@
       }
     },
     "blancs": {
-      "nom": "[NOM]",
-      "statut": "[STATUT]",
-      "adresse": "[ADRESSE]",
-      "siret": "[SIRET]",
-      "directeur": "[DIRECTEUR DE LA PUBLICATION]",
-      "telephone": "[TÉLÉPHONE]"
+      "telephone": "[TÉLÉPHONE]",
+      "siren": "[SIREN — immatriculation en cours]"
+    },
+    "statuts": {
+      "micro-entrepreneur": "Entrepreneur individuel (micro-entrepreneur)"
+    },
+    "hebergeurs": {
+      "site": "Site",
+      "relais": "Relais api.ultitv.com"
     }
   },
   "erreur": {
@@ -530,7 +533,6 @@
     "choix": "Choisir un pays ou une région"
   },
   "conditions": {
-    "enCours": "Contrat en cours de relecture : les informations entre crochets seront complétées avant la sortie de l'app.",
     "enAnglais": "Ce contrat est proposé en anglais."
   }
 }

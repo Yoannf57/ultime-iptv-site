@@ -424,7 +424,7 @@
       },
       "contacts": {
         "titre": "Hvad appen kontakter",
-        "texte": "Ulti kontakter kun:\n\n• din IPTV-udbyder for at afspille dine kanaler, film, serier og tv-guide. Det er den tjeneste, du har valgt: Den er hverken udvikleren eller en partner af udvikleren;\n• Ultis relæ (api.ultitv.com) for at vise plakater og resuméer fra The Movie Database (TMDB). Det sender kun forespørgslen videre til TMDB og gemmer intet: ingen log. Appen sender kun titel og år for de viste værker samt enhedens sprog og område: ingen loginoplysninger og intet af det, du skriver i søgningen. Billederne hentes direkte fra TMDB (image.tmdb.org);\n• Apple for Premium-køb og, hvis du slår det til, for iCloud-synkronisering."
+        "texte": "Ulti kontakter kun:\n\n• din IPTV-udbyder for at afspille dine kanaler, film, serier og tv-guide. Det er den tjeneste, du har valgt: Den er hverken udvikleren eller en partner af udvikleren;\n• Ultis relæ (api.ultitv.com, hostet af Cloudflare) for at vise plakater og resuméer fra The Movie Database (TMDB). Det sender kun forespørgslen videre til TMDB og gemmer intet: ingen log. Appen sender kun titel og år for de viste værker samt enhedens sprog og område: ingen loginoplysninger og intet af det, du skriver i søgningen. Billederne hentes direkte fra TMDB (image.tmdb.org);\n• Apple for Premium-køb og, hvis du slår det til, for iCloud-synkronisering."
       },
       "ip": {
         "titre": "Din IP-adresse",
@@ -468,20 +468,21 @@
       },
       "contact": {
         "titre": "Kontakt",
-        "texte": "Et spørgsmål om privatliv? Skriv til [{contact}](contact)."
+        "texte": "Et spørgsmål om privatliv? Skriv til [{contact}](contact).\n\nUdgiver af appen og dette websted: {editeur}, {adresse}."
       }
     }
   },
   "mentions": {
-    "enCours": "Siden er under udarbejdelse: Oplysningerne i kantede parenteser udfyldes, før appen udkommer.",
+    "enCours": "Siden færdiggøres: telefonnummeret og SIREN-nummeret (registrering i gang) tilføjes snart.",
     "champs": {
-      "nom": "Navn eller firmanavn",
+      "nom": "Navn",
+      "nomCommercial": "Binavn",
       "statut": "Selskabsform",
       "adresse": "Adresse",
-      "siret": "SIRET",
+      "siren": "SIREN",
+      "telephone": "Telefon",
       "email": "E-mail",
       "directeur": "Fulde navn",
-      "telephone": "Telefon",
       "societe": "Virksomhed"
     },
     "sections": {
@@ -493,8 +494,7 @@
       },
       "hebergeur": {
         "titre": "Hosting",
-        "texte": "Dette websted hostes af GitHub Pages.",
-        "adresse": "88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA"
+        "texte": "Webstedet hostes af GitHub Pages. Relæet api.ultitv.com, som lader appen vise plakater og resuméer af film og serier, hostes af Cloudflare."
       },
       "propriete": {
         "titre": "Immaterielle rettigheder",
@@ -514,12 +514,15 @@
       }
     },
     "blancs": {
-      "nom": "[NAVN]",
-      "statut": "[SELSKABSFORM]",
-      "adresse": "[ADRESSE]",
-      "siret": "[SIRET]",
-      "directeur": "[ANSVARSHAVENDE REDAKTØR]",
-      "telephone": "[TELEFON]"
+      "telephone": "[TELEFON]",
+      "siren": "[SIREN — registrering i gang]"
+    },
+    "statuts": {
+      "micro-entrepreneur": "Enkeltmandsvirksomhed (fransk micro-entrepreneur)"
+    },
+    "hebergeurs": {
+      "site": "Websted",
+      "relais": "Relæet api.ultitv.com"
     }
   },
   "erreur": {
@@ -530,7 +533,6 @@
     "choix": "Vælg land eller område"
   },
   "conditions": {
-    "enCours": "Aftalen gennemgås: Oplysningerne i kantede parenteser udfyldes, før appen udkommer.",
     "enAnglais": "Denne aftale findes på engelsk."
   }
 }
