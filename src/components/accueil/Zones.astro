@@ -1,0 +1,12 @@
+---
+// Boutons invisibles posés sur les onglets dessinés dans une capture (positions mesurées par
+// « npm run mesurer-onglets », en %) : un clic sur « Direct » dans l'image montre l'écran Direct.
+// Seulement pour la souris et le toucher (tabindex -1) : au clavier, les onglets sous l'écran font la même chose.
+import { zones, type Appareil } from "../../lib/captures";
+interface Props { langue: string; appareil: Appareil; capture: string; vues: string[] }
+const { langue, appareil, capture, vues } = Astro.props;
+const liste = zones(langue, appareil, capture).filter((z) => vues.includes(z.vue));
+---
+{liste.map(({ vue, x, y, l, h }) => (
+  <button type="button" class="zone" data-aller={vue} tabindex="-1" aria-hidden="true" style={`left:${x}%;top:${y}%;width:${l}%;height:${h}%`}></button>
+))}

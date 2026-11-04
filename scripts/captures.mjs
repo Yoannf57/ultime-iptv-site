@@ -73,8 +73,8 @@ if (!process.argv.includes("--sans-captures")) {
   await page.goto(adresse + "fr-fr/", { waitUntil: "networkidle" });
   await page.emulateMedia({ reducedMotion: "reduce" });
   const etats = [
-    { nom: "apercu", zone: ".apercu", boutons: '[data-cible="apercu"]' },
-    { nom: "visite", zone: "#visite", boutons: "[data-onglet]", attribut: "data-onglet" },
+    { nom: "apercu", zone: ".apercu", boutons: ".apercu [data-onglet]", attribut: "data-onglet" },
+    { nom: "visite", zone: "#visite", boutons: "#visite [data-onglet]", attribut: "data-onglet" },
     { nom: "formule", zone: "#tarifs", boutons: '[data-cible="formule"]' },
   ];
   for (const e of etats) {

@@ -1,0 +1,10 @@
+---
+// Bouton Pause / Lecture des écrans qui défilent seuls (visite.js change l'icône et le texte accessible).
+import { t } from "../../lib/textes";
+interface Props { langue: string }
+const { langue: l } = Astro.props;
+---
+<button type="button" class="lecture" data-lecture data-pause-texte={t(l, "visite.pause")} data-lecture-texte={t(l, "visite.lecture")} aria-label={t(l, "visite.pause")} title={t(l, "visite.pause")}>
+  <svg class="icone-pause" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect x="2.5" y="1.5" width="3" height="11" rx="1" fill="currentColor" /><rect x="8.5" y="1.5" width="3" height="11" rx="1" fill="currentColor" /></svg>
+  <svg class="icone-lecture" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3.5 1.8v10.4a.8.8 0 0 0 1.2.7l8.4-5.2a.8.8 0 0 0 0-1.4L4.7 1.1a.8.8 0 0 0-1.2.7Z" fill="currentColor" /></svg>
+</button>

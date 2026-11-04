@@ -1,6 +1,9 @@
-// « Faites le tour. » : visite automatique de l'app sur l'iPad (CLAUDE.md, section 4).
-// - un écran toutes les 4,5 s, en fondu ; seuls l'écran affiché et le suivant sont dans la page (le suivant, invisible,
-//   charge son image juste avant d'être montré) ;
+// Écrans qui défilent seuls (CLAUDE.md, section 4) : grand visuel (Apple TV + iPhone) et « Faites le tour. » (iPad).
+// Chaque bloc [data-visite] a ses écrans [data-diapo=<vue>] (un ou plusieurs par vue : Apple TV et iPhone changent
+// ensemble), ses onglets [data-onglet], son bouton Pause/Lecture [data-lecture], et éventuellement des légendes
+// [data-legende] et des onglets dessinés cliquables dans les captures ([data-aller], voir Zones.astro).
+// - un écran toutes les 4,5 s, en fondu ; seuls l'écran affiché et le suivant sont dans la page (le suivant,
+//   invisible, charge son image juste avant d'être montré) ;
 // - le visiteur garde la main : clic, clavier, focus ou survol à la souris arrêtent la visite, qui reprend seule après
 //   10 s sans action ; après un toucher (téléphone, tablette), elle ne reprend pas seule ;
 // - bouton Pause / Lecture ; visite en pause hors de l'écran ou quand l'onglet du navigateur est caché ;
@@ -8,16 +11,17 @@
 var DUREE = 4500;
 var REPRISE = 10000;
 var FONDU = 650;
+var calme = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-var racine = document.querySelector("[data-visite]");
-if (racine) {
-  var diapos = Array.prototype.slice.call(racine.querySelectorAll("[data-diapo]"));
-  var onglets = Array.prototype.slice.call(racine.querySelectorAll("button[data-onglet]"));
-  var legendes = Array.prototype.slice.call(racine.querySelectorAll("[data-legende]"));
+function demarrer(racine) {
+  var tous = function (sel) { return Array.prototype.slice.call(racine.querySelectorAll(sel)); };
+  var onglets = tous("button[data-onglet]");
+  var vues = onglets.map(function (b) { return b.getAttribute("data-onglet"); });
+  var diapos = tous("[data-diapo]");
+  var legendes = tous("[data-legende]");
   var zoneLegendes = racine.querySelector("[data-legendes]");
   var bouton = racine.querySelector("[data-lecture]");
-  var calme = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var n = diapos.length;
+  var n = vues.length;
   var actuel = 0;
   var minuteur = null;
   var minuteurReprise = null;
@@ -29,12 +33,13 @@ if (racine) {
   var dernierPointeur = "mouse";
 
   racine.style.setProperty("--duree", DUREE + "ms");
-  if (calme) bouton.classList.add("cache");
+  if (calme && bouton) bouton.classList.add("cache");
 
   function montrer(i) {
     actuel = (i + n) % n;
     var suivant = (actuel + 1) % n;
-    diapos.forEach(function (d, k) {
+    diapos.forEach(function (d) {
+      var k = vues.indexOf(d.getAttribute("data-diapo"));
       var actif = k === actuel;
       if (actif || k === suivant) d.hidden = false;
       d.classList.toggle("active", actif);
@@ -44,7 +49,7 @@ if (racine) {
       }
     });
     onglets.forEach(function (b, k) { b.setAttribute("aria-pressed", k === actuel ? "true" : "false"); });
-    legendes.forEach(function (p, k) { p.classList.toggle("active", k === actuel); });
+    legendes.forEach(function (p) { p.classList.toggle("active", p.getAttribute("data-legende") === vues[actuel]); });
   }
 
   function joue() { return !pauseVoulue && !arretAction && aLEcran && ongletVisible; }
@@ -57,6 +62,7 @@ if (racine) {
       racine.classList.add("joue");
       minuteur = setTimeout(function () { montrer(actuel + 1); planifier(); }, DUREE);
     }
+    if (!bouton) return;
     // Le bouton montre « Lecture » quand la visite ne repartira pas seule (Pause choisie, ou après un toucher).
     var enLecture = !pauseVoulue && !arretToucher;
     bouton.classList.toggle("arretee", !enLecture);
@@ -64,7 +70,7 @@ if (racine) {
     bouton.setAttribute("aria-label", texte);
     bouton.setAttribute("title", texte);
     // La légende n'est annoncée par les lecteurs d'écran que quand le visiteur a la main.
-    zoneLegendes.setAttribute("aria-live", pauseVoulue || arretAction ? "polite" : "off");
+    if (zoneLegendes) zoneLegendes.setAttribute("aria-live", pauseVoulue || arretAction ? "polite" : "off");
   }
 
   function action(toucher) {
@@ -86,11 +92,17 @@ if (racine) {
   racine.addEventListener("keydown", function (e) { if (!e.target.closest("[data-lecture]")) action(false); });
   racine.addEventListener("focusin", function (e) { if (!e.target.closest("[data-lecture]")) action(false); });
 
-  onglets.forEach(function (b, k) {
-    b.addEventListener("click", function () { montrer(k); action(dernierPointeur === "touch"); });
+  // Onglets sous l'écran, et onglets dessinés dans la capture.
+  racine.addEventListener("click", function (e) {
+    var b = e.target.closest("button[data-onglet], button[data-aller]");
+    if (!b) return;
+    var k = vues.indexOf(b.getAttribute("data-onglet") || b.getAttribute("data-aller"));
+    if (k < 0) return;
+    montrer(k);
+    action(dernierPointeur === "touch");
   });
 
-  bouton.addEventListener("click", function () {
+  if (bouton) bouton.addEventListener("click", function () {
     clearTimeout(minuteurReprise);
     if (!pauseVoulue && !arretToucher) { pauseVoulue = true; }
     else { pauseVoulue = false; arretToucher = false; arretAction = false; montrer(actuel + 1); }
@@ -101,10 +113,12 @@ if (racine) {
     new IntersectionObserver(function (entrees) {
       aLEcran = entrees[0].isIntersecting;
       planifier();
-    }, { threshold: 0.35 }).observe(racine);
+    }, { threshold: Number(racine.getAttribute("data-seuil")) || 0.35 }).observe(racine);
   }
   document.addEventListener("visibilitychange", function () { ongletVisible = !document.hidden; planifier(); });
 
   montrer(0);
   planifier();
 }
+
+Array.prototype.forEach.call(document.querySelectorAll("[data-visite]"), demarrer);

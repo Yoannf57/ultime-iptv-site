@@ -18,6 +18,28 @@
 .capture.ipad { aspect-ratio: 4 / 3; }
 .capture.iphone { aspect-ratio: 1320 / 2868; }
 
+/* Écrans qui défilent (visite.js) : grand visuel et visite iPad. Les écrans sont empilés ; seul l'actif est visible,
+   le suivant est déjà là (invisible) pour que son image se charge juste avant. */
+.ecrin-tv.pile { aspect-ratio: 16 / 9; }
+.diapo { position: absolute; inset: 0; opacity: 0; transition: opacity 0.6s ease; }
+.diapo.active { opacity: 1; z-index: 1; }
+.diapo[hidden] { display: none; }
+.diapo .zone { position: absolute; z-index: 2; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.diapo:not(.active) .zone { pointer-events: none; }
+.commandes { margin: 2rem auto 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.75rem; }
+.commandes .pastilles { margin: 0; }
+.pastilles button[data-onglet] { position: relative; overflow: hidden; }
+.barre { position: absolute; left: 1rem; right: 1rem; bottom: 0.3125rem; height: 2px; border-radius: 1px; background: rgba(0, 0, 0, 0.45); transform: scaleX(0); transform-origin: left; }
+.joue .pastilles button[aria-pressed="true"] .barre { animation: progression var(--duree, 4.5s) linear forwards; }
+@keyframes progression { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.lecture { flex: none; width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1px solid #3a3a3e; background: #141416; color: #f5f5f7; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.lecture:hover { border-color: #8e8e93; }
+.lecture .icone-lecture { display: none; }
+.lecture.arretee .icone-pause { display: none; }
+.lecture.arretee .icone-lecture { display: block; }
+.lecture.cache { display: none; }
+@media (prefers-reduced-motion: reduce) { .diapo { transition: none; } }
+
 /* Écrans qui changent au clic (onglets.js) : fondu court. */
 .vue[hidden] { display: none !important; }
 .vue.entree { animation: fondu 0.2s ease-out; }

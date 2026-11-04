@@ -10,7 +10,8 @@
     "verifier-liens": "node scripts/verifier-liens.mjs",
     "captures": "node scripts/captures.mjs",
     "importer-captures": "node scripts/importer-captures.mjs",
-    "captures-sections": "node scripts/captures-sections.mjs"
+    "captures-sections": "node scripts/captures-sections.mjs",
+    "mesurer-onglets": "node scripts/mesurer-onglets.mjs"
   },
   "dependencies": {
     "astro": "^7.4.5"

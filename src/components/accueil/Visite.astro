@@ -9,6 +9,8 @@ import { captures } from "../../lib/captures";
 import Capture from "./Capture.astro";
 import Cadre from "./Cadre.astro";
 import Halo from "./Halo.astro";
+import Zones from "./Zones.astro";
+import BoutonLecture from "./BoutonLecture.astro";
 interface Props { langue: string; codePays: string }
 const { langue: l, codePays } = Astro.props;
 const vues = captures.visite;
@@ -25,6 +27,7 @@ const tailleListe = "min(92vw, 40rem)";
         {vues.map(({ vue, capture }, i) => (
           <div class:list={["diapo", { active: i === 0 }]} data-diapo={vue} hidden={i > 0}>
             <Capture langue={l} appareil="ipad" capture={capture} sizes={taille} />
+            <Zones langue={l} appareil="ipad" capture={capture} vues={vues.map((v) => v.vue)} />
           </div>
         ))}
       </Cadre>
@@ -37,10 +40,7 @@ const tailleListe = "min(92vw, 40rem)";
           </button>
         ))}
       </div>
-      <button type="button" class="lecture" data-lecture data-pause-texte={t(l, "visite.pause")} data-lecture-texte={t(l, "visite.lecture")} aria-label={t(l, "visite.pause")} title={t(l, "visite.pause")}>
-        <svg class="icone-pause" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><rect x="2.5" y="1.5" width="3" height="11" rx="1" fill="currentColor" /><rect x="8.5" y="1.5" width="3" height="11" rx="1" fill="currentColor" /></svg>
-        <svg class="icone-lecture" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3.5 1.8v10.4a.8.8 0 0 0 1.2.7l8.4-5.2a.8.8 0 0 0 0-1.4L4.7 1.1a.8.8 0 0 0-1.2.7Z" fill="currentColor" /></svg>
-      </button>
+      <BoutonLecture langue={l} />
     </div>
     <div class="legendes" data-legendes aria-live="off">
       {vues.map(({ vue, premium }, i) => (
@@ -70,22 +70,6 @@ const tailleListe = "min(92vw, 40rem)";
 <style>
   .visite { padding-top: 0; }
   .scene { position: relative; margin: 2.5rem auto 0; max-width: 60rem; }
-  .diapo { position: absolute; inset: 0; opacity: 0; transition: opacity 0.6s ease; }
-  .diapo.active { opacity: 1; z-index: 1; }
-  .diapo[hidden] { display: none; }
-
-  .commandes { margin: 2rem auto 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.75rem; }
-  .onglets { margin: 0; }
-  .onglets button { position: relative; overflow: hidden; }
-  .barre { position: absolute; left: 1rem; right: 1rem; bottom: 0.3125rem; height: 2px; border-radius: 1px; background: rgba(0, 0, 0, 0.45); transform: scaleX(0); transform-origin: left; }
-  :global(.joue) .onglets button[aria-pressed="true"] .barre { animation: progression var(--duree, 4.5s) linear forwards; }
-  @keyframes progression { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-  .lecture { flex: none; width: 2.75rem; height: 2.75rem; border-radius: 50%; border: 1px solid #3a3a3e; background: #141416; color: #f5f5f7; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
-  .lecture:hover { border-color: #8e8e93; }
-  .lecture .icone-lecture { display: none; }
-  .lecture.arretee .icone-pause { display: none; }
-  .lecture.arretee .icone-lecture { display: block; }
-  .lecture.cache { display: none; }
 
   .legendes { display: grid; margin: 1.25rem auto 0; max-width: 40rem; }
   .legendes .legende { grid-area: 1 / 1; visibility: hidden; }
@@ -101,7 +85,4 @@ const tailleListe = "min(92vw, 40rem)";
   .mac { margin: 1.75rem 0 0; text-align: center; font-size: 0.9375rem; color: #a1a1a6; }
   .credits { margin: 1.5rem auto 0; max-width: 46rem; text-align: center; font-size: 0.8125rem; line-height: 1.5; color: #8e8e93; }
   .credits :global(a) { color: #c7c7cc; }
-  @media (prefers-reduced-motion: reduce) {
-    .diapo { transition: none; }
-  }
 </style>

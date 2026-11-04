@@ -5,6 +5,8 @@ import { captures } from "../../lib/captures";
 import Capture from "./Capture.astro";
 import Cadre from "./Cadre.astro";
 import Halo from "./Halo.astro";
+import Zones from "./Zones.astro";
+import BoutonLecture from "./BoutonLecture.astro";
 interface Props { langue: string; lienAppStore: string | null }
 const { langue: l, lienAppStore } = Astro.props;
 const { vues, ecrans } = captures.apercu;
@@ -26,30 +28,38 @@ const tailleTel = "min(15vw, 11rem)";
 </section>
 
 <section aria-label={t(l, "apercu.etiquette")} class="apercu">
-  <div class="scene">
-    <Halo etendue="large" />
-    <div class="ecrin-tv tv" data-ecran="apercu">
-      {vues.map((v, i) => (
-        <div class="vue" data-vue={v} hidden={i > 0}>
-          <Capture langue={l} appareil="appletv" capture={ecrans.appletv[v]} sizes={tailleTv} prioritaire={i === 0} differee={i > 0} />
-        </div>
-      ))}
+  <!-- Les écrans défilent seuls (visite.js), comme la visite iPad ; onglets dessinés cliquables sur l'Apple TV. -->
+  <!-- data-seuil : au chargement, seul le haut du grand visuel est visible sous le titre ; il défile déjà. -->
+  <div class="demo" data-visite data-seuil="0.1">
+    <div class="scene">
+      <Halo etendue="large" />
+      <div class="ecrin-tv tv pile">
+        {vues.map((v, i) => (
+          <div class:list={["diapo", { active: i === 0 }]} data-diapo={v} hidden={i > 0}>
+            <Capture langue={l} appareil="appletv" capture={ecrans.appletv[v]} sizes={tailleTv} prioritaire={i === 0} />
+            <Zones langue={l} appareil="appletv" capture={ecrans.appletv[v]} vues={vues} />
+          </div>
+        ))}
+      </div>
+      <Cadre appareil="iphone" sizes={tailleTel} classe="telephone">
+        {vues.map((v, i) => (
+          <div class:list={["diapo", { active: i === 0 }]} data-diapo={v} hidden={i > 0}>
+            <Capture langue={l} appareil="iphone" capture={ecrans.iphone[v]} sizes={tailleTel} />
+          </div>
+        ))}
+      </Cadre>
     </div>
-    <Cadre appareil="iphone" sizes={tailleTel} ecran="apercu" classe="telephone">
-      {vues.map((v, i) => (
-        <div class="vue" data-vue={v} hidden={i > 0}>
-          <Capture langue={l} appareil="iphone" capture={ecrans.iphone[v]} sizes={tailleTel} differee={i > 0} />
-        </div>
-      ))}
-    </Cadre>
+    <p class="appareils">{t(l, "apercu.appareils")}</p>
+    <div class="commandes avec-js">
+      <div class="pastilles" role="group" aria-label={t(l, "apercu.onglets")}>
+        {vues.map((v, i) => (
+          <button type="button" data-onglet={v} aria-pressed={i === 0 ? "true" : "false"}>{t(l, `onglets.${v}`)}<span class="barre" aria-hidden="true"></span></button>
+        ))}
+      </div>
+      <BoutonLecture langue={l} />
+    </div>
+    <p class="indice avec-js">{t(l, "apercu.indice")}</p>
   </div>
-  <p class="appareils">{t(l, "apercu.appareils")}</p>
-  <div class="pastilles avec-js" role="group" aria-label={t(l, "apercu.onglets")}>
-    {vues.map((v, i) => (
-      <button type="button" data-cible="apercu" data-vue={v} aria-pressed={i === 0 ? "true" : "false"}>{t(l, `onglets.${v}`)}</button>
-    ))}
-  </div>
-  <p class="indice avec-js">{t(l, "apercu.indice")}</p>
 </section>
 
 <style>
@@ -70,7 +80,7 @@ const tailleTel = "min(15vw, 11rem)";
   .scene { position: relative; padding: 0 7% 10% 3%; }
   .scene :global(.telephone) { position: absolute; z-index: 2; right: 0; bottom: 0; width: 15%; }
   .appareils { margin: 2.25rem 0 0; text-align: center; font-size: 0.9375rem; color: #a1a1a6; }
-  .pastilles { margin-top: 1.25rem; }
+  .commandes { margin-top: 1.25rem; }
   .indice { margin: 1rem 0 0; text-align: center; font-size: 0.875rem; color: #8e8e93; }
 
   @media (max-width: 45rem) {

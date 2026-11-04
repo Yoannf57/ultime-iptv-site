@@ -10,6 +10,7 @@ import sharp from "sharp";
 import { readdirSync, mkdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { homedir } from "node:os";
+import { execFileSync } from "node:child_process";
 
 const source = process.argv[2] || join(homedir(), "Developer/ultime-iptv/Notes/app-store/captures");
 const cible = new URL("../src/assets/captures/", import.meta.url).pathname;
@@ -50,3 +51,6 @@ for (const c of cadres) {
   await sharp(chemin).resize({ width: c.largeur }).webp({ quality: 92, alphaQuality: 100 }).toFile(join(cibleCadres, c.nom));
   console.log(`✓ cadre ${c.nom}`);
 }
+
+// Positions des onglets dessinés dans les captures (pour les rendre cliquables sur le site).
+execFileSync(process.execPath, [new URL("./mesurer-onglets.mjs", import.meta.url).pathname], { stdio: "inherit" });
