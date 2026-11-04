@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "direction": "ltr",
+    "titre": "Ulti — L'esperienza IPTV definitiva",
+    "description": "Ulti, il player IPTV per iPhone, iPad, Mac e Apple TV: diretta, guida TV, film e serie in un'app semplice e pronta all'uso."
+  },
+  "marque": {
+    "nom": "Ulti",
+    "suffixe": "IPTV",
+    "retourHaut": "Ulti, torna su",
+    "accueil": "Ulti, home"
+  },
+  "entete": {
+    "navigation": "Navigazione principale",
+    "fonctions": "Funzioni",
+    "visite": "Tour",
+    "appletv": "Apple TV",
+    "tarifs": "Prezzi",
+    "questions": "Domande",
+    "bientot": "Presto disponibile",
+    "telecharger": "Scarica"
+  },
+  "heros": {
+    "surtitre": "Per iPhone, iPad, Mac e Apple TV",
+    "accroche": "L'esperienza\nIPTV definitiva.",
+    "phrase": "Diretta, guida TV, film e serie: il tuo abbonamento IPTV diventa un'app TV intuitiva. La apri e guardi.",
+    "bientot": "Presto su App Store",
+    "telecharger": "Scarica su App Store",
+    "voirTarifs": "Vedi i prezzi",
+    "neutralite": "Ulti non fornisce alcun canale né alcun contenuto."
+  },
+  "apercu": {
+    "etiquette": "Anteprima dell'app su Apple TV, iPad e iPhone",
+    "appareils": "Apple TV, iPad e Mac con chip Apple, iPhone: la stessa app, ovunque.",
+    "onglets": "Schermate dell'app",
+    "indice": "Scegli una schermata per scoprire l'app."
+  },
+  "onglets": {
+    "accueil": "Home",
+    "direct": "Diretta",
+    "guide": "Guida TV",
+    "profils": "Profili",
+    "pause": "Pausa della diretta",
+    "films": "Film e serie",
+    "multi": "Multischermo"
+  },
+  "fonctions": {
+    "titre": "Il tuo abbonamento, finalmente ben presentato.",
+    "phrase": "Ulti ordina le migliaia di canali e film del tuo abbonamento in schermate chiare, come un'app TV che hai sempre avuto.",
+    "directTitre": "La diretta, a colpo d'occhio",
+    "directTexte": "Un anello intorno a ogni canale mostra a che punto è il programma. Filtra per tema e fai zapping da un canale all'altro.",
+    "guideTitre": "Una vera guida TV",
+    "guideTexte": "Stasera, domani, tutta la settimana. Imposta un promemoria con un gesto o usa la tua guida XMLTV.",
+    "filmsTitre": "Film e serie, senza doppioni",
+    "filmsTexte": "Locandine e trame, tutte le versioni di un film riunite in un'unica scheda, e riprendi da dove avevi interrotto.",
+    "premium": "Premium"
+  },
+  "visite": {
+    "titre": "Fai un giro.",
+    "groupe": "Schermate dell'app",
+    "legendes": {
+      "direct": "Tutti i tuoi canali in grandi riquadri, con il programma in onda. Filtra per tema, poi fai zapping.",
+      "guide": "Stasera, domani, tutta la settimana. Un promemoria con un gesto, e una linea mostra a che punto sei.",
+      "pause": "Metti in pausa la diretta, torna indietro o riparti dall'inizio del programma, poi torna alla diretta.",
+      "films": "Sfoglia il catalogo con locandine e trame, tutte le versioni di un film insieme, e riprendi da dove avevi interrotto.",
+      "multi": "Fino a 4 dirette contemporaneamente su Apple TV, iPad e Mac, 2 su iPhone, nei limiti delle connessioni del tuo abbonamento."
+    },
+    "credits": "Schermate reali dell'app, con canali inventati e immagini di film liberi del Blender Studio (licenza CC BY). [Crediti delle immagini](credits)."
+  },
+  "captures": {
+    "alt": "Ulti su {appareil}: {ecran}",
+    "appareils": {
+      "appletv": "Apple TV",
+      "ipad": "iPad",
+      "iphone": "iPhone"
+    },
+    "vues": {
+      "accueil": "la schermata Home, con il film in evidenza e i canali in diretta",
+      "direct-bandeau": "un canale in diretta, con la barra del programma in onda",
+      "direct": "l'elenco dei canali in diretta",
+      "guide": "la guida TV",
+      "profils": "la scelta del profilo, «Chi sta guardando?»",
+      "pause-direct": "la diretta in pausa, con il pulsante per tornare alla diretta",
+      "films-series": "il catalogo di film e serie",
+      "multi-ecran": "quattro dirette contemporaneamente"
+    }
+  },
+  "appletv": {
+    "surtitre": "Apple TV",
+    "titre": "Sulla TV non digiti nulla.",
+    "texte": "Scansiona con il tuo iPhone il codice mostrato da Apple TV: il tuo abbonamento arriva sulla TV cifrato, direttamente sulla tua rete locale.",
+    "point1": "Zapping con il telecomando, su e giù",
+    "point2": "Picture in Picture durante la diretta",
+    "point3": "Grandi locandine, pensate per il divano"
+  },
+  "famille": {
+    "titre": "Tutta la famiglia, ognuno a modo suo.",
+    "texte": "Un profilo per persona con Premium, ognuno con la sua lista e i suoi punti di ripresa. Il profilo Bambini, incluso nella versione gratuita, non vede alcun contenuto per adulti e si può lasciare solo con il codice parentale."
+  },
+  "premium": {
+    "surtitre": "Premium",
+    "titre": "Ancora di più.",
+    "films": "Film e serie, con locandine, trame e ripresa",
+    "pause": "Pausa e riavvolgimento della diretta",
+    "replay": "Replay dei giorni passati",
+    "telechargements": "Download per guardare offline",
+    "icloud": "Sincronizzazione iCloud tra tutti i tuoi dispositivi",
+    "plusieurs": "Più abbonamenti e profili",
+    "themes": "Temi Halo e Programma",
+    "multi": "Multischermo: fino a 4 dirette contemporaneamente (2 su iPhone)"
+  },
+  "etapes": {
+    "titre": "Pronto in un minuto.",
+    "e1Titre": "Aggiungi il tuo abbonamento",
+    "e1Texte": "Incolla il messaggio del tuo fornitore IPTV o inserisci le credenziali. Ulti compila il resto.",
+    "e2Titre": "Ulti mette tutto in ordine",
+    "e2Texte": "Canali, guida, film e serie vengono ordinati. Tieni solo le categorie che ti interessano.",
+    "e3Titre": "Guarda ovunque",
+    "e3Texte": "Su iPhone, iPad, Mac e Apple TV. Con Premium, la tua lista e i tuoi punti di ripresa ti seguono."
+  },
+  "tarifs": {
+    "titre": "Gratis per l'essenziale.",
+    "phrase": "La diretta è gratuita. Premium si prova per 7 giorni senza pagare.",
+    "gratuitTitre": "Gratis",
+    "gratuitTexte": "Diretta, guida TV e promemoria, Picture in Picture, Apple TV con codice QR, un profilo Bambini.",
+    "choix": "Scegli un'offerta Premium",
+    "pourMoi": "Per me",
+    "pourFamille": "Per la famiglia",
+    "soloLegende": "Solo: per te, su tutti i tuoi dispositivi.",
+    "familleLegende": "Famiglia: fino a 6 persone con In famiglia di Apple.",
+    "mensuel": "Mensile",
+    "annuel": "Annuale",
+    "vie": "A vita",
+    "parMois": "/ mese",
+    "parAn": "/ anno",
+    "mensuelTexte": "Tutto Premium. 7 giorni di prova gratuita.",
+    "annuelTexte": "Tutto Premium, cioè {prix} al mese. 7 giorni di prova gratuita.",
+    "annuelTexteSansPrix": "Tutto Premium. 7 giorni di prova gratuita.",
+    "vieTexte": "Tutto Premium, pagato una sola volta.",
+    "remise": "−{remise}%",
+    "prixAppStore": "Prezzi indicati su App Store",
+    "noteTTC": "Prezzi IVA inclusa.",
+    "noteAppStore": "Il prezzo esatto per il tuo paese è indicato su App Store."
+  },
+  "viePrivee": {
+    "titre": "Nessun dato raccolto.",
+    "texte": "Le tue credenziali restano nel portachiavi del tuo dispositivo. Nessun account da creare, nessun server di Ulti.",
+    "lien": "La nostra informativa sulla privacy"
+  },
+  "faq": {
+    "titre": "Domande frequenti",
+    "q1": "Ulti fornisce canali?",
+    "r1": "No. Ulti è un player: riproduce le fonti che aggiungi tu. Ulti non fornisce alcun canale né alcun contenuto. Devi disporre di fonti tue e avere il diritto di guardarle.",
+    "q2": "Su quali dispositivi?",
+    "r2": "iPhone, iPad, Mac (con chip Apple) e Apple TV. Premium vale su tutti i tuoi dispositivi con lo stesso Account Apple; con l'offerta Famiglia, fino a 6 persone ne approfittano grazie a In famiglia.",
+    "q3": "Le mie credenziali sono al sicuro?",
+    "r3": "Sono conservate nel portachiavi del tuo dispositivo e non passano mai da un server di Ulti.",
+    "q4": "Quali abbonamenti sono compatibili?",
+    "r4": "Gli abbonamenti forniti come link M3U o come credenziali Xtream Codes, cioè la grande maggioranza. La cosa più semplice: incolla il messaggio del tuo fornitore, Ulti riconosce il formato da solo.",
+    "q5": "Posso provare prima di pagare?",
+    "r5": "Sì. La diretta è gratuita. Premium si prova gratis per 7 giorni con gli abbonamenti mensili e annuali, Solo o Famiglia."
+  },
+  "neutralite": "Ulti non fornisce alcun canale né alcun contenuto. Devi disporre di fonti tue e avere il diritto di guardarle.",
+  "pied": {
+    "changerPays": "Cambia paese o regione (attuale: {pays}, {langue})",
+    "tmdb": "Questo prodotto utilizza l'API di TMDB ma non è approvato né certificato da TMDB.",
+    "tmdbLogo": "Logo di The Movie Database (TMDB)",
+    "marques": "Apple, Apple TV, iPhone, iPad e Mac sono marchi di Apple Inc.",
+    "copyright": "© 2026 Ulti",
+    "liens": {
+      "navigation": "Informazioni",
+      "support": "Supporto",
+      "privacy": "Privacy",
+      "legal": "Note legali"
+    }
+  },
+  "bandeau": {
+    "etiquette": "Scelta del paese",
+    "continuer": "Continua",
+    "fermer": "Chiudi",
+    "question": {
+      "fr-fr": "Ti trovi in Francia?",
+      "fr-be": "Ti trovi in Belgio?",
+      "fr-lu": "Ti trovi in Lussemburgo?",
+      "fr-ch": "Ti trovi in Svizzera?",
+      "en-gb": "Ti trovi nel Regno Unito?",
+      "en-ie": "Ti trovi in Irlanda?",
+      "fr-ca": "Ti trovi in Canada?",
+      "en-ca": "Ti trovi in Canada?",
+      "en-us": "Ti trovi negli Stati Uniti?",
+      "nl-nl": "Ti trovi nei Paesi Bassi?",
+      "nl-be": "Ti trovi in Belgio?",
+      "de-de": "Ti trovi in Germania?",
+      "de-at": "Ti trovi in Austria?",
+      "de-ch": "Ti trovi in Svizzera?",
+      "sv-se": "Ti trovi in Svezia?",
+      "nb-no": "Ti trovi in Norvegia?",
+      "da-dk": "Ti trovi in Danimarca?",
+      "fi-fi": "Ti trovi in Finlandia?",
+      "es-es": "Ti trovi in Spagna?",
+      "it-it": "Ti trovi in Italia?"
+    },
+    "voir": {
+      "fr-fr": "Vai al sito per la Francia (in francese)",
+      "fr-be": "Vai al sito per il Belgio (in francese)",
+      "fr-lu": "Vai al sito per il Lussemburgo (in francese)",
+      "fr-ch": "Vai al sito per la Svizzera (in francese)",
+      "en-gb": "Vai al sito per il Regno Unito (in inglese)",
+      "en-ie": "Vai al sito per l'Irlanda (in inglese)",
+      "fr-ca": "Vai al sito per il Canada (in francese)",
+      "en-ca": "Vai al sito per il Canada (in inglese)",
+      "en-us": "Vai al sito per gli Stati Uniti (in inglese)",
+      "nl-nl": "Vai al sito per i Paesi Bassi (in olandese)",
+      "nl-be": "Vai al sito per il Belgio (in olandese)",
+      "de-de": "Vai al sito per la Germania (in tedesco)",
+      "de-at": "Vai al sito per l'Austria (in tedesco)",
+      "de-ch": "Vai al sito per la Svizzera (in tedesco)",
+      "sv-se": "Vai al sito per la Svezia (in svedese)",
+      "nb-no": "Vai al sito per la Norvegia (in norvegese)",
+      "da-dk": "Vai al sito per la Danimarca (in danese)",
+      "fi-fi": "Vai al sito per la Finlandia (in finlandese)",
+      "es-es": "Vai al sito per la Spagna (in spagnolo)",
+      "it-it": "Vai al sito per l'Italia"
+    }
+  },
+  "choix": {
+    "titre": "Scegli il tuo paese o la tua regione",
+    "regions": {
+      "europe": "Europa",
+      "ameriques": "Americhe",
+      "international": "Altri paesi"
+    }
+  },
+  "pages": {
+    "miseAJour": "Aggiornato il {date}",
+    "sommaire": "In questa pagina",
+    "support": {
+      "titre": "Supporto",
+      "metaTitre": "Supporto — Ulti",
+      "description": "Aiuto per Ulti: installazione, aggiunta di un abbonamento IPTV, Apple TV, profili, Premium, acquisti e riproduzione.",
+      "chapeau": "Tutto per iniziare bene con Ulti, e le risposte alle domande più frequenti."
+    },
+    "privacy": {
+      "titre": "Privacy",
+      "metaTitre": "Privacy — Ulti",
+      "description": "Informativa sulla privacy di Ulti: nessun dato raccolto, le tue credenziali restano sul tuo dispositivo.",
+      "chapeau": "Ulti non raccoglie alcun dato. Ecco esattamente cosa fa l'app e cosa fa questo sito."
+    },
+    "legal": {
+      "titre": "Note legali",
+      "metaTitre": "Note legali — Ulti",
+      "description": "Note legali del sito e dell'app Ulti.",
+      "chapeau": "Chi pubblica Ulti, chi ospita questo sito e i diritti su ciò che vi è mostrato. In caso di differenze, fa fede la versione francese di questa pagina."
+    }
+  },
+  "faqPlus": "Tutte le domande nella pagina Supporto",
+  "support": {
+    "groupes": {
+      "debut": "Per iniziare",
+      "abonnement": "Aggiungere un abbonamento",
+      "appletv": "Apple TV",
+      "profils": "Profili e codice parentale",
+      "premium": "Premium e acquisti",
+      "lecture": "Problemi di riproduzione",
+      "confidentialite": "Privacy"
+    },
+    "q": {
+      "chaines": {
+        "q": "Ulti fornisce canali?",
+        "r": "No. Ulti è un player: riproduce l'abbonamento IPTV che aggiungi tu. Ulti non fornisce alcun canale né alcun contenuto. Devi disporre di fonti tue e avere il diritto di guardarle."
+      },
+      "appareils": {
+        "q": "Su quali dispositivi funziona Ulti?",
+        "r": "iPhone, iPad, Mac e Apple TV: iPhone e iPad con iOS 17 o iPadOS 17 o versioni successive, Apple TV con tvOS 17 o versioni successive, e i Mac con chip Apple, che usano l'app per iPad. Premium vale su tutti i tuoi dispositivi collegati allo stesso Account Apple."
+      },
+      "installer": {
+        "q": "Come si installa Ulti?",
+        "r": "Scarica Ulti da App Store sul tuo iPhone, iPad o Mac, e da App Store sulla tua Apple TV. Una volta installata, l'app si chiama «Ulti IPTV».",
+        "rBientot": "Ulti arriva presto su App Store, per iPhone, iPad, Mac e Apple TV. Una volta installata, l'app si chiama «Ulti IPTV»."
+      },
+      "ajouter": {
+        "q": "Come aggiungo il mio abbonamento IPTV?",
+        "r": "Apri Account › Abbonamenti › Aggiungi un abbonamento. La cosa più semplice, su iPhone: «Incolla il messaggio ricevuto» (vedi la domanda successiva).\n\nPuoi anche inserire server, nome utente e password, o incollare un link M3U. Su Apple TV, la cosa più semplice è inviare l'abbonamento dal tuo iPhone (vedi «Apple TV» più in basso)."
+      },
+      "formats": {
+        "q": "Quali formati sono supportati?",
+        "r": "Gli account Xtream Codes (server, nome utente e password) e i link di playlist M3U. Per la guida TV, Ulti usa quella del tuo fornitore; puoi anche indicare l'indirizzo di una guida in formato XMLTV (.xml o .xml.gz) in Account › Guida TV.\n\nNon sono supportati: gli abbonamenti legati a un indirizzo MAC e i portali Stalker/Ministra."
+      },
+      "replay": {
+        "q": "Il replay funziona con il mio abbonamento?",
+        "r": "Il replay fa parte di Premium. Funziona con un account Xtream Codes, per i canali per cui il tuo fornitore offre il catch-up. Non è ancora disponibile con le playlist M3U."
+      },
+      "trier": {
+        "q": "Il mio abbonamento ha troppi canali. Come faccio ordine?",
+        "r": "In Account › I miei contenuti, scegli i paesi, le categorie e i canali da mostrare. Il resto dell'abbonamento resta disponibile, solo nascosto. Ogni profilo ha le proprie scelte."
+      },
+      "plusieurs": {
+        "q": "Posso aggiungere più abbonamenti?",
+        "r": "Sì, con Premium. In Account › Abbonamenti, tocca un abbonamento per usarlo. I miei contenuti, La mia lista, punti di ripresa e promemoria restano separati per ciascuno."
+      },
+      "qr": {
+        "q": "Come metto il mio abbonamento su Apple TV?",
+        "r": "Senza digitare nulla con il telecomando: apri Ulti su Apple TV, appare un codice QR. Scansionalo con la fotocamera del tuo iPhone, tocca il link di Ulti e l'abbonamento arriva da solo, con le tue categorie, i tuoi preferiti e il tuo aspetto. Se Apple TV ha già un abbonamento, il codice QR si trova in Account › Abbonamenti › Aggiungi un abbonamento.\n\niPhone e Apple TV devono essere sulla stessa rete Wi-Fi. L'invio è cifrato e passa direttamente dalla tua rete locale; il codice parentale non viene mai inviato. Puoi anche inserire l'abbonamento con il telecomando."
+      },
+      "qrBloque": {
+        "q": "Il codice QR non funziona. Cosa faccio?",
+        "r": "Verifica che Apple TV sia accesa, sulla stessa rete Wi-Fi dell'iPhone, e che mostri la schermata del codice QR. L'abbonamento deve prima essere aggiunto sull'iPhone.\n\nSe l'iPhone ha negato l'accesso alla rete locale, consentilo in Impostazioni › Ulti IPTV › Rete locale, poi scansiona di nuovo il codice QR. Un codice QR scade dopo un po': scansiona sempre quello mostrato."
+      },
+      "profils": {
+        "q": "Come funzionano i profili?",
+        "r": "Ogni profilo ha i propri I miei contenuti, La mia lista, punti di ripresa e promemoria. I profili si gestiscono in Account › Profili. La versione gratuita include un profilo Bambini; i profili per adulti aggiuntivi fanno parte di Premium."
+      },
+      "enfant": {
+        "q": "Cos'è il profilo Bambini?",
+        "r": "Un profilo Bambini non vede alcuna categoria né alcun contenuto per adulti, non ha accesso agli abbonamenti e non si può lasciare senza il codice parentale. Questo codice di 4 cifre viene chiesto anche per modificare i profili e, quando esiste un profilo Bambini, per aprire un profilo per adulti (a meno che tu non lo disattivi per quel profilo).\n\nIl codice parentale resta su ogni dispositivo: non viene mai inviato, né tramite iCloud né ad Apple TV."
+      },
+      "codeOublie": {
+        "q": "Ho dimenticato il codice parentale.",
+        "r": "Su iPhone o iPad, tocca «Codice parentale dimenticato», conferma che sei tu con Face ID o il codice del dispositivo, poi crea un nuovo codice. Il codice del dispositivo deve essere attivo in Impostazioni.\n\nSu Apple TV, scansiona con il tuo iPhone il codice QR mostrato, attiva «Consenti un nuovo codice parentale», poi conferma con Face ID o il codice dell'iPhone."
+      },
+      "gratuit": {
+        "q": "Cosa include la versione gratuita?",
+        "r": "La diretta, la guida TV e i promemoria, I miei contenuti, il raggruppamento dei canali doppi, l'incolla del messaggio del fornitore, il Picture in Picture, l'invio ad Apple TV con codice QR, un profilo Bambini con codice parentale e il tema Nero."
+      },
+      "inclus": {
+        "q": "Cosa include Premium?",
+        "r": "Film e serie (catalogo, schede con locandine e trame, riproduzione, ripresa, tutte le versioni di un film), il multischermo, il replay, la pausa della diretta, i download su iPhone e iPad, la sincronizzazione iCloud, i profili per adulti e gli abbonamenti aggiuntivi, le righe «Per te» e «Popolari», i temi Halo e Programma e le icone alternative.\n\nNella versione gratuita puoi sfogliare film e serie; per riprodurli serve Premium."
+      },
+      "soloFamille": {
+        "q": "Solo o Famiglia: che differenza c'è?",
+        "r": "Le due offerte danno lo stesso Premium. Solo è per te, su tutti i tuoi dispositivi con lo stesso Account Apple. Famiglia si condivide con fino a 6 persone grazie a [In famiglia di Apple](apple-partage). Ogni offerta esiste mensile, annuale e a vita: vedi i [prezzi](tarifs)."
+      },
+      "essai": {
+        "q": "Posso provare Premium gratis?",
+        "r": "Sì: gli abbonamenti mensili e annuali, Solo o Famiglia, iniziano con 7 giorni di prova gratuita. L'acquisto a vita non ha prova. Se annulli almeno 24 ore prima della fine della prova, non ti viene addebitato nulla."
+      },
+      "restaurer": {
+        "q": "Come ripristino i miei acquisti?",
+        "r": "Di solito Premium torna da solo su un nuovo dispositivo. Altrimenti, apri Account › Premium e tocca «Ripristina acquisti»: Ulti trova un acquisto fatto con lo stesso Account Apple, o tramite In famiglia con l'offerta Famiglia."
+      },
+      "resilier": {
+        "q": "Come annullo il mio abbonamento?",
+        "r": "Gli abbonamenti sono gestiti da Apple. In Ulti, apri Account › Premium › «Gestisci il mio abbonamento». Oppure, su iPhone o iPad: Impostazioni › il tuo nome › Abbonamenti, scegli l'abbonamento Ulti e annullalo ([aiuto di Apple](apple-resilier)).\n\nAnnulla almeno 24 ore prima della fine del periodo per evitare il rinnovo. Premium resta attivo fino alla fine del periodo già pagato."
+      },
+      "vie": {
+        "q": "Ho acquistato Premium a vita: il mio abbonamento si ferma da solo?",
+        "r": "No: Apple non annulla un abbonamento da sola. Se avevi un abbonamento mensile o annuale prima dell'acquisto a vita, ricordati di annullarlo per non pagare più. Ulti te lo ricorda in Account › Premium."
+      },
+      "occupee": {
+        "q": "«La riproduzione precedente è ancora aperta»: cosa faccio?",
+        "r": "Il tuo abbonamento consente una sola riproduzione alla volta, e il tuo fornitore impiega spesso da 1 a 2 minuti per liberare la precedente, per esempio subito dopo un film o un altro canale. Ulti mostra un conto alla rovescia sul pulsante «Riprova»: toccalo quando è finito. Se un altro dispositivo sta già guardando con lo stesso abbonamento, interrompi la riproduzione su quel dispositivo.\n\nIn multischermo, «Nessuna connessione libera» significa che tutte le connessioni dei tuoi abbonamenti sono già in uso. Con un abbonamento a una sola connessione, un download si mette in pausa mentre guardi, poi riprende da solo."
+      },
+      "refusee": {
+        "q": "«Connessione rifiutata dal fornitore» o «Questo abbonamento è scaduto»",
+        "r": "Questi messaggi arrivano dal server del tuo fornitore: abbonamento scaduto, credenziali modificate o una riproduzione in corso su un altro dispositivo. Verifica le tue credenziali in Account › Abbonamenti o contatta il tuo fornitore. Ulti non può modificare né rinnovare il tuo abbonamento IPTV."
+      },
+      "serveur": {
+        "q": "«Impossibile raggiungere il server»",
+        "r": "Verifica la tua connessione a internet. Se funziona, il server del tuo fornitore potrebbe essere momentaneamente non disponibile: riprova un po' più tardi."
+      },
+      "identifiants": {
+        "q": "Le mie credenziali sono al sicuro?",
+        "r": "Sì. Sono conservate nel portachiavi del tuo dispositivo e non passano mai da un server di Ulti. Con la sincronizzazione iCloud (Premium), sono cifrate end-to-end nel tuo account iCloud."
+      },
+      "donnees": {
+        "q": "Ulti raccoglie dati?",
+        "r": "No. Nessun account da creare, nessuna pubblicità, nessuna misurazione dell'audience. Tutto è spiegato nella [nostra informativa sulla privacy](privacy)."
+      },
+      "coller": {
+        "q": "Come funziona «Incolla il messaggio ricevuto»?",
+        "r": "Il tuo fornitore ti ha inviato le credenziali via SMS, WhatsApp o e-mail? Su iPhone, copia tutto il messaggio, poi in Account › Abbonamenti › Aggiungi un abbonamento tocca «Incolla il messaggio ricevuto». Ulti trova server, nome utente e password, o il link M3U, e compila i campi da solo. Controlla, poi tocca «Continua».\n\nIl messaggio viene letto sull'iPhone, mai inviato né salvato. Nessuna connessione prima di «Continua»."
+      },
+      "multi": {
+        "q": "Come funziona il multischermo?",
+        "r": "Il multischermo fa parte di Premium: guarda fino a 4 dirette contemporaneamente su Apple TV, iPad e Mac, e 2 su iPhone. Il numero di schermi dipende anche dal tuo abbonamento IPTV: ogni diretta usa una connessione, e molti abbonamenti ne consentono una sola. Se hai più abbonamenti, le loro connessioni si sommano."
+      },
+      "partage": {
+        "q": "Come condivido Premium con la mia famiglia?",
+        "r": "Scegli l'offerta Famiglia: si condivide con fino a 6 persone grazie a [In famiglia di Apple](apple-partage). Ogni membro della famiglia apre Ulti con il proprio Account Apple e ritrova Premium; se serve, tocca «Ripristina acquisti» in Account › Premium. L'offerta Solo non si può condividere."
+      }
+    },
+    "contact": {
+      "titre": "Serve aiuto?",
+      "texte": "Scrivici a [{contact}](contact). Indica il tuo dispositivo (iPhone, iPad, Mac o Apple TV) e, se possibile, il messaggio mostrato. Non inviare mai le tue credenziali né l'indirizzo del tuo abbonamento."
+    },
+    "essentiel": "L'essenziale"
+  },
+  "confidentialite": {
+    "sections": {
+      "bref": {
+        "titre": "In breve",
+        "texte": "Ulti non raccoglie alcun dato personale. Nessun account da creare, nessuna pubblicità, nessun tracciamento pubblicitario, nessuna misurazione dell'audience. L'app non contiene alcuno strumento di statistiche o di segnalazione dei crash di un'altra azienda."
+      },
+      "identifiants": {
+        "titre": "Le tue credenziali",
+        "texte": "Server, nome utente e password del tuo abbonamento IPTV sono conservati solo sul tuo dispositivo, nel portachiavi di Apple, e nel tuo portachiavi iCloud se lo attivi. Non passano mai da un server di Ulti: non ne esiste nessuno."
+      },
+      "contacts": {
+        "titre": "Con chi si collega l'app",
+        "texte": "Ulti si collega solo con:\n\n• il tuo fornitore IPTV, per riprodurre i tuoi canali, film, serie e la guida TV. È il servizio che hai scelto tu: non è lo sviluppatore né un partner dello sviluppatore;\n• The Movie Database (TMDB), per mostrare locandine e trame. L'app gli invia solo il titolo e l'anno delle opere mostrate, oltre alla lingua e alla regione del dispositivo: nessuna credenziale, e niente di ciò che scrivi nella ricerca;\n• Apple, per gli acquisti Premium e, se la attivi, per la sincronizzazione iCloud."
+      },
+      "ip": {
+        "titre": "Il tuo indirizzo IP",
+        "texte": "Come per qualsiasi servizio online, il tuo fornitore IPTV, TMDB e Apple ricevono l'indirizzo IP del tuo dispositivo quando l'app si collega con loro. Ulti non ne conserva traccia."
+      },
+      "icloud": {
+        "titre": "Sincronizzazione iCloud",
+        "texte": "Con Premium, i tuoi profili, abbonamenti (credenziali comprese), I miei contenuti, La mia lista, punti di ripresa, promemoria, canali guardati spesso e impostazioni di aspetto possono essere sincronizzati tra i tuoi dispositivi. Sono conservati nella parte privata del tuo account iCloud, cifrati end-to-end: lo sviluppatore non vi ha accesso. Il codice parentale resta su ogni dispositivo."
+      },
+      "appletv": {
+        "titre": "Invio ad Apple TV",
+        "texte": "Quando invii il tuo abbonamento dall'iPhone ad Apple TV con il codice QR, i dati passano direttamente da un dispositivo all'altro sulla tua rete locale, cifrati. Nulla passa da un server. Il codice parentale non viene mai inviato."
+      },
+      "message": {
+        "titre": "Messaggio del fornitore",
+        "texte": "Quando incolli il messaggio del tuo fornitore, viene analizzato sul tuo dispositivo, mai inviato né salvato."
+      },
+      "fichiers": {
+        "titre": "Download e pausa della diretta",
+        "texte": "I video scaricati restano sul tuo dispositivo. Per la pausa della diretta, Ulti conserva gli ultimi minuti del canale sul dispositivo; nulla viene conservato dopo la chiusura del player."
+      },
+      "achats": {
+        "titre": "Acquisti",
+        "texte": "Gli acquisti sono gestiti da Apple, su App Store. Ulti conserva solo lo stato di Premium sul dispositivo, per funzionare offline, e non lo invia da nessuna parte."
+      },
+      "plantages": {
+        "titre": "Segnalazioni dei crash",
+        "texte": "Ulti non invia alcuna segnalazione da sé. Se hai accettato, nelle impostazioni del tuo dispositivo, di condividere i dati di analisi con gli sviluppatori di app, Apple può trasmettere allo sviluppatore segnalazioni tecniche sui crash. Durante le versioni di prova TestFlight, Apple trasmette allo sviluppatore i feedback e le segnalazioni che scegli di inviare."
+      },
+      "site": {
+        "titre": "Questo sito",
+        "texte": "Questo sito non usa alcun tracker, alcun cookie né alcuna misurazione dell'audience, e non carica nulla da un altro sito. Solo il paese che scegli viene conservato nel tuo browser (archiviazione locale), per riportarti alla versione giusta; si cancella con i dati di navigazione.\n\nIl sito è ospitato da GitHub Pages. Come ogni hosting, GitHub riceve i dati tecnici di connessione, compreso l'indirizzo IP, per fornire le pagine ([informativa sulla privacy di GitHub](github-confidentialite))."
+      },
+      "droits": {
+        "titre": "I tuoi dati e i tuoi diritti",
+        "texte": "Poiché Ulti non detiene alcun dato che ti riguarda, da noi non c'è nulla da consultare né da cancellare. Per cancellare tutto dai tuoi dispositivi, elimina i tuoi abbonamenti in Account › Abbonamenti (il che li cancella anche da iCloud), oppure elimina l'app."
+      },
+      "changements": {
+        "titre": "Modifiche",
+        "texte": "Se questa informativa cambia, la nuova versione sarà pubblicata in questa pagina, con la sua data."
+      },
+      "contact": {
+        "titre": "Contatti",
+        "texte": "Una domanda sulla privacy? Scrivi a [{contact}](contact)."
+      }
+    }
+  },
+  "mentions": {
+    "enCours": "Pagina in preparazione: le informazioni tra parentesi quadre saranno completate prima dell'uscita dell'app.",
+    "champs": {
+      "nom": "Nome o ragione sociale",
+      "statut": "Forma giuridica",
+      "adresse": "Indirizzo",
+      "siret": "SIRET",
+      "email": "E-mail",
+      "directeur": "Nome e cognome",
+      "telephone": "Telefono",
+      "societe": "Società"
+    },
+    "sections": {
+      "editeur": {
+        "titre": "Editore del sito e dell'app"
+      },
+      "directeur": {
+        "titre": "Direttore della pubblicazione"
+      },
+      "hebergeur": {
+        "titre": "Hosting",
+        "texte": "Questo sito è ospitato da GitHub Pages.",
+        "adresse": "88 Colin P. Kelly Jr. St., San Francisco, CA 94107, Stati Uniti"
+      },
+      "propriete": {
+        "titre": "Proprietà intellettuale",
+        "texte": "Il nome Ulti, il suo logo, i testi e la grafica di questo sito sono di proprietà dell'editore. Apple, Apple TV, iPhone, iPad, Mac e App Store sono marchi di Apple Inc.\n\nI film e le serie mostrati nelle schermate sono film liberi del [Blender Studio](blender) (© Blender Foundation), pubblicati con licenza Creative Commons (vedi i crediti più sotto). I canali mostrati sono inventati."
+      },
+      "tmdb": {
+        "titre": "Dati di film e serie",
+        "texte": "Le locandine e le trame mostrate nell'app provengono da [The Movie Database (TMDB)](tmdb). Questo prodotto utilizza l'API di TMDB ma non è approvato né certificato da TMDB."
+      },
+      "contenus": {
+        "titre": "Contenuti",
+        "texte": "Ulti non fornisce alcun canale né alcun contenuto. Devi disporre di fonti tue e avere il diritto di guardarle."
+      },
+      "credits": {
+        "titre": "Crediti delle immagini",
+        "texte": "Le schermate mostrate su questo sito sono vere catture dell'app, fatte con una lista dimostrativa: i canali e i loro programmi sono inventati.\n\nLe immagini delle dirette sono estratti di film del [Blender Studio](blender), senza altre modifiche:\n\n• Big Buck Bunny (2008), © Blender Foundation, www.bigbuckbunny.org, licenza [CC BY 3.0](cc-by-3);\n• Elephants Dream (2006), © Blender Foundation / Netherlands Media Art Institute, www.elephantsdream.org, licenza [CC BY 2.5](cc-by-25);\n• Sintel (2010), © Blender Foundation, www.sintel.org, licenza [CC BY 3.0](cc-by-3);\n• Cosmos Laundromat (2015), © Blender Institute, gooseberry.blender.org, licenza [CC BY 4.0](cc-by-4).\n\nLocandine e trame dei film: The Movie Database (TMDB)."
+      }
+    },
+    "blancs": {
+      "nom": "[NOME]",
+      "statut": "[FORMA GIURIDICA]",
+      "adresse": "[INDIRIZZO]",
+      "siret": "[SIRET]",
+      "directeur": "[DIRETTORE DELLA PUBBLICAZIONE]",
+      "telephone": "[TELEFONO]"
+    }
+  },
+  "erreur": {
+    "metaTitre": "Pagina non trovata — Ulti",
+    "titre": "Questa pagina non esiste.",
+    "texte": "Forse l'indirizzo è scritto male, o la pagina è stata spostata.",
+    "accueil": "Torna alla home",
+    "choix": "Scegli un paese o una regione"
+  }
+}

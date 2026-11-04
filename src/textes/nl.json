@@ -197,7 +197,8 @@
       "nb-no": "Ben je in Noorwegen?",
       "da-dk": "Ben je in Denemarken?",
       "fi-fi": "Ben je in Finland?",
-      "es-es": "Ben je in Spanje?"
+      "es-es": "Ben je in Spanje?",
+      "it-it": "Ben je in Italië?"
     },
     "voir": {
       "fr-fr": "Bekijk de site voor Frankrijk (in het Frans)",
@@ -218,7 +219,8 @@
       "nb-no": "Bekijk de site voor Noorwegen (in het Noors)",
       "da-dk": "Bekijk de site voor Denemarken (in het Deens)",
       "fi-fi": "Bekijk de site voor Finland (in het Fins)",
-      "es-es": "Bekijk de site voor Spanje (in het Spaans)"
+      "es-es": "Bekijk de site voor Spanje (in het Spaans)",
+      "it-it": "Bekijk de site voor Italië (in het Italiaans)"
     }
   },
   "choix": {
