@@ -196,7 +196,8 @@
       "sv-se": "Oletko Ruotsissa?",
       "nb-no": "Oletko Norjassa?",
       "da-dk": "Oletko Tanskassa?",
-      "fi-fi": "Oletko Suomessa?"
+      "fi-fi": "Oletko Suomessa?",
+      "es-es": "Oletko Espanjassa?"
     },
     "voir": {
       "fr-fr": "Näytä Ranskan sivusto (ranskaksi)",
@@ -216,7 +217,8 @@
       "sv-se": "Näytä Ruotsin sivusto (ruotsiksi)",
       "nb-no": "Näytä Norjan sivusto (norjaksi)",
       "da-dk": "Näytä Tanskan sivusto (tanskaksi)",
-      "fi-fi": "Näytä Suomen sivusto"
+      "fi-fi": "Näytä Suomen sivusto",
+      "es-es": "Näytä Espanjan sivusto (espanjaksi)"
     }
   },
   "choix": {

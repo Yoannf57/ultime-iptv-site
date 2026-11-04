@@ -196,7 +196,8 @@
       "sv-se": "Vous êtes en Suède ?",
       "nb-no": "Vous êtes en Norvège ?",
       "da-dk": "Vous êtes au Danemark ?",
-      "fi-fi": "Vous êtes en Finlande ?"
+      "fi-fi": "Vous êtes en Finlande ?",
+      "es-es": "Vous êtes en Espagne ?"
     },
     "voir": {
       "fr-fr": "Voir le site pour la France",
@@ -216,7 +217,8 @@
       "sv-se": "Voir le site pour la Suède (en suédois)",
       "nb-no": "Voir le site pour la Norvège (en norvégien)",
       "da-dk": "Voir le site pour le Danemark (en danois)",
-      "fi-fi": "Voir le site pour la Finlande (en finnois)"
+      "fi-fi": "Voir le site pour la Finlande (en finnois)",
+      "es-es": "Voir le site pour l'Espagne (en espagnol)"
     }
   },
   "choix": {

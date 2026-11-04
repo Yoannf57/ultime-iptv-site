@@ -126,6 +126,15 @@
     }
   },
   {
+    "code": "es-es", "langue": "es", "locale": "es-ES", "region": "europe", "nom": "España", "nomLangue": "Español",
+    "fuseaux": ["Europe/Madrid", "Africa/Ceuta", "Atlantic/Canary"],
+    "devise": "EUR", "lienAppStore": null,
+    "prix": {
+      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
+      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+    }
+  },
+  {
     "code": "en", "langue": "en", "locale": "en", "region": "international", "nom": "International", "nomLangue": "English",
     "fuseaux": [],
     "devise": null, "lienAppStore": null, "prix": null

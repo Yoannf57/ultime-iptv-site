@@ -196,7 +196,8 @@
       "sv-se": "Är du i Sverige?",
       "nb-no": "Är du i Norge?",
       "da-dk": "Är du i Danmark?",
-      "fi-fi": "Är du i Finland?"
+      "fi-fi": "Är du i Finland?",
+      "es-es": "Är du i Spanien?"
     },
     "voir": {
       "fr-fr": "Visa webbplatsen för Frankrike (på franska)",
@@ -216,7 +217,8 @@
       "sv-se": "Visa webbplatsen för Sverige",
       "nb-no": "Visa webbplatsen för Norge (på norska)",
       "da-dk": "Visa webbplatsen för Danmark (på danska)",
-      "fi-fi": "Visa webbplatsen för Finland (på finska)"
+      "fi-fi": "Visa webbplatsen för Finland (på finska)",
+      "es-es": "Visa webbplatsen för Spanien (på spanska)"
     }
   },
   "choix": {
