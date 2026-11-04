@@ -1,18 +1,16 @@
 ---
 import config from "../../../site.config.mjs";
 import { t } from "../../lib/textes";
-import { captures, type Appareil } from "../../lib/captures";
+import { captures } from "../../lib/captures";
 import Capture from "./Capture.astro";
+import Cadre from "./Cadre.astro";
 import Halo from "./Halo.astro";
 interface Props { langue: string; lienAppStore: string | null }
 const { langue: l, lienAppStore } = Astro.props;
 const { vues, ecrans } = captures.apercu;
-// Apple TV au centre, iPad devant à gauche, iPhone devant à droite. Tailles d'affichage pour « sizes ».
-const appareils: { appareil: Appareil; classe: string; sizes: string }[] = [
-  { appareil: "appletv", classe: "ecrin-tv tv", sizes: "(max-width: 45rem) 92vw, min(82vw, 61.5rem)" },
-  { appareil: "ipad", classe: "ecrin-ipad ipad", sizes: "min(30vw, 22rem)" },
-  { appareil: "iphone", classe: "ecrin-tel iphone", sizes: "min(14vw, 10rem)" },
-];
+// Apple TV au centre (écran flottant), iPhone devant à droite dans son cadre officiel. Tailles d'affichage pour « sizes ».
+const tailleTv = "(max-width: 45rem) 92vw, min(78vw, 58rem)";
+const tailleTel = "min(15vw, 11rem)";
 ---
 <section aria-labelledby="titre-principal" class="haut">
   <p class="surtitre">{t(l, "heros.surtitre")}</p>
@@ -30,15 +28,20 @@ const appareils: { appareil: Appareil; classe: string; sizes: string }[] = [
 <section aria-label={t(l, "apercu.etiquette")} class="apercu">
   <div class="scene">
     <Halo etendue="large" />
-    {appareils.map(({ appareil, classe, sizes }) => (
-      <div class={classe} data-ecran="apercu">
-        {vues.map((v, i) => (
-          <div class="vue" data-vue={v} hidden={i > 0}>
-            <Capture langue={l} appareil={appareil} capture={ecrans[appareil][v]} sizes={sizes} prioritaire={i === 0 && appareil === "appletv"} differee={i > 0} />
-          </div>
-        ))}
-      </div>
-    ))}
+    <div class="ecrin-tv tv" data-ecran="apercu">
+      {vues.map((v, i) => (
+        <div class="vue" data-vue={v} hidden={i > 0}>
+          <Capture langue={l} appareil="appletv" capture={ecrans.appletv[v]} sizes={tailleTv} prioritaire={i === 0} differee={i > 0} />
+        </div>
+      ))}
+    </div>
+    <Cadre appareil="iphone" sizes={tailleTel} ecran="apercu" classe="telephone">
+      {vues.map((v, i) => (
+        <div class="vue" data-vue={v} hidden={i > 0}>
+          <Capture langue={l} appareil="iphone" capture={ecrans.iphone[v]} sizes={tailleTel} differee={i > 0} />
+        </div>
+      ))}
+    </Cadre>
   </div>
   <p class="appareils">{t(l, "apercu.appareils")}</p>
   <div class="pastilles avec-js" role="group" aria-label={t(l, "apercu.onglets")}>
@@ -63,15 +66,16 @@ const appareils: { appareil: Appareil; classe: string; sizes: string }[] = [
   .neutre { margin: 1.25rem 0 0; font-size: 0.8125rem; color: #8e8e93; }
 
   .apercu { max-width: 75rem; margin: 0 auto; padding: 2.5rem 1.5rem 7.5rem; }
-  .scene { position: relative; padding: 0 9% 9%; }
-  .ipad { position: absolute; z-index: 2; left: 0; bottom: 0; width: 30%; }
-  .iphone { position: absolute; z-index: 3; right: 0; bottom: 0; width: 14%; }
+  /* L'iPhone (≈ 15 % de la scène) chevauche le coin bas droit de l'Apple TV, sans rien couper. */
+  .scene { position: relative; padding: 0 7% 10% 3%; }
+  .scene :global(.telephone) { position: absolute; z-index: 2; right: 0; bottom: 0; width: 15%; }
   .appareils { margin: 2.25rem 0 0; text-align: center; font-size: 0.9375rem; color: #a1a1a6; }
   .pastilles { margin-top: 1.25rem; }
   .indice { margin: 1rem 0 0; text-align: center; font-size: 0.875rem; color: #8e8e93; }
 
   @media (max-width: 45rem) {
+    /* Sur téléphone, l'iPhone ferait moins de 200 px de haut (règle d'Apple) : masqué, seule l'Apple TV reste. */
     .scene { padding: 0; }
-    .ipad, .iphone { display: none; }
+    .scene :global(.telephone) { display: none; }
   }
 </style>

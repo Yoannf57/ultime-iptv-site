@@ -3,3 +3,5 @@ dist/
 .astro/
 /captures/
 .DS_Store
+# Fichiers originaux d'Apple (Product Bezels) : jamais dans le dépôt public.
+/Notes/cadres/

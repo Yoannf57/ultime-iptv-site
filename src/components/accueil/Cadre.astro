@@ -1,0 +1,35 @@
+---
+// Appareil dans son cadre officiel d'Apple (Apple Design Resources › Product Bezels, importé par
+// « npm run importer-captures » depuis Notes/cadres/). La capture est posée dessous, exactement sur la zone de
+// l'écran (positions mesurées sur la zone transparente du cadre, en %), et le cadre est posé par-dessus, tel quel.
+// Règles d'Apple : rien d'ajouté sur le cadre (ni contour, ni ombre, ni reflet), pas d'inclinaison, de zoom ni de
+// mouvement ; seul le contenu de l'écran change. Le halo éventuel reste derrière.
+import { Picture } from "astro:assets";
+import iphone from "../../assets/cadres/iphone.webp";
+import ipad from "../../assets/cadres/ipad.webp";
+
+interface Props { appareil: "iphone" | "ipad"; sizes: string; ecran?: string; classe?: string }
+const { appareil, sizes, ecran, classe } = Astro.props;
+// Cadre (largeur × hauteur) et écran (x, y, largeur, hauteur) en pixels du fichier d'Apple d'origine.
+const mesures = {
+  iphone: { image: iphone, cadre: [1350, 2760], ecran: [72, 69, 1206, 2622], largeurs: [300, 450, 600, 900] },
+  ipad: { image: ipad, cadre: [3000, 2300], ecran: [124, 118, 2752, 2064], largeurs: [800, 1200, 1600, 2400] },
+}[appareil];
+const [W, H] = mesures.cadre;
+const [x, y, w, h] = mesures.ecran;
+const pc = (v: number, total: number) => `${((100 * v) / total).toFixed(3)}%`;
+---
+<div class:list={["cadre", appareil, classe]} style={`aspect-ratio:${W} / ${H}`}>
+  <div class="ecran" data-ecran={ecran} style={`left:${pc(x, W)};top:${pc(y, H)};width:${pc(w, W)};height:${pc(h, H)}`}>
+    <slot />
+  </div>
+  <Picture src={mesures.image} formats={["webp"]} widths={mesures.largeurs} sizes={sizes} alt="" class="bezel" loading="lazy" decoding="async" />
+</div>
+
+<style>
+  .cadre { position: relative; }
+  .ecran { position: absolute; overflow: hidden; background: #000; }
+  .ecran :global(picture), .ecran :global(.vue) { display: block; }
+  .ecran :global(.capture) { display: block; width: 100%; height: auto; }
+  .cadre :global(.bezel) { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; user-select: none; }
+</style>

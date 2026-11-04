@@ -1,6 +1,5 @@
-// Vraies captures de l'app (src/assets/captures/<fr|en>/<appareil>/<nom>.webp, importées par
-// « npm run importer-captures »). Elles n'existent qu'en français et en anglais : les autres langues montrent
-// les captures anglaises.
+// Vraies captures de l'app (src/assets/captures/<langue>/<appareil>/<nom>.webp, importées par
+// « npm run importer-captures »), dans les 12 langues du site. Une langue sans captures montre les anglaises.
 import type { ImageMetadata } from "astro";
 import donnees from "../donnees/captures.json";
 
@@ -15,8 +14,9 @@ export const captures = donnees as {
   famille: Ecran;
 };
 
-export function langueCaptures(langue: string): "fr" | "en" {
-  return langue === "fr" ? "fr" : "en";
+const languesAvecCaptures = new Set(Object.keys(images).map((chemin) => chemin.split("/")[3]));
+export function langueCaptures(langue: string): string {
+  return languesAvecCaptures.has(langue) ? langue : "en";
 }
 
 export function image(langue: string, appareil: Appareil, nom: string): ImageMetadata {
