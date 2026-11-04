@@ -199,7 +199,8 @@
       "fi-fi": "Ti trovi in Finlandia?",
       "es-es": "Ti trovi in Spagna?",
       "it-it": "Ti trovi in Italia?",
-      "pt-br": "Ti trovi in Brasile?"
+      "pt-br": "Ti trovi in Brasile?",
+      "pt-pt": "Ti trovi in Portogallo?"
     },
     "voir": {
       "fr-fr": "Vai al sito per la Francia (in francese)",
@@ -222,7 +223,8 @@
       "fi-fi": "Vai al sito per la Finlandia (in finlandese)",
       "es-es": "Vai al sito per la Spagna (in spagnolo)",
       "it-it": "Vai al sito per l'Italia",
-      "pt-br": "Vai al sito per il Brasile (in portoghese brasiliano)"
+      "pt-br": "Vai al sito per il Brasile (in portoghese brasiliano)",
+      "pt-pt": "Vai al sito per il Portogallo (in portoghese)"
     }
   },
   "choix": {

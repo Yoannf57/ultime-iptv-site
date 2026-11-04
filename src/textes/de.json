@@ -199,7 +199,8 @@
       "fi-fi": "Bist du in Finnland?",
       "es-es": "Bist du in Spanien?",
       "it-it": "Bist du in Italien?",
-      "pt-br": "Bist du in Brasilien?"
+      "pt-br": "Bist du in Brasilien?",
+      "pt-pt": "Bist du in Portugal?"
     },
     "voir": {
       "fr-fr": "Website für Frankreich ansehen (auf Französisch)",
@@ -222,7 +223,8 @@
       "fi-fi": "Website für Finnland ansehen (auf Finnisch)",
       "es-es": "Website für Spanien ansehen (auf Spanisch)",
       "it-it": "Website für Italien ansehen (auf Italienisch)",
-      "pt-br": "Website für Brasilien ansehen (auf brasilianischem Portugiesisch)"
+      "pt-br": "Website für Brasilien ansehen (auf brasilianischem Portugiesisch)",
+      "pt-pt": "Website für Portugal ansehen (auf Portugiesisch)"
     }
   },
   "choix": {

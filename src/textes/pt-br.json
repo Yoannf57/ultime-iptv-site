@@ -199,7 +199,8 @@
       "fi-fi": "Você está na Finlândia?",
       "es-es": "Você está na Espanha?",
       "it-it": "Você está na Itália?",
-      "pt-br": "Você está no Brasil?"
+      "pt-br": "Você está no Brasil?",
+      "pt-pt": "Você está em Portugal?"
     },
     "voir": {
       "fr-fr": "Ver o site para a França (em francês)",
@@ -222,7 +223,8 @@
       "fi-fi": "Ver o site para a Finlândia (em finlandês)",
       "es-es": "Ver o site para a Espanha (em espanhol)",
       "it-it": "Ver o site para a Itália (em italiano)",
-      "pt-br": "Ver o site para o Brasil"
+      "pt-br": "Ver o site para o Brasil",
+      "pt-pt": "Ver o site para Portugal (em português de Portugal)"
     }
   },
   "choix": {

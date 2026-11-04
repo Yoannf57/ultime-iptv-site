@@ -199,7 +199,8 @@
       "fi-fi": "Are you in Finland?",
       "es-es": "Are you in Spain?",
       "it-it": "Are you in Italy?",
-      "pt-br": "Are you in Brazil?"
+      "pt-br": "Are you in Brazil?",
+      "pt-pt": "Are you in Portugal?"
     },
     "voir": {
       "fr-fr": "View the site for France (in French)",
@@ -222,7 +223,8 @@
       "fi-fi": "View the site for Finland (in Finnish)",
       "es-es": "View the site for Spain (in Spanish)",
       "it-it": "View the site for Italy (in Italian)",
-      "pt-br": "View the site for Brazil (in Brazilian Portuguese)"
+      "pt-br": "View the site for Brazil (in Brazilian Portuguese)",
+      "pt-pt": "View the site for Portugal (in Portuguese)"
     }
   },
   "choix": {
