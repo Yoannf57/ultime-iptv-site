@@ -195,7 +195,8 @@
       "de-ch": "Er du i Sveits?",
       "sv-se": "Er du i Sverige?",
       "nb-no": "Er du i Norge?",
-      "da-dk": "Er du i Danmark?"
+      "da-dk": "Er du i Danmark?",
+      "fi-fi": "Er du i Finland?"
     },
     "voir": {
       "fr-fr": "Se nettstedet for Frankrike (på fransk)",
@@ -214,7 +215,8 @@
       "de-ch": "Se nettstedet for Sveits (på tysk)",
       "sv-se": "Se nettstedet for Sverige (på svensk)",
       "nb-no": "Se nettstedet for Norge",
-      "da-dk": "Se nettstedet for Danmark (på dansk)"
+      "da-dk": "Se nettstedet for Danmark (på dansk)",
+      "fi-fi": "Se nettstedet for Finland (på finsk)"
     }
   },
   "choix": {

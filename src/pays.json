@@ -117,6 +117,15 @@
     "devise": "DKK", "lienAppStore": null, "prix": null
   },
   {
+    "code": "fi-fi", "langue": "fi", "locale": "fi-FI", "region": "europe", "nom": "Suomi", "nomLangue": "Suomi",
+    "fuseaux": ["Europe/Helsinki", "Europe/Mariehamn"],
+    "devise": "EUR", "lienAppStore": null,
+    "prix": {
+      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
+      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+    }
+  },
+  {
     "code": "en", "langue": "en", "locale": "en", "region": "international", "nom": "International", "nomLangue": "English",
     "fuseaux": [],
     "devise": null, "lienAppStore": null, "prix": null

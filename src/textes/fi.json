@@ -1,0 +1,501 @@
+{
+  "meta": {
+    "direction": "ltr",
+    "titre": "Ulti — Täydellinen IPTV-kokemus",
+    "description": "Ulti on IPTV-soitin iPhonelle, iPadille, Macille ja Apple TV:lle: suorat lähetykset, TV-opas, elokuvat ja sarjat yksinkertaisessa sovelluksessa, joka on heti käyttövalmis."
+  },
+  "marque": {
+    "nom": "Ulti",
+    "suffixe": "IPTV",
+    "retourHaut": "Ulti, sivun alkuun",
+    "accueil": "Ulti, etusivu"
+  },
+  "entete": {
+    "navigation": "Päävalikko",
+    "fonctions": "Ominaisuudet",
+    "visite": "Esittely",
+    "appletv": "Apple TV",
+    "tarifs": "Hinnat",
+    "questions": "Kysymykset",
+    "bientot": "Tulossa pian",
+    "telecharger": "Lataa"
+  },
+  "heros": {
+    "surtitre": "iPhonelle, iPadille, Macille ja Apple TV:lle",
+    "accroche": "Täydellinen\nIPTV-kokemus.",
+    "phrase": "Suorat lähetykset, TV-opas, elokuvat ja sarjat: IPTV-tilauksestasi tulee helppokäyttöinen TV-sovellus. Avaa ja katso.",
+    "bientot": "Tulossa pian App Storeen",
+    "telecharger": "Lataa App Storesta",
+    "voirTarifs": "Katso hinnat",
+    "neutralite": "Ulti ei tarjoa kanavia eikä sisältöä."
+  },
+  "apercu": {
+    "etiquette": "Esikatselu sovelluksesta Apple TV:ssä, iPadissa ja iPhonessa",
+    "appareils": "Apple TV, iPad ja Apple-sirullinen Mac, iPhone: sama sovellus kaikkialla.",
+    "onglets": "Sovelluksen näkymät",
+    "indice": "Valitse näkymä ja tutustu sovellukseen."
+  },
+  "onglets": {
+    "accueil": "Koti",
+    "direct": "Suorat",
+    "guide": "TV-opas",
+    "profils": "Profiilit",
+    "pause": "Suoran tauko",
+    "films": "Elokuvat ja sarjat",
+    "multi": "Moninäyttö"
+  },
+  "fonctions": {
+    "titre": "Tilauksesi, vihdoin selkeästi esillä.",
+    "phrase": "Ulti järjestää tilauksesi tuhannet kanavat ja elokuvat selkeiksi näkymiksi, kuin TV-sovellus, joka sinulla olisi aina ollut.",
+    "directTitre": "Suorat lähetykset yhdellä silmäyksellä",
+    "directTexte": "Jokaisen kanavan ympärillä oleva rengas näyttää, missä ohjelma on menossa. Suodata aiheen mukaan ja vaihda kanavaa toiseen.",
+    "guideTitre": "Oikea TV-opas",
+    "guideTexte": "Tänä iltana, huomenna, koko viikon. Lisää muistutus yhdellä eleellä tai käytä omaa XMLTV-opastasi.",
+    "filmsTitre": "Elokuvat ja sarjat ilman kaksoiskappaleita",
+    "filmsTexte": "Julisteet ja juonikuvaukset, elokuvan kaikki versiot samalla sivulla, ja jatkat siitä, mihin jäit.",
+    "premium": "Premium"
+  },
+  "visite": {
+    "titre": "Tutustu sovellukseen.",
+    "groupe": "Sovelluksen näkymät",
+    "legendes": {
+      "direct": "Kaikki kanavasi suurina ruutuina ja käynnissä oleva ohjelma. Suodata aiheen mukaan ja vaihda kanavaa.",
+      "guide": "Tänä iltana, huomenna, koko viikon. Muistutus yhdellä eleellä, ja viiva näyttää, missä olet menossa.",
+      "pause": "Pysäytä suora lähetys, kelaa taaksepäin tai aloita ohjelma alusta, ja palaa sitten suoraan lähetykseen.",
+      "films": "Selaa luetteloa julisteineen ja juonikuvauksineen, elokuvan kaikki versiot yhdessä, ja jatka siitä, mihin jäit.",
+      "multi": "Jopa 4 suoraa lähetystä yhtä aikaa Apple TV:ssä, iPadissa ja Macissa, 2 iPhonessa, tilauksesi yhteyksien rajoissa."
+    },
+    "credits": "Sovelluksen oikeat näkymät, keksityt kanavat ja kuvat Blender Studion vapaista elokuvista (lisenssi CC BY). [Kuvien tekijät](credits)."
+  },
+  "captures": {
+    "alt": "Ulti, {appareil}: {ecran}",
+    "appareils": {
+      "appletv": "Apple TV",
+      "ipad": "iPad",
+      "iphone": "iPhone"
+    },
+    "vues": {
+      "accueil": "etusivu, jossa nostettu elokuva ja suorat kanavat",
+      "direct-bandeau": "suora kanava ja käynnissä olevan ohjelman palkki",
+      "direct": "suorien kanavien luettelo",
+      "guide": "TV-opas",
+      "profils": "profiilin valinta, ”Kuka katsoo?”",
+      "pause-direct": "pysäytetty suora lähetys ja painike takaisin suoraan",
+      "films-series": "elokuvien ja sarjojen luettelo",
+      "multi-ecran": "neljä suoraa lähetystä yhtä aikaa"
+    }
+  },
+  "appletv": {
+    "surtitre": "Apple TV",
+    "titre": "Televisiolla et kirjoita mitään.",
+    "texte": "Skannaa Apple TV:n näyttämä koodi iPhonellasi: tilauksesi siirtyy salattuna televisioon suoraan lähiverkkosi kautta.",
+    "point1": "Kanavanvaihto kaukosäätimellä, ylös ja alas",
+    "point2": "Kuva kuvassa suorien lähetysten aikana",
+    "point3": "Suuret julisteet, sohvalta katsottaviksi"
+  },
+  "famille": {
+    "titre": "Koko perhe, kullekin oma tila.",
+    "texte": "Premiumilla oma profiili jokaiselle, jokaisella oma lista ja omat jatkamiskohdat. Ilmaisversioon kuuluva lapsiprofiili ei näe aikuisten sisältöä, ja siitä pääsee pois vain lapsilukon koodilla."
+  },
+  "premium": {
+    "surtitre": "Premium",
+    "titre": "Vielä enemmän.",
+    "films": "Elokuvat ja sarjat, julisteet, juonikuvaukset ja jatkaminen",
+    "pause": "Suoran lähetyksen tauko ja kelaus taaksepäin",
+    "replay": "Edellisten päivien tallenteet",
+    "telechargements": "Lataukset katseluun ilman verkkoa",
+    "icloud": "iCloud-synkronointi kaikkien laitteidesi välillä",
+    "plusieurs": "Useita tilauksia ja profiileja",
+    "themes": "Teemat Halo ja Ohjelma",
+    "multi": "Moninäyttö: jopa 4 suoraa lähetystä yhtä aikaa (iPhonessa 2)"
+  },
+  "etapes": {
+    "titre": "Valmis minuutissa.",
+    "e1Titre": "Lisää tilauksesi",
+    "e1Texte": "Liitä IPTV-palveluntarjoajasi viesti tai syötä kirjautumistiedot. Ulti hoitaa loput.",
+    "e2Titre": "Ulti järjestää kaiken",
+    "e2Texte": "Kanavat, opas, elokuvat ja sarjat lajitellaan. Pidä vain sinua kiinnostavat kategoriat.",
+    "e3Titre": "Katso missä vain",
+    "e3Texte": "iPhonessa, iPadissa, Macissa ja Apple TV:ssä. Premiumilla listasi ja jatkamiskohtasi kulkevat mukanasi."
+  },
+  "tarifs": {
+    "titre": "Tärkein on ilmaista.",
+    "phrase": "Suorat lähetykset ovat ilmaisia. Premiumia voit kokeilla 7 päivää maksamatta.",
+    "gratuitTitre": "Ilmainen",
+    "gratuitTexte": "Suorat lähetykset, TV-opas ja muistutukset, kuva kuvassa, Apple TV QR-koodilla, lapsiprofiili.",
+    "choix": "Valitse Premium-vaihtoehto",
+    "pourMoi": "Minulle",
+    "pourFamille": "Perheelle",
+    "soloLegende": "Solo: sinulle, kaikilla laitteillasi.",
+    "familleLegende": "Perhe: jopa 6 henkilölle Applen Perhejaon avulla.",
+    "mensuel": "Kuukausittain",
+    "annuel": "Vuosittain",
+    "vie": "Pysyvä",
+    "parMois": "/ kk",
+    "parAn": "/ vuosi",
+    "mensuelTexte": "Koko Premium. 7 päivän ilmainen kokeilu.",
+    "annuelTexte": "Koko Premium, eli {prix} kuukaudessa. 7 päivän ilmainen kokeilu.",
+    "annuelTexteSansPrix": "Koko Premium. 7 päivän ilmainen kokeilu.",
+    "vieTexte": "Koko Premium, maksetaan kerran.",
+    "remise": "−{remise} %",
+    "prixAppStore": "Hinnat näkyvät App Storessa",
+    "noteTTC": "Hinnat sisältävät arvonlisäveron.",
+    "noteAppStore": "Maasi tarkka hinta näkyy App Storessa."
+  },
+  "viePrivee": {
+    "titre": "Mitään tietoja ei kerätä.",
+    "texte": "Kirjautumistietosi pysyvät laitteesi avainnipussa. Ei tiliä luotavaksi, ei Ulti-palvelinta.",
+    "lien": "Tietosuojakäytäntömme"
+  },
+  "faq": {
+    "titre": "Usein kysytyt kysymykset",
+    "q1": "Tarjoaako Ulti kanavia?",
+    "r1": "Ei. Ulti on soitin: se toistaa lähteet, jotka lisäät itse. Ulti ei tarjoa kanavia eikä sisältöä. Sinulla on oltava omat lähteesi ja oikeus katsoa niitä.",
+    "q2": "Millä laitteilla?",
+    "r2": "iPhone, iPad, Mac (Apple-sirulla) ja Apple TV. Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta.",
+    "q3": "Ovatko kirjautumistietoni turvassa?",
+    "r3": "Ne säilytetään laitteesi avainnipussa, eivätkä ne koskaan kulje Ulti-palvelimen kautta.",
+    "q4": "Mitkä tilaukset toimivat?",
+    "r4": "Tilaukset, jotka toimitetaan M3U-linkkinä tai Xtream Codes -kirjautumistietoina, eli valtaosa. Helpointa on liittää palveluntarjoajasi viesti: Ulti tunnistaa muodon itse.",
+    "q5": "Voinko kokeilla ennen kuin maksan?",
+    "r5": "Kyllä. Suorat lähetykset ovat ilmaisia. Premiumia voi kokeilla ilmaiseksi 7 päivää kuukausi- ja vuositilauksilla, Solo tai Perhe."
+  },
+  "neutralite": "Ulti ei tarjoa kanavia eikä sisältöä. Sinulla on oltava omat lähteesi ja oikeus katsoa niitä.",
+  "pied": {
+    "changerPays": "Vaihda maata tai aluetta (nyt: {pays}, {langue})",
+    "tmdb": "Tämä tuote käyttää TMDB:n rajapintaa, mutta TMDB ei ole hyväksynyt eikä sertifioinut sitä.",
+    "tmdbLogo": "The Movie Databasen (TMDB) logo",
+    "marques": "Apple, Apple TV, iPhone, iPad ja Mac ovat Apple Inc:n tavaramerkkejä.",
+    "copyright": "© 2026 Ulti",
+    "liens": {
+      "navigation": "Tietoa",
+      "support": "Tuki",
+      "privacy": "Tietosuoja",
+      "legal": "Oikeudelliset tiedot"
+    }
+  },
+  "bandeau": {
+    "etiquette": "Maan valinta",
+    "continuer": "Jatka",
+    "fermer": "Sulje",
+    "question": {
+      "fr-fr": "Oletko Ranskassa?",
+      "fr-be": "Oletko Belgiassa?",
+      "fr-lu": "Oletko Luxemburgissa?",
+      "fr-ch": "Oletko Sveitsissä?",
+      "en-gb": "Oletko Isossa-Britanniassa?",
+      "en-ie": "Oletko Irlannissa?",
+      "fr-ca": "Oletko Kanadassa?",
+      "en-ca": "Oletko Kanadassa?",
+      "en-us": "Oletko Yhdysvalloissa?",
+      "nl-nl": "Oletko Alankomaissa?",
+      "nl-be": "Oletko Belgiassa?",
+      "de-de": "Oletko Saksassa?",
+      "de-at": "Oletko Itävallassa?",
+      "de-ch": "Oletko Sveitsissä?",
+      "sv-se": "Oletko Ruotsissa?",
+      "nb-no": "Oletko Norjassa?",
+      "da-dk": "Oletko Tanskassa?",
+      "fi-fi": "Oletko Suomessa?"
+    },
+    "voir": {
+      "fr-fr": "Näytä Ranskan sivusto (ranskaksi)",
+      "fr-be": "Näytä Belgian sivusto (ranskaksi)",
+      "fr-lu": "Näytä Luxemburgin sivusto (ranskaksi)",
+      "fr-ch": "Näytä Sveitsin sivusto (ranskaksi)",
+      "en-gb": "Näytä Ison-Britannian sivusto (englanniksi)",
+      "en-ie": "Näytä Irlannin sivusto (englanniksi)",
+      "fr-ca": "Näytä Kanadan sivusto (ranskaksi)",
+      "en-ca": "Näytä Kanadan sivusto (englanniksi)",
+      "en-us": "Näytä Yhdysvaltojen sivusto (englanniksi)",
+      "nl-nl": "Näytä Alankomaiden sivusto (hollanniksi)",
+      "nl-be": "Näytä Belgian sivusto (hollanniksi)",
+      "de-de": "Näytä Saksan sivusto (saksaksi)",
+      "de-at": "Näytä Itävallan sivusto (saksaksi)",
+      "de-ch": "Näytä Sveitsin sivusto (saksaksi)",
+      "sv-se": "Näytä Ruotsin sivusto (ruotsiksi)",
+      "nb-no": "Näytä Norjan sivusto (norjaksi)",
+      "da-dk": "Näytä Tanskan sivusto (tanskaksi)",
+      "fi-fi": "Näytä Suomen sivusto"
+    }
+  },
+  "choix": {
+    "titre": "Valitse maa tai alue",
+    "regions": {
+      "europe": "Eurooppa",
+      "ameriques": "Amerikka",
+      "international": "Muut maat"
+    }
+  },
+  "pages": {
+    "miseAJour": "Päivitetty {date}",
+    "sommaire": "Tällä sivulla",
+    "support": {
+      "titre": "Tuki",
+      "metaTitre": "Tuki — Ulti",
+      "description": "Ultin ohjeet: asennus, IPTV-tilauksen lisääminen, Apple TV, profiilit, Premium, ostot ja toisto.",
+      "chapeau": "Kaikki, mitä tarvitset Ultin käytön aloittamiseen, ja vastaukset yleisimpiin kysymyksiin."
+    },
+    "privacy": {
+      "titre": "Tietosuoja",
+      "metaTitre": "Tietosuoja — Ulti",
+      "description": "Ultin tietosuojakäytäntö: mitään tietoja ei kerätä, kirjautumistietosi pysyvät laitteellasi.",
+      "chapeau": "Ulti ei kerää mitään tietoja. Tässä kerrotaan tarkasti, mitä sovellus tekee ja mitä tämä sivusto tekee."
+    },
+    "legal": {
+      "titre": "Oikeudelliset tiedot",
+      "metaTitre": "Oikeudelliset tiedot — Ulti",
+      "description": "Ulti-sivuston ja -sovelluksen oikeudelliset tiedot.",
+      "chapeau": "Kuka julkaisee Ultin, kuka ylläpitää tätä sivustoa ja oikeudet täällä näytettyyn sisältöön. Ristiriitatilanteissa sivun ranskankielinen versio on ratkaiseva."
+    }
+  },
+  "faqPlus": "Kaikki kysymykset tukisivulla",
+  "support": {
+    "groupes": {
+      "debut": "Aloittaminen",
+      "abonnement": "Tilauksen lisääminen",
+      "appletv": "Apple TV",
+      "profils": "Profiilit ja lapsilukon koodi",
+      "premium": "Premium ja ostot",
+      "lecture": "Toisto-ongelmat",
+      "confidentialite": "Tietosuoja"
+    },
+    "q": {
+      "chaines": {
+        "q": "Tarjoaako Ulti kanavia?",
+        "r": "Ei. Ulti on soitin: se toistaa IPTV-tilauksen, jonka lisäät itse. Ulti ei tarjoa kanavia eikä sisältöä. Sinulla on oltava omat lähteesi ja oikeus katsoa niitä."
+      },
+      "appareils": {
+        "q": "Millä laitteilla Ulti toimii?",
+        "r": "iPhone, iPad, Mac ja Apple TV: iPhone ja iPad, joissa on iOS 17 tai iPadOS 17 tai uudempi, Apple TV, jossa on tvOS 17 tai uudempi, sekä Apple-sirulliset Macit, jotka käyttävät iPad-sovellusta. Premium on voimassa kaikilla laitteillasi, joihin on kirjauduttu samalla Apple-tilillä."
+      },
+      "installer": {
+        "q": "Miten asennan Ultin?",
+        "r": "Lataa Ulti iPhonen, iPadin tai Macin App Storesta ja Apple TV:n App Storesta. Asennettuna sovelluksen nimi on ”Ulti IPTV”.",
+        "rBientot": "Ulti tulee pian App Storeen iPhonelle, iPadille, Macille ja Apple TV:lle. Asennettuna sovelluksen nimi on ”Ulti IPTV”."
+      },
+      "ajouter": {
+        "q": "Miten lisään IPTV-tilaukseni?",
+        "r": "Avaa Tili › Tilaukset › Lisää tilaus. Helpoin tapa iPhonessa: ”Liitä vastaanotettu viesti” (katso seuraava kysymys).\n\nVoit myös syöttää palvelimen, käyttäjänimen ja salasanan tai liittää M3U-linkin. Apple TV:ssä helpointa on lähettää tilaus iPhonelta (katso ”Apple TV” alempana)."
+      },
+      "formats": {
+        "q": "Mitä muotoja tuetaan?",
+        "r": "Xtream Codes -tilit (palvelin, käyttäjänimi ja salasana) ja M3U-soittolistalinkit. TV-oppaana Ulti käyttää palveluntarjoajasi opasta; voit myös antaa XMLTV-muotoisen oppaan osoitteen (.xml tai .xml.gz) kohdassa Tili › TV-opas.\n\nEi tuettu: MAC-osoitteeseen sidotut tilaukset ja Stalker/Ministra-portaalit."
+      },
+      "replay": {
+        "q": "Toimivatko tallenteet tilaukseni kanssa?",
+        "r": "Tallenteet kuuluvat Premiumiin. Ne toimivat Xtream Codes -tilin kanssa niillä kanavilla, joille palveluntarjoajasi tarjoaa jälkikatselun. M3U-soittolistoilla ne eivät ole vielä käytettävissä."
+      },
+      "trier": {
+        "q": "Tilauksessani on liikaa kanavia. Miten karsin niitä?",
+        "r": "Valitse kohdassa Tili › Omat sisällöt, mitkä maat, kategoriat ja kanavat näytetään. Muu osa tilauksesta on edelleen käytettävissä, vain piilotettuna. Jokaisella profiililla on omat valintansa."
+      },
+      "plusieurs": {
+        "q": "Voinko lisätä useita tilauksia?",
+        "r": "Kyllä, Premiumilla. Napauta kohdassa Tili › Tilaukset tilausta ottaaksesi sen käyttöön. Omat sisällöt, Oma lista, jatkamiskohdat ja muistutukset pidetään erillään kullekin."
+      },
+      "qr": {
+        "q": "Miten saan tilaukseni Apple TV:hen?",
+        "r": "Kirjoittamatta mitään kaukosäätimellä: avaa Ulti Apple TV:ssä, ja näkyviin tulee QR-koodi. Skannaa se iPhonen kameralla, napauta Ulti-linkkiä, ja tilaus siirtyy itsestään kategorioineen, suosikkeineen ja ulkoasuineen. Jos Apple TV:ssä on jo tilaus, QR-koodi löytyy kohdasta Tili › Tilaukset › Lisää tilaus.\n\niPhonen ja Apple TV:n on oltava samassa Wi-Fi-verkossa. Siirto on salattu ja kulkee suoraan lähiverkkosi kautta; lapsilukon koodia ei koskaan lähetetä. Voit myös syöttää tilauksen kaukosäätimellä."
+      },
+      "qrBloque": {
+        "q": "QR-koodi ei toimi. Mitä teen?",
+        "r": "Tarkista, että Apple TV on päällä, samassa Wi-Fi-verkossa kuin iPhone ja että se näyttää QR-koodinäkymän. Tilaus on ensin lisättävä iPhoneen.\n\nJos iPhone on estänyt pääsyn lähiverkkoon, salli se kohdassa Asetukset › Ulti IPTV › Paikallisverkko ja skannaa QR-koodi uudelleen. QR-koodi vanhenee jonkin ajan kuluttua: skannaa aina näytöllä oleva koodi."
+      },
+      "profils": {
+        "q": "Miten profiilit toimivat?",
+        "r": "Jokaisella profiililla on omat Omat sisällöt, Oma lista, jatkamiskohdat ja muistutukset. Profiileja hallitaan kohdassa Tili › Profiilit. Ilmaisversiossa on lapsiprofiili; aikuisten lisäprofiilit kuuluvat Premiumiin."
+      },
+      "enfant": {
+        "q": "Mikä on lapsiprofiili?",
+        "r": "Lapsiprofiili ei näe aikuisten kategorioita eikä sisältöä, sillä ei ole pääsyä tilauksiin, eikä siitä pääse pois ilman lapsilukon koodia. Tätä 4-numeroista koodia kysytään myös profiileja muokattaessa ja, jos lapsiprofiili on olemassa, aikuisen profiilia avattaessa (ellet poista sitä käytöstä kyseiseltä profiililta).\n\nLapsilukon koodi pysyy jokaisella laitteella: sitä ei koskaan lähetetä iCloudin kautta eikä Apple TV:hen."
+      },
+      "codeOublie": {
+        "q": "Unohdin lapsilukon koodin.",
+        "r": "Napauta iPhonessa tai iPadissa ”Unohditko lapsilukon koodin”, vahvista henkilöllisyytesi Face ID:llä tai laitteen pääsykoodilla ja luo uusi koodi. Laitteen pääsykoodin on oltava käytössä Asetuksissa.\n\nApple TV:ssä skannaa näkyvä QR-koodi iPhonella, ota käyttöön ”Salli uusi lapsilukon koodi” ja vahvista Face ID:llä tai iPhonen pääsykoodilla."
+      },
+      "gratuit": {
+        "q": "Mitä ilmaisversioon kuuluu?",
+        "r": "Suorat lähetykset, TV-opas ja muistutukset, Omat sisällöt, päällekkäisten kanavien yhdistäminen, palveluntarjoajan viestin liittäminen, kuva kuvassa, siirto Apple TV:hen QR-koodilla, lapsiprofiili lapsilukon koodilla ja Musta-teema."
+      },
+      "inclus": {
+        "q": "Mitä Premiumiin kuuluu?",
+        "r": "Elokuvat ja sarjat (luettelo, sivut julisteineen ja juonikuvauksineen, toisto, jatkaminen, elokuvan kaikki versiot), moninäyttö, tallenteet, suoran lähetyksen tauko, lataukset iPhonessa ja iPadissa, iCloud-synkronointi, aikuisten lisäprofiilit ja lisätilaukset, rivit ”Sinulle” ja ”Suositut”, teemat Halo ja Ohjelma sekä vaihtoehtoiset sovelluskuvakkeet.\n\nIlmaisversiossa voit selata elokuvia ja sarjoja; niiden toistaminen vaatii Premiumin."
+      },
+      "soloFamille": {
+        "q": "Solo vai Perhe: mikä ero?",
+        "r": "Molemmat vaihtoehdot antavat saman Premiumin. Solo on sinulle, kaikilla laitteillasi samalla Apple-tilillä. Perhe jaetaan jopa 6 henkilön kanssa [Applen Perhejaon](apple-partage) avulla. Kumpikin vaihtoehto on saatavilla kuukausi-, vuosi- ja pysyvänä ostona: katso [hinnat](tarifs)."
+      },
+      "essai": {
+        "q": "Voinko kokeilla Premiumia ilmaiseksi?",
+        "r": "Kyllä: kuukausi- ja vuositilaukset, Solo tai Perhe, alkavat 7 päivän ilmaisella kokeilulla. Pysyvässä ostossa ei ole kokeilua. Jos perut vähintään 24 tuntia ennen kokeilun päättymistä, sinulta ei veloiteta mitään."
+      },
+      "restaurer": {
+        "q": "Miten palautan ostokseni?",
+        "r": "Yleensä Premium palaa itsestään uudelle laitteelle. Jos ei, avaa Tili › Premium ja napauta ”Palauta ostot”: Ulti löytää samalla Apple-tilillä tehdyn oston tai, Perhe-vaihtoehdolla, Perhejaon kautta tehdyn oston."
+      },
+      "resilier": {
+        "q": "Miten peruutan tilaukseni?",
+        "r": "Tilauksia hallitsee Apple. Avaa Ultissa Tili › Premium › ”Hallitse tilaustani”. Tai iPhonessa tai iPadissa: Asetukset › nimesi › Tilaukset, valitse Ulti-tilaus ja peruuta se ([Applen ohje](apple-resilier)).\n\nPeruuta vähintään 24 tuntia ennen jakson päättymistä, jotta tilaus ei uusiudu. Premium on käytössä jo maksetun jakson loppuun asti."
+      },
+      "vie": {
+        "q": "Ostin pysyvän Premiumin: päättyykö tilaukseni itsestään?",
+        "r": "Ei: Apple ei peruuta tilausta itsestään. Jos sinulla oli kuukausi- tai vuositilaus ennen pysyvää ostoa, muista peruuttaa se, jotta sinua ei veloiteta enää. Ulti muistuttaa siitä kohdassa Tili › Premium."
+      },
+      "occupee": {
+        "q": "”Edellinen toisto on yhä auki”: mitä teen?",
+        "r": "Tilauksesi sallii vain yhden toiston kerrallaan, ja palveluntarjoajaltasi kuluu usein 1–2 minuuttia edellisen vapauttamiseen, esimerkiksi heti elokuvan tai toisen kanavan jälkeen. Ulti näyttää lähtölaskennan ”Yritä uudelleen” -painikkeessa: napauta sitä, kun laskenta on päättynyt. Jos toinen laite katsoo jo samalla tilauksella, lopeta toisto siinä laitteessa.\n\nMoninäytössä ”Vapaita yhteyksiä ei ole jäljellä” tarkoittaa, että kaikki tilaustesi yhteydet ovat jo käytössä. Yhden yhteyden tilauksella lataus pysähtyy katselun ajaksi ja jatkuu sitten itsestään."
+      },
+      "refusee": {
+        "q": "”Palveluntarjoaja hylkäsi yhteyden” tai ”Tämä tilaus on vanhentunut”",
+        "r": "Nämä viestit tulevat palveluntarjoajasi palvelimelta: tilaus on vanhentunut, kirjautumistiedot ovat muuttuneet tai toisto on käynnissä toisella laitteella. Tarkista kirjautumistietosi kohdassa Tili › Tilaukset tai ota yhteyttä palveluntarjoajaasi. Ulti ei voi muuttaa eikä uusia IPTV-tilaustasi."
+      },
+      "serveur": {
+        "q": "”Palvelimeen ei saada yhteyttä”",
+        "r": "Tarkista internetyhteytesi. Jos se toimii, palveluntarjoajasi palvelin voi olla tilapäisesti poissa käytöstä: yritä hetken päästä uudelleen."
+      },
+      "identifiants": {
+        "q": "Ovatko kirjautumistietoni turvassa?",
+        "r": "Kyllä. Ne säilytetään laitteesi avainnipussa, eivätkä ne koskaan kulje Ulti-palvelimen kautta. iCloud-synkronoinnilla (Premium) ne ovat päästä päähän salattuina omalla iCloud-tililläsi."
+      },
+      "donnees": {
+        "q": "Kerääkö Ulti tietoja?",
+        "r": "Ei. Ei luotavaa tiliä, ei mainoksia, ei kävijämittausta. Kaikki on kerrottu [tietosuojakäytännössämme](privacy)."
+      },
+      "coller": {
+        "q": "Miten ”Liitä vastaanotettu viesti” toimii?",
+        "r": "Lähettikö palveluntarjoajasi kirjautumistiedot tekstiviestillä, WhatsAppilla tai sähköpostilla? Kopioi koko viesti iPhonessa ja napauta sitten kohdassa Tili › Tilaukset › Lisää tilaus ”Liitä vastaanotettu viesti”. Ulti löytää viestistä palvelimen, käyttäjänimen ja salasanan tai M3U-linkin ja täyttää kentät itse. Tarkista ja napauta ”Jatka”.\n\nViesti luetaan iPhonessa, eikä sitä koskaan lähetetä tai tallenneta. Mitään yhteyttä ei muodosteta ennen kuin napautat ”Jatka”."
+      },
+      "multi": {
+        "q": "Miten moninäyttö toimii?",
+        "r": "Moninäyttö kuuluu Premiumiin: katso jopa 4 suoraa lähetystä yhtä aikaa Apple TV:ssä, iPadissa ja Macissa ja 2 iPhonessa. Näyttöjen määrä riippuu myös IPTV-tilauksestasi: jokainen suora lähetys käyttää yhden yhteyden, ja monet tilaukset sallivat vain yhden. Jos sinulla on useita tilauksia, niiden yhteydet lasketaan yhteen."
+      },
+      "partage": {
+        "q": "Miten jaan Premiumin perheeni kanssa?",
+        "r": "Valitse Perhe-vaihtoehto: se jaetaan jopa 6 henkilön kanssa [Applen Perhejaon](apple-partage) avulla. Jokainen perheenjäsen avaa Ultin omalla Apple-tilillään ja saa Premiumin; tarvittaessa hän napauttaa ”Palauta ostot” kohdassa Tili › Premium. Solo-vaihtoehtoa ei voi jakaa."
+      }
+    },
+    "contact": {
+      "titre": "Tarvitsetko apua?",
+      "texte": "Kirjoita meille osoitteeseen [{contact}](contact). Kerro laitteesi (iPhone, iPad, Mac tai Apple TV) ja mahdollisuuksien mukaan näkyvä viesti. Älä koskaan lähetä kirjautumistietojasi tai tilauksesi osoitetta."
+    },
+    "essentiel": "Tärkeimmät"
+  },
+  "confidentialite": {
+    "sections": {
+      "bref": {
+        "titre": "Lyhyesti",
+        "texte": "Ulti ei kerää henkilötietoja. Ei luotavaa tiliä, ei mainoksia, ei mainosseurantaa, ei kävijämittausta. Sovelluksessa ei ole muiden yritysten tilasto- tai kaatumisraporttityökaluja."
+      },
+      "identifiants": {
+        "titre": "Kirjautumistietosi",
+        "texte": "IPTV-tilauksesi palvelin, käyttäjänimi ja salasana tallennetaan vain laitteellesi, Applen avainnippuun, ja iCloud-avainnippuusi, jos otat sen käyttöön. Ne eivät koskaan kulje Ulti-palvelimen kautta: sellaista ei ole."
+      },
+      "contacts": {
+        "titre": "Mihin sovellus ottaa yhteyttä",
+        "texte": "Ulti ottaa yhteyttä vain:\n\n• IPTV-palveluntarjoajaasi kanaviesi, elokuviesi, sarjojesi ja TV-oppaasi toistamiseksi. Se on valitsemasi palvelu: se ei ole kehittäjä eikä kehittäjän kumppani;\n• The Movie Databaseen (TMDB) julisteiden ja juonikuvausten näyttämiseksi. Sovellus lähettää vain näytettävien teosten nimen ja vuoden sekä laitteen kielen ja alueen: ei kirjautumistietoja eikä mitään hakukenttään kirjoittamaasi;\n• Appleen Premium-ostoja varten ja, jos otat sen käyttöön, iCloud-synkronointia varten."
+      },
+      "ip": {
+        "titre": "IP-osoitteesi",
+        "texte": "Kuten kaikissa verkkopalveluissa, IPTV-palveluntarjoajasi, TMDB ja Apple saavat laitteesi IP-osoitteen, kun sovellus ottaa niihin yhteyttä. Ulti ei säilytä siitä mitään."
+      },
+      "icloud": {
+        "titre": "iCloud-synkronointi",
+        "texte": "Premiumilla profiilisi, tilauksesi (kirjautumistiedot mukaan lukien), Omat sisällöt, Oma lista, jatkamiskohdat, muistutukset, usein katsotut kanavat ja ulkoasuasetukset voidaan synkronoida laitteidesi välillä. Ne tallennetaan oman iCloud-tilisi yksityiseen osaan päästä päähän salattuina: kehittäjällä ei ole niihin pääsyä. Lapsilukon koodi pysyy jokaisella laitteella."
+      },
+      "appletv": {
+        "titre": "Siirto Apple TV:hen",
+        "texte": "Kun lähetät tilauksesi iPhonelta Apple TV:hen QR-koodilla, tiedot kulkevat salattuina suoraan laitteelta toiselle lähiverkkosi kautta. Mitään ei kulje palvelimen kautta. Lapsilukon koodia ei koskaan lähetetä."
+      },
+      "message": {
+        "titre": "Palveluntarjoajan viesti",
+        "texte": "Kun liität palveluntarjoajasi viestin, se analysoidaan laitteellasi, eikä sitä koskaan lähetetä tai tallenneta."
+      },
+      "fichiers": {
+        "titre": "Lataukset ja suoran lähetyksen tauko",
+        "texte": "Ladatut videot pysyvät laitteellasi. Suoran lähetyksen taukoa varten Ulti säilyttää kanavan viimeiset minuutit laitteella; soittimen sulkemisen jälkeen mitään ei säilytetä."
+      },
+      "achats": {
+        "titre": "Ostot",
+        "texte": "Ostoja hallitsee Apple App Storessa. Ulti säilyttää laitteella vain Premiumin tilan toimiakseen ilman verkkoa, eikä lähetä sitä minnekään."
+      },
+      "plantages": {
+        "titre": "Kaatumisraportit",
+        "texte": "Ulti ei itse lähetä raportteja. Jos olet laitteesi asetuksissa hyväksynyt analyysitietojen jakamisen sovelluskehittäjien kanssa, Apple voi välittää kehittäjälle teknisiä kaatumisraportteja. TestFlight-testiversioiden aikana Apple välittää kehittäjälle palautteen ja raportit, jotka itse päätät lähettää."
+      },
+      "site": {
+        "titre": "Tämä sivusto",
+        "texte": "Tämä sivusto ei käytä seurantaa, evästeitä eikä kävijämittausta, eikä se lataa mitään muilta sivustoilta. Vain valitsemasi maa tallennetaan selaimeesi (paikallinen tallennustila), jotta pääset oikeaan versioon; se poistuu selaustietojen mukana.\n\nSivustoa ylläpitää GitHub Pages. Kuten kaikki palveluntarjoajat, GitHub saa teknisiä yhteystietoja, kuten IP-osoitteen, sivujen toimittamiseksi ([GitHubin tietosuojakäytäntö](github-confidentialite))."
+      },
+      "droits": {
+        "titre": "Tietosi ja oikeutesi",
+        "texte": "Koska Ultilla ei ole sinua koskevia tietoja, meillä ei ole mitään nähtävää tai poistettavaa. Poistaaksesi kaiken laitteiltasi poista tilauksesi kohdassa Tili › Tilaukset (jolloin ne poistuvat myös iCloudista) tai poista sovellus."
+      },
+      "changements": {
+        "titre": "Muutokset",
+        "texte": "Jos tämä käytäntö muuttuu, uusi versio julkaistaan tällä sivulla päivämäärineen."
+      },
+      "contact": {
+        "titre": "Yhteystiedot",
+        "texte": "Kysyttävää tietosuojasta? Kirjoita osoitteeseen [{contact}](contact)."
+      }
+    }
+  },
+  "mentions": {
+    "enCours": "Sivu on työn alla: hakasulkeissa olevat tiedot täydennetään ennen sovelluksen julkaisua.",
+    "champs": {
+      "nom": "Nimi tai toiminimi",
+      "statut": "Yritysmuoto",
+      "adresse": "Osoite",
+      "siret": "SIRET",
+      "email": "Sähköposti",
+      "directeur": "Etu- ja sukunimi",
+      "telephone": "Puhelin",
+      "societe": "Yritys"
+    },
+    "sections": {
+      "editeur": {
+        "titre": "Sivuston ja sovelluksen julkaisija"
+      },
+      "directeur": {
+        "titre": "Vastaava julkaisija"
+      },
+      "hebergeur": {
+        "titre": "Palvelin",
+        "texte": "Tätä sivustoa ylläpitää GitHub Pages.",
+        "adresse": "88 Colin P. Kelly Jr. St., San Francisco, CA 94107, Yhdysvallat"
+      },
+      "propriete": {
+        "titre": "Immateriaalioikeudet",
+        "texte": "Nimi Ulti, sen logo, tämän sivuston tekstit ja ulkoasu ovat julkaisijan omaisuutta. Apple, Apple TV, iPhone, iPad, Mac ja App Store ovat Apple Inc:n tavaramerkkejä.\n\nNäkymissä esiintyvät elokuvat ja sarjat ovat [Blender Studion](blender) vapaita elokuvia (© Blender Foundation), jotka on julkaistu Creative Commons -lisenssillä (katso kuvien tekijät alempana). Näytetyt kanavat ovat keksittyjä."
+      },
+      "tmdb": {
+        "titre": "Elokuvien ja sarjojen tiedot",
+        "texte": "Sovelluksen julisteet ja juonikuvaukset ovat peräisin [The Movie Databasesta (TMDB)](tmdb). Tämä tuote käyttää TMDB:n rajapintaa, mutta TMDB ei ole hyväksynyt eikä sertifioinut sitä."
+      },
+      "contenus": {
+        "titre": "Sisältö",
+        "texte": "Ulti ei tarjoa kanavia eikä sisältöä. Sinulla on oltava omat lähteesi ja oikeus katsoa niitä."
+      },
+      "credits": {
+        "titre": "Kuvien tekijät",
+        "texte": "Tämän sivuston näkymät ovat sovelluksen oikeita kuvakaappauksia, jotka on tehty esittelylistalla: kanavat ja niiden ohjelmat ovat keksittyjä.\n\nSuorien lähetysten kuvat ovat otteita [Blender Studion](blender) elokuvista ilman muita muutoksia:\n\n• Big Buck Bunny (2008), © Blender Foundation, www.bigbuckbunny.org, lisenssi [CC BY 3.0](cc-by-3);\n• Elephants Dream (2006), © Blender Foundation / Netherlands Media Art Institute, www.elephantsdream.org, lisenssi [CC BY 2.5](cc-by-25);\n• Sintel (2010), © Blender Foundation, www.sintel.org, lisenssi [CC BY 3.0](cc-by-3);\n• Cosmos Laundromat (2015), © Blender Institute, gooseberry.blender.org, lisenssi [CC BY 4.0](cc-by-4).\n\nElokuvien julisteet ja juonikuvaukset: The Movie Database (TMDB)."
+      }
+    },
+    "blancs": {
+      "nom": "[NIMI]",
+      "statut": "[YRITYSMUOTO]",
+      "adresse": "[OSOITE]",
+      "siret": "[SIRET]",
+      "directeur": "[VASTAAVA JULKAISIJA]",
+      "telephone": "[PUHELIN]"
+    }
+  },
+  "erreur": {
+    "metaTitre": "Sivua ei löytynyt — Ulti",
+    "titre": "Tätä sivua ei ole.",
+    "texte": "Osoite voi olla kirjoitettu väärin, tai sivu on siirretty.",
+    "accueil": "Etusivulle",
+    "choix": "Valitse maa tai alue"
+  }
+}
