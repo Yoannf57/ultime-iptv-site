@@ -198,7 +198,8 @@
       "da-dk": "Vous êtes au Danemark ?",
       "fi-fi": "Vous êtes en Finlande ?",
       "es-es": "Vous êtes en Espagne ?",
-      "it-it": "Vous êtes en Italie ?"
+      "it-it": "Vous êtes en Italie ?",
+      "pt-br": "Vous êtes au Brésil ?"
     },
     "voir": {
       "fr-fr": "Voir le site pour la France",
@@ -220,7 +221,8 @@
       "da-dk": "Voir le site pour le Danemark (en danois)",
       "fi-fi": "Voir le site pour la Finlande (en finnois)",
       "es-es": "Voir le site pour l'Espagne (en espagnol)",
-      "it-it": "Voir le site pour l'Italie (en italien)"
+      "it-it": "Voir le site pour l'Italie (en italien)",
+      "pt-br": "Voir le site pour le Brésil (en portugais du Brésil)"
     }
   },
   "choix": {
