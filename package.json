@@ -9,7 +9,8 @@
     "verifier-textes": "node scripts/verifier-textes.mjs",
     "verifier-liens": "node scripts/verifier-liens.mjs",
     "captures": "node scripts/captures.mjs",
-    "importer-captures": "node scripts/importer-captures.mjs"
+    "importer-captures": "node scripts/importer-captures.mjs",
+    "captures-sections": "node scripts/captures-sections.mjs"
   },
   "dependencies": {
     "astro": "^7.4.5"

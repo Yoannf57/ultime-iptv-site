@@ -18,7 +18,7 @@ const pages = [
   { nom: "en", chemin: "en/", locale: "en-GB", fuseau: "Europe/London" },
   { nom: "choix", chemin: "pays/", locale: "fr-FR", fuseau: "Europe/Paris" },
   // Pages obligatoires (S3).
-  ...["support", "privacy", "legal"].flatMap((page) => [
+  ...["support", "privacy", "terms", "legal"].flatMap((page) => [
     { nom: `${page}-fr-fr`, chemin: `fr-fr/${page}/`, locale: "fr-FR", fuseau: "Europe/Paris" },
     { nom: `${page}-en`, chemin: `en/${page}/`, locale: "en-GB", fuseau: "Europe/London" },
   ]),
@@ -74,14 +74,14 @@ if (!process.argv.includes("--sans-captures")) {
   await page.emulateMedia({ reducedMotion: "reduce" });
   const etats = [
     { nom: "apercu", zone: ".apercu", boutons: '[data-cible="apercu"]' },
-    { nom: "visite", zone: "#visite", boutons: '[data-cible="visite"]' },
+    { nom: "visite", zone: "#visite", boutons: "[data-onglet]", attribut: "data-onglet" },
     { nom: "formule", zone: "#tarifs", boutons: '[data-cible="formule"]' },
   ];
   for (const e of etats) {
     const boutons = page.locator(e.boutons);
     for (let i = 0; i < (await boutons.count()); i++) {
       const b = boutons.nth(i);
-      const vue = await b.getAttribute("data-vue");
+      const vue = await b.getAttribute(e.attribut || "data-vue");
       await b.click();
       await page.waitForLoadState("networkidle");
       await page.waitForFunction((z) => [...document.querySelectorAll(z + " img")].every((i) => !i.checkVisibility() || (i.complete && i.naturalWidth > 0)), e.zone);
@@ -153,7 +153,14 @@ const cas = [
   { locale: "pt-PT", fuseau: "Europe/Lisbon", attendu: existe("pt-pt") ? "pt-pt/" : "en/" },
   { locale: "pt", fuseau: "America/Sao_Paulo", attendu: existe("pt-br") ? "pt-br/" : existe("pt-pt") ? "pt-pt/" : "en/" },
   { locale: "es-ES", fuseau: "Europe/Madrid", attendu: existe("es-es") ? "es-es/" : "en/" },
-  { locale: "es-MX", fuseau: "America/Mexico_City", attendu: existe("es-es") ? "es-es/" : "en/" },
+  { locale: "es-MX", fuseau: "America/Mexico_City", attendu: existe("es-mx") ? "es-mx/" : "es/" },
+  // Pays absents de la liste : page internationale de la langue (04/11/2026).
+  { locale: "es-AR", fuseau: "America/Argentina/Buenos_Aires", attendu: "es/" },
+  { locale: "fr-SN", fuseau: "Africa/Dakar", attendu: "fr/" },
+  { locale: "pt-AO", fuseau: "Africa/Luanda", attendu: "pt/" },
+  { locale: "de-LU", fuseau: "Europe/Luxembourg", attendu: existe("de-lu") ? "de-lu/" : "de/" },
+  { locale: "it-CH", fuseau: "Europe/Zurich", attendu: existe("it-ch") ? "it-ch/" : "it/" },
+  { locale: "en-AU", fuseau: "Australia/Sydney", attendu: existe("en-au") ? "en-au/" : "en/" },
   { locale: "fr-FR", fuseau: "Asia/Tokyo", attendu: "fr-fr/" },
   { locale: "fr-FR", fuseau: "Europe/Paris", attendu: "pays/", js: false, nom: "JavaScript coupé → la racine reste la page de choix" },
   { locale: "fr-FR", fuseau: "Europe/Paris", attendu: "en-gb/", deja: "en-gb", nom: "choix déjà enregistré (en-gb) → en-gb" },
