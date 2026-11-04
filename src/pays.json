@@ -4,8 +4,8 @@
     "fuseaux": ["Europe/Paris", "Europe/Monaco"],
     "devise": "EUR", "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 2.99, "annuel": 29.99, "vie": 49.99, "annuelParMois": 2.50, "remise": 16 },
-      "famille": { "mensuel": 3.99, "annuel": 39.99, "vie": 59.99, "annuelParMois": 3.33, "remise": 16 }
+      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
+      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
     }
   },
   {
@@ -13,8 +13,8 @@
     "fuseaux": ["Europe/Brussels"],
     "devise": "EUR", "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 2.99, "annuel": 29.99, "vie": 49.99, "annuelParMois": 2.50, "remise": 16 },
-      "famille": { "mensuel": 3.99, "annuel": 39.99, "vie": 59.99, "annuelParMois": 3.33, "remise": 16 }
+      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
+      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
     }
   },
   {
@@ -22,8 +22,8 @@
     "fuseaux": ["Europe/Luxembourg"],
     "devise": "EUR", "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 2.99, "annuel": 29.99, "vie": 49.99, "annuelParMois": 2.50, "remise": 16 },
-      "famille": { "mensuel": 3.99, "annuel": 39.99, "vie": 59.99, "annuelParMois": 3.33, "remise": 16 }
+      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
+      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
     }
   },
   {
@@ -41,8 +41,8 @@
     "fuseaux": ["Europe/Dublin"],
     "devise": "EUR", "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 2.99, "annuel": 29.99, "vie": 49.99, "annuelParMois": 2.50, "remise": 16 },
-      "famille": { "mensuel": 3.99, "annuel": 39.99, "vie": 59.99, "annuelParMois": 3.33, "remise": 16 }
+      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
+      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
     }
   },
   {

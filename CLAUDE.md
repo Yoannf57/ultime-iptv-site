@@ -196,12 +196,12 @@ une langue.
 
 ## 6. Contenu qui fait foi (au 03/11/2026, après-midi)
 
-**Formules et prix** (décidés par Yoann le 03/11/2026 vers 14 h, déjà en place dans App Store Connect ; France en pays
-de référence, TTC). Deux formules Premium :
-- **Solo** (pour soi, sans Partage familial) : **2,99 €/mois, 29,99 €/an, 49,99 € à vie**. Carte Annuel : badge
-  « −16 % » et « soit 2,50 € par mois ».
-- **Famille** (jusqu'à 6 personnes avec le Partage familial d'Apple) : **3,99 €/mois, 39,99 €/an, 59,99 € à vie**.
-  Carte Annuel : badge « −16 % » et « soit 3,33 € par mois ».
+**Formules et prix** (nouveaux prix décidés par Yoann le 04/11/2026 au matin ; France en pays de référence, TTC ;
+à revérifier dans App Store Connect). Deux formules Premium :
+- **Solo** (pour soi, sans Partage familial) : **1,99 €/mois, 19,99 €/an, 29,99 € à vie**. Carte Annuel : badge
+  « −16 % » et « soit 1,67 € par mois ».
+- **Famille** (jusqu'à 6 personnes avec le Partage familial d'Apple) : **2,99 €/mois, 29,99 €/an, 39,99 € à vie**.
+  Carte Annuel : badge « −16 % » et « soit 2,50 € par mois ».
 - Essai gratuit de 7 jours sur les quatre abonnements (mensuels et annuels), rien sur les achats à vie.
 - Section Tarifs : une carte « Gratuit » (0 €) à côté, puis un choix sobre **« Pour moi » / « Pour la famille »**
   au-dessus des offres payantes (« Pour moi » par défaut, vrais `<button>` avec `aria-pressed`, sans JavaScript : les
