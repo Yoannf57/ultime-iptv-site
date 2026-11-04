@@ -138,8 +138,16 @@ une langue.
    1. Grand visuel : petite ligne « Pour iPhone, iPad, Mac et Apple TV », l'accroche, une phrase, bouton App Store (ou
       « Bientôt »), puis **l'Apple TV au centre (écran flottant) et l'iPhone devant à droite, dans son cadre officiel**
       (décidé le 04/11/2026 : plus d'iPad ici). Pastilles Accueil · Direct · Guide TV · Profils qui changent les deux
-      écrans ; **aucune animation automatique** ici (la seule est la visite iPad, section 2 bis). Sur téléphone,
-      l'iPhone ferait moins de 200 px de haut (règle d'Apple pour le cadre) : il est masqué.
+      écrans. **Depuis le 04/11 à 22 h (demande de Yoann)** : les écrans défilent aussi tout seuls, comme la visite
+      iPad (même script `visite.js`, bouton Pause, arrêt au survol ou au clic), et les onglets dessinés dans la capture
+      de l'Apple TV sont cliquables (Accueil, Direct). Sur téléphone, l'iPhone ferait moins de 200 px de haut (règle
+      d'Apple pour le cadre) : il est masqué.
+      **Onglets cliquables dans les captures** : `npm run mesurer-onglets` (relancé par `importer-captures`) repère
+      les onglets dessinés dans les captures des 12 langues et écrit leurs positions (en %) dans
+      `src/donnees/onglets.json` ; `Zones.astro` y pose des boutons invisibles (souris et toucher ; au clavier, les
+      onglets sous l'écran font la même chose). Seulement les onglets qui ont une capture : Apple TV Accueil et
+      Direct (barres des écrans Accueil et Guide) ; iPad Accueil, Direct et Films et séries. L'iPhone n'est pas
+      cliquable.
       **Écrans cliquables** (demande de Yoann, 03/11/2026) : sur l'Apple TV, la barre Accueil · Direct · Replay ·
       Films · Séries change l'écran ; sur l'iPhone, la barre du bas (Accueil · Direct · Films · Séries). Petite phrase
       dessous : « Cliquez sur les écrans pour essayer l'app. » Dans le site final : une vraie capture par onglet (FR et
@@ -156,7 +164,8 @@ une langue.
       étape sautée ; à ajouter si la session de l'app en fait une). Un écran toutes les 4,5 s ; dessous : onglets
       (`<button aria-pressed>`, fine barre de progression), bouton Pause/Lecture, légende, « Avec Premium » sur les
       écrans Premium, puis « Aussi sur Mac avec puce Apple. » et les crédits Blender. Clic, clavier ou survol arrêtent
-      la visite (reprise après 10 s sans action) ; un toucher l'arrête sans reprise ; pause hors écran ou onglet
+      la visite (reprise après 10 s sans action) ; un toucher l'arrête sans reprise ; un clic sur un onglet dessiné
+      dans l'écran de l'iPad (Accueil, Direct, Films et séries) montre cet écran ; pause hors écran ou onglet
       caché ; rien ne bouge avec `prefers-reduced-motion`. Sans JavaScript : les écrans l'un sous l'autre.
       Code : `src/components/accueil/Visite.astro`, `src/scripts/visite.js`.
    3. Apple TV : appairage par QR code depuis l'iPhone (on ne tape rien à la télécommande), zapping, image dans l'image.
