@@ -1,6 +1,8 @@
 import liste from "../pays.json";
 
-export type Formule = { mensuel: number; annuel: number; vie: number; annuelParMois: number; remise: number };
+// Prix relevés dans App Store Connect (jamais convertis d'une autre monnaie). Un montant absent s'affiche
+// « Prix affiché dans l'App Store » ; remise et prix par mois ne s'affichent que s'ils sont écrits ici.
+export type Formule = { mensuel?: number; annuel?: number; vie?: number; annuelParMois?: number; remise?: number };
 export type Pays = {
   code: string;
   langue: string;
@@ -12,6 +14,7 @@ export type Pays = {
   devise: string | null;
   lienAppStore: string | null;
   prix: { solo: Formule; famille: Formule } | null;
+  taxesEnSus?: boolean;  // prix hors taxe de vente (États-Unis, Canada) : « Taxes applicables en sus. »
 };
 
 export const pays = liste as Pays[];
@@ -33,12 +36,15 @@ export function trouverPays(code: string): Pays {
 }
 
 // Formate un prix tel qu'il est écrit dans pays.json (jamais de conversion de monnaie).
+// Monnaies affichées toujours avec 2 décimales (comme l'App Store : £1.99, CHF 2.00) ; les autres (EUR, SEK, NOK,
+// DKK, MXN) sans décimales quand le montant est rond (29 kr, 39 $).
+const deuxDecimales = new Set(["GBP", "USD", "CAD", "CHF", "BRL", "AUD"]);
 export function formaterPrix(montant: number, p: Pays): string {
   if (!p.devise) throw new Error(`Pas de monnaie pour ${p.code}`);
-  const entier = Number.isInteger(montant);
+  // 0 (carte Gratuit) toujours sans décimales : « £0 », pas « £0.00 ».
+  const decimales = montant !== 0 && (deuxDecimales.has(p.devise) || !Number.isInteger(montant)) ? 2 : 0;
   return new Intl.NumberFormat(p.locale, {
-    style: "currency", currency: p.devise,
-    minimumFractionDigits: entier ? 0 : 2, maximumFractionDigits: entier ? 0 : 2,
+    style: "currency", currency: p.devise, minimumFractionDigits: decimales, maximumFractionDigits: decimales,
   }).format(montant);
 }
 

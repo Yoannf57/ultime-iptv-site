@@ -146,7 +146,8 @@
     "prixAppStore": "Hinnat näkyvät App Storessa",
     "memesFonctions": "Kaikki kolme Premium-vaihtoehtoa sisältävät samat toiminnot.",
     "noteTTC": "Hinnat sisältävät arvonlisäveron.",
-    "noteAppStore": "Maasi tarkka hinta näkyy App Storessa."
+    "noteAppStore": "Maasi tarkka hinta näkyy App Storessa.",
+    "noteHT": "Hintoihin lisätään mahdolliset verot."
   },
   "viePrivee": {
     "titre": "Mitään tietoja ei kerätä.",

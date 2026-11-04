@@ -146,7 +146,8 @@
     "prixAppStore": "Prisene vises i App Store",
     "memesFonctions": "Alle tre Premium-alternativene gir tilgang til de samme funksjonene.",
     "noteTTC": "Priser inkl. mva.",
-    "noteAppStore": "Den nøyaktige prisen for landet ditt vises i App Store."
+    "noteAppStore": "Den nøyaktige prisen for landet ditt vises i App Store.",
+    "noteHT": "Eventuelle avgifter kommer i tillegg."
   },
   "viePrivee": {
     "titre": "Ingen data samles inn.",

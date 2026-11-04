@@ -146,7 +146,8 @@
     "prixAppStore": "Prijzen staan in de App Store",
     "memesFonctions": "De drie Premium-formules geven toegang tot dezelfde functies.",
     "noteTTC": "Prijzen inclusief btw.",
-    "noteAppStore": "De exacte prijs voor jouw land staat in de App Store."
+    "noteAppStore": "De exacte prijs voor jouw land staat in de App Store.",
+    "noteHT": "Exclusief toepasselijke belastingen."
   },
   "viePrivee": {
     "titre": "Er worden geen gegevens verzameld.",

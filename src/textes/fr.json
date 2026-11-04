@@ -146,7 +146,8 @@
     "prixAppStore": "Prix affiché dans l'App Store",
     "memesFonctions": "Les trois formules Premium donnent accès aux mêmes fonctions.",
     "noteTTC": "Prix TTC.",
-    "noteAppStore": "Le prix exact de votre pays s'affiche dans l'App Store."
+    "noteAppStore": "Le prix exact de votre pays s'affiche dans l'App Store.",
+    "noteHT": "Taxes applicables en sus."
   },
   "viePrivee": {
     "titre": "Aucune donnée collectée.",

@@ -145,8 +145,9 @@
     "remise": "−{remise}%",
     "prixAppStore": "Price shown on the App Store",
     "memesFonctions": "All three Premium plans give access to the same features.",
-    "noteTTC": "Prices include VAT.",
-    "noteAppStore": "The exact price for your country is shown on the App Store."
+    "noteTTC": "Prices include tax.",
+    "noteAppStore": "The exact price for your country is shown on the App Store.",
+    "noteHT": "Plus applicable taxes."
   },
   "viePrivee": {
     "titre": "No data collected.",

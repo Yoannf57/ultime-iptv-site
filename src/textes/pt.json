@@ -146,7 +146,8 @@
     "prixAppStore": "Preços apresentados na App Store",
     "memesFonctions": "As três opções Premium dão acesso às mesmas funcionalidades.",
     "noteTTC": "Preços com IVA incluído.",
-    "noteAppStore": "O preço exato para o seu país aparece na App Store."
+    "noteAppStore": "O preço exato para o seu país aparece na App Store.",
+    "noteHT": "Impostos aplicáveis não incluídos."
   },
   "viePrivee": {
     "titre": "Nenhuns dados recolhidos.",

@@ -146,7 +146,8 @@
     "prixAppStore": "Preise im App Store",
     "memesFonctions": "Alle drei Premium-Varianten bieten dieselben Funktionen.",
     "noteTTC": "Preise inkl. MwSt.",
-    "noteAppStore": "Den genauen Preis für dein Land siehst du im App Store."
+    "noteAppStore": "Den genauen Preis für dein Land siehst du im App Store.",
+    "noteHT": "Zuzüglich anfallender Steuern."
   },
   "viePrivee": {
     "titre": "Keine Daten erfasst.",

@@ -146,7 +146,8 @@
     "prixAppStore": "Preços exibidos na App Store",
     "memesFonctions": "Os três planos Premium dão acesso aos mesmos recursos.",
     "noteTTC": "Preços com impostos incluídos.",
-    "noteAppStore": "O preço exato para o seu país aparece na App Store."
+    "noteAppStore": "O preço exato para o seu país aparece na App Store.",
+    "noteHT": "Impostos aplicáveis não incluídos."
   },
   "viePrivee": {
     "titre": "Nenhum dado coletado.",
