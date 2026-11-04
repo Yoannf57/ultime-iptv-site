@@ -192,7 +192,8 @@
       "nl-be": "Are you in Belgium?",
       "de-de": "Are you in Germany?",
       "de-at": "Are you in Austria?",
-      "de-ch": "Are you in Switzerland?"
+      "de-ch": "Are you in Switzerland?",
+      "sv-se": "Are you in Sweden?"
     },
     "voir": {
       "fr-fr": "View the site for France (in French)",
@@ -208,7 +209,8 @@
       "nl-be": "View the site for Belgium (in Dutch)",
       "de-de": "View the site for Germany (in German)",
       "de-at": "View the site for Austria (in German)",
-      "de-ch": "View the site for Switzerland (in German)"
+      "de-ch": "View the site for Switzerland (in German)",
+      "sv-se": "View the site for Sweden (in Swedish)"
     }
   },
   "choix": {

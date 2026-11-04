@@ -102,6 +102,11 @@
     "devise": "CHF", "lienAppStore": null, "prix": null
   },
   {
+    "code": "sv-se", "langue": "sv", "locale": "sv-SE", "region": "europe", "nom": "Sverige", "nomLangue": "Svenska",
+    "fuseaux": ["Europe/Stockholm"],
+    "devise": "SEK", "lienAppStore": null, "prix": null
+  },
+  {
     "code": "en", "langue": "en", "locale": "en", "region": "international", "nom": "International", "nomLangue": "English",
     "fuseaux": [],
     "devise": null, "lienAppStore": null, "prix": null

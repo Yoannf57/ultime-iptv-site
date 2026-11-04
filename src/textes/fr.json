@@ -192,7 +192,8 @@
       "nl-be": "Vous êtes en Belgique ?",
       "de-de": "Vous êtes en Allemagne ?",
       "de-at": "Vous êtes en Autriche ?",
-      "de-ch": "Vous êtes en Suisse ?"
+      "de-ch": "Vous êtes en Suisse ?",
+      "sv-se": "Vous êtes en Suède ?"
     },
     "voir": {
       "fr-fr": "Voir le site pour la France",
@@ -208,7 +209,8 @@
       "nl-be": "Voir le site pour la Belgique (en néerlandais)",
       "de-de": "Voir le site pour l'Allemagne (en allemand)",
       "de-at": "Voir le site pour l'Autriche (en allemand)",
-      "de-ch": "Voir le site pour la Suisse (en allemand)"
+      "de-ch": "Voir le site pour la Suisse (en allemand)",
+      "sv-se": "Voir le site pour la Suède (en suédois)"
     }
   },
   "choix": {
