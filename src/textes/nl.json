@@ -189,7 +189,10 @@
       "en-ca": "Ben je in Canada?",
       "en-us": "Ben je in de Verenigde Staten?",
       "nl-nl": "Ben je in Nederland?",
-      "nl-be": "Ben je in België?"
+      "nl-be": "Ben je in België?",
+      "de-de": "Ben je in Duitsland?",
+      "de-at": "Ben je in Oostenrijk?",
+      "de-ch": "Ben je in Zwitserland?"
     },
     "voir": {
       "fr-fr": "Bekijk de site voor Frankrijk (in het Frans)",
@@ -202,7 +205,10 @@
       "en-ca": "Bekijk de site voor Canada (in het Engels)",
       "en-us": "Bekijk de site voor de Verenigde Staten (in het Engels)",
       "nl-nl": "Bekijk de site voor Nederland",
-      "nl-be": "Bekijk de site voor België"
+      "nl-be": "Bekijk de site voor België",
+      "de-de": "Bekijk de site voor Duitsland (in het Duits)",
+      "de-at": "Bekijk de site voor Oostenrijk (in het Duits)",
+      "de-ch": "Bekijk de site voor Zwitserland (in het Duits)"
     }
   },
   "choix": {

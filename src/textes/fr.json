@@ -189,7 +189,10 @@
       "en-ca": "Vous êtes au Canada ?",
       "en-us": "Vous êtes aux États-Unis ?",
       "nl-nl": "Vous êtes aux Pays-Bas ?",
-      "nl-be": "Vous êtes en Belgique ?"
+      "nl-be": "Vous êtes en Belgique ?",
+      "de-de": "Vous êtes en Allemagne ?",
+      "de-at": "Vous êtes en Autriche ?",
+      "de-ch": "Vous êtes en Suisse ?"
     },
     "voir": {
       "fr-fr": "Voir le site pour la France",
@@ -202,7 +205,10 @@
       "en-ca": "Voir le site pour le Canada (en anglais)",
       "en-us": "Voir le site pour les États-Unis (en anglais)",
       "nl-nl": "Voir le site pour les Pays-Bas (en néerlandais)",
-      "nl-be": "Voir le site pour la Belgique (en néerlandais)"
+      "nl-be": "Voir le site pour la Belgique (en néerlandais)",
+      "de-de": "Voir le site pour l'Allemagne (en allemand)",
+      "de-at": "Voir le site pour l'Autriche (en allemand)",
+      "de-ch": "Voir le site pour la Suisse (en allemand)"
     }
   },
   "choix": {

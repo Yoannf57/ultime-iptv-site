@@ -79,6 +79,29 @@
     }
   },
   {
+    "code": "de-de", "langue": "de", "locale": "de-DE", "region": "europe", "nom": "Deutschland", "nomLangue": "Deutsch",
+    "fuseaux": ["Europe/Berlin", "Europe/Busingen"],
+    "devise": "EUR", "lienAppStore": null,
+    "prix": {
+      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
+      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+    }
+  },
+  {
+    "code": "de-at", "langue": "de", "locale": "de-AT", "region": "europe", "nom": "Österreich", "nomLangue": "Deutsch",
+    "fuseaux": ["Europe/Vienna"],
+    "devise": "EUR", "lienAppStore": null,
+    "prix": {
+      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
+      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+    }
+  },
+  {
+    "code": "de-ch", "langue": "de", "locale": "de-CH", "region": "europe", "nom": "Schweiz", "nomLangue": "Deutsch",
+    "fuseaux": ["Europe/Zurich"],
+    "devise": "CHF", "lienAppStore": null, "prix": null
+  },
+  {
     "code": "en", "langue": "en", "locale": "en", "region": "international", "nom": "International", "nomLangue": "English",
     "fuseaux": [],
     "devise": null, "lienAppStore": null, "prix": null
