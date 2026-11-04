@@ -1,0 +1,137 @@
+{
+  "_note": "End User License Agreement from ~/Developer/ultime-iptv/Notes/app-store/contrat-licence.md (written 04/11/2026, to be reviewed by a lawyer). {editeur} and {adresse} come from site.config.mjs (editeur.nom, editeur.adresse). Links: [label](target). Bold: **text**.",
+  "titre": "End User License Agreement — Ulti",
+  "articles": [
+    {
+      "titre": "1. Parties and acceptance",
+      "texte": "This Agreement is concluded between you and {editeur}, publisher of the Ulti application (the \"Publisher\"), and not with Apple Inc. (\"Apple\"). The Publisher, not Apple, is solely responsible for the application and its content. By downloading or using Ulti, you accept this Agreement."
+    },
+    {
+      "titre": "2. Purpose of the application",
+      "texte": "Ulti is a player: it plays the IPTV subscription you obtained yourself from a provider (Xtream Codes account or M3U link). **Ulti does not provide any channels, movies, series, playlists or logos.** You alone are responsible for the lawfulness of the source you enter and for respecting the rights in its content."
+    },
+    {
+      "titre": "3. License",
+      "texte": "The Publisher grants you a personal, non-exclusive, non-transferable license to use Ulti on any Apple-branded products that you own or control, as permitted by the Usage Rules set forth in the Apple Media Services Terms and Conditions; Ulti may also be accessed by other accounts associated with the purchaser via Family Sharing or volume purchasing. Except as provided in Section 9 for open-source libraries, you may not rent, lease, lend, sell, redistribute or sublicense Ulti."
+    },
+    {
+      "titre": "4. In-app purchases",
+      "texte": "Ulti Premium plans (subscriptions and lifetime access, Solo or Family) are sold through the App Store and governed by Apple's terms. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period, from your Apple Account settings."
+    },
+    {
+      "titre": "5. Maintenance and support",
+      "texte": "The Publisher is solely responsible for providing maintenance and support for Ulti (Account › Help, [contact@ultitv.com](contact)). Apple has no obligation whatsoever to furnish any maintenance and support services."
+    },
+    {
+      "titre": "6. Warranty",
+      "texte": "Ulti is provided \"as is\", to the extent permitted by applicable law. In the event of any failure of Ulti to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price, if any; to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever. Any other claims are the Publisher's sole responsibility. Your statutory rights under the law of your country (including the legal guarantee of conformity for consumers in the European Union) are not affected."
+    },
+    {
+      "titre": "7. Product claims",
+      "texte": "The Publisher, not Apple, is responsible for addressing any claims relating to Ulti or your use of it, including: (a) product liability claims; (b) any claim that Ulti fails to conform to any applicable legal or regulatory requirement; and (c) claims arising under consumer protection, privacy or similar legislation."
+    },
+    {
+      "titre": "8. Intellectual property",
+      "texte": "In the event of any third-party claim that Ulti or your possession and use of Ulti infringes that third party's intellectual property rights, the Publisher, not Apple, will be solely responsible for the investigation, defense, settlement and discharge of any such claim."
+    },
+    {
+      "titre": "9. Open-source libraries (LGPL)",
+      "texte": "Ulti contains VLCKit 3.7.3 and libVLC 3.0.23 (© VideoLAN and contributors), distributed under the GNU Lesser General Public License (LGPL), version 2.1 or later, as well as the libraries listed in the appendix. These libraries are provided as a separate library (dynamic framework), unmodified. **Notwithstanding Sections 3 and 10 and any other contrary provision of this Agreement, with respect to these libraries:**\n\n• you may modify them, and modify Ulti for your own use in order to relink it with a modified version of these libraries;\n• you are permitted to reverse engineer Ulti to the extent necessary to debug such modifications;\n• the complete corresponding source code is available: [VLCKit 3.7.3](vlckit) (tag 3.7.3) and [libVLC 3.0.23](vlc) (3.0.x branch, tag 3.0.23); the Publisher will also provide it on request at [contact@ultitv.com](contact) for at least three years;\n• the full text of the LGPL 2.1 is included in Ulti (Account › About › Licenses) and at [gnu.org](lgpl).\n\nThese rights are governed by the LGPL; nothing in this Agreement restricts them."
+    },
+    {
+      "titre": "10. Restrictions",
+      "texte": "Subject to Section 9, you may not copy (except as expressly permitted by this license), decompile, disassemble or modify Ulti, or attempt to derive its source code."
+    },
+    {
+      "titre": "11. Third-party services",
+      "texte": "Ulti uses The Movie Database (TMDB) to enrich movie and series details (\"This product uses the TMDB API but is not endorsed or certified by TMDB\"), through a Publisher relay that keeps no personal data. You must comply with the terms of any third-party service you use with Ulti, including those of your IPTV provider."
+    },
+    {
+      "titre": "12. Personal data",
+      "texte": "Ulti does not collect any personal data. Your login details stay in your devices' Keychain; sync goes through your own iCloud account. See the [privacy policy](privacy)."
+    },
+    {
+      "titre": "13. Legal compliance",
+      "texte": "You represent and warrant that (i) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a \"terrorist supporting\" country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties."
+    },
+    {
+      "titre": "14. Termination",
+      "texte": "This Agreement is effective until terminated. It terminates automatically if you fail to comply with its terms; you must then stop using Ulti. Section 9 survives for open-source libraries."
+    },
+    {
+      "titre": "15. Publisher contact",
+      "texte": "{editeur}, {adresse}, [contact@ultitv.com](contact)."
+    },
+    {
+      "titre": "16. Third-party beneficiary",
+      "texte": "Apple and Apple's subsidiaries are third-party beneficiaries of this Agreement, and upon your acceptance, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement against you as a third-party beneficiary."
+    },
+    {
+      "titre": "17. Governing law",
+      "texte": "French law, without prejudice to mandatory consumer protection provisions of your country of residence."
+    }
+  ],
+  "credits": {
+    "titre": "Appendix — credits for included libraries",
+    "intro": "Libraries included in Ulti (list taken from Account › About › Licenses; the complete list and exact licenses are in the VLCKit source code).",
+    "colonnes": [
+      "Library",
+      "License"
+    ],
+    "services": "Movie and series data: **The Movie Database (TMDB)** (posters, backdrops, summaries). \"This product uses the TMDB API but is not endorsed or certified by TMDB.\"",
+    "bibliotheques": [
+      [
+        "VLCKit 3.7.3 (MobileVLCKit, TVVLCKit), © VideoLAN",
+        "LGPL 2.1+"
+      ],
+      [
+        "libVLC 3.0.23 (VLC core and modules), © VideoLAN and contributors",
+        "LGPL 2.1+"
+      ],
+      [
+        "FFmpeg (libavcodec, libavformat, libavutil, libswscale), built without --enable-gpl",
+        "LGPL 2.1+"
+      ],
+      [
+        "libdvbpsi, libebml, libmatroska",
+        "LGPL 2.1+"
+      ],
+      [
+        "libzvbi (library)",
+        "LGPL 2+"
+      ],
+      [
+        "libsmb2, libnfs",
+        "LGPL 2.1+"
+      ],
+      [
+        "TagLib",
+        "LGPL 2.1 / MPL 1.1"
+      ],
+      [
+        "dav1d, libaom, libvpx",
+        "BSD"
+      ],
+      [
+        "Ogg, Vorbis, Opus, FLAC, Speex, Theora",
+        "BSD"
+      ],
+      [
+        "libarchive, libssh2, libupnp",
+        "BSD"
+      ],
+      [
+        "libass",
+        "ISC"
+      ],
+      [
+        "HarfBuzz, libxml2, libebur128",
+        "MIT"
+      ],
+      [
+        "libpng",
+        "libpng License"
+      ]
+    ]
+  }
+}

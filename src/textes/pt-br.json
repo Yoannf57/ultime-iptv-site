@@ -171,7 +171,8 @@
       "navigation": "Informações",
       "support": "Suporte",
       "privacy": "Privacidade",
-      "legal": "Informações legais"
+      "legal": "Informações legais",
+      "terms": "Termos de uso"
     }
   },
   "bandeau": {
@@ -255,6 +256,12 @@
       "metaTitre": "Informações legais — Ulti",
       "description": "Informações legais do site e do app Ulti.",
       "chapeau": "Quem publica o Ulti, quem hospeda este site e os direitos sobre o que é mostrado aqui. Em caso de divergência, prevalece a versão em francês desta página."
+    },
+    "terms": {
+      "titre": "Termos de uso",
+      "metaTitre": "Termos de uso — Ulti",
+      "description": "Termos de uso do Ulti: o contrato de licença de usuário final do app.",
+      "chapeau": "O contrato de licença que se aplica quando você usa o Ulti, além dos termos da App Store."
     }
   },
   "faqPlus": "Todas as perguntas na página de Suporte",
@@ -505,5 +512,9 @@
     "texte": "Talvez o endereço esteja errado, ou a página tenha mudado de lugar.",
     "accueil": "Voltar ao início",
     "choix": "Escolher um país ou região"
+  },
+  "conditions": {
+    "enCours": "Contrato em revisão: as informações entre colchetes serão preenchidas antes do lançamento do app.",
+    "enAnglais": "Este contrato está disponível em inglês."
   }
 }

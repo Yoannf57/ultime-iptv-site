@@ -171,7 +171,8 @@
       "navigation": "Informatie",
       "support": "Support",
       "privacy": "Privacy",
-      "legal": "Juridische informatie"
+      "legal": "Juridische informatie",
+      "terms": "Gebruiksvoorwaarden"
     }
   },
   "bandeau": {
@@ -255,6 +256,12 @@
       "metaTitre": "Juridische informatie — Ulti",
       "description": "Juridische informatie over de website en de app Ulti.",
       "chapeau": "Wie Ulti uitgeeft, wie deze website host, en de rechten op wat hier wordt getoond. Bij verschillen is de Franse versie van deze pagina leidend."
+    },
+    "terms": {
+      "titre": "Gebruiksvoorwaarden",
+      "metaTitre": "Gebruiksvoorwaarden — Ulti",
+      "description": "Gebruiksvoorwaarden van Ulti: de licentieovereenkomst voor eindgebruikers van de app.",
+      "chapeau": "De licentieovereenkomst die geldt wanneer je Ulti gebruikt, naast de voorwaarden van de App Store."
     }
   },
   "faqPlus": "Alle vragen op de supportpagina",
@@ -505,5 +512,9 @@
     "texte": "Misschien is het adres verkeerd getypt, of is de pagina verplaatst.",
     "accueil": "Terug naar home",
     "choix": "Kies een land of regio"
+  },
+  "conditions": {
+    "enCours": "Overeenkomst in herziening: de gegevens tussen haken worden aangevuld voordat de app verschijnt.",
+    "enAnglais": "Deze overeenkomst is beschikbaar in het Engels."
   }
 }

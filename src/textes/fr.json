@@ -171,7 +171,8 @@
       "navigation": "Informations",
       "support": "Support",
       "privacy": "Confidentialité",
-      "legal": "Mentions légales"
+      "legal": "Mentions légales",
+      "terms": "Conditions d'utilisation"
     }
   },
   "bandeau": {
@@ -255,6 +256,12 @@
       "metaTitre": "Mentions légales — Ulti",
       "description": "Mentions légales du site et de l'app Ulti.",
       "chapeau": "Qui édite Ulti, qui héberge ce site, et les droits sur ce qui y est montré."
+    },
+    "terms": {
+      "titre": "Conditions d'utilisation",
+      "metaTitre": "Conditions d'utilisation — Ulti",
+      "description": "Conditions d'utilisation d'Ulti : le contrat de licence de l'utilisateur final de l'app.",
+      "chapeau": "Le contrat de licence qui s'applique quand vous utilisez Ulti, en plus des conditions de l'App Store."
     }
   },
   "faqPlus": "Toutes les questions sur la page Support",
@@ -505,5 +512,9 @@
     "texte": "L'adresse est peut-être mal écrite, ou la page a été déplacée.",
     "accueil": "Retour à l'accueil",
     "choix": "Choisir un pays ou une région"
+  },
+  "conditions": {
+    "enCours": "Contrat en cours de relecture : les informations entre crochets seront complétées avant la sortie de l'app.",
+    "enAnglais": "Ce contrat est proposé en anglais."
   }
 }

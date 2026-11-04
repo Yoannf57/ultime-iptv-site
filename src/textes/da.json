@@ -171,7 +171,8 @@
       "navigation": "Information",
       "support": "Support",
       "privacy": "Anonymitet",
-      "legal": "Juridiske oplysninger"
+      "legal": "Juridiske oplysninger",
+      "terms": "Brugsbetingelser"
     }
   },
   "bandeau": {
@@ -255,6 +256,12 @@
       "metaTitre": "Juridiske oplysninger — Ulti",
       "description": "Juridiske oplysninger om webstedet og appen Ulti.",
       "chapeau": "Hvem der udgiver Ulti, hvem der hoster webstedet, og rettighederne til det, der vises her. Ved uoverensstemmelser gælder den franske version af siden."
+    },
+    "terms": {
+      "titre": "Brugsbetingelser",
+      "metaTitre": "Brugsbetingelser — Ulti",
+      "description": "Brugsbetingelser for Ulti: appens licensaftale for slutbrugere.",
+      "chapeau": "Licensaftalen, der gælder, når du bruger Ulti, ud over betingelserne for App Store."
     }
   },
   "faqPlus": "Alle spørgsmål på supportsiden",
@@ -505,5 +512,9 @@
     "texte": "Adressen er måske stavet forkert, eller siden er blevet flyttet.",
     "accueil": "Til forsiden",
     "choix": "Vælg land eller område"
+  },
+  "conditions": {
+    "enCours": "Aftalen gennemgås: Oplysningerne i kantede parenteser udfyldes, før appen udkommer.",
+    "enAnglais": "Denne aftale findes på engelsk."
   }
 }

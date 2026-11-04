@@ -171,7 +171,8 @@
       "navigation": "Tietoa",
       "support": "Tuki",
       "privacy": "Tietosuoja",
-      "legal": "Oikeudelliset tiedot"
+      "legal": "Oikeudelliset tiedot",
+      "terms": "Käyttöehdot"
     }
   },
   "bandeau": {
@@ -255,6 +256,12 @@
       "metaTitre": "Oikeudelliset tiedot — Ulti",
       "description": "Ulti-sivuston ja -sovelluksen oikeudelliset tiedot.",
       "chapeau": "Kuka julkaisee Ultin, kuka ylläpitää tätä sivustoa ja oikeudet täällä näytettyyn sisältöön. Ristiriitatilanteissa sivun ranskankielinen versio on ratkaiseva."
+    },
+    "terms": {
+      "titre": "Käyttöehdot",
+      "metaTitre": "Käyttöehdot — Ulti",
+      "description": "Ultin käyttöehdot: sovelluksen loppukäyttäjän lisenssisopimus.",
+      "chapeau": "Lisenssisopimus, jota sovelletaan, kun käytät Ultia, App Storen ehtojen lisäksi."
     }
   },
   "faqPlus": "Kaikki kysymykset tukisivulla",
@@ -505,5 +512,9 @@
     "texte": "Osoite voi olla kirjoitettu väärin, tai sivu on siirretty.",
     "accueil": "Etusivulle",
     "choix": "Valitse maa tai alue"
+  },
+  "conditions": {
+    "enCours": "Sopimus on tarkistettavana: hakasulkeissa olevat tiedot täydennetään ennen sovelluksen julkaisua.",
+    "enAnglais": "Tämä sopimus on saatavilla englanniksi."
   }
 }

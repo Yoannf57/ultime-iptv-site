@@ -28,11 +28,19 @@ export function t(langue: string, cle: string, valeurs: Record<string, string> =
 // Texte avec liens : t() puis « [libellé](cible) » devient un lien. « cibles » donne l'adresse de chaque cible
 // (ex. { contact: "mailto:…", privacy: "/fr-fr/privacy/" }). Le texte est échappé avant : à afficher avec set:html.
 export function tHtml(langue: string, cle: string, cibles: Record<string, string> = {}, valeurs: Record<string, string> = {}): string {
-  const echappe = t(langue, cle, valeurs).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-  return echappe.replace(/\[([^\]]+)\]\(([\w-]+)\)/g, (_, libelle, cible) => {
-    const adresse = cibles[cible];
-    if (!adresse) throw new Error(`Lien « ${cible} » inconnu dans « ${cle} » (${langue}).`);
-    const externe = /^https?:/.test(adresse) ? ' rel="noopener"' : "";
-    return `<a href="${adresse.replace(/"/g, "&quot;")}"${externe}>${libelle}</a>`;
-  });
+  return enHtml(t(langue, cle, valeurs), cibles, `${cle} (${langue})`);
+}
+
+// Même chose pour un texte qui ne vient pas des fichiers de textes (ex. le contrat de licence) ;
+// « **texte** » devient du gras.
+export function enHtml(texte: string, cibles: Record<string, string> = {}, origine = "texte"): string {
+  const echappe = texte.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  return echappe
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\[([^\]]+)\]\(([\w-]+)\)/g, (_, libelle, cible) => {
+      const adresse = cibles[cible];
+      if (!adresse) throw new Error(`Lien « ${cible} » inconnu dans « ${origine} ».`);
+      const externe = /^https?:/.test(adresse) ? ' rel="noopener"' : "";
+      return `<a href="${adresse.replace(/"/g, "&quot;")}"${externe}>${libelle}</a>`;
+    });
 }

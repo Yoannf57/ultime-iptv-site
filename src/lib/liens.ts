@@ -19,7 +19,7 @@ export function lienAbsolu(chemin: string, site: URL | undefined): string {
 export { base };
 
 // Sous-pages d'un pays (mêmes noms dans toutes les langues, comme apple.com).
-export const sousPages = ["support", "privacy", "legal"] as const;
+export const sousPages = ["support", "privacy", "terms", "legal"] as const;
 export type SousPage = (typeof sousPages)[number];
 export function lienSousPage(code: string, page: SousPage): string {
   return lien(`${code}/${page}/`);
@@ -32,6 +32,7 @@ export function ciblesTextes(code: string, contact: string): Record<string, stri
     contact: `mailto:${contact}`,
     support: lienSousPage(code, "support"),
     privacy: lienSousPage(code, "privacy"),
+    terms: lienSousPage(code, "terms"),
     legal: lienSousPage(code, "legal"),
     accueil: lien(`${code}/`),
     tarifs: lien(`${code}/#tarifs`),

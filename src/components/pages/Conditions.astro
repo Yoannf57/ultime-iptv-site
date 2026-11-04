@@ -1,0 +1,71 @@
+---
+// Page Conditions d'utilisation (/<pays>/terms/) : le contrat de licence de l'utilisateur final (EULA) d'Ulti,
+// repris de ~/Developer/ultime-iptv/Notes/app-store/contrat-licence.md. Le contrat n'existe qu'en français et en
+// anglais (src/donnees/conditions/) : pages en français → version française, toutes les autres → version anglaise,
+// avec une phrase dans la langue de la page. Nom et adresse de l'éditeur : site.config.mjs (jamais devinés).
+import config from "../../../site.config.mjs";
+import Article from "./Article.astro";
+import Paragraphes from "./Paragraphes.astro";
+import { t, enHtml } from "../../lib/textes";
+import { ciblesTextes } from "../../lib/liens";
+import type { Pays } from "../../lib/pays";
+import fr from "../../donnees/conditions/fr.json";
+import en from "../../donnees/conditions/en.json";
+
+interface Props { p: Pays }
+const { p } = Astro.props;
+const l = p.langue;
+const versionFr = l === "fr";
+const contrat = versionFr ? fr : en;
+const lc = versionFr ? "fr" : "en"; // langue du contrat affiché
+const cibles = {
+  ...ciblesTextes(p.code, config.contact),
+  vlckit: "https://code.videolan.org/videolan/VLCKit",
+  vlc: "https://code.videolan.org/videolan/vlc",
+  lgpl: "https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html",
+};
+const e = config.editeur as Record<string, string | null>;
+const blanc = (champ: string) => `<span class="blanc">${t(lc, `mentions.blancs.${champ}`)}</span>`;
+const echapper = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const remplir = (html: string) => html
+  .replace(/\{editeur\}/g, e.nom ? echapper(e.nom) : blanc("nom"))
+  .replace(/\{adresse\}/g, e.adresse ? echapper(e.adresse) : blanc("adresse"));
+const blancs = !e.nom || !e.adresse;
+const ancre = (i: number) => `article-${i + 1}`;
+---
+<Article p={p} page="terms">
+  {blancs && <p class="en-cours" role="note">{t(l, "conditions.enCours")}</p>}
+  {!versionFr && l !== "en" && <p class="en-anglais" role="note">{t(l, "conditions.enAnglais")}</p>}
+  <div lang={lc} class="contrat">
+    <h2 class="titre-contrat">{contrat.titre}</h2>
+    {contrat.articles.map((a, i) => (
+      <section aria-labelledby={ancre(i)}>
+        <h3 id={ancre(i)}>{a.titre}</h3>
+        <Paragraphes html={remplir(enHtml(a.texte, cibles, `conditions/${lc} ${i + 1}`))} />
+      </section>
+    ))}
+    <section aria-labelledby="annexe">
+      <h3 id="annexe">{contrat.credits.titre}</h3>
+      <p>{contrat.credits.intro}</p>
+      <table>
+        <thead><tr>{contrat.credits.colonnes.map((c) => <th scope="col">{c}</th>)}</tr></thead>
+        <tbody>{contrat.credits.bibliotheques.map(([nom, licence]) => <tr><td>{nom}</td><td>{licence}</td></tr>)}</tbody>
+      </table>
+      <p set:html={enHtml(contrat.credits.services)} />
+    </section>
+  </div>
+</Article>
+
+<style>
+  .en-cours, .en-anglais { margin: 0 0 1rem; padding: 1rem 1.25rem; border: 1px solid #3a3a3e; border-radius: 1rem; font-size: 0.9375rem; color: #c7c7cc; }
+  .titre-contrat { margin-top: 2.5rem; }
+  h3 { margin: 2.25rem 0 0.75rem; font-size: 1.1875rem; font-weight: 700; scroll-margin-top: 5rem; }
+  .contrat :global(p), .contrat :global(ul) { font-size: 1.0625rem; line-height: 1.6; color: #c7c7cc; }
+  .contrat :global(strong) { color: #f5f5f7; }
+  .contrat :global(.blanc) { display: inline-block; padding: 0 0.5rem; border: 1px dashed #f5f5f7; border-radius: 0.375rem; font-weight: 700; color: #fff; background: #242428; }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 1.25rem; font-size: 0.9375rem; }
+  th, td { text-align: left; padding: 0.625rem 0.75rem 0.625rem 0; border-top: 1px solid #242428; vertical-align: top; }
+  th { color: #8e8e93; font-weight: 600; }
+  td { color: #c7c7cc; }
+  td:last-child, th:last-child { white-space: nowrap; padding-right: 0; }
+</style>
