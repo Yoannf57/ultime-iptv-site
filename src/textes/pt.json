@@ -207,7 +207,11 @@
       "es-es": "Está em Espanha?",
       "it-it": "Está em Itália?",
       "pt-br": "Está no Brasil?",
-      "pt-pt": "Está em Portugal?"
+      "pt-pt": "Está em Portugal?",
+      "de-lu": "Está no Luxemburgo?",
+      "it-ch": "Está na Suíça?",
+      "es-mx": "Está no México?",
+      "en-au": "Está na Austrália?"
     },
     "voir": {
       "fr-fr": "Ver o site para França (em francês)",
@@ -231,7 +235,11 @@
       "es-es": "Ver o site para Espanha (em espanhol)",
       "it-it": "Ver o site para Itália (em italiano)",
       "pt-br": "Ver o site para o Brasil (em português do Brasil)",
-      "pt-pt": "Ver o site para Portugal"
+      "pt-pt": "Ver o site para Portugal",
+      "de-lu": "Ver o site para o Luxemburgo (em alemão)",
+      "it-ch": "Ver o site para a Suíça (em italiano)",
+      "es-mx": "Ver o site para o México (em espanhol)",
+      "en-au": "Ver o site para a Austrália (em inglês)"
     }
   },
   "choix": {
@@ -239,7 +247,8 @@
     "regions": {
       "europe": "Europa",
       "ameriques": "Américas",
-      "international": "Internacional"
+      "international": "Internacional",
+      "asie-pacifique": "Ásia-Pacífico"
     }
   },
   "pages": {

@@ -207,7 +207,11 @@
       "es-es": "Bist du in Spanien?",
       "it-it": "Bist du in Italien?",
       "pt-br": "Bist du in Brasilien?",
-      "pt-pt": "Bist du in Portugal?"
+      "pt-pt": "Bist du in Portugal?",
+      "de-lu": "Bist du in Luxemburg?",
+      "it-ch": "Bist du in der Schweiz?",
+      "es-mx": "Bist du in Mexiko?",
+      "en-au": "Bist du in Australien?"
     },
     "voir": {
       "fr-fr": "Website für Frankreich ansehen (auf Französisch)",
@@ -231,7 +235,11 @@
       "es-es": "Website für Spanien ansehen (auf Spanisch)",
       "it-it": "Website für Italien ansehen (auf Italienisch)",
       "pt-br": "Website für Brasilien ansehen (auf brasilianischem Portugiesisch)",
-      "pt-pt": "Website für Portugal ansehen (auf Portugiesisch)"
+      "pt-pt": "Website für Portugal ansehen (auf Portugiesisch)",
+      "de-lu": "Website für Luxemburg ansehen",
+      "it-ch": "Website für die Schweiz ansehen (auf Italienisch)",
+      "es-mx": "Website für Mexiko ansehen (auf Spanisch)",
+      "en-au": "Website für Australien ansehen (auf Englisch)"
     }
   },
   "choix": {
@@ -239,7 +247,8 @@
     "regions": {
       "europe": "Europa",
       "ameriques": "Amerika",
-      "international": "International"
+      "international": "International",
+      "asie-pacifique": "Asien-Pazifik"
     }
   },
   "pages": {

@@ -207,7 +207,11 @@
       "es-es": "Ben je in Spanje?",
       "it-it": "Ben je in Italië?",
       "pt-br": "Ben je in Brazilië?",
-      "pt-pt": "Ben je in Portugal?"
+      "pt-pt": "Ben je in Portugal?",
+      "de-lu": "Ben je in Luxemburg?",
+      "it-ch": "Ben je in Zwitserland?",
+      "es-mx": "Ben je in Mexico?",
+      "en-au": "Ben je in Australië?"
     },
     "voir": {
       "fr-fr": "Bekijk de site voor Frankrijk (in het Frans)",
@@ -231,7 +235,11 @@
       "es-es": "Bekijk de site voor Spanje (in het Spaans)",
       "it-it": "Bekijk de site voor Italië (in het Italiaans)",
       "pt-br": "Bekijk de site voor Brazilië (in het Braziliaans-Portugees)",
-      "pt-pt": "Bekijk de site voor Portugal (in het Portugees)"
+      "pt-pt": "Bekijk de site voor Portugal (in het Portugees)",
+      "de-lu": "Bekijk de site voor Luxemburg (in het Duits)",
+      "it-ch": "Bekijk de site voor Zwitserland (in het Italiaans)",
+      "es-mx": "Bekijk de site voor Mexico (in het Spaans)",
+      "en-au": "Bekijk de site voor Australië (in het Engels)"
     }
   },
   "choix": {
@@ -239,7 +247,8 @@
     "regions": {
       "europe": "Europa",
       "ameriques": "Amerika",
-      "international": "Internationaal"
+      "international": "Internationaal",
+      "asie-pacifique": "Azië-Pacific"
     }
   },
   "pages": {

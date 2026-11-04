@@ -285,6 +285,41 @@
     "prix": null
   },
   {
+    "code": "en-au",
+    "langue": "en",
+    "locale": "en-AU",
+    "region": "asie-pacifique",
+    "nom": "Australia",
+    "nomLangue": "English",
+    "fuseaux": [
+      "Australia/Sydney",
+      "Australia/Melbourne",
+      "Australia/Brisbane",
+      "Australia/Adelaide",
+      "Australia/Perth",
+      "Australia/Hobart",
+      "Australia/Darwin",
+      "Australia/Lord_Howe",
+      "Australia/Broken_Hill",
+      "Australia/Lindeman",
+      "Australia/Eucla",
+      "Australia/Currie",
+      "Australia/Canberra",
+      "Australia/ACT",
+      "Australia/NSW",
+      "Australia/Victoria",
+      "Australia/Queensland",
+      "Australia/South",
+      "Australia/West",
+      "Australia/Tasmania",
+      "Australia/North",
+      "Antarctica/Macquarie"
+    ],
+    "devise": "AUD",
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
     "code": "nl-nl",
     "langue": "nl",
     "locale": "nl-NL",
@@ -416,6 +451,35 @@
     "prix": null
   },
   {
+    "code": "de-lu",
+    "langue": "de",
+    "locale": "de-LU",
+    "region": "europe",
+    "nom": "Luxemburg",
+    "nomLangue": "Deutsch",
+    "fuseaux": [
+      "Europe/Luxembourg"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
+    "prix": {
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
+    }
+  },
+  {
     "code": "sv-se",
     "langue": "sv",
     "locale": "sv-SE",
@@ -520,6 +584,34 @@
     }
   },
   {
+    "code": "es-mx",
+    "langue": "es",
+    "locale": "es-MX",
+    "region": "ameriques",
+    "nom": "México",
+    "nomLangue": "Español",
+    "fuseaux": [
+      "America/Mexico_City",
+      "America/Cancun",
+      "America/Merida",
+      "America/Monterrey",
+      "America/Matamoros",
+      "America/Chihuahua",
+      "America/Ciudad_Juarez",
+      "America/Ojinaga",
+      "America/Mazatlan",
+      "America/Hermosillo",
+      "America/Tijuana",
+      "America/Bahia_Banderas",
+      "Mexico/General",
+      "Mexico/BajaNorte",
+      "Mexico/BajaSur"
+    ],
+    "devise": "MXN",
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
     "code": "it-it",
     "langue": "it",
     "locale": "it-IT",
@@ -547,6 +639,20 @@
         "remise": 16
       }
     }
+  },
+  {
+    "code": "it-ch",
+    "langue": "it",
+    "locale": "it-CH",
+    "region": "europe",
+    "nom": "Svizzera",
+    "nomLangue": "Italiano",
+    "fuseaux": [
+      "Europe/Zurich"
+    ],
+    "devise": "CHF",
+    "lienAppStore": null,
+    "prix": null
   },
   {
     "code": "pt-br",

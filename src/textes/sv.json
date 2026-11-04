@@ -207,7 +207,11 @@
       "es-es": "Är du i Spanien?",
       "it-it": "Är du i Italien?",
       "pt-br": "Är du i Brasilien?",
-      "pt-pt": "Är du i Portugal?"
+      "pt-pt": "Är du i Portugal?",
+      "de-lu": "Är du i Luxemburg?",
+      "it-ch": "Är du i Schweiz?",
+      "es-mx": "Är du i Mexiko?",
+      "en-au": "Är du i Australien?"
     },
     "voir": {
       "fr-fr": "Visa webbplatsen för Frankrike (på franska)",
@@ -231,7 +235,11 @@
       "es-es": "Visa webbplatsen för Spanien (på spanska)",
       "it-it": "Visa webbplatsen för Italien (på italienska)",
       "pt-br": "Visa webbplatsen för Brasilien (på brasiliansk portugisiska)",
-      "pt-pt": "Visa webbplatsen för Portugal (på portugisiska)"
+      "pt-pt": "Visa webbplatsen för Portugal (på portugisiska)",
+      "de-lu": "Visa webbplatsen för Luxemburg (på tyska)",
+      "it-ch": "Visa webbplatsen för Schweiz (på italienska)",
+      "es-mx": "Visa webbplatsen för Mexiko (på spanska)",
+      "en-au": "Visa webbplatsen för Australien (på engelska)"
     }
   },
   "choix": {
@@ -239,7 +247,8 @@
     "regions": {
       "europe": "Europa",
       "ameriques": "Amerika",
-      "international": "Internationellt"
+      "international": "Internationellt",
+      "asie-pacifique": "Asien och Stillahavsområdet"
     }
   },
   "pages": {

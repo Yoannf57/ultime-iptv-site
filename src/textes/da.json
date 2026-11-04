@@ -207,7 +207,11 @@
       "es-es": "Er du i Spanien?",
       "it-it": "Er du i Italien?",
       "pt-br": "Er du i Brasilien?",
-      "pt-pt": "Er du i Portugal?"
+      "pt-pt": "Er du i Portugal?",
+      "de-lu": "Er du i Luxembourg?",
+      "it-ch": "Er du i Schweiz?",
+      "es-mx": "Er du i Mexico?",
+      "en-au": "Er du i Australien?"
     },
     "voir": {
       "fr-fr": "Se webstedet for Frankrig (på fransk)",
@@ -231,7 +235,11 @@
       "es-es": "Se webstedet for Spanien (på spansk)",
       "it-it": "Se webstedet for Italien (på italiensk)",
       "pt-br": "Se webstedet for Brasilien (på brasiliansk portugisisk)",
-      "pt-pt": "Se webstedet for Portugal (på portugisisk)"
+      "pt-pt": "Se webstedet for Portugal (på portugisisk)",
+      "de-lu": "Se webstedet for Luxembourg (på tysk)",
+      "it-ch": "Se webstedet for Schweiz (på italiensk)",
+      "es-mx": "Se webstedet for Mexico (på spansk)",
+      "en-au": "Se webstedet for Australien (på engelsk)"
     }
   },
   "choix": {
@@ -239,7 +247,8 @@
     "regions": {
       "europe": "Europa",
       "ameriques": "Nord- og Sydamerika",
-      "international": "Internationalt"
+      "international": "Internationalt",
+      "asie-pacifique": "Asien og Stillehavsområdet"
     }
   },
   "pages": {

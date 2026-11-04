@@ -5,7 +5,7 @@ export type Pays = {
   code: string;
   langue: string;
   locale: string;
-  region: "europe" | "ameriques" | "international";
+  region: "europe" | "ameriques" | "asie-pacifique" | "international";
   nom: string;
   nomLangue: string;
   fuseaux: string[];
@@ -24,7 +24,7 @@ export function estInternational(p: Pays): boolean {
 export function hreflang(p: Pays): string {
   return estInternational(p) ? p.langue : p.locale;
 }
-export const regions = ["europe", "ameriques", "international"] as const;
+export const regions = ["europe", "ameriques", "asie-pacifique", "international"] as const;
 
 export function trouverPays(code: string): Pays {
   const p = pays.find((x) => x.code === code);

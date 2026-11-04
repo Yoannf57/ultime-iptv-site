@@ -207,7 +207,11 @@
       "es-es": "Você está na Espanha?",
       "it-it": "Você está na Itália?",
       "pt-br": "Você está no Brasil?",
-      "pt-pt": "Você está em Portugal?"
+      "pt-pt": "Você está em Portugal?",
+      "de-lu": "Você está em Luxemburgo?",
+      "it-ch": "Você está na Suíça?",
+      "es-mx": "Você está no México?",
+      "en-au": "Você está na Austrália?"
     },
     "voir": {
       "fr-fr": "Ver o site para a França (em francês)",
@@ -231,7 +235,11 @@
       "es-es": "Ver o site para a Espanha (em espanhol)",
       "it-it": "Ver o site para a Itália (em italiano)",
       "pt-br": "Ver o site para o Brasil",
-      "pt-pt": "Ver o site para Portugal (em português de Portugal)"
+      "pt-pt": "Ver o site para Portugal (em português de Portugal)",
+      "de-lu": "Ver o site para Luxemburgo (em alemão)",
+      "it-ch": "Ver o site para a Suíça (em italiano)",
+      "es-mx": "Ver o site para o México (em espanhol)",
+      "en-au": "Ver o site para a Austrália (em inglês)"
     }
   },
   "choix": {
@@ -239,7 +247,8 @@
     "regions": {
       "europe": "Europa",
       "ameriques": "Américas",
-      "international": "Internacional"
+      "international": "Internacional",
+      "asie-pacifique": "Ásia-Pacífico"
     }
   },
   "pages": {

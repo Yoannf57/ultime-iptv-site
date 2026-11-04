@@ -207,7 +207,11 @@
       "es-es": "Oletko Espanjassa?",
       "it-it": "Oletko Italiassa?",
       "pt-br": "Oletko Brasiliassa?",
-      "pt-pt": "Oletko Portugalissa?"
+      "pt-pt": "Oletko Portugalissa?",
+      "de-lu": "Oletko Luxemburgissa?",
+      "it-ch": "Oletko Sveitsissä?",
+      "es-mx": "Oletko Meksikossa?",
+      "en-au": "Oletko Australiassa?"
     },
     "voir": {
       "fr-fr": "Näytä Ranskan sivusto (ranskaksi)",
@@ -231,7 +235,11 @@
       "es-es": "Näytä Espanjan sivusto (espanjaksi)",
       "it-it": "Näytä Italian sivusto (italiaksi)",
       "pt-br": "Näytä Brasilian sivusto (Brasilian portugaliksi)",
-      "pt-pt": "Näytä Portugalin sivusto (portugaliksi)"
+      "pt-pt": "Näytä Portugalin sivusto (portugaliksi)",
+      "de-lu": "Näytä Luxemburgin sivusto (saksaksi)",
+      "it-ch": "Näytä Sveitsin sivusto (italiaksi)",
+      "es-mx": "Näytä Meksikon sivusto (espanjaksi)",
+      "en-au": "Näytä Australian sivusto (englanniksi)"
     }
   },
   "choix": {
@@ -239,7 +247,8 @@
     "regions": {
       "europe": "Eurooppa",
       "ameriques": "Amerikka",
-      "international": "Kansainvälinen"
+      "international": "Kansainvälinen",
+      "asie-pacifique": "Aasia ja Tyynenmeren alue"
     }
   },
   "pages": {

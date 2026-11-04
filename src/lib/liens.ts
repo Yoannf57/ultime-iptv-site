@@ -28,7 +28,10 @@ export function lienSousPage(code: string, page: SousPage): string {
 
 // Pays utilisé pour les pages d'aide d'Apple (support.apple.com/<pays>/…) : une page internationale prend le
 // premier pays de sa langue (« es » → « es-es »), l'anglais prend « en-us ».
+// « de-lu » : Apple n'a pas de pages d'aide en allemand pour le Luxembourg, on prend celles d'Allemagne.
+const remplacementsApple: Record<string, string> = { "de-lu": "de-de" };
 function codeApple(code: string): string {
+  if (remplacementsApple[code]) return remplacementsApple[code];
   const p = pays.find((x) => x.code === code);
   if (!p || p.region !== "international") return code;
   if (p.langue === "en") return "en-us";
