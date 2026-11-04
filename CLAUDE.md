@@ -5,8 +5,9 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 04/11/2026 (nouveaux prix ; vraies captures App Store sur l'accueil ; 10 langues de plus, textes
-à faire relire).
+Dernière mise à jour : 04/11/2026 au soir (page Conditions d'utilisation ; confidentialité avec le relais TMDB ; grand
+visuel Apple TV + iPhone et visite automatique sur iPad, dans les cadres officiels d'Apple ; « Ulti Premium » ; captures
+des 12 langues ; textes à faire relire).
 
 ## Nom de l'app (décidé par Yoann le 03/11/2026)
 
@@ -124,7 +125,10 @@ une langue.
    une app simple, prête à l'emploi, sans réglages compliqués.
    Sections, dans l'ordre :
    1. Grand visuel : petite ligne « Pour iPhone, iPad, Mac et Apple TV », l'accroche, une phrase, bouton App Store (ou
-      « Bientôt »), iPhone et Apple TV qui montrent l'app.
+      « Bientôt »), puis **l'Apple TV au centre (écran flottant) et l'iPhone devant à droite, dans son cadre officiel**
+      (décidé le 04/11/2026 : plus d'iPad ici). Pastilles Accueil · Direct · Guide TV · Profils qui changent les deux
+      écrans ; **aucune animation automatique** ici (la seule est la visite iPad, section 2 bis). Sur téléphone,
+      l'iPhone ferait moins de 200 px de haut (règle d'Apple pour le cadre) : il est masqué.
       **Écrans cliquables** (demande de Yoann, 03/11/2026) : sur l'Apple TV, la barre Accueil · Direct · Replay ·
       Films · Séries change l'écran ; sur l'iPhone, la barre du bas (Accueil · Direct · Films · Séries). Petite phrase
       dessous : « Cliquez sur les écrans pour essayer l'app. » Dans le site final : une vraie capture par onglet (FR et
@@ -133,14 +137,20 @@ une langue.
       sont chargées seulement au premier clic (sauf celle de l'accueil). Sur téléphone, l'iPhone est masqué et seule
       l'Apple TV reste cliquable.
    2. « Votre abonnement, enfin bien présenté » : direct avec anneaux d'avancement, guide TV, films et séries avec
-      affiches et résumés. La carte « Films et séries » porte une petite mention discrète « Premium ».
-   2 bis. **« Faites le tour. »** (ajouté le 03/11/2026) : un seul grand écran avec des onglets Direct · Guide TV ·
-      Replay · Films · Séries ; un clic change l'écran et la phrase dessous. Au clavier : vrais `<button>` avec
-      `aria-pressed`. Dans le site final, chaque onglet montre une **vraie capture** de l'app (Apple TV, liste de démo),
-      en français ou en anglais selon la page. Sans JavaScript : les cinq captures l'une sous l'autre.
+      affiches et résumés. La carte « Films et séries » porte une mention discrète « Avec Premium » (gris, sans
+      majuscules ni pastille).
+   2 bis. **« Faites le tour. »** (refait le 04/11/2026) : **démo automatique sur un seul iPad**, grand, de face, dans le
+      cadre officiel de l'iPad Pro 13" (immobile ; seul l'écran change, en fondu). Captures iPad dans l'ordre :
+      Accueil → Direct → Guide TV → Pause du direct → Films et séries → Profils (Multi-écran : pas de capture iPad,
+      étape sautée ; à ajouter si la session de l'app en fait une). Un écran toutes les 4,5 s ; dessous : onglets
+      (`<button aria-pressed>`, fine barre de progression), bouton Pause/Lecture, légende, « Avec Premium » sur les
+      écrans Premium, puis « Aussi sur Mac avec puce Apple. » et les crédits Blender. Clic, clavier ou survol arrêtent
+      la visite (reprise après 10 s sans action) ; un toucher l'arrête sans reprise ; pause hors écran ou onglet
+      caché ; rien ne bouge avec `prefers-reduced-motion`. Sans JavaScript : les écrans l'un sous l'autre.
+      Code : `src/components/accueil/Visite.astro`, `src/scripts/visite.js`.
    3. Apple TV : appairage par QR code depuis l'iPhone (on ne tape rien à la télécommande), zapping, image dans l'image.
    4. Famille : profils, profil Enfant avec code parental.
-   5. Premium : **films et séries** (affiches, résumés, reprises), pause du direct, replay, téléchargements, synchro
+   5. Ulti Premium (surtitre « Ulti Premium ») : **films et séries** (affiches, résumés, reprises), pause du direct, replay, téléchargements, synchro
       iCloud, plusieurs abonnements et profils, thèmes, et le multi-écran comme les autres fonctions (« jusqu'à 4
       directs à la fois (2 sur iPhone) »).
    6. « Prêt en une minute », 3 étapes : « Ajoutez votre abonnement » (collez le message du fournisseur, ou saisissez
@@ -156,6 +166,12 @@ une langue.
 2. **Support** : FAQ complète + adresse e-mail de contact : contact@ultitv.com.
 3. **Confidentialité** : reprendre le texte du dépôt de démonstration et de `Notes/confidentialite-app-store.md` (lecture
    seule), dans chaque langue.
+3 bis. **Conditions d'utilisation** (`/<pays>/terms/`, ajoutée le 04/11/2026) : le contrat de licence (EULA) d'Ulti,
+   repris de `~/Developer/ultime-iptv/Notes/app-store/contrat-licence.md` (à faire relire par un juriste), dans
+   `src/donnees/conditions/fr.json` et `en.json` : version française pour les pages en français, anglaise ailleurs
+   (avec « Ce contrat est proposé en anglais. » traduit). Nom et adresse de l'éditeur pris dans `site.config.mjs`
+   (« [À compléter] » tant qu'ils manquent). Adresses données à la session de l'app pour `PremiumView.termsURL` :
+   `https://yoannf57.github.io/ultime-iptv-site/fr-fr/terms/` et `…/en/terms/`.
 4. **Mentions légales** : modèle à compléter, **à valider par Yoann** (ne rien inventer sur son identité ni son statut).
 5. **Choisissez votre pays ou votre région**.
 6. Page 404 traduite.
@@ -176,8 +192,8 @@ une langue.
   `prefers-reduced-motion`).
 - **Faire ressortir les appareils sur le noir** (demande de Yoann, 03/11/2026) : léger halo de lumière blanche derrière
   les appareils (dégradé radial, 10 à 15 % d'opacité au centre), écrans lumineux (captures avec des affiches colorées
-  en haut d'écran), et un fin contour noir autour de l'iPhone quand il passe devant l'Apple TV. Le fond de page reste
-  noir, le texte reste blanc.
+  en haut d'écran). Rien n'est ajouté sur les cadres officiels d'Apple (ni contour, ni ombre, ni reflet ; le halo reste
+  derrière). Le fond de page reste noir, le texte reste blanc.
 - **Pas de cadre dessiné à la main** (Yoann trouve le cadre de la première maquette « pas très beau ») : soit des
   écrans qui flottent, aux coins arrondis, avec un liseré blanc très fin (comme la maquette actuelle), soit les cadres
   officiels des ressources marketing d'Apple, en respectant leurs règles. En S2, montrer les deux en captures et
@@ -186,7 +202,15 @@ une langue.
   contrat de licence (« App Store Marketing Artwork License ») réservé aux apps **déjà disponibles sur l'App Store**,
   à accepter par Yoann lui-même (titulaire du compte développeur) ; ne jamais l'accepter à sa place. Règles d'usage :
   image non modifiée, rien de caché (l'iPhone ne peut pas passer devant l'Apple TV), pas d'ombre ni de halo sur le
-  cadre, pas de cadre transformé en bouton, et uniquement de vraies captures de l'app. En attendant : écrans flottants. Badge App Store : uniquement le badge officiel d'Apple, dans la langue de la page, une fois
+  cadre, pas de cadre transformé en bouton, et uniquement de vraies captures de l'app.
+  **Depuis le 04/11/2026** : Yoann a téléchargé lui-même les cadres « iPhone 18 Pro - Black - Portrait » et
+  « iPad Pro (M5) 13" - Silver - Landscape » dans `Notes/cadres/` (ignoré par Git : les originaux ne vont pas dans le
+  dépôt public). `npm run importer-captures` en fait une version web réduite dans `src/assets/cadres/`.
+  `Cadre.astro` pose la capture sous la zone de l'écran (mesurée sur la transparence du cadre : iPhone 72, 69,
+  1206 × 2622 sur 1350 × 2760 ; iPad 124, 118, 2752 × 2064 sur 3000 × 2300), puis le cadre par-dessus, tel quel.
+  Cadre immobile (pas d'inclinaison, de zoom ni de glissé ; la section Visite apparaît par simple fondu), textes et
+  boutons à côté, jamais dessus, au moins 200 px de haut. Ne pas utiliser le cadre iPad 11" (écran au rapport 1,45,
+  pas celui des captures 4:3). L'Apple TV reste un écran flottant. Badge App Store : uniquement le badge officiel d'Apple, dans la langue de la page, une fois
   l'app publiée.
 - **Chaînes montrées sur le site : des marques inventées**, jamais une vraie chaîne (même gratuite ou publique : ce
   sont des marques déposées, et le site doit rester neutre). Celles de la maquette : Pellicule (cinéma), Le Fil et
@@ -209,8 +233,15 @@ une langue.
 - **Famille** (jusqu'à 6 personnes avec le Partage familial d'Apple) : **2,99 €/mois, 29,99 €/an, 39,99 € à vie**.
   Carte Annuel : badge « −16 % » et « soit 2,50 € par mois ».
 - Essai gratuit de 7 jours sur les quatre abonnements (mensuels et annuels), rien sur les achats à vie.
-- Section Tarifs : une carte « Gratuit » (0 €) à côté, puis un choix sobre **« Pour moi » / « Pour la famille »**
-  au-dessus des offres payantes (« Pour moi » par défaut, vrais `<button>` avec `aria-pressed`, sans JavaScript : les
+- **Nom du produit : « Ulti Premium »**, comme l'écran Premium de l'app : à la première mention d'une section (surtitre,
+  groupe et question du Support, confidentialité…), puis « Premium ». Jamais en majuscules, jamais « Tout Premium ».
+  Sur les fonctions et la visite : mention discrète « Avec Premium ».
+- Section Tarifs (04/11/2026) : quatre cartes **Gratuit · Premium mensuel · Premium annuel · Premium à vie** (ordre
+  naturel de chaque langue, mots de l'app : Monthly, Monatlich…). Textes : Gratuit « Le direct, le guide TV et ses
+  rappels, l'image dans l'image, l'Apple TV par QR code et un profil Enfant. » ; mensuel « Essai gratuit de 7 jours.
+  Résiliable à tout moment. » ; annuel « Soit {prix} par mois. Essai gratuit de 7 jours. » ; à vie « Un seul paiement,
+  sans abonnement. » ; sous les cartes « Les trois formules Premium donnent accès aux mêmes fonctions. ». Un choix sobre **« Pour moi » / « Pour la famille »**
+  au-dessus des trois cartes payantes (« Pour moi » par défaut, vrais `<button>` avec `aria-pressed`, sans JavaScript : les
   deux formules l'une sous l'autre). Ne plus écrire « Partage familial inclus » de façon générale : seulement pour la
   formule Famille.
 - Prix rangés dans `pays.json`, par pays et par formule. Pays en euros : les prix ci-dessus, à revérifier dans App Store
@@ -286,7 +317,7 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 - [x] S2 — Accueil
 - [x] S3 — Pages obligatoires
 - [ ] S4 — Captures et finitions : **vraies captures faites le 04/11/2026** (`npm run importer-captures` copie et
-  réduit celles de `~/Developer/ultime-iptv/Notes/app-store/captures/` ; `04-fiche-film` et `ipad/07-films-series`
-  écartées car elles montrent des photos de vraies personnes : à reprendre quand la session de l'app les aura refaites
-  sans visages). Langues sans captures propres : captures anglaises. Reste : image de partage par langue, Lighthouse,
-  relecture des traductions, puis `indexable: true`.
+  réduit celles de `~/Developer/ultime-iptv/Notes/app-store/captures/`, **dans les 12 langues** depuis le 04/11 au
+  soir ; `04-fiche-film` écartée car elle montre des photos de vraies personnes ; `ipad/07-films-series` reprise,
+  refaite sans la distribution). Une langue sans captures prend les anglaises. Cadres officiels d'Apple pour l'iPhone
+  et l'iPad. Reste : image de partage par langue, relecture des traductions, puis `indexable: true`.
