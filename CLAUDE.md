@@ -90,17 +90,28 @@ de S4, quand les textes et les captures sont définitifs.
 ### Adresses
 Une adresse par pays et langue, en minuscules : `/fr-fr/`, `/fr-be/`, `/fr-lu/`, `/fr-ch/`, `/fr-ca/`, `/en-gb/`,
 `/en-ie/`, `/en-us/`, `/en-ca/`, `/nl-nl/`, `/nl-be/`, `/de-de/`, `/de-at/`, `/de-ch/`, `/sv-se/`, `/nb-no/`, `/da-dk/`,
-`/fi-fi/`, `/es-es/`, `/it-it/`, `/pt-br/`, `/pt-pt/`, et `/en/` pour « International (English) ».
+`/fi-fi/`, `/es-es/`, `/it-it/`, `/pt-br/`, `/pt-pt/`, et depuis le 04/11/2026 au soir `/de-lu/` (euros), `/it-ch/`,
+`/es-mx/`, `/en-au/` (région « Asie-Pacifique »).
+**Pages internationales, une par langue** (04/11/2026) : `/en/`, `/fr/`, `/nl/`, `/de/`, `/sv/`, `/nb/`, `/da/`, `/fi/`,
+`/es/`, `/it/`, `/pt/` (portugais d'Europe, pour l'Angola, le Mozambique…) : `region: "international"` dans
+`pays.json`, sans prix (« Prix affiché dans l'App Store ») ni bandeau ; dans la page de choix, région
+« International », une ligne par langue (« Español (Latinoamérica e internacional) »…).
 Fichiers de textes : `fr`, `en`, `nl`, `de`, `sv`, `nb`, `da`, `fi`, `es`, `it`, `pt-br`, `pt` (Portugal). La devinette
 du pays essaie l'étiquette complète du navigateur (`pt-br`) puis la langue seule (`pt`), et `no`/`nn` → `nb`.
-- Chaque page a ses balises `hreflang` vers toutes les autres versions, plus `x-default` vers `/en/`.
+- Chaque page a ses balises `hreflang` vers toutes les autres versions (langue seule pour une page internationale :
+  `es`, `fr`…), plus `x-default` vers `/en/`.
 - Les pays dont la langue n'est pas encore traduite **n'apparaissent pas** dans la liste : leurs visiteurs arrivent
-  sur `/en/`. Un Mexicain ou un Argentin arrive sur `/es-es/` (seul pays hispanophone, prix en euros) avec le bandeau.
+  sur `/en/`. Un pays absent mais dont la langue existe mène à la page internationale de la langue, sans bandeau :
+  Argentine → `/es/`, Sénégal → `/fr/`, Angola → `/pt/` (`deviner-pays.js`, testé par `npm run captures --
+  --sans-captures`). Les pays déjà présents ne changent pas (fr-FR → `/fr-fr/`, es-MX → `/es-mx/`…).
+- Aide d'Apple (support.apple.com/<pays>) : une page internationale prend le premier pays de sa langue (`es` →
+  `es-es`, `en` → `en-us`) ; `de-lu` prend `de-de`.
 - Page de choix et 404 : titres en français et en anglais seulement (12 langues seraient illisibles) ; chaque pays reste
   écrit dans sa langue ; sur la 404, la langue du visiteur s'ajoute en premier.
 
 ### Langues suivantes
-- Faites le 04/11/2026 : I2a (nl, de), I2b (sv, nb, da, fi), I2c (es, it, pt-br, pt). `de-lu` pas ajouté (pas demandé).
+- Faites le 04/11/2026 : I2a (nl, de), I2b (sv, nb, da, fi), I2c (es, it, pt-br, pt) ; le soir, pays `de-lu`, `it-ch`,
+  `es-mx`, `en-au` et pages internationales par langue.
 - Plus tard : turc, polonais, arabe (mise en page de droite à gauche : prévoir `dir="rtl"` dès maintenant dans la
   structure, sans le tester tout de suite).
 
@@ -244,8 +255,18 @@ une langue.
   au-dessus des trois cartes payantes (« Pour moi » par défaut, vrais `<button>` avec `aria-pressed`, sans JavaScript : les
   deux formules l'une sous l'autre). Ne plus écrire « Partage familial inclus » de façon générale : seulement pour la
   formule Famille.
-- Prix rangés dans `pays.json`, par pays et par formule. Pays en euros : les prix ci-dessus, à revérifier dans App Store
-  Connect au Lot 11. Autres monnaies : « Prix affiché dans l'App Store » tant que Yoann n'a pas relevé les prix exacts.
+- Prix rangés dans `pays.json`, par pays et par formule (`mensuel`, `annuel`, `vie`, `annuelParMois`, `remise`, chacun
+  facultatif : un montant absent s'affiche « Prix affiché dans l'App Store » ; badge et prix par mois seulement s'ils
+  sont écrits). Pays en euros : les prix ci-dessus, à revérifier dans App Store Connect au Lot 11.
+  **Autres monnaies, relevées dans App Store Connect le 04/11/2026** (Solo mensuel / annuel / à vie — Famille) :
+  GBP et USD 1.99 / 17.99 / 24.99 — 2.99 / 24.99 / 34.99 ; CAD 2.99 / 24.99 / 34.99 — 3.99 / 34.99 / 49.99 ;
+  CHF 2.00 / 15.00 / 20.00 — 3.00 / 20.00 / 30.00 ; SEK 29 / 229 / 299 — 39 / 299 / 499 ; NOK 29 / 229 / 299 —
+  39 / 299 / 449 ; DKK 19 / 149 / 199 — 29 / 199 / 299 ; BRL 12.90 / 119.90 / 149.90 — 19.90 / 149.90 / 229.90 ;
+  MXN 39 / 399 / 499 — 69 / 499 / 799 ; AUD 2.99 / 29.99 / 39.99 — 4.99 / 39.99 / 59.99. Remise = 1 − annuel /
+  (12 × mensuel) arrondie vers le bas, prix par mois = annuel / 12, calculés depuis ces vrais prix.
+  Format de la langue de la page (`Intl.NumberFormat`) : 2 décimales pour GBP, USD, CAD, CHF, BRL, AUD ; aucune pour
+  SEK, NOK, DKK, MXN (et l'euro) quand le montant est rond. « Prix TTC. » partout, sauf `en-us`, `en-ca`, `fr-ca`
+  (`taxesEnSus: true`) : « Taxes applicables en sus. ».
 - Ne jamais calculer un prix par conversion de monnaie.
 
 **Gratuit = le direct** (confirmé par Yoann le 03/11 en fin d'après-midi) : direct, guide TV et rappels, Mes contenus
