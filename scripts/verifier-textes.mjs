@@ -50,7 +50,7 @@ for (const p of pays) {
   if (!langues[p.langue]) problemes.push(`pays.json : « ${p.code} » utilise la langue « ${p.langue} », mais src/textes/${p.langue}.json n'existe pas`);
 }
 for (const langue of Object.keys(langues)) {
-  for (const p of pays.filter((x) => x.code !== "en")) {
+  for (const p of pays.filter((x) => x.region !== "international")) {
     for (const cle of [`bandeau.question.${p.code}`, `bandeau.voir.${p.code}`]) {
       if (!(cle in cles(langue))) problemes.push(`[${langue}] clé manquante : ${cle}`);
     }

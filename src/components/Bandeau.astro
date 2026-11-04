@@ -10,7 +10,7 @@ interface Props { langue: string; codePays: string }
 const { langue, codePays } = Astro.props;
 
 const propositions = Object.fromEntries(
-  pays.filter((p) => p.code !== "en").map((p) => [p.code, {
+  pays.filter((p) => p.region !== "international").map((p) => [p.code, {
     question: t(langue, `bandeau.question.${p.code}`),
     voir: t(langue, `bandeau.voir.${p.code}`),
     lien: lienPays(p.code),

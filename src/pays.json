@@ -1,165 +1,743 @@
 [
   {
-    "code": "fr-fr", "langue": "fr", "locale": "fr-FR", "region": "europe", "nom": "France", "nomLangue": "Français",
-    "fuseaux": ["Europe/Paris", "Europe/Monaco"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "fr-fr",
+    "langue": "fr",
+    "locale": "fr-FR",
+    "region": "europe",
+    "nom": "France",
+    "nomLangue": "Français",
+    "fuseaux": [
+      "Europe/Paris",
+      "Europe/Monaco"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "fr-be", "langue": "fr", "locale": "fr-BE", "region": "europe", "nom": "Belgique", "nomLangue": "Français",
-    "fuseaux": ["Europe/Brussels"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "fr-be",
+    "langue": "fr",
+    "locale": "fr-BE",
+    "region": "europe",
+    "nom": "Belgique",
+    "nomLangue": "Français",
+    "fuseaux": [
+      "Europe/Brussels"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "fr-lu", "langue": "fr", "locale": "fr-LU", "region": "europe", "nom": "Luxembourg", "nomLangue": "Français",
-    "fuseaux": ["Europe/Luxembourg"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "fr-lu",
+    "langue": "fr",
+    "locale": "fr-LU",
+    "region": "europe",
+    "nom": "Luxembourg",
+    "nomLangue": "Français",
+    "fuseaux": [
+      "Europe/Luxembourg"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "fr-ch", "langue": "fr", "locale": "fr-CH", "region": "europe", "nom": "Suisse", "nomLangue": "Français",
-    "fuseaux": ["Europe/Zurich"],
-    "devise": "CHF", "lienAppStore": null, "prix": null
+    "code": "fr-ch",
+    "langue": "fr",
+    "locale": "fr-CH",
+    "region": "europe",
+    "nom": "Suisse",
+    "nomLangue": "Français",
+    "fuseaux": [
+      "Europe/Zurich"
+    ],
+    "devise": "CHF",
+    "lienAppStore": null,
+    "prix": null
   },
   {
-    "code": "en-gb", "langue": "en", "locale": "en-GB", "region": "europe", "nom": "United Kingdom", "nomLangue": "English",
-    "fuseaux": ["Europe/London", "Europe/Belfast", "Europe/Guernsey", "Europe/Jersey", "Europe/Isle_of_Man"],
-    "devise": "GBP", "lienAppStore": null, "prix": null
+    "code": "en-gb",
+    "langue": "en",
+    "locale": "en-GB",
+    "region": "europe",
+    "nom": "United Kingdom",
+    "nomLangue": "English",
+    "fuseaux": [
+      "Europe/London",
+      "Europe/Belfast",
+      "Europe/Guernsey",
+      "Europe/Jersey",
+      "Europe/Isle_of_Man"
+    ],
+    "devise": "GBP",
+    "lienAppStore": null,
+    "prix": null
   },
   {
-    "code": "en-ie", "langue": "en", "locale": "en-IE", "region": "europe", "nom": "Ireland", "nomLangue": "English",
-    "fuseaux": ["Europe/Dublin"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "en-ie",
+    "langue": "en",
+    "locale": "en-IE",
+    "region": "europe",
+    "nom": "Ireland",
+    "nomLangue": "English",
+    "fuseaux": [
+      "Europe/Dublin"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "fr-ca", "langue": "fr", "locale": "fr-CA", "region": "ameriques", "nom": "Canada", "nomLangue": "Français",
-    "fuseaux": ["America/Toronto", "America/Montreal", "America/Vancouver", "America/Edmonton", "America/Winnipeg", "America/Regina", "America/Halifax", "America/Moncton", "America/St_Johns", "America/Whitehorse", "America/Yellowknife", "America/Iqaluit", "America/Glace_Bay", "America/Goose_Bay", "America/Swift_Current", "America/Dawson_Creek", "America/Creston", "America/Fort_Nelson", "America/Inuvik", "America/Cambridge_Bay", "America/Rankin_Inlet", "America/Resolute", "America/Atikokan", "America/Blanc-Sablon", "America/Nipigon", "America/Thunder_Bay", "America/Rainy_River", "America/Pangnirtung", "America/Dawson", "America/Coral_Harbour"],
-    "devise": "CAD", "lienAppStore": null, "prix": null
+    "code": "fr-ca",
+    "langue": "fr",
+    "locale": "fr-CA",
+    "region": "ameriques",
+    "nom": "Canada",
+    "nomLangue": "Français",
+    "fuseaux": [
+      "America/Toronto",
+      "America/Montreal",
+      "America/Vancouver",
+      "America/Edmonton",
+      "America/Winnipeg",
+      "America/Regina",
+      "America/Halifax",
+      "America/Moncton",
+      "America/St_Johns",
+      "America/Whitehorse",
+      "America/Yellowknife",
+      "America/Iqaluit",
+      "America/Glace_Bay",
+      "America/Goose_Bay",
+      "America/Swift_Current",
+      "America/Dawson_Creek",
+      "America/Creston",
+      "America/Fort_Nelson",
+      "America/Inuvik",
+      "America/Cambridge_Bay",
+      "America/Rankin_Inlet",
+      "America/Resolute",
+      "America/Atikokan",
+      "America/Blanc-Sablon",
+      "America/Nipigon",
+      "America/Thunder_Bay",
+      "America/Rainy_River",
+      "America/Pangnirtung",
+      "America/Dawson",
+      "America/Coral_Harbour"
+    ],
+    "devise": "CAD",
+    "lienAppStore": null,
+    "prix": null
   },
   {
-    "code": "en-ca", "langue": "en", "locale": "en-CA", "region": "ameriques", "nom": "Canada", "nomLangue": "English",
-    "fuseaux": ["America/Toronto", "America/Montreal", "America/Vancouver", "America/Edmonton", "America/Winnipeg", "America/Regina", "America/Halifax", "America/Moncton", "America/St_Johns", "America/Whitehorse", "America/Yellowknife", "America/Iqaluit", "America/Glace_Bay", "America/Goose_Bay", "America/Swift_Current", "America/Dawson_Creek", "America/Creston", "America/Fort_Nelson", "America/Inuvik", "America/Cambridge_Bay", "America/Rankin_Inlet", "America/Resolute", "America/Atikokan", "America/Blanc-Sablon", "America/Nipigon", "America/Thunder_Bay", "America/Rainy_River", "America/Pangnirtung", "America/Dawson", "America/Coral_Harbour"],
-    "devise": "CAD", "lienAppStore": null, "prix": null
+    "code": "en-ca",
+    "langue": "en",
+    "locale": "en-CA",
+    "region": "ameriques",
+    "nom": "Canada",
+    "nomLangue": "English",
+    "fuseaux": [
+      "America/Toronto",
+      "America/Montreal",
+      "America/Vancouver",
+      "America/Edmonton",
+      "America/Winnipeg",
+      "America/Regina",
+      "America/Halifax",
+      "America/Moncton",
+      "America/St_Johns",
+      "America/Whitehorse",
+      "America/Yellowknife",
+      "America/Iqaluit",
+      "America/Glace_Bay",
+      "America/Goose_Bay",
+      "America/Swift_Current",
+      "America/Dawson_Creek",
+      "America/Creston",
+      "America/Fort_Nelson",
+      "America/Inuvik",
+      "America/Cambridge_Bay",
+      "America/Rankin_Inlet",
+      "America/Resolute",
+      "America/Atikokan",
+      "America/Blanc-Sablon",
+      "America/Nipigon",
+      "America/Thunder_Bay",
+      "America/Rainy_River",
+      "America/Pangnirtung",
+      "America/Dawson",
+      "America/Coral_Harbour"
+    ],
+    "devise": "CAD",
+    "lienAppStore": null,
+    "prix": null
   },
   {
-    "code": "en-us", "langue": "en", "locale": "en-US", "region": "ameriques", "nom": "United States", "nomLangue": "English",
-    "fuseaux": ["America/New_York", "America/Chicago", "America/Denver", "America/Los_Angeles", "America/Phoenix", "America/Anchorage", "America/Juneau", "America/Sitka", "America/Nome", "America/Yakutat", "America/Metlakatla", "America/Adak", "America/Boise", "America/Detroit", "America/Menominee", "America/Indiana/Indianapolis", "America/Indiana/Knox", "America/Indiana/Marengo", "America/Indiana/Petersburg", "America/Indiana/Tell_City", "America/Indiana/Vevay", "America/Indiana/Vincennes", "America/Indiana/Winamac", "America/Kentucky/Louisville", "America/Kentucky/Monticello", "America/North_Dakota/Beulah", "America/North_Dakota/Center", "America/North_Dakota/New_Salem", "America/Puerto_Rico", "Pacific/Honolulu", "US/Eastern", "US/Central", "US/Mountain", "US/Pacific", "US/Alaska", "US/Hawaii", "US/Arizona"],
-    "devise": "USD", "lienAppStore": null, "prix": null
+    "code": "en-us",
+    "langue": "en",
+    "locale": "en-US",
+    "region": "ameriques",
+    "nom": "United States",
+    "nomLangue": "English",
+    "fuseaux": [
+      "America/New_York",
+      "America/Chicago",
+      "America/Denver",
+      "America/Los_Angeles",
+      "America/Phoenix",
+      "America/Anchorage",
+      "America/Juneau",
+      "America/Sitka",
+      "America/Nome",
+      "America/Yakutat",
+      "America/Metlakatla",
+      "America/Adak",
+      "America/Boise",
+      "America/Detroit",
+      "America/Menominee",
+      "America/Indiana/Indianapolis",
+      "America/Indiana/Knox",
+      "America/Indiana/Marengo",
+      "America/Indiana/Petersburg",
+      "America/Indiana/Tell_City",
+      "America/Indiana/Vevay",
+      "America/Indiana/Vincennes",
+      "America/Indiana/Winamac",
+      "America/Kentucky/Louisville",
+      "America/Kentucky/Monticello",
+      "America/North_Dakota/Beulah",
+      "America/North_Dakota/Center",
+      "America/North_Dakota/New_Salem",
+      "America/Puerto_Rico",
+      "Pacific/Honolulu",
+      "US/Eastern",
+      "US/Central",
+      "US/Mountain",
+      "US/Pacific",
+      "US/Alaska",
+      "US/Hawaii",
+      "US/Arizona"
+    ],
+    "devise": "USD",
+    "lienAppStore": null,
+    "prix": null
   },
   {
-    "code": "nl-nl", "langue": "nl", "locale": "nl-NL", "region": "europe", "nom": "Nederland", "nomLangue": "Nederlands",
-    "fuseaux": ["Europe/Amsterdam"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "nl-nl",
+    "langue": "nl",
+    "locale": "nl-NL",
+    "region": "europe",
+    "nom": "Nederland",
+    "nomLangue": "Nederlands",
+    "fuseaux": [
+      "Europe/Amsterdam"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "nl-be", "langue": "nl", "locale": "nl-BE", "region": "europe", "nom": "België", "nomLangue": "Nederlands",
-    "fuseaux": ["Europe/Brussels"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "nl-be",
+    "langue": "nl",
+    "locale": "nl-BE",
+    "region": "europe",
+    "nom": "België",
+    "nomLangue": "Nederlands",
+    "fuseaux": [
+      "Europe/Brussels"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "de-de", "langue": "de", "locale": "de-DE", "region": "europe", "nom": "Deutschland", "nomLangue": "Deutsch",
-    "fuseaux": ["Europe/Berlin", "Europe/Busingen"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "de-de",
+    "langue": "de",
+    "locale": "de-DE",
+    "region": "europe",
+    "nom": "Deutschland",
+    "nomLangue": "Deutsch",
+    "fuseaux": [
+      "Europe/Berlin",
+      "Europe/Busingen"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "de-at", "langue": "de", "locale": "de-AT", "region": "europe", "nom": "Österreich", "nomLangue": "Deutsch",
-    "fuseaux": ["Europe/Vienna"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "de-at",
+    "langue": "de",
+    "locale": "de-AT",
+    "region": "europe",
+    "nom": "Österreich",
+    "nomLangue": "Deutsch",
+    "fuseaux": [
+      "Europe/Vienna"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "de-ch", "langue": "de", "locale": "de-CH", "region": "europe", "nom": "Schweiz", "nomLangue": "Deutsch",
-    "fuseaux": ["Europe/Zurich"],
-    "devise": "CHF", "lienAppStore": null, "prix": null
+    "code": "de-ch",
+    "langue": "de",
+    "locale": "de-CH",
+    "region": "europe",
+    "nom": "Schweiz",
+    "nomLangue": "Deutsch",
+    "fuseaux": [
+      "Europe/Zurich"
+    ],
+    "devise": "CHF",
+    "lienAppStore": null,
+    "prix": null
   },
   {
-    "code": "sv-se", "langue": "sv", "locale": "sv-SE", "region": "europe", "nom": "Sverige", "nomLangue": "Svenska",
-    "fuseaux": ["Europe/Stockholm"],
-    "devise": "SEK", "lienAppStore": null, "prix": null
+    "code": "sv-se",
+    "langue": "sv",
+    "locale": "sv-SE",
+    "region": "europe",
+    "nom": "Sverige",
+    "nomLangue": "Svenska",
+    "fuseaux": [
+      "Europe/Stockholm"
+    ],
+    "devise": "SEK",
+    "lienAppStore": null,
+    "prix": null
   },
   {
-    "code": "nb-no", "langue": "nb", "locale": "nb-NO", "region": "europe", "nom": "Norge", "nomLangue": "Norsk",
-    "fuseaux": ["Europe/Oslo", "Arctic/Longyearbyen"],
-    "devise": "NOK", "lienAppStore": null, "prix": null
+    "code": "nb-no",
+    "langue": "nb",
+    "locale": "nb-NO",
+    "region": "europe",
+    "nom": "Norge",
+    "nomLangue": "Norsk",
+    "fuseaux": [
+      "Europe/Oslo",
+      "Arctic/Longyearbyen"
+    ],
+    "devise": "NOK",
+    "lienAppStore": null,
+    "prix": null
   },
   {
-    "code": "da-dk", "langue": "da", "locale": "da-DK", "region": "europe", "nom": "Danmark", "nomLangue": "Dansk",
-    "fuseaux": ["Europe/Copenhagen"],
-    "devise": "DKK", "lienAppStore": null, "prix": null
+    "code": "da-dk",
+    "langue": "da",
+    "locale": "da-DK",
+    "region": "europe",
+    "nom": "Danmark",
+    "nomLangue": "Dansk",
+    "fuseaux": [
+      "Europe/Copenhagen"
+    ],
+    "devise": "DKK",
+    "lienAppStore": null,
+    "prix": null
   },
   {
-    "code": "fi-fi", "langue": "fi", "locale": "fi-FI", "region": "europe", "nom": "Suomi", "nomLangue": "Suomi",
-    "fuseaux": ["Europe/Helsinki", "Europe/Mariehamn"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "fi-fi",
+    "langue": "fi",
+    "locale": "fi-FI",
+    "region": "europe",
+    "nom": "Suomi",
+    "nomLangue": "Suomi",
+    "fuseaux": [
+      "Europe/Helsinki",
+      "Europe/Mariehamn"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "es-es", "langue": "es", "locale": "es-ES", "region": "europe", "nom": "España", "nomLangue": "Español",
-    "fuseaux": ["Europe/Madrid", "Africa/Ceuta", "Atlantic/Canary"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "es-es",
+    "langue": "es",
+    "locale": "es-ES",
+    "region": "europe",
+    "nom": "España",
+    "nomLangue": "Español",
+    "fuseaux": [
+      "Europe/Madrid",
+      "Africa/Ceuta",
+      "Atlantic/Canary"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "it-it", "langue": "it", "locale": "it-IT", "region": "europe", "nom": "Italia", "nomLangue": "Italiano",
-    "fuseaux": ["Europe/Rome"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "it-it",
+    "langue": "it",
+    "locale": "it-IT",
+    "region": "europe",
+    "nom": "Italia",
+    "nomLangue": "Italiano",
+    "fuseaux": [
+      "Europe/Rome"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "pt-br", "langue": "pt-br", "locale": "pt-BR", "region": "ameriques", "nom": "Brasil", "nomLangue": "Português",
-    "fuseaux": ["America/Sao_Paulo", "America/Noronha", "America/Belem", "America/Fortaleza", "America/Recife", "America/Araguaina", "America/Maceio", "America/Bahia", "America/Campo_Grande", "America/Cuiaba", "America/Santarem", "America/Porto_Velho", "America/Boa_Vista", "America/Manaus", "America/Eirunepe", "America/Rio_Branco"],
-    "devise": "BRL", "lienAppStore": null, "prix": null
+    "code": "pt-br",
+    "langue": "pt-br",
+    "locale": "pt-BR",
+    "region": "ameriques",
+    "nom": "Brasil",
+    "nomLangue": "Português",
+    "fuseaux": [
+      "America/Sao_Paulo",
+      "America/Noronha",
+      "America/Belem",
+      "America/Fortaleza",
+      "America/Recife",
+      "America/Araguaina",
+      "America/Maceio",
+      "America/Bahia",
+      "America/Campo_Grande",
+      "America/Cuiaba",
+      "America/Santarem",
+      "America/Porto_Velho",
+      "America/Boa_Vista",
+      "America/Manaus",
+      "America/Eirunepe",
+      "America/Rio_Branco"
+    ],
+    "devise": "BRL",
+    "lienAppStore": null,
+    "prix": null
   },
   {
-    "code": "pt-pt", "langue": "pt", "locale": "pt-PT", "region": "europe", "nom": "Portugal", "nomLangue": "Português",
-    "fuseaux": ["Europe/Lisbon", "Atlantic/Madeira", "Atlantic/Azores"],
-    "devise": "EUR", "lienAppStore": null,
+    "code": "pt-pt",
+    "langue": "pt",
+    "locale": "pt-PT",
+    "region": "europe",
+    "nom": "Portugal",
+    "nomLangue": "Português",
+    "fuseaux": [
+      "Europe/Lisbon",
+      "Atlantic/Madeira",
+      "Atlantic/Azores"
+    ],
+    "devise": "EUR",
+    "lienAppStore": null,
     "prix": {
-      "solo":    { "mensuel": 1.99, "annuel": 19.99, "vie": 29.99, "annuelParMois": 1.67, "remise": 16 },
-      "famille": { "mensuel": 2.99, "annuel": 29.99, "vie": 39.99, "annuelParMois": 2.50, "remise": 16 }
+      "solo": {
+        "mensuel": 1.99,
+        "annuel": 19.99,
+        "vie": 29.99,
+        "annuelParMois": 1.67,
+        "remise": 16
+      },
+      "famille": {
+        "mensuel": 2.99,
+        "annuel": 29.99,
+        "vie": 39.99,
+        "annuelParMois": 2.5,
+        "remise": 16
+      }
     }
   },
   {
-    "code": "en", "langue": "en", "locale": "en", "region": "international", "nom": "International", "nomLangue": "English",
+    "code": "fr",
+    "langue": "fr",
+    "locale": "fr",
+    "region": "international",
+    "nom": "Français (international)",
+    "nomLangue": "Français",
     "fuseaux": [],
-    "devise": null, "lienAppStore": null, "prix": null
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
+    "code": "nl",
+    "langue": "nl",
+    "locale": "nl",
+    "region": "international",
+    "nom": "Nederlands (internationaal)",
+    "nomLangue": "Nederlands",
+    "fuseaux": [],
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
+    "code": "de",
+    "langue": "de",
+    "locale": "de",
+    "region": "international",
+    "nom": "Deutsch (international)",
+    "nomLangue": "Deutsch",
+    "fuseaux": [],
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
+    "code": "sv",
+    "langue": "sv",
+    "locale": "sv",
+    "region": "international",
+    "nom": "Svenska (internationellt)",
+    "nomLangue": "Svenska",
+    "fuseaux": [],
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
+    "code": "nb",
+    "langue": "nb",
+    "locale": "nb",
+    "region": "international",
+    "nom": "Norsk (internasjonalt)",
+    "nomLangue": "Norsk",
+    "fuseaux": [],
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
+    "code": "da",
+    "langue": "da",
+    "locale": "da",
+    "region": "international",
+    "nom": "Dansk (internationalt)",
+    "nomLangue": "Dansk",
+    "fuseaux": [],
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
+    "code": "fi",
+    "langue": "fi",
+    "locale": "fi",
+    "region": "international",
+    "nom": "Suomi (kansainvälinen)",
+    "nomLangue": "Suomi",
+    "fuseaux": [],
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
+    "code": "es",
+    "langue": "es",
+    "locale": "es",
+    "region": "international",
+    "nom": "Español (Latinoamérica e internacional)",
+    "nomLangue": "Español",
+    "fuseaux": [],
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
+    "code": "it",
+    "langue": "it",
+    "locale": "it",
+    "region": "international",
+    "nom": "Italiano (internazionale)",
+    "nomLangue": "Italiano",
+    "fuseaux": [],
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
+    "code": "pt",
+    "langue": "pt",
+    "locale": "pt",
+    "region": "international",
+    "nom": "Português (internacional)",
+    "nomLangue": "Português",
+    "fuseaux": [],
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
+  },
+  {
+    "code": "en",
+    "langue": "en",
+    "locale": "en",
+    "region": "international",
+    "nom": "English (international)",
+    "nomLangue": "English",
+    "fuseaux": [],
+    "devise": null,
+    "lienAppStore": null,
+    "prix": null
   }
 ]

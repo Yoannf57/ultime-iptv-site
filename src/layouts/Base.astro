@@ -1,7 +1,7 @@
 ---
 import config from "../../site.config.mjs";
 import { t } from "../lib/textes";
-import { pays } from "../lib/pays";
+import { pays, hreflang, estInternational, trouverPays } from "../lib/pays";
 import { lienAbsolu, lien } from "../lib/liens";
 import Bandeau from "../components/Bandeau.astro";
 import PiedDePage from "../components/PiedDePage.astro";
@@ -33,7 +33,7 @@ const sousChemin = typeof alternatives === "string" ? alternatives : "";
     {(!config.indexable || erreur) && <meta name="robots" content="noindex" />}
     {!erreur && <link rel="canonical" href={canonique} />}
     {alternatives && pays.map((p) => (
-      <link rel="alternate" hreflang={p.code === "en" ? "en" : p.locale} href={lienAbsolu(`${p.code}/${sousChemin}`, Astro.site)} />
+      <link rel="alternate" hreflang={hreflang(p)} href={lienAbsolu(`${p.code}/${sousChemin}`, Astro.site)} />
     ))}
     {alternatives && <link rel="alternate" hreflang="x-default" href={lienAbsolu(`en/${sousChemin}`, Astro.site)} />}
     <meta name="color-scheme" content="dark" />
@@ -42,7 +42,7 @@ const sousChemin = typeof alternatives === "string" ? alternatives : "";
     <slot name="tete" />
   </head>
   <body>
-    {codePays && <Bandeau langue={langue} codePays={codePays} />}
+    {codePays && !estInternational(trouverPays(codePays)) && <Bandeau langue={langue} codePays={codePays} />}
     <slot />
     <PiedDePage langue={langue} codePays={codePays} langues={languesPied} />
   </body>

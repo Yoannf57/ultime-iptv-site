@@ -21,7 +21,7 @@ export function getStaticPaths() {
 const { p } = Astro.props as { p: Pays };
 const l = p.langue;
 ---
-<Base langue={l} lang={p.code === "en" ? "en" : p.locale} titre={t(l, "meta.titre")} description={t(l, "meta.description")} chemin={`${p.code}/`} codePays={p.code} alternatives>
+<Base langue={l} lang={p.locale} titre={t(l, "meta.titre")} description={t(l, "meta.description")} chemin={`${p.code}/`} codePays={p.code} alternatives>
   <Entete langue={l} lienAppStore={p.lienAppStore} />
   <main id="haut">
     <Heros langue={l} lienAppStore={p.lienAppStore} />

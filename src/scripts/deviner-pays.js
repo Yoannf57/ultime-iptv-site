@@ -37,8 +37,8 @@ function devinerPays(liste) {
   try { fuseau = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) {}
 
   // Pays de la même langue, variantes comprises (« pt » et « pt-br ») ; ceux de la langue exacte d'abord.
-  var candidats = liste.filter(function (p) { return p.langue === langue; })
-    .concat(liste.filter(function (p) { return p.langue !== langue && base(p.langue) === base(langue); }));
+  var candidats = liste.filter(function (p) { return !p.international && p.langue === langue; })
+    .concat(liste.filter(function (p) { return !p.international && p.langue !== langue && base(p.langue) === base(langue); }));
   var parFuseau = null, parRegion = null;
   for (var j = 0; j < candidats.length; j++) {
     if (!parFuseau && fuseau && candidats[j].fuseaux.indexOf(fuseau) !== -1) parFuseau = candidats[j];
@@ -47,7 +47,10 @@ function devinerPays(liste) {
   if (parFuseau) return { code: parFuseau.code, sur: true, enregistre: false };
   if (parRegion) return { code: parRegion.code, sur: true, enregistre: false };
 
-  // Rien de sûr : version générique de la langue (« en ») ou, à défaut, le premier pays de la langue (« fr-fr »).
-  var generique = codes.indexOf(langue) !== -1 ? langue : candidats[0].code;
-  return { code: generique, sur: false, enregistre: false };
+  // Pays absent de la liste : page internationale de la langue (/fr/, /es/, /pt/…), sans prix ni bandeau.
+  for (var m = 0; m < liste.length; m++) {
+    if (liste[m].international && liste[m].langue === langue) return { code: liste[m].code, sur: true, enregistre: false };
+  }
+  // Sinon (ex. « pt-br » hors du Brésil) : le premier pays de la langue, sans certitude.
+  return { code: candidats[0].code, sur: false, enregistre: false };
 }

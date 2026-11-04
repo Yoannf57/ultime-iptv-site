@@ -16,6 +16,6 @@ const { p, page } = Astro.props as { p: Pays; page: SousPage };
 const l = p.langue;
 const Contenu = { support: Support, privacy: Confidentialite, terms: Conditions, legal: Mentions }[page];
 ---
-<Base langue={l} lang={p.code === "en" ? "en" : p.locale} titre={t(l, `pages.${page}.metaTitre`)} description={t(l, `pages.${page}.description`)} chemin={`${p.code}/${page}/`} codePays={p.code} alternatives={`${page}/`}>
+<Base langue={l} lang={p.locale} titre={t(l, `pages.${page}.metaTitre`)} description={t(l, `pages.${page}.description`)} chemin={`${p.code}/${page}/`} codePays={p.code} alternatives={`${page}/`}>
   <Contenu p={p} />
 </Base>

@@ -24,7 +24,7 @@ const langueLiens = p ? langue : "en";
       {p && (
         <a class="globe" href={lien("pays/")} aria-label={t(langue, "pied.changerPays", { pays: p.nom, langue: p.nomLangue })}>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="8" cy="8" r="6.5" /><path d="M1.5 8h13M8 1.5c2 2 2.8 4 2.8 6.5S10 12.5 8 14.5C6 12.5 5.2 10.5 5.2 8S6 3.5 8 1.5Z" /></svg>
-          <span lang={p.locale}>{p.nom} · {p.nomLangue}</span>
+          <span lang={p.locale}>{p.region === "international" ? p.nom : `${p.nom} · ${p.nomLangue}`}</span>
         </a>
       )}
     </div>

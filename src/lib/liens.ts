@@ -1,3 +1,4 @@
+import { pays } from "./pays";
 // Construit toutes les adresses internes à partir de la base du site
 // (« /ultime-iptv-site/ » sur GitHub Pages, « / » sur ultitv.com).
 // Ne jamais écrire href="/..." directement dans une page.
@@ -25,9 +26,18 @@ export function lienSousPage(code: string, page: SousPage): string {
   return lien(`${code}/${page}/`);
 }
 
+// Pays utilisé pour les pages d'aide d'Apple (support.apple.com/<pays>/…) : une page internationale prend le
+// premier pays de sa langue (« es » → « es-es »), l'anglais prend « en-us ».
+function codeApple(code: string): string {
+  const p = pays.find((x) => x.code === code);
+  if (!p || p.region !== "international") return code;
+  if (p.langue === "en") return "en-us";
+  return pays.find((x) => x.langue === p.langue && x.region !== "international")?.code ?? "en-us";
+}
+
 // Cibles des liens écrits dans les textes (« [libellé](cible) »), pour un pays donné.
 export function ciblesTextes(code: string, contact: string): Record<string, string> {
-  const apple = code === "en" ? "en-us" : code;
+  const apple = codeApple(code);
   return {
     contact: `mailto:${contact}`,
     support: lienSousPage(code, "support"),

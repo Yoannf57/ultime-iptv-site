@@ -15,6 +15,15 @@ export type Pays = {
 };
 
 export const pays = liste as Pays[];
+
+// Page internationale d'une langue (/en/, /fr/, /es/…) : sans prix ni bandeau, pour les pays absents de la liste.
+export function estInternational(p: Pays): boolean {
+  return p.region === "international";
+}
+// Code hreflang : la langue seule pour une page internationale (« es »), sinon la locale (« es-ES »).
+export function hreflang(p: Pays): string {
+  return estInternational(p) ? p.langue : p.locale;
+}
 export const regions = ["europe", "ameriques", "international"] as const;
 
 export function trouverPays(code: string): Pays {
@@ -34,4 +43,4 @@ export function formaterPrix(montant: number, p: Pays): string {
 }
 
 // Données minimales envoyées au navigateur pour deviner le pays.
-export const paysPourNavigateur = pays.map(({ code, langue, fuseaux }) => ({ code, langue, fuseaux }));
+export const paysPourNavigateur = pays.map(({ code, langue, fuseaux, region }) => ({ code, langue, fuseaux, international: region === "international" }));
