@@ -193,7 +193,8 @@
       "de-de": "Är du i Tyskland?",
       "de-at": "Är du i Österrike?",
       "de-ch": "Är du i Schweiz?",
-      "sv-se": "Är du i Sverige?"
+      "sv-se": "Är du i Sverige?",
+      "nb-no": "Är du i Norge?"
     },
     "voir": {
       "fr-fr": "Visa webbplatsen för Frankrike (på franska)",
@@ -210,7 +211,8 @@
       "de-de": "Visa webbplatsen för Tyskland (på tyska)",
       "de-at": "Visa webbplatsen för Österrike (på tyska)",
       "de-ch": "Visa webbplatsen för Schweiz (på tyska)",
-      "sv-se": "Visa webbplatsen för Sverige"
+      "sv-se": "Visa webbplatsen för Sverige",
+      "nb-no": "Visa webbplatsen för Norge (på norska)"
     }
   },
   "choix": {

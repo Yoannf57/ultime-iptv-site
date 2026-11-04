@@ -193,7 +193,8 @@
       "de-de": "Ben je in Duitsland?",
       "de-at": "Ben je in Oostenrijk?",
       "de-ch": "Ben je in Zwitserland?",
-      "sv-se": "Ben je in Zweden?"
+      "sv-se": "Ben je in Zweden?",
+      "nb-no": "Ben je in Noorwegen?"
     },
     "voir": {
       "fr-fr": "Bekijk de site voor Frankrijk (in het Frans)",
@@ -210,7 +211,8 @@
       "de-de": "Bekijk de site voor Duitsland (in het Duits)",
       "de-at": "Bekijk de site voor Oostenrijk (in het Duits)",
       "de-ch": "Bekijk de site voor Zwitserland (in het Duits)",
-      "sv-se": "Bekijk de site voor Zweden (in het Zweeds)"
+      "sv-se": "Bekijk de site voor Zweden (in het Zweeds)",
+      "nb-no": "Bekijk de site voor Noorwegen (in het Noors)"
     }
   },
   "choix": {

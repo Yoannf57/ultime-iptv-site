@@ -193,7 +193,8 @@
       "de-de": "Bist du in Deutschland?",
       "de-at": "Bist du in Österreich?",
       "de-ch": "Bist du in der Schweiz?",
-      "sv-se": "Bist du in Schweden?"
+      "sv-se": "Bist du in Schweden?",
+      "nb-no": "Bist du in Norwegen?"
     },
     "voir": {
       "fr-fr": "Website für Frankreich ansehen (auf Französisch)",
@@ -210,7 +211,8 @@
       "de-de": "Website für Deutschland ansehen",
       "de-at": "Website für Österreich ansehen",
       "de-ch": "Website für die Schweiz ansehen",
-      "sv-se": "Website für Schweden ansehen (auf Schwedisch)"
+      "sv-se": "Website für Schweden ansehen (auf Schwedisch)",
+      "nb-no": "Website für Norwegen ansehen (auf Norwegisch)"
     }
   },
   "choix": {

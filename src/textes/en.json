@@ -193,7 +193,8 @@
       "de-de": "Are you in Germany?",
       "de-at": "Are you in Austria?",
       "de-ch": "Are you in Switzerland?",
-      "sv-se": "Are you in Sweden?"
+      "sv-se": "Are you in Sweden?",
+      "nb-no": "Are you in Norway?"
     },
     "voir": {
       "fr-fr": "View the site for France (in French)",
@@ -210,7 +211,8 @@
       "de-de": "View the site for Germany (in German)",
       "de-at": "View the site for Austria (in German)",
       "de-ch": "View the site for Switzerland (in German)",
-      "sv-se": "View the site for Sweden (in Swedish)"
+      "sv-se": "View the site for Sweden (in Swedish)",
+      "nb-no": "View the site for Norway (in Norwegian)"
     }
   },
   "choix": {

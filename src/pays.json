@@ -107,6 +107,11 @@
     "devise": "SEK", "lienAppStore": null, "prix": null
   },
   {
+    "code": "nb-no", "langue": "nb", "locale": "nb-NO", "region": "europe", "nom": "Norge", "nomLangue": "Norsk",
+    "fuseaux": ["Europe/Oslo", "Arctic/Longyearbyen"],
+    "devise": "NOK", "lienAppStore": null, "prix": null
+  },
+  {
     "code": "en", "langue": "en", "locale": "en", "region": "international", "nom": "International", "nomLangue": "English",
     "fuseaux": [],
     "devise": null, "lienAppStore": null, "prix": null
