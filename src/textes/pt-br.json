@@ -53,7 +53,7 @@
     "guideTexte": "Hoje à noite, amanhã, a semana toda. Crie um lembrete com um gesto ou use seu próprio guia XMLTV.",
     "filmsTitre": "Filmes e séries, sem duplicatas",
     "filmsTexte": "Pôsteres e sinopses, todas as versões de um filme reunidas em uma só página, e continue de onde parou.",
-    "premium": "Premium"
+    "premium": "Com Premium"
   },
   "visite": {
     "titre": "Faça o tour.",
@@ -103,7 +103,7 @@
     "texte": "Um perfil por pessoa com o Premium, cada um com sua lista e seus pontos de retomada. O perfil Infantil, incluído na versão gratuita, não vê nenhum conteúdo adulto e só pode ser deixado com o código parental."
   },
   "premium": {
-    "surtitre": "Premium",
+    "surtitre": "Ulti Premium",
     "titre": "Ainda mais.",
     "films": "Filmes e séries, com pôsteres, sinopses e retomada",
     "pause": "Pausar e voltar a TV ao vivo",
@@ -125,25 +125,26 @@
   },
   "tarifs": {
     "titre": "Grátis para o essencial.",
-    "phrase": "A TV ao vivo é grátis. O Premium pode ser testado por 7 dias sem pagar.",
+    "phrase": "A TV ao vivo é grátis. Teste o Ulti Premium de graça por 7 dias.",
     "gratuitTitre": "Grátis",
-    "gratuitTexte": "TV ao vivo, guia de TV e lembretes, Picture in Picture, Apple TV por código QR, um perfil Infantil.",
+    "gratuitTexte": "A TV ao vivo, o guia de TV e seus lembretes, o Picture in Picture, a Apple TV por QR code e um perfil Infantil.",
     "choix": "Escolher um plano Premium",
     "pourMoi": "Para mim",
     "pourFamille": "Para a família",
     "soloLegende": "Individual: para você, em todos os seus dispositivos.",
     "familleLegende": "Família: até 6 pessoas com o Compartilhamento Familiar da Apple.",
-    "mensuel": "Mensal",
-    "annuel": "Anual",
-    "vie": "Vitalício",
+    "mensuel": "Premium mensal",
+    "annuel": "Premium anual",
+    "vie": "Premium vitalício",
     "parMois": "/ mês",
     "parAn": "/ ano",
-    "mensuelTexte": "Todo o Premium. 7 dias de teste grátis.",
-    "annuelTexte": "Todo o Premium, ou seja, {prix} por mês. 7 dias de teste grátis.",
-    "annuelTexteSansPrix": "Todo o Premium. 7 dias de teste grátis.",
-    "vieTexte": "Todo o Premium, pago uma única vez.",
+    "mensuelTexte": "Teste grátis de 7 dias. Cancele quando quiser.",
+    "annuelTexte": "Equivale a {prix} por mês. Teste grátis de 7 dias.",
+    "annuelTexteSansPrix": "Teste grátis de 7 dias.",
+    "vieTexte": "Um único pagamento, sem assinatura.",
     "remise": "−{remise}%",
     "prixAppStore": "Preços exibidos na App Store",
+    "memesFonctions": "Os três planos Premium dão acesso aos mesmos recursos.",
     "noteTTC": "Preços com impostos incluídos.",
     "noteAppStore": "O preço exato para o seu país aparece na App Store."
   },
@@ -157,7 +158,7 @@
     "q1": "O Ulti fornece canais?",
     "r1": "Não. O Ulti é um player: ele reproduz as fontes que você mesmo adiciona. O Ulti não fornece nenhum canal nem nenhum conteúdo. Você precisa ter suas próprias fontes e o direito de assisti-las.",
     "q2": "Em quais dispositivos?",
-    "r2": "iPhone, iPad, Mac (com chip da Apple) e Apple TV. O Premium vale em todos os seus dispositivos com a mesma Conta Apple; com o plano Família, até 6 pessoas aproveitam graças ao Compartilhamento Familiar.",
+    "r2": "iPhone, iPad, Mac (com chip da Apple) e Apple TV. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com o plano Família, até 6 pessoas aproveitam graças ao Compartilhamento Familiar.",
     "q3": "Meus dados de acesso estão seguros?",
     "r3": "Eles ficam guardados nas Chaves do seu dispositivo e nunca passam por um servidor do Ulti.",
     "q4": "Quais assinaturas são compatíveis?",
@@ -247,7 +248,7 @@
     "support": {
       "titre": "Suporte",
       "metaTitre": "Suporte — Ulti",
-      "description": "Ajuda do Ulti: instalação, como adicionar uma assinatura IPTV, Apple TV, perfis, Premium, compras e reprodução.",
+      "description": "Ajuda do Ulti: instalação, como adicionar uma assinatura IPTV, Apple TV, perfis, Ulti Premium, compras e reprodução.",
       "chapeau": "Tudo para começar bem com o Ulti, e respostas às perguntas mais frequentes."
     },
     "privacy": {
@@ -276,7 +277,7 @@
       "abonnement": "Adicionar uma assinatura",
       "appletv": "Apple TV",
       "profils": "Perfis e código parental",
-      "premium": "Premium e compras",
+      "premium": "Ulti Premium e compras",
       "lecture": "Problemas de reprodução",
       "confidentialite": "Privacidade"
     },
@@ -339,12 +340,12 @@
         "r": "A TV ao vivo, o guia de TV e os lembretes, Meus conteúdos, o agrupamento de canais duplicados, colar a mensagem do provedor, Picture in Picture, o envio para o Apple TV por código QR, um perfil Infantil com código parental e o tema Preto."
       },
       "inclus": {
-        "q": "O que o Premium inclui?",
+        "q": "O que o Ulti Premium inclui?",
         "r": "Filmes e séries (catálogo, páginas com pôsteres e sinopses, reprodução, retomada, todas as versões de um filme), multitela, replay, pausar a TV ao vivo, downloads no iPhone e iPad, sincronização com o iCloud, perfis adultos e assinaturas adicionais, as fileiras “Para você” e “Populares”, os temas Halo e Programação e ícones alternativos.\n\nNa versão gratuita, você pode explorar os filmes e séries; para assisti-los, é preciso ter o Premium."
       },
       "soloFamille": {
         "q": "Individual ou Família: qual a diferença?",
-        "r": "Os dois planos dão o mesmo Premium. Individual é para você, em todos os seus dispositivos com a mesma Conta Apple. Família é compartilhado com até 6 pessoas graças ao [Compartilhamento Familiar da Apple](apple-partage). Cada plano existe em mensal, anual e vitalício: veja os [preços](tarifs)."
+        "r": "Os dois planos dão acesso aos mesmos recursos Premium. Individual é para você, em todos os seus dispositivos com a mesma Conta Apple. Família é compartilhado com até 6 pessoas graças ao [Compartilhamento Familiar da Apple](apple-partage). Cada plano existe em mensal, anual e vitalício: veja os [preços](tarifs)."
       },
       "essai": {
         "q": "Posso testar o Premium de graça?",
@@ -376,7 +377,7 @@
       },
       "identifiants": {
         "q": "Meus dados de acesso estão seguros?",
-        "r": "Sim. Eles ficam guardados nas Chaves do seu dispositivo e nunca passam por um servidor do Ulti. Com a sincronização com o iCloud (Premium), são criptografados de ponta a ponta na sua própria conta do iCloud."
+        "r": "Sim. Eles ficam guardados nas Chaves do seu dispositivo e nunca passam por um servidor do Ulti. Com a sincronização com o iCloud (com o Premium), são criptografados de ponta a ponta na sua própria conta do iCloud."
       },
       "donnees": {
         "q": "O Ulti coleta dados?",
@@ -421,7 +422,7 @@
       },
       "icloud": {
         "titre": "Sincronização com o iCloud",
-        "texte": "Com o Premium, seus perfis, assinaturas (incluindo dados de acesso), Meus conteúdos, Minha lista, pontos de retomada, lembretes, canais mais assistidos e ajustes de aparência podem ser sincronizados entre seus dispositivos. Eles ficam na parte privada da sua própria conta do iCloud, criptografados de ponta a ponta: o desenvolvedor não tem acesso. O código parental fica em cada dispositivo."
+        "texte": "Com o Ulti Premium, seus perfis, assinaturas (incluindo dados de acesso), Meus conteúdos, Minha lista, pontos de retomada, lembretes, canais mais assistidos e ajustes de aparência podem ser sincronizados entre seus dispositivos. Eles ficam na parte privada da sua própria conta do iCloud, criptografados de ponta a ponta: o desenvolvedor não tem acesso. O código parental fica em cada dispositivo."
       },
       "appletv": {
         "titre": "Envio para o Apple TV",

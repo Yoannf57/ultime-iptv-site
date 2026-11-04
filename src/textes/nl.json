@@ -53,7 +53,7 @@
     "guideTexte": "Vanavond, morgen, de hele week. Stel met één gebaar een herinnering in, of gebruik je eigen XMLTV-gids.",
     "filmsTitre": "Films en series, zonder dubbels",
     "filmsTexte": "Posters en samenvattingen, alle versies van een film samen op één pagina, verder kijken waar je was gebleven.",
-    "premium": "Premium"
+    "premium": "Met Premium"
   },
   "visite": {
     "titre": "Neem een kijkje.",
@@ -103,7 +103,7 @@
     "texte": "Eén profiel per persoon met Premium, ieder met een eigen lijst en eigen hervatpunten. Het Kinderprofiel, inbegrepen in de gratis versie, ziet geen content voor volwassenen en kan alleen met de ouderlijke code worden verlaten."
   },
   "premium": {
-    "surtitre": "Premium",
+    "surtitre": "Ulti Premium",
     "titre": "Nog een stap verder.",
     "films": "Films en series, met posters, samenvattingen en hervatten",
     "pause": "Live tv pauzeren en terugspoelen",
@@ -125,25 +125,26 @@
   },
   "tarifs": {
     "titre": "Gratis voor de basis.",
-    "phrase": "Live tv is gratis. Premium probeer je 7 dagen zonder te betalen.",
+    "phrase": "Live tv is gratis. Probeer Ulti Premium 7 dagen gratis.",
     "gratuitTitre": "Gratis",
-    "gratuitTexte": "Live tv, tv-gids en herinneringen, beeld-in-beeld, Apple TV via QR-code, een Kinderprofiel.",
+    "gratuitTexte": "Live tv, de tv-gids met herinneringen, beeld-in-beeld, Apple TV via QR-code en een Kinderprofiel.",
     "choix": "Kies een Premium-formule",
     "pourMoi": "Voor mij",
     "pourFamille": "Voor het gezin",
     "soloLegende": "Solo: voor jou, op al je apparaten.",
     "familleLegende": "Gezin: tot 6 personen met Delen met gezin van Apple.",
-    "mensuel": "Maandelijks",
-    "annuel": "Jaarlijks",
-    "vie": "Levenslang",
+    "mensuel": "Premium maandelijks",
+    "annuel": "Premium jaarlijks",
+    "vie": "Premium levenslang",
     "parMois": "/ maand",
     "parAn": "/ jaar",
-    "mensuelTexte": "Alles van Premium. 7 dagen gratis proberen.",
-    "annuelTexte": "Alles van Premium, dus {prix} per maand. 7 dagen gratis proberen.",
-    "annuelTexteSansPrix": "Alles van Premium. 7 dagen gratis proberen.",
-    "vieTexte": "Alles van Premium, één keer betaald.",
+    "mensuelTexte": "7 dagen gratis proberen. Altijd opzegbaar.",
+    "annuelTexte": "Dat is {prix} per maand. 7 dagen gratis proberen.",
+    "annuelTexteSansPrix": "7 dagen gratis proberen.",
+    "vieTexte": "Eén betaling, geen abonnement.",
     "remise": "−{remise}%",
     "prixAppStore": "Prijzen staan in de App Store",
+    "memesFonctions": "De drie Premium-formules geven toegang tot dezelfde functies.",
     "noteTTC": "Prijzen inclusief btw.",
     "noteAppStore": "De exacte prijs voor jouw land staat in de App Store."
   },
@@ -157,7 +158,7 @@
     "q1": "Levert Ulti zenders?",
     "r1": "Nee. Ulti is een speler: hij speelt de bronnen af die je zelf toevoegt. Ulti levert geen zenders en geen content. Je moet over je eigen bronnen beschikken en het recht hebben om ze te bekijken.",
     "q2": "Op welke apparaten?",
-    "r2": "iPhone, iPad, Mac (met Apple-chip) en Apple TV. Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin.",
+    "r2": "iPhone, iPad, Mac (met Apple-chip) en Apple TV. Ulti Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin.",
     "q3": "Zijn mijn inloggegevens veilig?",
     "r3": "Ze worden bewaard in de sleutelhanger van je apparaat en gaan nooit via een server van Ulti.",
     "q4": "Welke abonnementen werken?",
@@ -247,7 +248,7 @@
     "support": {
       "titre": "Support",
       "metaTitre": "Support — Ulti",
-      "description": "Hulp bij Ulti: installeren, een IPTV-abonnement toevoegen, Apple TV, profielen, Premium, aankopen en afspelen.",
+      "description": "Hulp bij Ulti: installeren, een IPTV-abonnement toevoegen, Apple TV, profielen, Ulti Premium, aankopen en afspelen.",
       "chapeau": "Alles om goed te beginnen met Ulti, en antwoorden op de meestgestelde vragen."
     },
     "privacy": {
@@ -276,7 +277,7 @@
       "abonnement": "Een abonnement toevoegen",
       "appletv": "Apple TV",
       "profils": "Profielen en ouderlijke code",
-      "premium": "Premium en aankopen",
+      "premium": "Ulti Premium en aankopen",
       "lecture": "Problemen met afspelen",
       "confidentialite": "Privacy"
     },
@@ -339,12 +340,12 @@
         "r": "Live tv, de tv-gids en herinneringen, Mijn content, het samenvoegen van dubbele zenders, het plakken van het bericht van je aanbieder, beeld-in-beeld, het versturen naar de Apple TV via QR-code, een Kinderprofiel met ouderlijke code en het thema Zwart."
       },
       "inclus": {
-        "q": "Wat zit er in Premium?",
+        "q": "Wat zit er in Ulti Premium?",
         "r": "Films en series (catalogus, pagina's met posters en samenvattingen, afspelen, hervatten, alle versies van een film), multiscreen, terugkijken, live tv pauzeren, downloads op iPhone en iPad, iCloud-synchronisatie, extra profielen voor volwassenen en extra abonnementen, de rijen „Voor jou” en „Populair”, de thema's Halo en Programma en alternatieve app-symbolen.\n\nIn de gratis versie kun je door de films en series bladeren; om ze af te spelen heb je Premium nodig."
       },
       "soloFamille": {
         "q": "Solo of Gezin: wat is het verschil?",
-        "r": "Beide formules geven hetzelfde Premium. Solo is voor jou, op al je apparaten met dezelfde Apple Account. Gezin deel je met tot 6 personen dankzij [Delen met gezin van Apple](apple-partage). Elke formule bestaat als maand-, jaar- en levenslang abonnement: zie de [prijzen](tarifs)."
+        "r": "Beide formules geven toegang tot dezelfde Premium-functies. Solo is voor jou, op al je apparaten met dezelfde Apple Account. Gezin deel je met tot 6 personen dankzij [Delen met gezin van Apple](apple-partage). Elke formule bestaat als maand-, jaar- en levenslang abonnement: zie de [prijzen](tarifs)."
       },
       "essai": {
         "q": "Kan ik Premium gratis proberen?",
@@ -376,7 +377,7 @@
       },
       "identifiants": {
         "q": "Zijn mijn inloggegevens veilig?",
-        "r": "Ja. Ze worden bewaard in de sleutelhanger van je apparaat en gaan nooit via een server van Ulti. Met iCloud-synchronisatie (Premium) zijn ze end-to-end versleuteld in je eigen iCloud-account."
+        "r": "Ja. Ze worden bewaard in de sleutelhanger van je apparaat en gaan nooit via een server van Ulti. Met iCloud-synchronisatie (met Premium) zijn ze end-to-end versleuteld in je eigen iCloud-account."
       },
       "donnees": {
         "q": "Verzamelt Ulti gegevens?",
@@ -421,7 +422,7 @@
       },
       "icloud": {
         "titre": "iCloud-synchronisatie",
-        "texte": "Met Premium kunnen je profielen, abonnementen (inclusief inloggegevens), Mijn content, Mijn lijst, hervatpunten, herinneringen, vaak bekeken zenders en weergave-instellingen tussen je apparaten worden gesynchroniseerd. Ze worden bewaard in het privégedeelte van je eigen iCloud-account, end-to-end versleuteld: de ontwikkelaar heeft er geen toegang toe. De ouderlijke code blijft op elk apparaat."
+        "texte": "Met Ulti Premium kunnen je profielen, abonnementen (inclusief inloggegevens), Mijn content, Mijn lijst, hervatpunten, herinneringen, vaak bekeken zenders en weergave-instellingen tussen je apparaten worden gesynchroniseerd. Ze worden bewaard in het privégedeelte van je eigen iCloud-account, end-to-end versleuteld: de ontwikkelaar heeft er geen toegang toe. De ouderlijke code blijft op elk apparaat."
       },
       "appletv": {
         "titre": "Versturen naar de Apple TV",

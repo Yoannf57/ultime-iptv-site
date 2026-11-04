@@ -53,7 +53,7 @@
     "guideTexte": "I aften, i morgen, hele ugen. Sæt en påmindelse med én bevægelse, eller brug din egen XMLTV-guide.",
     "filmsTitre": "Film og serier, uden dubletter",
     "filmsTexte": "Plakater og resuméer, alle versioner af en film samlet på én side, fortsæt, hvor du slap.",
-    "premium": "Premium"
+    "premium": "Med Premium"
   },
   "visite": {
     "titre": "Tag en rundtur.",
@@ -103,7 +103,7 @@
     "texte": "Én profil pr. person med Premium, hver med sin egen liste og sine egne genoptagelsespunkter. Børneprofilen, som er med i gratisversionen, ser intet indhold for voksne og kan kun forlades med forældrekoden."
   },
   "premium": {
-    "surtitre": "Premium",
+    "surtitre": "Ulti Premium",
     "titre": "Endnu mere.",
     "films": "Film og serier, med plakater, resuméer og genoptagelse",
     "pause": "Pause og tilbagespoling i live-tv",
@@ -125,25 +125,26 @@
   },
   "tarifs": {
     "titre": "Gratis for det vigtigste.",
-    "phrase": "Live-tv er gratis. Premium kan du prøve i 7 dage uden at betale.",
+    "phrase": "Live-tv er gratis. Prøv Ulti Premium gratis i 7 dage.",
     "gratuitTitre": "Gratis",
-    "gratuitTexte": "Live-tv, tv-guide og påmindelser, billede-i-billede, Apple TV via QR-kode, en børneprofil.",
+    "gratuitTexte": "Live-tv, tv-guiden med påmindelser, billede i billede, Apple TV via QR-kode og en børneprofil.",
     "choix": "Vælg en Premium-løsning",
     "pourMoi": "Til mig",
     "pourFamille": "Til familien",
     "soloLegende": "Solo: til dig, på alle dine enheder.",
     "familleLegende": "Familie: op til 6 personer med Familiedeling fra Apple.",
-    "mensuel": "Månedlig",
-    "annuel": "Årlig",
-    "vie": "Livstid",
+    "mensuel": "Premium månedligt",
+    "annuel": "Premium årligt",
+    "vie": "Premium livstid",
     "parMois": "/ md.",
     "parAn": "/ år",
-    "mensuelTexte": "Alt i Premium. 7 dages gratis prøveperiode.",
-    "annuelTexte": "Alt i Premium, altså {prix} om måneden. 7 dages gratis prøveperiode.",
-    "annuelTexteSansPrix": "Alt i Premium. 7 dages gratis prøveperiode.",
-    "vieTexte": "Alt i Premium, betalt én gang.",
+    "mensuelTexte": "7 dages gratis prøveperiode. Kan opsiges når som helst.",
+    "annuelTexte": "Det svarer til {prix} om måneden. 7 dages gratis prøveperiode.",
+    "annuelTexteSansPrix": "7 dages gratis prøveperiode.",
+    "vieTexte": "Én betaling, intet abonnement.",
     "remise": "−{remise} %",
     "prixAppStore": "Priserne vises i App Store",
+    "memesFonctions": "Alle tre Premium-løsninger giver adgang til de samme funktioner.",
     "noteTTC": "Priser inkl. moms.",
     "noteAppStore": "Den præcise pris for dit land vises i App Store."
   },
@@ -157,7 +158,7 @@
     "q1": "Leverer Ulti kanaler?",
     "r1": "Nej. Ulti er en afspiller: Den afspiller de kilder, du selv tilføjer. Ulti leverer ingen kanaler og intet indhold. Du skal have dine egne kilder og have ret til at se dem.",
     "q2": "På hvilke enheder?",
-    "r2": "iPhone, iPad, Mac (med Apple-chip) og Apple TV. Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling.",
+    "r2": "iPhone, iPad, Mac (med Apple-chip) og Apple TV. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling.",
     "q3": "Er mine loginoplysninger sikre?",
     "r3": "De gemmes i nøgleringen på din enhed og går aldrig via en Ulti-server.",
     "q4": "Hvilke abonnementer virker?",
@@ -247,7 +248,7 @@
     "support": {
       "titre": "Support",
       "metaTitre": "Support — Ulti",
-      "description": "Hjælp til Ulti: installation, tilføjelse af et IPTV-abonnement, Apple TV, profiler, Premium, køb og afspilning.",
+      "description": "Hjælp til Ulti: installation, tilføjelse af et IPTV-abonnement, Apple TV, profiler, Ulti Premium, køb og afspilning.",
       "chapeau": "Alt, du behøver for at komme godt i gang med Ulti, og svar på de mest stillede spørgsmål."
     },
     "privacy": {
@@ -276,7 +277,7 @@
       "abonnement": "Tilføj et abonnement",
       "appletv": "Apple TV",
       "profils": "Profiler og forældrekode",
-      "premium": "Premium og køb",
+      "premium": "Ulti Premium og køb",
       "lecture": "Problemer med afspilning",
       "confidentialite": "Anonymitet"
     },
@@ -339,12 +340,12 @@
         "r": "Live-tv, tv-guiden og påmindelser, Mit indhold, sammenlægning af dobbelte kanaler, indsættelse af beskeden fra udbyderen, billede-i-billede, overførsel til Apple TV via QR-kode, en børneprofil med forældrekode og temaet Sort."
       },
       "inclus": {
-        "q": "Hvad er med i Premium?",
+        "q": "Hvad er med i Ulti Premium?",
         "r": "Film og serier (katalog, sider med plakater og resuméer, afspilning, genoptagelse, alle versioner af en film), flere skærme, genudsendelser, pause i live-tv, downloads på iPhone og iPad, iCloud-synkronisering, ekstra voksenprofiler og ekstra abonnementer, rækkerne »Til dig« og »Populært«, temaerne Halo og Program og alternative appsymboler.\n\nI gratisversionen kan du gennemse film og serier; for at afspille dem kræves Premium."
       },
       "soloFamille": {
         "q": "Solo eller Familie: Hvad er forskellen?",
-        "r": "Begge løsninger giver det samme Premium. Solo er til dig, på alle dine enheder med den samme Apple-konto. Familie deles med op til 6 personer takket være [Familiedeling fra Apple](apple-partage). Hver løsning findes som måneds-, års- og livstidskøb: se [priserne](tarifs)."
+        "r": "Begge løsninger giver adgang til de samme Premium-funktioner. Solo er til dig, på alle dine enheder med den samme Apple-konto. Familie deles med op til 6 personer takket være [Familiedeling fra Apple](apple-partage). Hver løsning findes som måneds-, års- og livstidskøb: se [priserne](tarifs)."
       },
       "essai": {
         "q": "Kan jeg prøve Premium gratis?",
@@ -376,7 +377,7 @@
       },
       "identifiants": {
         "q": "Er mine loginoplysninger sikre?",
-        "r": "Ja. De gemmes i nøgleringen på din enhed og går aldrig via en Ulti-server. Med iCloud-synkronisering (Premium) er de end-to-end-krypteret i din egen iCloud-konto."
+        "r": "Ja. De gemmes i nøgleringen på din enhed og går aldrig via en Ulti-server. Med iCloud-synkronisering (med Premium) er de end-to-end-krypteret i din egen iCloud-konto."
       },
       "donnees": {
         "q": "Indsamler Ulti data?",
@@ -421,7 +422,7 @@
       },
       "icloud": {
         "titre": "iCloud-synkronisering",
-        "texte": "Med Premium kan dine profiler, abonnementer (inklusive loginoplysninger), Mit indhold, Min liste, genoptagelsespunkter, påmindelser, ofte sete kanaler og indstillinger for udseende synkroniseres mellem dine enheder. De gemmes i den private del af din egen iCloud-konto, end-to-end-krypteret: Udvikleren har ikke adgang til dem. Forældrekoden bliver på hver enhed."
+        "texte": "Med Ulti Premium kan dine profiler, abonnementer (inklusive loginoplysninger), Mit indhold, Min liste, genoptagelsespunkter, påmindelser, ofte sete kanaler og indstillinger for udseende synkroniseres mellem dine enheder. De gemmes i den private del af din egen iCloud-konto, end-to-end-krypteret: Udvikleren har ikke adgang til dem. Forældrekoden bliver på hver enhed."
       },
       "appletv": {
         "titre": "Overførsel til Apple TV",

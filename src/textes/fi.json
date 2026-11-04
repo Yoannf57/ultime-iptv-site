@@ -53,7 +53,7 @@
     "guideTexte": "Tänä iltana, huomenna, koko viikon. Lisää muistutus yhdellä eleellä tai käytä omaa XMLTV-opastasi.",
     "filmsTitre": "Elokuvat ja sarjat ilman kaksoiskappaleita",
     "filmsTexte": "Julisteet ja juonikuvaukset, elokuvan kaikki versiot samalla sivulla, ja jatkat siitä, mihin jäit.",
-    "premium": "Premium"
+    "premium": "Premiumilla"
   },
   "visite": {
     "titre": "Tutustu sovellukseen.",
@@ -103,7 +103,7 @@
     "texte": "Premiumilla oma profiili jokaiselle, jokaisella oma lista ja omat jatkamiskohdat. Ilmaisversioon kuuluva lapsiprofiili ei näe aikuisten sisältöä, ja siitä pääsee pois vain lapsilukon koodilla."
   },
   "premium": {
-    "surtitre": "Premium",
+    "surtitre": "Ulti Premium",
     "titre": "Vielä enemmän.",
     "films": "Elokuvat ja sarjat, julisteet, juonikuvaukset ja jatkaminen",
     "pause": "Suoran lähetyksen tauko ja kelaus taaksepäin",
@@ -125,25 +125,26 @@
   },
   "tarifs": {
     "titre": "Tärkein on ilmaista.",
-    "phrase": "Suorat lähetykset ovat ilmaisia. Premiumia voit kokeilla 7 päivää maksamatta.",
+    "phrase": "Suorat lähetykset ovat ilmaisia. Kokeile Ulti Premiumia ilmaiseksi 7 päivää.",
     "gratuitTitre": "Ilmainen",
-    "gratuitTexte": "Suorat lähetykset, TV-opas ja muistutukset, kuva kuvassa, Apple TV QR-koodilla, lapsiprofiili.",
+    "gratuitTexte": "Suorat lähetykset, TV-opas muistutuksineen, kuva kuvassa, Apple TV QR-koodilla ja lapsiprofiili.",
     "choix": "Valitse Premium-vaihtoehto",
     "pourMoi": "Minulle",
     "pourFamille": "Perheelle",
     "soloLegende": "Solo: sinulle, kaikilla laitteillasi.",
     "familleLegende": "Perhe: jopa 6 henkilölle Applen Perhejaon avulla.",
-    "mensuel": "Kuukausittain",
-    "annuel": "Vuosittain",
-    "vie": "Pysyvä",
+    "mensuel": "Premium kuukausittain",
+    "annuel": "Premium vuosittain",
+    "vie": "Premium pysyvä",
     "parMois": "/ kk",
     "parAn": "/ vuosi",
-    "mensuelTexte": "Koko Premium. 7 päivän ilmainen kokeilu.",
-    "annuelTexte": "Koko Premium, eli {prix} kuukaudessa. 7 päivän ilmainen kokeilu.",
-    "annuelTexteSansPrix": "Koko Premium. 7 päivän ilmainen kokeilu.",
-    "vieTexte": "Koko Premium, maksetaan kerran.",
+    "mensuelTexte": "7 päivän ilmainen kokeilu. Peru milloin tahansa.",
+    "annuelTexte": "Eli {prix} kuukaudessa. 7 päivän ilmainen kokeilu.",
+    "annuelTexteSansPrix": "7 päivän ilmainen kokeilu.",
+    "vieTexte": "Yksi maksu, ei tilausta.",
     "remise": "−{remise} %",
     "prixAppStore": "Hinnat näkyvät App Storessa",
+    "memesFonctions": "Kaikki kolme Premium-vaihtoehtoa sisältävät samat toiminnot.",
     "noteTTC": "Hinnat sisältävät arvonlisäveron.",
     "noteAppStore": "Maasi tarkka hinta näkyy App Storessa."
   },
@@ -157,7 +158,7 @@
     "q1": "Tarjoaako Ulti kanavia?",
     "r1": "Ei. Ulti on soitin: se toistaa lähteet, jotka lisäät itse. Ulti ei tarjoa kanavia eikä sisältöä. Sinulla on oltava omat lähteesi ja oikeus katsoa niitä.",
     "q2": "Millä laitteilla?",
-    "r2": "iPhone, iPad, Mac (Apple-sirulla) ja Apple TV. Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta.",
+    "r2": "iPhone, iPad, Mac (Apple-sirulla) ja Apple TV. Ulti Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta.",
     "q3": "Ovatko kirjautumistietoni turvassa?",
     "r3": "Ne säilytetään laitteesi avainnipussa, eivätkä ne koskaan kulje Ulti-palvelimen kautta.",
     "q4": "Mitkä tilaukset toimivat?",
@@ -247,7 +248,7 @@
     "support": {
       "titre": "Tuki",
       "metaTitre": "Tuki — Ulti",
-      "description": "Ultin ohjeet: asennus, IPTV-tilauksen lisääminen, Apple TV, profiilit, Premium, ostot ja toisto.",
+      "description": "Ultin ohjeet: asennus, IPTV-tilauksen lisääminen, Apple TV, profiilit, Ulti Premium, ostot ja toisto.",
       "chapeau": "Kaikki, mitä tarvitset Ultin käytön aloittamiseen, ja vastaukset yleisimpiin kysymyksiin."
     },
     "privacy": {
@@ -276,7 +277,7 @@
       "abonnement": "Tilauksen lisääminen",
       "appletv": "Apple TV",
       "profils": "Profiilit ja lapsilukon koodi",
-      "premium": "Premium ja ostot",
+      "premium": "Ulti Premium ja ostot",
       "lecture": "Toisto-ongelmat",
       "confidentialite": "Tietosuoja"
     },
@@ -339,12 +340,12 @@
         "r": "Suorat lähetykset, TV-opas ja muistutukset, Omat sisällöt, päällekkäisten kanavien yhdistäminen, palveluntarjoajan viestin liittäminen, kuva kuvassa, siirto Apple TV:hen QR-koodilla, lapsiprofiili lapsilukon koodilla ja Musta-teema."
       },
       "inclus": {
-        "q": "Mitä Premiumiin kuuluu?",
+        "q": "Mitä Ulti Premiumiin kuuluu?",
         "r": "Elokuvat ja sarjat (luettelo, sivut julisteineen ja juonikuvauksineen, toisto, jatkaminen, elokuvan kaikki versiot), moninäyttö, tallenteet, suoran lähetyksen tauko, lataukset iPhonessa ja iPadissa, iCloud-synkronointi, aikuisten lisäprofiilit ja lisätilaukset, rivit ”Sinulle” ja ”Suositut”, teemat Halo ja Ohjelma sekä vaihtoehtoiset sovelluskuvakkeet.\n\nIlmaisversiossa voit selata elokuvia ja sarjoja; niiden toistaminen vaatii Premiumin."
       },
       "soloFamille": {
         "q": "Solo vai Perhe: mikä ero?",
-        "r": "Molemmat vaihtoehdot antavat saman Premiumin. Solo on sinulle, kaikilla laitteillasi samalla Apple-tilillä. Perhe jaetaan jopa 6 henkilön kanssa [Applen Perhejaon](apple-partage) avulla. Kumpikin vaihtoehto on saatavilla kuukausi-, vuosi- ja pysyvänä ostona: katso [hinnat](tarifs)."
+        "r": "Molemmat vaihtoehdot sisältävät samat Premium-toiminnot. Solo on sinulle, kaikilla laitteillasi samalla Apple-tilillä. Perhe jaetaan jopa 6 henkilön kanssa [Applen Perhejaon](apple-partage) avulla. Kumpikin vaihtoehto on saatavilla kuukausi-, vuosi- ja pysyvänä ostona: katso [hinnat](tarifs)."
       },
       "essai": {
         "q": "Voinko kokeilla Premiumia ilmaiseksi?",
@@ -376,7 +377,7 @@
       },
       "identifiants": {
         "q": "Ovatko kirjautumistietoni turvassa?",
-        "r": "Kyllä. Ne säilytetään laitteesi avainnipussa, eivätkä ne koskaan kulje Ulti-palvelimen kautta. iCloud-synkronoinnilla (Premium) ne ovat päästä päähän salattuina omalla iCloud-tililläsi."
+        "r": "Kyllä. Ne säilytetään laitteesi avainnipussa, eivätkä ne koskaan kulje Ulti-palvelimen kautta. iCloud-synkronoinnilla (Premiumilla) ne ovat päästä päähän salattuina omalla iCloud-tililläsi."
       },
       "donnees": {
         "q": "Kerääkö Ulti tietoja?",
@@ -421,7 +422,7 @@
       },
       "icloud": {
         "titre": "iCloud-synkronointi",
-        "texte": "Premiumilla profiilisi, tilauksesi (kirjautumistiedot mukaan lukien), Omat sisällöt, Oma lista, jatkamiskohdat, muistutukset, usein katsotut kanavat ja ulkoasuasetukset voidaan synkronoida laitteidesi välillä. Ne tallennetaan oman iCloud-tilisi yksityiseen osaan päästä päähän salattuina: kehittäjällä ei ole niihin pääsyä. Lapsilukon koodi pysyy jokaisella laitteella."
+        "texte": "Ulti Premiumilla profiilisi, tilauksesi (kirjautumistiedot mukaan lukien), Omat sisällöt, Oma lista, jatkamiskohdat, muistutukset, usein katsotut kanavat ja ulkoasuasetukset voidaan synkronoida laitteidesi välillä. Ne tallennetaan oman iCloud-tilisi yksityiseen osaan päästä päähän salattuina: kehittäjällä ei ole niihin pääsyä. Lapsilukon koodi pysyy jokaisella laitteella."
       },
       "appletv": {
         "titre": "Siirto Apple TV:hen",

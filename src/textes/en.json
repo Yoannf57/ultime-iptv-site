@@ -53,7 +53,7 @@
     "guideTexte": "Tonight, tomorrow, all week. Set a reminder in one gesture, or use your own XMLTV guide.",
     "filmsTitre": "Movies and series, without duplicates",
     "filmsTexte": "Posters and summaries, every version of a movie gathered in a single page, and you pick up right where you left off.",
-    "premium": "Premium"
+    "premium": "With Premium"
   },
   "visite": {
     "titre": "Take the tour.",
@@ -103,7 +103,7 @@
     "texte": "One profile per person with Premium, each with their own list and resume points. The Kids profile, included in the free version, sees no adult content and can only be exited with the parental code."
   },
   "premium": {
-    "surtitre": "Premium",
+    "surtitre": "Ulti Premium",
     "titre": "Go even further.",
     "films": "Movies and series, with posters, summaries and resume",
     "pause": "Pause and rewind live TV",
@@ -125,25 +125,26 @@
   },
   "tarifs": {
     "titre": "Free for the essentials.",
-    "phrase": "Live TV is free. Try Premium for 7 days without paying.",
+    "phrase": "Live TV is free. Try Ulti Premium free for 7 days.",
     "gratuitTitre": "Free",
-    "gratuitTexte": "Live TV, TV guide and reminders, Picture in Picture, Apple TV via QR code, one Kids profile.",
+    "gratuitTexte": "Live TV, the TV guide and its reminders, Picture in Picture, Apple TV setup by QR code and a Kids profile.",
     "choix": "Choose a Premium plan",
     "pourMoi": "For me",
     "pourFamille": "For my family",
     "soloLegende": "Solo: for you, on all your devices.",
     "familleLegende": "Family: up to 6 people with Apple Family Sharing.",
-    "mensuel": "Monthly",
-    "annuel": "Yearly",
-    "vie": "Lifetime",
+    "mensuel": "Premium monthly",
+    "annuel": "Premium yearly",
+    "vie": "Premium lifetime",
     "parMois": "/ month",
     "parAn": "/ year",
-    "mensuelTexte": "All of Premium. 7-day free trial.",
-    "annuelTexte": "All of Premium, just {prix} a month. 7-day free trial.",
-    "annuelTexteSansPrix": "All of Premium. 7-day free trial.",
-    "vieTexte": "All of Premium, paid once.",
+    "mensuelTexte": "7-day free trial. Cancel anytime.",
+    "annuelTexte": "That's {prix} a month. 7-day free trial.",
+    "annuelTexteSansPrix": "7-day free trial.",
+    "vieTexte": "One payment, no subscription.",
     "remise": "−{remise}%",
     "prixAppStore": "Price shown on the App Store",
+    "memesFonctions": "All three Premium plans give access to the same features.",
     "noteTTC": "Prices include VAT.",
     "noteAppStore": "The exact price for your country is shown on the App Store."
   },
@@ -157,7 +158,7 @@
     "q1": "Does Ulti provide channels?",
     "r1": "No. Ulti is a player: it plays the sources you add yourself. Ulti does not provide any channels or content. You must have your own sources, and the right to watch them.",
     "q2": "Which devices?",
-    "r2": "iPhone, iPad, Mac (with Apple silicon) and Apple TV. Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing.",
+    "r2": "iPhone, iPad, Mac (with Apple silicon) and Apple TV. Ulti Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing.",
     "q3": "Are my login details safe?",
     "r3": "They are kept in your device's Keychain and never go through an Ulti server.",
     "q4": "Which subscriptions are compatible?",
@@ -247,7 +248,7 @@
     "support": {
       "titre": "Support",
       "metaTitre": "Support — Ulti",
-      "description": "Ulti help: installing, adding an IPTV subscription, Apple TV, profiles, Premium, purchases and playback.",
+      "description": "Ulti help: installing, adding an IPTV subscription, Apple TV, profiles, Ulti Premium, purchases and playback.",
       "chapeau": "Everything you need to get started with Ulti, and answers to the most common questions."
     },
     "privacy": {
@@ -276,7 +277,7 @@
       "abonnement": "Adding a subscription",
       "appletv": "Apple TV",
       "profils": "Profiles and parental code",
-      "premium": "Premium and purchases",
+      "premium": "Ulti Premium and purchases",
       "lecture": "Playback issues",
       "confidentialite": "Privacy"
     },
@@ -339,12 +340,12 @@
         "r": "Live TV, the TV guide and reminders, My Content, grouping of duplicate channels, pasting your provider's message, Picture in Picture, sending to Apple TV by QR code, a Kids profile with parental code, and the Black theme."
       },
       "inclus": {
-        "q": "What does Premium include?",
+        "q": "What does Ulti Premium include?",
         "r": "Movies and series (catalogue, details with posters and summaries, playback, resume points, every version of a movie), multi-screen, replay, live pause, downloads on iPhone and iPad, iCloud sync, extra adult profiles and subscriptions, the “For you” and “Popular” rows, the Halo and Programme themes, and alternative icons.\n\nIn the free version, you can browse movies and series; playing them requires Premium."
       },
       "soloFamille": {
         "q": "Solo or Family: what's the difference?",
-        "r": "Both plans give the same Premium. Solo is for you, on all your devices with the same Apple Account. Family can be shared with up to 6 people through [Apple's Family Sharing](apple-partage). Each plan is available monthly, yearly or for life: see [pricing](tarifs)."
+        "r": "Both plans give access to the same Premium features. Solo is for you, on all your devices with the same Apple Account. Family can be shared with up to 6 people through [Apple's Family Sharing](apple-partage). Each plan is available monthly, yearly or for life: see [pricing](tarifs)."
       },
       "essai": {
         "q": "Can I try Premium for free?",
@@ -376,7 +377,7 @@
       },
       "identifiants": {
         "q": "Are my login details safe?",
-        "r": "Yes. They are kept in your device's Keychain and never go through an Ulti server. With iCloud sync (Premium), they are end-to-end encrypted in your own iCloud account."
+        "r": "Yes. They are kept in your device's Keychain and never go through an Ulti server. With iCloud sync (with Premium), they are end-to-end encrypted in your own iCloud account."
       },
       "donnees": {
         "q": "Does Ulti collect data?",
@@ -421,7 +422,7 @@
       },
       "icloud": {
         "titre": "iCloud sync",
-        "texte": "With Premium, your profiles, subscriptions (login details included), My Content, My List, resume points, reminders, frequently watched channels and appearance settings can be synced across your devices. They are stored in the private part of your own iCloud account, end-to-end encrypted: the developer has no access to them. The parental code stays on each device."
+        "texte": "With Ulti Premium, your profiles, subscriptions (login details included), My Content, My List, resume points, reminders, frequently watched channels and appearance settings can be synced across your devices. They are stored in the private part of your own iCloud account, end-to-end encrypted: the developer has no access to them. The parental code stays on each device."
       },
       "appletv": {
         "titre": "Sending to Apple TV",

@@ -53,7 +53,7 @@
     "guideTexte": "Ce soir, demain, la semaine. Posez un rappel en un geste, ou utilisez votre propre guide XMLTV.",
     "filmsTitre": "Films et séries, sans doublons",
     "filmsTexte": "Affiches et résumés, toutes les versions d'un même film réunies en une seule fiche, reprise là où vous vous êtes arrêté.",
-    "premium": "Premium"
+    "premium": "Avec Premium"
   },
   "visite": {
     "titre": "Faites le tour.",
@@ -103,7 +103,7 @@
     "texte": "Un profil par personne avec Premium, chacun avec sa liste et ses reprises. Le profil Enfant, inclus dans la version gratuite, ne voit aucun contenu pour adultes et se quitte seulement avec le code parental."
   },
   "premium": {
-    "surtitre": "Premium",
+    "surtitre": "Ulti Premium",
     "titre": "Encore plus loin.",
     "films": "Films et séries, avec affiches, résumés et reprises",
     "pause": "Pause et retour en arrière sur le direct",
@@ -125,25 +125,26 @@
   },
   "tarifs": {
     "titre": "Gratuit pour l'essentiel.",
-    "phrase": "Le direct est gratuit. Premium s'essaie 7 jours sans payer.",
+    "phrase": "Le direct est gratuit. Ulti Premium s'essaie gratuitement pendant 7 jours.",
     "gratuitTitre": "Gratuit",
-    "gratuitTexte": "Direct, guide TV et rappels, image dans l'image, Apple TV par QR code, un profil Enfant.",
+    "gratuitTexte": "Le direct, le guide TV et ses rappels, l'image dans l'image, l'Apple TV par QR code et un profil Enfant.",
     "choix": "Choisir une formule Premium",
     "pourMoi": "Pour moi",
     "pourFamille": "Pour la famille",
     "soloLegende": "Solo : pour vous, sur tous vos appareils.",
     "familleLegende": "Famille : jusqu'à 6 personnes avec le Partage familial d'Apple.",
-    "mensuel": "Mensuel",
-    "annuel": "Annuel",
-    "vie": "À vie",
+    "mensuel": "Premium mensuel",
+    "annuel": "Premium annuel",
+    "vie": "Premium à vie",
     "parMois": "/ mois",
     "parAn": "/ an",
-    "mensuelTexte": "Tout Premium. 7 jours d'essai gratuit.",
-    "annuelTexte": "Tout Premium, soit {prix} par mois. 7 jours d'essai gratuit.",
-    "annuelTexteSansPrix": "Tout Premium. 7 jours d'essai gratuit.",
-    "vieTexte": "Tout Premium, payé une seule fois.",
+    "mensuelTexte": "Essai gratuit de 7 jours. Résiliable à tout moment.",
+    "annuelTexte": "Soit {prix} par mois. Essai gratuit de 7 jours.",
+    "annuelTexteSansPrix": "Essai gratuit de 7 jours.",
+    "vieTexte": "Un seul paiement, sans abonnement.",
     "remise": "−{remise} %",
     "prixAppStore": "Prix affiché dans l'App Store",
+    "memesFonctions": "Les trois formules Premium donnent accès aux mêmes fonctions.",
     "noteTTC": "Prix TTC.",
     "noteAppStore": "Le prix exact de votre pays s'affiche dans l'App Store."
   },
@@ -157,7 +158,7 @@
     "q1": "Ulti fournit-il des chaînes ?",
     "r1": "Non. Ulti est un lecteur : il lit les sources que vous ajoutez vous-même. Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder.",
     "q2": "Sur quels appareils ?",
-    "r2": "iPhone, iPad, Mac (avec puce Apple) et Apple TV. Premium vaut sur tous vos appareils avec le même identifiant Apple ; avec la formule Famille, jusqu'à 6 personnes en profitent grâce au Partage familial.",
+    "r2": "iPhone, iPad, Mac (avec puce Apple) et Apple TV. Ulti Premium vaut sur tous vos appareils avec le même identifiant Apple ; avec la formule Famille, jusqu'à 6 personnes en profitent grâce au Partage familial.",
     "q3": "Mes identifiants sont-ils en sécurité ?",
     "r3": "Ils sont gardés dans le Trousseau de votre appareil et ne passent jamais par un serveur Ulti.",
     "q4": "Quels abonnements sont compatibles ?",
@@ -247,7 +248,7 @@
     "support": {
       "titre": "Support",
       "metaTitre": "Support — Ulti",
-      "description": "Aide d'Ulti : installation, ajout d'un abonnement IPTV, Apple TV, profils, Premium, achats et lecture.",
+      "description": "Aide d'Ulti : installation, ajout d'un abonnement IPTV, Apple TV, profils, Ulti Premium, achats et lecture.",
       "chapeau": "Tout pour bien démarrer avec Ulti, et des réponses aux questions les plus fréquentes."
     },
     "privacy": {
@@ -276,7 +277,7 @@
       "abonnement": "Ajouter un abonnement",
       "appletv": "Apple TV",
       "profils": "Profils et code parental",
-      "premium": "Premium et achats",
+      "premium": "Ulti Premium et achats",
       "lecture": "Problèmes de lecture",
       "confidentialite": "Confidentialité"
     },
@@ -339,12 +340,12 @@
         "r": "Le direct, le guide TV et les rappels, Mes contenus, le regroupement des doublons de chaînes, le collage du message du fournisseur, l'image dans l'image, l'envoi vers l'Apple TV par QR code, un profil Enfant avec code parental et le thème Noir."
       },
       "inclus": {
-        "q": "Que comprend Premium ?",
+        "q": "Que comprend Ulti Premium ?",
         "r": "Les films et séries (catalogue, fiches avec affiches et résumés, lecture, reprises, toutes les versions d'un film), le multi-écran, le replay, la pause du direct, les téléchargements sur iPhone et iPad, la synchronisation iCloud, les profils adultes et les abonnements supplémentaires, les rangées « Pour vous » et « Populaires », les thèmes Halo et Programme et les icônes alternatives.\n\nEn version gratuite, vous pouvez parcourir les films et séries ; leur lecture demande Premium."
       },
       "soloFamille": {
         "q": "Solo ou Famille : quelle différence ?",
-        "r": "Les deux formules donnent le même Premium. Solo est pour vous, sur tous vos appareils avec le même identifiant Apple. Famille se partage avec jusqu'à 6 personnes grâce au [Partage familial d'Apple](apple-partage). Chaque formule existe en mensuel, en annuel et à vie : voir les [tarifs](tarifs)."
+        "r": "Les deux formules donnent accès aux mêmes fonctions Premium. Solo est pour vous, sur tous vos appareils avec le même identifiant Apple. Famille se partage avec jusqu'à 6 personnes grâce au [Partage familial d'Apple](apple-partage). Chaque formule existe en mensuel, en annuel et à vie : voir les [tarifs](tarifs)."
       },
       "essai": {
         "q": "Puis-je essayer Premium gratuitement ?",
@@ -376,7 +377,7 @@
       },
       "identifiants": {
         "q": "Mes identifiants sont-ils en sécurité ?",
-        "r": "Oui. Ils sont gardés dans le Trousseau de votre appareil et ne passent jamais par un serveur Ulti. Avec la synchronisation iCloud (Premium), ils sont chiffrés de bout en bout dans votre propre compte iCloud."
+        "r": "Oui. Ils sont gardés dans le Trousseau de votre appareil et ne passent jamais par un serveur Ulti. Avec la synchronisation iCloud (avec Premium), ils sont chiffrés de bout en bout dans votre propre compte iCloud."
       },
       "donnees": {
         "q": "Ulti collecte-t-il des données ?",
@@ -421,7 +422,7 @@
       },
       "icloud": {
         "titre": "Synchronisation iCloud",
-        "texte": "Avec Premium, vos profils, abonnements (identifiants compris), Mes contenus, Ma liste, reprises, rappels, chaînes souvent regardées et réglages d'apparence peuvent être synchronisés entre vos appareils. Ils sont stockés dans la partie privée de votre propre compte iCloud, chiffrés de bout en bout : le développeur n'y a pas accès. Le code parental reste sur chaque appareil."
+        "texte": "Avec Ulti Premium, vos profils, abonnements (identifiants compris), Mes contenus, Ma liste, reprises, rappels, chaînes souvent regardées et réglages d'apparence peuvent être synchronisés entre vos appareils. Ils sont stockés dans la partie privée de votre propre compte iCloud, chiffrés de bout en bout : le développeur n'y a pas accès. Le code parental reste sur chaque appareil."
       },
       "appletv": {
         "titre": "Envoi vers l'Apple TV",
@@ -437,7 +438,7 @@
       },
       "achats": {
         "titre": "Achats",
-        "texte": "Les achats sont gérés par Apple, sur l'App Store. Ulti garde seulement l'état de Premium sur l'appareil, pour fonctionner hors connexion, et ne l'envoie nulle part."
+        "texte": "Les achats sont gérés par Apple, sur l'App Store. Ulti garde seulement, sur l'appareil, le fait que Premium est actif ou non, pour fonctionner hors connexion, et ne l'envoie nulle part."
       },
       "plantages": {
         "titre": "Rapports de plantage",
