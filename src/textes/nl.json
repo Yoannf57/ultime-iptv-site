@@ -144,7 +144,7 @@
   },
   "viePrivee": {
     "titre": "Er worden geen gegevens verzameld.",
-    "texte": "Je inloggegevens blijven in de sleutelhanger van je apparaat. Geen account aanmaken, geen server van Ulti.",
+    "texte": "Je inloggegevens blijven in de sleutelhanger van je apparaat. Geen account aanmaken, geen tracking.",
     "lien": "Ons privacybeleid"
   },
   "faq": {
@@ -404,15 +404,15 @@
       },
       "identifiants": {
         "titre": "Je inloggegevens",
-        "texte": "De server, gebruikersnaam en het wachtwoord van je IPTV-abonnement worden alleen op je apparaat bewaard, in de sleutelhanger van Apple, en in je iCloud-sleutelhanger als je die inschakelt. Ze gaan nooit via een server van Ulti: die bestaat niet."
+        "texte": "De server, gebruikersnaam en het wachtwoord van je IPTV-abonnement worden alleen op je apparaat bewaard, in de sleutelhanger van Apple, en in je iCloud-sleutelhanger als je die inschakelt. Ze gaan nooit via een server van Ulti."
       },
       "contacts": {
         "titre": "Waarmee de app contact maakt",
-        "texte": "Ulti maakt alleen contact met:\n\n• je IPTV-aanbieder, om je zenders, films, series en tv-gids af te spelen. Dat is de dienst die jij hebt gekozen: het is niet de ontwikkelaar en geen partner van de ontwikkelaar;\n• The Movie Database (TMDB), om posters en samenvattingen te tonen. De app stuurt alleen de titel en het jaar van de getoonde werken, plus de taal en regio van het apparaat: geen inloggegevens, en niets van wat je in het zoekveld typt;\n• Apple, voor Premium-aankopen en, als je die inschakelt, voor iCloud-synchronisatie."
+        "texte": "Ulti maakt alleen contact met:\n\n• je IPTV-aanbieder, om je zenders, films, series en tv-gids af te spelen. Dat is de dienst die jij hebt gekozen: het is niet de ontwikkelaar en geen partner van de ontwikkelaar;\n• de relay van Ulti (api.ultitv.com), om posters en samenvattingen van The Movie Database (TMDB) te tonen. Die stuurt het verzoek alleen door naar TMDB en bewaart niets: geen logboek. De app stuurt alleen de titel en het jaar van de getoonde werken, plus de taal en regio van het apparaat: geen inloggegevens, en niets van wat je in het zoekveld typt. Afbeeldingen worden rechtstreeks van TMDB geladen (image.tmdb.org);\n• Apple, voor Premium-aankopen en, als je die inschakelt, voor iCloud-synchronisatie."
       },
       "ip": {
         "titre": "Je IP-adres",
-        "texte": "Zoals bij elke onlinedienst ontvangen je IPTV-aanbieder, TMDB en Apple het IP-adres van je apparaat wanneer de app contact met hen maakt. Ulti bewaart daar niets van."
+        "texte": "Zoals bij elke onlinedienst ontvangen je IPTV-aanbieder, de relay van Ulti, TMDB en Apple het IP-adres van je apparaat wanneer de app contact met hen maakt. De relay gebruikt het alleen tijdens het verzoek, om het aantal verzoeken te beperken. Ulti bewaart daar niets van."
       },
       "icloud": {
         "titre": "iCloud-synchronisatie",

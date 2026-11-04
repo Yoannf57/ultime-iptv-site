@@ -144,7 +144,7 @@
   },
   "viePrivee": {
     "titre": "Ingen data indsamles.",
-    "texte": "Dine loginoplysninger bliver i nøgleringen på din enhed. Ingen konto at oprette, ingen Ulti-server.",
+    "texte": "Dine loginoplysninger bliver i nøgleringen på din enhed. Ingen konto at oprette, ingen sporing.",
     "lien": "Vores privatlivspolitik"
   },
   "faq": {
@@ -404,15 +404,15 @@
       },
       "identifiants": {
         "titre": "Dine loginoplysninger",
-        "texte": "Server, brugernavn og adgangskode til dit IPTV-abonnement gemmes kun på din enhed, i Apples nøglering, og i din iCloud-nøglering, hvis du slår den til. De går aldrig via en Ulti-server: Der findes ingen."
+        "texte": "Server, brugernavn og adgangskode til dit IPTV-abonnement gemmes kun på din enhed, i Apples nøglering, og i din iCloud-nøglering, hvis du slår den til. De går aldrig via en Ulti-server."
       },
       "contacts": {
         "titre": "Hvad appen kontakter",
-        "texte": "Ulti kontakter kun:\n\n• din IPTV-udbyder for at afspille dine kanaler, film, serier og tv-guide. Det er den tjeneste, du har valgt: Den er hverken udvikleren eller en partner af udvikleren;\n• The Movie Database (TMDB) for at vise plakater og resuméer. Appen sender kun titel og år for de viste værker samt enhedens sprog og område: ingen loginoplysninger og intet af det, du skriver i søgningen;\n• Apple for Premium-køb og, hvis du slår det til, for iCloud-synkronisering."
+        "texte": "Ulti kontakter kun:\n\n• din IPTV-udbyder for at afspille dine kanaler, film, serier og tv-guide. Det er den tjeneste, du har valgt: Den er hverken udvikleren eller en partner af udvikleren;\n• Ultis relæ (api.ultitv.com) for at vise plakater og resuméer fra The Movie Database (TMDB). Det sender kun forespørgslen videre til TMDB og gemmer intet: ingen log. Appen sender kun titel og år for de viste værker samt enhedens sprog og område: ingen loginoplysninger og intet af det, du skriver i søgningen. Billederne hentes direkte fra TMDB (image.tmdb.org);\n• Apple for Premium-køb og, hvis du slår det til, for iCloud-synkronisering."
       },
       "ip": {
         "titre": "Din IP-adresse",
-        "texte": "Som ved alle onlinetjenester modtager din IPTV-udbyder, TMDB og Apple din enheds IP-adresse, når appen kontakter dem. Ulti gemmer intet af den."
+        "texte": "Som ved alle onlinetjenester modtager din IPTV-udbyder, Ultis relæ, TMDB og Apple din enheds IP-adresse, når appen kontakter dem. Relæet bruger den kun, mens forespørgslen står på, for at begrænse antallet af forespørgsler. Ulti gemmer intet af den."
       },
       "icloud": {
         "titre": "iCloud-synkronisering",

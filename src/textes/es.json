@@ -144,7 +144,7 @@
   },
   "viePrivee": {
     "titre": "No se recopila ningún dato.",
-    "texte": "Tus datos de acceso se quedan en el llavero de tu dispositivo. Sin cuenta que crear, sin servidor de Ulti.",
+    "texte": "Tus datos de acceso se quedan en el llavero de tu dispositivo. Sin cuenta que crear, sin seguimiento.",
     "lien": "Nuestra política de privacidad"
   },
   "faq": {
@@ -404,15 +404,15 @@
       },
       "identifiants": {
         "titre": "Tus datos de acceso",
-        "texte": "El servidor, el nombre de usuario y la contraseña de tu suscripción IPTV se guardan solo en tu dispositivo, en el llavero de Apple, y en tu llavero de iCloud si lo activas. Nunca pasan por un servidor de Ulti: no existe ninguno."
+        "texte": "El servidor, el nombre de usuario y la contraseña de tu suscripción IPTV se guardan solo en tu dispositivo, en el llavero de Apple, y en tu llavero de iCloud si lo activas. Nunca pasan por un servidor de Ulti."
       },
       "contacts": {
         "titre": "Con quién se conecta la app",
-        "texte": "Ulti solo se conecta con:\n\n• tu proveedor IPTV, para reproducir tus canales, películas, series y guía de TV. Es el servicio que tú has elegido: no es el desarrollador ni un socio del desarrollador;\n• The Movie Database (TMDB), para mostrar carteles y sinopsis. La app solo le envía el título y el año de las obras mostradas, además del idioma y la región del dispositivo: ningún dato de acceso, y nada de lo que escribes en la búsqueda;\n• Apple, para las compras Premium y, si la activas, para la sincronización con iCloud."
+        "texte": "Ulti solo se conecta con:\n\n• tu proveedor IPTV, para reproducir tus canales, películas, series y guía de TV. Es el servicio que tú has elegido: no es el desarrollador ni un socio del desarrollador;\n• el relé de Ulti (api.ultitv.com), para mostrar carteles y sinopsis de The Movie Database (TMDB). Solo transmite la solicitud a TMDB y no guarda nada: ningún registro. La app solo envía el título y el año de las obras mostradas, además del idioma y la región del dispositivo: ningún dato de acceso, y nada de lo que escribes en la búsqueda. Las imágenes se cargan directamente desde TMDB (image.tmdb.org);\n• Apple, para las compras Premium y, si la activas, para la sincronización con iCloud."
       },
       "ip": {
         "titre": "Tu dirección IP",
-        "texte": "Como en cualquier servicio en línea, tu proveedor IPTV, TMDB y Apple reciben la dirección IP de tu dispositivo cuando la app se conecta con ellos. Ulti no guarda ningún rastro de ella."
+        "texte": "Como en cualquier servicio en línea, tu proveedor IPTV, el relé de Ulti, TMDB y Apple reciben la dirección IP de tu dispositivo cuando la app se conecta con ellos. El relé solo la usa mientras dura la solicitud, para limitar el número de solicitudes. Ulti no guarda ningún rastro de ella."
       },
       "icloud": {
         "titre": "Sincronización con iCloud",

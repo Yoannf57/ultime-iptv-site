@@ -144,7 +144,7 @@
   },
   "viePrivee": {
     "titre": "Mitään tietoja ei kerätä.",
-    "texte": "Kirjautumistietosi pysyvät laitteesi avainnipussa. Ei tiliä luotavaksi, ei Ulti-palvelinta.",
+    "texte": "Kirjautumistietosi pysyvät laitteesi avainnipussa. Ei tiliä luotavaksi, ei seurantaa.",
     "lien": "Tietosuojakäytäntömme"
   },
   "faq": {
@@ -404,15 +404,15 @@
       },
       "identifiants": {
         "titre": "Kirjautumistietosi",
-        "texte": "IPTV-tilauksesi palvelin, käyttäjänimi ja salasana tallennetaan vain laitteellesi, Applen avainnippuun, ja iCloud-avainnippuusi, jos otat sen käyttöön. Ne eivät koskaan kulje Ulti-palvelimen kautta: sellaista ei ole."
+        "texte": "IPTV-tilauksesi palvelin, käyttäjänimi ja salasana tallennetaan vain laitteellesi, Applen avainnippuun, ja iCloud-avainnippuusi, jos otat sen käyttöön. Ne eivät koskaan kulje Ulti-palvelimen kautta."
       },
       "contacts": {
         "titre": "Mihin sovellus ottaa yhteyttä",
-        "texte": "Ulti ottaa yhteyttä vain:\n\n• IPTV-palveluntarjoajaasi kanaviesi, elokuviesi, sarjojesi ja TV-oppaasi toistamiseksi. Se on valitsemasi palvelu: se ei ole kehittäjä eikä kehittäjän kumppani;\n• The Movie Databaseen (TMDB) julisteiden ja juonikuvausten näyttämiseksi. Sovellus lähettää vain näytettävien teosten nimen ja vuoden sekä laitteen kielen ja alueen: ei kirjautumistietoja eikä mitään hakukenttään kirjoittamaasi;\n• Appleen Premium-ostoja varten ja, jos otat sen käyttöön, iCloud-synkronointia varten."
+        "texte": "Ulti ottaa yhteyttä vain:\n\n• IPTV-palveluntarjoajaasi kanaviesi, elokuviesi, sarjojesi ja TV-oppaasi toistamiseksi. Se on valitsemasi palvelu: se ei ole kehittäjä eikä kehittäjän kumppani;\n• Ultin välityspalvelimeen (api.ultitv.com) The Movie Databasen (TMDB) julisteiden ja juonikuvausten näyttämiseksi. Se vain välittää pyynnön TMDB:lle eikä tallenna mitään: ei lokia. Sovellus lähettää vain näytettävien teosten nimen ja vuoden sekä laitteen kielen ja alueen: ei kirjautumistietoja eikä mitään hakukenttään kirjoittamaasi. Kuvat ladataan suoraan TMDB:stä (image.tmdb.org);\n• Appleen Premium-ostoja varten ja, jos otat sen käyttöön, iCloud-synkronointia varten."
       },
       "ip": {
         "titre": "IP-osoitteesi",
-        "texte": "Kuten kaikissa verkkopalveluissa, IPTV-palveluntarjoajasi, TMDB ja Apple saavat laitteesi IP-osoitteen, kun sovellus ottaa niihin yhteyttä. Ulti ei säilytä siitä mitään."
+        "texte": "Kuten kaikissa verkkopalveluissa, IPTV-palveluntarjoajasi, Ultin välityspalvelin, TMDB ja Apple saavat laitteesi IP-osoitteen, kun sovellus ottaa niihin yhteyttä. Välityspalvelin käyttää sitä vain pyynnön ajan pyyntöjen määrän rajoittamiseen. Ulti ei säilytä siitä mitään."
       },
       "icloud": {
         "titre": "iCloud-synkronointi",

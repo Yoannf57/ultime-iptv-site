@@ -144,7 +144,7 @@
   },
   "viePrivee": {
     "titre": "Ingen data samlas in.",
-    "texte": "Dina inloggningsuppgifter stannar i enhetens nyckelring. Inget konto att skapa, ingen Ulti-server.",
+    "texte": "Dina inloggningsuppgifter stannar i enhetens nyckelring. Inget konto att skapa, ingen spårning.",
     "lien": "Vår integritetspolicy"
   },
   "faq": {
@@ -404,15 +404,15 @@
       },
       "identifiants": {
         "titre": "Dina inloggningsuppgifter",
-        "texte": "Server, användarnamn och lösenord för ditt IPTV-abonnemang sparas bara på din enhet, i Apples nyckelring, och i din iCloud-nyckelring om du aktiverar den. De går aldrig via en Ulti-server: det finns ingen."
+        "texte": "Server, användarnamn och lösenord för ditt IPTV-abonnemang sparas bara på din enhet, i Apples nyckelring, och i din iCloud-nyckelring om du aktiverar den. De går aldrig via en Ulti-server."
       },
       "contacts": {
         "titre": "Vad appen kontaktar",
-        "texte": "Ulti kontaktar bara:\n\n• din IPTV-leverantör, för att spela upp dina kanaler, filmer, serier och tv-guide. Det är tjänsten du har valt: den är varken utvecklaren eller en partner till utvecklaren;\n• The Movie Database (TMDB), för att visa affischer och sammanfattningar. Appen skickar bara titel och år för de verk som visas, samt enhetens språk och region: inga inloggningsuppgifter, och inget av det du skriver i sökningen;\n• Apple, för Premium-köp och, om du aktiverar den, för iCloud-synkning."
+        "texte": "Ulti kontaktar bara:\n\n• din IPTV-leverantör, för att spela upp dina kanaler, filmer, serier och tv-guide. Det är tjänsten du har valt: den är varken utvecklaren eller en partner till utvecklaren;\n• Ultis relä (api.ultitv.com), för att visa affischer och sammanfattningar från The Movie Database (TMDB). Det skickar bara vidare förfrågan till TMDB och sparar ingenting: ingen logg. Appen skickar bara titel och år för de verk som visas, samt enhetens språk och region: inga inloggningsuppgifter, och inget av det du skriver i sökningen. Bilderna laddas direkt från TMDB (image.tmdb.org);\n• Apple, för Premium-köp och, om du aktiverar den, för iCloud-synkning."
       },
       "ip": {
         "titre": "Din IP-adress",
-        "texte": "Som för alla onlinetjänster får din IPTV-leverantör, TMDB och Apple din enhets IP-adress när appen kontaktar dem. Ulti sparar inget av den."
+        "texte": "Som för alla onlinetjänster får din IPTV-leverantör, Ultis relä, TMDB och Apple din enhets IP-adress när appen kontaktar dem. Reläet använder den bara under förfrågan, för att begränsa antalet förfrågningar. Ulti sparar inget av den."
       },
       "icloud": {
         "titre": "iCloud-synkning",

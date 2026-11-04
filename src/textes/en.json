@@ -144,7 +144,7 @@
   },
   "viePrivee": {
     "titre": "No data collected.",
-    "texte": "Your login details stay in your device's Keychain. No account to create, no Ulti server.",
+    "texte": "Your login details stay in your device's Keychain. No account to create, no tracking.",
     "lien": "Our privacy policy"
   },
   "faq": {
@@ -404,15 +404,15 @@
       },
       "identifiants": {
         "titre": "Your login details",
-        "texte": "The server, username and password of your IPTV subscription are stored only on your device, in Apple's Keychain, and in your iCloud Keychain if you turn it on. They never go through an Ulti server: there isn't one."
+        "texte": "The server, username and password of your IPTV subscription are stored only on your device, in Apple's Keychain, and in your iCloud Keychain if you turn it on. They never go through an Ulti server."
       },
       "contacts": {
         "titre": "What the app connects to",
-        "texte": "Ulti only connects to:\n\n• your IPTV provider, to play your channels, movies, series and TV guide. It's the service you chose: neither the developer nor a partner of the developer;\n• The Movie Database (TMDB), to show posters and summaries. The app only sends the title and year of the works shown, and the device's language and region: no identifier, and nothing you type in search;\n• Apple, for Premium purchases and, if you turn it on, for iCloud sync."
+        "texte": "Ulti only connects to:\n\n• your IPTV provider, to play your channels, movies, series and TV guide. It's the service you chose: neither the developer nor a partner of the developer;\n• Ulti's relay (api.ultitv.com), to show posters and summaries from The Movie Database (TMDB). It only passes the request on to TMDB and keeps nothing: no logs. The app only sends the title and year of the works shown, and the device's language and region: no identifier, and nothing you type in search. Images load directly from TMDB (image.tmdb.org);\n• Apple, for Premium purchases and, if you turn it on, for iCloud sync."
       },
       "ip": {
         "titre": "Your IP address",
-        "texte": "As with any online service, your IPTV provider, TMDB and Apple receive your device's IP address when the app connects to them. Ulti keeps no record of it."
+        "texte": "As with any online service, your IPTV provider, Ulti's relay, TMDB and Apple receive your device's IP address when the app connects to them. The relay only uses it for the duration of the request, to limit the number of requests. Ulti keeps no record of it."
       },
       "icloud": {
         "titre": "iCloud sync",
