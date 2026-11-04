@@ -4,9 +4,11 @@
 // Les images vont dans captures/ (non versionné).
 import { chromium } from "playwright";
 import { mkdirSync, readFileSync } from "node:fs";
-const nombrePays = JSON.parse(readFileSync(new URL("../src/pays.json", import.meta.url), "utf8")).length;
+const listePays = JSON.parse(readFileSync(new URL("../src/pays.json", import.meta.url), "utf8"));
+const nombrePays = listePays.length;
+const existe = (code) => listePays.some((p) => p.code === code);
 
-const adresse = (process.argv[2] || "http://localhost:4321/ultime-iptv-site/").replace(/\/?$/, "/");
+const adresse = (process.argv.slice(2).find((a) => !a.startsWith("--")) || "http://localhost:4321/ultime-iptv-site/").replace(/\/?$/, "/");
 const dossier = new URL("../captures/", import.meta.url).pathname;
 mkdirSync(dossier, { recursive: true });
 
@@ -22,6 +24,11 @@ const pages = [
   ]),
   { nom: "404-fr", chemin: "nexiste-pas/", locale: "fr-FR", fuseau: "Europe/Paris" },
   { nom: "404-en", chemin: "nexiste-pas/", locale: "en-GB", fuseau: "Europe/London" },
+  // Autres langues (04/11/2026) : accueil et support en allemand et en néerlandais, s'ils existent.
+  ...[["de-de", "de-DE", "Europe/Berlin"], ["nl-nl", "nl-NL", "Europe/Amsterdam"]].filter(([c]) => existe(c)).flatMap(([c, locale, fuseau]) => [
+    { nom: c, chemin: `${c}/`, locale, fuseau },
+    { nom: `support-${c}`, chemin: `${c}/support/`, locale, fuseau },
+  ]),
   // Bandeau : navigateur belge qui arrive sur la page France.
   { nom: "bandeau-fr-be", chemin: "fr-fr/", locale: "fr-BE", fuseau: "Europe/Brussels" },
 ];
@@ -39,8 +46,9 @@ async function chargerImages(page) {
 const navigateur = await chromium.launch();
 let echecs = 0;
 
+const seulement = process.argv.find((a) => a.startsWith("--seulement="))?.split("=")[1].split(",");
 if (!process.argv.includes("--sans-captures")) {
-  for (const p of pages) {
+  for (const p of pages.filter((x) => !seulement || seulement.includes(x.nom))) {
     for (const [taille, viewport] of Object.entries(tailles)) {
       const contexte = await navigateur.newContext({
         viewport, locale: p.locale, timezoneId: p.fuseau, reducedMotion: "reduce",
@@ -135,7 +143,17 @@ const cas = [
   { locale: "en-GB", fuseau: "Europe/London", attendu: "en-gb/" },
   { locale: "en-US", fuseau: "Asia/Tokyo", attendu: "en-us/" },
   { locale: "en", fuseau: "Asia/Tokyo", attendu: "en/" },
-  { locale: "de-DE", fuseau: "Europe/Berlin", attendu: "en/" },
+  { locale: "de-DE", fuseau: "Europe/Berlin", attendu: existe("de-de") ? "de-de/" : "en/" },
+  { locale: "de-CH", fuseau: "Europe/Zurich", attendu: existe("de-ch") ? "de-ch/" : "en/" },
+  { locale: "nl-BE", fuseau: "Europe/Brussels", attendu: existe("nl-be") ? "nl-be/" : "en/" },
+  { locale: "nl-NL", fuseau: "Europe/Amsterdam", attendu: existe("nl-nl") ? "nl-nl/" : "en/" },
+  { locale: "nb-NO", fuseau: "Europe/Oslo", attendu: existe("nb-no") ? "nb-no/" : "en/" },
+  { locale: "no", fuseau: "Europe/Oslo", attendu: existe("nb-no") ? "nb-no/" : "en/" },
+  { locale: "pt-BR", fuseau: "America/Sao_Paulo", attendu: existe("pt-br") ? "pt-br/" : "en/" },
+  { locale: "pt-PT", fuseau: "Europe/Lisbon", attendu: existe("pt-pt") ? "pt-pt/" : "en/" },
+  { locale: "pt", fuseau: "America/Sao_Paulo", attendu: existe("pt-br") ? "pt-br/" : existe("pt-pt") ? "pt-pt/" : "en/" },
+  { locale: "es-ES", fuseau: "Europe/Madrid", attendu: existe("es-es") ? "es-es/" : "en/" },
+  { locale: "es-MX", fuseau: "America/Mexico_City", attendu: existe("es-es") ? "es-es/" : "en/" },
   { locale: "fr-FR", fuseau: "Asia/Tokyo", attendu: "fr-fr/" },
   { locale: "fr-FR", fuseau: "Europe/Paris", attendu: "pays/", js: false, nom: "JavaScript coupé → la racine reste la page de choix" },
   { locale: "fr-FR", fuseau: "Europe/Paris", attendu: "en-gb/", deja: "en-gb", nom: "choix déjà enregistré (en-gb) → en-gb" },

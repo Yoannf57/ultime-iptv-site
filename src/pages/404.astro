@@ -4,28 +4,31 @@
 // enregistré ou deviné, et la langue du visiteur passe en premier.
 import Base from "../layouts/Base.astro";
 import Logo from "../components/Logo.astro";
-import { t } from "../lib/textes";
+import { t, langues as toutesLesLangues } from "../lib/textes";
 import { paysPourNavigateur } from "../lib/pays";
 import { lien, base } from "../lib/liens";
 import code from "../scripts/deviner-pays.js?raw";
 
-const langues = ["fr", "en"];
+// Français et anglais toujours visibles ; avec JavaScript, la langue du visiteur s'affiche en premier.
+const visibles = ["fr", "en"];
+const langues = [...visibles, ...toutesLesLangues().filter((l) => !visibles.includes(l)).sort()];
 const script = `${code}
 (function () {
   var g = devinerPays(${JSON.stringify(paysPourNavigateur)});
   var langue = ${JSON.stringify(Object.fromEntries(paysPourNavigateur.map((p) => [p.code, p.langue])))}[g.code];
   document.querySelectorAll("[data-accueil]").forEach(function (a) { a.href = ${JSON.stringify(base)} + g.code + "/"; });
   var bloc = document.querySelector('[data-langue="' + langue + '"]');
+  if (bloc) bloc.hidden = false;
   if (bloc && bloc.parentNode.firstElementChild !== bloc) bloc.parentNode.insertBefore(bloc, bloc.parentNode.firstElementChild);
 })();`;
 ---
-<Base langue="fr" titre={`${t("fr", "erreur.metaTitre")} · ${t("en", "erreur.metaTitre")}`} description={t("en", "meta.description")} chemin="404.html" languesPied={langues} erreur>
+<Base langue="fr" titre={`${t("fr", "erreur.metaTitre")} · ${t("en", "erreur.metaTitre")}`} description={t("en", "meta.description")} chemin="404.html" languesPied={visibles} erreur>
   <header class="entete"><div class="entete-interieur"><a href={lien("")} data-accueil class="logo-lien"><Logo langue="fr" /></a></div></header>
   <main class="erreur">
     <p class="code" aria-hidden="true">404</p>
     <div class="blocs">
       {langues.map((l) => (
-        <section lang={l} data-langue={l}>
+        <section lang={l} data-langue={l} hidden={!visibles.includes(l)}>
           <h1>{t(l, "erreur.titre")}</h1>
           <p class="texte">{t(l, "erreur.texte")}</p>
           <p class="boutons">

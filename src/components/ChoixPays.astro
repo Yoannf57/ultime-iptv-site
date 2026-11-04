@@ -7,7 +7,9 @@ import { pays, regions } from "../lib/pays";
 import { lienPays } from "../lib/liens";
 import Logo from "./Logo.astro";
 
-const languesTitres = [...new Set(pays.map((p) => p.langue))].filter((l) => langues().includes(l));
+// Titre et régions en français et en anglais seulement : avec toutes les langues, la page deviendrait illisible.
+// Chaque pays, lui, reste écrit dans sa propre langue.
+const languesTitres = ["fr", "en"].filter((l) => langues().includes(l));
 function titresRegion(region: string) {
   return [...new Set(languesTitres.map((l) => t(l, `choix.regions.${region}`)))].join(" · ");
 }
