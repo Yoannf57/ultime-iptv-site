@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "verifier-textes": "node scripts/verifier-textes.mjs",
     "verifier-liens": "node scripts/verifier-liens.mjs",
-    "captures": "node scripts/captures.mjs"
+    "captures": "node scripts/captures.mjs",
+    "importer-captures": "node scripts/importer-captures.mjs"
   },
   "dependencies": {
     "astro": "^7.4.5"
