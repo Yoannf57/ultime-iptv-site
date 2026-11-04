@@ -5,8 +5,8 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 03/11/2026 en soirée (iPad, Mac et multi-écran dans la V1 ; formules Solo et Famille, films et
-séries en Premium, gratuit = le direct seulement).
+Dernière mise à jour : 04/11/2026 (nouveaux prix ; vraies captures App Store sur l'accueil ; 10 langues de plus, textes
+à faire relire).
 
 ## Nom de l'app (décidé par Yoann le 03/11/2026)
 
@@ -45,7 +45,10 @@ phrases, sans jargon.
      test d'Apple), jamais avec l'abonnement de Yoann.
 5. **Ne jamais promettre ce que l'app ne fait pas.** Chaque fonction citée doit exister dans l'app (voir section 6).
    Si une fonction n'est pas encore faite, elle n'apparaît pas, ou avec « Bientôt ».
-6. **Ne jamais proposer une langue que l'app n'a pas.** Aujourd'hui : français et anglais seulement.
+6. **Ne jamais proposer une langue que l'app n'a pas.** Depuis le 04/11/2026, sur demande de Yoann (l'app les ajoute
+   le même jour) : français, anglais, néerlandais, allemand, suédois, norvégien (bokmål), danois, finnois, espagnol,
+   italien, portugais du Brésil et du Portugal. Les 10 nouvelles langues sont **à faire relire** par une personne de
+   langue maternelle (traduction faite par Claude).
 7. Git : commits avec les fichiers nommés un par un (pas de `git add -A`), jamais d'envoi forcé, jamais de secret dans
    le dépôt. Push à la fin de chaque étape validée.
 
@@ -85,15 +88,18 @@ de S4, quand les textes et les captures sont définitifs.
 
 ### Adresses
 Une adresse par pays et langue, en minuscules : `/fr-fr/`, `/fr-be/`, `/fr-lu/`, `/fr-ch/`, `/fr-ca/`, `/en-gb/`,
-`/en-ie/`, `/en-us/`, `/en-ca/`, et `/en/` pour « International (English) ».
+`/en-ie/`, `/en-us/`, `/en-ca/`, `/nl-nl/`, `/nl-be/`, `/de-de/`, `/de-at/`, `/de-ch/`, `/sv-se/`, `/nb-no/`, `/da-dk/`,
+`/fi-fi/`, `/es-es/`, `/it-it/`, `/pt-br/`, `/pt-pt/`, et `/en/` pour « International (English) ».
+Fichiers de textes : `fr`, `en`, `nl`, `de`, `sv`, `nb`, `da`, `fi`, `es`, `it`, `pt-br`, `pt` (Portugal). La devinette
+du pays essaie l'étiquette complète du navigateur (`pt-br`) puis la langue seule (`pt`), et `no`/`nn` → `nb`.
 - Chaque page a ses balises `hreflang` vers toutes les autres versions, plus `x-default` vers `/en/`.
-- Les pays dont la langue n'est pas encore traduite (Allemagne, Pays-Bas, pays nordiques, Espagne, Italie, Portugal,
-  Brésil…) **n'apparaissent pas** dans la liste : leurs visiteurs arrivent sur `/en/`.
+- Les pays dont la langue n'est pas encore traduite **n'apparaissent pas** dans la liste : leurs visiteurs arrivent
+  sur `/en/`. Un Mexicain ou un Argentin arrive sur `/es-es/` (seul pays hispanophone, prix en euros) avec le bandeau.
+- Page de choix et 404 : titres en français et en anglais seulement (12 langues seraient illisibles) ; chaque pays reste
+  écrit dans sa langue ; sur la 404, la langue du visiteur s'ajoute en premier.
 
-### Langues suivantes (même rythme que l'app, Lot I2)
-- I2a : néerlandais et allemand → ajouter `nl-nl`, `nl-be`, `de-de`, `de-at`, `de-ch`, `de-lu`.
-- I2b : suédois, norvégien (bokmål), danois, finnois.
-- I2c : espagnol, italien, portugais du Brésil puis du Portugal.
+### Langues suivantes
+- Faites le 04/11/2026 : I2a (nl, de), I2b (sv, nb, da, fi), I2c (es, it, pt-br, pt). `de-lu` pas ajouté (pas demandé).
 - Plus tard : turc, polonais, arabe (mise en page de droite à gauche : prévoir `dir="rtl"` dès maintenant dans la
   structure, sans le tester tout de suite).
 
@@ -279,4 +285,8 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 - [x] S1 — Socle
 - [x] S2 — Accueil
 - [x] S3 — Pages obligatoires
-- [ ] S4 — Captures et finitions
+- [ ] S4 — Captures et finitions : **vraies captures faites le 04/11/2026** (`npm run importer-captures` copie et
+  réduit celles de `~/Developer/ultime-iptv/Notes/app-store/captures/` ; `04-fiche-film` et `ipad/07-films-series`
+  écartées car elles montrent des photos de vraies personnes : à reprendre quand la session de l'app les aura refaites
+  sans visages). Langues sans captures propres : captures anglaises. Reste : image de partage par langue, Lighthouse,
+  relecture des traductions, puis `indexable: true`.
