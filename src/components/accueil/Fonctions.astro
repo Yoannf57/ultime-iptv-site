@@ -1,8 +1,14 @@
 ---
 import { t } from "../../lib/textes";
-import { ecrans, anneau } from "../../lib/ecrans";
 interface Props { langue: string }
 const { langue: l } = Astro.props;
+// Motifs décoratifs des cartes (pas des écrans de l'app). Anneau rouge seulement pour une chaîne d'info.
+const anneaux = [{ avance: 70, info: false }, { avance: 35, info: true }, { avance: 88, info: false }];
+const anneau = (avance: number, info: boolean) => `conic-gradient(${info ? "#FF3B30" : "#F5F5F7"} 0 ${avance}%, #3A3A3E ${avance}% 100%)`;
+const affiches = [
+  { affiche: "SPRITE FRIGHT", fond: "#3D5A2A" }, { affiche: "SPRING", fond: "#2E5E7A" },
+  { affiche: "CHARGE", fond: "#7A2E2E" }, { affiche: "COFFEE RUN", fond: "#6B4E2E" },
+];
 ---
 <section id="fonctions" aria-labelledby="titre-fonctions" class="section apparition">
   <h2 id="titre-fonctions" class="titre-section" style="max-width:18ch">{t(l, "fonctions.titre")}</h2>
@@ -10,7 +16,7 @@ const { langue: l } = Astro.props;
   <div class="cartes">
     <article class="carte">
       <div class="motif ronds" aria-hidden="true">
-        {ecrans.fonctionsAnneaux.map((a) => <div class="rond" style={`background:${anneau(a.avance, a.info)}`}><div></div></div>)}
+        {anneaux.map((a) => <div class="rond" style={`background:${anneau(a.avance, a.info)}`}><div></div></div>)}
       </div>
       <h3>{t(l, "fonctions.directTitre")}</h3>
       <p>{t(l, "fonctions.directTexte")}</p>
@@ -26,7 +32,7 @@ const { langue: l } = Astro.props;
     </article>
     <article class="carte">
       <div class="motif affiches" aria-hidden="true">
-        {ecrans.fonctionsAffiches.map((f) => <span style={`background:${f.fond}`}>{f.affiche}</span>)}
+        {affiches.map((f) => <span style={`background:${f.fond}`}>{f.affiche}</span>)}
       </div>
       <h3>{t(l, "fonctions.filmsTitre")} <span class="premium">{t(l, "fonctions.premium")}</span></h3>
       <p>{t(l, "fonctions.filmsTexte")}</p>

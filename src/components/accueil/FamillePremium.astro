@@ -1,19 +1,18 @@
 ---
 import { t } from "../../lib/textes";
-import { ecrans } from "../../lib/ecrans";
+import { captures } from "../../lib/captures";
+import Capture from "./Capture.astro";
 interface Props { langue: string }
 const { langue: l } = Astro.props;
+const { appareil, capture } = captures.famille;
 const lignes = ["films", "multi", "pause", "replay", "telechargements", "icloud", "plusieurs", "themes"];
 ---
 <section aria-labelledby="titre-famille" class="section deux apparition">
   <article class="carte">
     <h2 id="titre-famille">{t(l, "famille.titre")}</h2>
     <p class="gris texte">{t(l, "famille.texte")}</p>
-    <div class="profils" aria-hidden="true">
-      {ecrans.profils.map((p) => {
-        const nom = p.cle ? t(l, `ecrans.profils.${p.cle}`) : p.nom!;
-        return <div class="profil"><span class="avatar" style={`background:${p.fond}`}>{p.initiale ?? nom.charAt(0)}</span><span class="gris">{nom}</span></div>;
-      })}
+    <div class="ecrin-tv profils">
+      <Capture langue={l} appareil={appareil} capture={capture} sizes="(max-width: 64rem) 88vw, 32rem" />
     </div>
   </article>
   <article class="carte" aria-labelledby="titre-premium">
@@ -31,9 +30,7 @@ const lignes = ["films", "multi", "pause", "replay", "telechargements", "icloud"
   h2 { margin: 0; font-size: clamp(1.875rem, 3.2vw, 2.75rem); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800; }
   h2.avec-etiquette { margin-top: 0.75rem; }
   .texte { margin: 1.125rem 0 0; font-size: 1.0625rem; line-height: 1.5; }
-  .profils { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1.25rem; }
-  .profil { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-size: 0.875rem; }
-  .avatar { width: 4rem; height: 4rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; }
+  .profils { margin-top: 2rem; border-radius: 1rem; }
   .etiquette { margin: 0; font-size: 0.9375rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; }
   ul { margin: 1.75rem 0 0; padding: 0; list-style: none; font-size: 1.0625rem; }
   li { padding: 0.875rem 0; border-top: 1px solid #242428; }

@@ -1,0 +1,20 @@
+{
+  "_note": "Quelles vraies captures montrer où (fichiers dans src/assets/captures/<fr|en>/<appareil>/). Les textes (onglets, légendes, textes alternatifs) sont dans src/textes/*.json : onglets.<vue>, visite.legendes.<vue>, captures.vues.<capture>, captures.appareils.<appareil>. Écartées : 04-fiche-film et 07-films-series sur iPad (photos de vraies personnes).",
+  "apercu": {
+    "vues": ["accueil", "direct", "guide", "profils"],
+    "ecrans": {
+      "appletv": { "accueil": "accueil", "direct": "direct-bandeau", "guide": "guide", "profils": "profils" },
+      "ipad": { "accueil": "accueil", "direct": "direct", "guide": "guide", "profils": "profils" },
+      "iphone": { "accueil": "accueil", "direct": "direct", "guide": "guide", "profils": "profils" }
+    }
+  },
+  "visite": [
+    { "vue": "direct", "appareil": "ipad", "capture": "direct", "premium": false },
+    { "vue": "guide", "appareil": "appletv", "capture": "guide", "premium": false },
+    { "vue": "pause", "appareil": "ipad", "capture": "pause-direct", "premium": true },
+    { "vue": "films", "appareil": "iphone", "capture": "films-series", "premium": true },
+    { "vue": "multi", "appareil": "appletv", "capture": "multi-ecran", "premium": true }
+  ],
+  "appletv": { "appareil": "appletv", "capture": "direct-bandeau" },
+  "famille": { "appareil": "appletv", "capture": "profils" }
+}

@@ -1,0 +1,34 @@
+// Vraies captures de l'app (src/assets/captures/<fr|en>/<appareil>/<nom>.webp, importées par
+// « npm run importer-captures »). Elles n'existent qu'en français et en anglais : les autres langues montrent
+// les captures anglaises.
+import type { ImageMetadata } from "astro";
+import donnees from "../donnees/captures.json";
+
+const images = import.meta.glob<{ default: ImageMetadata }>("../assets/captures/*/*/*.webp", { eager: true });
+
+export type Appareil = "appletv" | "ipad" | "iphone";
+export type Ecran = { appareil: Appareil; capture: string };
+export const captures = donnees as {
+  apercu: { vues: string[]; ecrans: Record<Appareil, Record<string, string>> };
+  visite: { vue: string; appareil: Appareil; capture: string; premium: boolean }[];
+  appletv: Ecran;
+  famille: Ecran;
+};
+
+export function langueCaptures(langue: string): "fr" | "en" {
+  return langue === "fr" ? "fr" : "en";
+}
+
+export function image(langue: string, appareil: Appareil, nom: string): ImageMetadata {
+  const chemin = `../assets/captures/${langueCaptures(langue)}/${appareil}/${nom}.webp`;
+  const module = images[chemin];
+  if (!module) throw new Error(`Capture introuvable : ${chemin} (lancer « npm run importer-captures »)`);
+  return module.default;
+}
+
+// Largeurs produites pour chaque appareil (AVIF et WebP).
+export const largeurs: Record<Appareil, number[]> = {
+  appletv: [640, 960, 1280, 1920, 2560],
+  ipad: [480, 768, 1024, 1536, 2048],
+  iphone: [240, 360, 480, 720, 1000],
+};

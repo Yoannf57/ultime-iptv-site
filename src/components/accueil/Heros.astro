@@ -1,12 +1,18 @@
 ---
 import config from "../../../site.config.mjs";
 import { t } from "../../lib/textes";
-import { ecrans } from "../../lib/ecrans";
-import EcranTV from "./EcranTV.astro";
-import EcranTel from "./EcranTel.astro";
+import { captures, type Appareil } from "../../lib/captures";
+import Capture from "./Capture.astro";
 import Halo from "./Halo.astro";
 interface Props { langue: string; lienAppStore: string | null }
 const { langue: l, lienAppStore } = Astro.props;
+const { vues, ecrans } = captures.apercu;
+// Apple TV au centre, iPad devant à gauche, iPhone devant à droite. Tailles d'affichage pour « sizes ».
+const appareils: { appareil: Appareil; classe: string; sizes: string }[] = [
+  { appareil: "appletv", classe: "ecrin-tv tv", sizes: "(max-width: 45rem) 92vw, min(82vw, 61.5rem)" },
+  { appareil: "ipad", classe: "ecrin-ipad ipad", sizes: "min(30vw, 22rem)" },
+  { appareil: "iphone", classe: "ecrin-tel iphone", sizes: "min(14vw, 10rem)" },
+];
 ---
 <section aria-labelledby="titre-principal" class="haut">
   <p class="surtitre">{t(l, "heros.surtitre")}</p>
@@ -24,22 +30,23 @@ const { langue: l, lienAppStore } = Astro.props;
 <section aria-label={t(l, "apercu.etiquette")} class="apercu">
   <div class="scene">
     <Halo etendue="large" />
-    <div class="ecrin-tv">
-      <EcranTV langue={l} id="tv" vues={["accueil", "direct", "replay", "films", "series"]} barre />
-    </div>
-    <div class="telephone ecrin-tel">
-      <EcranTel langue={l} id="tel" />
-    </div>
-  </div>
-  <div class="pastilles avec-js" role="group" aria-label={t(l, "apercu.ongletsTV")}>
-    {ecrans.ongletsTV.map((o, i) => (
-      <button type="button" data-cible="tv" data-vue={o} aria-pressed={i === 0 ? "true" : "false"}>{t(l, `onglets.${o}`)}</button>
+    {appareils.map(({ appareil, classe, sizes }) => (
+      <div class={classe} data-ecran="apercu">
+        {vues.map((v, i) => (
+          <div class="vue" data-vue={v} hidden={i > 0}>
+            <Capture langue={l} appareil={appareil} capture={ecrans[appareil][v]} sizes={sizes} prioritaire={i === 0 && appareil === "appletv"} differee={i > 0} />
+          </div>
+        ))}
+      </div>
     ))}
   </div>
-  <p class="indice avec-js">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M3 2.5 13 7.2 8.6 8.6 7.2 13Z" /></svg>
-    {t(l, "apercu.indice")}
-  </p>
+  <p class="appareils">{t(l, "apercu.appareils")}</p>
+  <div class="pastilles avec-js" role="group" aria-label={t(l, "apercu.onglets")}>
+    {vues.map((v, i) => (
+      <button type="button" data-cible="apercu" data-vue={v} aria-pressed={i === 0 ? "true" : "false"}>{t(l, `onglets.${v}`)}</button>
+    ))}
+  </div>
+  <p class="indice avec-js">{t(l, "apercu.indice")}</p>
 </section>
 
 <style>
@@ -56,18 +63,15 @@ const { langue: l, lienAppStore } = Astro.props;
   .neutre { margin: 1.25rem 0 0; font-size: 0.8125rem; color: #8e8e93; }
 
   .apercu { max-width: 75rem; margin: 0 auto; padding: 2.5rem 1.5rem 7.5rem; }
-  .scene { position: relative; padding: 0 6% 7% 0; }
-  .telephone { position: absolute; z-index: 2; right: 0; bottom: 0; width: 22%; }
-  .pastilles { display: none; }
-  .indice { margin: 1.75rem 0 0; text-align: center; font-size: 0.875rem; color: #8e8e93; display: flex; justify-content: center; align-items: center; gap: 0.5rem; }
+  .scene { position: relative; padding: 0 9% 9%; }
+  .ipad { position: absolute; z-index: 2; left: 0; bottom: 0; width: 30%; }
+  .iphone { position: absolute; z-index: 3; right: 0; bottom: 0; width: 14%; }
+  .appareils { margin: 2.25rem 0 0; text-align: center; font-size: 0.9375rem; color: #a1a1a6; }
+  .pastilles { margin-top: 1.25rem; }
+  .indice { margin: 1rem 0 0; text-align: center; font-size: 0.875rem; color: #8e8e93; }
 
   @media (max-width: 45rem) {
     .scene { padding: 0; }
-    .telephone { display: none; }
-    /* Sur téléphone, les onglets dessinés dans la télé sont trop petits pour le doigt : rangée de pastilles lisibles. */
-    .pastilles { margin: 1.25rem auto 0; display: flex; flex-wrap: nowrap; justify-content: center; gap: 0.125rem; padding: 0.25rem; border-radius: 999px; background: #141416; width: fit-content; max-width: 100%; }
-    .pastilles button { border: 0; cursor: pointer; padding: 0.5rem 0.625rem; min-height: 2.75rem; border-radius: 999px; font: inherit; font-size: 0.8125rem; white-space: nowrap; font-weight: 600; background: transparent; color: #d1d1d6; }
-    .pastilles button[aria-pressed="true"] { background: #f5f5f7; color: #000; }
-    .indice { margin-top: 1rem; }
+    .ipad, .iphone { display: none; }
   }
 </style>

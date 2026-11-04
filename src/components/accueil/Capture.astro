@@ -1,0 +1,22 @@
+---
+// Une vraie capture de l'app, dans un écran flottant (coins arrondis, liseré blanc très fin ; aucun cadre dessiné).
+// AVIF et WebP en plusieurs largeurs ; « differee » = chargée seulement quand elle devient visible (onglet choisi).
+import { Picture } from "astro:assets";
+import { t } from "../../lib/textes";
+import { image, largeurs, type Appareil } from "../../lib/captures";
+interface Props { langue: string; appareil: Appareil; capture: string; sizes: string; differee?: boolean; prioritaire?: boolean }
+const { langue: l, appareil, capture, sizes, differee = false, prioritaire = false } = Astro.props;
+const alt = t(l, "captures.alt", { appareil: t(l, `captures.appareils.${appareil}`), ecran: t(l, `captures.vues.${capture}`) });
+---
+<Picture
+  src={image(l, appareil, capture)}
+  formats={["avif", "webp"]}
+  fallbackFormat="webp"
+  widths={largeurs[appareil]}
+  sizes={sizes}
+  alt={alt}
+  loading={differee ? "lazy" : prioritaire ? "eager" : "lazy"}
+  fetchpriority={prioritaire ? "high" : "auto"}
+  decoding="async"
+  class:list={["capture", appareil]}
+/>

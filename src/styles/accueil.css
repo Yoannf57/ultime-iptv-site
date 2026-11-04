@@ -8,9 +8,34 @@
 .gris { color: #a1a1a6; }
 .coche { flex: none; }
 
-/* Écrans flottants : coins arrondis, liseré blanc très fin, ombre profonde (CLAUDE.md, section 5). */
-.ecrin-tv { position: relative; z-index: 1; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 2.5rem 7.5rem rgba(0,0,0,0.9); }
-.ecrin-tel { border-radius: 13% / 6%; box-shadow: 0 0 0 1px rgba(255,255,255,0.22), 0 0 0 7px #000, 0 1.875rem 5rem rgba(0,0,0,0.95); }
+/* Écrans flottants : vraies captures, coins arrondis, liseré blanc très fin, ombre profonde (CLAUDE.md, section 5).
+   Le fin contour noir (0 0 0 6px #000) détache l'iPad et l'iPhone quand ils passent devant l'Apple TV. */
+.ecrin-tv, .ecrin-ipad, .ecrin-tel { position: relative; z-index: 1; overflow: hidden; background: #000; }
+.ecrin-tv { border-radius: 1.25rem; box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 2.5rem 7.5rem rgba(0,0,0,0.9); }
+.ecrin-ipad { border-radius: 4.5% / 6%; box-shadow: 0 0 0 1px rgba(255,255,255,0.22), 0 0 0 6px #000, 0 1.875rem 5rem rgba(0,0,0,0.95); }
+.ecrin-tel { border-radius: 13% / 6%; box-shadow: 0 0 0 1px rgba(255,255,255,0.22), 0 0 0 6px #000, 0 1.875rem 5rem rgba(0,0,0,0.95); }
+.ecrin-tv .vue, .ecrin-ipad .vue, .ecrin-tel .vue { display: block; }
+.ecrin-tv picture, .ecrin-ipad picture, .ecrin-tel picture { display: block; }
+.capture { display: block; width: 100%; height: auto; }
+.capture.appletv { aspect-ratio: 16 / 9; }
+.capture.ipad { aspect-ratio: 4 / 3; }
+.capture.iphone { aspect-ratio: 1320 / 2868; }
+
+/* Écrans qui changent au clic (onglets.js) : fondu court. */
+.vue[hidden] { display: none !important; }
+.vue.entree { animation: fondu 0.2s ease-out; }
+@keyframes fondu { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .vue.entree { animation: none; } }
+
+/* Rangée de pastilles (vrais boutons, aria-pressed). */
+.pastilles { margin: 2rem auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.25rem; padding: 0.3125rem; border-radius: 999px; background: #141416; width: fit-content; max-width: 100%; }
+.pastilles button { border: 0; cursor: pointer; padding: 0.625rem 1.125rem; min-height: 2.75rem; border-radius: 999px; font: inherit; font-size: 0.9375rem; font-weight: 600; white-space: nowrap; background: transparent; color: #d1d1d6; }
+.pastilles button:hover { color: #fff; }
+.pastilles button[aria-pressed="true"] { background: #f5f5f7; color: #000; }
+@media (max-width: 45rem) {
+  .pastilles { border-radius: 1.5rem; }
+  .pastilles button { padding: 0.5rem 0.75rem; font-size: 0.8125rem; }
+}
 
 /* Apparition douce : seulement avec JavaScript et sans « réduire les animations ». */
 .apparition.a-venir { opacity: 0; transform: translateY(1.25rem); transition: opacity 0.7s ease, transform 0.7s ease; }

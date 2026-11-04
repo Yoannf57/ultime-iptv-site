@@ -1,45 +1,57 @@
 ---
-// « Faites le tour. » : onglets + légende + grand écran. Sans JavaScript, les cinq écrans s'affichent l'un sous l'autre.
-import { t } from "../../lib/textes";
-import { ecrans } from "../../lib/ecrans";
-import EcranTV from "./EcranTV.astro";
+// « Faites le tour. » : onglets + légende + une vraie capture par onglet (Apple TV, iPad ou iPhone selon l'écran).
+// Sans JavaScript, toutes les captures s'affichent l'une sous l'autre.
+import config from "../../../site.config.mjs";
+import { t, tHtml } from "../../lib/textes";
+import { ciblesTextes } from "../../lib/liens";
+import { captures } from "../../lib/captures";
+import Capture from "./Capture.astro";
 import Halo from "./Halo.astro";
-interface Props { langue: string }
-const { langue: l } = Astro.props;
-const premier = ecrans.ongletsVisite[0];
+interface Props { langue: string; codePays: string }
+const { langue: l, codePays } = Astro.props;
+const vues = captures.visite;
+const premier = vues[0].vue;
+const classes = { appletv: "ecrin-tv", ipad: "ecrin-ipad", iphone: "ecrin-tel" } as const;
+const tailles = { appletv: "min(92vw, 72rem)", ipad: "min(92vw, 52rem)", iphone: "min(70vw, 20rem)" } as const;
 ---
 <section id="visite" aria-labelledby="titre-visite" class="section visite apparition">
   <h2 id="titre-visite" class="titre-section centre">{t(l, "visite.titre")}</h2>
-  <div class="onglets avec-js" role="group" aria-label={t(l, "visite.groupe")}>
-    {ecrans.ongletsVisite.map((o) => (
-      <button type="button" data-cible="visite" data-vue={o} aria-pressed={o === premier ? "true" : "false"}>{t(l, `onglets.${o}`)}</button>
+  <div class="pastilles avec-js" role="group" aria-label={t(l, "visite.groupe")}>
+    {vues.map(({ vue }) => (
+      <button type="button" data-cible="visite" data-vue={vue} aria-pressed={vue === premier ? "true" : "false"}>{t(l, `onglets.${vue}`)}</button>
     ))}
   </div>
   <div data-groupe="visite">
-    {ecrans.ongletsVisite.map((o) => (
-      <div class="panneau" data-panneau={o} hidden={o !== premier}>
-        <h3 class="sans-js">{t(l, `onglets.${o}`)}</h3>
-        <p class="legende">{t(l, `visite.legendes.${o}`)}</p>
-        <div class="scene">
+    {vues.map(({ vue, appareil, capture, premium }) => (
+      <div class="panneau" data-panneau={vue} hidden={vue !== premier}>
+        <h3 class="sans-js">{t(l, `onglets.${vue}`)}</h3>
+        <p class="legende">{t(l, `visite.legendes.${vue}`)}{premium && <span class="premium">{t(l, "fonctions.premium")}</span>}</p>
+        <div class:list={["scene", appareil]}>
           <Halo />
-          <div class="ecrin-tv"><EcranTV langue={l} id={`visite-${o}`} vues={[o]} /></div>
+          <div class={classes[appareil]}>
+            <Capture langue={l} appareil={appareil} capture={capture} sizes={tailles[appareil]} />
+          </div>
         </div>
       </div>
     ))}
   </div>
+  <p class="credits" set:html={tHtml(l, "visite.credits", ciblesTextes(codePays, config.contact))} />
 </section>
 
 <style>
   .visite { padding-top: 0; }
-  .onglets { margin: 2.25rem auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.375rem; padding: 0.375rem; border-radius: 999px; background: #141416; width: fit-content; max-width: 100%; }
-  .onglets button { border: 0; cursor: pointer; padding: 0.625rem 1.25rem; border-radius: 999px; font: inherit; font-size: 0.9375rem; font-weight: 600; background: transparent; color: #d1d1d6; }
-  .onglets button[aria-pressed="true"] { background: #f5f5f7; color: #000; }
+  .pastilles { margin-top: 2.25rem; }
   .panneau[hidden] { display: none; }
   :global(html:not(.js)) .panneau[hidden] { display: block; }
   .panneau.entree { animation: fondu 0.2s ease-out; }
-  @keyframes fondu { from { opacity: 0; } to { opacity: 1; } }
   h3 { margin: 3rem 0 0; text-align: center; font-size: 1.5rem; font-weight: 700; }
   .legende { margin: 1.25rem auto 0; max-width: 40rem; text-align: center; font-size: 1.0625rem; line-height: 1.5; color: #a1a1a6; min-height: 3.25rem; }
-  .scene { position: relative; margin-top: 1.5rem; }
+  .premium { display: inline-block; vertical-align: 0.0625rem; margin-left: 0.5rem; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #a1a1a6; border: 1px solid #3a3a3e; border-radius: 999px; padding: 0.1875rem 0.5625rem; }
+  .scene { position: relative; margin: 1.5rem auto 0; }
+  .scene.ipad { max-width: 52rem; }
+  .scene.iphone { max-width: 20rem; }
+  .credits { margin: 2.5rem auto 0; max-width: 46rem; text-align: center; font-size: 0.8125rem; line-height: 1.5; color: #8e8e93; }
+  .credits :global(a) { color: #c7c7cc; }
+  @media (max-width: 45rem) { .scene.iphone { max-width: 70vw; } }
   @media (prefers-reduced-motion: reduce) { .panneau.entree { animation: none; } }
 </style>
