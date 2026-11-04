@@ -5,7 +5,7 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 04/11/2026 au soir (page Conditions d'utilisation ; confidentialité avec le relais TMDB ; grand
+Dernière mise à jour : 04/11/2026 au soir (informations légales définitives ; page Conditions d'utilisation ; confidentialité avec le relais TMDB ; grand
 visuel Apple TV + iPhone et visite automatique sur iPad, dans les cadres officiels d'Apple ; « Ulti Premium » ; captures
 des 12 langues ; textes à faire relire).
 
@@ -190,9 +190,16 @@ une langue.
    repris de `~/Developer/ultime-iptv/Notes/app-store/contrat-licence.md` (à faire relire par un juriste), dans
    `src/donnees/conditions/fr.json` et `en.json` : version française pour les pages en français, anglaise ailleurs
    (avec « Ce contrat est proposé en anglais. » traduit). Nom et adresse de l'éditeur pris dans `site.config.mjs`
-   (« [À compléter] » tant qu'ils manquent). Adresses données à la session de l'app pour `PremiumView.termsURL` :
+   (informations définitives du 04/11/2026). Adresses données à la session de l'app pour `PremiumView.termsURL` :
    `https://yoannf57.github.io/ultime-iptv-site/fr-fr/terms/` et `…/en/terms/`.
-4. **Mentions légales** : modèle à compléter, **à valider par Yoann** (ne rien inventer sur son identité ni son statut).
+4. **Mentions légales** : informations définitives données par Yoann le 04/11/2026 (23 h 20), rangées dans
+   `site.config.mjs` (`editeur`, `hebergeurs`) et reprises par les mentions légales, les conditions et la
+   confidentialité (`src/lib/editeur.ts`) : Yoann FEBVRE, entrepreneur individuel (micro-entrepreneur), nom commercial
+   Ulti, adresse de Paris ; hébergeurs GitHub (site) et Cloudflare (relais api.ultitv.com). Noms et adresses tels quels
+   dans les 12 langues, seul le nom du pays est traduit (`Intl.DisplayNames`). **Téléphone et SIREN** : `null` dans
+   `site.config.mjs` (`editeur.telephone`, `editeur.siren`) → emplacements bien visibles ; une ligne à changer pour
+   chacun. **Ne jamais écrire sur le site une autre adresse que celle de Paris, ni le nom du service de
+   domiciliation.** Ne rien inventer d'autre sur l'identité ou le statut de Yoann.
 5. **Choisissez votre pays ou votre région**.
 6. Page 404 traduite.
 
