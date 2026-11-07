@@ -5,7 +5,7 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 07/11/2026 (publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
+Dernière mise à jour : 07/11/2026 au soir (badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
 « Bientôt sur Android », `appleTvDisponible` ; avant : informations légales définitives ; page Conditions d'utilisation ; confidentialité avec le relais TMDB ; grand
 visuel Apple TV + iPhone et visite automatique sur iPad, dans les cadres officiels d'Apple ; « Ulti Premium » ; captures
 des 12 langues ; textes à faire relire).
@@ -332,7 +332,9 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
   visuel ; l'en-tête et le Support gardent un lien texte). Lien avec `aria-label` traduit (`heros.badge`), image
   `alt=""`. Fichiers : `npm run importer-badges` copie à l'identique les SVG d'Apple de `Notes/badges/` (ignoré par
   Git) vers `src/assets/badges/<langue>.svg` (`es-mx` facultatif) ; langue sans badge → anglais ; aucun badge → bouton
-  texte de secours (avertissement au build).
+  texte de secours (avertissement au build). **Importés le 07/11/2026 au soir** : badges noirs des 12 langues + `es-mx`
+  (aucune langue ne manque), droits 644, versionnés. Badge **noir** validé par Yoann ; les blancs ne vont que dans
+  `captures/badges-blancs/` (non versionné), pour comparer, jamais sur le site.
 - **Smart App Banner** (`Base.astro`) : `<meta name="apple-itunes-app" content="app-id=…">` si `disponible`, sur les
   pages d'un pays ou d'une langue et leurs sous-pages, jamais sur la page de choix ni la 404.
 - **Android** (sans date, téléphone, tablette et télé) : seulement une ligne grise sous le badge (`heros.android`
@@ -366,8 +368,8 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 5. **Branchement de ultitv.com** (étape séparée, quand Yoann le demande ; le domaine est déjà acheté) : d'abord
    « Custom domain » dans les réglages Pages de GitHub, **ensuite** les enregistrements DNS chez Cloudflare, puis
    « Enforce HTTPS » ; activer la valeur de `site.config` et créer le `CNAME` à ce moment-là ; guider Yoann clic par clic.
-6. **Au Lot 11** : **préparé le 07/11/2026** (liens App Store calculés, badge officiel, Smart App Banner, Android,
-   `appleTvDisponible`). Le jour J : voir section 10, « Jour de la publication ». Reste aussi, hors site : bascule de
+6. **Au Lot 11** : **préparé le 07/11/2026** (liens App Store calculés, badge officiel et badges d'Apple importés,
+   Smart App Banner, Android, `appleTvDisponible`). Le jour J : voir section 10, « Jour de la publication ». Reste aussi, hors site : bascule de
    l'URL de confidentialité dans App Store Connect (décision de Yoann).
 7. **Avec le Lot I2** : une langue de plus = un fichier de textes + les pays.
 
@@ -381,15 +383,16 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
   soir ; `04-fiche-film` écartée car elle montre des photos de vraies personnes ; `ipad/07-films-series` reprise,
   refaite sans la distribution). Une langue sans captures prend les anglaises. Cadres officiels d'Apple pour l'iPhone
   et l'iPad. Reste : image de partage par langue, relecture des traductions (`indexable: true` avec ultitv.com).
-- [x] Lot 11 préparé (07/11/2026) — compte rendu `Notes/comptes-rendus/2026-11-07-publication.md`. Traductions des
+- [x] Lot 11 préparé (07/11/2026, badges importés le soir : il ne reste que le jour J) — compte rendu
+  `Notes/comptes-rendus/2026-11-07-publication.md`. Traductions des
   nouvelles phrases (Android, Apple TV, badge) faites par Claude : à faire relire avec le reste.
 
 ### Jour de la publication
-1. `site.config.mjs` : `disponible: true` ; `indexable: true` si ultitv.com n'est pas encore branché (sinon c'est déjà
+1. `site.config.mjs` : **la ligne `disponible: false,` devient `disponible: true,`** ; `indexable: true` si ultitv.com n'est pas encore branché (sinon c'est déjà
    fait) ; `appleTvDisponible: false` seulement si Apple n'a pas encore accepté la version Apple TV (à remettre à
    `true` dès qu'elle l'est).
-2. Si ce n'est pas encore fait : badges d'Apple dans `Notes/badges/`, puis `npm run importer-badges` (et committer
-   `src/assets/badges/`).
+2. Badges : déjà faits (07/11/2026). À refaire seulement si Apple publie de nouveaux badges : les déposer dans
+   `Notes/badges/`, `npm run importer-badges`, committer `src/assets/badges/`.
 3. `npm run build`, `npm run verifier-textes`, `npm run verifier-liens`, commit, push.
 4. En ligne : le badge ; les liens App Store de fr-fr, en-gb, pt-br et de `/es/` ; le bandeau Smart App Banner sur un
    vrai iPhone dans Safari.
