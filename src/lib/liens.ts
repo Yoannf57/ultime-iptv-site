@@ -1,4 +1,5 @@
-import { pays } from "./pays";
+import { pays, trouverPays } from "./pays";
+import { lienAppStore } from "./appstore";
 // Construit toutes les adresses internes à partir de la base du site
 // (« /ultime-iptv-site/ » sur GitHub Pages, « / » sur ultitv.com).
 // Ne jamais écrire href="/..." directement dans une page.
@@ -51,6 +52,7 @@ export function ciblesTextes(code: string, contact: string): Record<string, stri
     tarifs: lien(`${code}/#tarifs`),
     credits: lien(`${code}/legal/#s-credits`),
     pays: lien("pays/"),
+    appstore: lienAppStore(trouverPays(code)),
     "apple-resilier": `https://support.apple.com/${apple}/118428`,
     "apple-partage": `https://support.apple.com/${apple}/108380`,
     "github-confidentialite": "https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement",

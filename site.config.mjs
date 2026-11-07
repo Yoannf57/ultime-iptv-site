@@ -1,10 +1,20 @@
 // Réglages du site : c'est le SEUL endroit à modifier pour basculer le site.
 export default {
   // false tant que l'app n'est pas sur l'App Store : bouton « Bientôt sur l'App Store » désactivé.
-  // Passer à true au Lot 11 (et remplir lienAppStore dans src/pays.json).
+  // JOUR DE LA PUBLICATION : passer à true. Le badge officiel, les liens App Store de chaque pays et le Smart App
+  // Banner de Safari s'activent tout seuls.
   disponible: false,
 
-  // false = caché de Google (balise noindex + robots.txt qui interdit tout). Passer à true à la fin de S4.
+  // false tant qu'Apple n'a pas accepté la version Apple TV : sous le badge, « Apple TV : dans quelques jours. », et
+  // la FAQ et le Support disent que l'Apple TV arrive dans les jours qui viennent. Sans effet si disponible vaut false.
+  appleTvDisponible: true,
+
+  // Fiche App Store : https://apps.apple.com/<pays>/app/<nom>/id<id> (adresse sans pays pour les pages
+  // internationales). Calculée par src/lib/appstore.ts ; une seule valeur à changer si Apple change le format.
+  appStore: { id: "6829902519", nom: "ulti-iptv-player" },
+
+  // false = caché de Google (balise noindex + robots.txt qui interdit tout).
+  // Passer à true avec le branchement d'ultitv.com (ou le jour de la publication si le domaine n'est pas branché).
   indexable: false,
 
   // Domaine définitif. Inactif tant que les DNS ne sont pas prêts (étape « Branchement de ultitv.com »).

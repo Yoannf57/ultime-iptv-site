@@ -12,7 +12,7 @@ export type Pays = {
   nomLangue: string;
   fuseaux: string[];
   devise: string | null;
-  lienAppStore: string | null;
+  lienAppStore?: string; // facultatif : exception au lien calculé par src/lib/appstore.ts
   prix: { solo: Formule; famille: Formule } | null;
   taxesEnSus?: boolean;  // prix hors taxe de vente (États-Unis, Canada) : « Taxes applicables en sus. »
 };
