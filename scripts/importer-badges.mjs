@@ -3,7 +3,7 @@
 // site seulement, en SVG NOIR. Copie à l'identique (octet pour octet) : Apple interdit toute modification du badge.
 // Les versions blanches vont dans captures/badges-blancs/ (non versionné), uniquement pour comparer en capture.
 // Affiche à la fin les langues pour lesquelles Apple n'a pas de badge : le site prend alors l'anglais.
-import { readdirSync, statSync, copyFileSync, mkdirSync, existsSync } from "node:fs";
+import { readdirSync, statSync, copyFileSync, chmodSync, mkdirSync, existsSync } from "node:fs";
 import { join, basename, relative } from "node:path";
 
 const racine = new URL("..", import.meta.url).pathname;
@@ -58,6 +58,7 @@ for (const [langue, codes] of Object.entries(langues)) {
     if (!trouve) { if (couleur === "noir" && !facultatives.has(langue)) manquantes.push(langue); continue; }
     const dossier = couleur === "noir" ? cible : cibleBlancs;
     copyFileSync(trouve.chemin, join(dossier, `${langue}.svg`));
+    chmodSync(join(dossier, `${langue}.svg`), 0o644); // fichiers d'Apple marqués exécutables : droits normaux, contenu intact
     if (couleur === "noir") console.log(`✓ ${langue.padEnd(6)} ← ${relative(source, trouve.chemin)}`);
   }
 }
