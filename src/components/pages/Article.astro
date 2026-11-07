@@ -12,7 +12,7 @@ const l = p.langue;
 const date = new Intl.DateTimeFormat(p.locale, { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })
   .format(new Date(donnees.miseAJour));
 ---
-<Entete langue={l} lienAppStore={p.lienAppStore} codePays={p.code} />
+<Entete langue={l} p={p} codePays={p.code} />
 <main class="article">
   <header class="tete">
     <h1>{t(l, `pages.${page}.titre`)}</h1>

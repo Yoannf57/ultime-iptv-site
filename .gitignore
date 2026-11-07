@@ -5,3 +5,5 @@ dist/
 .DS_Store
 # Fichiers originaux d'Apple (Product Bezels) : jamais dans le dépôt public.
 /Notes/cadres/
+# Badges officiels « Download on the App Store » d'Apple (originaux) : jamais dans le dépôt public.
+/Notes/badges/

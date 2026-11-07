@@ -3,9 +3,13 @@ import config from "../../../site.config.mjs";
 import { t } from "../../lib/textes";
 import Logo from "../Logo.astro";
 import { lienPays } from "../../lib/liens";
+import { lienAppStore } from "../../lib/appstore";
+import type { Pays } from "../../lib/pays";
 // « codePays » : sur les sous-pages (support, confidentialité…), le logo et les liens mènent à l'accueil du pays.
-interface Props { langue: string; lienAppStore: string | null; codePays?: string }
-const { langue: l, lienAppStore, codePays } = Astro.props;
+// Une fois l'app publiée, la pastille reste un bouton texte (le badge officiel n'apparaît qu'une fois par page, dans le
+// grand visuel) et mène à la même adresse App Store.
+interface Props { langue: string; p: Pays; codePays?: string }
+const { langue: l, p, codePays } = Astro.props;
 const accueil = codePays ? lienPays(codePays) : "";
 const liens = [["fonctions", "fonctions"], ["visite", "visite"], ["apple-tv", "appletv"], ["tarifs", "tarifs"], ["questions", "questions"]];
 ---
@@ -15,8 +19,8 @@ const liens = [["fonctions", "fonctions"], ["visite", "visite"], ["apple-tv", "a
     <div class="liens">
       {liens.map(([ancre, cle]) => <a href={`${accueil}#${ancre}`}>{t(l, `entete.${cle}`)}</a>)}
     </div>
-    {config.disponible && lienAppStore
-      ? <a class="pastille pleine" href={lienAppStore}>{t(l, "entete.telecharger")}</a>
+    {config.disponible
+      ? <a class="pastille pleine" href={lienAppStore(p)}>{t(l, "entete.telecharger")}</a>
       : <span class="pastille">{t(l, "entete.bientot")}</span>}
   </nav>
 </header>

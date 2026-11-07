@@ -7,8 +7,14 @@ import Cadre from "./Cadre.astro";
 import Halo from "./Halo.astro";
 import Zones from "./Zones.astro";
 import BoutonLecture from "./BoutonLecture.astro";
-interface Props { langue: string; lienAppStore: string | null }
-const { langue: l, lienAppStore } = Astro.props;
+import BadgeAppStore from "./BadgeAppStore.astro";
+import type { Pays } from "../../lib/pays";
+interface Props { langue: string; p: Pays }
+const { langue: l, p } = Astro.props;
+// Petite ligne sous le badge : « Bientôt sur Android. », ou avec l'Apple TV quand l'app est publiée sans elle.
+// Avant la publication, sous « Bientôt sur l'App Store » : « Puis sur Android. » (évite deux « Bientôt » de suite).
+const ligneAndroid = !config.disponible ? "heros.androidAvantPublication"
+  : config.appleTvDisponible ? "heros.android" : "heros.androidSansAppleTv";
 const { vues, ecrans } = captures.apercu;
 // Apple TV au centre (écran flottant), iPhone devant à droite dans son cadre officiel. Tailles d'affichage pour « sizes ».
 const tailleTv = "(max-width: 45rem) 92vw, min(78vw, 58rem)";
@@ -19,11 +25,12 @@ const tailleTel = "min(15vw, 11rem)";
   <h1 id="titre-principal">{t(l, "heros.accroche")}</h1>
   <p class="phrase">{t(l, "heros.phrase")}</p>
   <div class="boutons">
-    {config.disponible && lienAppStore
-      ? <a class="bouton plein" href={lienAppStore}>{t(l, "heros.telecharger")}</a>
+    {config.disponible
+      ? <BadgeAppStore langue={l} p={p} />
       : <span class="bouton plein bientot">{t(l, "heros.bientot")}</span>}
     <a class="bouton contour" href="#tarifs">{t(l, "heros.voirTarifs")}</a>
   </div>
+  <p class="android">{t(l, ligneAndroid)}</p>
   <p class="neutre">{t(l, "heros.neutralite")}</p>
 </section>
 
@@ -67,12 +74,14 @@ const tailleTel = "min(15vw, 11rem)";
   .surtitre { margin: 0 0 1.25rem; font-size: 1.0625rem; font-weight: 600; color: #fff; }
   h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(3rem, 7.4vw, 6.5rem); line-height: 0.98; letter-spacing: -0.045em; font-weight: 800; white-space: pre-line; }
   .phrase { margin: 1.75rem auto 0; max-width: 40rem; font-size: clamp(1.125rem, 1.8vw, 1.375rem); line-height: 1.45; color: #a1a1a6; }
-  .boutons { margin-top: 2.25rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
-  .bouton { display: inline-flex; align-items: center; padding: 0.9375rem 1.75rem; border-radius: 999px; font-size: 1.0625rem; font-weight: 600; text-decoration: none; }
+  .boutons { margin-top: 2.25rem; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.75rem; }
+  /* Même hauteur que le badge officiel (3 rem, 2,75 rem sur téléphone). */
+  .bouton { display: inline-flex; align-items: center; height: 3rem; padding: 0 1.75rem; border-radius: 999px; font-size: 1.0625rem; font-weight: 600; text-decoration: none; }
   .plein { background: #f5f5f7; color: #000; }
   .bientot { opacity: 0.92; }
   .contour { color: #f5f5f7; border: 1px solid #3a3a3e; }
   .contour:hover { border-color: #8e8e93; }
+  .android { margin: 1rem 0 0; font-size: 0.875rem; color: #8e8e93; }
   .neutre { margin: 1.25rem 0 0; font-size: 0.8125rem; color: #8e8e93; }
 
   .apercu { max-width: 75rem; margin: 0 auto; padding: 2.5rem 1.5rem 7.5rem; }
@@ -85,6 +94,7 @@ const tailleTel = "min(15vw, 11rem)";
 
   @media (max-width: 45rem) {
     /* Sur téléphone, l'iPhone ferait moins de 200 px de haut (règle d'Apple) : masqué, seule l'Apple TV reste. */
+    .bouton { height: 2.75rem; }
     .scene { padding: 0; }
     .scene :global(.telephone) { display: none; }
   }

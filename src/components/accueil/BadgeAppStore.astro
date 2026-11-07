@@ -1,0 +1,54 @@
+---
+// Badge officiel « Télécharger dans l'App Store », affiché seulement quand l'app est disponible (site.config.mjs).
+//
+// Règles d'Apple (App Store Marketing Guidelines), à respecter à chaque modification :
+// - le badge n'est JAMAIS modifié : ni couleur, ni texte, ni proportions, ni le liseré gris, qui fait partie du dessin
+//   (le fichier est servi tel quel, octet pour octet, copié par « npm run importer-badges ») ;
+// - hauteur d'affichage d'au moins 40 px ;
+// - espace libre tout autour d'au moins un quart de sa hauteur (rien ne le touche, ni texte ni bouton) ;
+// - un seul badge par page (l'en-tête et le Support gardent un lien texte) ;
+// - jamais le logo Apple seul, et « App Store » toujours en anglais (c'est déjà le cas dans les badges) ;
+// - badge NOIR, celui que préconise Apple, dans la langue de la page.
+//
+// Lecteur d'écran : le lien porte le nom traduit (« Télécharger Ulti dans l'App Store »), l'image a alt="" pour que
+// ce nom ne soit pas lu deux fois.
+import { t } from "../../lib/textes";
+import { lienAppStore } from "../../lib/appstore";
+import type { Pays } from "../../lib/pays";
+
+interface Props { langue: string; p: Pays }
+const { langue: l, p } = Astro.props;
+
+// Badges importés par scripts/importer-badges.mjs : src/assets/badges/<langue>.svg (fr, en, es-mx…).
+const urls = import.meta.glob<string>("../../assets/badges/*.svg", { eager: true, query: "?url", import: "default" });
+const sources = import.meta.glob<string>("../../assets/badges/*.svg", { eager: true, query: "?raw", import: "default" });
+const nom = (chemin: string) => chemin.split("/").pop()!.replace(".svg", "");
+const badges = Object.fromEntries(Object.keys(urls).map((c) => [nom(c), { url: urls[c], svg: sources[c] }]));
+
+// es-mx prend le badge d'Amérique latine d'Apple s'il existe ; une langue sans badge prend l'anglais.
+const choix = [p.code, l, "en"].find((c) => badges[c]);
+if (choix && choix !== l && choix !== p.code) console.warn(`(badge App Store : pas de badge « ${l} », anglais utilisé pour ${p.code})`);
+if (!choix) console.warn("(badge App Store : aucun badge dans src/assets/badges/, lancer npm run importer-badges)");
+const badge = choix ? badges[choix] : null;
+// Proportions lues dans le fichier d'Apple (width/height ou viewBox), pour réserver la place avant le chargement.
+const dimension = (attr: string) => Number(badge?.svg.match(new RegExp(`<svg[^>]*\\s${attr}="([\\d.]+)`))?.[1]);
+const vue = badge?.svg.match(/viewBox="[\d.\s-]+?\s([\d.]+)\s([\d.]+)"/);
+const largeur = dimension("width") || Number(vue?.[1]) || 120;
+const hauteur = dimension("height") || Number(vue?.[2]) || 40;
+---
+{badge
+  ? <a class="badge" href={lienAppStore(p)} aria-label={t(l, "heros.badge")}>
+      <img src={badge.url} alt="" width={Math.round((largeur / hauteur) * 48)} height="48" decoding="async" />
+    </a>
+  : <a class="bouton-secours" href={lienAppStore(p)}>{t(l, "heros.telecharger")}</a>}
+
+<style>
+  /* 48 px de haut (44 px sur téléphone), jamais moins de 40 px ; marge libre = ¼ de la hauteur au moins. */
+  .badge { display: inline-block; margin: 0.75rem; line-height: 0; border-radius: 0.5rem; }
+  .badge img { display: block; height: 3rem; width: auto; }
+  .bouton-secours { display: inline-flex; align-items: center; height: 3rem; padding: 0 1.75rem; border-radius: 999px; background: #f5f5f7; color: #000; font-size: 1.0625rem; font-weight: 600; text-decoration: none; }
+  @media (max-width: 45rem) {
+    .badge { margin: 0.6875rem; }
+    .badge img { height: 2.75rem; }
+  }
+</style>
