@@ -26,7 +26,11 @@
     "phrase": "Diretta, guida TV, film e serie: il tuo abbonamento IPTV diventa un'app TV intuitiva. La apri e guardi.",
     "bientot": "Presto su App Store",
     "telecharger": "Scarica su App Store",
+    "badge": "Scarica Ulti su App Store",
     "voirTarifs": "Vedi i prezzi",
+    "android": "Presto su Android.",
+    "androidSansAppleTv": "Apple TV: tra pochi giorni. Presto su Android.",
+    "androidAvantPublication": "Poi anche su Android.",
     "neutralite": "Ulti non fornisce alcun canale né alcun contenuto."
   },
   "apercu": {
@@ -159,7 +163,8 @@
     "q1": "Ulti fornisce canali?",
     "r1": "No. Ulti è un player: riproduce le fonti che aggiungi tu. Ulti non fornisce alcun canale né alcun contenuto. Devi disporre di fonti tue e avere il diritto di guardarle.",
     "q2": "Su quali dispositivi?",
-    "r2": "iPhone, iPad, Mac (con chip Apple) e Apple TV. Ulti Premium vale su tutti i tuoi dispositivi con lo stesso Account Apple; con l'offerta Famiglia, fino a 6 persone ne approfittano grazie a In famiglia.",
+    "r2": "iPhone, iPad, Mac (con chip Apple) e Apple TV. Ulti Premium vale su tutti i tuoi dispositivi con lo stesso Account Apple; con l'offerta Famiglia, fino a 6 persone ne approfittano grazie a In famiglia. È in preparazione una versione Android (smartphone, tablet e TV).",
+    "r2SansAppleTv": "iPhone, iPad e Mac (con chip Apple) da subito; la versione per Apple TV arriverà nei prossimi giorni. Ulti Premium vale su tutti i tuoi dispositivi con lo stesso Account Apple; con l'offerta Famiglia, fino a 6 persone ne approfittano grazie a In famiglia. È in preparazione una versione Android (smartphone, tablet e TV).",
     "q3": "Le mie credenziali sono al sicuro?",
     "r3": "Sono conservate nel portachiavi del tuo dispositivo e non passano mai da un server di Ulti.",
     "q4": "Quali abbonamenti sono compatibili?",
@@ -298,11 +303,13 @@
       },
       "appareils": {
         "q": "Su quali dispositivi funziona Ulti?",
-        "r": "iPhone, iPad, Mac e Apple TV: iPhone e iPad con iOS 17 o iPadOS 17 o versioni successive, Apple TV con tvOS 17 o versioni successive, e i Mac con chip Apple, che usano l'app per iPad. Premium vale su tutti i tuoi dispositivi collegati allo stesso Account Apple."
+        "r": "iPhone, iPad, Mac e Apple TV: iPhone e iPad con iOS 17 o iPadOS 17 o versioni successive, Apple TV con tvOS 17 o versioni successive, e i Mac con chip Apple, che usano l'app per iPad. Premium vale su tutti i tuoi dispositivi collegati allo stesso Account Apple. È in preparazione una versione Android (smartphone, tablet e TV).",
+        "rSansAppleTv": "iPhone, iPad e Mac da subito, Apple TV nei prossimi giorni: iPhone e iPad con iOS 17 o iPadOS 17 o versioni successive, Apple TV con tvOS 17 o versioni successive, e i Mac con chip Apple, che usano l'app per iPad. Premium vale su tutti i tuoi dispositivi collegati allo stesso Account Apple. È in preparazione una versione Android (smartphone, tablet e TV)."
       },
       "installer": {
         "q": "Come si installa Ulti?",
-        "r": "Scarica Ulti da App Store sul tuo iPhone, iPad o Mac, e da App Store sulla tua Apple TV. Una volta installata, l'app si chiama «Ulti IPTV».",
+        "r": "Scarica Ulti da [App Store](appstore) sul tuo iPhone, iPad o Mac, e da App Store sulla tua Apple TV. Una volta installata, l'app si chiama «Ulti IPTV».",
+        "rSansAppleTv": "Scarica Ulti da [App Store](appstore) sul tuo iPhone, iPad o Mac. La versione per Apple TV arriverà nei prossimi giorni. Una volta installata, l'app si chiama «Ulti IPTV».",
         "rBientot": "Ulti arriva presto su App Store, per iPhone, iPad, Mac e Apple TV. Una volta installata, l'app si chiama «Ulti IPTV»."
       },
       "ajouter": {

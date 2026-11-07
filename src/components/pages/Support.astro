@@ -12,8 +12,14 @@ interface Props { p: Pays }
 const { p } = Astro.props;
 const l = p.langue;
 const cibles = ciblesTextes(p.code, config.contact);
-// Tant que l'app n'est pas publiée, « Comment installer ? » dit « bientôt ».
-const reponse = (id: string) => `support.q.${id}.${id === "installer" && !config.disponible ? "rBientot" : "r"}`;
+// Tant que l'app n'est pas publiée, « Comment installer ? » dit « bientôt ». Publiée sans la version Apple TV :
+// « Comment installer ? » et « Sur quels appareils ? » disent que l'Apple TV arrive dans les jours qui viennent.
+const sansAppleTv = config.disponible && !config.appleTvDisponible;
+const reponse = (id: string) => {
+  if (id === "installer" && !config.disponible) return "support.q.installer.rBientot";
+  if ((id === "installer" || id === "appareils") && sansAppleTv) return `support.q.${id}.rSansAppleTv`;
+  return `support.q.${id}.r`;
+};
 const sommaire = [
   ...donnees.support.map((g) => ({ ancre: g.groupe, titre: t(l, `support.groupes.${g.groupe}`) })),
   { ancre: "contact", titre: t(l, "support.contact.titre") },

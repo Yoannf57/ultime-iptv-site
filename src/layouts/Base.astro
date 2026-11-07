@@ -36,6 +36,9 @@ const sousChemin = typeof alternatives === "string" ? alternatives : "";
       <link rel="alternate" hreflang={hreflang(p)} href={lienAbsolu(`${p.code}/${sousChemin}`, Astro.site)} />
     ))}
     {alternatives && <link rel="alternate" hreflang="x-default" href={lienAbsolu(`en/${sousChemin}`, Astro.site)} />}
+    {/* Smart App Banner : Safari (iPhone, iPad) affiche lui-même le bandeau « Ouvrir dans l'App Store ». Seulement une
+        fois l'app publiée, et seulement sur les pages d'un pays ou d'une langue (jamais page de choix ni 404). */}
+    {config.disponible && codePays && !erreur && <meta name="apple-itunes-app" content={`app-id=${config.appStore.id}`} />}
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#000000" />
     <link rel="icon" href={lien("favicon.svg")} type="image/svg+xml" />

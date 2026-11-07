@@ -1,15 +1,18 @@
 ---
 import { t } from "../../lib/textes";
+import config from "../../../site.config.mjs";
 import { lienSousPage } from "../../lib/liens";
 interface Props { langue: string; codePays: string }
 const { langue: l, codePays } = Astro.props;
+// « Sur quels appareils ? » (r2) : autre réponse si l'app est publiée sans la version Apple TV.
+const reponse = (n: number) => `faq.r${n}${n === 2 && config.disponible && !config.appleTvDisponible ? "SansAppleTv" : ""}`;
 ---
 <section id="questions" aria-labelledby="titre-questions" class="faq apparition">
   <h2 id="titre-questions">{t(l, "faq.titre")}</h2>
   {[1, 2, 3, 4, 5].map((n) => (
     <details open={n === 1}>
       <summary>{t(l, `faq.q${n}`)}<span class="plus" aria-hidden="true">+</span></summary>
-      <p>{t(l, `faq.r${n}`)}</p>
+      <p>{t(l, reponse(n))}</p>
     </details>
   ))}
   <p class="plus-de-questions"><a href={lienSousPage(codePays, "support")}>{t(l, "faqPlus")} <span aria-hidden="true">→</span></a></p>

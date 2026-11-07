@@ -26,7 +26,11 @@
     "phrase": "Live tv, tv-gids, films en series: je IPTV-abonnement wordt een intuïtieve tv-app. Openen en kijken.",
     "bientot": "Binnenkort in de App Store",
     "telecharger": "Download in de App Store",
+    "badge": "Download Ulti in de App Store",
     "voirTarifs": "Bekijk de prijzen",
+    "android": "Binnenkort op Android.",
+    "androidSansAppleTv": "Apple TV: over een paar dagen. Binnenkort op Android.",
+    "androidAvantPublication": "Daarna ook op Android.",
     "neutralite": "Ulti levert geen zenders en geen content."
   },
   "apercu": {
@@ -159,7 +163,8 @@
     "q1": "Levert Ulti zenders?",
     "r1": "Nee. Ulti is een speler: hij speelt de bronnen af die je zelf toevoegt. Ulti levert geen zenders en geen content. Je moet over je eigen bronnen beschikken en het recht hebben om ze te bekijken.",
     "q2": "Op welke apparaten?",
-    "r2": "iPhone, iPad, Mac (met Apple-chip) en Apple TV. Ulti Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin.",
+    "r2": "iPhone, iPad, Mac (met Apple-chip) en Apple TV. Ulti Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv's).",
+    "r2SansAppleTv": "iPhone, iPad en Mac (met Apple-chip) nu al; de Apple TV-versie volgt in de komende dagen. Ulti Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv's).",
     "q3": "Zijn mijn inloggegevens veilig?",
     "r3": "Ze worden bewaard in de sleutelhanger van je apparaat en gaan nooit via een server van Ulti.",
     "q4": "Welke abonnementen werken?",
@@ -298,11 +303,13 @@
       },
       "appareils": {
         "q": "Op welke apparaten werkt Ulti?",
-        "r": "iPhone, iPad, Mac en Apple TV: iPhone en iPad met iOS 17 of iPadOS 17 of nieuwer, Apple TV met tvOS 17 of nieuwer, en Macs met Apple-chip, die de iPad-app gebruiken. Premium geldt op al je apparaten die met dezelfde Apple Account zijn verbonden."
+        "r": "iPhone, iPad, Mac en Apple TV: iPhone en iPad met iOS 17 of iPadOS 17 of nieuwer, Apple TV met tvOS 17 of nieuwer, en Macs met Apple-chip, die de iPad-app gebruiken. Premium geldt op al je apparaten die met dezelfde Apple Account zijn verbonden. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv's).",
+        "rSansAppleTv": "iPhone, iPad en Mac nu al, Apple TV in de komende dagen: iPhone en iPad met iOS 17 of iPadOS 17 of nieuwer, Apple TV met tvOS 17 of nieuwer, en Macs met Apple-chip, die de iPad-app gebruiken. Premium geldt op al je apparaten die met dezelfde Apple Account zijn verbonden. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv's)."
       },
       "installer": {
         "q": "Hoe installeer ik Ulti?",
-        "r": "Download Ulti in de App Store van je iPhone, iPad of Mac, en in de App Store van je Apple TV. Na de installatie heet de app „Ulti IPTV”.",
+        "r": "Download Ulti in de [App Store](appstore) van je iPhone, iPad of Mac, en in de App Store van je Apple TV. Na de installatie heet de app „Ulti IPTV”.",
+        "rSansAppleTv": "Download Ulti in de [App Store](appstore) van je iPhone, iPad of Mac. De Apple TV-versie volgt in de komende dagen. Na de installatie heet de app „Ulti IPTV”.",
         "rBientot": "Ulti komt binnenkort naar de App Store, voor iPhone, iPad, Mac en Apple TV. Na de installatie heet de app „Ulti IPTV”."
       },
       "ajouter": {

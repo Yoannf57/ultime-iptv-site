@@ -26,7 +26,11 @@
     "phrase": "Suorat lähetykset, TV-opas, elokuvat ja sarjat: IPTV-tilauksestasi tulee helppokäyttöinen TV-sovellus. Avaa ja katso.",
     "bientot": "Tulossa pian App Storeen",
     "telecharger": "Lataa App Storesta",
+    "badge": "Lataa Ulti App Storesta",
     "voirTarifs": "Katso hinnat",
+    "android": "Pian myös Androidille.",
+    "androidSansAppleTv": "Apple TV: muutaman päivän päästä. Pian myös Androidille.",
+    "androidAvantPublication": "Myöhemmin myös Androidille.",
     "neutralite": "Ulti ei tarjoa kanavia eikä sisältöä."
   },
   "apercu": {
@@ -159,7 +163,8 @@
     "q1": "Tarjoaako Ulti kanavia?",
     "r1": "Ei. Ulti on soitin: se toistaa lähteet, jotka lisäät itse. Ulti ei tarjoa kanavia eikä sisältöä. Sinulla on oltava omat lähteesi ja oikeus katsoa niitä.",
     "q2": "Millä laitteilla?",
-    "r2": "iPhone, iPad, Mac (Apple-sirulla) ja Apple TV. Ulti Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta.",
+    "r2": "iPhone, iPad, Mac (Apple-sirulla) ja Apple TV. Ulti Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta. Android-versio (puhelimille, tableteille ja televisioille) on työn alla.",
+    "r2SansAppleTv": "iPhone, iPad ja Mac (Apple-sirulla) jo nyt; Apple TV -versio tulee lähipäivinä. Ulti Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta. Android-versio (puhelimille, tableteille ja televisioille) on työn alla.",
     "q3": "Ovatko kirjautumistietoni turvassa?",
     "r3": "Ne säilytetään laitteesi avainnipussa, eivätkä ne koskaan kulje Ulti-palvelimen kautta.",
     "q4": "Mitkä tilaukset toimivat?",
@@ -298,11 +303,13 @@
       },
       "appareils": {
         "q": "Millä laitteilla Ulti toimii?",
-        "r": "iPhone, iPad, Mac ja Apple TV: iPhone ja iPad, joissa on iOS 17 tai iPadOS 17 tai uudempi, Apple TV, jossa on tvOS 17 tai uudempi, sekä Apple-sirulliset Macit, jotka käyttävät iPad-sovellusta. Premium on voimassa kaikilla laitteillasi, joihin on kirjauduttu samalla Apple-tilillä."
+        "r": "iPhone, iPad, Mac ja Apple TV: iPhone ja iPad, joissa on iOS 17 tai iPadOS 17 tai uudempi, Apple TV, jossa on tvOS 17 tai uudempi, sekä Apple-sirulliset Macit, jotka käyttävät iPad-sovellusta. Premium on voimassa kaikilla laitteillasi, joihin on kirjauduttu samalla Apple-tilillä. Android-versio (puhelimille, tableteille ja televisioille) on työn alla.",
+        "rSansAppleTv": "iPhone, iPad ja Mac jo nyt, Apple TV lähipäivinä: iPhone ja iPad, joissa on iOS 17 tai iPadOS 17 tai uudempi, Apple TV, jossa on tvOS 17 tai uudempi, sekä Apple-sirulliset Macit, jotka käyttävät iPad-sovellusta. Premium on voimassa kaikilla laitteillasi, joihin on kirjauduttu samalla Apple-tilillä. Android-versio (puhelimille, tableteille ja televisioille) on työn alla."
       },
       "installer": {
         "q": "Miten asennan Ultin?",
-        "r": "Lataa Ulti iPhonen, iPadin tai Macin App Storesta ja Apple TV:n App Storesta. Asennettuna sovelluksen nimi on ”Ulti IPTV”.",
+        "r": "Lataa Ulti iPhonen, iPadin tai Macin [App Storesta](appstore) ja Apple TV:n App Storesta. Asennettuna sovelluksen nimi on ”Ulti IPTV”.",
+        "rSansAppleTv": "Lataa Ulti iPhonen, iPadin tai Macin [App Storesta](appstore). Apple TV -versio tulee lähipäivinä. Asennettuna sovelluksen nimi on ”Ulti IPTV”.",
         "rBientot": "Ulti tulee pian App Storeen iPhonelle, iPadille, Macille ja Apple TV:lle. Asennettuna sovelluksen nimi on ”Ulti IPTV”."
       },
       "ajouter": {

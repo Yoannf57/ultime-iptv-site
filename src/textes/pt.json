@@ -26,7 +26,11 @@
     "phrase": "Televisão em direto, guia de TV, filmes e séries: a sua subscrição IPTV torna-se uma app de televisão intuitiva. Basta abrir e ver.",
     "bientot": "Em breve na App Store",
     "telecharger": "Descarregar na App Store",
+    "badge": "Descarregar o Ulti na App Store",
     "voirTarifs": "Ver preços",
+    "android": "Em breve no Android.",
+    "androidSansAppleTv": "Apple TV: dentro de poucos dias. Em breve no Android.",
+    "androidAvantPublication": "Depois, no Android.",
     "neutralite": "O Ulti não fornece nenhum canal nem nenhum conteúdo."
   },
   "apercu": {
@@ -159,7 +163,8 @@
     "q1": "O Ulti fornece canais?",
     "r1": "Não. O Ulti é um leitor: reproduz as fontes que o próprio utilizador adiciona. O Ulti não fornece nenhum canal nem nenhum conteúdo. Tem de dispor das suas próprias fontes e ter o direito de as ver.",
     "q2": "Em que dispositivos?",
-    "r2": "iPhone, iPad, Mac (com chip Apple) e Apple TV. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com a opção Família, até 6 pessoas usufruem dele graças à Partilha com a família.",
+    "r2": "iPhone, iPad, Mac (com chip Apple) e Apple TV. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com a opção Família, até 6 pessoas usufruem dele graças à Partilha com a família. Está em preparação uma versão para Android (telemóveis, tablets e televisores).",
+    "r2SansAppleTv": "iPhone, iPad e Mac (com chip Apple) desde já; a versão para Apple TV chega nos próximos dias. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com a opção Família, até 6 pessoas usufruem dele graças à Partilha com a família. Está em preparação uma versão para Android (telemóveis, tablets e televisores).",
     "q3": "Os meus dados de acesso estão seguros?",
     "r3": "Ficam guardados no porta-chaves do seu dispositivo e nunca passam por um servidor do Ulti.",
     "q4": "Que subscrições são compatíveis?",
@@ -298,11 +303,13 @@
       },
       "appareils": {
         "q": "Em que dispositivos funciona o Ulti?",
-        "r": "iPhone, iPad, Mac e Apple TV: iPhone e iPad com iOS 17 ou iPadOS 17 ou posterior, Apple TV com tvOS 17 ou posterior, e os Mac com chip Apple, que usam a app do iPad. O Premium vale em todos os seus dispositivos com sessão iniciada na mesma Conta Apple."
+        "r": "iPhone, iPad, Mac e Apple TV: iPhone e iPad com iOS 17 ou iPadOS 17 ou posterior, Apple TV com tvOS 17 ou posterior, e os Mac com chip Apple, que usam a app do iPad. O Premium vale em todos os seus dispositivos com sessão iniciada na mesma Conta Apple. Está em preparação uma versão para Android (telemóveis, tablets e televisores).",
+        "rSansAppleTv": "iPhone, iPad e Mac desde já, Apple TV nos próximos dias: iPhone e iPad com iOS 17 ou iPadOS 17 ou posterior, Apple TV com tvOS 17 ou posterior, e os Mac com chip Apple, que usam a app do iPad. O Premium vale em todos os seus dispositivos com sessão iniciada na mesma Conta Apple. Está em preparação uma versão para Android (telemóveis, tablets e televisores)."
       },
       "installer": {
         "q": "Como instalo o Ulti?",
-        "r": "Descarregue o Ulti na App Store do seu iPhone, iPad ou Mac, e na App Store do seu Apple TV. Depois de instalada, a app chama-se «Ulti IPTV».",
+        "r": "Descarregue o Ulti na [App Store](appstore) do seu iPhone, iPad ou Mac, e na App Store do seu Apple TV. Depois de instalada, a app chama-se «Ulti IPTV».",
+        "rSansAppleTv": "Descarregue o Ulti na [App Store](appstore) do seu iPhone, iPad ou Mac. A versão para Apple TV chega nos próximos dias. Depois de instalada, a app chama-se «Ulti IPTV».",
         "rBientot": "O Ulti chega em breve à App Store, para iPhone, iPad, Mac e Apple TV. Depois de instalada, a app chama-se «Ulti IPTV»."
       },
       "ajouter": {
