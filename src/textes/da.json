@@ -48,6 +48,45 @@
     "films": "Film og serier",
     "multi": "Flere skærme"
   },
+  "collez": {
+    "surtitre": "Forbindelse",
+    "titre": "Indsæt. Færdig.",
+    "phrase": "Har din udbyder sendt dig en besked med dine loginoplysninger? Indsæt den i Ulti: appen genkender selv formatet og udfylder det hele. Du kan også skrive oplysningerne ind manuelt.",
+    "groupe": "Trin for forbindelse",
+    "etiquettes": {
+      "message": "Besked",
+      "coller": "Indsæt",
+      "remplir": "Udfyldt",
+      "pret": "Klar"
+    },
+    "legendes": {
+      "message": "Beskeden fra din udbyder: kopiér den.",
+      "coller": "Tryk på »{bouton}« i Ulti.",
+      "remplir": "Ulti genkender formatet og udfylder det hele.",
+      "pret": "Dine kanaler er klar."
+    },
+    "minute": "På under et minut.",
+    "message": {
+      "expediteur": "Min udbyder",
+      "initiale": "M",
+      "bienvenue": "Velkommen! Her er dit abonnement:",
+      "utilisateur": "Brugernavn: {valeur}",
+      "motDePasse": "Adgangskode: {valeur}",
+      "copier": "Kopiér"
+    },
+    "app": {
+      "titre": "Tilføj et abonnement",
+      "coller": "Indsæt den modtagne besked",
+      "collerTexte": "Sms, WhatsApp eller e-mail fra din udbyder: serveren og loginoplysningerne udfyldes automatisk.",
+      "serveur": "Server (http://eksempel.dk:8080)",
+      "utilisateur": "Brugernavn",
+      "motDePasse": "Adgangskode",
+      "continuer": "Fortsæt",
+      "trousseau": "Dine loginoplysninger bliver i din enheds nøglering.",
+      "trouve": "Fundet: server, brugernavn, adgangskode. Tjek og fortsæt.",
+      "boutonColler": "Indsæt"
+    }
+  },
   "fonctions": {
     "titre": "Dit abonnement, endelig præsenteret ordentligt.",
     "phrase": "Ulti ordner de tusindvis af kanaler og film i dit abonnement i overskuelige skærme, som en tv-app, du altid har haft.",
@@ -119,7 +158,6 @@
     "multi": "Flere skærme: op til 4 livekanaler på én gang (2 på iPhone)"
   },
   "etapes": {
-    "titre": "Klar på et minut.",
     "e1Titre": "Tilføj dit abonnement",
     "e1Texte": "Indsæt beskeden fra din IPTV-udbyder, eller skriv loginoplysningerne. Ulti klarer resten.",
     "e2Titre": "Ulti rydder op i det hele",
