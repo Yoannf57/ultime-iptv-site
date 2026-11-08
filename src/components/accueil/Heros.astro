@@ -47,6 +47,7 @@ const tailleTel = "min(15vw, 11rem)";
       </div>
       <BoutonLecture langue={l} />
     </div>
+    <p class="indice avec-js">{t(l, "apercu.indice")}</p>
     <div class="scene">
       <Halo etendue="large" />
       <div class="ecrin-tv tv pile">
@@ -66,7 +67,6 @@ const tailleTel = "min(15vw, 11rem)";
       </Cadre>
     </div>
     <p class="appareils">{t(l, "apercu.appareils")}</p>
-    <p class="indice avec-js">{t(l, "apercu.indice")}</p>
   </div>
 </section>
 
@@ -91,8 +91,8 @@ const tailleTel = "min(15vw, 11rem)";
   .scene :global(.telephone) { position: absolute; z-index: 2; right: 0; bottom: 0; width: 15%; }
   .appareils { margin: 2.25rem 0 0; text-align: center; font-size: 0.9375rem; color: #a1a1a6; }
   /* Au-dessus du halo, pour que les pastilles gardent leurs vraies couleurs. */
-  .commandes { position: relative; z-index: 3; margin: 0 0 2.5rem; }
-  .indice { margin: 1rem 0 0; text-align: center; font-size: 0.875rem; color: #8e8e93; }
+  .commandes { position: relative; z-index: 3; margin: 0; }
+  .indice { position: relative; z-index: 3; margin: 1rem 0 2.5rem; text-align: center; font-size: 0.875rem; color: #8e8e93; }
 
   @media (max-width: 45rem) {
     /* Sur téléphone, l'iPhone ferait moins de 200 px de haut (règle d'Apple) : masqué, seule l'Apple TV reste. */
