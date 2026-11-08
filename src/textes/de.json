@@ -50,8 +50,11 @@
   },
   "collez": {
     "surtitre": "Einrichtung",
-    "titre": "Einsetzen. Fertig.",
+    "titre": "Einrichten war noch nie so einfach.",
+    "collerTitre": "Einsetzen. Fertig.",
     "phrase": "Dein Anbieter hat dir eine Nachricht mit deinen Anmeldedaten geschickt? Setze sie in Ulti ein: Die App erkennt das Format selbst und füllt alles aus. Du kannst deine Daten auch von Hand eingeben.",
+    "scannerTitre": "Scannen. Fertig.",
+    "scannerPhrase": "Auf dem Apple TV tippst du mit der Fernbedienung nichts ein: Scanne den QR-Code mit deinem iPhone, bestätige, und dein Abo landet auf dem Fernseher, verschlüsselt und direkt über dein lokales Netzwerk.",
     "groupe": "Schritte der Einrichtung",
     "etiquettes": {
       "message": "Nachricht",
@@ -85,6 +88,14 @@
       "trousseau": "Deine Anmeldedaten bleiben im Schlüsselbund deines Geräts.",
       "trouve": "Gefunden: Server, Benutzername, Passwort. Prüfe und fahre fort.",
       "boutonColler": "Einsetzen"
+    },
+    "tv": {
+      "titre": "Mit meinem iPhone",
+      "etape1": "Öffne die Kamera deines iPhone.",
+      "etape2": "Richte sie auf diesen QR-Code und tippe dann auf den Ulti-Link.",
+      "etape3": "Bestätige auf deinem iPhone.",
+      "code": "Code",
+      "valable": "Noch %@ gültig. Derselbe Code erscheint vor dem Senden auf deinem iPhone."
     }
   },
   "fonctions": {
