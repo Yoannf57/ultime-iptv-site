@@ -42,3 +42,11 @@
   deux lignes sur ces très petits écrans.
 - Vérifié : 38 accueils à 320 px, et les pages Support, Confidentialité, Conditions, Mentions légales (fr, de, fi,
   pt-br, en) à 320 et 393 px : aucune n'est plus large que l'écran.
+
+## Section Apple TV recentrée (08/11)
+- L'appairage par QR code est maintenant dans « Connexion » : la section Apple TV ne le redit plus.
+- Titre « Zappez, tout simplement. » / « Just flip through. » ; texte : tout à la télécommande, d'une chaîne à
+  l'autre comme sur la télé d'avant, menus lisibles de loin. Les 3 points (zapping, image dans l'image, grandes
+  affiches) et la capture (direct avec bandeau) ne changent pas.
+- 12 langues, traduites par Claude : **à faire relire**. Captures : `tv-fr-fr-1440.jpg`, `tv-en-gb-393.jpg`.
+- Build, textes (392 clés), liens (11 182) : OK.
