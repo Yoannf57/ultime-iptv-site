@@ -146,8 +146,8 @@
   },
   "appletv": {
     "surtitre": "Apple TV",
-    "titre": "Televisiolla et kirjoita mitään.",
-    "texte": "Skannaa Apple TV:n näyttämä koodi iPhonellasi: tilauksesi siirtyy salattuna televisioon suoraan lähiverkkosi kautta.",
+    "titre": "Vaihda kanavaa, siinä kaikki.",
+    "texte": "Apple TV:ssä kaikki hoituu kaukosäätimellä: vaihda kanavalta toiselle kuin ennen vanhaan, selkeissä valikoissa, jotka erottuvat kaukaakin.",
     "point1": "Kanavanvaihto kaukosäätimellä, ylös ja alas",
     "point2": "Kuva kuvassa suorien lähetysten aikana",
     "point3": "Suuret julisteet, sohvalta katsottaviksi"
