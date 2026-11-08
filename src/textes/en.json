@@ -50,8 +50,11 @@
   },
   "collez": {
     "surtitre": "Setup",
-    "titre": "Paste. That's it.",
+    "titre": "Getting connected has never been easier.",
+    "collerTitre": "Paste. That's it.",
     "phrase": "Did your provider send you a message with your login details? Paste it into Ulti: the app recognises the format on its own and fills everything in. You can also type your details by hand.",
+    "scannerTitre": "Scan. That's it.",
+    "scannerPhrase": "On Apple TV, there's nothing to type with the remote: scan the QR code with your iPhone, confirm, and your subscription arrives on the TV, encrypted, straight over your local network.",
     "groupe": "Setup steps",
     "etiquettes": {
       "message": "Message",
@@ -85,6 +88,14 @@
       "trousseau": "Your login details stay in your device's Keychain.",
       "trouve": "Found: server, username, password. Check, then continue.",
       "boutonColler": "Paste"
+    },
+    "tv": {
+      "titre": "With my iPhone",
+      "etape1": "Open the Camera on your iPhone.",
+      "etape2": "Point it at this QR code, then tap the Ulti link.",
+      "etape3": "Confirm on your iPhone.",
+      "code": "Code",
+      "valable": "Valid for another %@. The same code appears on your iPhone before sending."
     }
   },
   "fonctions": {
