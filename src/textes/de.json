@@ -48,6 +48,45 @@
     "films": "Filme und Serien",
     "multi": "Multiscreen"
   },
+  "collez": {
+    "surtitre": "Einrichtung",
+    "titre": "Einsetzen. Fertig.",
+    "phrase": "Dein Anbieter hat dir eine Nachricht mit deinen Anmeldedaten geschickt? Setze sie in Ulti ein: Die App erkennt das Format selbst und füllt alles aus. Du kannst deine Daten auch von Hand eingeben.",
+    "groupe": "Schritte der Einrichtung",
+    "etiquettes": {
+      "message": "Nachricht",
+      "coller": "Einsetzen",
+      "remplir": "Ausgefüllt",
+      "pret": "Fertig"
+    },
+    "legendes": {
+      "message": "Die Nachricht deines Anbieters: kopiere sie.",
+      "coller": "Tippe in Ulti auf „{bouton}“.",
+      "remplir": "Ulti erkennt das Format und füllt alles aus.",
+      "pret": "Deine Sender sind bereit."
+    },
+    "minute": "In weniger als einer Minute erledigt.",
+    "message": {
+      "expediteur": "Mein Anbieter",
+      "initiale": "M",
+      "bienvenue": "Willkommen! Hier ist dein Abo:",
+      "utilisateur": "Benutzer: {valeur}",
+      "motDePasse": "Passwort: {valeur}",
+      "copier": "Kopieren"
+    },
+    "app": {
+      "titre": "Abo hinzufügen",
+      "coller": "Erhaltene Nachricht einsetzen",
+      "collerTexte": "SMS, WhatsApp oder E-Mail deines Anbieters: Server und Anmeldedaten werden von selbst ausgefüllt.",
+      "serveur": "Server (http://beispiel.de:8080)",
+      "utilisateur": "Benutzername",
+      "motDePasse": "Passwort",
+      "continuer": "Weiter",
+      "trousseau": "Deine Anmeldedaten bleiben im Schlüsselbund deines Geräts.",
+      "trouve": "Gefunden: Server, Benutzername, Passwort. Prüfe und fahre fort.",
+      "boutonColler": "Einsetzen"
+    }
+  },
   "fonctions": {
     "titre": "Dein Abonnement, endlich übersichtlich.",
     "phrase": "Ulti ordnet die Tausenden Sender und Filme deines Abonnements in klare Bildschirme, wie eine TV-App, die du schon immer hattest.",
@@ -119,7 +158,6 @@
     "multi": "Multiscreen: bis zu 4 Live-Sender gleichzeitig (2 auf dem iPhone)"
   },
   "etapes": {
-    "titre": "In einer Minute startklar.",
     "e1Titre": "Füge dein Abonnement hinzu",
     "e1Texte": "Füge die Nachricht deines IPTV-Anbieters ein oder gib die Zugangsdaten ein. Ulti erledigt den Rest.",
     "e2Titre": "Ulti ordnet alles",
