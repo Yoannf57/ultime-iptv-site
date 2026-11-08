@@ -146,8 +146,8 @@
   },
   "appletv": {
     "surtitre": "Apple TV",
-    "titre": "På TV-en skriver du ingenting.",
-    "texte": "Skann koden som Apple TV viser, med iPhonen din: abonnementet kommer kryptert til TV-en, direkte over det lokale nettverket ditt.",
+    "titre": "Bare zapp.",
+    "texte": "På Apple TV gjør du alt med fjernkontrollen: bytt fra kanal til kanal som på TV-en før i tiden, i tydelige menyer som er lette å lese på avstand.",
     "point1": "Zap med fjernkontrollen, opp og ned",
     "point2": "Bilde-i-bilde under direkte-TV",
     "point3": "Store plakater, laget for sofaen"
