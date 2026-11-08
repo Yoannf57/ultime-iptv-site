@@ -1,5 +1,8 @@
 ---
-// « Collez. C'est tout. » (juste après le grand visuel) : coller le message du fournisseur suffit. Un téléphone
+// Section « Connexion » (juste après le grand visuel) : grand titre à gauche, puis deux appareils côte à côte,
+// chacun avec son texte dessous : à gauche « Collez. C'est tout. », à droite « Scannez. C'est tout. » (écran
+// d'appairage de l'Apple TV par QR code, CollezTv.astro ; demande de Yoann, 08/11/2026).
+// Côté téléphone : coller le message du fournisseur suffit. Un téléphone
 // flottant (coins arrondis, liseré blanc très fin, pas de cadre d'Apple : ce n'est pas une capture) enchaîne
 // 4 tableaux avec visite.js : message → « Coller le message reçu » → champs remplis → vraie capture de l'accueil.
 // Étiquettes cliquables, Pause/Lecture, pause au survol. Sans JavaScript ou avec « réduire les animations » :
@@ -9,6 +12,7 @@ import { t } from "../../lib/textes";
 import Halo from "./Halo.astro";
 import BoutonLecture from "./BoutonLecture.astro";
 import CollezEcran from "./CollezEcran.astro";
+import CollezTv from "./CollezTv.astro";
 interface Props { langue: string }
 const { langue: l } = Astro.props;
 const vues = ["message", "coller", "remplir", "pret"];
@@ -17,52 +21,68 @@ const durees = "2600,2200,3200,4500";
 const legende = (vue: string) => t(l, `collez.legendes.${vue}`, { bouton: t(l, "collez.app.coller") });
 ---
 <section id="collez" aria-labelledby="titre-collez" class="section collez apparition">
-  <div class="haut">
-    <div class="texte">
-      <p class="surtitre">{t(l, "collez.surtitre")}</p>
-      <h2 id="titre-collez" class="titre-section">{t(l, "collez.titre")}</h2>
-      <p class="chapeau">{t(l, "collez.phrase")}</p>
-    </div>
-
-    <div class="demo avec-js" data-visite data-durees={durees} data-seuil="0.5">
-      <div class="scene">
-        <Halo />
-        <div class="telephone">
-          <div class="ecran">
-            {vues.map((vue, i) => (
-              <div class:list={["diapo", { active: i === 0 }]} data-diapo={vue} hidden={i > 0}>
-                <CollezEcran langue={l} tableau={vue} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div class="commandes">
-        <div class="pastilles onglets" role="group" aria-label={t(l, "collez.groupe")}>
-          {vues.map((vue, i) => (
-            <button type="button" data-onglet={vue} aria-pressed={i === 0 ? "true" : "false"}>
-              {t(l, `collez.etiquettes.${vue}`)}<span class="barre" aria-hidden="true"></span>
-            </button>
-          ))}
-        </div>
-        <BoutonLecture langue={l} />
-      </div>
-      <div class="legendes" data-legendes aria-live="off">
-        {vues.map((vue, i) => (
-          <p class:list={["legende", { active: i === 0 }]} data-legende={vue}>{legende(vue)}</p>
-        ))}
-      </div>
-    </div>
+  <div class="tete">
+    <p class="surtitre">{t(l, "collez.surtitre")}</p>
+    <h2 id="titre-collez" class="titre-section">{t(l, "collez.titre")}</h2>
   </div>
 
-  <ol class="grille sans-js fige">
-    {vues.map((vue, i) => (
-      <li>
-        <div class="telephone"><div class="ecran"><CollezEcran langue={l} tableau={vue} /></div></div>
-        <p class="legende"><span class="numero chiffres">{i + 1}. {t(l, `collez.etiquettes.${vue}`)}</span>{legende(vue)}</p>
-      </li>
-    ))}
-  </ol>
+  <div class="duo">
+    <div class="appareil-tel">
+      <div class="demo avec-js" data-visite data-durees={durees} data-seuil="0.5">
+        <div class="scene">
+          <Halo />
+          <div class="telephone">
+            <div class="ecran">
+              {vues.map((vue, i) => (
+                <div class:list={["diapo", { active: i === 0 }]} data-diapo={vue} hidden={i > 0}>
+                  <CollezEcran langue={l} tableau={vue} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div class="commandes">
+          <div class="pastilles onglets" role="group" aria-label={t(l, "collez.groupe")}>
+            {vues.map((vue, i) => (
+              <button type="button" data-onglet={vue} aria-pressed={i === 0 ? "true" : "false"}>
+                {t(l, `collez.etiquettes.${vue}`)}<span class="barre" aria-hidden="true"></span>
+              </button>
+            ))}
+          </div>
+          <BoutonLecture langue={l} />
+        </div>
+        <div class="legendes" data-legendes aria-live="off">
+          {vues.map((vue, i) => (
+            <p class:list={["legende", { active: i === 0 }]} data-legende={vue}>{legende(vue)}</p>
+          ))}
+        </div>
+      </div>
+
+      <ol class="grille sans-js fige">
+        {vues.map((vue, i) => (
+          <li>
+            <div class="telephone"><div class="ecran"><CollezEcran langue={l} tableau={vue} /></div></div>
+            <p class="legende"><span class="numero chiffres">{i + 1}. {t(l, `collez.etiquettes.${vue}`)}</span>{legende(vue)}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+    <div class="texte-tel">
+      <h3>{t(l, "collez.collerTitre")}</h3>
+      <p>{t(l, "collez.phrase")}</p>
+    </div>
+
+    <div class="appareil-tv">
+      <div class="scene-tv">
+        <Halo />
+        <div class="ecran-tv"><CollezTv langue={l} /></div>
+      </div>
+    </div>
+    <div class="texte-tv">
+      <h3>{t(l, "collez.scannerTitre")}</h3>
+      <p>{t(l, "collez.scannerPhrase")}</p>
+    </div>
+  </div>
 
   <ol class="etapes">
     {[1, 2, 3].map((n) => (
@@ -76,13 +96,37 @@ const legende = (vue: string) => t(l, `collez.legendes.${vue}`, { bouton: t(l, "
 </section>
 
 <style is:global>
-  /* Mise en page. */
-  .collez .haut { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 28rem); gap: 3rem; align-items: center; }
+  /* Mise en page : grand titre à gauche, puis le téléphone et l'Apple TV côte à côte, leur texte dessous. */
+  .collez .tete { max-width: 46rem; }
   .collez .surtitre { color: #a1a1a6; }
-  .collez .chapeau { max-width: 32rem; }
+  .collez .duo { margin-top: 4rem; display: grid; grid-template-columns: minmax(0, 28rem) minmax(0, 1fr); grid-template-areas: "tel tv" "ttel ttv"; gap: 3rem 5rem; align-items: center; }
+  .collez .appareil-tel { grid-area: tel; }
+  .collez .appareil-tv { grid-area: tv; }
+  .collez .texte-tel { grid-area: ttel; }
+  .collez .texte-tv { grid-area: ttv; }
+  .collez .texte-tel, .collez .texte-tv { align-self: start; }
+  .collez .duo h3 { margin: 0; font-size: clamp(1.5rem, 2.4vw, 1.875rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .collez .duo h3 + p { margin: 0.75rem 0 0; max-width: 34rem; font-size: 1.0625rem; line-height: 1.55; color: #a1a1a6; }
   .collez .demo { display: flex; flex-direction: column; align-items: center; }
   .collez .scene { position: relative; width: min(100%, 18.5rem); }
   .collez .scene .halo { left: -40%; right: -40%; }
+
+  /* Apple TV : écran flottant 16:9, même liseré et même ombre que le téléphone. */
+  .collez .scene-tv { position: relative; }
+  .collez .ecran-tv { position: relative; z-index: 1; container-type: inline-size; aspect-ratio: 16 / 9; overflow: hidden; background: #000; border-radius: 1.5cqw; box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 2.5rem 7.5rem rgba(0,0,0,0.9); }
+  .collez .tv-ecran { position: absolute; inset: 0; display: flex; align-items: center; gap: 6cqw; padding: 0 7cqw; color: #f5f5f7; text-align: left; }
+  .collez .tv-qr { flex: none; width: 33cqw; aspect-ratio: 1; display: grid; place-items: center; border-radius: 2.5cqw; background: #141416; }
+  .collez .tv-qr svg { width: 80%; height: 80%; padding: 6%; box-sizing: border-box; background: #fff; border-radius: 2cqw; }
+  .collez .tv-texte { min-width: 0; }
+  .collez .tv-texte p { margin: 0; }
+  .collez .tv-titre { font-size: 4.2cqw; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .collez .tv-etapes { margin: 2.6cqw 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 1.3cqw; font-size: 1.75cqw; line-height: 1.3; }
+  .collez .tv-etapes li { display: flex; align-items: center; gap: 1.4cqw; }
+  .collez .tv-etapes span { flex: none; width: 3.2cqw; height: 3.2cqw; border-radius: 50%; display: grid; place-items: center; background: #f5f5f7; color: #000; font-weight: 700; font-size: 1.6cqw; }
+  .collez .tv-code-titre { margin-top: 3cqw !important; font-size: 1.5cqw; font-weight: 600; color: #8e8e93; }
+  .collez .tv-code { font-size: 6.2cqw; font-weight: 800; line-height: 1.1; letter-spacing: 0.02em; }
+  .collez .tv-valable { margin-top: 0.8cqw !important; font-size: 1.45cqw; line-height: 1.35; color: #a1a1a6; }
+
   .collez .commandes { position: relative; z-index: 2; margin-top: 2rem; flex-wrap: nowrap; }
   .collez .pastilles button { padding-left: 0.875rem; padding-right: 0.875rem; }
   .collez .legendes { display: grid; margin: 1.25rem auto 0; max-width: 24rem; }
@@ -168,16 +212,14 @@ const legende = (vue: string) => t(l, `collez.legendes.${vue}`, { bouton: t(l, "
   .collez .fige .tableau *, .collez .fige .active .tableau * { animation: none !important; }
 
   /* Sans JavaScript ou « réduire les animations » : les 4 tableaux côte à côte. */
-  .collez .grille { margin: 3.5rem auto 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; max-width: 64rem; }
+  .collez .grille { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1.25rem; }
   .collez .grille .ecran { box-shadow: 0 0 0 1px rgba(255,255,255,0.16); }
   .collez .grille .legende { margin-top: 0.875rem; font-size: 0.9375rem; line-height: 1.45; }
   .collez .grille .numero { display: block; margin-bottom: 0.25rem; color: #f5f5f7; font-size: 0.8125rem; font-weight: 600; }
   @media (prefers-reduced-motion: reduce) {
     html.js .collez .avec-js { display: none !important; }
     html.js .collez .grille.sans-js { display: grid !important; }
-    .collez .haut { grid-template-columns: minmax(0, 1fr); }
   }
-  html:not(.js) .collez .haut { grid-template-columns: minmax(0, 1fr); }
 
   /* Les 3 étapes, en une ligne. */
   .collez .etapes { margin: 5rem 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
@@ -189,10 +231,10 @@ const legende = (vue: string) => t(l, `collez.legendes.${vue}`, { bouton: t(l, "
   .collez .minute { margin: 1.75rem 0 0; text-align: center; font-size: 0.9375rem; font-weight: 600; color: #d1d1d6; }
 
   @media (max-width: 52rem) {
-    .collez .haut { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+    .collez .duo { margin-top: 3rem; grid-template-columns: minmax(0, 1fr); grid-template-areas: "tel" "ttel" "tv" "ttv"; gap: 2rem; }
+    .collez .appareil-tv { margin-top: 2rem; }
     .collez .scene { width: min(100%, 17rem); }
     .collez .commandes { flex-wrap: wrap; }
-    .collez .grille { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem 1rem; }
     .collez .etapes { grid-template-columns: minmax(0, 1fr); margin-top: 3rem; }
   }
 </style>
