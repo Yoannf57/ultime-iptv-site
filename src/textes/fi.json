@@ -48,6 +48,45 @@
     "films": "Elokuvat ja sarjat",
     "multi": "Moninäyttö"
   },
+  "collez": {
+    "surtitre": "Yhdistäminen",
+    "titre": "Sijoita. Siinä kaikki.",
+    "phrase": "Lähettikö palveluntarjoajasi viestin, jossa on kirjautumistietosi? Sijoita se Ultiin: sovellus tunnistaa muodon itse ja täyttää kaiken. Voit myös kirjoittaa tiedot käsin.",
+    "groupe": "Yhdistämisen vaiheet",
+    "etiquettes": {
+      "message": "Viesti",
+      "coller": "Sijoita",
+      "remplir": "Täytetty",
+      "pret": "Valmis"
+    },
+    "legendes": {
+      "message": "Palveluntarjoajasi viesti: kopioi se.",
+      "coller": "Napauta Ultissa ”{bouton}”.",
+      "remplir": "Ulti tunnistaa muodon ja täyttää kaiken.",
+      "pret": "Kanavasi ovat valmiina."
+    },
+    "minute": "Alle minuutissa.",
+    "message": {
+      "expediteur": "Palveluntarjoajani",
+      "initiale": "P",
+      "bienvenue": "Tervetuloa! Tässä tilauksesi:",
+      "utilisateur": "Käyttäjätunnus: {valeur}",
+      "motDePasse": "Salasana: {valeur}",
+      "copier": "Kopioi"
+    },
+    "app": {
+      "titre": "Lisää tilaus",
+      "coller": "Sijoita saamasi viesti",
+      "collerTexte": "Palveluntarjoajasi tekstiviesti, WhatsApp-viesti tai sähköposti: palvelin ja kirjautumistiedot täyttyvät itsestään.",
+      "serveur": "Palvelin (http://esimerkki.fi:8080)",
+      "utilisateur": "Käyttäjätunnus",
+      "motDePasse": "Salasana",
+      "continuer": "Jatka",
+      "trousseau": "Kirjautumistietosi pysyvät laitteesi avainnipussa.",
+      "trouve": "Löytyi: palvelin, käyttäjätunnus, salasana. Tarkista ja jatka.",
+      "boutonColler": "Sijoita"
+    }
+  },
   "fonctions": {
     "titre": "Tilauksesi, vihdoin selkeästi esillä.",
     "phrase": "Ulti järjestää tilauksesi tuhannet kanavat ja elokuvat selkeiksi näkymiksi, kuin TV-sovellus, joka sinulla olisi aina ollut.",
@@ -119,7 +158,6 @@
     "multi": "Moninäyttö: jopa 4 suoraa lähetystä yhtä aikaa (iPhonessa 2)"
   },
   "etapes": {
-    "titre": "Valmis minuutissa.",
     "e1Titre": "Lisää tilauksesi",
     "e1Texte": "Liitä IPTV-palveluntarjoajasi viesti tai syötä kirjautumistiedot. Ulti hoitaa loput.",
     "e2Titre": "Ulti järjestää kaiken",
