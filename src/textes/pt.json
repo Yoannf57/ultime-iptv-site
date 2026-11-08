@@ -50,8 +50,11 @@
   },
   "collez": {
     "surtitre": "Ligação",
-    "titre": "Cole. E já está.",
+    "titre": "Configurar nunca foi tão simples.",
+    "collerTitre": "Cole. E já está.",
     "phrase": "O seu fornecedor enviou-lhe uma mensagem com os seus dados de acesso? Cole-a no Ulti: a app reconhece o formato sozinha e preenche tudo. Também pode introduzir os dados à mão.",
+    "scannerTitre": "Digitalize. E já está.",
+    "scannerPhrase": "Na Apple TV, não precisa de escrever nada com o comando: digitalize o código QR com o iPhone, confirme e a sua subscrição chega à TV, encriptada, diretamente pela sua rede local.",
     "groupe": "Passos da ligação",
     "etiquettes": {
       "message": "Mensagem",
@@ -85,6 +88,14 @@
       "trousseau": "Os seus dados de acesso ficam no porta-chaves do dispositivo.",
       "trouve": "Encontrado: servidor, utilizador, palavra-passe. Verifique e continue.",
       "boutonColler": "Colar"
+    },
+    "tv": {
+      "titre": "Com o meu iPhone",
+      "etape1": "Abra a Câmara do iPhone.",
+      "etape2": "Aponte para este código QR e toque na ligação do Ulti.",
+      "etape3": "Confirme no iPhone.",
+      "code": "Código",
+      "valable": "Válido durante mais %@. O mesmo código aparece no iPhone antes do envio."
     }
   },
   "fonctions": {
