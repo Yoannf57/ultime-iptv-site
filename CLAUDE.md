@@ -192,7 +192,8 @@ une langue.
       dans l'écran de l'iPad (Accueil, Direct, Films et séries) montre cet écran ; pause hors écran ou onglet
       caché ; rien ne bouge avec `prefers-reduced-motion`. Sans JavaScript : les écrans l'un sous l'autre.
       Code : `src/components/accueil/Visite.astro`, `src/scripts/visite.js`.
-   3. Apple TV : appairage par QR code depuis l'iPhone (on ne tape rien à la télécommande), zapping, image dans l'image.
+   3. Apple TV : « Zappez, tout simplement. » — zapping à la télécommande, image dans l'image, grandes affiches
+      (recentrée le 08/11/2026 à la demande de Yoann : l'appairage par QR code est dans la section « Connexion »).
    4. Famille : profils, profil Enfant avec code parental.
    5. Ulti Premium (surtitre « Ulti Premium ») : **films et séries** (affiches, résumés, reprises), pause du direct, replay, téléchargements, synchro
       iCloud, plusieurs abonnements et profils, thèmes, et le multi-écran comme les autres fonctions (« jusqu'à 4
