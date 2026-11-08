@@ -48,6 +48,45 @@
     "films": "Movies & Series",
     "multi": "Multi-screen"
   },
+  "collez": {
+    "surtitre": "Setup",
+    "titre": "Paste. That's it.",
+    "phrase": "Did your provider send you a message with your login details? Paste it into Ulti: the app recognises the format on its own and fills everything in. You can also type your details by hand.",
+    "groupe": "Setup steps",
+    "etiquettes": {
+      "message": "Message",
+      "coller": "Paste",
+      "remplir": "Filled in",
+      "pret": "Ready"
+    },
+    "legendes": {
+      "message": "Your provider's message: copy it.",
+      "coller": "In Ulti, tap “{bouton}”.",
+      "remplir": "Ulti recognises the format and fills everything in.",
+      "pret": "Your channels are ready."
+    },
+    "minute": "Under a minute, start to finish.",
+    "message": {
+      "expediteur": "My provider",
+      "initiale": "M",
+      "bienvenue": "Welcome! Here is your subscription:",
+      "utilisateur": "Username: {valeur}",
+      "motDePasse": "Password: {valeur}",
+      "copier": "Copy"
+    },
+    "app": {
+      "titre": "Add a subscription",
+      "coller": "Paste the message you received",
+      "collerTexte": "Text, WhatsApp or email from your provider: the server and login details fill in by themselves.",
+      "serveur": "Server (http://example.com:8080)",
+      "utilisateur": "Username",
+      "motDePasse": "Password",
+      "continuer": "Continue",
+      "trousseau": "Your login details stay in your device's Keychain.",
+      "trouve": "Found: server, username, password. Check, then continue.",
+      "boutonColler": "Paste"
+    }
+  },
   "fonctions": {
     "titre": "Your subscription, beautifully presented.",
     "phrase": "Ulti turns the thousands of channels and movies in your subscription into clear screens, like a TV app you've always had.",
@@ -119,7 +158,6 @@
     "multi": "Multi-screen: up to 4 live channels at once (2 on iPhone)"
   },
   "etapes": {
-    "titre": "Ready in a minute.",
     "e1Titre": "Add your subscription",
     "e1Texte": "Paste the message from your IPTV provider, or enter its login details. Ulti fills in the rest.",
     "e2Titre": "Ulti sorts everything",
