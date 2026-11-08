@@ -162,7 +162,9 @@ une langue.
    1 bis. **« Connexion »** (07/11/2026, remplace « Prêt en une minute » ; refaite le 08/11/2026 à la demande de
       Yoann) : surtitre « Connexion », grand titre à gauche « Se connecter n'a jamais été aussi simple. » (idée de
       Yoann : « la connexion la plus simple du monde », adoucie pour ne pas affirmer un record invérifiable), puis
-      **deux appareils côte à côte, chacun avec son texte dessous** :
+      deux appareils, chacun avec son texte : **sur ordinateur, deux rangées en miroir** (téléphone puis son texte ;
+      texte puis l'Apple TV, plus large ; demande de Yoann, 08/11/2026 : « sur l'ordi un peu moins bien ») ; **sur
+      téléphone, chaque appareil puis son texte dessous** :
       - à gauche, le téléphone dessiné (écran flottant, liseré fin, halo, pas de cadre d'Apple) qui montre 4 tableaux
         en boucle : message du fournisseur → « Ajouter un abonnement », doigt sur « Coller » → champs remplis
         (« Trouvé : … ») → vraie capture iPhone de l'accueil ; dessous « Collez. C'est tout. » et sa phrase ;
@@ -171,7 +173,9 @@ une langue.
         `collez.tv.*`) ; dessous « Scannez. C'est tout. » et sa phrase.
       Puis les 3 étapes (`etapes.e1…e3`) et « Moins d'une minute, montre en main. ». Seule adresse :
       `fournisseur.example` ; jamais « M3U » ni « Xtream » ; mots de l'app repris de `Localizable.xcstrings`
-      (`collez.app.*`, `collez.tv.*`). Téléphone animé par `visite.js` (`data-durees` : une durée par tableau ;
+      (`collez.app.*`, `collez.tv.*`). Téléphone animé par `visite.js` (`data-enchainer` : un clic sur une étiquette
+      rejoue ce tableau puis enchaîne la suite, « Coller » → « Remplissage » ; le survol n'arrête rien, seul le
+      bouton Pause arrête ; `data-durees` : une durée par tableau ;
       `?tableau=<vue>` fige un tableau pour les captures, `npm run captures-sections -- --collez`). Sans JavaScript ou
       avec `prefers-reduced-motion` : les 4 tableaux du téléphone en 2 × 2. Code : `Collez.astro`, `CollezEcran.astro`,
       `CollezTv.astro`.
