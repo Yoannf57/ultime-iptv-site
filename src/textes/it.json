@@ -48,6 +48,45 @@
     "films": "Film e serie",
     "multi": "Multischermo"
   },
+  "collez": {
+    "surtitre": "Connessione",
+    "titre": "Incolla. Fatto.",
+    "phrase": "Il tuo fornitore ti ha inviato un messaggio con i dati di accesso? Incollalo in Ulti: l'app riconosce il formato da sola e compila tutto. Puoi anche inserire i dati a mano.",
+    "groupe": "Passaggi della connessione",
+    "etiquettes": {
+      "message": "Messaggio",
+      "coller": "Incolla",
+      "remplir": "Compilato",
+      "pret": "Pronto"
+    },
+    "legendes": {
+      "message": "Il messaggio del tuo fornitore: copialo.",
+      "coller": "In Ulti, tocca «{bouton}».",
+      "remplir": "Ulti riconosce il formato e compila tutto.",
+      "pret": "I tuoi canali sono pronti."
+    },
+    "minute": "In meno di un minuto, orologio alla mano.",
+    "message": {
+      "expediteur": "Il mio fornitore",
+      "initiale": "F",
+      "bienvenue": "Benvenuto! Ecco il tuo abbonamento:",
+      "utilisateur": "Utente: {valeur}",
+      "motDePasse": "Password: {valeur}",
+      "copier": "Copia"
+    },
+    "app": {
+      "titre": "Aggiungi un abbonamento",
+      "coller": "Incolla il messaggio ricevuto",
+      "collerTexte": "SMS, WhatsApp o e-mail del fornitore: il server e i dati di accesso si compilano da soli.",
+      "serveur": "Server (http://esempio.it:8080)",
+      "utilisateur": "Nome utente",
+      "motDePasse": "Password",
+      "continuer": "Continua",
+      "trousseau": "I tuoi dati di accesso restano nel portachiavi del dispositivo.",
+      "trouve": "Trovato: server, nome utente, password. Controlla e continua.",
+      "boutonColler": "Incolla"
+    }
+  },
   "fonctions": {
     "titre": "Il tuo abbonamento, finalmente ben presentato.",
     "phrase": "Ulti ordina le migliaia di canali e film del tuo abbonamento in schermate chiare, come un'app TV che hai sempre avuto.",
@@ -119,7 +158,6 @@
     "multi": "Multischermo: fino a 4 dirette contemporaneamente (2 su iPhone)"
   },
   "etapes": {
-    "titre": "Pronto in un minuto.",
     "e1Titre": "Aggiungi il tuo abbonamento",
     "e1Texte": "Incolla il messaggio del tuo fornitore IPTV o inserisci le credenziali. Ulti compila il resto.",
     "e2Titre": "Ulti mette tutto in ordine",
