@@ -1,7 +1,8 @@
 // npm run captures-sections -- <dossier> [adresse] — captures de sections de l'accueil pour un compte rendu
 // (JPEG compressés, ordinateur 1440 px et iPhone 393 px), plus une courte vidéo de la visite iPad.
-// Pages : fr-fr, en, de-de (grand visuel, visite iPad à 3 moments, tarifs « Pour moi » puis « Pour la famille »),
-// et les tarifs de quelques pays (option --tarifs=en-us,fr-ch,…).
+// Pages : fr-fr, en, de-de (grand visuel, « Collez. » figée sur chacun de ses 4 tableaux et en version
+// « réduire les animations », visite iPad à 3 moments, tarifs « Pour moi » puis « Pour la famille »),
+// et les tarifs de quelques pays (option --tarifs=en-us,fr-ch,…). --collez : seulement la section « Collez. ».
 // Par défaut : le site local lancé par « npm run preview ».
 import { chromium } from "playwright";
 import { mkdirSync, renameSync, readdirSync, rmSync } from "node:fs";
@@ -13,7 +14,8 @@ if (!dossier) { console.error("Usage : npm run captures-sections -- <dossier> [a
 const adresse = (args.find((a) => a.startsWith("http")) || "http://localhost:4321/ultime-iptv-site/").replace(/\/?$/, "/");
 const pages = (args.find((a) => a.startsWith("--pages="))?.split("=")[1] || "fr-fr,en,de-de").split(",").filter(Boolean);
 const tarifs = (args.find((a) => a.startsWith("--tarifs="))?.split("=")[1] || "").split(",").filter(Boolean);
-const sansVideo = args.includes("--sans-video");
+const seulementCollez = args.includes("--collez");
+const sansVideo = args.includes("--sans-video") || seulementCollez;
 mkdirSync(dossier, { recursive: true });
 const tailles = { "1440": { width: 1440, height: 900 }, "393": { width: 393, height: 852 } };
 const navigateur = await chromium.launch();
@@ -34,8 +36,32 @@ async function contexte(code, taille) {
   return c;
 }
 
+// « Collez. C'est tout. » : chaque tableau figé (?tableau=…), puis les 4 côte à côte (« réduire les animations »).
+async function collez(code, taille) {
+  for (const [n, vue] of ["message", "coller", "remplir", "pret"].entries()) {
+    const c = await contexte(code, taille);
+    const page = await c.newPage();
+    await page.goto(adresse + code + "/?tableau=" + vue + "#collez", { waitUntil: "networkidle" });
+    await page.mouse.move(0, 0);
+    await page.waitForTimeout(1500); // fin du fondu d'apparition de la section
+    await imagesPretes(page, "#collez");
+    await photo(page, "#collez", `${code}-${taille}-collez-${n + 1}-${vue}`);
+    await c.close();
+  }
+  const c = await contexte(code, taille);
+  const page = await c.newPage();
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto(adresse + code + "/#collez", { waitUntil: "networkidle" });
+  await page.waitForTimeout(500);
+  await imagesPretes(page, "#collez");
+  await photo(page, "#collez", `${code}-${taille}-collez-5-sans-animation`);
+  await c.close();
+}
+
 for (const code of pages) {
   for (const taille of Object.keys(tailles)) {
+    await collez(code, taille);
+    if (seulementCollez) continue;
     const c = await contexte(code, taille);
     const page = await c.newPage();
     await page.goto(adresse + code + "/", { waitUntil: "networkidle" });
@@ -58,7 +84,7 @@ for (const code of pages) {
   }
 }
 
-for (const code of tarifs) {
+for (const code of seulementCollez ? [] : tarifs) {
   for (const taille of Object.keys(tailles)) {
     const c = await contexte(code, taille);
     const page = await c.newPage();
