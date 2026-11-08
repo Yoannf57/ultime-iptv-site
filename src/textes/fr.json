@@ -50,8 +50,11 @@
   },
   "collez": {
     "surtitre": "Connexion",
-    "titre": "Collez. C'est tout.",
+    "titre": "Se connecter n'a jamais été aussi simple.",
+    "collerTitre": "Collez. C'est tout.",
     "phrase": "Votre fournisseur vous a envoyé un message avec vos identifiants ? Collez-le dans Ulti : l'app reconnaît le format toute seule et remplit tout. Vous pouvez aussi saisir vos identifiants à la main.",
+    "scannerTitre": "Scannez. C'est tout.",
+    "scannerPhrase": "Sur l'Apple TV, rien à taper avec la télécommande : scannez le QR code avec votre iPhone, confirmez, et votre abonnement arrive sur la télé, chiffré, directement par votre réseau local.",
     "groupe": "Étapes de la connexion",
     "etiquettes": {
       "message": "Message",
@@ -61,7 +64,7 @@
     },
     "legendes": {
       "message": "Le message de votre fournisseur : copiez-le.",
-      "coller": "Dans Ulti, touchez « {bouton} ».",
+      "coller": "Dans Ulti, touchez « {bouton} ».",
       "remplir": "Ulti reconnaît le format et remplit tout.",
       "pret": "Vos chaînes sont prêtes."
     },
@@ -85,6 +88,14 @@
       "trousseau": "Vos identifiants restent dans le Trousseau de votre appareil.",
       "trouve": "Trouvé : serveur, utilisateur, mot de passe. Vérifiez puis continuez.",
       "boutonColler": "Coller"
+    },
+    "tv": {
+      "titre": "Avec mon iPhone",
+      "etape1": "Ouvrez l'appareil photo de l'iPhone.",
+      "etape2": "Visez ce QR code, puis touchez le lien Ulti.",
+      "etape3": "Confirmez l'envoi sur l'iPhone.",
+      "code": "Code",
+      "valable": "Valable encore %@. Le même code s'affiche sur l'iPhone avant l'envoi."
     }
   },
   "fonctions": {
