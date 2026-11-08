@@ -26,3 +26,11 @@
 - Lighthouse fr-fr, mobile et ordinateur : Performance, Accessibilité, Bonnes pratiques 100.
 - Aucun « M3U » ni « Xtream » dans la section.
 - Captures fr-fr et en-gb, 1440 et 393 px : dossier `2026-11-08-connexion/`.
+
+## Plus tard le 08/11 : ordinateur et étiquettes
+- Sur ordinateur, deux rangées en miroir : téléphone puis « Collez. C'est tout. », puis « Scannez. C'est tout. » et
+  l'Apple TV (plus large). Sur iPhone, rien ne change (Yoann trouvait déjà ça très bien).
+- Clic sur une étiquette (Message, Coller, Remplissage, Prêt) : le tableau se rejoue depuis le début, puis la suite
+  s'enchaîne. Clic sur « Coller » : le doigt appuie, la carte « Coller le message reçu » s'éclaire, puis les champs
+  se remplissent. Le survol n'arrête plus l'animation ; seul le bouton Pause l'arrête (testé : la pause tient).
+- Captures du dossier `2026-11-08-connexion/` remplacées. Build, textes, liens OK ; Lighthouse fr-fr 100/100/100.
