@@ -1,0 +1,74 @@
+---
+// Un tableau de l'animation « Collez. C'est tout. », dessiné en HTML (sauf le 4ᵉ, vraie capture de l'accueil).
+// 1 message du fournisseur (messagerie générique, aucune marque) ; 2 et 3 écran « Ajouter un abonnement » d'Ulti,
+// d'après AddSourceView.swift de l'app, avec ses mots exacts (collez.app.*) mais sans le choix du type d'abonnement ;
+// 4 vraie capture iPhone de l'accueil. Les styles et animations sont dans Collez.astro.
+// L'adresse et l'utilisateur sont fictifs : « fournisseur.example » est un domaine réservé, qui n'existera jamais.
+import { t } from "../../lib/textes";
+import Capture from "./Capture.astro";
+interface Props { langue: string; tableau: string }
+const { langue: l, tableau } = Astro.props;
+const ADRESSE = "http://fournisseur.example:8080";
+const UTILISATEUR = "demo";
+const MASQUE = "••••••••";
+const app = (cle: string) => t(l, `collez.app.${cle}`);
+const champs = [
+  { libelle: app("serveur"), valeur: ADRESSE },
+  { libelle: app("utilisateur"), valeur: UTILISATEUR },
+  { libelle: app("motDePasse"), valeur: MASQUE },
+];
+---
+{tableau === "pret" ? (
+  <div class="tableau t-pret">
+    <Capture langue={l} appareil="iphone" capture="accueil" sizes="18.5rem" differee />
+  </div>
+) : (
+  <div class:list={["tableau", `t-${tableau}`]} aria-hidden="true">
+    <div class="barre-etat chiffres">9:41</div>
+    {tableau === "message" ? (
+      <>
+        <div class="entete-msg">
+          <div class="avatar">{t(l, "collez.message.initiale")}</div>
+          <div class="expediteur">{t(l, "collez.message.expediteur")}</div>
+        </div>
+        <div class="fil">
+          <div class="copier">{t(l, "collez.message.copier")}</div>
+          <div class="bulle">
+            <span>{t(l, "collez.message.bienvenue")}</span>
+            <span class="lien">{ADRESSE}</span>
+            <span>{t(l, "collez.message.utilisateur", { valeur: UTILISATEUR })}</span>
+            <span>{t(l, "collez.message.motDePasse", { valeur: MASQUE })}</span>
+          </div>
+          <p class="heure chiffres">10:02</p>
+        </div>
+        <div class="saisie"></div>
+      </>
+    ) : (
+      <>
+        <div class="app">
+          <span class="logo">
+            <svg viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="10" stroke="#3A3A3E" stroke-width="3" /><circle cx="13" cy="13" r="10" stroke="#F5F5F7" stroke-width="3" stroke-linecap="round" stroke-dasharray="47 63" transform="rotate(-90 13 13)" /></svg>
+            {t(l, "marque.nom")} <span class="suffixe">{t(l, "marque.suffixe")}</span>
+          </span>
+          <p class="grand-titre">{app("titre")}</p>
+          <div class="groupe">
+            <div class="coller">
+              <div><strong>{app("coller")}</strong><small>{app("collerTexte")}</small></div>
+              <span class="pilule"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M5 1.5h6v2H5zM3.5 2.5H4v2h8v-2h.5A1.5 1.5 0 0 1 14 4v10a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14V4a1.5 1.5 0 0 1 1.5-1.5z" /></svg>{app("boutonColler")}{tableau === "coller" && <span class="doigt"></span>}</span>
+            </div>
+            {tableau === "remplir" && (
+              <div class="trouve"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#a1a1a6" /><path d="M4.5 8.2l2.3 2.3 4.7-4.8" stroke="#000" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" /></svg><span>{app("trouve")}</span></div>
+            )}
+          </div>
+          <div class="groupe champs">
+            {champs.map((c) => (
+              <div class="champ">{c.libelle}{tableau === "remplir" && <><span class="valeur">{c.valeur}</span><span class="eclat"></span></>}</div>
+            ))}
+          </div>
+          <p class="pied">{app("trousseau")}</p>
+          <div class="continuer">{app("continuer")}{tableau === "remplir" && <span class="allume">{app("continuer")}</span>}</div>
+        </div>
+      </>
+    )}
+  </div>
+)}
