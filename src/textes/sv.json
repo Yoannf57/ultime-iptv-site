@@ -50,8 +50,11 @@
   },
   "collez": {
     "surtitre": "Anslutning",
-    "titre": "Klistra in. Klart.",
+    "titre": "Att ansluta har aldrig varit enklare.",
+    "collerTitre": "Klistra in. Klart.",
     "phrase": "Har din leverantör skickat ett meddelande med dina inloggningsuppgifter? Klistra in det i Ulti: appen känner själv igen formatet och fyller i allt. Du kan också skriva in uppgifterna för hand.",
+    "scannerTitre": "Skanna. Klart.",
+    "scannerPhrase": "På Apple TV behöver du inte skriva något med fjärrkontrollen: skanna QR-koden med din iPhone, bekräfta, så kommer ditt abonnemang till tv:n, krypterat, direkt via ditt lokala nätverk.",
     "groupe": "Steg för anslutning",
     "etiquettes": {
       "message": "Meddelande",
@@ -85,6 +88,14 @@
       "trousseau": "Dina inloggningsuppgifter stannar i enhetens nyckelring.",
       "trouve": "Hittade: server, användarnamn, lösenord. Kontrollera och fortsätt.",
       "boutonColler": "Klistra in"
+    },
+    "tv": {
+      "titre": "Med min iPhone",
+      "etape1": "Öppna Kamera på din iPhone.",
+      "etape2": "Rikta den mot QR-koden och tryck sedan på Ulti-länken.",
+      "etape3": "Bekräfta på din iPhone.",
+      "code": "Kod",
+      "valable": "Giltig i %@ till. Samma kod visas på din iPhone innan den skickas."
     }
   },
   "fonctions": {
