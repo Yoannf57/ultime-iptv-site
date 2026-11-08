@@ -7,11 +7,15 @@
 // - le visiteur garde la main : clic, clavier, focus ou survol à la souris arrêtent la visite, qui reprend seule après
 //   10 s sans action ; après un toucher (téléphone, tablette), elle ne reprend pas seule ;
 // - bouton Pause / Lecture ; visite en pause hors de l'écran ou quand l'onglet du navigateur est caché ;
-// - « réduire les animations » : rien ne bouge, les onglets restent cliquables.
+// - « réduire les animations » : rien ne bouge, les onglets restent cliquables ;
+// - data-durees="2600,2200,…" : une durée par écran (sinon 4,5 s) ; les petites animations CSS dans un écran
+//   (section « Collez. ») repartent du début quand il s'affiche ;
+// - ?tableau=<vue> dans l'adresse : fige cet écran, animations terminées (captures Playwright).
 var DUREE = 4500;
 var REPRISE = 10000;
 var FONDU = 650;
 var calme = matchMedia("(prefers-reduced-motion: reduce)").matches;
+var tableauFige = new URLSearchParams(location.search).get("tableau");
 
 function demarrer(racine) {
   var tous = function (sel) { return Array.prototype.slice.call(racine.querySelectorAll(sel)); };
@@ -31,8 +35,22 @@ function demarrer(racine) {
   var aLEcran = false;
   var ongletVisible = !document.hidden;
   var dernierPointeur = "mouse";
+  var durees = (racine.getAttribute("data-durees") || "").split(",").map(Number);
+  var dejaVu = false;
+  function duree() { return durees[actuel] || DUREE; }
+  // Relance les animations CSS de l'écran affiché (pas le fondu entre les écrans).
+  function relancer() {
+    diapos.forEach(function (d) {
+      if (!d.classList.contains("active") || !d.getAnimations) return;
+      d.getAnimations({ subtree: true }).forEach(function (a) {
+        if (typeof CSSAnimation !== "undefined" && a instanceof CSSAnimation) { a.cancel(); a.play(); }
+      });
+    });
+  }
 
   racine.style.setProperty("--duree", DUREE + "ms");
+  var kFige = tableauFige ? vues.indexOf(tableauFige) : -1;
+  if (kFige >= 0) { pauseVoulue = true; actuel = kFige; racine.classList.add("fige"); }
   if (calme && bouton) bouton.classList.add("cache");
 
   function montrer(i) {
@@ -58,9 +76,10 @@ function demarrer(racine) {
     clearTimeout(minuteur);
     racine.classList.remove("joue");
     if (joue()) {
+      racine.style.setProperty("--duree", duree() + "ms");
       void racine.offsetWidth; // relance la barre de progression depuis le début
       racine.classList.add("joue");
-      minuteur = setTimeout(function () { montrer(actuel + 1); planifier(); }, DUREE);
+      minuteur = setTimeout(function () { montrer(actuel + 1); planifier(); }, duree());
     }
     if (!bouton) return;
     // Le bouton montre « Lecture » quand la visite ne repartira pas seule (Pause choisie, ou après un toucher).
@@ -112,12 +131,13 @@ function demarrer(racine) {
   if ("IntersectionObserver" in window) {
     new IntersectionObserver(function (entrees) {
       aLEcran = entrees[0].isIntersecting;
+      if (aLEcran && !dejaVu) { dejaVu = true; relancer(); }
       planifier();
     }, { threshold: Number(racine.getAttribute("data-seuil")) || 0.35 }).observe(racine);
   }
   document.addEventListener("visibilitychange", function () { ongletVisible = !document.hidden; planifier(); });
 
-  montrer(0);
+  montrer(actuel);
   planifier();
 }
 
