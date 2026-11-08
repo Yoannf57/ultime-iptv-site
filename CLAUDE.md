@@ -5,7 +5,7 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 07/11/2026 au soir (badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
+Dernière mise à jour : 07/11/2026 au soir (section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
 « Bientôt sur Android », `appleTvDisponible` ; avant : informations légales définitives ; page Conditions d'utilisation ; confidentialité avec le relais TMDB ; grand
 visuel Apple TV + iPhone et visite automatique sur iPad, dans les cadres officiels d'Apple ; « Ulti Premium » ; captures
 des 12 langues ; textes à faire relire).
@@ -159,6 +159,15 @@ une langue.
       suivre la taille de l'écran), `aria-label` = nom de l'onglet, changement d'image en fondu court. Les captures
       sont chargées seulement au premier clic (sauf celle de l'accueil). Sur téléphone, l'iPhone est masqué et seule
       l'Apple TV reste cliquable.
+   1 bis. **« Collez. C'est tout. »** (07/11/2026, remplace « Prêt en une minute ») : surtitre « Connexion », une
+      phrase, et un téléphone dessiné (écran flottant, liseré fin, halo, pas de cadre d'Apple) qui montre 4 tableaux
+      en boucle : message du fournisseur → « Ajouter un abonnement », doigt sur « Coller » → champs remplis
+      (« Trouvé : … ») → vraie capture iPhone de l'accueil. Dessous : les 3 étapes (`etapes.e1…e3`) et « Moins d'une
+      minute, montre en main. ». Seule adresse : `fournisseur.example` ; jamais « M3U » ni « Xtream » ; écran de l'app
+      sans sélecteur de type, mots repris de `Localizable.xcstrings` (`collez.app.*`). Même `visite.js` que la
+      visite iPad (`data-durees` : une durée par tableau ; `?tableau=<vue>` fige un tableau pour les captures,
+      `npm run captures-sections -- --collez`). Sans JavaScript ou avec `prefers-reduced-motion` : les 4 tableaux
+      côte à côte. Code : `Collez.astro`, `CollezEcran.astro`.
    2. « Votre abonnement, enfin bien présenté » : direct avec anneaux d'avancement, guide TV, films et séries avec
       affiches et résumés. La carte « Films et séries » porte une mention discrète « Avec Premium » (gris, sans
       majuscules ni pastille).
@@ -177,12 +186,10 @@ une langue.
    5. Ulti Premium (surtitre « Ulti Premium ») : **films et séries** (affiches, résumés, reprises), pause du direct, replay, téléchargements, synchro
       iCloud, plusieurs abonnements et profils, thèmes, et le multi-écran comme les autres fonctions (« jusqu'à 4
       directs à la fois (2 sur iPhone) »).
-   6. « Prêt en une minute », 3 étapes : « Ajoutez votre abonnement » (collez le message du fournisseur, ou saisissez
-      ses identifiants) → « Ulti range tout » → « Regardez partout ».
-   7. Tarifs (section 6).
-   8. Confidentialité en une phrase : « Aucune donnée collectée. Vos identifiants restent dans le trousseau de votre
+   6. Tarifs (section 6).
+   7. Confidentialité en une phrase : « Aucune donnée collectée. Vos identifiants restent dans le trousseau de votre
       appareil. »
-   9. Questions fréquentes, 5 questions : « Ulti fournit-il des chaînes ? Non. » ; « Sur quels appareils ? » ;
+   8. Questions fréquentes, 5 questions : « Ulti fournit-il des chaînes ? Non. » ; « Sur quels appareils ? » ;
       « Mes identifiants sont-ils en sécurité ? » ; « Quels abonnements sont compatibles ? » (le seul endroit de
       l'accueil où « lien M3U » et « identifiants Xtream Codes » sont écrits, utile aussi pour Google) ; « Puis-je
       essayer avant de payer ? » (réponse : le direct est gratuit, Premium s'essaie 7 jours avec les abonnements
@@ -386,6 +393,9 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 - [x] Lot 11 préparé (07/11/2026, badges importés le soir : il ne reste que le jour J) — compte rendu
   `Notes/comptes-rendus/2026-11-07-publication.md`. Traductions des
   nouvelles phrases (Android, Apple TV, badge) faites par Claude : à faire relire avec le reste.
+- [x] Section « Collez. C'est tout. » (07/11/2026 au soir) — compte rendu
+  `Notes/comptes-rendus/2026-11-07-section-collez.md`. Nouvelles phrases traduites par Claude : à faire relire ;
+  à harmoniser : « Liitä » / « Sijoita » (fi), « einfügen » / « einsetzen » (de).
 
 ### Jour de la publication
 1. `site.config.mjs` : **la ligne `disponible: false,` devient `disponible: true,`** ; `indexable: true` si ultitv.com n'est pas encore branché (sinon c'est déjà
