@@ -34,3 +34,11 @@
   s'enchaîne. Clic sur « Coller » : le doigt appuie, la carte « Coller le message reçu » s'éclaire, puis les champs
   se remplissent. Le survol n'arrête plus l'animation ; seul le bouton Pause l'arrête (testé : la pause tient).
 - Captures du dossier `2026-11-08-connexion/` remplacées. Build, textes, liens OK ; Lighthouse fr-fr 100/100/100.
+
+## Page stable sur téléphone (08/11)
+- La page glissait de gauche à droite sur iPhone : les halos derrière les appareils dépassaient de l'écran (jusqu'à
+  48 px). `main { overflow-x: clip }` dans `Base.astro` les coupe au bord, sans changement visible.
+- À 320 px, la pastille de l'en-tête dépassait aussi (« Binnenkort beschikbaar » en néerlandais) : elle passe sur
+  deux lignes sur ces très petits écrans.
+- Vérifié : 38 accueils à 320 px, et les pages Support, Confidentialité, Conditions, Mentions légales (fr, de, fi,
+  pt-br, en) à 320 et 393 px : aucune n'est plus large que l'écran.
