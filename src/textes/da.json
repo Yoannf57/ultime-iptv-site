@@ -50,8 +50,11 @@
   },
   "collez": {
     "surtitre": "Forbindelse",
-    "titre": "Indsæt. Færdig.",
+    "titre": "Det har aldrig været nemmere at komme i gang.",
+    "collerTitre": "Indsæt. Færdig.",
     "phrase": "Har din udbyder sendt dig en besked med dine loginoplysninger? Indsæt den i Ulti: appen genkender selv formatet og udfylder det hele. Du kan også skrive oplysningerne ind manuelt.",
+    "scannerTitre": "Scan. Færdig.",
+    "scannerPhrase": "På Apple TV skal du ikke skrive noget med fjernbetjeningen: scan QR-koden med din iPhone, bekræft, og dit abonnement lander på tv'et, krypteret, direkte via dit lokale netværk.",
     "groupe": "Trin for forbindelse",
     "etiquettes": {
       "message": "Besked",
@@ -85,6 +88,14 @@
       "trousseau": "Dine loginoplysninger bliver i din enheds nøglering.",
       "trouve": "Fundet: server, brugernavn, adgangskode. Tjek og fortsæt.",
       "boutonColler": "Indsæt"
+    },
+    "tv": {
+      "titre": "Med min iPhone",
+      "etape1": "Åbn Kamera på din iPhone.",
+      "etape2": "Ret den mod QR-koden, og tryk derefter på Ulti-linket.",
+      "etape3": "Bekræft på din iPhone.",
+      "code": "Kode",
+      "valable": "Gyldig i %@ endnu. Den samme kode vises på din iPhone før afsendelse."
     }
   },
   "fonctions": {
