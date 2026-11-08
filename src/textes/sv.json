@@ -48,6 +48,45 @@
     "films": "Filmer och serier",
     "multi": "Flerskärm"
   },
+  "collez": {
+    "surtitre": "Anslutning",
+    "titre": "Klistra in. Klart.",
+    "phrase": "Har din leverantör skickat ett meddelande med dina inloggningsuppgifter? Klistra in det i Ulti: appen känner själv igen formatet och fyller i allt. Du kan också skriva in uppgifterna för hand.",
+    "groupe": "Steg för anslutning",
+    "etiquettes": {
+      "message": "Meddelande",
+      "coller": "Klistra in",
+      "remplir": "Ifyllt",
+      "pret": "Klart"
+    },
+    "legendes": {
+      "message": "Meddelandet från din leverantör: kopiera det.",
+      "coller": "Tryck på ”{bouton}” i Ulti.",
+      "remplir": "Ulti känner igen formatet och fyller i allt.",
+      "pret": "Dina kanaler är klara."
+    },
+    "minute": "På mindre än en minut.",
+    "message": {
+      "expediteur": "Min leverantör",
+      "initiale": "M",
+      "bienvenue": "Välkommen! Här är ditt abonnemang:",
+      "utilisateur": "Användarnamn: {valeur}",
+      "motDePasse": "Lösenord: {valeur}",
+      "copier": "Kopiera"
+    },
+    "app": {
+      "titre": "Lägg till ett abonnemang",
+      "coller": "Klistra in meddelandet du fått",
+      "collerTexte": "Sms, WhatsApp eller e-post från din leverantör: servern och inloggningsuppgifterna fylls i automatiskt.",
+      "serveur": "Server (http://exempel.se:8080)",
+      "utilisateur": "Användarnamn",
+      "motDePasse": "Lösenord",
+      "continuer": "Fortsätt",
+      "trousseau": "Dina inloggningsuppgifter stannar i enhetens nyckelring.",
+      "trouve": "Hittade: server, användarnamn, lösenord. Kontrollera och fortsätt.",
+      "boutonColler": "Klistra in"
+    }
+  },
   "fonctions": {
     "titre": "Ditt abonnemang, äntligen snyggt presenterat.",
     "phrase": "Ulti ordnar de tusentals kanaler och filmer i ditt abonnemang i tydliga skärmar, som en tv-app du alltid haft.",
@@ -119,7 +158,6 @@
     "multi": "Flerskärm: upp till 4 livekanaler samtidigt (2 på iPhone)"
   },
   "etapes": {
-    "titre": "Klar på en minut.",
     "e1Titre": "Lägg till ditt abonnemang",
     "e1Texte": "Klistra in meddelandet från din IPTV-leverantör, eller ange inloggningsuppgifterna. Ulti fyller i resten.",
     "e2Titre": "Ulti ordnar allt",
