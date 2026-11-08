@@ -50,8 +50,11 @@
   },
   "collez": {
     "surtitre": "Verbinden",
-    "titre": "Plakken. Klaar.",
+    "titre": "Verbinden was nog nooit zo eenvoudig.",
+    "collerTitre": "Plakken. Klaar.",
     "phrase": "Heeft je aanbieder je een bericht met je inloggegevens gestuurd? Plak het in Ulti: de app herkent zelf het formaat en vult alles in. Je kunt je gegevens ook met de hand invoeren.",
+    "scannerTitre": "Scannen. Klaar.",
+    "scannerPhrase": "Op de Apple TV hoef je niets te typen met de afstandsbediening: scan de QR-code met je iPhone, bevestig, en je abonnement staat op de tv, versleuteld, rechtstreeks via je lokale netwerk.",
     "groupe": "Stappen om te verbinden",
     "etiquettes": {
       "message": "Bericht",
@@ -85,6 +88,14 @@
       "trousseau": "Je inloggegevens blijven in de sleutelhanger van je apparaat.",
       "trouve": "Gevonden: server, gebruikersnaam, wachtwoord. Controleer en ga door.",
       "boutonColler": "Plak"
+    },
+    "tv": {
+      "titre": "Met mijn iPhone",
+      "etape1": "Open de Camera op je iPhone.",
+      "etape2": "Richt hem op deze QR-code en tik op de Ulti-link.",
+      "etape3": "Bevestig op je iPhone.",
+      "code": "Code",
+      "valable": "Nog %@ geldig. Dezelfde code verschijnt op je iPhone voor het versturen."
     }
   },
   "fonctions": {
