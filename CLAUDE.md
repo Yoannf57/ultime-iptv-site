@@ -5,7 +5,7 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 07/11/2026 au soir (section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
+Dernière mise à jour : 08/11/2026 (section « Connexion » refaite : téléphone + Apple TV par QR code ; avant : section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
 « Bientôt sur Android », `appleTvDisponible` ; avant : informations légales définitives ; page Conditions d'utilisation ; confidentialité avec le relais TMDB ; grand
 visuel Apple TV + iPhone et visite automatique sur iPad, dans les cadres officiels d'Apple ; « Ulti Premium » ; captures
 des 12 langues ; textes à faire relire).
@@ -159,15 +159,22 @@ une langue.
       suivre la taille de l'écran), `aria-label` = nom de l'onglet, changement d'image en fondu court. Les captures
       sont chargées seulement au premier clic (sauf celle de l'accueil). Sur téléphone, l'iPhone est masqué et seule
       l'Apple TV reste cliquable.
-   1 bis. **« Collez. C'est tout. »** (07/11/2026, remplace « Prêt en une minute ») : surtitre « Connexion », une
-      phrase, et un téléphone dessiné (écran flottant, liseré fin, halo, pas de cadre d'Apple) qui montre 4 tableaux
-      en boucle : message du fournisseur → « Ajouter un abonnement », doigt sur « Coller » → champs remplis
-      (« Trouvé : … ») → vraie capture iPhone de l'accueil. Dessous : les 3 étapes (`etapes.e1…e3`) et « Moins d'une
-      minute, montre en main. ». Seule adresse : `fournisseur.example` ; jamais « M3U » ni « Xtream » ; écran de l'app
-      sans sélecteur de type, mots repris de `Localizable.xcstrings` (`collez.app.*`). Même `visite.js` que la
-      visite iPad (`data-durees` : une durée par tableau ; `?tableau=<vue>` fige un tableau pour les captures,
-      `npm run captures-sections -- --collez`). Sans JavaScript ou avec `prefers-reduced-motion` : les 4 tableaux
-      côte à côte. Code : `Collez.astro`, `CollezEcran.astro`.
+   1 bis. **« Connexion »** (07/11/2026, remplace « Prêt en une minute » ; refaite le 08/11/2026 à la demande de
+      Yoann) : surtitre « Connexion », grand titre à gauche « Se connecter n'a jamais été aussi simple. » (idée de
+      Yoann : « la connexion la plus simple du monde », adoucie pour ne pas affirmer un record invérifiable), puis
+      **deux appareils côte à côte, chacun avec son texte dessous** :
+      - à gauche, le téléphone dessiné (écran flottant, liseré fin, halo, pas de cadre d'Apple) qui montre 4 tableaux
+        en boucle : message du fournisseur → « Ajouter un abonnement », doigt sur « Coller » → champs remplis
+        (« Trouvé : … ») → vraie capture iPhone de l'accueil ; dessous « Collez. C'est tout. » et sa phrase ;
+      - à droite, l'Apple TV (écran 16:9 flottant) avec l'écran « Avec mon iPhone » dessiné d'après
+        `TVPairingView.swift` (QR code décoratif qui ne se scanne pas, 3 étapes, code « 482 913 », mots de l'app :
+        `collez.tv.*`) ; dessous « Scannez. C'est tout. » et sa phrase.
+      Puis les 3 étapes (`etapes.e1…e3`) et « Moins d'une minute, montre en main. ». Seule adresse :
+      `fournisseur.example` ; jamais « M3U » ni « Xtream » ; mots de l'app repris de `Localizable.xcstrings`
+      (`collez.app.*`, `collez.tv.*`). Téléphone animé par `visite.js` (`data-durees` : une durée par tableau ;
+      `?tableau=<vue>` fige un tableau pour les captures, `npm run captures-sections -- --collez`). Sans JavaScript ou
+      avec `prefers-reduced-motion` : les 4 tableaux du téléphone en 2 × 2. Code : `Collez.astro`, `CollezEcran.astro`,
+      `CollezTv.astro`.
    2. « Votre abonnement, enfin bien présenté » : direct avec anneaux d'avancement, guide TV, films et séries avec
       affiches et résumés. La carte « Films et séries » porte une mention discrète « Avec Premium » (gris, sans
       majuscules ni pastille).
@@ -396,6 +403,8 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 - [x] Section « Collez. C'est tout. » (07/11/2026 au soir) — compte rendu
   `Notes/comptes-rendus/2026-11-07-section-collez.md`. Nouvelles phrases traduites par Claude : à faire relire ;
   à harmoniser : « Liitä » / « Sijoita » (fi), « einfügen » / « einsetzen » (de).
+- [x] Section « Connexion » refaite (08/11/2026 : téléphone + Apple TV par QR code) — compte rendu
+  `Notes/comptes-rendus/2026-11-08-connexion.md`. À décider : la section Apple TV redit l'appairage par QR code.
 
 ### Jour de la publication
 1. `site.config.mjs` : **la ligne `disponible: false,` devient `disponible: true,`** ; `indexable: true` si ultitv.com n'est pas encore branché (sinon c'est déjà
