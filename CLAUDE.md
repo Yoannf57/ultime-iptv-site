@@ -142,7 +142,7 @@ une langue.
    1. Grand visuel : petite ligne « Pour iPhone, iPad, Mac et Apple TV », l'accroche, une phrase, bouton App Store (ou
       « Bientôt »), puis **l'Apple TV au centre (écran flottant) et l'iPhone devant à droite, dans son cadre officiel**
       (décidé le 04/11/2026 : plus d'iPad ici). Pastilles Accueil · Direct · Guide TV · Profils qui changent les deux
-      écrans, **au-dessus des appareils**, juste sous la phrase de neutralité (demande de Yoann, 08/11/2026). **Depuis le 04/11 à 22 h (demande de Yoann)** : les écrans défilent aussi tout seuls, comme la visite
+      écrans, **au-dessus des appareils**, juste sous la phrase de neutralité, puis « Choisissez un écran pour découvrir l'app. » entre la barre et les appareils (demande de Yoann, 08/11/2026). **Depuis le 04/11 à 22 h (demande de Yoann)** : les écrans défilent aussi tout seuls, comme la visite
       iPad (même script `visite.js`, bouton Pause, arrêt au survol ou au clic), et les onglets dessinés dans la capture
       de l'Apple TV sont cliquables (Accueil, Direct). Sur téléphone, l'iPhone ferait moins de 200 px de haut (règle
       d'Apple pour le cadre) : il est masqué.
