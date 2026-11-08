@@ -48,6 +48,45 @@
     "films": "Filmes e séries",
     "multi": "Multitela"
   },
+  "collez": {
+    "surtitre": "Conexão",
+    "titre": "Cole. Pronto.",
+    "phrase": "Seu provedor enviou uma mensagem com seus dados de acesso? Cole-a no Ulti: o app reconhece o formato sozinho e preenche tudo. Você também pode digitar seus dados manualmente.",
+    "groupe": "Etapas da conexão",
+    "etiquettes": {
+      "message": "Mensagem",
+      "coller": "Colar",
+      "remplir": "Preenchido",
+      "pret": "Pronto"
+    },
+    "legendes": {
+      "message": "A mensagem do seu provedor: copie-a.",
+      "coller": "No Ulti, toque em “{bouton}”.",
+      "remplir": "O Ulti reconhece o formato e preenche tudo.",
+      "pret": "Seus canais estão prontos."
+    },
+    "minute": "Em menos de um minuto, no relógio.",
+    "message": {
+      "expediteur": "Meu provedor",
+      "initiale": "M",
+      "bienvenue": "Boas-vindas! Aqui está sua assinatura:",
+      "utilisateur": "Usuário: {valeur}",
+      "motDePasse": "Senha: {valeur}",
+      "copier": "Copiar"
+    },
+    "app": {
+      "titre": "Adicionar uma assinatura",
+      "coller": "Colar a mensagem recebida",
+      "collerTexte": "SMS, WhatsApp ou e-mail do seu provedor: o servidor e os dados de acesso são preenchidos sozinhos.",
+      "serveur": "Servidor (http://exemplo.com:8080)",
+      "utilisateur": "Nome de usuário",
+      "motDePasse": "Senha",
+      "continuer": "Continuar",
+      "trousseau": "Seus dados de acesso ficam nas Chaves do seu dispositivo.",
+      "trouve": "Encontrado: servidor, usuário, senha. Confira e continue.",
+      "boutonColler": "Colar"
+    }
+  },
   "fonctions": {
     "titre": "Sua assinatura, enfim bem apresentada.",
     "phrase": "O Ulti organiza os milhares de canais e filmes da sua assinatura em telas claras, como um app de TV que você sempre teve.",
@@ -119,7 +158,6 @@
     "multi": "Multitela: até 4 canais ao vivo ao mesmo tempo (2 no iPhone)"
   },
   "etapes": {
-    "titre": "Pronto em um minuto.",
     "e1Titre": "Adicione sua assinatura",
     "e1Texte": "Cole a mensagem do seu provedor IPTV ou digite os dados de acesso. O Ulti preenche o resto.",
     "e2Titre": "O Ulti organiza tudo",
