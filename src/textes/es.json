@@ -50,8 +50,11 @@
   },
   "collez": {
     "surtitre": "Conexión",
-    "titre": "Pega. Y listo.",
+    "titre": "Conectarse nunca fue tan fácil.",
+    "collerTitre": "Pega. Y listo.",
     "phrase": "¿Tu proveedor te ha enviado un mensaje con tus datos de acceso? Pégalo en Ulti: la app reconoce el formato sola y lo rellena todo. También puedes escribir tus datos a mano.",
+    "scannerTitre": "Escanea. Y listo.",
+    "scannerPhrase": "En el Apple TV no tienes que escribir nada con el mando: escanea el código QR con tu iPhone, confirma y tu suscripción llega a la tele, cifrada, directamente por tu red local.",
     "groupe": "Pasos de la conexión",
     "etiquettes": {
       "message": "Mensaje",
@@ -85,6 +88,14 @@
       "trousseau": "Tus datos de acceso se quedan en el llavero de tu dispositivo.",
       "trouve": "Encontrado: servidor, usuario, contraseña. Revísalo y continúa.",
       "boutonColler": "Pegar"
+    },
+    "tv": {
+      "titre": "Con mi iPhone",
+      "etape1": "Abre la Cámara del iPhone.",
+      "etape2": "Apunta a este código QR y toca el enlace de Ulti.",
+      "etape3": "Confirma en tu iPhone.",
+      "code": "Código",
+      "valable": "Válido durante %@. El mismo código aparece en el iPhone antes del envío."
     }
   },
   "fonctions": {
