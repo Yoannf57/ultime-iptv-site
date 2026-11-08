@@ -1,0 +1,35 @@
+---
+// Écran « Avec mon iPhone » de l'Apple TV, dessiné en HTML d'après TVPairingView.swift de l'app (lecture seule) :
+// QR code à gauche ; à droite le titre, les 3 étapes, le code à 6 chiffres et son temps restant. Mots exacts de
+// l'app (collez.tv.*). Le QR code est un motif décoratif : il ne contient rien et ne se scanne pas.
+// Écran flottant 16:9 (comme .ecrin-tv), pas de cadre d'Apple. Styles dans Collez.astro.
+import { t } from "../../lib/textes";
+interface Props { langue: string }
+const { langue: l } = Astro.props;
+const tv = (cle: string) => t(l, `collez.tv.${cle}`);
+
+// Motif façon QR code, 25 × 25 modules, toujours le même (graine fixe) : 3 repères dans les coins, le reste au hasard.
+const N = 25;
+let graine = 20261108;
+const hasard = () => ((graine = (graine * 1103515245 + 12345) % 2147483648) / 2147483648);
+const repere = (x: number, y: number) =>
+  [[0, 0], [N - 7, 0], [0, N - 7]].some(([a, b]) => x >= a - 1 && x <= a + 7 && y >= b - 1 && y <= b + 7);
+const modules: string[] = [];
+for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) if (!repere(x, y) && hasard() < 0.48) modules.push(`M${x} ${y}h1v1h-1z`);
+const reperes = [[0, 0], [N - 7, 0], [0, N - 7]]
+  .map(([a, b]) => `M${a} ${b}h7v7h-7zM${a + 1} ${b + 1}v5h5v-5zM${a + 2} ${b + 2}h3v3h-3z`).join("");
+---
+<div class="tv-ecran" aria-hidden="true">
+  <div class="tv-qr">
+    <svg viewBox={`-1 -1 ${N + 2} ${N + 2}`} shape-rendering="crispEdges"><path d={modules.join("") + reperes} fill="#000" fill-rule="evenodd" /></svg>
+  </div>
+  <div class="tv-texte">
+    <p class="tv-titre">{tv("titre")}</p>
+    <ol class="tv-etapes">
+      {[1, 2, 3].map((n) => <li><span class="chiffres">{n}</span>{tv(`etape${n}`)}</li>)}
+    </ol>
+    <p class="tv-code-titre">{tv("code")}</p>
+    <p class="tv-code chiffres">482 913</p>
+    <p class="tv-valable">{tv("valable").replace("%@", "4:32")}</p>
+  </div>
+</div>
