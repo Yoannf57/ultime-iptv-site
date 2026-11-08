@@ -50,8 +50,11 @@
   },
   "collez": {
     "surtitre": "Yhdistäminen",
-    "titre": "Sijoita. Siinä kaikki.",
+    "titre": "Yhdistäminen ei ole koskaan ollut näin helppoa.",
+    "collerTitre": "Sijoita. Siinä kaikki.",
     "phrase": "Lähettikö palveluntarjoajasi viestin, jossa on kirjautumistietosi? Sijoita se Ultiin: sovellus tunnistaa muodon itse ja täyttää kaiken. Voit myös kirjoittaa tiedot käsin.",
+    "scannerTitre": "Skannaa. Siinä kaikki.",
+    "scannerPhrase": "Apple TV:ssä kaukosäätimellä ei tarvitse kirjoittaa mitään: skannaa QR-koodi iPhonella, vahvista, ja tilauksesi siirtyy televisioon salattuna, suoraan lähiverkon kautta.",
     "groupe": "Yhdistämisen vaiheet",
     "etiquettes": {
       "message": "Viesti",
@@ -85,6 +88,14 @@
       "trousseau": "Kirjautumistietosi pysyvät laitteesi avainnipussa.",
       "trouve": "Löytyi: palvelin, käyttäjätunnus, salasana. Tarkista ja jatka.",
       "boutonColler": "Sijoita"
+    },
+    "tv": {
+      "titre": "iPhonellani",
+      "etape1": "Avaa iPhonen Kamera.",
+      "etape2": "Suuntaa se QR-koodiin ja napauta Ulti-linkkiä.",
+      "etape3": "Vahvista iPhonessa.",
+      "code": "Koodi",
+      "valable": "Voimassa vielä %@. Sama koodi näkyy iPhonessa ennen lähetystä."
     }
   },
   "fonctions": {
