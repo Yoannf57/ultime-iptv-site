@@ -48,6 +48,45 @@
     "films": "Films en series",
     "multi": "Multiscreen"
   },
+  "collez": {
+    "surtitre": "Verbinden",
+    "titre": "Plakken. Klaar.",
+    "phrase": "Heeft je aanbieder je een bericht met je inloggegevens gestuurd? Plak het in Ulti: de app herkent zelf het formaat en vult alles in. Je kunt je gegevens ook met de hand invoeren.",
+    "groupe": "Stappen om te verbinden",
+    "etiquettes": {
+      "message": "Bericht",
+      "coller": "Plakken",
+      "remplir": "Ingevuld",
+      "pret": "Klaar"
+    },
+    "legendes": {
+      "message": "Het bericht van je aanbieder: kopieer het.",
+      "coller": "Tik in Ulti op „{bouton}”.",
+      "remplir": "Ulti herkent het formaat en vult alles in.",
+      "pret": "Je zenders staan klaar."
+    },
+    "minute": "Binnen een minuut geregeld.",
+    "message": {
+      "expediteur": "Mijn aanbieder",
+      "initiale": "M",
+      "bienvenue": "Welkom! Hier is je abonnement:",
+      "utilisateur": "Gebruikersnaam: {valeur}",
+      "motDePasse": "Wachtwoord: {valeur}",
+      "copier": "Kopieer"
+    },
+    "app": {
+      "titre": "Voeg een abonnement toe",
+      "coller": "Plak het ontvangen bericht",
+      "collerTexte": "Sms, WhatsApp of e-mail van je aanbieder: de server en inloggegevens worden vanzelf ingevuld.",
+      "serveur": "Server (http://voorbeeld.nl:8080)",
+      "utilisateur": "Gebruikersnaam",
+      "motDePasse": "Wachtwoord",
+      "continuer": "Ga door",
+      "trousseau": "Je inloggegevens blijven in de sleutelhanger van je apparaat.",
+      "trouve": "Gevonden: server, gebruikersnaam, wachtwoord. Controleer en ga door.",
+      "boutonColler": "Plak"
+    }
+  },
   "fonctions": {
     "titre": "Je abonnement, eindelijk overzichtelijk.",
     "phrase": "Ulti zet de duizenden zenders en films van je abonnement in heldere schermen, als een tv-app die je altijd al had.",
@@ -119,7 +158,6 @@
     "multi": "Multiscreen: tot 4 livezenders tegelijk (2 op iPhone)"
   },
   "etapes": {
-    "titre": "Klaar in een minuut.",
     "e1Titre": "Voeg je abonnement toe",
     "e1Texte": "Plak het bericht van je IPTV-aanbieder, of vul de inloggegevens in. Ulti doet de rest.",
     "e2Titre": "Ulti zet alles op orde",
