@@ -48,6 +48,45 @@
     "films": "Filmer og serier",
     "multi": "Flerskjerm"
   },
+  "collez": {
+    "surtitre": "Tilkobling",
+    "titre": "Lim inn. Ferdig.",
+    "phrase": "Har leverandøren sendt deg en melding med påloggingsinformasjonen? Lim den inn i Ulti: appen gjenkjenner formatet selv og fyller ut alt. Du kan også skrive inn opplysningene for hånd.",
+    "groupe": "Trinn for tilkobling",
+    "etiquettes": {
+      "message": "Melding",
+      "coller": "Lim inn",
+      "remplir": "Utfylt",
+      "pret": "Klart"
+    },
+    "legendes": {
+      "message": "Meldingen fra leverandøren: kopier den.",
+      "coller": "Trykk på «{bouton}» i Ulti.",
+      "remplir": "Ulti gjenkjenner formatet og fyller ut alt.",
+      "pret": "Kanalene dine er klare."
+    },
+    "minute": "På under ett minutt.",
+    "message": {
+      "expediteur": "Min leverandør",
+      "initiale": "M",
+      "bienvenue": "Velkommen! Her er abonnementet ditt:",
+      "utilisateur": "Brukernavn: {valeur}",
+      "motDePasse": "Passord: {valeur}",
+      "copier": "Kopier"
+    },
+    "app": {
+      "titre": "Legg til et abonnement",
+      "coller": "Lim inn meldingen du fikk",
+      "collerTexte": "SMS, WhatsApp eller e-post fra leverandøren: serveren og påloggingsinformasjonen fylles ut automatisk.",
+      "serveur": "Server (http://eksempel.no:8080)",
+      "utilisateur": "Brukernavn",
+      "motDePasse": "Passord",
+      "continuer": "Fortsett",
+      "trousseau": "Påloggingsinformasjonen din blir i nøkkelringen på enheten.",
+      "trouve": "Funnet: server, brukernavn, passord. Sjekk og fortsett.",
+      "boutonColler": "Lim inn"
+    }
+  },
   "fonctions": {
     "titre": "Abonnementet ditt, endelig pent presentert.",
     "phrase": "Ulti ordner de tusenvis av kanalene og filmene i abonnementet ditt i oversiktlige skjermer, som en TV-app du alltid har hatt.",
@@ -119,7 +158,6 @@
     "multi": "Flerskjerm: opptil 4 direktekanaler samtidig (2 på iPhone)"
   },
   "etapes": {
-    "titre": "Klar på ett minutt.",
     "e1Titre": "Legg til abonnementet ditt",
     "e1Texte": "Lim inn meldingen fra IPTV-leverandøren din, eller skriv inn påloggingsinformasjonen. Ulti fyller ut resten.",
     "e2Titre": "Ulti rydder i alt",
