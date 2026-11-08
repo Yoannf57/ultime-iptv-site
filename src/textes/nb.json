@@ -50,8 +50,11 @@
   },
   "collez": {
     "surtitre": "Tilkobling",
-    "titre": "Lim inn. Ferdig.",
+    "titre": "Å koble til har aldri vært enklere.",
+    "collerTitre": "Lim inn. Ferdig.",
     "phrase": "Har leverandøren sendt deg en melding med påloggingsinformasjonen? Lim den inn i Ulti: appen gjenkjenner formatet selv og fyller ut alt. Du kan også skrive inn opplysningene for hånd.",
+    "scannerTitre": "Skann. Ferdig.",
+    "scannerPhrase": "På Apple TV trenger du ikke skrive noe med fjernkontrollen: skann QR-koden med iPhonen, bekreft, og abonnementet kommer til TV-en, kryptert, rett over det lokale nettverket ditt.",
     "groupe": "Trinn for tilkobling",
     "etiquettes": {
       "message": "Melding",
@@ -85,6 +88,14 @@
       "trousseau": "Påloggingsinformasjonen din blir i nøkkelringen på enheten.",
       "trouve": "Funnet: server, brukernavn, passord. Sjekk og fortsett.",
       "boutonColler": "Lim inn"
+    },
+    "tv": {
+      "titre": "Med iPhonen min",
+      "etape1": "Åpne Kamera på iPhonen.",
+      "etape2": "Rett den mot QR-koden, og trykk deretter på Ulti-lenken.",
+      "etape3": "Bekreft på iPhonen.",
+      "code": "Kode",
+      "valable": "Gyldig i %@ til. Den samme koden vises på iPhonen før sending."
     }
   },
   "fonctions": {
