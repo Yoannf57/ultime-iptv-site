@@ -48,6 +48,45 @@
     "films": "Filmes e séries",
     "multi": "Multiecrã"
   },
+  "collez": {
+    "surtitre": "Ligação",
+    "titre": "Cole. E já está.",
+    "phrase": "O seu fornecedor enviou-lhe uma mensagem com os seus dados de acesso? Cole-a no Ulti: a app reconhece o formato sozinha e preenche tudo. Também pode introduzir os dados à mão.",
+    "groupe": "Passos da ligação",
+    "etiquettes": {
+      "message": "Mensagem",
+      "coller": "Colar",
+      "remplir": "Preenchido",
+      "pret": "Pronto"
+    },
+    "legendes": {
+      "message": "A mensagem do seu fornecedor: copie-a.",
+      "coller": "No Ulti, toque em «{bouton}».",
+      "remplir": "O Ulti reconhece o formato e preenche tudo.",
+      "pret": "Os seus canais estão prontos."
+    },
+    "minute": "Em menos de um minuto, de relógio na mão.",
+    "message": {
+      "expediteur": "O meu fornecedor",
+      "initiale": "F",
+      "bienvenue": "Bem-vindo! Aqui está a sua subscrição:",
+      "utilisateur": "Utilizador: {valeur}",
+      "motDePasse": "Palavra-passe: {valeur}",
+      "copier": "Copiar"
+    },
+    "app": {
+      "titre": "Adicionar uma subscrição",
+      "coller": "Colar a mensagem recebida",
+      "collerTexte": "SMS, WhatsApp ou e-mail do seu fornecedor: o servidor e os dados de acesso são preenchidos automaticamente.",
+      "serveur": "Servidor (http://exemplo.pt:8080)",
+      "utilisateur": "Nome de utilizador",
+      "motDePasse": "Palavra-passe",
+      "continuer": "Continuar",
+      "trousseau": "Os seus dados de acesso ficam no porta-chaves do dispositivo.",
+      "trouve": "Encontrado: servidor, utilizador, palavra-passe. Verifique e continue.",
+      "boutonColler": "Colar"
+    }
+  },
   "fonctions": {
     "titre": "A sua subscrição, finalmente bem apresentada.",
     "phrase": "O Ulti organiza os milhares de canais e filmes da sua subscrição em ecrãs claros, como uma app de televisão que sempre teve.",
@@ -119,7 +158,6 @@
     "multi": "Multiecrã: até 4 canais em direto ao mesmo tempo (2 no iPhone)"
   },
   "etapes": {
-    "titre": "Pronto num minuto.",
     "e1Titre": "Adicione a sua subscrição",
     "e1Texte": "Cole a mensagem do seu fornecedor IPTV ou introduza os dados de acesso. O Ulti preenche o resto.",
     "e2Titre": "O Ulti arruma tudo",
