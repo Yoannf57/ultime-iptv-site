@@ -10,6 +10,8 @@
 // - « réduire les animations » : rien ne bouge, les onglets restent cliquables ;
 // - data-durees="2600,2200,…" : une durée par écran (sinon 4,5 s) ; les petites animations CSS dans un écran
 //   (section « Collez. ») repartent du début quand il s'affiche ;
+// - data-enchainer (section « Connexion ») : un clic sur une étiquette rejoue ce tableau depuis le début, puis la suite
+//   s'enchaîne (Coller → Remplissage…) ; le survol n'arrête rien, seul le bouton Pause arrête ;
 // - ?tableau=<vue> dans l'adresse : fige cet écran, animations terminées (captures Playwright).
 var DUREE = 4500;
 var REPRISE = 10000;
@@ -37,6 +39,7 @@ function demarrer(racine) {
   var dernierPointeur = "mouse";
   var durees = (racine.getAttribute("data-durees") || "").split(",").map(Number);
   var dejaVu = false;
+  var enchainer = racine.hasAttribute("data-enchainer");
   function duree() { return durees[actuel] || DUREE; }
   // Relance les animations CSS de l'écran affiché (pas le fondu entre les écrans).
   function relancer() {
@@ -93,7 +96,7 @@ function demarrer(racine) {
   }
 
   function action(toucher) {
-    if (pauseVoulue) return;
+    if (pauseVoulue || enchainer) return;
     arretAction = true;
     if (toucher) arretToucher = true;
     clearTimeout(minuteurReprise);
@@ -118,6 +121,13 @@ function demarrer(racine) {
     var k = vues.indexOf(b.getAttribute("data-onglet") || b.getAttribute("data-aller"));
     if (k < 0) return;
     montrer(k);
+    if (enchainer && !racine.classList.contains("fige")) {
+      // Rejoue ce tableau, puis la suite : le visiteur voit « Coller » coller, puis le remplissage.
+      relancer();
+      pauseVoulue = false; arretAction = false; arretToucher = false;
+      planifier();
+      return;
+    }
     action(dernierPointeur === "touch");
   });
 
