@@ -28,7 +28,7 @@ const legende = (vue: string) => t(l, `collez.legendes.${vue}`, { bouton: t(l, "
 
   <div class="duo">
     <div class="appareil-tel">
-      <div class="demo avec-js" data-visite data-durees={durees} data-seuil="0.5">
+      <div class="demo avec-js" data-visite data-enchainer data-durees={durees} data-seuil="0.5">
         <div class="scene">
           <Halo />
           <div class="telephone">
@@ -96,17 +96,17 @@ const legende = (vue: string) => t(l, `collez.legendes.${vue}`, { bouton: t(l, "
 </section>
 
 <style is:global>
-  /* Mise en page : grand titre à gauche, puis le téléphone et l'Apple TV côte à côte, leur texte dessous. */
+  /* Mise en page sur ordinateur : grand titre à gauche, puis deux rangées en miroir, téléphone puis son texte,
+     texte puis l'Apple TV (plus large). Sur téléphone : chaque appareil, puis son texte dessous. */
   .collez .tete { max-width: 46rem; }
   .collez .surtitre { color: #a1a1a6; }
-  .collez .duo { margin-top: 4rem; display: grid; grid-template-columns: minmax(0, 28rem) minmax(0, 1fr); grid-template-areas: "tel tv" "ttel ttv"; gap: 3rem 5rem; align-items: center; }
+  .collez .duo { margin-top: 4rem; display: grid; grid-template-columns: minmax(0, 28rem) minmax(0, 1fr); grid-template-areas: "tel ttel" "ttv tv"; gap: 6rem 5rem; align-items: center; }
   .collez .appareil-tel { grid-area: tel; }
   .collez .appareil-tv { grid-area: tv; }
   .collez .texte-tel { grid-area: ttel; }
   .collez .texte-tv { grid-area: ttv; }
-  .collez .texte-tel, .collez .texte-tv { align-self: start; }
-  .collez .duo h3 { margin: 0; font-size: clamp(1.5rem, 2.4vw, 1.875rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
-  .collez .duo h3 + p { margin: 0.75rem 0 0; max-width: 34rem; font-size: 1.0625rem; line-height: 1.55; color: #a1a1a6; }
+  .collez .duo h3 { margin: 0; font-size: clamp(1.5rem, 3.2vw, 2.5rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+  .collez .duo h3 + p { margin: 1rem 0 0; max-width: 30rem; font-size: clamp(1.0625rem, 1.4vw, 1.1875rem); line-height: 1.55; color: #a1a1a6; }
   .collez .demo { display: flex; flex-direction: column; align-items: center; }
   .collez .scene { position: relative; width: min(100%, 18.5rem); }
   .collez .scene .halo { left: -40%; right: -40%; }
@@ -191,6 +191,7 @@ const legende = (vue: string) => t(l, `collez.legendes.${vue}`, { bouton: t(l, "
   .collez .active .t-message .copier { animation: collez-apparait 0.3s ease-out 1.5s both; }
   .collez .active .t-coller .doigt { animation: collez-doigt 1.5s ease-in-out 0.3s both; }
   .collez .active .t-coller .pilule { animation: collez-appui 0.2s ease-in-out 1.55s both; }
+  .collez .active .t-coller .groupe:first-of-type { animation: collez-colle 0.6s ease-out 1.65s both; }
   .collez .active .t-remplir .valeur { animation: collez-tape 0.45s steps(12, end) both; }
   .collez .active .t-remplir .eclat { animation: collez-eclat 1.1s ease-out both; }
   .collez .active .t-remplir .champ:nth-child(1) > span { animation-delay: 0.3s; }
@@ -201,6 +202,7 @@ const legende = (vue: string) => t(l, `collez.legendes.${vue}`, { bouton: t(l, "
   @keyframes collez-surligne { from { background: transparent; } to { background: rgba(255,255,255,0.22); } }
   @keyframes collez-apparait { from { opacity: 0; transform: translateY(1.5cqw); } to { opacity: 1; transform: none; } }
   @keyframes collez-doigt { 0% { opacity: 0; transform: translate(-25cqw, 110cqw); } 20% { opacity: 1; } 70% { transform: none; } 85% { transform: scale(0.82); } 100% { opacity: 1; transform: none; } }
+  @keyframes collez-colle { 0% { background: #141416; } 30% { background: #2c2c2e; } 100% { background: #141416; } }
   @keyframes collez-appui { 0%, 100% { background: #3a3a3e; } 50% { background: #636366; } }
   @keyframes collez-tape { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0); } }
   @keyframes collez-eclat { 0% { opacity: 0; } 15% { opacity: 1; } 100% { opacity: 0; } }
@@ -233,6 +235,7 @@ const legende = (vue: string) => t(l, `collez.legendes.${vue}`, { bouton: t(l, "
   @media (max-width: 52rem) {
     .collez .duo { margin-top: 3rem; grid-template-columns: minmax(0, 1fr); grid-template-areas: "tel" "ttel" "tv" "ttv"; gap: 2rem; }
     .collez .appareil-tv { margin-top: 2rem; }
+    .collez .texte-tel, .collez .texte-tv { align-self: start; }
     .collez .scene { width: min(100%, 17rem); }
     .collez .commandes { flex-wrap: wrap; }
     .collez .etapes { grid-template-columns: minmax(0, 1fr); margin-top: 3rem; }
