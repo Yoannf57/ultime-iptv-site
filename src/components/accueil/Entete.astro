@@ -35,4 +35,6 @@ const liens = [["fonctions", "fonctions"], ["visite", "visite"], ["apple-tv", "a
   .pastille { border: 1px solid #3a3a3e; color: #a1a1a6; padding: 0.5rem 1rem; border-radius: 999px; font-size: 0.875rem; font-weight: 600; white-space: nowrap; }
   .pastille.pleine { background: #f5f5f7; color: #000; border: 0; text-decoration: none; padding: 0.5625rem 1.125rem; }
   @media (max-width: 45rem) { .liens { display: none; } }
+  /* Très petits écrans (320 px) : le bouton dépassait (« Binnenkort beschikbaar » en néerlandais) et la page glissait sur le côté. */
+  @media (max-width: 22rem) { .pastille { padding: 0.4375rem 0.75rem; font-size: 0.8125rem; white-space: normal; max-width: 9.5rem; text-align: center; line-height: 1.2; } }
 </style>
