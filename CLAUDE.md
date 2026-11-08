@@ -337,6 +337,9 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 - **Domaine : ultitv.com** (acheté le 03/11/2026 chez Cloudflare ; ultitv.app, ultiptv.app et ulti-iptv.com seront
   redirigés vers lui). La valeur est prête dans `site.config` mais **inactive** : pas de fichier `CNAME`, adresse de
   base inchangée, tant que Yoann n'a pas dit que les DNS sont prêts (étape séparée).
+- **Page stable sur téléphone** (08/11/2026, demande de Yoann) : rien ne doit dépasser la largeur de l'écran, sinon la
+  page glisse sur le côté. `main` a `overflow-x: clip` (les halos débordent) ; la pastille de l'en-tête passe sur deux
+  lignes sous 22 rem. Vérifié sur toutes les pages à 320 et 393 px (`scrollWidth` = largeur de l'écran).
 - **Aucun traceur** (pas de Google Analytics, pas de pixel, pas de police Google), donc **pas de bandeau cookies**. Le
   seul stockage est le choix du pays dans `localStorage` (fonctionnel).
 - Images en AVIF/WebP avec repli, tailles adaptées à l'écran ; page d'accueil légère (objectif Lighthouse ≥ 95 partout).
