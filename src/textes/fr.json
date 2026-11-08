@@ -48,6 +48,45 @@
     "films": "Films et séries",
     "multi": "Multi-écran"
   },
+  "collez": {
+    "surtitre": "Connexion",
+    "titre": "Collez. C'est tout.",
+    "phrase": "Votre fournisseur vous a envoyé un message avec vos identifiants ? Collez-le dans Ulti : l'app reconnaît le format toute seule et remplit tout. Vous pouvez aussi saisir vos identifiants à la main.",
+    "groupe": "Étapes de la connexion",
+    "etiquettes": {
+      "message": "Message",
+      "coller": "Coller",
+      "remplir": "Remplissage",
+      "pret": "Prêt"
+    },
+    "legendes": {
+      "message": "Le message de votre fournisseur : copiez-le.",
+      "coller": "Dans Ulti, touchez « {bouton} ».",
+      "remplir": "Ulti reconnaît le format et remplit tout.",
+      "pret": "Vos chaînes sont prêtes."
+    },
+    "minute": "Moins d'une minute, montre en main.",
+    "message": {
+      "expediteur": "Mon fournisseur",
+      "initiale": "M",
+      "bienvenue": "Bienvenue ! Voici votre abonnement :",
+      "utilisateur": "Utilisateur : {valeur}",
+      "motDePasse": "Mot de passe : {valeur}",
+      "copier": "Copier"
+    },
+    "app": {
+      "titre": "Ajouter un abonnement",
+      "coller": "Coller le message reçu",
+      "collerTexte": "SMS, WhatsApp ou e-mail du fournisseur : le serveur et les identifiants se remplissent tout seuls.",
+      "serveur": "Serveur (http://exemple.com:8080)",
+      "utilisateur": "Nom d'utilisateur",
+      "motDePasse": "Mot de passe",
+      "continuer": "Continuer",
+      "trousseau": "Vos identifiants restent dans le Trousseau de votre appareil.",
+      "trouve": "Trouvé : serveur, utilisateur, mot de passe. Vérifiez puis continuez.",
+      "boutonColler": "Coller"
+    }
+  },
   "fonctions": {
     "titre": "Votre abonnement, enfin bien présenté.",
     "phrase": "Ulti range les milliers de chaînes et de films de votre abonnement en écrans clairs, comme une app de télé que vous auriez toujours eue.",
@@ -119,7 +158,6 @@
     "multi": "Multi-écran : jusqu'à 4 directs à la fois (2 sur iPhone)"
   },
   "etapes": {
-    "titre": "Prêt en une minute.",
     "e1Titre": "Ajoutez votre abonnement",
     "e1Texte": "Collez le message reçu de votre fournisseur IPTV, ou saisissez ses identifiants. Ulti remplit le reste.",
     "e2Titre": "Ulti range tout",
