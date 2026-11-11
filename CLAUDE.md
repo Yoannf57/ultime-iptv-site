@@ -5,7 +5,7 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 08/11/2026 (section « Connexion » refaite : téléphone + Apple TV par QR code ; avant : section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
+Dernière mise à jour : 11/11/2026 (**Ulti publié sur l'App Store** : `disponible: true`, `indexable: true`, `robots.txt` sans plan du site ; avant : section « Connexion » refaite : téléphone + Apple TV par QR code ; avant : section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
 « Bientôt sur Android », `appleTvDisponible` ; avant : informations légales définitives ; page Conditions d'utilisation ; confidentialité avec le relais TMDB ; grand
 visuel Apple TV + iPhone et visite automatique sur iPad, dans les cadres officiels d'Apple ; « Ulti Premium » ; captures
 des 12 langues ; textes à faire relire).
@@ -63,15 +63,17 @@ Un site **très professionnel**, sobre et cinématographique, prêt le jour de l
 - le badge officiel « Télécharger dans l'App Store » dans la langue du visiteur (prêt depuis le 07/11/2026, affiché
   quand `disponible: true`).
 
-Tant que l'app n'est pas publiée, le bouton principal affiche « Bientôt sur l'App Store » (désactivé). Tout le site doit
+**Publiée le 11/11/2026** (`disponible: true`) : badge officiel, liens App Store et Smart App Banner actifs.
+Avant la publication, le bouton principal affiche « Bientôt sur l'App Store » (désactivé). Tout le site doit
 pouvoir basculer en mode « disponible » en changeant **une seule valeur** dans la configuration (`site.config` :
 `disponible: false`). Les liens App Store de chaque pays sont calculés (`src/lib/appstore.ts`, depuis `appStore: { id,
 nom }` de `site.config.mjs`).
 
-**Caché de Google pour l'instant** : balise `<meta name="robots" content="noindex">` sur toutes les pages et
-`robots.txt` qui interdit tout, pilotés par une valeur `indexable: false` de la configuration. **Décidé le 07/11/2026** :
-on passe `indexable: true` **avec le branchement d'ultitv.com** (pour que Google n'indexe pas d'abord les adresses
-github.io), ou le jour de la publication si le domaine n'est pas branché d'ici là.
+**Visible par Google depuis le 11/11/2026** (`indexable: true`, jour de la publication, ultitv.com pas encore
+branché). À `false`, balise `<meta name="robots" content="noindex">` sur toutes les pages et `robots.txt` qui
+interdit tout. La 404 garde toujours `noindex`. `robots.txt` n'annonce pas de plan du site (aucun n'est généré) ;
+un plan du site éventuel est à faire avec ultitv.com. Au branchement d'ultitv.com, Google passera des adresses
+github.io aux nouvelles (prévoir Google Search Console à ce moment-là).
 
 ## 3. Pays et langues
 
@@ -404,7 +406,7 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
   réduit celles de `~/Developer/ultime-iptv/Notes/app-store/captures/`, **dans les 12 langues** depuis le 04/11 au
   soir ; `04-fiche-film` écartée car elle montre des photos de vraies personnes ; `ipad/07-films-series` reprise,
   refaite sans la distribution). Une langue sans captures prend les anglaises. Cadres officiels d'Apple pour l'iPhone
-  et l'iPad. Reste : image de partage par langue, relecture des traductions (`indexable: true` avec ultitv.com).
+  et l'iPad. Reste : image de partage par langue, relecture des traductions.
 - [x] Lot 11 préparé (07/11/2026, badges importés le soir : il ne reste que le jour J) — compte rendu
   `Notes/comptes-rendus/2026-11-07-publication.md`. Traductions des
   nouvelles phrases (Android, Apple TV, badge) faites par Claude : à faire relire avec le reste.
@@ -413,8 +415,12 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
   à harmoniser : « Liitä » / « Sijoita » (fi), « einfügen » / « einsetzen » (de).
 - [x] Section « Connexion » refaite (08/11/2026 : téléphone + Apple TV par QR code) — compte rendu
   `Notes/comptes-rendus/2026-11-08-connexion.md`. À décider : la section Apple TV redit l'appairage par QR code.
+- [x] **Jour de la publication (11/11/2026)** : `disponible: true`, `appleTvDisponible: true`, `indexable: true` ;
+  build, textes et liens vérifiés ; liens App Store de fr-fr, en-gb, pt-br et `/es/` vers `id6829902519`. Fait depuis
+  le cloud, livré par pull request vers `main` — compte rendu `Notes/comptes-rendus/2026-11-11-jour-de-la-publication.md`.
+  Reste à vérifier après la fusion : le site en ligne et le Smart App Banner sur un vrai iPhone.
 
-### Jour de la publication
+### Jour de la publication (fait le 11/11/2026 ; gardé pour mémoire)
 1. `site.config.mjs` : **la ligne `disponible: false,` devient `disponible: true,`** ; `indexable: true` si ultitv.com n'est pas encore branché (sinon c'est déjà
    fait) ; `appleTvDisponible: false` seulement si Apple n'a pas encore accepté la version Apple TV (à remettre à
    `true` dès qu'elle l'est).
