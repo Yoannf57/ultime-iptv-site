@@ -29,8 +29,7 @@ export default {
   // Éditeur du site et de l'app (informations données par Yoann le 04/11/2026 à 23 h 20). Utilisé par les mentions
   // légales, les conditions d'utilisation et la confidentialité, dans les 12 langues : noms et adresses tels quels,
   // seul le nom du pays est écrit dans la langue de la page (Intl.DisplayNames, à partir du code « pays »).
-  // Une valeur à null s'affiche comme un emplacement bien visible (« [TÉLÉPHONE] », « [SIREN — immatriculation en
-  // cours] ») : il suffit de remplacer null par la valeur, entre guillemets.
+  // Une valeur à null s'affiche comme un emplacement bien visible (« [TÉLÉPHONE] ») : il suffit de remplacer null par la valeur, entre guillemets.
   editeur: {
     nom: "Yoann FEBVRE",
     nomCommercial: "Ulti",
@@ -39,7 +38,8 @@ export default {
     pays: "FR",
     directeur: "Yoann FEBVRE",
     telephone: null, // ← à remplir, ex. "+33 6 12 34 56 78"
-    siren: null,     // ← à remplir, ex. "123 456 789"
+    siren: "132 608 365", // donné par Yoann le 14/11/2026
+    rcs: "Paris",         // ville du registre : affiché « RCS Paris 132 608 365 »
   },
 
   // Hébergeurs (aucun numéro de téléphone donné : la ligne n'apparaît pas tant qu'il vaut null).

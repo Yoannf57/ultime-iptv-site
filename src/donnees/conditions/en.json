@@ -69,6 +69,10 @@
     {
       "titre": "17. Governing law",
       "texte": "French law, without prejudice to mandatory consumer protection provisions of your country of residence."
+    },
+    {
+      "titre": "18. Ulti on Android",
+      "texte": "This Section applies when you use Ulti, installed from Google Play, on an Android device (phone, tablet, Android TV). The other Sections of this Agreement also apply, except for the Apple-specific terms listed below.\n\n• **License**: the Publisher grants you a personal, non-exclusive, non-transferable license to use Ulti on the Android devices that you own or control, within the limits of the Google Play Terms of Service. You may not rent, lend, sell, redistribute or sublicense Ulti.\n• **Purchases**: on Android, Ulti Premium (subscriptions and lifetime access) is available as the Solo plan only. Purchases are sold and billed by Google Play, using your Google Account, and are governed by the Google Play terms.\n• **Renewal and cancellation**: subscriptions renew automatically at the end of each period. You can cancel at any time in Google Play ([Play Store › profile › Payments & subscriptions › Subscriptions](google-resilier)); Premium stays active until the end of the period already paid for. Uninstalling the app does not cancel the subscription.\n• **Free trial**: a free trial, if offered, becomes a paid subscription when it ends, unless you cancel before the trial ends.\n• **Refunds**: under the [Google Play refund policies](google-remboursement).\n• **Apple-specific terms**: the terms that concern Apple (the App Store and Apple's terms, Apple's license agreement, Family Sharing and Volume Purchase, the Family plan, as well as Apple's role in Sections 1 and 3 to 8 and Section 16) only apply to Ulti on Apple devices.\n• **Libraries**: the Android version contains neither VLCKit nor libVLC; Section 9 and the appendix concern Apple devices. The libraries in the Android version and their licenses are listed in the app (Account › About › Licenses).\n• **Personal data**: on Android, your credentials are encrypted and stay on your device. See the [privacy policy](privacy)."
     }
   ],
   "credits": {

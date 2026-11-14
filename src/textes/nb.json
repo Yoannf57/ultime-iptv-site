@@ -331,7 +331,7 @@
       "titre": "Bruksvilkår",
       "metaTitre": "Bruksvilkår — Ulti",
       "description": "Bruksvilkår for Ulti: appens lisensavtale for sluttbrukere.",
-      "chapeau": "Lisensavtalen som gjelder når du bruker Ulti, i tillegg til vilkårene for App Store."
+      "chapeau": "Lisensavtalen som gjelder når du bruker Ulti, i tillegg til vilkårene for App Store eller Google Play."
     }
   },
   "faqPlus": "Alle spørsmålene på kundestøttesiden",
@@ -506,6 +506,10 @@
         "titre": "Kjøp",
         "texte": "Kjøp administreres av Apple, i App Store. Ulti lagrer bare Premium-statusen på enheten, for å fungere uten nett, og sender den ingen steder."
       },
+      "android": {
+        "titre": "Ulti på Android (telefoner, nettbrett, Android TV)",
+        "texte": "Android-appen fungerer akkurat som på iPhone, uten synkronisering: IPTV-abonnementene dine (serveradresse, brukernavn, passord eller M3U-lenke) krypteres og blir på enheten din; de sendes aldri til Ulti. Premium-kjøp går gjennom Google Play: Google behandler betalingen etter sine egne [personvernregler](google-confidentialite), og appen mottar bare bekreftelsen på kjøpet (ingen betalingsopplysninger); kjøpsbiblioteket til Google Play kan sende teknisk informasjon om kjøp til Google. For å vise plakater og sammendrag av filmer og serier sender appen tittelen og året for verket og språket på enheten til Ultis relé (api.ultitv.com); reléet spør TMDB, fører ingen logg og lagrer ikke IP-adressen din. Ulti inneholder verken reklame eller analyseverktøy, og samler ikke inn personopplysninger. Hvis du har tillatt det i innstillingene på enheten, kan Google sende tekniske krasjrapporter til utvikleren (Android vitals). Loggene fra appen forlater bare enheten din hvis du selv sender dem til kundestøtte."
+      },
       "plantages": {
         "titre": "Krasjrapporter",
         "texte": "Ulti sender ingen rapporter selv. Hvis du i innstillingene på enheten har godtatt å dele analysedata med apputviklere, kan Apple videresende tekniske krasjrapporter til utvikleren. I TestFlight-testversjoner videresender Apple tilbakemeldingene og rapportene du selv velger å sende, til utvikleren."
@@ -529,13 +533,13 @@
     }
   },
   "mentions": {
-    "enCours": "Siden ferdigstilles: telefonnummeret og SIREN-nummeret (registrering pågår) legges til snart.",
+    "enCours": "Siden ferdigstilles: telefonnummeret legges til snart.",
     "champs": {
       "nom": "Navn",
       "nomCommercial": "Forretningsnavn",
       "statut": "Selskapsform",
       "adresse": "Adresse",
-      "siren": "SIREN",
+      "siren": "Registrering",
       "telephone": "Telefon",
       "email": "E-post",
       "directeur": "Fullt navn",

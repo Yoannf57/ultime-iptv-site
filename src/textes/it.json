@@ -331,7 +331,7 @@
       "titre": "Condizioni d'uso",
       "metaTitre": "Condizioni d'uso — Ulti",
       "description": "Condizioni d'uso di Ulti: il contratto di licenza con l'utente finale dell'app.",
-      "chapeau": "Il contratto di licenza che si applica quando usi Ulti, oltre alle condizioni dell'App Store."
+      "chapeau": "Il contratto di licenza che si applica quando usi Ulti, oltre alle condizioni dell'App Store o di Google Play."
     }
   },
   "faqPlus": "Tutte le domande nella pagina Supporto",
@@ -506,6 +506,10 @@
         "titre": "Acquisti",
         "texte": "Gli acquisti sono gestiti da Apple, su App Store. Ulti conserva solo lo stato di Premium sul dispositivo, per funzionare offline, e non lo invia da nessuna parte."
       },
+      "android": {
+        "titre": "Ulti su Android (smartphone, tablet, Android TV)",
+        "texte": "L'app Android funziona come su iPhone, senza sincronizzazione: i tuoi abbonamenti IPTV (indirizzo del server, nome utente, password o link M3U) sono cifrati e restano sul tuo dispositivo; non vengono mai inviati a Ulti. Gli acquisti Premium passano da Google Play: Google gestisce il pagamento secondo la propria [informativa sulla privacy](google-confidentialite), e l'app riceve solo la conferma dell'acquisto (nessun dato di pagamento); la libreria di acquisto di Google Play può inviare a Google informazioni tecniche sugli acquisti. Per mostrare locandine e trame di film e serie, l'app invia al relay di Ulti (api.ultitv.com) il titolo e l'anno dell'opera e la lingua del dispositivo; il relay interroga TMDB, non tiene alcun registro e non memorizza il tuo indirizzo IP. Ulti non contiene pubblicità né strumenti di misurazione dell'audience, e non raccoglie alcun dato personale. Se l'hai consentito nelle impostazioni del dispositivo, Google può trasmettere allo sviluppatore rapporti tecnici sugli arresti anomali (Android vitals). I registri dell'app lasciano il tuo dispositivo solo se li invii tu stesso all'assistenza."
+      },
       "plantages": {
         "titre": "Segnalazioni dei crash",
         "texte": "Ulti non invia alcuna segnalazione da sé. Se hai accettato, nelle impostazioni del tuo dispositivo, di condividere i dati di analisi con gli sviluppatori di app, Apple può trasmettere allo sviluppatore segnalazioni tecniche sui crash. Durante le versioni di prova TestFlight, Apple trasmette allo sviluppatore i feedback e le segnalazioni che scegli di inviare."
@@ -529,13 +533,13 @@
     }
   },
   "mentions": {
-    "enCours": "Pagina in fase di completamento: il numero di telefono e il numero SIREN (iscrizione in corso) saranno aggiunti a breve.",
+    "enCours": "Pagina in fase di completamento: il numero di telefono sarà aggiunto a breve.",
     "champs": {
       "nom": "Nome",
       "nomCommercial": "Nome commerciale",
       "statut": "Forma giuridica",
       "adresse": "Indirizzo",
-      "siren": "SIREN",
+      "siren": "Iscrizione",
       "telephone": "Telefono",
       "email": "E-mail",
       "directeur": "Nome e cognome",
