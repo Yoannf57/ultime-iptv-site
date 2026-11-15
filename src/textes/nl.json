@@ -331,7 +331,7 @@
       "titre": "Gebruiksvoorwaarden",
       "metaTitre": "Gebruiksvoorwaarden — Ulti",
       "description": "Gebruiksvoorwaarden van Ulti: de licentieovereenkomst voor eindgebruikers van de app.",
-      "chapeau": "De licentieovereenkomst die geldt wanneer je Ulti gebruikt, naast de voorwaarden van de App Store."
+      "chapeau": "De licentieovereenkomst die geldt wanneer je Ulti gebruikt, naast de voorwaarden van de App Store of Google Play."
     }
   },
   "faqPlus": "Alle vragen op de supportpagina",
@@ -506,6 +506,10 @@
         "titre": "Aankopen",
         "texte": "Aankopen worden beheerd door Apple, in de App Store. Ulti bewaart alleen de status van Premium op het apparaat, om offline te werken, en stuurt die nergens heen."
       },
+      "android": {
+        "titre": "Ulti op Android (telefoons, tablets, Android TV)",
+        "texte": "De Android-app werkt net als op de iPhone, zonder synchronisatie: je IPTV-abonnementen (serveradres, gebruikersnaam, wachtwoord of M3U-link) worden versleuteld en blijven op je apparaat; ze worden nooit naar Ulti gestuurd. Premium-aankopen verlopen via Google Play: Google verwerkt de betaling volgens zijn eigen [privacybeleid](google-confidentialite), en de app ontvangt alleen de bevestiging van de aankoop (geen betaalgegevens); de aankoopbibliotheek van Google Play kan technische informatie over aankopen naar Google sturen. Om posters en samenvattingen van films en series te tonen, stuurt de app de titel en het jaar van het werk en de taal van het apparaat naar de relay van Ulti (api.ultitv.com); de relay raadpleegt TMDB, houdt geen logboek bij en bewaart je IP-adres niet. Ulti bevat geen reclame en geen tools voor bezoekersstatistieken, en verzamelt geen persoonsgegevens. Als je dat in de instellingen van je apparaat hebt toegestaan, kan Google technische crashrapporten aan de ontwikkelaar doorgeven (Android vitals). De logboeken van de app verlaten je apparaat alleen als je ze zelf naar de ondersteuning stuurt."
+      },
       "plantages": {
         "titre": "Crashrapporten",
         "texte": "Ulti verstuurt zelf geen rapporten. Heb je in de instellingen van je apparaat ingestemd met het delen van analysegegevens met app-ontwikkelaars, dan kan Apple technische crashrapporten aan de ontwikkelaar doorgeven. Tijdens TestFlight-testversies geeft Apple de feedback en rapporten die je zelf kiest te versturen door aan de ontwikkelaar."
@@ -529,13 +533,13 @@
     }
   },
   "mentions": {
-    "enCours": "Pagina wordt afgerond: het telefoonnummer en het SIREN-nummer (inschrijving loopt) worden binnenkort toegevoegd.",
+    "enCours": "Pagina wordt afgerond: het telefoonnummer wordt binnenkort toegevoegd.",
     "champs": {
       "nom": "Naam",
       "nomCommercial": "Handelsnaam",
       "statut": "Rechtsvorm",
       "adresse": "Adres",
-      "siren": "SIREN",
+      "siren": "Inschrijving",
       "telephone": "Telefoon",
       "email": "E-mail",
       "directeur": "Naam",

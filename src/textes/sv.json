@@ -331,7 +331,7 @@
       "titre": "Användarvillkor",
       "metaTitre": "Användarvillkor — Ulti",
       "description": "Användarvillkor för Ulti: appens licensavtal för slutanvändare.",
-      "chapeau": "Licensavtalet som gäller när du använder Ulti, utöver App Stores villkor."
+      "chapeau": "Licensavtalet som gäller när du använder Ulti, utöver villkoren för App Store eller Google Play."
     }
   },
   "faqPlus": "Alla frågor på supportsidan",
@@ -506,6 +506,10 @@
         "titre": "Köp",
         "texte": "Köp hanteras av Apple, i App Store. Ulti sparar bara Premium-statusen på enheten, för att fungera offline, och skickar den ingenstans."
       },
+      "android": {
+        "titre": "Ulti på Android (telefoner, surfplattor, Android TV)",
+        "texte": "Android-appen fungerar precis som på iPhone, utan synkronisering: dina IPTV-abonnemang (serveradress, användarnamn, lösenord eller M3U-länk) krypteras och stannar på din enhet; de skickas aldrig till Ulti. Premium-köp sker via Google Play: Google hanterar betalningen enligt sin egen [integritetspolicy](google-confidentialite), och appen får bara en bekräftelse på köpet (inga betaluppgifter); Google Plays köpbibliotek kan skicka teknisk information om köp till Google. För att visa affischer och sammanfattningar av filmer och serier skickar appen verkets titel och år samt enhetens språk till Ultis relä (api.ultitv.com); reläet frågar TMDB, för ingen logg och sparar inte din IP-adress. Ulti innehåller ingen reklam och inga analysverktyg, och samlar inte in några personuppgifter. Om du har tillåtit det i enhetens inställningar kan Google skicka tekniska kraschrapporter till utvecklaren (Android vitals). Appens loggar lämnar bara din enhet om du själv skickar dem till supporten."
+      },
       "plantages": {
         "titre": "Kraschrapporter",
         "texte": "Ulti skickar inga rapporter själv. Om du i enhetens inställningar har godkänt att dela analysdata med apputvecklare kan Apple vidarebefordra tekniska kraschrapporter till utvecklaren. Under TestFlight-testversioner vidarebefordrar Apple den feedback och de rapporter du själv väljer att skicka till utvecklaren."
@@ -529,13 +533,13 @@
     }
   },
   "mentions": {
-    "enCours": "Sidan färdigställs: telefonnumret och SIREN-numret (registrering pågår) läggs till inom kort.",
+    "enCours": "Sidan färdigställs: telefonnumret läggs till inom kort.",
     "champs": {
       "nom": "Namn",
       "nomCommercial": "Firmanamn",
       "statut": "Företagsform",
       "adresse": "Adress",
-      "siren": "SIREN",
+      "siren": "Registrering",
       "telephone": "Telefon",
       "email": "E-post",
       "directeur": "För- och efternamn",

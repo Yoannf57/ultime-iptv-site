@@ -331,7 +331,7 @@
       "titre": "Terms of Use",
       "metaTitre": "Terms of Use — Ulti",
       "description": "Ulti's Terms of Use: the end user license agreement for the app.",
-      "chapeau": "The license agreement that applies when you use Ulti, in addition to the App Store terms."
+      "chapeau": "The license agreement that applies when you use Ulti, in addition to the App Store or Google Play terms."
     }
   },
   "faqPlus": "All questions on the Support page",
@@ -506,6 +506,10 @@
         "titre": "Purchases",
         "texte": "Purchases are handled by Apple, on the App Store. Ulti only keeps your Premium status on the device, so it works offline, and sends it nowhere."
       },
+      "android": {
+        "titre": "Ulti on Android (phones, tablets, Android TV)",
+        "texte": "The Android app works just like the iPhone app, without sync: your IPTV subscriptions (server address, username, password or M3U link) are encrypted and stay on your device; they are never sent to Ulti. Premium purchases go through Google Play: Google processes the payment under its own [privacy policy](google-confidentialite), and the app only receives confirmation of the purchase (no payment details); the Google Play billing library may send Google technical information about purchases. To show posters and summaries of movies and series, the app sends the title and year of the work and the device language to Ulti's relay (api.ultitv.com); the relay queries TMDB, keeps no logs and does not store your IP address. Ulti contains no advertising or analytics tools and collects no personal data. If you have allowed it in your device settings, Google may pass technical crash reports on to the developer (Android vitals). The app's logs only leave your device if you send them to support yourself."
+      },
       "plantages": {
         "titre": "Crash reports",
         "texte": "Ulti sends no reports itself. If you agreed, in your device settings, to share analytics with app developers, Apple may pass technical crash reports on to the developer. During TestFlight beta versions, feedback and reports you choose to send are passed on to the developer by Apple."
@@ -529,13 +533,13 @@
     }
   },
   "mentions": {
-    "enCours": "Page being finalised: the phone number and the SIREN number (registration in progress) will be added soon.",
+    "enCours": "Page being finalised: the phone number will be added soon.",
     "champs": {
       "nom": "Name",
       "nomCommercial": "Trade name",
       "statut": "Status",
       "adresse": "Address",
-      "siren": "SIREN",
+      "siren": "Registration",
       "telephone": "Phone",
       "email": "Email",
       "directeur": "Full name",

@@ -4,7 +4,7 @@ import config from "../../site.config.mjs";
 
 export type Editeur = {
   nom: string; nomCommercial: string; statut: string; adresse: string; pays: string; directeur: string;
-  telephone: string | null; siren: string | null;
+  telephone: string | null; siren: string | null; rcs: string | null;
 };
 export type Hebergeur = { role: string; nom: string; service: string; adresse: string; pays: string; telephone: string | null };
 

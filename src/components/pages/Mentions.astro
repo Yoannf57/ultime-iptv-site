@@ -21,7 +21,7 @@ const lignes: Record<string, Ligne[]> = {
   editeur: [
     { champ: "nom", valeur: e.nom }, { champ: "nomCommercial", valeur: e.nomCommercial },
     { champ: "statut", valeur: t(l, `mentions.statuts.${e.statut}`) }, { champ: "adresse", valeur: adresseComplete(l, e) },
-    { champ: "siren", valeur: e.siren },
+    { champ: "siren", valeur: e.siren && e.rcs ? `RCS ${e.rcs} ${e.siren}` : e.siren },
     { champ: "telephone", valeur: e.telephone, lien: e.telephone ? `tel:${e.telephone.replace(/[^+\d]/g, "")}` : undefined },
     { champ: "email", valeur: config.contact, lien: `mailto:${config.contact}` },
   ],

@@ -331,7 +331,7 @@
       "titre": "Nutzungsbedingungen",
       "metaTitre": "Nutzungsbedingungen — Ulti",
       "description": "Nutzungsbedingungen von Ulti: der Endbenutzer-Lizenzvertrag der App.",
-      "chapeau": "Der Lizenzvertrag, der gilt, wenn du Ulti nutzt, zusätzlich zu den Bedingungen des App Store."
+      "chapeau": "Der Lizenzvertrag, der gilt, wenn du Ulti nutzt, zusätzlich zu den Bedingungen des App Store oder von Google Play."
     }
   },
   "faqPlus": "Alle Fragen auf der Support-Seite",
@@ -506,6 +506,10 @@
         "titre": "Käufe",
         "texte": "Käufe werden von Apple im App Store verwaltet. Ulti speichert nur den Premium-Status auf dem Gerät, um offline zu funktionieren, und schickt ihn nirgendwohin."
       },
+      "android": {
+        "titre": "Ulti auf Android (Smartphones, Tablets, Android TV)",
+        "texte": "Die Android-App funktioniert wie auf dem iPhone, ohne Synchronisierung: Deine IPTV-Abonnements (Serveradresse, Benutzername, Passwort oder M3U-Link) werden verschlüsselt und bleiben auf deinem Gerät; sie werden nie an Ulti gesendet. Premium-Käufe laufen über Google Play: Google wickelt die Zahlung nach seiner eigenen [Datenschutzerklärung](google-confidentialite) ab, und die App erhält nur die Bestätigung des Kaufs (keine Zahlungsdaten); die Kaufbibliothek von Google Play kann technische Informationen über Käufe an Google senden. Um Poster und Inhaltsangaben von Filmen und Serien anzuzeigen, schickt die App Titel und Jahr des Werks sowie die Sprache des Geräts an das Relay von Ulti (api.ultitv.com); das Relay fragt TMDB ab, führt kein Protokoll und speichert deine IP-Adresse nicht. Ulti enthält weder Werbung noch Analysetools und erhebt keine personenbezogenen Daten. Wenn du es in den Einstellungen deines Geräts erlaubt hast, kann Google technische Absturzberichte an den Entwickler weitergeben (Android vitals). Die Protokolle der App verlassen dein Gerät nur, wenn du sie selbst an den Support schickst."
+      },
       "plantages": {
         "titre": "Absturzberichte",
         "texte": "Ulti schickt selbst keine Berichte. Hast du in den Einstellungen deines Geräts zugestimmt, Analysedaten mit App-Entwicklern zu teilen, kann Apple technische Absturzberichte an den Entwickler weitergeben. Bei TestFlight-Testversionen leitet Apple das Feedback und die Berichte, die du selbst sendest, an den Entwickler weiter."
@@ -529,13 +533,13 @@
     }
   },
   "mentions": {
-    "enCours": "Seite wird fertiggestellt: Telefonnummer und SIREN-Nummer (Eintragung läuft) werden in Kürze ergänzt.",
+    "enCours": "Seite wird fertiggestellt: Die Telefonnummer wird in Kürze ergänzt.",
     "champs": {
       "nom": "Name",
       "nomCommercial": "Handelsname",
       "statut": "Rechtsform",
       "adresse": "Anschrift",
-      "siren": "SIREN",
+      "siren": "Registereintrag",
       "telephone": "Telefon",
       "email": "E-Mail",
       "directeur": "Vor- und Nachname",

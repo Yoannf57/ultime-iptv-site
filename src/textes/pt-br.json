@@ -331,7 +331,7 @@
       "titre": "Termos de uso",
       "metaTitre": "Termos de uso — Ulti",
       "description": "Termos de uso do Ulti: o contrato de licença de usuário final do app.",
-      "chapeau": "O contrato de licença que se aplica quando você usa o Ulti, além dos termos da App Store."
+      "chapeau": "O contrato de licença que se aplica quando você usa o Ulti, além dos termos da App Store ou do Google Play."
     }
   },
   "faqPlus": "Todas as perguntas na página de Suporte",
@@ -506,6 +506,10 @@
         "titre": "Compras",
         "texte": "As compras são gerenciadas pela Apple, na App Store. O Ulti guarda só o status do Premium no dispositivo, para funcionar offline, e não o envia para lugar nenhum."
       },
+      "android": {
+        "titre": "Ulti no Android (celulares, tablets, Android TV)",
+        "texte": "O app para Android funciona como no iPhone, sem sincronização: suas assinaturas IPTV (endereço do servidor, nome de usuário, senha ou link M3U) são criptografadas e ficam no seu dispositivo; elas nunca são enviadas ao Ulti. As compras do Premium passam pelo Google Play: o Google processa o pagamento segundo a própria [política de privacidade](google-confidentialite), e o app só recebe a confirmação da compra (nenhum dado bancário); a biblioteca de compras do Google Play pode enviar ao Google informações técnicas sobre as compras. Para mostrar pôsteres e sinopses de filmes e séries, o app envia ao relay do Ulti (api.ultitv.com) o título e o ano da obra e o idioma do dispositivo; o relay consulta o TMDB, não guarda nenhum registro e não armazena o seu endereço IP. O Ulti não tem publicidade nem ferramentas de medição de audiência, e não coleta nenhum dado pessoal. Se você permitiu nos ajustes do dispositivo, o Google pode repassar ao desenvolvedor relatórios técnicos de falhas (Android vitals). Os registros do app só saem do seu dispositivo se você mesmo enviá-los ao suporte."
+      },
       "plantages": {
         "titre": "Relatórios de falhas",
         "texte": "O Ulti não envia nenhum relatório por conta própria. Se você aceitou, nos ajustes do seu dispositivo, compartilhar dados de análise com desenvolvedores de apps, a Apple pode repassar ao desenvolvedor relatórios técnicos de falhas. Durante as versões de teste do TestFlight, a Apple repassa ao desenvolvedor os comentários e relatórios que você escolher enviar."
@@ -529,13 +533,13 @@
     }
   },
   "mentions": {
-    "enCours": "Página em finalização: o telefone e o número SIREN (registro em andamento) serão adicionados em breve.",
+    "enCours": "Página em finalização: o telefone será adicionado em breve.",
     "champs": {
       "nom": "Nome",
       "nomCommercial": "Nome comercial",
       "statut": "Forma jurídica",
       "adresse": "Endereço",
-      "siren": "SIREN",
+      "siren": "Registro",
       "telephone": "Telefone",
       "email": "E-mail",
       "directeur": "Nome completo",

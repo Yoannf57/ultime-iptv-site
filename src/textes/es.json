@@ -331,7 +331,7 @@
       "titre": "Condiciones de uso",
       "metaTitre": "Condiciones de uso — Ulti",
       "description": "Condiciones de uso de Ulti: el contrato de licencia de usuario final de la app.",
-      "chapeau": "El contrato de licencia que se aplica cuando usas Ulti, además de las condiciones del App Store."
+      "chapeau": "El contrato de licencia que se aplica cuando usas Ulti, además de las condiciones del App Store o de Google Play."
     }
   },
   "faqPlus": "Todas las preguntas en la página de soporte",
@@ -506,6 +506,10 @@
         "titre": "Compras",
         "texte": "Las compras las gestiona Apple, en el App Store. Ulti solo guarda el estado de Premium en el dispositivo, para funcionar sin conexión, y no lo envía a ningún sitio."
       },
+      "android": {
+        "titre": "Ulti en Android (teléfonos, tabletas, Android TV)",
+        "texte": "La app de Android funciona igual que en el iPhone, sin sincronización: tus suscripciones IPTV (dirección del servidor, nombre de usuario, contraseña o enlace M3U) se cifran y se quedan en tu dispositivo; nunca se envían a Ulti. Las compras de Premium pasan por Google Play: Google procesa el pago según su propia [política de privacidad](google-confidentialite), y la app solo recibe la confirmación de la compra (ningún dato bancario); la biblioteca de compras de Google Play puede enviar a Google información técnica sobre las compras. Para mostrar carteles y sinopsis de películas y series, la app envía al relé de Ulti (api.ultitv.com) el título y el año de la obra y el idioma del dispositivo; el relé consulta TMDB, no guarda ningún registro y no almacena tu dirección IP. Ulti no contiene publicidad ni herramientas de medición de audiencia, y no recopila ningún dato personal. Si lo has permitido en los ajustes del dispositivo, Google puede transmitir al desarrollador informes técnicos de fallos (Android vitals). Los registros de la app solo salen de tu dispositivo si tú mismo los envías al soporte."
+      },
       "plantages": {
         "titre": "Informes de fallos",
         "texte": "Ulti no envía ningún informe por sí mismo. Si has aceptado, en los ajustes de tu dispositivo, compartir los datos de análisis con los desarrolladores de apps, Apple puede transmitir al desarrollador informes técnicos de fallos. Durante las versiones de prueba de TestFlight, Apple transmite al desarrollador los comentarios e informes que tú decidas enviar."
@@ -529,13 +533,13 @@
     }
   },
   "mentions": {
-    "enCours": "Página en fase final: el número de teléfono y el número SIREN (inscripción en curso) se añadirán próximamente.",
+    "enCours": "Página en fase final: el número de teléfono se añadirá próximamente.",
     "champs": {
       "nom": "Nombre",
       "nomCommercial": "Nombre comercial",
       "statut": "Forma jurídica",
       "adresse": "Dirección",
-      "siren": "SIREN",
+      "siren": "Inscripción",
       "telephone": "Teléfono",
       "email": "Correo",
       "directeur": "Nombre y apellidos",

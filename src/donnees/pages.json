@@ -1,5 +1,5 @@
 {
-  "miseAJour": "2026-11-04",
+  "miseAJour": "2026-11-14",
   "support": [
     {
       "groupe": "debut",
@@ -75,6 +75,7 @@
     "message",
     "fichiers",
     "achats",
+    "android",
     "plantages",
     "site",
     "droits",

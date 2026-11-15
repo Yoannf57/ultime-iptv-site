@@ -331,7 +331,7 @@
       "titre": "Käyttöehdot",
       "metaTitre": "Käyttöehdot — Ulti",
       "description": "Ultin käyttöehdot: sovelluksen loppukäyttäjän lisenssisopimus.",
-      "chapeau": "Lisenssisopimus, jota sovelletaan, kun käytät Ultia, App Storen ehtojen lisäksi."
+      "chapeau": "Lisenssisopimus, jota sovelletaan, kun käytät Ultia, App Storen tai Google Playn ehtojen lisäksi."
     }
   },
   "faqPlus": "Kaikki kysymykset tukisivulla",
@@ -506,6 +506,10 @@
         "titre": "Ostot",
         "texte": "Ostoja hallitsee Apple App Storessa. Ulti säilyttää laitteella vain Premiumin tilan toimiakseen ilman verkkoa, eikä lähetä sitä minnekään."
       },
+      "android": {
+        "titre": "Ulti Androidilla (puhelimet, tabletit, Android TV)",
+        "texte": "Android-sovellus toimii samoin kuin iPhonella, ilman synkronointia: IPTV-tilauksesi (palvelimen osoite, käyttäjänimi, salasana tai M3U-linkki) salataan, ja ne pysyvät laitteellasi; niitä ei koskaan lähetetä Ultille. Premium-ostot tehdään Google Playn kautta: Google käsittelee maksun omien [tietosuojakäytäntöjensä](google-confidentialite) mukaisesti, ja sovellus saa vain vahvistuksen ostosta (ei maksutietoja); Google Playn ostokirjasto voi lähettää Googlelle teknisiä tietoja ostoista. Elokuvien ja sarjojen julisteiden ja juonikuvausten näyttämiseksi sovellus lähettää teoksen nimen ja vuoden sekä laitteen kielen Ultin välityspalvelimeen (api.ultitv.com); välityspalvelin hakee tiedot TMDB:stä, ei pidä lokia eikä tallenna IP-osoitettasi. Ultissa ei ole mainoksia eikä analytiikkatyökaluja, eikä se kerää henkilötietoja. Jos olet sallinut sen laitteen asetuksissa, Google voi välittää kehittäjälle teknisiä kaatumisraportteja (Android vitals). Sovelluksen lokit lähtevät laitteeltasi vain, jos lähetät ne itse tukeen."
+      },
       "plantages": {
         "titre": "Kaatumisraportit",
         "texte": "Ulti ei itse lähetä raportteja. Jos olet laitteesi asetuksissa hyväksynyt analyysitietojen jakamisen sovelluskehittäjien kanssa, Apple voi välittää kehittäjälle teknisiä kaatumisraportteja. TestFlight-testiversioiden aikana Apple välittää kehittäjälle palautteen ja raportit, jotka itse päätät lähettää."
@@ -529,13 +533,13 @@
     }
   },
   "mentions": {
-    "enCours": "Sivua viimeistellään: puhelinnumero ja SIREN-numero (rekisteröinti käynnissä) lisätään pian.",
+    "enCours": "Sivua viimeistellään: puhelinnumero lisätään pian.",
     "champs": {
       "nom": "Nimi",
       "nomCommercial": "Aputoiminimi",
       "statut": "Yritysmuoto",
       "adresse": "Osoite",
-      "siren": "SIREN",
+      "siren": "Rekisteröinti",
       "telephone": "Puhelin",
       "email": "Sähköposti",
       "directeur": "Etu- ja sukunimi",

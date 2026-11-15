@@ -331,7 +331,7 @@
       "titre": "Conditions d'utilisation",
       "metaTitre": "Conditions d'utilisation — Ulti",
       "description": "Conditions d'utilisation d'Ulti : le contrat de licence de l'utilisateur final de l'app.",
-      "chapeau": "Le contrat de licence qui s'applique quand vous utilisez Ulti, en plus des conditions de l'App Store."
+      "chapeau": "Le contrat de licence qui s'applique quand vous utilisez Ulti, en plus des conditions de l'App Store ou de Google Play."
     }
   },
   "faqPlus": "Toutes les questions sur la page Support",
@@ -506,6 +506,10 @@
         "titre": "Achats",
         "texte": "Les achats sont gérés par Apple, sur l'App Store. Ulti garde seulement, sur l'appareil, le fait que Premium est actif ou non, pour fonctionner hors connexion, et ne l'envoie nulle part."
       },
+      "android": {
+        "titre": "Ulti sur Android (téléphones, tablettes, Android TV)",
+        "texte": "L'app Android fonctionne comme sur iPhone, sans synchronisation : vos abonnements IPTV (adresse du serveur, identifiant, mot de passe ou lien M3U) sont chiffrés et restent sur votre appareil ; ils ne sont jamais envoyés à Ulti. Les achats Premium passent par Google Play : Google traite le paiement selon ses propres [règles de confidentialité](google-confidentialite), et l'app ne reçoit que la confirmation de l'achat (aucune donnée bancaire) ; la bibliothèque d'achat de Google Play peut envoyer à Google des informations techniques sur les achats. Pour afficher les affiches et les résumés des films et des séries, l'app envoie au relais d'Ulti (api.ultitv.com) le titre et l'année de l'œuvre et la langue de l'appareil ; le relais interroge TMDB, ne garde aucun journal et n'enregistre pas votre adresse IP. Ulti ne contient ni publicité ni outil de mesure d'audience, et ne collecte aucune donnée personnelle. Si vous l'avez accepté dans les réglages de votre appareil, Google peut transmettre au développeur des rapports techniques sur les plantages (Android vitals). Les journaux de l'app ne quittent votre appareil que si vous les envoyez vous-même au support."
+      },
       "plantages": {
         "titre": "Rapports de plantage",
         "texte": "Ulti n'envoie aucun rapport lui-même. Si vous avez accepté, dans les réglages de votre appareil, de partager les données d'analyse avec les développeurs d'apps, Apple peut transmettre au développeur des rapports techniques sur les plantages. Pendant les versions d'essai TestFlight, les retours et rapports que vous choisissez d'envoyer sont transmis par Apple au développeur."
@@ -529,13 +533,13 @@
     }
   },
   "mentions": {
-    "enCours": "Page en cours de finalisation : le numéro de téléphone et le numéro SIREN (immatriculation en cours) seront ajoutés prochainement.",
+    "enCours": "Page en cours de finalisation : le numéro de téléphone sera ajouté prochainement.",
     "champs": {
       "nom": "Nom",
       "nomCommercial": "Nom commercial",
       "statut": "Statut",
       "adresse": "Adresse",
-      "siren": "SIREN",
+      "siren": "Immatriculation",
       "telephone": "Téléphone",
       "email": "E-mail",
       "directeur": "Nom et prénom",
