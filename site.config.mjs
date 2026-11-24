@@ -20,7 +20,7 @@ export default {
   // aussiGooglePlay : l'app n'est pas sur Google Play ; l'offre ne parle que de l'App Store. Laisser à false
   //   (réglage gardé à la demande de Yoann ; aucun texte ne le lit pour l'instant).
   blackFriday: {
-    actif: false,
+    actif: true,
     fin: "2026-11-30",
     aussiGooglePlay: false,
     prix: {
