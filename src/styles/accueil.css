@@ -65,3 +65,8 @@
 /* Sans JavaScript, les éléments qui n'ont de sens qu'avec un clic sont masqués. */
 html:not(.js) .avec-js { display: none !important; }
 html.js .sans-js { display: none !important; }
+
+/* Black Friday (site.config.mjs) : la page contient la version normale et la version de l'offre. La classe « bf »
+   est posée sur <html> par le script de index.astro jusqu'à la date de fin ; sans elle, l'offre reste cachée. */
+html:not(.bf) .bf-offre { display: none !important; }
+html.bf .bf-normal { display: none !important; }

@@ -9,6 +9,35 @@ export default {
   // la FAQ et le Support disent que l'Apple TV arrive dans les jours qui viennent. Sans effet si disponible vaut false.
   appleTvDisponible: true,
 
+  // BLACK FRIDAY 2026 : Premium à vie à prix réduit dans l'App Store, jusqu'au 30/11/2026 inclus.
+  // actif: false → le site est exactement le site normal (rien de l'offre n'est écrit dans les pages).
+  // actif: true  → chaque page d'accueil contient les deux versions ; un petit script choisit selon la date du
+  //   visiteur : l'offre jusqu'à « fin » inclus, le site normal à partir du lendemain, sans rien republier.
+  //   Pour essayer une date à venir : ajouter ?date=2026-12-01 à l'adresse de la page (une date passée est ignorée).
+  //   Une fois l'offre finie : repasser à false, pour retirer les prix réduits du code des pages.
+  // prix : prix réduits de « Premium à vie », par monnaie, relevés dans App Store Connect le 24/11/2026 (jamais
+  //   calculés ni convertis). Le prix normal barré et le pourcentage viennent de src/pays.json (src/lib/offre.ts).
+  // aussiGooglePlay : l'app n'est pas sur Google Play ; l'offre ne parle que de l'App Store. Laisser à false
+  //   (réglage gardé à la demande de Yoann ; aucun texte ne le lit pour l'instant).
+  blackFriday: {
+    actif: false,
+    fin: "2026-11-30",
+    aussiGooglePlay: false,
+    prix: {
+      EUR: { solo: 19.99, famille: 29.99 },
+      GBP: { solo: 17.99, famille: 24.99 },
+      USD: { solo: 17.99, famille: 24.99 },
+      CAD: { solo: 24.99, famille: 34.99 },
+      CHF: { solo: 15.0, famille: 20.0 },
+      SEK: { solo: 229, famille: 299 },
+      NOK: { solo: 229, famille: 299 },
+      DKK: { solo: 149, famille: 199 },
+      BRL: { solo: 119.9, famille: 149.9 },
+      MXN: { solo: 399, famille: 499 },
+      AUD: { solo: 29.99, famille: 39.99 },
+    },
+  },
+
   // Fiche App Store : https://apps.apple.com/<pays>/app/<nom>/id<id> (adresse sans pays pour les pages
   // internationales). Calculée par src/lib/appstore.ts ; une seule valeur à changer si Apple change le format.
   appStore: { id: "6829902519", nom: "ulti-iptv-player" },

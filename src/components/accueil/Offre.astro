@@ -1,0 +1,61 @@
+---
+// Section « Black Friday » (#offre), juste avant les tarifs : Premium à vie à prix réduit jusqu'à la date de fin.
+// Prix : src/lib/offre.ts (prix normal de pays.json, prix réduit de site.config.mjs, jamais convertis).
+// « Le prix d'un an, payé une fois » n'est écrit que si c'est vrai pour ce pays (prix réduit = prix annuel).
+// Page internationale (sans prix) : l'offre sans montant ni pourcentage. Bouton texte, pas de second badge.
+import { t } from "../../lib/textes";
+import { lienAppStore } from "../../lib/appstore";
+import type { Pays } from "../../lib/pays";
+import type { Offre } from "../../lib/offre";
+interface Props { langue: string; p: Pays; offre: Offre }
+const { langue: l, p, offre } = Astro.props;
+const solo = offre.prix?.solo;
+const famille = offre.prix?.famille;
+const variante = !solo ? "SansPrix" : offre.prixDunAn ? "" : "SansArgument";
+const valeurs = { prix: solo?.reduit ?? "", prixNormal: solo?.normal ?? "", jourDate: offre.jourDate };
+---
+<section id="offre" aria-labelledby="titre-offre" class="offre bf-offre">
+  <div class:list={["carte", "interieur", { "sans-prix": !solo }]}>
+    <div class="texte">
+      <p class="surtitre">{t(l, "offre.surtitre")}</p>
+      <h2 id="titre-offre">{t(l, `offre.titre${variante}`, valeurs)}</h2>
+      <p class="gris chiffres">{t(l, `offre.texte${variante}`, valeurs)}</p>
+      <p class="gris chiffres">{famille ? t(l, "offre.famille", { prix: famille.reduit, prixNormal: famille.normal }) : t(l, "offre.familleSansPrix")}</p>
+    </div>
+    {solo && (
+      <p class="prix chiffres">
+        <span class="visuellement-cache">{t(l, "offre.prixReduit", { prix: solo.reduit })}. {t(l, "offre.prixNormal", { prixNormal: solo.normal })}.</span>
+        <span class="reduit" aria-hidden="true">{solo.reduit}</span>
+        <span class="ligne" aria-hidden="true"><s>{solo.normal}</s><span class="remise">{solo.remise}</span></span>
+      </p>
+    )}
+    <p class="action"><a class="bouton" href={lienAppStore(p)}>{t(l, "offre.telecharger")}</a></p>
+  </div>
+</section>
+
+<style>
+  .offre { max-width: 75rem; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; scroll-margin-top: 4rem; }
+  /* Ordinateur : texte et bouton à gauche, grand prix à droite. Téléphone : texte, prix, puis bouton. */
+  .interieur { padding: 3.5rem 2.75rem; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "texte prix" "action prix"; align-items: center; gap: 2rem 4rem; }
+  .texte { grid-area: texte; min-width: 0; }
+  h2 { margin: 0; max-width: 22ch; text-wrap: balance; font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800; }
+  .texte p.gris { margin: 1.25rem 0 0; max-width: 36rem; font-size: 1.0625rem; line-height: 1.5; }
+  .texte p.gris + p.gris { margin-top: 0.75rem; }
+  .action { grid-area: action; margin: 0; }
+  .bouton { display: inline-flex; align-items: center; height: 3rem; padding: 0 1.75rem; border-radius: 999px; background: #f5f5f7; color: #000; font-size: 1.0625rem; font-weight: 600; text-decoration: none; }
+  .prix { grid-area: prix; margin: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+  .reduit { font-size: clamp(3.25rem, 7vw, 5.5rem); font-weight: 800; letter-spacing: -0.04em; line-height: 1; white-space: nowrap; }
+  .ligne { display: flex; align-items: center; gap: 0.75rem; }
+  s { font-size: 1.375rem; font-weight: 600; color: #a1a1a6; white-space: nowrap; }
+  .remise { font-size: 0.8125rem; font-weight: 700; background: #fff; color: #000; padding: 0.25rem 0.625rem; border-radius: 999px; white-space: nowrap; }
+  /* Page internationale (sans prix) : une seule colonne, centrée. */
+  .sans-prix { grid-template-columns: minmax(0, 1fr); grid-template-areas: "texte" "action"; text-align: center; }
+  .sans-prix h2, .sans-prix .texte p.gris { margin-left: auto; margin-right: auto; }
+  @media (max-width: 60rem) {
+    .interieur:not(.sans-prix) { grid-template-columns: minmax(0, 1fr); grid-template-areas: "texte" "prix" "action"; }
+  }
+  @media (max-width: 45rem) {
+    .interieur { padding: 2.25rem 1.5rem; }
+    .bouton { height: 2.75rem; }
+  }
+</style>

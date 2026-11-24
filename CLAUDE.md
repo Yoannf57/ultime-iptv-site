@@ -5,7 +5,7 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 11/11/2026 (**Ulti publié sur l'App Store** : `disponible: true`, `indexable: true`, `robots.txt` sans plan du site ; avant : section « Connexion » refaite : téléphone + Apple TV par QR code ; avant : section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
+Dernière mise à jour : 24/11/2026 (**Black Friday** : Premium à vie à prix réduit jusqu'au 30/11/2026, réglage `blackFriday` ; avant, le 11/11/2026 : **Ulti publié sur l'App Store** : `disponible: true`, `indexable: true`, `robots.txt` sans plan du site ; avant : section « Connexion » refaite : téléphone + Apple TV par QR code ; avant : section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
 « Bientôt sur Android », `appleTvDisponible` ; avant : informations légales définitives ; page Conditions d'utilisation ; confidentialité avec le relais TMDB ; grand
 visuel Apple TV + iPhone et visite automatique sur iPad, dans les cadres officiels d'Apple ; « Ulti Premium » ; captures
 des 12 langues ; textes à faire relire).
@@ -309,6 +309,18 @@ une langue.
   SEK, NOK, DKK, MXN (et l'euro) quand le montant est rond. « Prix TTC. » partout, sauf `en-us`, `en-ca`, `fr-ca`
   (`taxesEnSus: true`) : « Taxes applicables en sus. ».
 - Ne jamais calculer un prix par conversion de monnaie.
+- **Black Friday 2026 (24/11/2026)** : Premium à vie à prix réduit dans l'App Store jusqu'au lundi 30/11/2026 inclus,
+  sans code. Réglage unique `blackFriday` dans `site.config.mjs` (`actif`, `fin`, prix réduits par monnaie relevés
+  dans App Store Connect le 24/11, `aussiGooglePlay: false`). Prix normal barré = `vie` de `pays.json` ; pourcentage
+  calculé par le site, arrondi vers le bas (`src/lib/offre.ts`). « Le prix d'un an, payé une fois » seulement si le
+  prix réduit est égal au prix annuel (vrai dans les 11 monnaies ; sinon textes `offre.*SansArgument`). Pages
+  internationales : offre sans montant ni pourcentage (`offre.*SansPrix`). Les pages d'accueil contiennent la version
+  normale et la version offre ; un script en tête de page pose la classe `bf` sur `<html>` jusqu'à la date de fin
+  (date du visiteur), donc le site redevient normal tout seul le 01/12. `?date=AAAA-MM-JJ` essaie une date à venir
+  (une date passée est ignorée). Éléments : `BandeauOffre.astro`, pastille de `Heros.astro`, `Offre.astro` (`#offre`),
+  carte À vie de `Tarifs.astro`, 6ᵉ question de `Faq.astro`. Contrôles : `npm run captures-offre -- <dossier>`.
+  **Début décembre : repasser `actif` à `false`** (retire les prix réduits du code des pages). À `false`, le site est
+  le site normal. Ne pas changer le titre, la description ni l'image de partage pour une offre.
 
 **Gratuit = le direct** (confirmé par Yoann le 03/11 en fin d'après-midi) : direct, guide TV et rappels, Mes contenus
 (catégories de chaînes), regroupement des doublons de chaînes, coller le message du fournisseur, image dans l'image,
@@ -419,6 +431,10 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
   build, textes et liens vérifiés ; liens App Store de fr-fr, en-gb, pt-br et `/es/` vers `id6829902519`. Fait depuis
   le cloud, livré par pull request vers `main` — compte rendu `Notes/comptes-rendus/2026-11-11-jour-de-la-publication.md`.
   Reste à vérifier après la fusion : le site en ligne et le Smart App Banner sur un vrai iPhone.
+
+- [x] **Black Friday, étape 1 (24/11/2026)** : offre en ligne (`blackFriday.actif: true`) — compte rendu
+  `Notes/comptes-rendus/2026-11-24-black-friday.md`. Reste : `actif: false` début décembre ; traductions de l'offre à
+  faire relire ; étape 2 (nouvelle phrase du grand visuel, dernière section, décision N33).
 
 ### Jour de la publication (fait le 11/11/2026 ; gardé pour mémoire)
 1. `site.config.mjs` : **la ligne `disponible: false,` devient `disponible: true,`** ; `indexable: true` si ultitv.com n'est pas encore branché (sinon c'est déjà
