@@ -2,7 +2,7 @@
   "meta": {
     "direction": "ltr",
     "titre": "Ulti — Täydellinen IPTV-kokemus",
-    "description": "Ulti on IPTV-soitin iPhonelle, iPadille, Macille ja Apple TV:lle: suorat lähetykset, TV-opas, elokuvat ja sarjat yksinkertaisessa sovelluksessa, joka on heti käyttövalmis."
+    "description": "Ulti on IPTV-soitin iPhonelle, iPadille, Macille ja Apple TV:lle: suorat lähetykset, TV‑opas, elokuvat ja sarjat yksinkertaisessa sovelluksessa, joka on heti käyttövalmis."
   },
   "marque": {
     "nom": "Ulti",
@@ -23,7 +23,7 @@
   "heros": {
     "surtitre": "iPhonelle, iPadille, Macille ja Apple TV:lle",
     "accroche": "Täydellinen\nIPTV-kokemus.",
-    "phrase": "Suorat lähetykset, TV-opas, elokuvat ja sarjat: IPTV-tilauksestasi tulee helppokäyttöinen TV-sovellus. Avaa ja katso.",
+    "phrase": "Maksat jo IPTV-tilauksestasi. Katso sitä vihdoin sovelluksessa, joka on sen arvoinen: suorat lähetykset, TV‑opas, elokuvat ja sarjat. Avaa ja katso.",
     "bientot": "Tulossa pian App Storeen",
     "telecharger": "Lataa App Storesta",
     "badge": "Lataa Ulti App Storesta",
@@ -42,7 +42,7 @@
   "onglets": {
     "accueil": "Koti",
     "direct": "Suorat",
-    "guide": "TV-opas",
+    "guide": "TV‑opas",
     "profils": "Profiilit",
     "pause": "Suoran tauko",
     "films": "Elokuvat ja sarjat",
@@ -103,11 +103,12 @@
     "phrase": "Ulti järjestää tilauksesi tuhannet kanavat ja elokuvat selkeiksi näkymiksi, kuin TV-sovellus, joka sinulla olisi aina ollut.",
     "directTitre": "Suorat lähetykset yhdellä silmäyksellä",
     "directTexte": "Jokaisen kanavan ympärillä oleva rengas näyttää, missä ohjelma on menossa. Suodata aiheen mukaan ja vaihda kanavaa toiseen.",
-    "guideTitre": "Oikea TV-opas",
+    "guideTitre": "Oikea TV‑opas",
     "guideTexte": "Tänä iltana, huomenna, koko viikon. Lisää muistutus yhdellä eleellä tai käytä omaa XMLTV-opastasi.",
     "filmsTitre": "Elokuvat ja sarjat ilman kaksoiskappaleita",
     "filmsTexte": "Julisteet ja juonikuvaukset, elokuvan kaikki versiot samalla sivulla, ja jatkat siitä, mihin jäit.",
-    "premium": "Premiumilla"
+    "premium": "Premiumilla",
+    "premiumLecture": "Toisto Premiumilla"
   },
   "visite": {
     "titre": "Tutustu sovellukseen.",
@@ -137,7 +138,7 @@
       "accueil": "etusivu, jossa nostettu elokuva ja suorat kanavat",
       "direct-bandeau": "suora kanava ja käynnissä olevan ohjelman palkki",
       "direct": "suorien kanavien luettelo",
-      "guide": "TV-opas",
+      "guide": "TV‑opas",
       "profils": "profiilin valinta, ”Kuka katsoo?”",
       "pause-direct": "pysäytetty suora lähetys ja painike takaisin suoraan",
       "films-series": "elokuvien ja sarjojen luettelo",
@@ -159,7 +160,7 @@
   "premium": {
     "surtitre": "Ulti Premium",
     "titre": "Vielä enemmän.",
-    "films": "Elokuvat ja sarjat, julisteet, juonikuvaukset ja jatkaminen",
+    "films": "Elokuvien ja sarjojen toisto ja jatkaminen",
     "pause": "Suoran lähetyksen tauko ja kelaus taaksepäin",
     "replay": "Edellisten päivien tallenteet",
     "telechargements": "Lataukset katseluun ilman verkkoa",
@@ -180,7 +181,7 @@
     "titre": "Tärkein on ilmaista.",
     "phrase": "Suorat lähetykset ovat ilmaisia. Kokeile Ulti Premiumia ilmaiseksi 7 päivää.",
     "gratuitTitre": "Ilmainen",
-    "gratuitTexte": "Suorat lähetykset, TV-opas muistutuksineen, kuva kuvassa, Apple TV QR-koodilla ja lapsiprofiili.",
+    "gratuitTexte": "Suorat lähetykset, TV‑opas muistutuksineen, elokuvien ja sarjojen sivut (toisto Premiumilla), kuva kuvassa, Apple TV QR-koodilla ja lapsiprofiili.",
     "choix": "Valitse Premium-vaihtoehto",
     "pourMoi": "Minulle",
     "pourFamille": "Perheelle",
@@ -244,7 +245,12 @@
     "q4": "Mitkä tilaukset toimivat?",
     "r4": "Tilaukset, jotka toimitetaan M3U-linkkinä tai Xtream Codes -kirjautumistietoina, eli valtaosa. Helpointa on liittää palveluntarjoajasi viesti: Ulti tunnistaa muodon itse.",
     "q5": "Voinko kokeilla ennen kuin maksan?",
-    "r5": "Kyllä. Suorat lähetykset ovat ilmaisia. Premiumia voi kokeilla ilmaiseksi 7 päivää kuukausi- ja vuositilauksilla, Solo tai Perhe."
+    "r5": "Kyllä. Suorat lähetykset ja TV‑opas ovat ilmaisia, samoin elokuvien ja sarjojen sivut iPhonessa, iPadissa ja Macissa; Apple TV:ssä ne muuttuvat ilmaisiksi seuraavassa päivityksessä. Elokuvien ja sarjojen toisto kuuluu Premiumiin, jota voi kokeilla ilmaiseksi 7 päivää kuukausi- ja vuositilauksilla, Solo tai Perhe."
+  },
+  "fin": {
+    "titre": "Tilaus sinulla jo on.\nVain sovellus puuttuu.",
+    "texte": "Ultissa suorat lähetykset ja TV‑opas ovat ilmaisia, ilman mainoksia ja ilman tiliä. Asenna sovellus, liitä palveluntarjoajasi viesti ja katso.",
+    "bouton": "Lataa Ulti"
   },
   "neutralite": "Ulti ei tarjoa kanavia eikä sisältöä. Sinulla on oltava omat lähteesi ja oikeus katsoa niitä.",
   "pied": {
@@ -392,7 +398,7 @@
       },
       "formats": {
         "q": "Mitä muotoja tuetaan?",
-        "r": "Xtream Codes -tilit (palvelin, käyttäjänimi ja salasana) ja M3U-soittolistalinkit. TV-oppaana Ulti käyttää palveluntarjoajasi opasta; voit myös antaa XMLTV-muotoisen oppaan osoitteen (.xml tai .xml.gz) kohdassa Tili › TV-opas.\n\nEi tuettu: MAC-osoitteeseen sidotut tilaukset ja Stalker/Ministra-portaalit."
+        "r": "Xtream Codes -tilit (palvelin, käyttäjänimi ja salasana) ja M3U-soittolistalinkit. TV‑oppaana Ulti käyttää palveluntarjoajasi opasta; voit myös antaa XMLTV-muotoisen oppaan osoitteen (.xml tai .xml.gz) kohdassa Tili › TV‑opas.\n\nEi tuettu: MAC-osoitteeseen sidotut tilaukset ja Stalker/Ministra-portaalit."
       },
       "replay": {
         "q": "Toimivatko tallenteet tilaukseni kanssa?",
@@ -428,11 +434,11 @@
       },
       "gratuit": {
         "q": "Mitä ilmaisversioon kuuluu?",
-        "r": "Suorat lähetykset, TV-opas ja muistutukset, Omat sisällöt, päällekkäisten kanavien yhdistäminen, palveluntarjoajan viestin liittäminen, kuva kuvassa, siirto Apple TV:hen QR-koodilla, lapsiprofiili lapsilukon koodilla ja Musta-teema."
+        "r": "Suorat lähetykset, TV‑opas ja muistutukset, Omat sisällöt, päällekkäisten kanavien yhdistäminen, palveluntarjoajan viestin liittäminen, kuva kuvassa, siirto Apple TV:hen QR-koodilla, lapsiprofiili lapsilukon koodilla ja Musta-teema.\n\nElokuvien ja sarjojen sivut (julisteet, juonikuvaukset, näyttelijät) ovat ilmaisia myös iPhonessa, iPadissa ja Macissa; Apple TV:ssä ne muuttuvat ilmaisiksi seuraavassa päivityksessä. Elokuvien ja sarjojen toisto kuuluu Ulti Premiumiin."
       },
       "inclus": {
         "q": "Mitä Ulti Premiumiin kuuluu?",
-        "r": "Elokuvat ja sarjat (luettelo, sivut julisteineen ja juonikuvauksineen, toisto, jatkaminen, elokuvan kaikki versiot), moninäyttö, tallenteet, suoran lähetyksen tauko, lataukset iPhonessa ja iPadissa, iCloud-synkronointi, aikuisten lisäprofiilit ja lisätilaukset, rivit ”Sinulle” ja ”Suositut”, teemat Halo ja Ohjelma sekä vaihtoehtoiset sovelluskuvakkeet.\n\nIlmaisversiossa voit selata elokuvia ja sarjoja; niiden toistaminen vaatii Premiumin."
+        "r": "Elokuvien ja sarjojen toisto (jatkaminen ja elokuvan kaikki versiot), moninäyttö, tallenteet, suoran lähetyksen tauko, lataukset iPhonessa ja iPadissa, iCloud-synkronointi, aikuisten lisäprofiilit ja lisätilaukset, rivit ”Sinulle” ja ”Suositut”, teemat Halo ja Ohjelma sekä vaihtoehtoiset sovelluskuvakkeet.\n\nIlmaisversiossa voit selata elokuvia ja sarjoja ja avata niiden sivut; niiden toistaminen vaatii Premiumin."
       },
       "soloFamille": {
         "q": "Solo vai Perhe: mikä ero?",
@@ -505,7 +511,7 @@
       },
       "contacts": {
         "titre": "Mihin sovellus ottaa yhteyttä",
-        "texte": "Ulti ottaa yhteyttä vain:\n\n• IPTV-palveluntarjoajaasi kanaviesi, elokuviesi, sarjojesi ja TV-oppaasi toistamiseksi. Se on valitsemasi palvelu: se ei ole kehittäjä eikä kehittäjän kumppani;\n• Ultin välityspalvelimeen (api.ultitv.com, palveluntarjoaja Cloudflare) The Movie Databasen (TMDB) julisteiden ja juonikuvausten näyttämiseksi. Se vain välittää pyynnön TMDB:lle eikä tallenna mitään: ei lokia. Sovellus lähettää vain näytettävien teosten nimen ja vuoden sekä laitteen kielen ja alueen: ei kirjautumistietoja eikä mitään hakukenttään kirjoittamaasi. Kuvat ladataan suoraan TMDB:stä (image.tmdb.org);\n• Appleen Premium-ostoja varten ja, jos otat sen käyttöön, iCloud-synkronointia varten."
+        "texte": "Ulti ottaa yhteyttä vain:\n\n• IPTV-palveluntarjoajaasi kanaviesi, elokuviesi, sarjojesi ja TV‑oppaasi toistamiseksi. Se on valitsemasi palvelu: se ei ole kehittäjä eikä kehittäjän kumppani;\n• Ultin välityspalvelimeen (api.ultitv.com, palveluntarjoaja Cloudflare) The Movie Databasen (TMDB) julisteiden ja juonikuvausten näyttämiseksi. Se vain välittää pyynnön TMDB:lle eikä tallenna mitään: ei lokia. Sovellus lähettää vain näytettävien teosten nimen ja vuoden sekä laitteen kielen ja alueen: ei kirjautumistietoja eikä mitään hakukenttään kirjoittamaasi. Kuvat ladataan suoraan TMDB:stä (image.tmdb.org);\n• Appleen Premium-ostoja varten ja, jos otat sen käyttöön, iCloud-synkronointia varten."
       },
       "ip": {
         "titre": "IP-osoitteesi",

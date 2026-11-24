@@ -2,7 +2,7 @@
   "meta": {
     "direction": "ltr",
     "titre": "Ulti — Den ultimate IPTV-opplevelsen",
-    "description": "Ulti, IPTV-spilleren for iPhone, iPad, Mac og Apple TV: direkte-TV, TV-guide, filmer og serier i en enkel app som er klar til bruk med en gang."
+    "description": "Ulti, IPTV-spilleren for iPhone, iPad, Mac og Apple TV: direkte-TV, TV‑guide, filmer og serier i en enkel app som er klar til bruk med en gang."
   },
   "marque": {
     "nom": "Ulti",
@@ -23,7 +23,7 @@
   "heros": {
     "surtitre": "For iPhone, iPad, Mac og Apple TV",
     "accroche": "Den ultimate\nIPTV-opplevelsen.",
-    "phrase": "Direkte-TV, TV-guide, filmer og serier: IPTV-abonnementet ditt blir en intuitiv TV-app. Åpne og se.",
+    "phrase": "Du betaler allerede for IPTV-abonnementet ditt. Se det endelig i en app som yter det rettferdighet: direkte-TV, TV‑guide, filmer og serier. Åpne og se.",
     "bientot": "Kommer snart til App Store",
     "telecharger": "Last ned fra App Store",
     "badge": "Last ned Ulti fra App Store",
@@ -42,7 +42,7 @@
   "onglets": {
     "accueil": "Hjem",
     "direct": "Direkte",
-    "guide": "TV-guide",
+    "guide": "TV‑guide",
     "profils": "Profiler",
     "pause": "Pause direkte",
     "films": "Filmer og serier",
@@ -103,11 +103,12 @@
     "phrase": "Ulti ordner de tusenvis av kanalene og filmene i abonnementet ditt i oversiktlige skjermer, som en TV-app du alltid har hatt.",
     "directTitre": "Direkte-TV med ett blikk",
     "directTexte": "En ring rundt hver kanal viser hvor langt programmet har kommet. Filtrer etter tema og zap fra kanal til kanal.",
-    "guideTitre": "En ekte TV-guide",
+    "guideTitre": "En ekte TV‑guide",
     "guideTexte": "I kveld, i morgen, hele uken. Sett en påminnelse med én bevegelse, eller bruk din egen XMLTV-guide.",
     "filmsTitre": "Filmer og serier, uten duplikater",
     "filmsTexte": "Plakater og sammendrag, alle versjoner av en film samlet på én side, fortsett der du slapp.",
-    "premium": "Med Premium"
+    "premium": "Med Premium",
+    "premiumLecture": "Avspilling med Premium"
   },
   "visite": {
     "titre": "Ta en titt.",
@@ -137,7 +138,7 @@
       "accueil": "forsiden, med den utvalgte filmen og direktekanalene",
       "direct-bandeau": "en direktekanal, med feltet for programmet som går nå",
       "direct": "listen over direktekanaler",
-      "guide": "TV-guiden",
+      "guide": "TV‑guiden",
       "profils": "profilvalget, «Hvem ser på?»",
       "pause-direct": "direkte-TV på pause, med knappen tilbake til direkte",
       "films-series": "katalogen med filmer og serier",
@@ -159,7 +160,7 @@
   "premium": {
     "surtitre": "Ulti Premium",
     "titre": "Enda mer.",
-    "films": "Filmer og serier, med plakater, sammendrag og fortsett å se",
+    "films": "Avspilling av filmer og serier, med fortsett å se",
     "pause": "Pause og spol tilbake i direkte-TV",
     "replay": "Se tidligere dager i opptak",
     "telechargements": "Nedlastinger for å se uten nett",
@@ -180,7 +181,7 @@
     "titre": "Gratis for det viktigste.",
     "phrase": "Direkte-TV er gratis. Prøv Ulti Premium gratis i 7 dager.",
     "gratuitTitre": "Gratis",
-    "gratuitTexte": "Direkte-TV, TV-guiden med påminnelser, bilde-i-bilde, Apple TV med QR-kode og en barneprofil.",
+    "gratuitTexte": "Direkte-TV, TV‑guiden med påminnelser, sidene for filmer og serier (avspilling med Premium), bilde-i-bilde, Apple TV med QR-kode og en barneprofil.",
     "choix": "Velg et Premium-alternativ",
     "pourMoi": "For meg",
     "pourFamille": "For familien",
@@ -244,7 +245,12 @@
     "q4": "Hvilke abonnementer fungerer?",
     "r4": "Abonnementer som leveres som en M3U-lenke eller som Xtream Codes-påloggingsinformasjon, altså de aller fleste. Enklest: lim inn meldingen fra leverandøren din, Ulti gjenkjenner formatet selv.",
     "q5": "Kan jeg prøve før jeg betaler?",
-    "r5": "Ja. Direkte-TV er gratis. Premium kan du prøve gratis i 7 dager med måneds- og årsabonnementene, Solo eller Familie."
+    "r5": "Ja. Direkte-TV og TV‑guiden er gratis, og det er også sidene for filmer og serier på iPhone, iPad og Mac; på Apple TV blir de det med neste oppdatering. Avspilling av filmer og serier er en del av Premium, som du kan prøve gratis i 7 dager med måneds- og årsabonnementene, Solo eller Familie."
+  },
+  "fin": {
+    "titre": "Abonnementet har du allerede.\nDet eneste som mangler, er appen.",
+    "texte": "Ulti er gratis for direkte-TV og TV‑guiden, uten reklame og uten konto. Installer appen, lim inn meldingen fra leverandøren din og se.",
+    "bouton": "Last ned Ulti"
   },
   "neutralite": "Ulti leverer ingen kanaler og intet innhold. Du må ha dine egne kilder og ha rett til å se dem.",
   "pied": {
@@ -392,7 +398,7 @@
       },
       "formats": {
         "q": "Hvilke formater støttes?",
-        "r": "Xtream Codes-kontoer (server, brukernavn og passord) og M3U-spillelistelenker. Til TV-guiden bruker Ulti guiden fra leverandøren din; du kan også oppgi adressen til en guide i XMLTV-format (.xml eller .xml.gz) under Konto › TV-guide.\n\nStøttes ikke: abonnementer knyttet til en MAC-adresse og Stalker/Ministra-portaler."
+        "r": "Xtream Codes-kontoer (server, brukernavn og passord) og M3U-spillelistelenker. Til TV‑guiden bruker Ulti guiden fra leverandøren din; du kan også oppgi adressen til en guide i XMLTV-format (.xml eller .xml.gz) under Konto › TV‑guide.\n\nStøttes ikke: abonnementer knyttet til en MAC-adresse og Stalker/Ministra-portaler."
       },
       "replay": {
         "q": "Fungerer opptak med abonnementet mitt?",
@@ -428,11 +434,11 @@
       },
       "gratuit": {
         "q": "Hva er med i gratisversjonen?",
-        "r": "Direkte-TV, TV-guiden og påminnelser, Mitt innhold, sammenslåing av dupliserte kanaler, innliming av meldingen fra leverandøren, bilde-i-bilde, overføring til Apple TV med QR-kode, en barneprofil med foreldrekode og temaet Svart."
+        "r": "Direkte-TV, TV‑guiden og påminnelser, Mitt innhold, sammenslåing av dupliserte kanaler, innliming av meldingen fra leverandøren, bilde-i-bilde, overføring til Apple TV med QR-kode, en barneprofil med foreldrekode og temaet Svart.\n\nSidene for filmer og serier (plakater, sammendrag, rollebesetning) er også gratis på iPhone, iPad og Mac; på Apple TV blir de det med neste oppdatering. Avspilling av filmer og serier er en del av Ulti Premium."
       },
       "inclus": {
         "q": "Hva er med i Ulti Premium?",
-        "r": "Filmer og serier (katalog, sider med plakater og sammendrag, avspilling, fortsett å se, alle versjoner av en film), flerskjerm, opptak, pause i direkte-TV, nedlastinger på iPhone og iPad, iCloud-synkronisering, flere voksenprofiler og flere abonnementer, radene «For deg» og «Populært», temaene Halo og Program og alternative appsymboler.\n\nI gratisversjonen kan du bla gjennom filmer og serier; for å spille dem av trenger du Premium."
+        "r": "Avspilling av filmer og serier (med fortsett å se og alle versjoner av en film), flerskjerm, opptak, pause i direkte-TV, nedlastinger på iPhone og iPad, iCloud-synkronisering, flere voksenprofiler og flere abonnementer, radene «For deg» og «Populært», temaene Halo og Program og alternative appsymboler.\n\nI gratisversjonen kan du bla gjennom filmer og serier og åpne sidene deres; for å spille dem av trenger du Premium."
       },
       "soloFamille": {
         "q": "Solo eller Familie: hva er forskjellen?",
@@ -505,7 +511,7 @@
       },
       "contacts": {
         "titre": "Hva appen kontakter",
-        "texte": "Ulti kontakter bare:\n\n• IPTV-leverandøren din, for å spille av kanalene, filmene, seriene og TV-guiden din. Det er tjenesten du har valgt: den er verken utvikleren eller en partner av utvikleren;\n• Ultis relé (api.ultitv.com, driftet av Cloudflare), for å vise plakater og sammendrag fra The Movie Database (TMDB). Det sender bare forespørselen videre til TMDB og lagrer ingenting: ingen logg. Appen sender bare tittel og år for verkene som vises, samt språket og regionen til enheten: ingen påloggingsinformasjon, og ingenting av det du skriver i søket. Bildene lastes direkte fra TMDB (image.tmdb.org);\n• Apple, for Premium-kjøp og, hvis du slår det på, for iCloud-synkronisering."
+        "texte": "Ulti kontakter bare:\n\n• IPTV-leverandøren din, for å spille av kanalene, filmene, seriene og TV‑guiden din. Det er tjenesten du har valgt: den er verken utvikleren eller en partner av utvikleren;\n• Ultis relé (api.ultitv.com, driftet av Cloudflare), for å vise plakater og sammendrag fra The Movie Database (TMDB). Det sender bare forespørselen videre til TMDB og lagrer ingenting: ingen logg. Appen sender bare tittel og år for verkene som vises, samt språket og regionen til enheten: ingen påloggingsinformasjon, og ingenting av det du skriver i søket. Bildene lastes direkte fra TMDB (image.tmdb.org);\n• Apple, for Premium-kjøp og, hvis du slår det på, for iCloud-synkronisering."
       },
       "ip": {
         "titre": "IP-adressen din",

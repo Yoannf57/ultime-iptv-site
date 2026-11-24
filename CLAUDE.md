@@ -5,7 +5,7 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 24/11/2026 (**Black Friday** : Premium à vie à prix réduit jusqu'au 30/11/2026, réglage `blackFriday` ; avant, le 11/11/2026 : **Ulti publié sur l'App Store** : `disponible: true`, `indexable: true`, `robots.txt` sans plan du site ; avant : section « Connexion » refaite : téléphone + Apple TV par QR code ; avant : section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
+Dernière mise à jour : 24/11/2026 (**étape 2** : nouvelle phrase du grand visuel, dernière section « Il vous manque l'app. », fiches des films et séries gratuites (N33), pied de page du sélecteur de pays dans la langue du visiteur ; **Black Friday** : Premium à vie à prix réduit jusqu'au 30/11/2026, réglage `blackFriday` ; avant, le 11/11/2026 : **Ulti publié sur l'App Store** : `disponible: true`, `indexable: true`, `robots.txt` sans plan du site ; avant : section « Connexion » refaite : téléphone + Apple TV par QR code ; avant : section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
 « Bientôt sur Android », `appleTvDisponible` ; avant : informations légales définitives ; page Conditions d'utilisation ; confidentialité avec le relais TMDB ; grand
 visuel Apple TV + iPhone et visite automatique sur iPad, dans les cadres officiels d'Apple ; « Ulti Premium » ; captures
 des 12 langues ; textes à faire relire).
@@ -90,6 +90,9 @@ github.io aux nouvelles (prévoir Google Search Console à ce moment-là).
   Belgique » [Continuer] [×]. Il ne réapparaît pas après un choix.
 - Une icône **globe** + nom du pays en bas de chaque page ouvre la page « Choisissez votre pays » (style Apple :
   pays regroupés par région, nom de chaque pays écrit dans sa propre langue).
+- **Pied de page des pages sans pays** (racine, « Choisissez votre pays », 404 ; 24/11/2026) : les liens Support,
+  Confidentialité, Conditions et Mentions légales suivent le visiteur (pays déjà choisi, sinon pays deviné, sinon page
+  internationale de sa langue), libellés compris ; sans JavaScript, ceux de `/en/` (`PiedDePage.astro`).
 - Pas de redirection côté serveur (GitHub Pages n'en fait pas) : tout se fait par un petit script sur `/`, et chaque
   page de pays est une vraie page statique, indexable par Google.
 
@@ -136,10 +139,10 @@ une langue.
    quels formats sont pris en charge.
    **Nom et logo** : voir la section « Nom de l'app ».
    **Accroche principale** : « L'expérience IPTV ultime. » ; en anglais « The ultimate IPTV experience. ». Phrase
-   dessous : « Direct, guide TV, films et séries : votre
-   abonnement IPTV devient une app de télé intuitive. Vous l'ouvrez, vous regardez. » — en anglais : « Live TV, guide,
-   movies and series: your IPTV subscription becomes an intuitive TV app. Just open it and watch. » Idée à garder :
-   une app simple, prête à l'emploi, sans réglages compliqués.
+   dessous (décidée par Yoann le 24/11/2026) : « Vous payez déjà votre abonnement IPTV. Regardez-le enfin dans une app
+   à sa hauteur : direct, guide TV, films et séries. Vous l'ouvrez, vous regardez. » — en anglais : « You already pay
+   for your IPTV subscription. Watch it in an app that does it justice: live TV, guide, movies and series. Open it,
+   and you're watching. » Idée à garder : une app simple, prête à l'emploi, sans réglages compliqués.
    Sections, dans l'ordre :
    1. Grand visuel : petite ligne « Pour iPhone, iPad, Mac et Apple TV », l'accroche, une phrase, bouton App Store (ou
       « Bientôt »), puis **l'Apple TV au centre (écran flottant) et l'iPhone devant à droite, dans son cadre officiel**
@@ -182,8 +185,8 @@ une langue.
       avec `prefers-reduced-motion` : les 4 tableaux du téléphone en 2 × 2. Code : `Collez.astro`, `CollezEcran.astro`,
       `CollezTv.astro`.
    2. « Votre abonnement, enfin bien présenté » : direct avec anneaux d'avancement, guide TV, films et séries avec
-      affiches et résumés. La carte « Films et séries » porte une mention discrète « Avec Premium » (gris, sans
-      majuscules ni pastille).
+      affiches et résumés. La carte « Films et séries » porte une mention discrète « Lecture avec Premium » (gris,
+      sans majuscules ni pastille ; depuis N33, les fiches sont gratuites).
    2 bis. **« Faites le tour. »** (refait le 04/11/2026) : **démo automatique sur un seul iPad**, grand, de face, dans le
       cadre officiel de l'iPad Pro 13" (immobile ; seul l'écran change, en fondu). Captures iPad dans l'ordre :
       Accueil → Direct → Guide TV → Pause du direct → Films et séries → Profils (Multi-écran : pas de capture iPad,
@@ -197,7 +200,7 @@ une langue.
    3. Apple TV : « Zappez, tout simplement. » — zapping à la télécommande, image dans l'image, grandes affiches
       (recentrée le 08/11/2026 à la demande de Yoann : l'appairage par QR code est dans la section « Connexion »).
    4. Famille : profils, profil Enfant avec code parental.
-   5. Ulti Premium (surtitre « Ulti Premium ») : **films et séries** (affiches, résumés, reprises), pause du direct, replay, téléchargements, synchro
+   5. Ulti Premium (surtitre « Ulti Premium ») : **lecture des films et séries** (avec reprises), pause du direct, replay, téléchargements, synchro
       iCloud, plusieurs abonnements et profils, thèmes, et le multi-écran comme les autres fonctions (« jusqu'à 4
       directs à la fois (2 sur iPhone) »).
    6. Tarifs (section 6).
@@ -206,8 +209,12 @@ une langue.
    8. Questions fréquentes, 5 questions : « Ulti fournit-il des chaînes ? Non. » ; « Sur quels appareils ? » ;
       « Mes identifiants sont-ils en sécurité ? » ; « Quels abonnements sont compatibles ? » (le seul endroit de
       l'accueil où « lien M3U » et « identifiants Xtream Codes » sont écrits, utile aussi pour Google) ; « Puis-je
-      essayer avant de payer ? » (réponse : le direct est gratuit, Premium s'essaie 7 jours avec les abonnements
-      mensuels et annuels, Solo ou Famille).
+      essayer avant de payer ? » (réponse : le direct, le guide TV et les fiches des films et séries sont gratuits ; la
+      lecture fait partie de Premium, qui s'essaie 7 jours avec les abonnements mensuels et annuels, Solo ou Famille).
+   9. **Dernière section** (24/11/2026, `Fin.astro`) : « Vous avez déjà l'abonnement. Il vous manque l'app. » / « Ulti
+      est gratuit pour le direct et le guide TV, sans publicité et sans compte à créer. Installez-le, collez le message
+      de votre fournisseur, regardez. » / bouton texte « Télécharger Ulti » vers l'App Store du pays (pas de second
+      badge). « Sans publicité » vérifié dans le code de l'app le 24/11/2026 : à retirer si l'app en reçoit un jour.
 2. **Support** : FAQ complète + adresse e-mail de contact : contact@ultitv.com.
 3. **Confidentialité** : reprendre le texte du dépôt de démonstration et de `Notes/confidentialite-app-store.md` (lecture
    seule), dans chaque langue.
@@ -275,6 +282,11 @@ une langue.
   *Agent 327* est en CC BY-ND : affiche montrée telle quelle, jamais modifiée). Pas d'image d'une personne réelle,
   pas d'affiche de film sous droits.
 - Accessibilité : contraste ≥ 4,5:1, navigation au clavier, textes alternatifs traduits, tailles en `rem`.
+- **Typographie des textes** (décidé par Yoann le 24/11/2026) : apostrophes typographiques « ’ » partout dans
+  `src/textes/` et `src/donnees/conditions/`, jamais l'apostrophe droite. « guide TV » ne se coupe jamais en fin de
+  ligne : espace insécable en français, anglais, espagnol, italien et portugais (« guide TV », « TV guide », « guía de
+  TV »…), trait d'union insécable (U+2011) en néerlandais, allemand, suédois, norvégien, danois et finnois
+  (« tv‑gids », « TV‑Guide », « TV‑opas »…). À respecter dans tout nouveau texte.
 
 ## 6. Contenu qui fait foi (au 03/11/2026, après-midi)
 
@@ -290,7 +302,8 @@ une langue.
   Sur les fonctions et la visite : mention discrète « Avec Premium ».
 - Section Tarifs (04/11/2026) : quatre cartes **Gratuit · Premium mensuel · Premium annuel · Premium à vie** (ordre
   naturel de chaque langue, mots de l'app : Monthly, Monatlich…). Textes : Gratuit « Le direct, le guide TV et ses
-  rappels, l'image dans l'image, l'Apple TV par QR code et un profil Enfant. » ; mensuel « Essai gratuit de 7 jours.
+  rappels, les fiches des films et séries (lecture avec Premium), l'image dans l'image, l'Apple TV par QR code et un
+  profil Enfant. » (parenthèse proposée par l'ergonome, validée par Yoann le 24/11/2026) ; mensuel « Essai gratuit de 7 jours.
   Résiliable à tout moment. » ; annuel « Soit {prix} par mois. Essai gratuit de 7 jours. » ; à vie « Un seul paiement,
   sans abonnement. » ; sous les cartes « Les trois formules Premium donnent accès aux mêmes fonctions. ». Un choix sobre **« Pour moi » / « Pour la famille »**
   au-dessus des trois cartes payantes (« Pour moi » par défaut, vrais `<button>` avec `aria-pressed`, sans JavaScript : les
@@ -322,16 +335,21 @@ une langue.
   **Début décembre : repasser `actif` à `false`** (retire les prix réduits du code des pages). À `false`, le site est
   le site normal. Ne pas changer le titre, la description ni l'image de partage pour une offre.
 
-**Gratuit = le direct** (confirmé par Yoann le 03/11 en fin d'après-midi) : direct, guide TV et rappels, Mes contenus
-(catégories de chaînes), regroupement des doublons de chaînes, coller le message du fournisseur, image dans l'image,
-appairage Apple TV par QR code, un profil Enfant avec code parental, thème Noir.
+**Gratuit = le direct, le guide TV et les fiches des films et séries** (décision N33 de Yoann, version 1.1 de l'app ;
+écrite sur le site le 24/11/2026) : direct, guide TV et rappels, **fiches des films et séries (affiches, résumés,
+distribution)**, Mes contenus (catégories de chaînes), regroupement des doublons de chaînes, coller le message du
+fournisseur, image dans l'image, appairage Apple TV par QR code, un profil Enfant avec code parental, thème Noir.
+**Apple TV** : les fiches gratuites n'arrivent qu'avec la 1.1 pour Apple TV (pas encore publiée le 24/11/2026 ; App
+Store : 1.1 sur iPhone et iPad, 1.0 sur Apple TV). Ne jamais écrire « sur tous les appareils » pour ce point ; la FAQ
+(`faq.r5`) et le Support (`support.q.gratuit.r`) disent « sur Apple TV, avec la prochaine mise à jour » : **réserve à
+retirer quand la 1.1 Apple TV est publiée**.
 
-**Premium** : **films et séries** (catalogue, fiches, lecture, reprises, toutes les versions d'un film, affiches et
-résumés TMDB), replay, pause du direct, multi-écran (dans la V1, décidé par Yoann le 03/11/2026 : jusqu'à 4 directs à la fois sur Apple TV, iPad et Mac,
+**Premium** : **lecture des films et séries** (reprises, toutes les versions d'un film ; les fiches sont gratuites,
+voir ci-dessus), replay, pause du direct, multi-écran (dans la V1, décidé par Yoann le 03/11/2026 : jusqu'à 4 directs à la fois sur Apple TV, iPad et Mac,
 2 sur iPhone, dans la limite des connexions de l'abonnement), synchro
 iCloud, profils adultes supplémentaires, plusieurs abonnements, téléchargements, rangées « Pour vous » et
 « Populaires », thèmes Halo et Programme, icônes alternatives. En version gratuite, l'app laisse parcourir les films et
-séries mais la lecture demande Premium : sur le site, on peut dire « parcourez le catalogue, regardez avec Premium »
+séries mais la lecture demande Premium : sur le site, la mention est « Lecture avec Premium » (carte Films et séries, écran Films de la visite),
 sans jamais laisser croire que les films sont gratuits.
 
 **Appareils** (décidé par Yoann le 03/11/2026) : iPhone, iPad, Mac et Apple TV dès la V1. Écrire « iPhone, iPad, Mac
@@ -434,7 +452,10 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 
 - [x] **Black Friday, étape 1 (24/11/2026)** : offre en ligne (`blackFriday.actif: true`) — compte rendu
   `Notes/comptes-rendus/2026-11-24-black-friday.md`. Reste : `actif: false` début décembre ; traductions de l'offre à
-  faire relire ; étape 2 (nouvelle phrase du grand visuel, dernière section, décision N33).
+  faire relire.
+- [x] **Étape 2 (24/11/2026)** : phrase du grand visuel, dernière section, N33, pied de page du sélecteur de pays —
+  même compte rendu. Reste : retirer la réserve Apple TV quand la 1.1 Apple TV sort ; nouvelles traductions à faire
+  relire ; décider d'une seule apostrophe par fichier de textes (les nouveaux textes ont « ’ », les anciens « ' »).
 
 ### Jour de la publication (fait le 11/11/2026 ; gardé pour mémoire)
 1. `site.config.mjs` : **la ligne `disponible: false,` devient `disponible: true,`** ; `indexable: true` si ultitv.com n'est pas encore branché (sinon c'est déjà

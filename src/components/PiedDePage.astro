@@ -1,7 +1,8 @@
 ---
 import config from "../../site.config.mjs";
-import { t } from "../lib/textes";
-import { trouverPays } from "../lib/pays";
+import { t, langues as languesTextes } from "../lib/textes";
+import { trouverPays, pays as tousPays, paysPourNavigateur } from "../lib/pays";
+import code from "../scripts/deviner-pays.js?raw";
 import { lien, lienSousPage, sousPages } from "../lib/liens";
 
 interface Props { langue: string; codePays?: string; langues?: string[] }
@@ -12,13 +13,39 @@ const p = codePays ? trouverPays(codePays) : null;
 // bilingues (choix du pays, 404).
 const codeLiens = p ? p.code : "en";
 const langueLiens = p ? langue : "en";
+// Pages sans pays : un petit script remplace ces liens (et leurs libellés) par ceux du pays déjà choisi, sinon du
+// pays deviné (langue du navigateur + fuseau horaire), sinon de la page internationale de la langue du visiteur.
+// Sans JavaScript, les liens restent ceux de la version internationale en anglais.
+// Les adresses sont fabriquées par le script (« modele ») : verifier-liens ne les voit pas ; chaque sous-page existe
+// pour chaque pays (src/pages/[pays]/[page].astro).
+const libelles = p ? {} : Object.fromEntries(languesTextes().map((l) => [l, {
+  navigation: t(l, "pied.liens.navigation"),
+  ...Object.fromEntries(sousPages.map((page) => [page, t(l, `pied.liens.${page}`)])),
+}]));
+const donnees = { liste: paysPourNavigateur, locales: Object.fromEntries(tousPays.map((x) => [x.code, x.locale])), libelles, modele: lienSousPage("CODE", "support").replace("support/", "PAGE/") };
+const scriptLiens = p ? "" : `${code}
+(function (d) {
+  var nav = document.querySelector("[data-liens-pied]");
+  if (!nav) return;
+  var code = devinerPays(d.liste).code, langue = null;
+  for (var i = 0; i < d.liste.length; i++) if (d.liste[i].code === code) langue = d.liste[i].langue;
+  var mots = d.libelles[langue];
+  if (!mots || code === "en") return;
+  nav.lang = d.locales[code];
+  nav.setAttribute("aria-label", mots.navigation);
+  nav.querySelectorAll("a[data-page]").forEach(function (a) {
+    var page = a.getAttribute("data-page");
+    a.href = d.modele.replace("CODE", code).replace("PAGE", page);
+    a.textContent = mots[page];
+  });
+})(${JSON.stringify(donnees).replace(/</g, "\\u003c")});`;
 ---
 <footer class="pied">
   <div class="contenu">
     <div class="haut">
-      <nav aria-label={t(langueLiens, "pied.liens.navigation")} lang={langueLiens}>
+      <nav aria-label={t(langueLiens, "pied.liens.navigation")} lang={langueLiens} data-liens-pied={p ? undefined : ""}>
         <ul class="liens">
-          {sousPages.map((page) => <li><a href={lienSousPage(codeLiens, page)}>{t(langueLiens, `pied.liens.${page}`)}</a></li>)}
+          {sousPages.map((page) => <li><a href={lienSousPage(codeLiens, page)} data-page={p ? undefined : page}>{t(langueLiens, `pied.liens.${page}`)}</a></li>)}
         </ul>
       </nav>
       {p && (
@@ -28,6 +55,7 @@ const langueLiens = p ? langue : "en";
         </a>
       )}
     </div>
+    {!p && <script is:inline set:html={scriptLiens}></script>}
     {langues.map((l) => (
       <p class="legal" lang={l}>{t(l, "neutralite")} {t(l, "pied.tmdb")} {t(l, "pied.marques")}</p>
     ))}

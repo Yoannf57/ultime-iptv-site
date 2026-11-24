@@ -2,7 +2,7 @@
   "meta": {
     "direction": "ltr",
     "titre": "Ulti — De ultieme IPTV-ervaring",
-    "description": "Ulti, de IPTV-speler voor iPhone, iPad, Mac en Apple TV: live tv, tv-gids, films en series, in een eenvoudige app die meteen klaar is voor gebruik."
+    "description": "Ulti, de IPTV-speler voor iPhone, iPad, Mac en Apple TV: live tv, tv‑gids, films en series, in een eenvoudige app die meteen klaar is voor gebruik."
   },
   "marque": {
     "nom": "Ulti",
@@ -23,7 +23,7 @@
   "heros": {
     "surtitre": "Voor iPhone, iPad, Mac en Apple TV",
     "accroche": "De ultieme\nIPTV-ervaring.",
-    "phrase": "Live tv, tv-gids, films en series: je IPTV-abonnement wordt een intuïtieve tv-app. Openen en kijken.",
+    "phrase": "Je betaalt al voor je IPTV-abonnement. Bekijk het eindelijk in een app die het recht doet: live tv, tv‑gids, films en series. Openen en kijken.",
     "bientot": "Binnenkort in de App Store",
     "telecharger": "Download in de App Store",
     "badge": "Download Ulti in de App Store",
@@ -42,7 +42,7 @@
   "onglets": {
     "accueil": "Home",
     "direct": "Live",
-    "guide": "Tv-gids",
+    "guide": "Tv‑gids",
     "profils": "Profielen",
     "pause": "Live pauzeren",
     "films": "Films en series",
@@ -103,11 +103,12 @@
     "phrase": "Ulti zet de duizenden zenders en films van je abonnement in heldere schermen, als een tv-app die je altijd al had.",
     "directTitre": "Live tv in één oogopslag",
     "directTexte": "Een ring rond elke zender laat zien hoe ver het programma is. Filter op thema en zap van zender naar zender.",
-    "guideTitre": "Een echte tv-gids",
+    "guideTitre": "Een echte tv‑gids",
     "guideTexte": "Vanavond, morgen, de hele week. Stel met één gebaar een herinnering in, of gebruik je eigen XMLTV-gids.",
     "filmsTitre": "Films en series, zonder dubbels",
     "filmsTexte": "Posters en samenvattingen, alle versies van een film samen op één pagina, verder kijken waar je was gebleven.",
-    "premium": "Met Premium"
+    "premium": "Met Premium",
+    "premiumLecture": "Afspelen met Premium"
   },
   "visite": {
     "titre": "Neem een kijkje.",
@@ -137,7 +138,7 @@
       "accueil": "het beginscherm, met de uitgelichte film en de livezenders",
       "direct-bandeau": "een livezender, met de balk van het huidige programma",
       "direct": "de lijst met livezenders",
-      "guide": "de tv-gids",
+      "guide": "de tv‑gids",
       "profils": "de profielkeuze, „Wie kijkt er?”",
       "pause-direct": "gepauzeerde live tv, met de knop terug naar live",
       "films-series": "de catalogus met films en series",
@@ -159,7 +160,7 @@
   "premium": {
     "surtitre": "Ulti Premium",
     "titre": "Nog een stap verder.",
-    "films": "Films en series, met posters, samenvattingen en hervatten",
+    "films": "Films en series afspelen, met hervatten",
     "pause": "Live tv pauzeren en terugspoelen",
     "replay": "Terugkijken van afgelopen dagen",
     "telechargements": "Downloads om offline te kijken",
@@ -180,7 +181,7 @@
     "titre": "Gratis voor de basis.",
     "phrase": "Live tv is gratis. Probeer Ulti Premium 7 dagen gratis.",
     "gratuitTitre": "Gratis",
-    "gratuitTexte": "Live tv, de tv-gids met herinneringen, beeld-in-beeld, Apple TV via QR-code en een Kinderprofiel.",
+    "gratuitTexte": "Live tv, de tv‑gids met herinneringen, de pagina’s van films en series (afspelen met Premium), beeld-in-beeld, Apple TV via QR-code en een Kinderprofiel.",
     "choix": "Kies een Premium-formule",
     "pourMoi": "Voor mij",
     "pourFamille": "Voor het gezin",
@@ -244,7 +245,12 @@
     "q4": "Welke abonnementen werken?",
     "r4": "Abonnementen die je krijgt als M3U-link of als Xtream Codes-inloggegevens, dus verreweg de meeste. Het makkelijkst: plak het bericht van je aanbieder, Ulti herkent het formaat zelf.",
     "q5": "Kan ik het proberen voordat ik betaal?",
-    "r5": "Ja. Live tv is gratis. Premium probeer je 7 dagen gratis met de maand- en jaarabonnementen, Solo of Gezin."
+    "r5": "Ja. Live tv en de tv‑gids zijn gratis, net als de pagina’s van films en series op iPhone, iPad en Mac; op Apple TV worden ze dat met de volgende update. Films en series afspelen hoort bij Premium, dat je 7 dagen gratis probeert met de maand- en jaarabonnementen, Solo of Gezin."
+  },
+  "fin": {
+    "titre": "Het abonnement heb je al.\nAlleen de app ontbreekt nog.",
+    "texte": "Ulti is gratis voor live tv en de tv‑gids, zonder advertenties en zonder account. Installeer de app, plak het bericht van je aanbieder en kijk.",
+    "bouton": "Download Ulti"
   },
   "neutralite": "Ulti levert geen zenders en geen content. Je moet over je eigen bronnen beschikken en het recht hebben om ze te bekijken.",
   "pied": {
@@ -392,7 +398,7 @@
       },
       "formats": {
         "q": "Welke formaten worden ondersteund?",
-        "r": "Xtream Codes-accounts (server, gebruikersnaam en wachtwoord) en M3U-playlistlinks. Voor de tv-gids gebruikt Ulti die van je aanbieder; je kunt ook het adres van een gids in XMLTV-formaat (.xml of .xml.gz) opgeven in Account › Tv-gids.\n\nNiet ondersteund: abonnementen die aan een MAC-adres zijn gekoppeld en Stalker/Ministra-portalen."
+        "r": "Xtream Codes-accounts (server, gebruikersnaam en wachtwoord) en M3U-playlistlinks. Voor de tv‑gids gebruikt Ulti die van je aanbieder; je kunt ook het adres van een gids in XMLTV-formaat (.xml of .xml.gz) opgeven in Account › Tv‑gids.\n\nNiet ondersteund: abonnementen die aan een MAC-adres zijn gekoppeld en Stalker/Ministra-portalen."
       },
       "replay": {
         "q": "Werkt terugkijken met mijn abonnement?",
@@ -428,11 +434,11 @@
       },
       "gratuit": {
         "q": "Wat zit er in de gratis versie?",
-        "r": "Live tv, de tv-gids en herinneringen, Mijn content, het samenvoegen van dubbele zenders, het plakken van het bericht van je aanbieder, beeld-in-beeld, het versturen naar de Apple TV via QR-code, een Kinderprofiel met ouderlijke code en het thema Zwart."
+        "r": "Live tv, de tv‑gids en herinneringen, Mijn content, het samenvoegen van dubbele zenders, het plakken van het bericht van je aanbieder, beeld-in-beeld, het versturen naar de Apple TV via QR-code, een Kinderprofiel met ouderlijke code en het thema Zwart.\n\nDe pagina’s van films en series (posters, samenvattingen, cast) zijn ook gratis op iPhone, iPad en Mac; op Apple TV worden ze dat met de volgende update. Films en series afspelen hoort bij Ulti Premium."
       },
       "inclus": {
         "q": "Wat zit er in Ulti Premium?",
-        "r": "Films en series (catalogus, pagina's met posters en samenvattingen, afspelen, hervatten, alle versies van een film), multiscreen, terugkijken, live tv pauzeren, downloads op iPhone en iPad, iCloud-synchronisatie, extra profielen voor volwassenen en extra abonnementen, de rijen „Voor jou” en „Populair”, de thema's Halo en Programma en alternatieve app-symbolen.\n\nIn de gratis versie kun je door de films en series bladeren; om ze af te spelen heb je Premium nodig."
+        "r": "Films en series afspelen (met hervatten en alle versies van een film), multiscreen, terugkijken, live tv pauzeren, downloads op iPhone en iPad, iCloud-synchronisatie, extra profielen voor volwassenen en extra abonnementen, de rijen „Voor jou” en „Populair”, de thema’s Halo en Programma en alternatieve app-symbolen.\n\nIn de gratis versie kun je door de films en series bladeren en hun pagina’s openen; om ze af te spelen heb je Premium nodig."
       },
       "soloFamille": {
         "q": "Solo of Gezin: wat is het verschil?",
@@ -505,7 +511,7 @@
       },
       "contacts": {
         "titre": "Waarmee de app contact maakt",
-        "texte": "Ulti maakt alleen contact met:\n\n• je IPTV-aanbieder, om je zenders, films, series en tv-gids af te spelen. Dat is de dienst die jij hebt gekozen: het is niet de ontwikkelaar en geen partner van de ontwikkelaar;\n• de relay van Ulti (api.ultitv.com, gehost door Cloudflare), om posters en samenvattingen van The Movie Database (TMDB) te tonen. Die stuurt het verzoek alleen door naar TMDB en bewaart niets: geen logboek. De app stuurt alleen de titel en het jaar van de getoonde werken, plus de taal en regio van het apparaat: geen inloggegevens, en niets van wat je in het zoekveld typt. Afbeeldingen worden rechtstreeks van TMDB geladen (image.tmdb.org);\n• Apple, voor Premium-aankopen en, als je die inschakelt, voor iCloud-synchronisatie."
+        "texte": "Ulti maakt alleen contact met:\n\n• je IPTV-aanbieder, om je zenders, films, series en tv‑gids af te spelen. Dat is de dienst die jij hebt gekozen: het is niet de ontwikkelaar en geen partner van de ontwikkelaar;\n• de relay van Ulti (api.ultitv.com, gehost door Cloudflare), om posters en samenvattingen van The Movie Database (TMDB) te tonen. Die stuurt het verzoek alleen door naar TMDB en bewaart niets: geen logboek. De app stuurt alleen de titel en het jaar van de getoonde werken, plus de taal en regio van het apparaat: geen inloggegevens, en niets van wat je in het zoekveld typt. Afbeeldingen worden rechtstreeks van TMDB geladen (image.tmdb.org);\n• Apple, voor Premium-aankopen en, als je die inschakelt, voor iCloud-synchronisatie."
       },
       "ip": {
         "titre": "Je IP-adres",

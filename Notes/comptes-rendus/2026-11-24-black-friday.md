@@ -1,25 +1,34 @@
-# 24/11/2026 — Black Friday, étape 1 : l'offre
+# 24/11/2026 — Black Friday (étape 1) et changements durables (étape 2)
 
-Premium à vie est à prix réduit dans l'App Store depuis le 24/11 au soir, jusqu'au lundi 30/11/2026 inclus. Le site
-affichait encore les prix normaux. Cette étape ajoute l'offre sur les pages d'accueil, avec un retour automatique au
-site normal le 01/12. Branche `black-friday`. L'étape 2 (nouvelle phrase du grand visuel, dernière section, décision
-N33) n'est pas faite : le message de Yoann était coupé, il la recolle après la mise en ligne.
+Premium à vie est à prix réduit dans l'App Store depuis le 24/11 au soir, jusqu'au lundi 30/11/2026 inclus.
+**Étape 1** : l'offre sur les pages d'accueil, avec retour automatique au site normal le 01/12 (en ligne le 24/11 au
+soir, après « OK en ligne »). **Étape 2** : ce qui change pour de bon (phrase du grand visuel, dernière section,
+fiches des films et séries gratuites, pied de page du sélecteur de pays). Branche `black-friday`.
 
-## Pour Yoann, en 8 lignes
+## Pour Yoann, en 10 lignes
 
-1. Tes 22 prix normaux « à vie » sont identiques à `src/pays.json`. Aucun écart.
-2. « Le prix d'un an, payé une fois » est vrai dans les 11 monnaies, Solo et Famille. Le site le revérifie à chaque
-   construction et retire l'argument pour un pays où ce serait faux.
-3. Un seul réglage : `blackFriday` dans `site.config.mjs` (`actif`, `fin`, prix réduits par monnaie,
-   `aussiGooglePlay: false`).
-4. Avec `actif: false`, les 191 fichiers du site sont identiques à ceux de `main` (seule la feuille de styles
-   contient quelques règles en plus, inutilisées).
-5. Avec `actif: true`, l'offre s'affiche jusqu'au 30/11 inclus (date du visiteur) et disparaît le 01/12, sans rien
-   republier. Sans JavaScript : site normal.
-6. Pages internationales (`/en/`, `/fr/`…) : offre sans montant, sans pourcentage et sans « le prix d'un an »
-   (ta décision du 24/11).
-7. Lighthouse `/fr-fr/` avec l'offre : 100 partout, mobile et ordinateur.
-8. À faire par toi : voir « Ce que Yoann doit vérifier ». Et début décembre, repasser `actif` à `false`.
+1. Étape 1 en ligne : tes 22 prix normaux « à vie » étaient identiques à `src/pays.json`, et « le prix d'un an, payé
+   une fois » est vrai dans les 11 monnaies.
+2. Un seul réglage : `blackFriday` dans `site.config.mjs`. L'offre disparaît toute seule le 01/12 (date du visiteur).
+   **Début décembre, repasser `actif` à `false`** pour retirer les prix réduits du code des pages.
+3. Étape 2, a : la nouvelle phrase du grand visuel est en place dans les 12 langues (tes mots en français et en
+   anglais).
+4. Étape 2, b : dernière section « Vous avez déjà l'abonnement. Il vous manque l'app. », bouton texte « Télécharger
+   Ulti ». **« Sans publicité » est vrai** : aucune régie publicitaire dans le code de l'app, suivi déclaré à `false`.
+5. Étape 2, c : fiches des films et séries gratuites (N33) sur la carte Gratuit, la section Premium, la question
+   « Puis-je essayer avant de payer ? » et le Support. La mention devient « Lecture avec Premium ».
+6. **Apple TV** : l'App Store annonce la 1.1 sur iPhone et iPad, encore la 1.0 sur Apple TV. La FAQ et le Support
+   disent donc « sur Apple TV, avec la prochaine mise à jour ». **À retirer quand la 1.1 Apple TV sort.**
+7. Étape 2, d : sur « Choisissez votre pays », les liens du pied de page suivent maintenant le visiteur (un Français
+   arrive sur `/fr-fr/support/`, un Sénégalais sur `/fr/support/`). Sans JavaScript : `/en/` comme avant.
+8. Vérifications : textes, construction, liens, 37 pages à 320 et 393 px, Lighthouse à 100 partout.
+9. Agents : feu vert de `ulti-gardien-stores` et « bon pour commit » de `ulti-relecteur` aux deux étapes ; avis
+   d'`ulti-ergonome` appliqué.
+10. Tes trois réglages du second « OK en ligne » sont faits : « guide TV » insécable dans les 12 langues, carte
+    Gratuit « (lecture avec Premium) », apostrophes typographiques sur tout le site (commit à part). Reste pour toi :
+    les traductions à faire relire (liste en bas).
+
+# Étape 1 : l'offre
 
 ## Ce qui a changé
 
@@ -88,8 +97,100 @@ Captures (fr-fr, en-gb, en-us, de-de, `/en/` ; 1440 et 393 px ; 25/11, 30/11, 01
 
 ## Reste
 
-- « OK en ligne » de Yoann, puis : `actif: true`, fusion dans `main`, push, contrôle de la page en ligne.
+- Fait le 24/11 au soir, après « OK en ligne » : `actif: true`, fusion dans `main`, push. Contrôle en ligne : fr-fr,
+  en-gb, en-us et `/en/` montrent l'offre ; `?date=2026-12-01` montre le site normal.
 - Début décembre : `actif: false` (retire les prix réduits du code des pages).
 - Défaut déjà présent avant l'offre, vu par l'ergonome : dans la FAQ sur téléphone, la croix d'une question ouverte
   sur deux lignes glisse d'environ 10 px à droite.
-- Étape 2.
+
+# Étape 2 : ce qui change pour de bon
+
+## Ce qui a changé
+
+- **a. Grand visuel** : `heros.phrase` dans les 12 langues. Titre, description et balises des pages inchangés.
+- **b. Dernière section** : `src/components/accueil/Fin.astro` (clés `fin.*`), après les questions. Une phrase par
+  ligne dans le titre. Bouton texte vers l'App Store du pays, pas de second badge.
+- **c. N33** : `tarifs.gratuitTexte`, `premium.films`, `faq.r5`, `support.q.gratuit.r`, `support.q.inclus.r`, et la
+  nouvelle clé `fonctions.premiumLecture` (« Lecture avec Premium ») sur la carte Films et séries et sur l'écran Films
+  de la visite. Mots repris de l'aide de l'app (« Que comprend la version gratuite ? »).
+- **d. Pied de page des pages sans pays** (`src/components/PiedDePage.astro`) : un script adapte les liens et leurs
+  libellés au pays déjà choisi, sinon au pays deviné, sinon à la page internationale de la langue. Les pages d'un pays
+  ne changent pas.
+- `CLAUDE.md` : sections 3, 4 et 6, et avancement.
+
+## Vérifié dans l'app (lecture seule)
+
+- Aucune régie publicitaire dans le code ; `NSPrivacyTracking` à `false` dans les trois fichiers de confidentialité.
+- N33 : « fiches TMDB gratuites depuis N33 » (CLAUDE.md de l'app), aide de l'app : « …et les fiches des films et des
+  séries (affiches, résumés, distribution). La lecture des films et des séries, le replay et la pause du direct font
+  partie d'Ulti Premium. »
+- App Store (API publique, 24/11) : version 1.1 du 13/11 pour iPhone et iPad ; Apple TV en 1.0.
+
+## Vérifications
+
+| Contrôle | Résultat |
+|---|---|
+| `npm run verifier-textes` | ✓ 12 langues, 421 clés chacune |
+| `npm run build`, `npm run verifier-liens` | ✓ 11 256 liens internes valides |
+| Rien ne dépasse à 320 et 393 px, avec et sans l'offre | ✓ 37 pages d'accueil |
+| Bouton de la dernière section visible | ✓ 37 pages |
+| Pied de page de `pays/` : fr-FR Paris → `/fr-fr/`, fr-SN Dakar → `/fr/`, de-DE → `/de-de/`, en-US → `/en-us/`, ja-JP → `/en/`, choix enregistré fr-be → `/fr-be/`, sans JavaScript → `/en/` | ✓ liens ouverts un par un |
+| Contrôles de l'offre (étape 1) relancés | ✓ |
+| Lighthouse `/fr-fr/` | mobile et ordinateur : 100 partout, LCP 1,3 s et 0,3 s, CLS 0 |
+
+Captures : même dossier, fichiers `etape2-*` (fr-fr, en-gb, de-de, `/en/` à 1440 et 393 px, à une date sans l'offre ;
+Support ; pied de page du sélecteur de pays).
+
+## Verdicts des agents
+
+- **ulti-redacteur** : français et anglais = tes phrases, avec la typographie. « Fiches » est rendu par « pages »
+  en nl, de, sv, nb, da, fi et pt-br, « distribution » par un mot nouveau dans chaque langue : à comparer avec l'app
+  et à faire relire (danois et norvégien en priorité).
+- **ulti-gardien-stores** : **feu vert**, aucun point bloquant. Appliqué : la réserve Apple TV dans `faq.r5`. À
+  retenir : « prochaine mise à jour » est une promesse datée ; « sans publicité » est un engagement durable, qui
+  vaudra aussi pour Android.
+- **ulti-ergonome** : rien de bloquant. Appliqué : « Regardez‑le » ne se coupe plus, une phrase par ligne dans le
+  titre de la dernière section, réserve Apple TV. Pas de doublon avec la section `#offre`. Retenu ensuite par Yoann :
+  « (lecture avec Premium) » à la place de « (affiches, résumés, distribution) » sur la carte Gratuit. Non retenu :
+  « acteurs » plutôt que « distribution » ; « Profitez-en » plutôt que « Regardez-le ».
+- **ulti-relecteur** : **bon pour commit**, aucun point bloquant. Appliqué : `CLAUDE.md` mis à jour, protection du
+  script du pied de page contre un texte contenant `<`, ménage des imports.
+
+## Réglages demandés par Yoann avec le second « OK en ligne »
+
+1. **« guide TV » ne se coupe plus en fin de ligne**, partout sur le site : espace insécable en français, anglais,
+   espagnol, italien et portugais (12 endroits par langue) ; trait d'union insécable (U+2011) en néerlandais,
+   allemand, suédois, norvégien, danois et finnois (« tv‑gids », « TV‑Guide », « TV‑opas »…). « XMLTV-gids » et ses
+   équivalents ne sont pas touchés.
+2. **Carte Gratuit** : « les fiches des films et séries (lecture avec Premium) » dans les 12 langues (mots de la
+   mention `fonctions.premiumLecture` de chaque langue).
+3. **Apostrophes typographiques** sur tout le site (`src/textes/`, `src/donnees/conditions/`), dans un commit à part.
+
+Captures du haut de page et de la carte Gratuit refaites (`etape2-*-1-haut.jpg`, `etape2-*-4-tarifs.jpg`).
+
+## Traductions à faire relire par une personne de langue maternelle
+
+Dans cet ordre : **danois, norvégien**, puis finnois, allemand, néerlandais, suédois, espagnol, italien, portugais du
+Brésil et du Portugal.
+
+- **« Fiches » rendu par « pages »** en néerlandais (pagina’s), allemand (Seiten), suédois (sidor), norvégien (sider),
+  danois (sider), finnois (sivut) et portugais du Brésil (páginas) ; « fiches » en espagnol (fichas), italien
+  (schede) et portugais (fichas). À comparer avec le mot de l'app dans chaque langue.
+- **Danois** : « og det er siderne for film og serier også på iPhone, iPad og Mac » (`faq.r5`) est lourd ; « yder det
+  retfærdighed » (phrase du grand visuel) est soutenu ; « Familieløsningen », « sat ned i pris » (offre).
+- **Norvégien** : « yter det rettferdighet » (grand visuel) ; « og det er også sidene for… » (`faq.r5`) ;
+  « Alternativet Familie » (offre) ; `Intl` écrit « 30. november » et « mandag 30 november » sur la même page.
+- **Finnois** : « Premium pysyvä » ne se décline pas bien ; « Perhe-vaihtoehto », « alennuksessa », « kumpi valita? » ;
+  « liitä » ici, « Sijoita » dans la section Connexion (déjà noté).
+- **Allemand** : « schau los » est familier ; `faq.r5` en trois phrases ; « Variante Familie » ; « Ulti herunterladen »
+  alors que le badge d'Apple dit « Laden ».
+- **Néerlandais, suédois, espagnol, portugais** : impératifs secs en fin de phrase (« en kijk », « och titta », « y
+  mira », « e veja ») ; « lager geprijsd » (nl) ; « lo serán » (es, futur) ; « Opção Família » (pt).
+- **Italien** : « Offerta Famiglia » à côté de « Offerta Black Friday ».
+- **« Distribution »** n'apparaît plus sur l'accueil ; il reste dans le Support (cast, Besetzung, rollista,
+  rollebesetning, medvirkende, näyttelijät, reparto, elenco).
+
+## Reste
+
+- Retirer la réserve Apple TV (`faq.r5`, `support.q.gratuit.r`) quand la 1.1 Apple TV est publiée.
+- Début décembre : `blackFriday.actif` à `false`.

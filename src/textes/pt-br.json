@@ -2,7 +2,7 @@
   "meta": {
     "direction": "ltr",
     "titre": "Ulti — A experiência IPTV definitiva",
-    "description": "Ulti, o player IPTV para iPhone, iPad, Mac e Apple TV: TV ao vivo, guia de TV, filmes e séries em um app simples e pronto para usar."
+    "description": "Ulti, o player IPTV para iPhone, iPad, Mac e Apple TV: TV ao vivo, guia de TV, filmes e séries em um app simples e pronto para usar."
   },
   "marque": {
     "nom": "Ulti",
@@ -23,7 +23,7 @@
   "heros": {
     "surtitre": "Para iPhone, iPad, Mac e Apple TV",
     "accroche": "A experiência\nIPTV definitiva.",
-    "phrase": "TV ao vivo, guia de TV, filmes e séries: sua assinatura IPTV vira um app de TV intuitivo. É só abrir e assistir.",
+    "phrase": "Você já paga pela sua assinatura IPTV. Assista enfim em um app à altura dela: TV ao vivo, guia de TV, filmes e séries. É só abrir e assistir.",
     "bientot": "Em breve na App Store",
     "telecharger": "Baixar na App Store",
     "badge": "Baixar o Ulti na App Store",
@@ -42,7 +42,7 @@
   "onglets": {
     "accueil": "Início",
     "direct": "Ao vivo",
-    "guide": "Guia de TV",
+    "guide": "Guia de TV",
     "profils": "Perfis",
     "pause": "Pausar ao vivo",
     "films": "Filmes e séries",
@@ -103,11 +103,12 @@
     "phrase": "O Ulti organiza os milhares de canais e filmes da sua assinatura em telas claras, como um app de TV que você sempre teve.",
     "directTitre": "A TV ao vivo, num piscar de olhos",
     "directTexte": "Um anel em volta de cada canal mostra em que ponto está o programa. Filtre por tema e mude de um canal para o outro.",
-    "guideTitre": "Um guia de TV de verdade",
+    "guideTitre": "Um guia de TV de verdade",
     "guideTexte": "Hoje à noite, amanhã, a semana toda. Crie um lembrete com um gesto ou use seu próprio guia XMLTV.",
     "filmsTitre": "Filmes e séries, sem duplicatas",
     "filmsTexte": "Pôsteres e sinopses, todas as versões de um filme reunidas em uma só página, e continue de onde parou.",
-    "premium": "Com Premium"
+    "premium": "Com Premium",
+    "premiumLecture": "Reprodução com Premium"
   },
   "visite": {
     "titre": "Faça o tour.",
@@ -137,7 +138,7 @@
       "accueil": "a tela inicial, com o filme em destaque e os canais ao vivo",
       "direct-bandeau": "um canal ao vivo, com a barra do programa no ar",
       "direct": "a lista de canais ao vivo",
-      "guide": "o guia de TV",
+      "guide": "o guia de TV",
       "profils": "a escolha do perfil, “Quem está assistindo?”",
       "pause-direct": "a TV ao vivo pausada, com o botão para voltar ao vivo",
       "films-series": "o catálogo de filmes e séries",
@@ -159,7 +160,7 @@
   "premium": {
     "surtitre": "Ulti Premium",
     "titre": "Ainda mais.",
-    "films": "Filmes e séries, com pôsteres, sinopses e retomada",
+    "films": "Reprodução de filmes e séries, com retomada",
     "pause": "Pausar e voltar a TV ao vivo",
     "replay": "Programas dos dias anteriores",
     "telechargements": "Downloads para assistir offline",
@@ -180,7 +181,7 @@
     "titre": "Grátis para o essencial.",
     "phrase": "A TV ao vivo é grátis. Teste o Ulti Premium de graça por 7 dias.",
     "gratuitTitre": "Grátis",
-    "gratuitTexte": "A TV ao vivo, o guia de TV e seus lembretes, o Picture in Picture, a Apple TV por QR code e um perfil Infantil.",
+    "gratuitTexte": "A TV ao vivo, o guia de TV e seus lembretes, as páginas dos filmes e séries (reprodução com Premium), o Picture in Picture, a Apple TV por QR code e um perfil Infantil.",
     "choix": "Escolher um plano Premium",
     "pourMoi": "Para mim",
     "pourFamille": "Para a família",
@@ -244,7 +245,12 @@
     "q4": "Quais assinaturas são compatíveis?",
     "r4": "As assinaturas fornecidas como link M3U ou como dados de acesso Xtream Codes, ou seja, a grande maioria. O mais fácil: cole a mensagem do seu provedor e o Ulti reconhece o formato sozinho.",
     "q5": "Posso testar antes de pagar?",
-    "r5": "Sim. A TV ao vivo é grátis. O Premium pode ser testado de graça por 7 dias com as assinaturas mensais e anuais, Individual ou Família."
+    "r5": "Sim. A TV ao vivo e o guia de TV são grátis, assim como as páginas dos filmes e séries no iPhone, iPad e Mac; no Apple TV, passam a ser com a próxima atualização. A reprodução de filmes e séries faz parte do Premium, que pode ser testado de graça por 7 dias com as assinaturas mensais e anuais, Individual ou Família."
+  },
+  "fin": {
+    "titre": "Você já tem a assinatura.\nSó falta o app.",
+    "texte": "O Ulti é grátis para a TV ao vivo e o guia de TV, sem publicidade e sem conta para criar. Instale, cole a mensagem do seu provedor e assista.",
+    "bouton": "Baixar o Ulti"
   },
   "neutralite": "O Ulti não fornece nenhum canal nem nenhum conteúdo. Você precisa ter suas próprias fontes e o direito de assisti-las.",
   "pied": {
@@ -392,7 +398,7 @@
       },
       "formats": {
         "q": "Quais formatos são compatíveis?",
-        "r": "Contas Xtream Codes (servidor, nome de usuário e senha) e links de playlist M3U. Para o guia de TV, o Ulti usa o do seu provedor; você também pode informar o endereço de um guia no formato XMLTV (.xml ou .xml.gz) em Conta › Guia de TV.\n\nNão são compatíveis: assinaturas vinculadas a um endereço MAC e portais Stalker/Ministra."
+        "r": "Contas Xtream Codes (servidor, nome de usuário e senha) e links de playlist M3U. Para o guia de TV, o Ulti usa o do seu provedor; você também pode informar o endereço de um guia no formato XMLTV (.xml ou .xml.gz) em Conta › Guia de TV.\n\nNão são compatíveis: assinaturas vinculadas a um endereço MAC e portais Stalker/Ministra."
       },
       "replay": {
         "q": "O replay funciona com minha assinatura?",
@@ -428,11 +434,11 @@
       },
       "gratuit": {
         "q": "O que a versão gratuita inclui?",
-        "r": "A TV ao vivo, o guia de TV e os lembretes, Meus conteúdos, o agrupamento de canais duplicados, colar a mensagem do provedor, Picture in Picture, o envio para o Apple TV por código QR, um perfil Infantil com código parental e o tema Preto."
+        "r": "A TV ao vivo, o guia de TV e os lembretes, Meus conteúdos, o agrupamento de canais duplicados, colar a mensagem do provedor, Picture in Picture, o envio para o Apple TV por código QR, um perfil Infantil com código parental e o tema Preto.\n\nAs páginas dos filmes e séries (pôsteres, sinopses, elenco) também são grátis no iPhone, iPad e Mac; no Apple TV, passam a ser com a próxima atualização. A reprodução de filmes e séries faz parte do Ulti Premium."
       },
       "inclus": {
         "q": "O que o Ulti Premium inclui?",
-        "r": "Filmes e séries (catálogo, páginas com pôsteres e sinopses, reprodução, retomada, todas as versões de um filme), multitela, replay, pausar a TV ao vivo, downloads no iPhone e iPad, sincronização com o iCloud, perfis adultos e assinaturas adicionais, as fileiras “Para você” e “Populares”, os temas Halo e Programação e ícones alternativos.\n\nNa versão gratuita, você pode explorar os filmes e séries; para assisti-los, é preciso ter o Premium."
+        "r": "A reprodução de filmes e séries (com a retomada e todas as versões de um filme), multitela, replay, pausar a TV ao vivo, downloads no iPhone e iPad, sincronização com o iCloud, perfis adultos e assinaturas adicionais, as fileiras “Para você” e “Populares”, os temas Halo e Programação e ícones alternativos.\n\nNa versão gratuita, você pode explorar os filmes e séries e abrir suas páginas; para assisti-los, é preciso ter o Premium."
       },
       "soloFamille": {
         "q": "Individual ou Família: qual a diferença?",
@@ -505,7 +511,7 @@
       },
       "contacts": {
         "titre": "Com quem o app se conecta",
-        "texte": "O Ulti só se conecta com:\n\n• seu provedor IPTV, para reproduzir seus canais, filmes, séries e o guia de TV. É o serviço que você escolheu: não é o desenvolvedor nem um parceiro do desenvolvedor;\n• o relay do Ulti (api.ultitv.com, hospedado pela Cloudflare), para mostrar pôsteres e sinopses do The Movie Database (TMDB). Ele só repassa o pedido ao TMDB e não guarda nada: nenhum registro. O app envia só o título e o ano das obras exibidas, além do idioma e da região do dispositivo: nenhum dado de acesso, e nada do que você digita na busca. As imagens são carregadas diretamente do TMDB (image.tmdb.org);\n• Apple, para as compras do Premium e, se você ativar, para a sincronização com o iCloud."
+        "texte": "O Ulti só se conecta com:\n\n• seu provedor IPTV, para reproduzir seus canais, filmes, séries e o guia de TV. É o serviço que você escolheu: não é o desenvolvedor nem um parceiro do desenvolvedor;\n• o relay do Ulti (api.ultitv.com, hospedado pela Cloudflare), para mostrar pôsteres e sinopses do The Movie Database (TMDB). Ele só repassa o pedido ao TMDB e não guarda nada: nenhum registro. O app envia só o título e o ano das obras exibidas, além do idioma e da região do dispositivo: nenhum dado de acesso, e nada do que você digita na busca. As imagens são carregadas diretamente do TMDB (image.tmdb.org);\n• Apple, para as compras do Premium e, se você ativar, para a sincronização com o iCloud."
       },
       "ip": {
         "titre": "Seu endereço IP",
