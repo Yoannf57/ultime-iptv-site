@@ -2,7 +2,7 @@
   "meta": {
     "direction": "ltr",
     "titre": "Ulti — La experiencia IPTV definitiva",
-    "description": "Ulti, el reproductor IPTV para iPhone, iPad, Mac y Apple TV: TV en directo, guía de TV, películas y series en una app sencilla y lista para usar."
+    "description": "Ulti, el reproductor IPTV para iPhone, iPad, Mac y Apple TV: TV en directo, guía de TV, películas y series en una app sencilla y lista para usar."
   },
   "marque": {
     "nom": "Ulti",
@@ -23,7 +23,7 @@
   "heros": {
     "surtitre": "Para iPhone, iPad, Mac y Apple TV",
     "accroche": "La experiencia\nIPTV definitiva.",
-    "phrase": "TV en directo, guía de TV, películas y series: tu suscripción IPTV se convierte en una app de televisión intuitiva. La abres y a disfrutar.",
+    "phrase": "Ya pagas tu suscripción IPTV. Mírala por fin en una app a su altura: TV en directo, guía de TV, películas y series. La abres y ya estás viendo.",
     "bientot": "Muy pronto en el App Store",
     "telecharger": "Descargar en el App Store",
     "badge": "Descargar Ulti en el App Store",
@@ -42,7 +42,7 @@
   "onglets": {
     "accueil": "Inicio",
     "direct": "Directo",
-    "guide": "Guía de TV",
+    "guide": "Guía de TV",
     "profils": "Perfiles",
     "pause": "Pausar el directo",
     "films": "Películas y series",
@@ -103,11 +103,12 @@
     "phrase": "Ulti ordena los miles de canales y películas de tu suscripción en pantallas claras, como una app de televisión que siempre hubieras tenido.",
     "directTitre": "El directo, de un vistazo",
     "directTexte": "Un anillo alrededor de cada canal muestra cuánto ha avanzado el programa. Filtra por tema y haz zapping de un canal a otro.",
-    "guideTitre": "Una auténtica guía de TV",
+    "guideTitre": "Una auténtica guía de TV",
     "guideTexte": "Esta noche, mañana, toda la semana. Crea un recordatorio con un gesto o usa tu propia guía XMLTV.",
     "filmsTitre": "Películas y series, sin duplicados",
     "filmsTexte": "Carteles y sinopsis, todas las versiones de una película reunidas en una sola ficha, y sigue donde lo dejaste.",
-    "premium": "Con Premium"
+    "premium": "Con Premium",
+    "premiumLecture": "Reproducción con Premium"
   },
   "visite": {
     "titre": "Haz el recorrido.",
@@ -137,7 +138,7 @@
       "accueil": "la pantalla de inicio, con la película destacada y los canales en directo",
       "direct-bandeau": "un canal en directo, con la barra del programa actual",
       "direct": "la lista de canales en directo",
-      "guide": "la guía de TV",
+      "guide": "la guía de TV",
       "profils": "la elección de perfil, «¿Quién está viendo?»",
       "pause-direct": "el directo en pausa, con el botón para volver al directo",
       "films-series": "el catálogo de películas y series",
@@ -159,7 +160,7 @@
   "premium": {
     "surtitre": "Ulti Premium",
     "titre": "Aún más.",
-    "films": "Películas y series, con carteles, sinopsis y reanudación",
+    "films": "Reproducción de películas y series, con reanudación",
     "pause": "Pausa y retroceso en el directo",
     "replay": "Programas de los días anteriores a la carta",
     "telechargements": "Descargas para ver sin conexión",
@@ -180,7 +181,7 @@
     "titre": "Gratis para lo esencial.",
     "phrase": "El directo es gratis. Prueba Ulti Premium gratis durante 7 días.",
     "gratuitTitre": "Gratis",
-    "gratuitTexte": "El directo, la guía de TV y sus recordatorios, la imagen en imagen, el Apple TV con código QR y un perfil Infantil.",
+    "gratuitTexte": "El directo, la guía de TV y sus recordatorios, las fichas de películas y series (reproducción con Premium), la imagen en imagen, el Apple TV con código QR y un perfil Infantil.",
     "choix": "Elegir una modalidad Premium",
     "pourMoi": "Para mí",
     "pourFamille": "Para la familia",
@@ -244,7 +245,12 @@
     "q4": "¿Qué suscripciones son compatibles?",
     "r4": "Las suscripciones que se entregan como enlace M3U o como datos de acceso Xtream Codes, es decir, la gran mayoría. Lo más fácil: pega el mensaje de tu proveedor y Ulti reconoce el formato solo.",
     "q5": "¿Puedo probar antes de pagar?",
-    "r5": "Sí. El directo es gratis. Premium se prueba gratis durante 7 días con las suscripciones mensuales y anuales, Individual o Familiar."
+    "r5": "Sí. El directo y la guía de TV son gratis, igual que las fichas de películas y series en iPhone, iPad y Mac; en el Apple TV lo serán con la próxima actualización. La reproducción de películas y series forma parte de Premium, que se prueba gratis durante 7 días con las suscripciones mensuales y anuales, Individual o Familiar."
+  },
+  "fin": {
+    "titre": "Ya tienes la suscripción.\nSolo te falta la app.",
+    "texte": "Ulti es gratis para el directo y la guía de TV, sin publicidad y sin cuenta que crear. Instálalo, pega el mensaje de tu proveedor y mira.",
+    "bouton": "Descargar Ulti"
   },
   "neutralite": "Ulti no ofrece ningún canal ni ningún contenido. Debes tener tus propias fuentes y el derecho a verlas.",
   "pied": {
@@ -392,7 +398,7 @@
       },
       "formats": {
         "q": "¿Qué formatos son compatibles?",
-        "r": "Las cuentas Xtream Codes (servidor, nombre de usuario y contraseña) y los enlaces de lista M3U. Para la guía de TV, Ulti usa la de tu proveedor; también puedes indicar la dirección de una guía en formato XMLTV (.xml o .xml.gz) en Cuenta › Guía de TV.\n\nNo son compatibles: las suscripciones vinculadas a una dirección MAC y los portales Stalker/Ministra."
+        "r": "Las cuentas Xtream Codes (servidor, nombre de usuario y contraseña) y los enlaces de lista M3U. Para la guía de TV, Ulti usa la de tu proveedor; también puedes indicar la dirección de una guía en formato XMLTV (.xml o .xml.gz) en Cuenta › Guía de TV.\n\nNo son compatibles: las suscripciones vinculadas a una dirección MAC y los portales Stalker/Ministra."
       },
       "replay": {
         "q": "¿Funciona la TV a la carta con mi suscripción?",
@@ -428,11 +434,11 @@
       },
       "gratuit": {
         "q": "¿Qué incluye la versión gratuita?",
-        "r": "El directo, la guía de TV y los recordatorios, Mis contenidos, la agrupación de canales duplicados, pegar el mensaje del proveedor, imagen dentro de imagen, el envío al Apple TV con código QR, un perfil Infantil con código parental y el tema Negro."
+        "r": "El directo, la guía de TV y los recordatorios, Mis contenidos, la agrupación de canales duplicados, pegar el mensaje del proveedor, imagen dentro de imagen, el envío al Apple TV con código QR, un perfil Infantil con código parental y el tema Negro.\n\nLas fichas de películas y series (carteles, sinopsis, reparto) también son gratis en iPhone, iPad y Mac; en el Apple TV lo serán con la próxima actualización. La reproducción de películas y series forma parte de Ulti Premium."
       },
       "inclus": {
         "q": "¿Qué incluye Ulti Premium?",
-        "r": "Las películas y series (catálogo, fichas con carteles y sinopsis, reproducción, reanudación, todas las versiones de una película), la multipantalla, la TV a la carta, pausar el directo, las descargas en iPhone y iPad, la sincronización con iCloud, los perfiles adultos y las suscripciones adicionales, las filas «Para ti» y «Populares», los temas Halo y Programa y los iconos alternativos.\n\nEn la versión gratuita puedes explorar las películas y series; para reproducirlas necesitas Premium."
+        "r": "La reproducción de películas y series (con la reanudación y todas las versiones de una película), la multipantalla, la TV a la carta, pausar el directo, las descargas en iPhone y iPad, la sincronización con iCloud, los perfiles adultos y las suscripciones adicionales, las filas «Para ti» y «Populares», los temas Halo y Programa y los iconos alternativos.\n\nEn la versión gratuita puedes explorar las películas y series y abrir sus fichas; para reproducirlas necesitas Premium."
       },
       "soloFamille": {
         "q": "Individual o Familiar: ¿qué diferencia hay?",
@@ -505,7 +511,7 @@
       },
       "contacts": {
         "titre": "Con quién se conecta la app",
-        "texte": "Ulti solo se conecta con:\n\n• tu proveedor IPTV, para reproducir tus canales, películas, series y guía de TV. Es el servicio que tú has elegido: no es el desarrollador ni un socio del desarrollador;\n• el relé de Ulti (api.ultitv.com, alojado en Cloudflare), para mostrar carteles y sinopsis de The Movie Database (TMDB). Solo transmite la solicitud a TMDB y no guarda nada: ningún registro. La app solo envía el título y el año de las obras mostradas, además del idioma y la región del dispositivo: ningún dato de acceso, y nada de lo que escribes en la búsqueda. Las imágenes se cargan directamente desde TMDB (image.tmdb.org);\n• Apple, para las compras Premium y, si la activas, para la sincronización con iCloud."
+        "texte": "Ulti solo se conecta con:\n\n• tu proveedor IPTV, para reproducir tus canales, películas, series y guía de TV. Es el servicio que tú has elegido: no es el desarrollador ni un socio del desarrollador;\n• el relé de Ulti (api.ultitv.com, alojado en Cloudflare), para mostrar carteles y sinopsis de The Movie Database (TMDB). Solo transmite la solicitud a TMDB y no guarda nada: ningún registro. La app solo envía el título y el año de las obras mostradas, además del idioma y la región del dispositivo: ningún dato de acceso, y nada de lo que escribes en la búsqueda. Las imágenes se cargan directamente desde TMDB (image.tmdb.org);\n• Apple, para las compras Premium y, si la activas, para la sincronización con iCloud."
       },
       "ip": {
         "titre": "Tu dirección IP",

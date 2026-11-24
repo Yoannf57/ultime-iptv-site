@@ -16,7 +16,7 @@
     },
     {
       "titre": "4. In-app purchases",
-      "texte": "Ulti Premium plans (subscriptions and lifetime access, Solo or Family) are sold through the App Store and governed by Apple's terms. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period, from your Apple Account settings."
+      "texte": "Ulti Premium plans (subscriptions and lifetime access, Solo or Family) are sold through the App Store and governed by Apple’s terms. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period, from your Apple Account settings."
     },
     {
       "titre": "5. Maintenance and support",
@@ -24,7 +24,7 @@
     },
     {
       "titre": "6. Warranty",
-      "texte": "Ulti is provided \"as is\", to the extent permitted by applicable law. In the event of any failure of Ulti to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price, if any; to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever. Any other claims are the Publisher's sole responsibility. Your statutory rights under the law of your country (including the legal guarantee of conformity for consumers in the European Union) are not affected."
+      "texte": "Ulti is provided \"as is\", to the extent permitted by applicable law. In the event of any failure of Ulti to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price, if any; to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever. Any other claims are the Publisher’s sole responsibility. Your statutory rights under the law of your country (including the legal guarantee of conformity for consumers in the European Union) are not affected."
     },
     {
       "titre": "7. Product claims",
@@ -32,7 +32,7 @@
     },
     {
       "titre": "8. Intellectual property",
-      "texte": "In the event of any third-party claim that Ulti or your possession and use of Ulti infringes that third party's intellectual property rights, the Publisher, not Apple, will be solely responsible for the investigation, defense, settlement and discharge of any such claim."
+      "texte": "In the event of any third-party claim that Ulti or your possession and use of Ulti infringes that third party’s intellectual property rights, the Publisher, not Apple, will be solely responsible for the investigation, defense, settlement and discharge of any such claim."
     },
     {
       "titre": "9. Open-source libraries (LGPL)",
@@ -48,7 +48,7 @@
     },
     {
       "titre": "12. Personal data",
-      "texte": "Ulti does not collect any personal data. Your login details stay in your devices' Keychain; sync goes through your own iCloud account. See the [privacy policy](privacy)."
+      "texte": "Ulti does not collect any personal data. Your login details stay in your devices’ Keychain; sync goes through your own iCloud account. See the [privacy policy](privacy)."
     },
     {
       "titre": "13. Legal compliance",
@@ -64,7 +64,7 @@
     },
     {
       "titre": "16. Third-party beneficiary",
-      "texte": "Apple and Apple's subsidiaries are third-party beneficiaries of this Agreement, and upon your acceptance, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement against you as a third-party beneficiary."
+      "texte": "Apple and Apple’s subsidiaries are third-party beneficiaries of this Agreement, and upon your acceptance, Apple will have the right (and will be deemed to have accepted the right) to enforce this Agreement against you as a third-party beneficiary."
     },
     {
       "titre": "17. Governing law",
@@ -72,7 +72,7 @@
     },
     {
       "titre": "18. Ulti on Android",
-      "texte": "This Section applies when you use Ulti, installed from Google Play, on an Android device (phone, tablet, Android TV). The other Sections of this Agreement also apply, except for the Apple-specific terms listed below.\n\n• **License**: the Publisher grants you a personal, non-exclusive, non-transferable license to use Ulti on the Android devices that you own or control, within the limits of the Google Play Terms of Service. You may not rent, lend, sell, redistribute or sublicense Ulti.\n• **Purchases**: on Android, Ulti Premium (subscriptions and lifetime access) is available as the Solo plan only. Purchases are sold and billed by Google Play, using your Google Account, and are governed by the Google Play terms.\n• **Renewal and cancellation**: subscriptions renew automatically at the end of each period. You can cancel at any time in Google Play ([Play Store › profile › Payments & subscriptions › Subscriptions](google-resilier)); Premium stays active until the end of the period already paid for. Uninstalling the app does not cancel the subscription.\n• **Free trial**: a free trial, if offered, becomes a paid subscription when it ends, unless you cancel before the trial ends.\n• **Refunds**: under the [Google Play refund policies](google-remboursement).\n• **Apple-specific terms**: the terms that concern Apple (the App Store and Apple's terms, Apple's license agreement, Family Sharing and Volume Purchase, the Family plan, as well as Apple's role in Sections 1 and 3 to 8 and Section 16) only apply to Ulti on Apple devices.\n• **Libraries**: the Android version contains neither VLCKit nor libVLC; Section 9 and the appendix concern Apple devices. The libraries in the Android version and their licenses are listed in the app (Account › About › Licenses).\n• **Personal data**: on Android, your credentials are encrypted and stay on your device. See the [privacy policy](privacy)."
+      "texte": "This Section applies when you use Ulti, installed from Google Play, on an Android device (phone, tablet, Android TV). The other Sections of this Agreement also apply, except for the Apple-specific terms listed below.\n\n• **License**: the Publisher grants you a personal, non-exclusive, non-transferable license to use Ulti on the Android devices that you own or control, within the limits of the Google Play Terms of Service. You may not rent, lend, sell, redistribute or sublicense Ulti.\n• **Purchases**: on Android, Ulti Premium (subscriptions and lifetime access) is available as the Solo plan only. Purchases are sold and billed by Google Play, using your Google Account, and are governed by the Google Play terms.\n• **Renewal and cancellation**: subscriptions renew automatically at the end of each period. You can cancel at any time in Google Play ([Play Store › profile › Payments & subscriptions › Subscriptions](google-resilier)); Premium stays active until the end of the period already paid for. Uninstalling the app does not cancel the subscription.\n• **Free trial**: a free trial, if offered, becomes a paid subscription when it ends, unless you cancel before the trial ends.\n• **Refunds**: under the [Google Play refund policies](google-remboursement).\n• **Apple-specific terms**: the terms that concern Apple (the App Store and Apple’s terms, Apple’s license agreement, Family Sharing and Volume Purchase, the Family plan, as well as Apple’s role in Sections 1 and 3 to 8 and Section 16) only apply to Ulti on Apple devices.\n• **Libraries**: the Android version contains neither VLCKit nor libVLC; Section 9 and the appendix concern Apple devices. The libraries in the Android version and their licenses are listed in the app (Account › About › Licenses).\n• **Personal data**: on Android, your credentials are encrypted and stay on your device. See the [privacy policy](privacy)."
     }
   ],
   "credits": {

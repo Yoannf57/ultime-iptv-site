@@ -13,6 +13,7 @@ import BandeauOffre from "../../components/accueil/BandeauOffre.astro";
 import Offre from "../../components/accueil/Offre.astro";
 import ViePrivee from "../../components/accueil/ViePrivee.astro";
 import Faq from "../../components/accueil/Faq.astro";
+import Fin from "../../components/accueil/Fin.astro";
 import { t } from "../../lib/textes";
 import { pays, type Pays } from "../../lib/pays";
 import { offrePour, finOffre } from "../../lib/offre";
@@ -47,6 +48,7 @@ const scriptOffre = `(function(){var m=/[?&]date=(\\d{4}-\\d{2}-\\d{2})(&|$)/.ex
     <Tarifs langue={l} pays={p} offre={offre} />
     <ViePrivee langue={l} codePays={p.code} />
     <Faq langue={l} codePays={p.code} offre={offre} />
+    <Fin langue={l} p={p} />
   </main>
 </Base>
 

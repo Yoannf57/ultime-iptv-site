@@ -16,6 +16,9 @@ const { langue: l, codePays } = Astro.props;
 const vues = captures.visite;
 const taille = "min(92vw, 60rem)";
 const tailleListe = "min(92vw, 40rem)";
+// Mention des écrans Premium : « Avec Premium », ou « Lecture avec Premium » pour les films et séries, dont les
+// fiches sont gratuites (décision N33).
+const mention = (vue: string) => (vue === "films" ? "fonctions.premiumLecture" : "fonctions.premium");
 ---
 <section id="visite" aria-labelledby="titre-visite" class="section visite apparition">
   <h2 id="titre-visite" class="titre-section centre">{t(l, "visite.titre")}</h2>
@@ -45,7 +48,7 @@ const tailleListe = "min(92vw, 40rem)";
     <div class="legendes" data-legendes aria-live="off">
       {vues.map(({ vue, premium }, i) => (
         <p class:list={["legende", { active: i === 0 }]} data-legende={vue}>
-          {t(l, `visite.legendes.${vue}`)}{premium && <span class="avec-premium"> · {t(l, "fonctions.premium")}</span>}
+          {t(l, `visite.legendes.${vue}`)}{premium && <span class="avec-premium"> · {t(l, mention(vue))}</span>}
         </p>
       ))}
     </div>
@@ -55,7 +58,7 @@ const tailleListe = "min(92vw, 40rem)";
     {vues.map(({ vue, capture, premium }) => (
       <div class="element">
         <h3>{t(l, `onglets.${vue}`)}</h3>
-        <p class="legende">{t(l, `visite.legendes.${vue}`)}{premium && <span class="avec-premium"> · {t(l, "fonctions.premium")}</span>}</p>
+        <p class="legende">{t(l, `visite.legendes.${vue}`)}{premium && <span class="avec-premium"> · {t(l, mention(vue))}</span>}</p>
         <Cadre appareil="ipad" sizes={tailleListe} classe="petit">
           <Capture langue={l} appareil="ipad" capture={capture} sizes={tailleListe} />
         </Cadre>

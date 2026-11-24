@@ -1,0 +1,26 @@
+---
+// Dernière section de l'accueil, juste avant le pied de page : « Vous avez déjà l'abonnement. Il vous manque l'app. »
+// Bouton texte vers l'App Store du pays (pas un second badge : un seul badge officiel par page, dans le grand visuel).
+// « Sans publicité » et « sans compte à créer » : vérifié dans le code de l'app le 24/11/2026.
+import config from "../../../site.config.mjs";
+import { t } from "../../lib/textes";
+import { lienAppStore } from "../../lib/appstore";
+import type { Pays } from "../../lib/pays";
+interface Props { langue: string; p: Pays }
+const { langue: l, p } = Astro.props;
+---
+<section aria-labelledby="titre-fin" class="fin apparition">
+  <h2 id="titre-fin" class="titre-section">{t(l, "fin.titre")}</h2>
+  <p class="chapeau">{t(l, "fin.texte")}</p>
+  {config.disponible && <p class="action"><a class="bouton" href={lienAppStore(p)}>{t(l, "fin.bouton")}</a></p>}
+</section>
+
+<style>
+  .fin { max-width: 75rem; margin: 0 auto; padding: 0 1.5rem 7.5rem; text-align: center; }
+  /* Une phrase par ligne (saut de ligne écrit dans le texte), comme le titre du grand visuel. */
+  h2 { max-width: 26ch; margin: 0 auto; white-space: pre-line; text-wrap: balance; }
+  .chapeau { margin: 1.5rem auto 0; max-width: 36rem; text-wrap: balance; }
+  .action { margin: 2.25rem 0 0; }
+  .bouton { display: inline-flex; align-items: center; height: 3rem; padding: 0 1.75rem; border-radius: 999px; background: #f5f5f7; color: #000; font-size: 1.0625rem; font-weight: 600; text-decoration: none; }
+  @media (max-width: 45rem) { .bouton { height: 2.75rem; } }
+</style>

@@ -34,7 +34,7 @@ const affiches = [
       <div class="motif affiches" aria-hidden="true">
         {affiches.map((f) => <span style={`background:${f.fond}`}>{f.affiche}</span>)}
       </div>
-      <h3>{t(l, "fonctions.filmsTitre")} <span class="premium">{t(l, "fonctions.premium")}</span></h3>
+      <h3>{t(l, "fonctions.filmsTitre")} <span class="premium">{t(l, "fonctions.premiumLecture")}</span></h3>
       <p>{t(l, "fonctions.filmsTexte")}</p>
     </article>
   </div>
@@ -45,7 +45,7 @@ const affiches = [
   .carte { flex: 1 1 20rem; min-width: 0; padding: 2.25rem; display: flex; flex-direction: column; gap: 1rem; }
   h3 { margin: 0.5rem 0 0; font-size: 1.625rem; letter-spacing: -0.02em; font-weight: 700; }
   .carte p { margin: 0; font-size: 1.0625rem; line-height: 1.5; color: #a1a1a6; }
-  /* Mention discrète « Avec Premium » (ni majuscules, ni pastille). */
+  /* Mention discrète « Lecture avec Premium » (ni majuscules, ni pastille) : les fiches sont gratuites (N33). */
   .premium { display: block; margin-top: 0.25rem; font-size: 0.875rem; font-weight: 500; color: #8e8e93; }
   .ronds { display: flex; gap: 0.625rem; }
   .rond { width: 3.5rem; height: 3.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; }

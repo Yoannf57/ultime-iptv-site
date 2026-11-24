@@ -2,7 +2,7 @@
   "meta": {
     "direction": "ltr",
     "titre": "Ulti — Den ultimative IPTV-oplevelse",
-    "description": "Ulti, IPTV-afspilleren til iPhone, iPad, Mac og Apple TV: live-tv, tv-guide, film og serier i en enkel app, der er klar til brug med det samme."
+    "description": "Ulti, IPTV-afspilleren til iPhone, iPad, Mac og Apple TV: live-tv, tv‑guide, film og serier i en enkel app, der er klar til brug med det samme."
   },
   "marque": {
     "nom": "Ulti",
@@ -23,7 +23,7 @@
   "heros": {
     "surtitre": "Til iPhone, iPad, Mac og Apple TV",
     "accroche": "Den ultimative\nIPTV-oplevelse.",
-    "phrase": "Live-tv, tv-guide, film og serier: Dit IPTV-abonnement bliver en intuitiv tv-app. Åbn den, og se.",
+    "phrase": "Du betaler allerede for dit IPTV-abonnement. Se det endelig i en app, der yder det retfærdighed: live-tv, tv‑guide, film og serier. Åbn den, og se.",
     "bientot": "Kommer snart i App Store",
     "telecharger": "Hent i App Store",
     "badge": "Hent Ulti i App Store",
@@ -42,7 +42,7 @@
   "onglets": {
     "accueil": "Hjem",
     "direct": "Live",
-    "guide": "Tv-guide",
+    "guide": "Tv‑guide",
     "profils": "Profiler",
     "pause": "Sæt live på pause",
     "films": "Film og serier",
@@ -54,7 +54,7 @@
     "collerTitre": "Indsæt. Færdig.",
     "phrase": "Har din udbyder sendt dig en besked med dine loginoplysninger? Indsæt den i Ulti: appen genkender selv formatet og udfylder det hele. Du kan også skrive oplysningerne ind manuelt.",
     "scannerTitre": "Scan. Færdig.",
-    "scannerPhrase": "På Apple TV skal du ikke skrive noget med fjernbetjeningen: scan QR-koden med din iPhone, bekræft, og dit abonnement lander på tv'et, krypteret, direkte via dit lokale netværk.",
+    "scannerPhrase": "På Apple TV skal du ikke skrive noget med fjernbetjeningen: scan QR-koden med din iPhone, bekræft, og dit abonnement lander på tv’et, krypteret, direkte via dit lokale netværk.",
     "groupe": "Trin for forbindelse",
     "etiquettes": {
       "message": "Besked",
@@ -103,11 +103,12 @@
     "phrase": "Ulti ordner de tusindvis af kanaler og film i dit abonnement i overskuelige skærme, som en tv-app, du altid har haft.",
     "directTitre": "Live-tv med ét blik",
     "directTexte": "En ring om hver kanal viser, hvor langt programmet er nået. Filtrér efter tema, og zap fra kanal til kanal.",
-    "guideTitre": "En rigtig tv-guide",
+    "guideTitre": "En rigtig tv‑guide",
     "guideTexte": "I aften, i morgen, hele ugen. Sæt en påmindelse med én bevægelse, eller brug din egen XMLTV-guide.",
     "filmsTitre": "Film og serier, uden dubletter",
     "filmsTexte": "Plakater og resuméer, alle versioner af en film samlet på én side, fortsæt, hvor du slap.",
-    "premium": "Med Premium"
+    "premium": "Med Premium",
+    "premiumLecture": "Afspilning med Premium"
   },
   "visite": {
     "titre": "Tag en rundtur.",
@@ -137,7 +138,7 @@
       "accueil": "forsiden med den fremhævede film og livekanalerne",
       "direct-bandeau": "en livekanal med bjælken for det aktuelle program",
       "direct": "listen over livekanaler",
-      "guide": "tv-guiden",
+      "guide": "tv‑guiden",
       "profils": "valg af profil, »Hvem ser med?«",
       "pause-direct": "live-tv på pause med knappen tilbage til live",
       "films-series": "kataloget med film og serier",
@@ -159,7 +160,7 @@
   "premium": {
     "surtitre": "Ulti Premium",
     "titre": "Endnu mere.",
-    "films": "Film og serier, med plakater, resuméer og genoptagelse",
+    "films": "Afspilning af film og serier, med genoptagelse",
     "pause": "Pause og tilbagespoling i live-tv",
     "replay": "Genudsendelser fra tidligere dage",
     "telechargements": "Downloads til at se offline",
@@ -180,7 +181,7 @@
     "titre": "Gratis for det vigtigste.",
     "phrase": "Live-tv er gratis. Prøv Ulti Premium gratis i 7 dage.",
     "gratuitTitre": "Gratis",
-    "gratuitTexte": "Live-tv, tv-guiden med påmindelser, billede i billede, Apple TV via QR-kode og en børneprofil.",
+    "gratuitTexte": "Live-tv, tv‑guiden med påmindelser, siderne for film og serier (afspilning med Premium), billede i billede, Apple TV via QR-kode og en børneprofil.",
     "choix": "Vælg en Premium-løsning",
     "pourMoi": "Til mig",
     "pourFamille": "Til familien",
@@ -237,19 +238,24 @@
     "q1": "Leverer Ulti kanaler?",
     "r1": "Nej. Ulti er en afspiller: Den afspiller de kilder, du selv tilføjer. Ulti leverer ingen kanaler og intet indhold. Du skal have dine egne kilder og have ret til at se dem.",
     "q2": "På hvilke enheder?",
-    "r2": "iPhone, iPad, Mac (med Apple-chip) og Apple TV. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling. En Android-version (telefoner, tablets og tv'er) er under udvikling.",
-    "r2SansAppleTv": "iPhone, iPad og Mac (med Apple-chip) allerede nu; Apple TV-versionen kommer i løbet af de næste dage. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling. En Android-version (telefoner, tablets og tv'er) er under udvikling.",
+    "r2": "iPhone, iPad, Mac (med Apple-chip) og Apple TV. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling. En Android-version (telefoner, tablets og tv’er) er under udvikling.",
+    "r2SansAppleTv": "iPhone, iPad og Mac (med Apple-chip) allerede nu; Apple TV-versionen kommer i løbet af de næste dage. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling. En Android-version (telefoner, tablets og tv’er) er under udvikling.",
     "q3": "Er mine loginoplysninger sikre?",
     "r3": "De gemmes i nøgleringen på din enhed og går aldrig via en Ulti-server.",
     "q4": "Hvilke abonnementer virker?",
     "r4": "Abonnementer, der leveres som et M3U-link eller som Xtream Codes-loginoplysninger, altså langt de fleste. Nemmest: Indsæt beskeden fra din udbyder, så genkender Ulti selv formatet.",
     "q5": "Kan jeg prøve, før jeg betaler?",
-    "r5": "Ja. Live-tv er gratis. Premium kan du prøve gratis i 7 dage med måneds- og årsabonnementerne, Solo eller Familie."
+    "r5": "Ja. Live-tv og tv‑guiden er gratis, og det er siderne for film og serier også på iPhone, iPad og Mac; på Apple TV bliver de det med den næste opdatering. Afspilning af film og serier er en del af Premium, som du kan prøve gratis i 7 dage med måneds- og årsabonnementerne, Solo eller Familie."
+  },
+  "fin": {
+    "titre": "Abonnementet har du allerede.\nDu mangler kun appen.",
+    "texte": "Ulti er gratis til live-tv og tv‑guiden, uden reklamer og uden konto. Installer appen, indsæt beskeden fra din udbyder, og se.",
+    "bouton": "Hent Ulti"
   },
   "neutralite": "Ulti leverer ingen kanaler og intet indhold. Du skal have dine egne kilder og have ret til at se dem.",
   "pied": {
     "changerPays": "Skift land eller område (nu: {pays}, {langue})",
-    "tmdb": "Dette produkt bruger TMDB's API, men er ikke godkendt eller certificeret af TMDB.",
+    "tmdb": "Dette produkt bruger TMDB’s API, men er ikke godkendt eller certificeret af TMDB.",
     "tmdbLogo": "Logo for The Movie Database (TMDB)",
     "marques": "Apple, Apple TV, iPhone, iPad og Mac er varemærker tilhørende Apple Inc.",
     "copyright": "© 2026 Ulti",
@@ -377,8 +383,8 @@
       },
       "appareils": {
         "q": "Hvilke enheder virker Ulti på?",
-        "r": "iPhone, iPad, Mac og Apple TV: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere og Mac-computere med Apple-chip, som bruger iPad-appen. Premium gælder på alle dine enheder, der er logget ind med den samme Apple-konto. En Android-version (telefoner, tablets og tv'er) er under udvikling.",
-        "rSansAppleTv": "iPhone, iPad og Mac allerede nu, Apple TV i løbet af de næste dage: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere og Mac-computere med Apple-chip, som bruger iPad-appen. Premium gælder på alle dine enheder, der er logget ind med den samme Apple-konto. En Android-version (telefoner, tablets og tv'er) er under udvikling."
+        "r": "iPhone, iPad, Mac og Apple TV: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere og Mac-computere med Apple-chip, som bruger iPad-appen. Premium gælder på alle dine enheder, der er logget ind med den samme Apple-konto. En Android-version (telefoner, tablets og tv’er) er under udvikling.",
+        "rSansAppleTv": "iPhone, iPad og Mac allerede nu, Apple TV i løbet af de næste dage: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere og Mac-computere med Apple-chip, som bruger iPad-appen. Premium gælder på alle dine enheder, der er logget ind med den samme Apple-konto. En Android-version (telefoner, tablets og tv’er) er under udvikling."
       },
       "installer": {
         "q": "Hvordan installerer jeg Ulti?",
@@ -392,7 +398,7 @@
       },
       "formats": {
         "q": "Hvilke formater understøttes?",
-        "r": "Xtream Codes-konti (server, brugernavn og adgangskode) og M3U-playlistelinks. Til tv-guiden bruger Ulti din udbyders guide; du kan også angive adressen på en guide i XMLTV-format (.xml eller .xml.gz) under Konto › Tv-guide.\n\nUnderstøttes ikke: abonnementer, der er knyttet til en MAC-adresse, og Stalker/Ministra-portaler."
+        "r": "Xtream Codes-konti (server, brugernavn og adgangskode) og M3U-playlistelinks. Til tv‑guiden bruger Ulti din udbyders guide; du kan også angive adressen på en guide i XMLTV-format (.xml eller .xml.gz) under Konto › Tv‑guide.\n\nUnderstøttes ikke: abonnementer, der er knyttet til en MAC-adresse, og Stalker/Ministra-portaler."
       },
       "replay": {
         "q": "Virker genudsendelser med mit abonnement?",
@@ -428,11 +434,11 @@
       },
       "gratuit": {
         "q": "Hvad er med i gratisversionen?",
-        "r": "Live-tv, tv-guiden og påmindelser, Mit indhold, sammenlægning af dobbelte kanaler, indsættelse af beskeden fra udbyderen, billede-i-billede, overførsel til Apple TV via QR-kode, en børneprofil med forældrekode og temaet Sort."
+        "r": "Live-tv, tv‑guiden og påmindelser, Mit indhold, sammenlægning af dobbelte kanaler, indsættelse af beskeden fra udbyderen, billede-i-billede, overførsel til Apple TV via QR-kode, en børneprofil med forældrekode og temaet Sort.\n\nSiderne for film og serier (plakater, resuméer, medvirkende) er også gratis på iPhone, iPad og Mac; på Apple TV bliver de det med den næste opdatering. Afspilning af film og serier er en del af Ulti Premium."
       },
       "inclus": {
         "q": "Hvad er med i Ulti Premium?",
-        "r": "Film og serier (katalog, sider med plakater og resuméer, afspilning, genoptagelse, alle versioner af en film), flere skærme, genudsendelser, pause i live-tv, downloads på iPhone og iPad, iCloud-synkronisering, ekstra voksenprofiler og ekstra abonnementer, rækkerne »Til dig« og »Populært«, temaerne Halo og Program og alternative appsymboler.\n\nI gratisversionen kan du gennemse film og serier; for at afspille dem kræves Premium."
+        "r": "Afspilning af film og serier (med genoptagelse og alle versioner af en film), flere skærme, genudsendelser, pause i live-tv, downloads på iPhone og iPad, iCloud-synkronisering, ekstra voksenprofiler og ekstra abonnementer, rækkerne »Til dig« og »Populært«, temaerne Halo og Program og alternative appsymboler.\n\nI gratisversionen kan du gennemse film og serier og åbne deres sider; for at afspille dem kræves Premium."
       },
       "soloFamille": {
         "q": "Solo eller Familie: Hvad er forskellen?",
@@ -505,7 +511,7 @@
       },
       "contacts": {
         "titre": "Hvad appen kontakter",
-        "texte": "Ulti kontakter kun:\n\n• din IPTV-udbyder for at afspille dine kanaler, film, serier og tv-guide. Det er den tjeneste, du har valgt: Den er hverken udvikleren eller en partner af udvikleren;\n• Ultis relæ (api.ultitv.com, hostet af Cloudflare) for at vise plakater og resuméer fra The Movie Database (TMDB). Det sender kun forespørgslen videre til TMDB og gemmer intet: ingen log. Appen sender kun titel og år for de viste værker samt enhedens sprog og område: ingen loginoplysninger og intet af det, du skriver i søgningen. Billederne hentes direkte fra TMDB (image.tmdb.org);\n• Apple for Premium-køb og, hvis du slår det til, for iCloud-synkronisering."
+        "texte": "Ulti kontakter kun:\n\n• din IPTV-udbyder for at afspille dine kanaler, film, serier og tv‑guide. Det er den tjeneste, du har valgt: Den er hverken udvikleren eller en partner af udvikleren;\n• Ultis relæ (api.ultitv.com, hostet af Cloudflare) for at vise plakater og resuméer fra The Movie Database (TMDB). Det sender kun forespørgslen videre til TMDB og gemmer intet: ingen log. Appen sender kun titel og år for de viste værker samt enhedens sprog og område: ingen loginoplysninger og intet af det, du skriver i søgningen. Billederne hentes direkte fra TMDB (image.tmdb.org);\n• Apple for Premium-køb og, hvis du slår det til, for iCloud-synkronisering."
       },
       "ip": {
         "titre": "Din IP-adresse",
@@ -587,7 +593,7 @@
       },
       "tmdb": {
         "titre": "Data om film og serier",
-        "texte": "Plakaterne og resuméerne i appen kommer fra [The Movie Database (TMDB)](tmdb). Dette produkt bruger TMDB's API, men er ikke godkendt eller certificeret af TMDB."
+        "texte": "Plakaterne og resuméerne i appen kommer fra [The Movie Database (TMDB)](tmdb). Dette produkt bruger TMDB’s API, men er ikke godkendt eller certificeret af TMDB."
       },
       "contenus": {
         "titre": "Indhold",
