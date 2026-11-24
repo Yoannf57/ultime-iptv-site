@@ -11,6 +11,7 @@
     "captures": "node scripts/captures.mjs",
     "importer-captures": "node scripts/importer-captures.mjs",
     "captures-sections": "node scripts/captures-sections.mjs",
+    "captures-offre": "node scripts/captures-offre.mjs",
     "mesurer-onglets": "node scripts/mesurer-onglets.mjs",
     "importer-badges": "node scripts/importer-badges.mjs"
   },

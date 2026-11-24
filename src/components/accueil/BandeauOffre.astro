@@ -1,0 +1,24 @@
+---
+// Bandeau fin de l'offre Black Friday, tout en haut de l'accueil : blanc, texte noir (l'inverse du site).
+// Il ne suit pas le défilement. Affiché seulement jusqu'à la date de fin (classe « bf » posée par le script de
+// index.astro) ; sous le bandeau « Vous êtes en… ? » quand celui-ci apparaît.
+import { t } from "../../lib/textes";
+import type { Offre } from "../../lib/offre";
+interface Props { langue: string; offre: Offre }
+const { langue: l, offre } = Astro.props;
+const texte = offre.prix
+  ? t(l, "offre.bandeau", { prix: offre.prix.solo.reduit, prixNormal: offre.prix.solo.normal, date: offre.date })
+  : t(l, "offre.bandeauSansPrix", { date: offre.date });
+---
+<aside class="bandeau-offre bf-offre" aria-label={t(l, "offre.bandeauEtiquette")}>
+  <p><span class="chiffres">{texte}</span> <a href="#offre">{t(l, "offre.bandeauLien")}</a></p>
+</aside>
+
+<style>
+  .bandeau-offre { background: #f5f5f7; color: #000; padding: 0.625rem 1.5rem; text-align: center; font-size: 0.9375rem; line-height: 1.4; }
+  p { margin: 0; }
+  /* Zone à toucher d'environ 44 px de haut, sans changer l'aspect du bandeau. */
+  a { display: inline-block; padding: 0.75rem 0.375rem; margin: -0.75rem -0.375rem; color: #000; font-weight: 600; white-space: nowrap; text-underline-offset: 0.2em; }
+  a:focus-visible { outline-color: #000; }
+  @media (max-width: 45rem) { .bandeau-offre { padding: 0.625rem 1rem; font-size: 0.875rem; } }
+</style>

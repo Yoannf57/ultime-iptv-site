@@ -9,8 +9,9 @@ import Zones from "./Zones.astro";
 import BoutonLecture from "./BoutonLecture.astro";
 import BadgeAppStore from "./BadgeAppStore.astro";
 import type { Pays } from "../../lib/pays";
-interface Props { langue: string; p: Pays }
-const { langue: l, p } = Astro.props;
+import type { Offre } from "../../lib/offre";
+interface Props { langue: string; p: Pays; offre?: Offre | null }
+const { langue: l, p, offre = null } = Astro.props;
 // Petite ligne sous le badge : « Bientôt sur Android. », ou avec l'Apple TV quand l'app est publiée sans elle.
 // Avant la publication, sous « Bientôt sur l'App Store » : « Puis sur Android. » (évite deux « Bientôt » de suite).
 const ligneAndroid = !config.disponible ? "heros.androidAvantPublication"
@@ -21,6 +22,10 @@ const tailleTv = "(max-width: 45rem) 92vw, min(78vw, 58rem)";
 const tailleTel = "min(15vw, 11rem)";
 ---
 <section aria-labelledby="titre-principal" class="haut">
+  {/* Black Friday : pastille discrète vers la section #offre, seulement jusqu'à la date de fin. */}
+  {offre && (
+    <p class="pastille-offre bf-offre"><a class="chiffres" href="#offre">{offre.prix ? t(l, "offre.pastille", { remise: offre.prix.solo.remise }) : t(l, "offre.pastilleSansPrix")}</a></p>
+  )}
   <p class="surtitre">{t(l, "heros.surtitre")}</p>
   <h1 id="titre-principal">{t(l, "heros.accroche")}</h1>
   <p class="phrase">{t(l, "heros.phrase")}</p>
@@ -72,6 +77,9 @@ const tailleTel = "min(15vw, 11rem)";
 
 <style>
   .haut { max-width: 75rem; margin: 0 auto; padding: 6.5rem 1.5rem 2.5rem; text-align: center; }
+  .pastille-offre { margin: -1.5rem 0 1.25rem; }
+  .pastille-offre a { display: inline-block; padding: 0.75rem 1.125rem; border: 1px solid #6e6e73; border-radius: 999px; font-size: 0.875rem; font-weight: 600; line-height: 1.3; color: #f5f5f7; text-decoration: none; text-wrap: balance; }
+  .pastille-offre a:hover { border-color: #a1a1a6; }
   .surtitre { margin: 0 0 1.25rem; font-size: 1.0625rem; font-weight: 600; color: #fff; }
   h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(3rem, 7.4vw, 6.5rem); line-height: 0.98; letter-spacing: -0.045em; font-weight: 800; white-space: pre-line; }
   .phrase { margin: 1.75rem auto 0; max-width: 40rem; font-size: clamp(1.125rem, 1.8vw, 1.375rem); line-height: 1.45; color: #a1a1a6; }

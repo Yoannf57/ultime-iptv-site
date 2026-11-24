@@ -9,10 +9,13 @@ import Visite from "../../components/accueil/Visite.astro";
 import AppleTV from "../../components/accueil/AppleTV.astro";
 import FamillePremium from "../../components/accueil/FamillePremium.astro";
 import Tarifs from "../../components/accueil/Tarifs.astro";
+import BandeauOffre from "../../components/accueil/BandeauOffre.astro";
+import Offre from "../../components/accueil/Offre.astro";
 import ViePrivee from "../../components/accueil/ViePrivee.astro";
 import Faq from "../../components/accueil/Faq.astro";
 import { t } from "../../lib/textes";
 import { pays, type Pays } from "../../lib/pays";
+import { offrePour, finOffre } from "../../lib/offre";
 import "../../styles/accueil.css";
 
 export function getStaticPaths() {
@@ -20,19 +23,30 @@ export function getStaticPaths() {
 }
 const { p } = Astro.props as { p: Pays };
 const l = p.langue;
+// Black Friday (site.config.mjs) : null si le réglage est à false, et rien de l'offre n'est alors écrit dans la page.
+const offre = offrePour(p);
+// La page contient la version normale et la version Black Friday. Ce script, en tête de page (avant l'affichage),
+// pose la classe « bf » sur <html> si la date du visiteur (ou ?date=AAAA-MM-JJ, pour essayer) est au plus tard la
+// date de fin. Sans JavaScript, ou à partir du lendemain : la version normale, sans rien republier.
+// ?date= ne sert qu'à avancer dans le temps : une date passée est ignorée, pour qu'un lien ne puisse jamais
+// rallumer l'offre une fois qu'elle est finie.
+const scriptOffre = `(function(){var m=/[?&]date=(\\d{4}-\\d{2}-\\d{2})(&|$)/.exec(location.search),d=new Date(),j=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);if(m&&m[1]>j)j=m[1];if(j<=${JSON.stringify(finOffre)})document.documentElement.classList.add("bf")})()`;
 ---
 <Base langue={l} lang={p.locale} titre={t(l, "meta.titre")} description={t(l, "meta.description")} chemin={`${p.code}/`} codePays={p.code} alternatives>
+  {offre && <script is:inline slot="tete" set:html={scriptOffre}></script>}
+  {offre && <BandeauOffre langue={l} offre={offre} />}
   <Entete langue={l} p={p} />
   <main id="haut">
-    <Heros langue={l} p={p} />
+    <Heros langue={l} p={p} offre={offre} />
     <Collez langue={l} />
     <Fonctions langue={l} />
     <Visite langue={l} codePays={p.code} />
     <AppleTV langue={l} />
     <FamillePremium langue={l} />
-    <Tarifs langue={l} pays={p} />
+    {offre && <Offre langue={l} p={p} offre={offre} />}
+    <Tarifs langue={l} pays={p} offre={offre} />
     <ViePrivee langue={l} codePays={p.code} />
-    <Faq langue={l} codePays={p.code} />
+    <Faq langue={l} codePays={p.code} offre={offre} />
   </main>
 </Base>
 

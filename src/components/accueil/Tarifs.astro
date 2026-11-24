@@ -3,8 +3,9 @@
 // payantes. Sans JavaScript, les deux formules s'affichent l'une sous l'autre. Prix pris dans pays.json, jamais convertis.
 import { t } from "../../lib/textes";
 import { formaterPrix, type Pays } from "../../lib/pays";
-interface Props { langue: string; pays: Pays }
-const { langue: l, pays: p } = Astro.props;
+import type { Offre } from "../../lib/offre";
+interface Props { langue: string; pays: Pays; offre?: Offre | null }
+const { langue: l, pays: p, offre = null } = Astro.props;
 const formules = [
   { id: "solo", bouton: "tarifs.pourMoi", legende: "tarifs.soloLegende" },
   { id: "famille", bouton: "tarifs.pourFamille", legende: "tarifs.familleLegende" },
@@ -18,7 +19,11 @@ function cartes(id: "solo" | "famille") {
     { titre: t(l, "tarifs.annuel"), montant: montant(prix?.annuel), unite: t(l, "tarifs.parAn"), mis: true,
       remise: prix?.remise !== undefined && t(l, "tarifs.remise", { remise: String(prix.remise) }),
       texte: prix?.annuelParMois !== undefined ? t(l, "tarifs.annuelTexte", { prix: formaterPrix(prix.annuelParMois, p) }) : t(l, "tarifs.annuelTexteSansPrix") },
-    { titre: t(l, "tarifs.vie"), montant: montant(prix?.vie), unite: "", texte: t(l, "tarifs.vieTexte") },
+    // Black Friday : la carte « à vie » existe en deux versions, la normale (classe bf-normal) et celle de l'offre.
+    { titre: t(l, "tarifs.vie"), montant: montant(prix?.vie), unite: "", texte: t(l, "tarifs.vieTexte"), classe: offre ? "bf-normal" : undefined },
+    ...(offre ? [{ titre: t(l, "tarifs.vie"), montant: null, unite: "", classe: "bf-offre",
+      remise: offre.prix ? offre.prix[id].remise : t(l, "offre.surtitre"), promo: offre.prix?.[id],
+      texte: t(l, "offre.carteTexte", { date: offre.date }) }] : []),
   ];
 }
 ---
@@ -44,12 +49,18 @@ function cartes(id: "solo" | "famille") {
             <p class="legende sans-js">{t(l, f.bouton)} · {t(l, f.legende)}</p>
             <div class="trois">
               {cartes(f.id).map((c) => (
-                <article class:list={["carte", "offre", { mis: c.mis }]}>
+                <article class:list={["carte", "offre", { mis: c.mis }, c.classe]}>
                   <div class="ligne-titre">
                     <h3>{c.titre}</h3>
                     {c.remise && <span class="remise chiffres">{c.remise}</span>}
                   </div>
-                  {c.montant
+                  {c.promo
+                    ? <p class="montant chiffres">
+                        <span class="visuellement-cache">{t(l, "offre.prixReduit", { prix: c.promo.reduit })}. {t(l, "offre.prixNormal", { prixNormal: c.promo.normal })}.</span>
+                        <span class="somme" aria-hidden="true">{c.promo.reduit}</span>
+                        <s class="ancien" aria-hidden="true">{c.promo.normal}</s>
+                      </p>
+                    : c.montant
                     ? <p class="montant chiffres"><span class="somme">{c.montant}</span>{c.unite && <span class="unite"> {c.unite}</span>}</p>
                     : <p class="montant-absent">{t(l, "tarifs.prixAppStore")}</p>}
                   <p class="detail">{c.texte}</p>
@@ -88,6 +99,9 @@ function cartes(id: "solo" | "famille") {
   .trois { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
   .offre { border-radius: 1.5rem; padding: 2rem; display: flex; flex-direction: column; gap: 0.5rem; }
   .offre.mis { border: 2px solid #fff; padding: 1.875rem; }
+  /* Black Friday : pendant l'offre, le liseré blanc passe de la carte annuelle à la carte « à vie ». */
+  :global(html.bf) .offre.mis { border: 0; padding: 2rem; }
+  :global(html.bf) .offre.bf-offre { border: 2px solid #fff; padding: 1.875rem; }
   .ligne-titre { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
   h3 { margin: 0; font-size: 1.1875rem; font-weight: 700; }
   .remise { font-size: 0.8125rem; font-weight: 700; background: #fff; color: #000; padding: 0.25rem 0.625rem; border-radius: 999px; white-space: nowrap; }
@@ -95,6 +109,7 @@ function cartes(id: "solo" | "famille") {
   .montant { margin: 0.5rem 0 0; display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 0.3rem; font-size: clamp(2rem, 2.9vw, 2.75rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
   .somme { white-space: nowrap; }
   .unite { white-space: nowrap; }
+  .ancien { white-space: nowrap; font-size: 1.0625rem; font-weight: 600; color: #a1a1a6; letter-spacing: 0; }
   .unite { font-size: 1.0625rem; font-weight: 600; color: #a1a1a6; letter-spacing: 0; }
   .montant-absent { margin: 0.5rem 0 0; font-size: 1.25rem; font-weight: 700; line-height: 1.3; }
   .detail { margin: 0; font-size: 0.9375rem; line-height: 1.5; color: #a1a1a6; }
