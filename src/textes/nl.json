@@ -148,7 +148,7 @@
   "appletv": {
     "surtitre": "Apple TV",
     "titre": "Gewoon zappen.",
-    "texte": "Op de Apple TV doe je alles met de afstandsbediening: zap van de ene zender naar de andere zoals op de tv van vroeger, in duidelijke menu's die je van ver kunt lezen.",
+    "texte": "Op de Apple TV doe je alles met de afstandsbediening: zap van de ene zender naar de andere zoals op de tv van vroeger, in duidelijke menu’s die je van ver kunt lezen.",
     "point1": "Zappen met de afstandsbediening, omhoog en omlaag",
     "point2": "Beeld-in-beeld tijdens live tv",
     "point3": "Grote posters, gemaakt voor de bank"
@@ -166,7 +166,7 @@
     "telechargements": "Downloads om offline te kijken",
     "icloud": "iCloud-synchronisatie tussen al je apparaten",
     "plusieurs": "Meerdere abonnementen en profielen",
-    "themes": "Thema's Halo en Programma",
+    "themes": "Thema’s Halo en Programma",
     "multi": "Multiscreen: tot 4 livezenders tegelijk (2 op iPhone)"
   },
   "etapes": {
@@ -238,8 +238,8 @@
     "q1": "Levert Ulti zenders?",
     "r1": "Nee. Ulti is een speler: hij speelt de bronnen af die je zelf toevoegt. Ulti levert geen zenders en geen content. Je moet over je eigen bronnen beschikken en het recht hebben om ze te bekijken.",
     "q2": "Op welke apparaten?",
-    "r2": "iPhone, iPad, Mac (met Apple-chip) en Apple TV. Ulti Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv's).",
-    "r2SansAppleTv": "iPhone, iPad en Mac (met Apple-chip) nu al; de Apple TV-versie volgt in de komende dagen. Ulti Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv's).",
+    "r2": "iPhone, iPad, Mac (met Apple-chip) en Apple TV. Ulti Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv’s).",
+    "r2SansAppleTv": "iPhone, iPad en Mac (met Apple-chip) nu al; de Apple TV-versie volgt in de komende dagen. Ulti Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv’s).",
     "q3": "Zijn mijn inloggegevens veilig?",
     "r3": "Ze worden bewaard in de sleutelhanger van je apparaat en gaan nooit via een server van Ulti.",
     "q4": "Welke abonnementen werken?",
@@ -383,8 +383,8 @@
       },
       "appareils": {
         "q": "Op welke apparaten werkt Ulti?",
-        "r": "iPhone, iPad, Mac en Apple TV: iPhone en iPad met iOS 17 of iPadOS 17 of nieuwer, Apple TV met tvOS 17 of nieuwer, en Macs met Apple-chip, die de iPad-app gebruiken. Premium geldt op al je apparaten die met dezelfde Apple Account zijn verbonden. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv's).",
-        "rSansAppleTv": "iPhone, iPad en Mac nu al, Apple TV in de komende dagen: iPhone en iPad met iOS 17 of iPadOS 17 of nieuwer, Apple TV met tvOS 17 of nieuwer, en Macs met Apple-chip, die de iPad-app gebruiken. Premium geldt op al je apparaten die met dezelfde Apple Account zijn verbonden. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv's)."
+        "r": "iPhone, iPad, Mac en Apple TV: iPhone en iPad met iOS 17 of iPadOS 17 of nieuwer, Apple TV met tvOS 17 of nieuwer, en Macs met Apple-chip, die de iPad-app gebruiken. Premium geldt op al je apparaten die met dezelfde Apple Account zijn verbonden. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv’s).",
+        "rSansAppleTv": "iPhone, iPad en Mac nu al, Apple TV in de komende dagen: iPhone en iPad met iOS 17 of iPadOS 17 of nieuwer, Apple TV met tvOS 17 of nieuwer, en Macs met Apple-chip, die de iPad-app gebruiken. Premium geldt op al je apparaten die met dezelfde Apple Account zijn verbonden. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv’s)."
       },
       "installer": {
         "q": "Hoe installeer ik Ulti?",
@@ -531,7 +531,7 @@
       },
       "fichiers": {
         "titre": "Downloads en live tv pauzeren",
-        "texte": "Gedownloade video's blijven op je apparaat. Om live tv te kunnen pauzeren bewaart Ulti de laatste minuten van de zender op het apparaat; na het sluiten van de speler wordt niets bewaard."
+        "texte": "Gedownloade video’s blijven op je apparaat. Om live tv te kunnen pauzeren bewaart Ulti de laatste minuten van de zender op het apparaat; na het sluiten van de speler wordt niets bewaard."
       },
       "achats": {
         "titre": "Aankopen",
@@ -547,7 +547,7 @@
       },
       "site": {
         "titre": "Deze website",
-        "texte": "Deze website gebruikt geen trackers, geen cookies en geen bezoekersmetingen, en laadt niets van een andere website. Alleen het land dat je kiest wordt in je browser bewaard (lokale opslag), om je naar de juiste versie te brengen; het wordt gewist met je browsegegevens.\n\nDe website wordt gehost door GitHub Pages. Zoals elke host ontvangt GitHub technische verbindingsgegevens, waaronder het IP-adres, om de pagina's te leveren ([privacybeleid van GitHub](github-confidentialite))."
+        "texte": "Deze website gebruikt geen trackers, geen cookies en geen bezoekersmetingen, en laadt niets van een andere website. Alleen het land dat je kiest wordt in je browser bewaard (lokale opslag), om je naar de juiste versie te brengen; het wordt gewist met je browsegegevens.\n\nDe website wordt gehost door GitHub Pages. Zoals elke host ontvangt GitHub technische verbindingsgegevens, waaronder het IP-adres, om de pagina’s te leveren ([privacybeleid van GitHub](github-confidentialite))."
       },
       "droits": {
         "titre": "Je gegevens en je rechten",
@@ -601,7 +601,7 @@
       },
       "credits": {
         "titre": "Beeldcredits",
-        "texte": "De schermen op deze website zijn echte schermafbeeldingen van de app, gemaakt met een demonstratielijst: de zenders en hun programma's zijn verzonnen.\n\nDe beelden van de livezenders zijn fragmenten uit films van de [Blender Studio](blender), zonder andere wijzigingen:\n\n• Big Buck Bunny (2008), © Blender Foundation, www.bigbuckbunny.org, licentie [CC BY 3.0](cc-by-3);\n• Elephants Dream (2006), © Blender Foundation / Netherlands Media Art Institute, www.elephantsdream.org, licentie [CC BY 2.5](cc-by-25);\n• Sintel (2010), © Blender Foundation, www.sintel.org, licentie [CC BY 3.0](cc-by-3);\n• Cosmos Laundromat (2015), © Blender Institute, gooseberry.blender.org, licentie [CC BY 4.0](cc-by-4).\n\nFilmposters en samenvattingen: The Movie Database (TMDB)."
+        "texte": "De schermen op deze website zijn echte schermafbeeldingen van de app, gemaakt met een demonstratielijst: de zenders en hun programma’s zijn verzonnen.\n\nDe beelden van de livezenders zijn fragmenten uit films van de [Blender Studio](blender), zonder andere wijzigingen:\n\n• Big Buck Bunny (2008), © Blender Foundation, www.bigbuckbunny.org, licentie [CC BY 3.0](cc-by-3);\n• Elephants Dream (2006), © Blender Foundation / Netherlands Media Art Institute, www.elephantsdream.org, licentie [CC BY 2.5](cc-by-25);\n• Sintel (2010), © Blender Foundation, www.sintel.org, licentie [CC BY 3.0](cc-by-3);\n• Cosmos Laundromat (2015), © Blender Institute, gooseberry.blender.org, licentie [CC BY 4.0](cc-by-4).\n\nFilmposters en samenvattingen: The Movie Database (TMDB)."
       }
     },
     "blancs": {

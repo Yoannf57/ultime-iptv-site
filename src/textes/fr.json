@@ -1,8 +1,8 @@
 {
   "meta": {
     "direction": "ltr",
-    "titre": "Ulti — L'expérience IPTV ultime",
-    "description": "Ulti, le lecteur IPTV pour iPhone, iPad, Mac et Apple TV : direct, guide TV, films et séries, dans une app simple et prête à l'emploi."
+    "titre": "Ulti — L’expérience IPTV ultime",
+    "description": "Ulti, le lecteur IPTV pour iPhone, iPad, Mac et Apple TV : direct, guide TV, films et séries, dans une app simple et prête à l’emploi."
   },
   "marque": {
     "nom": "Ulti",
@@ -22,11 +22,11 @@
   },
   "heros": {
     "surtitre": "Pour iPhone, iPad, Mac et Apple TV",
-    "accroche": "L'expérience\nIPTV ultime.",
+    "accroche": "L’expérience\nIPTV ultime.",
     "phrase": "Vous payez déjà votre abonnement IPTV. Regardez‑le enfin dans une app à sa hauteur : direct, guide TV, films et séries. Vous l’ouvrez, vous regardez.",
-    "bientot": "Bientôt sur l'App Store",
-    "telecharger": "Télécharger dans l'App Store",
-    "badge": "Télécharger Ulti dans l'App Store",
+    "bientot": "Bientôt sur l’App Store",
+    "telecharger": "Télécharger dans l’App Store",
+    "badge": "Télécharger Ulti dans l’App Store",
     "voirTarifs": "Voir les tarifs",
     "android": "Bientôt sur Android.",
     "androidSansAppleTv": "Apple TV : dans quelques jours. Bientôt sur Android.",
@@ -34,10 +34,10 @@
     "neutralite": "Ulti ne fournit aucune chaîne ni aucun contenu."
   },
   "apercu": {
-    "etiquette": "Aperçu de l'app sur Apple TV, iPad et iPhone",
+    "etiquette": "Aperçu de l’app sur Apple TV, iPad et iPhone",
     "appareils": "Apple TV, iPad et Mac avec puce Apple, iPhone : la même app, partout.",
-    "onglets": "Écrans de l'app",
-    "indice": "Choisissez un écran pour découvrir l'app."
+    "onglets": "Écrans de l’app",
+    "indice": "Choisissez un écran pour découvrir l’app."
   },
   "onglets": {
     "accueil": "Accueil",
@@ -50,11 +50,11 @@
   },
   "collez": {
     "surtitre": "Connexion",
-    "titre": "Se connecter n'a jamais été aussi simple.",
-    "collerTitre": "Collez. C'est tout.",
-    "phrase": "Votre fournisseur vous a envoyé un message avec vos identifiants ? Collez-le dans Ulti : l'app reconnaît le format toute seule et remplit tout. Vous pouvez aussi saisir vos identifiants à la main.",
-    "scannerTitre": "Scannez. C'est tout.",
-    "scannerPhrase": "Sur l'Apple TV, rien à taper avec la télécommande : scannez le QR code avec votre iPhone, confirmez, et votre abonnement arrive sur la télé, chiffré, directement par votre réseau local.",
+    "titre": "Se connecter n’a jamais été aussi simple.",
+    "collerTitre": "Collez. C’est tout.",
+    "phrase": "Votre fournisseur vous a envoyé un message avec vos identifiants ? Collez-le dans Ulti : l’app reconnaît le format toute seule et remplit tout. Vous pouvez aussi saisir vos identifiants à la main.",
+    "scannerTitre": "Scannez. C’est tout.",
+    "scannerPhrase": "Sur l’Apple TV, rien à taper avec la télécommande : scannez le QR code avec votre iPhone, confirmez, et votre abonnement arrive sur la télé, chiffré, directement par votre réseau local.",
     "groupe": "Étapes de la connexion",
     "etiquettes": {
       "message": "Message",
@@ -68,7 +68,7 @@
       "remplir": "Ulti reconnaît le format et remplit tout.",
       "pret": "Vos chaînes sont prêtes."
     },
-    "minute": "Moins d'une minute, montre en main.",
+    "minute": "Moins d’une minute, montre en main.",
     "message": {
       "expediteur": "Mon fournisseur",
       "initiale": "M",
@@ -82,7 +82,7 @@
       "coller": "Coller le message reçu",
       "collerTexte": "SMS, WhatsApp ou e-mail du fournisseur : le serveur et les identifiants se remplissent tout seuls.",
       "serveur": "Serveur (http://exemple.com:8080)",
-      "utilisateur": "Nom d'utilisateur",
+      "utilisateur": "Nom d’utilisateur",
       "motDePasse": "Mot de passe",
       "continuer": "Continuer",
       "trousseau": "Vos identifiants restent dans le Trousseau de votre appareil.",
@@ -91,38 +91,38 @@
     },
     "tv": {
       "titre": "Avec mon iPhone",
-      "etape1": "Ouvrez l'appareil photo de l'iPhone.",
+      "etape1": "Ouvrez l’appareil photo de l’iPhone.",
       "etape2": "Visez ce QR code, puis touchez le lien Ulti.",
-      "etape3": "Confirmez l'envoi sur l'iPhone.",
+      "etape3": "Confirmez l’envoi sur l’iPhone.",
       "code": "Code",
-      "valable": "Valable encore %@. Le même code s'affiche sur l'iPhone avant l'envoi."
+      "valable": "Valable encore %@. Le même code s’affiche sur l’iPhone avant l’envoi."
     }
   },
   "fonctions": {
     "titre": "Votre abonnement, enfin bien présenté.",
     "phrase": "Ulti range les milliers de chaînes et de films de votre abonnement en écrans clairs, comme une app de télé que vous auriez toujours eue.",
-    "directTitre": "Le direct, d'un coup d'œil",
-    "directTexte": "Un anneau autour de chaque chaîne montre où en est le programme. Filtrez par thème et zappez d'une chaîne à l'autre.",
+    "directTitre": "Le direct, d’un coup d’œil",
+    "directTexte": "Un anneau autour de chaque chaîne montre où en est le programme. Filtrez par thème et zappez d’une chaîne à l’autre.",
     "guideTitre": "Un vrai guide TV",
     "guideTexte": "Ce soir, demain, la semaine. Posez un rappel en un geste, ou utilisez votre propre guide XMLTV.",
     "filmsTitre": "Films et séries, sans doublons",
-    "filmsTexte": "Affiches et résumés, toutes les versions d'un même film réunies en une seule fiche, reprise là où vous vous êtes arrêté.",
+    "filmsTexte": "Affiches et résumés, toutes les versions d’un même film réunies en une seule fiche, reprise là où vous vous êtes arrêté.",
     "premium": "Avec Premium",
     "premiumLecture": "Lecture avec Premium"
   },
   "visite": {
     "titre": "Faites le tour.",
-    "groupe": "Écrans de l'app",
+    "groupe": "Écrans de l’app",
     "legendes": {
       "direct": "Toutes vos chaînes en grandes vignettes, avec le programme en cours. Filtrez par thème, puis zappez.",
       "guide": "Ce soir, demain, toute la semaine. Un rappel en un geste, et une ligne montre où vous en êtes.",
-      "pause": "Mettez le direct en pause, revenez en arrière ou reprenez au début de l'émission, puis revenez au direct.",
-      "films": "Parcourez le catalogue avec affiches et résumés, toutes les versions d'un film réunies, et reprenez là où vous vous êtes arrêté.",
-      "multi": "Jusqu'à 4 directs à la fois sur Apple TV, iPad et Mac, 2 sur iPhone, dans la limite des connexions de votre abonnement.",
-      "accueil": "Dès l'ouverture : le film à la une et vos chaînes en direct, avec le programme en cours.",
+      "pause": "Mettez le direct en pause, revenez en arrière ou reprenez au début de l’émission, puis revenez au direct.",
+      "films": "Parcourez le catalogue avec affiches et résumés, toutes les versions d’un film réunies, et reprenez là où vous vous êtes arrêté.",
+      "multi": "Jusqu’à 4 directs à la fois sur Apple TV, iPad et Mac, 2 sur iPhone, dans la limite des connexions de votre abonnement.",
+      "accueil": "Dès l’ouverture : le film à la une et vos chaînes en direct, avec le programme en cours.",
       "profils": "Un profil Enfant protégé par un code parental et, avec Premium, un profil pour chaque personne."
     },
-    "credits": "Vrais écrans de l'app, avec des chaînes inventées et des images de films libres du Blender Studio (licence CC BY). [Crédits des images](credits).",
+    "credits": "Vrais écrans de l’app, avec des chaînes inventées et des images de films libres du Blender Studio (licence CC BY). [Crédits des images](credits).",
     "pause": "Mettre la visite en pause",
     "lecture": "Reprendre la visite",
     "mac": "Aussi sur Mac avec puce Apple."
@@ -135,7 +135,7 @@
       "iphone": "iPhone"
     },
     "vues": {
-      "accueil": "l'accueil, avec le film à la une et les chaînes en direct",
+      "accueil": "l’accueil, avec le film à la une et les chaînes en direct",
       "direct-bandeau": "une chaîne en direct, avec le bandeau du programme en cours",
       "direct": "la liste des chaînes en direct",
       "guide": "le guide TV",
@@ -148,9 +148,9 @@
   "appletv": {
     "surtitre": "Apple TV",
     "titre": "Zappez, tout simplement.",
-    "texte": "Sur l'Apple TV, tout se fait à la télécommande : passez d'une chaîne à l'autre comme sur la télé d'avant, dans des menus clairs, lisibles de loin.",
+    "texte": "Sur l’Apple TV, tout se fait à la télécommande : passez d’une chaîne à l’autre comme sur la télé d’avant, dans des menus clairs, lisibles de loin.",
     "point1": "Zapping avec la télécommande, haut et bas",
-    "point2": "Image dans l'image pendant le direct",
+    "point2": "Image dans l’image pendant le direct",
     "point3": "Grandes affiches, pensées pour le canapé"
   },
   "famille": {
@@ -167,7 +167,7 @@
     "icloud": "Synchro iCloud entre tous vos appareils",
     "plusieurs": "Plusieurs abonnements et profils",
     "themes": "Thèmes Halo et Programme",
-    "multi": "Multi-écran : jusqu'à 4 directs à la fois (2 sur iPhone)"
+    "multi": "Multi-écran : jusqu’à 4 directs à la fois (2 sur iPhone)"
   },
   "etapes": {
     "e1Titre": "Ajoutez votre abonnement",
@@ -178,15 +178,15 @@
     "e3Texte": "Sur iPhone, iPad, Mac et Apple TV. Avec Premium, votre liste et vos reprises vous suivent."
   },
   "tarifs": {
-    "titre": "Gratuit pour l'essentiel.",
-    "phrase": "Le direct est gratuit. Ulti Premium s'essaie gratuitement pendant 7 jours.",
+    "titre": "Gratuit pour l’essentiel.",
+    "phrase": "Le direct est gratuit. Ulti Premium s’essaie gratuitement pendant 7 jours.",
     "gratuitTitre": "Gratuit",
     "gratuitTexte": "Le direct, le guide TV et ses rappels, les fiches des films et séries (lecture avec Premium), l’image dans l’image, l’Apple TV par QR code et un profil Enfant.",
     "choix": "Choisir une formule Premium",
     "pourMoi": "Pour moi",
     "pourFamille": "Pour la famille",
     "soloLegende": "Solo : pour vous, sur tous vos appareils.",
-    "familleLegende": "Famille : jusqu'à 6 personnes avec le Partage familial d'Apple.",
+    "familleLegende": "Famille : jusqu’à 6 personnes avec le Partage familial d’Apple.",
     "mensuel": "Premium mensuel",
     "annuel": "Premium annuel",
     "vie": "Premium à vie",
@@ -197,10 +197,10 @@
     "annuelTexteSansPrix": "Essai gratuit de 7 jours.",
     "vieTexte": "Un seul paiement, sans abonnement.",
     "remise": "−{remise} %",
-    "prixAppStore": "Prix affiché dans l'App Store",
+    "prixAppStore": "Prix affiché dans l’App Store",
     "memesFonctions": "Les trois formules Premium donnent accès aux mêmes fonctions.",
     "noteTTC": "Prix TTC.",
-    "noteAppStore": "Le prix exact de votre pays s'affiche dans l'App Store.",
+    "noteAppStore": "Le prix exact de votre pays s’affiche dans l’App Store.",
     "noteHT": "Taxes applicables en sus."
   },
   "offre": {
@@ -238,12 +238,12 @@
     "q1": "Ulti fournit-il des chaînes ?",
     "r1": "Non. Ulti est un lecteur : il lit les sources que vous ajoutez vous-même. Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder.",
     "q2": "Sur quels appareils ?",
-    "r2": "iPhone, iPad, Mac (avec puce Apple) et Apple TV. Ulti Premium vaut sur tous vos appareils avec le même identifiant Apple ; avec la formule Famille, jusqu'à 6 personnes en profitent grâce au Partage familial. Une version Android (téléphones, tablettes et téléviseurs) est en préparation.",
-    "r2SansAppleTv": "iPhone, iPad et Mac (avec puce Apple) dès maintenant ; la version Apple TV arrive dans les jours qui viennent. Ulti Premium vaut sur tous vos appareils avec le même identifiant Apple ; avec la formule Famille, jusqu'à 6 personnes en profitent grâce au Partage familial. Une version Android (téléphones, tablettes et téléviseurs) est en préparation.",
+    "r2": "iPhone, iPad, Mac (avec puce Apple) et Apple TV. Ulti Premium vaut sur tous vos appareils avec le même identifiant Apple ; avec la formule Famille, jusqu’à 6 personnes en profitent grâce au Partage familial. Une version Android (téléphones, tablettes et téléviseurs) est en préparation.",
+    "r2SansAppleTv": "iPhone, iPad et Mac (avec puce Apple) dès maintenant ; la version Apple TV arrive dans les jours qui viennent. Ulti Premium vaut sur tous vos appareils avec le même identifiant Apple ; avec la formule Famille, jusqu’à 6 personnes en profitent grâce au Partage familial. Une version Android (téléphones, tablettes et téléviseurs) est en préparation.",
     "q3": "Mes identifiants sont-ils en sécurité ?",
     "r3": "Ils sont gardés dans le Trousseau de votre appareil et ne passent jamais par un serveur Ulti.",
     "q4": "Quels abonnements sont compatibles ?",
-    "r4": "Les abonnements fournis sous forme de lien M3U ou d'identifiants Xtream Codes, c'est-à-dire la grande majorité. Le plus simple : collez le message de votre fournisseur, Ulti reconnaît le format tout seul.",
+    "r4": "Les abonnements fournis sous forme de lien M3U ou d’identifiants Xtream Codes, c’est-à-dire la grande majorité. Le plus simple : collez le message de votre fournisseur, Ulti reconnaît le format tout seul.",
     "q5": "Puis-je essayer avant de payer ?",
     "r5": "Oui. Le direct et le guide TV sont gratuits, tout comme les fiches des films et séries sur iPhone, iPad et Mac ; sur Apple TV, elles le deviennent avec la prochaine mise à jour. La lecture des films et séries fait partie de Premium, qui s’essaie gratuitement pendant 7 jours avec les abonnements mensuels et annuels, Solo ou Famille."
   },
@@ -255,16 +255,16 @@
   "neutralite": "Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder.",
   "pied": {
     "changerPays": "Changer de pays ou de région (actuellement : {pays}, {langue})",
-    "tmdb": "Ce produit utilise l'API TMDB mais n'est ni approuvé ni certifié par TMDB.",
+    "tmdb": "Ce produit utilise l’API TMDB mais n’est ni approuvé ni certifié par TMDB.",
     "tmdbLogo": "Logo de The Movie Database (TMDB)",
-    "marques": "Apple, Apple TV, iPhone, iPad et Mac sont des marques d'Apple Inc.",
+    "marques": "Apple, Apple TV, iPhone, iPad et Mac sont des marques d’Apple Inc.",
     "copyright": "© 2026 Ulti",
     "liens": {
       "navigation": "Informations",
       "support": "Support",
       "privacy": "Confidentialité",
       "legal": "Mentions légales",
-      "terms": "Conditions d'utilisation"
+      "terms": "Conditions d’utilisation"
     }
   },
   "bandeau": {
@@ -305,27 +305,27 @@
       "fr-lu": "Voir le site pour le Luxembourg",
       "fr-ch": "Voir le site pour la Suisse",
       "en-gb": "Voir le site pour le Royaume-Uni (en anglais)",
-      "en-ie": "Voir le site pour l'Irlande (en anglais)",
+      "en-ie": "Voir le site pour l’Irlande (en anglais)",
       "fr-ca": "Voir le site pour le Canada",
       "en-ca": "Voir le site pour le Canada (en anglais)",
       "en-us": "Voir le site pour les États-Unis (en anglais)",
       "nl-nl": "Voir le site pour les Pays-Bas (en néerlandais)",
       "nl-be": "Voir le site pour la Belgique (en néerlandais)",
-      "de-de": "Voir le site pour l'Allemagne (en allemand)",
-      "de-at": "Voir le site pour l'Autriche (en allemand)",
+      "de-de": "Voir le site pour l’Allemagne (en allemand)",
+      "de-at": "Voir le site pour l’Autriche (en allemand)",
       "de-ch": "Voir le site pour la Suisse (en allemand)",
       "sv-se": "Voir le site pour la Suède (en suédois)",
       "nb-no": "Voir le site pour la Norvège (en norvégien)",
       "da-dk": "Voir le site pour le Danemark (en danois)",
       "fi-fi": "Voir le site pour la Finlande (en finnois)",
-      "es-es": "Voir le site pour l'Espagne (en espagnol)",
-      "it-it": "Voir le site pour l'Italie (en italien)",
+      "es-es": "Voir le site pour l’Espagne (en espagnol)",
+      "it-it": "Voir le site pour l’Italie (en italien)",
       "pt-br": "Voir le site pour le Brésil (en portugais du Brésil)",
       "pt-pt": "Voir le site pour le Portugal (en portugais)",
       "de-lu": "Voir le site pour le Luxembourg (en allemand)",
       "it-ch": "Voir le site pour la Suisse (en italien)",
       "es-mx": "Voir le site pour le Mexique (en espagnol)",
-      "en-au": "Voir le site pour l'Australie (en anglais)"
+      "en-au": "Voir le site pour l’Australie (en anglais)"
     }
   },
   "choix": {
@@ -343,26 +343,26 @@
     "support": {
       "titre": "Support",
       "metaTitre": "Support — Ulti",
-      "description": "Aide d'Ulti : installation, ajout d'un abonnement IPTV, Apple TV, profils, Ulti Premium, achats et lecture.",
+      "description": "Aide d’Ulti : installation, ajout d’un abonnement IPTV, Apple TV, profils, Ulti Premium, achats et lecture.",
       "chapeau": "Tout pour bien démarrer avec Ulti, et des réponses aux questions les plus fréquentes."
     },
     "privacy": {
       "titre": "Confidentialité",
       "metaTitre": "Confidentialité — Ulti",
-      "description": "Politique de confidentialité d'Ulti : aucune donnée collectée, vos identifiants restent sur votre appareil.",
-      "chapeau": "Ulti ne collecte aucune donnée. Voici exactement ce que fait l'app, et ce que fait ce site."
+      "description": "Politique de confidentialité d’Ulti : aucune donnée collectée, vos identifiants restent sur votre appareil.",
+      "chapeau": "Ulti ne collecte aucune donnée. Voici exactement ce que fait l’app, et ce que fait ce site."
     },
     "legal": {
       "titre": "Mentions légales",
       "metaTitre": "Mentions légales — Ulti",
-      "description": "Mentions légales du site et de l'app Ulti.",
+      "description": "Mentions légales du site et de l’app Ulti.",
       "chapeau": "Qui édite Ulti, qui héberge ce site, et les droits sur ce qui y est montré."
     },
     "terms": {
-      "titre": "Conditions d'utilisation",
-      "metaTitre": "Conditions d'utilisation — Ulti",
-      "description": "Conditions d'utilisation d'Ulti : le contrat de licence de l'utilisateur final de l'app.",
-      "chapeau": "Le contrat de licence qui s'applique quand vous utilisez Ulti, en plus des conditions de l'App Store ou de Google Play."
+      "titre": "Conditions d’utilisation",
+      "metaTitre": "Conditions d’utilisation — Ulti",
+      "description": "Conditions d’utilisation d’Ulti : le contrat de licence de l’utilisateur final de l’app.",
+      "chapeau": "Le contrat de licence qui s’applique quand vous utilisez Ulti, en plus des conditions de l’App Store ou de Google Play."
     }
   },
   "faqPlus": "Toutes les questions sur la page Support",
@@ -379,30 +379,30 @@
     "q": {
       "chaines": {
         "q": "Ulti fournit-il des chaînes ?",
-        "r": "Non. Ulti est un lecteur : il lit l'abonnement IPTV que vous ajoutez vous-même. Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder."
+        "r": "Non. Ulti est un lecteur : il lit l’abonnement IPTV que vous ajoutez vous-même. Ulti ne fournit aucune chaîne ni aucun contenu. Vous devez disposer de vos propres sources, et avoir le droit de les regarder."
       },
       "appareils": {
         "q": "Sur quels appareils fonctionne Ulti ?",
-        "r": "iPhone, iPad, Mac et Apple TV : iPhone et iPad avec iOS 17 ou iPadOS 17 ou plus récent, Apple TV avec tvOS 17 ou plus récent, et les Mac avec puce Apple, qui utilisent l'app iPad. Premium vaut sur tous vos appareils connectés au même identifiant Apple. Une version Android (téléphones, tablettes et téléviseurs) est en préparation.",
-        "rSansAppleTv": "iPhone, iPad et Mac dès maintenant, Apple TV dans les jours qui viennent : iPhone et iPad avec iOS 17 ou iPadOS 17 ou plus récent, Apple TV avec tvOS 17 ou plus récent, et les Mac avec puce Apple, qui utilisent l'app iPad. Premium vaut sur tous vos appareils connectés au même identifiant Apple. Une version Android (téléphones, tablettes et téléviseurs) est en préparation."
+        "r": "iPhone, iPad, Mac et Apple TV : iPhone et iPad avec iOS 17 ou iPadOS 17 ou plus récent, Apple TV avec tvOS 17 ou plus récent, et les Mac avec puce Apple, qui utilisent l’app iPad. Premium vaut sur tous vos appareils connectés au même identifiant Apple. Une version Android (téléphones, tablettes et téléviseurs) est en préparation.",
+        "rSansAppleTv": "iPhone, iPad et Mac dès maintenant, Apple TV dans les jours qui viennent : iPhone et iPad avec iOS 17 ou iPadOS 17 ou plus récent, Apple TV avec tvOS 17 ou plus récent, et les Mac avec puce Apple, qui utilisent l’app iPad. Premium vaut sur tous vos appareils connectés au même identifiant Apple. Une version Android (téléphones, tablettes et téléviseurs) est en préparation."
       },
       "installer": {
         "q": "Comment installer Ulti ?",
-        "r": "Téléchargez Ulti dans l'[App Store](appstore) de votre iPhone, de votre iPad ou de votre Mac, et dans l'App Store de votre Apple TV. Une fois installée, l'app s'appelle « Ulti IPTV ».",
-        "rSansAppleTv": "Téléchargez Ulti dans l'[App Store](appstore) de votre iPhone, de votre iPad ou de votre Mac. La version Apple TV arrive dans les jours qui viennent. Une fois installée, l'app s'appelle « Ulti IPTV ».",
-        "rBientot": "Ulti arrive bientôt sur l'App Store, pour iPhone, iPad, Mac et Apple TV. Une fois installée, l'app s'appelle « Ulti IPTV »."
+        "r": "Téléchargez Ulti dans l’[App Store](appstore) de votre iPhone, de votre iPad ou de votre Mac, et dans l’App Store de votre Apple TV. Une fois installée, l’app s’appelle « Ulti IPTV ».",
+        "rSansAppleTv": "Téléchargez Ulti dans l’[App Store](appstore) de votre iPhone, de votre iPad ou de votre Mac. La version Apple TV arrive dans les jours qui viennent. Une fois installée, l’app s’appelle « Ulti IPTV ».",
+        "rBientot": "Ulti arrive bientôt sur l’App Store, pour iPhone, iPad, Mac et Apple TV. Une fois installée, l’app s’appelle « Ulti IPTV »."
       },
       "ajouter": {
         "q": "Comment ajouter mon abonnement IPTV ?",
-        "r": "Ouvrez Compte › Abonnements › Ajouter un abonnement. Le plus simple, sur iPhone : « Coller le message reçu » (voir la question suivante).\n\nVous pouvez aussi saisir le serveur, le nom d'utilisateur et le mot de passe, ou coller un lien M3U. Sur Apple TV, le plus simple est d'envoyer l'abonnement depuis votre iPhone (voir « Apple TV » plus bas)."
+        "r": "Ouvrez Compte › Abonnements › Ajouter un abonnement. Le plus simple, sur iPhone : « Coller le message reçu » (voir la question suivante).\n\nVous pouvez aussi saisir le serveur, le nom d’utilisateur et le mot de passe, ou coller un lien M3U. Sur Apple TV, le plus simple est d’envoyer l’abonnement depuis votre iPhone (voir « Apple TV » plus bas)."
       },
       "formats": {
         "q": "Quels formats sont compatibles ?",
-        "r": "Les comptes Xtream Codes (serveur, nom d'utilisateur et mot de passe) et les liens de playlist M3U. Pour le guide TV, Ulti utilise celui de votre fournisseur ; vous pouvez aussi indiquer l'adresse d'un guide au format XMLTV (.xml ou .xml.gz) dans Compte › Guide TV.\n\nNe sont pas pris en charge : les abonnements liés à une adresse MAC et les portails Stalker / Ministra."
+        "r": "Les comptes Xtream Codes (serveur, nom d’utilisateur et mot de passe) et les liens de playlist M3U. Pour le guide TV, Ulti utilise celui de votre fournisseur ; vous pouvez aussi indiquer l’adresse d’un guide au format XMLTV (.xml ou .xml.gz) dans Compte › Guide TV.\n\nNe sont pas pris en charge : les abonnements liés à une adresse MAC et les portails Stalker / Ministra."
       },
       "replay": {
         "q": "Le replay fonctionne-t-il avec mon abonnement ?",
-        "r": "Le replay fait partie de Premium. Il fonctionne avec un compte Xtream Codes, pour les chaînes dont votre fournisseur propose le rattrapage. Il n'est pas encore disponible avec les playlists M3U."
+        "r": "Le replay fait partie de Premium. Il fonctionne avec un compte Xtream Codes, pour les chaînes dont votre fournisseur propose le rattrapage. Il n’est pas encore disponible avec les playlists M3U."
       },
       "trier": {
         "q": "Mon abonnement contient trop de chaînes. Comment faire le tri ?",
@@ -410,27 +410,27 @@
       },
       "plusieurs": {
         "q": "Puis-je ajouter plusieurs abonnements ?",
-        "r": "Oui, avec Premium. Dans Compte › Abonnements, touchez un abonnement pour l'utiliser. Mes contenus, Ma liste, les reprises et les rappels restent séparés pour chacun."
+        "r": "Oui, avec Premium. Dans Compte › Abonnements, touchez un abonnement pour l’utiliser. Mes contenus, Ma liste, les reprises et les rappels restent séparés pour chacun."
       },
       "qr": {
-        "q": "Comment mettre mon abonnement sur l'Apple TV ?",
-        "r": "Sans rien taper à la télécommande : ouvrez Ulti sur l'Apple TV, un QR code s'affiche. Scannez-le avec l'appareil photo de votre iPhone, touchez le lien Ulti, et l'abonnement arrive tout seul, avec vos catégories, vos favoris et votre apparence. Si l'Apple TV a déjà un abonnement, le QR code se trouve dans Compte › Abonnements › Ajouter un abonnement.\n\nL'iPhone et l'Apple TV doivent être sur le même réseau Wi-Fi. L'envoi est chiffré et passe directement par votre réseau local ; le code parental n'est jamais envoyé. Vous pouvez aussi saisir l'abonnement à la télécommande."
+        "q": "Comment mettre mon abonnement sur l’Apple TV ?",
+        "r": "Sans rien taper à la télécommande : ouvrez Ulti sur l’Apple TV, un QR code s’affiche. Scannez-le avec l’appareil photo de votre iPhone, touchez le lien Ulti, et l’abonnement arrive tout seul, avec vos catégories, vos favoris et votre apparence. Si l’Apple TV a déjà un abonnement, le QR code se trouve dans Compte › Abonnements › Ajouter un abonnement.\n\nL’iPhone et l’Apple TV doivent être sur le même réseau Wi-Fi. L’envoi est chiffré et passe directement par votre réseau local ; le code parental n’est jamais envoyé. Vous pouvez aussi saisir l’abonnement à la télécommande."
       },
       "qrBloque": {
         "q": "Le QR code ne fonctionne pas. Que faire ?",
-        "r": "Vérifiez que l'Apple TV est allumée, sur le même réseau Wi-Fi que l'iPhone, et qu'elle affiche l'écran du QR code. L'abonnement doit d'abord être ajouté sur l'iPhone.\n\nSi l'iPhone a refusé l'accès au réseau local, autorisez-le dans Réglages › Ulti IPTV › Réseau local, puis scannez de nouveau le QR code. Un QR code finit par expirer : scannez toujours celui qui est affiché."
+        "r": "Vérifiez que l’Apple TV est allumée, sur le même réseau Wi-Fi que l’iPhone, et qu’elle affiche l’écran du QR code. L’abonnement doit d’abord être ajouté sur l’iPhone.\n\nSi l’iPhone a refusé l’accès au réseau local, autorisez-le dans Réglages › Ulti IPTV › Réseau local, puis scannez de nouveau le QR code. Un QR code finit par expirer : scannez toujours celui qui est affiché."
       },
       "profils": {
         "q": "Comment fonctionnent les profils ?",
         "r": "Chaque profil a ses propres Mes contenus, Ma liste, reprises et rappels. Les profils se gèrent dans Compte › Profils. La version gratuite comprend un profil Enfant ; les profils adultes supplémentaires font partie de Premium."
       },
       "enfant": {
-        "q": "Qu'est-ce que le profil Enfant ?",
-        "r": "Un profil Enfant ne voit aucune catégorie ni aucun contenu pour adultes, n'a pas accès aux abonnements et ne peut pas être quitté sans le code parental. Ce code à 4 chiffres est aussi demandé pour modifier les profils, et, quand un profil Enfant existe, pour ouvrir un profil adulte (sauf si vous le désactivez pour ce profil).\n\nLe code parental reste sur chaque appareil : il n'est jamais envoyé, ni par iCloud ni vers l'Apple TV."
+        "q": "Qu’est-ce que le profil Enfant ?",
+        "r": "Un profil Enfant ne voit aucune catégorie ni aucun contenu pour adultes, n’a pas accès aux abonnements et ne peut pas être quitté sans le code parental. Ce code à 4 chiffres est aussi demandé pour modifier les profils, et, quand un profil Enfant existe, pour ouvrir un profil adulte (sauf si vous le désactivez pour ce profil).\n\nLe code parental reste sur chaque appareil : il n’est jamais envoyé, ni par iCloud ni vers l’Apple TV."
       },
       "codeOublie": {
-        "q": "J'ai oublié le code parental.",
-        "r": "Sur iPhone ou iPad, touchez « Code parental oublié », confirmez qu'il s'agit bien de vous avec Face ID ou le code de l'appareil, puis créez un nouveau code. Le code de l'appareil doit être activé dans Réglages.\n\nSur Apple TV, scannez avec votre iPhone le QR code affiché, activez « Autoriser un nouveau code parental », puis confirmez avec Face ID ou le code de l'iPhone."
+        "q": "J’ai oublié le code parental.",
+        "r": "Sur iPhone ou iPad, touchez « Code parental oublié », confirmez qu’il s’agit bien de vous avec Face ID ou le code de l’appareil, puis créez un nouveau code. Le code de l’appareil doit être activé dans Réglages.\n\nSur Apple TV, scannez avec votre iPhone le QR code affiché, activez « Autoriser un nouveau code parental », puis confirmez avec Face ID ou le code de l’iPhone."
       },
       "gratuit": {
         "q": "Que comprend la version gratuite ?",
@@ -442,11 +442,11 @@
       },
       "soloFamille": {
         "q": "Solo ou Famille : quelle différence ?",
-        "r": "Les deux formules donnent accès aux mêmes fonctions Premium. Solo est pour vous, sur tous vos appareils avec le même identifiant Apple. Famille se partage avec jusqu'à 6 personnes grâce au [Partage familial d'Apple](apple-partage). Chaque formule existe en mensuel, en annuel et à vie : voir les [tarifs](tarifs)."
+        "r": "Les deux formules donnent accès aux mêmes fonctions Premium. Solo est pour vous, sur tous vos appareils avec le même identifiant Apple. Famille se partage avec jusqu’à 6 personnes grâce au [Partage familial d’Apple](apple-partage). Chaque formule existe en mensuel, en annuel et à vie : voir les [tarifs](tarifs)."
       },
       "essai": {
         "q": "Puis-je essayer Premium gratuitement ?",
-        "r": "Oui : les abonnements mensuels et annuels, Solo ou Famille, commencent par 7 jours d'essai gratuit. L'achat à vie n'a pas d'essai. Si vous résiliez au moins 24 heures avant la fin de l'essai, rien ne vous est facturé."
+        "r": "Oui : les abonnements mensuels et annuels, Solo ou Famille, commencent par 7 jours d’essai gratuit. L’achat à vie n’a pas d’essai. Si vous résiliez au moins 24 heures avant la fin de l’essai, rien ne vous est facturé."
       },
       "restaurer": {
         "q": "Comment restaurer mes achats ?",
@@ -454,15 +454,15 @@
       },
       "resilier": {
         "q": "Comment résilier mon abonnement ?",
-        "r": "Les abonnements sont gérés par Apple. Dans Ulti, ouvrez Compte › Premium › « Gérer mon abonnement ». Ou, sur iPhone ou iPad : Réglages › votre nom › Abonnements, choisissez l'abonnement Ulti, puis résiliez-le ([aide d'Apple](apple-resilier)).\n\nRésiliez au moins 24 heures avant la fin de la période pour éviter le renouvellement. Premium reste actif jusqu'à la fin de la période déjà payée."
+        "r": "Les abonnements sont gérés par Apple. Dans Ulti, ouvrez Compte › Premium › « Gérer mon abonnement ». Ou, sur iPhone ou iPad : Réglages › votre nom › Abonnements, choisissez l’abonnement Ulti, puis résiliez-le ([aide d’Apple](apple-resilier)).\n\nRésiliez au moins 24 heures avant la fin de la période pour éviter le renouvellement. Premium reste actif jusqu’à la fin de la période déjà payée."
       },
       "vie": {
-        "q": "J'ai acheté Premium à vie : mon abonnement s'arrête-t-il tout seul ?",
-        "r": "Non : Apple ne résilie pas un abonnement tout seul. Si vous aviez un abonnement mensuel ou annuel avant l'achat à vie, pensez à le résilier pour ne plus être prélevé. Ulti vous le rappelle dans Compte › Premium."
+        "q": "J’ai acheté Premium à vie : mon abonnement s’arrête-t-il tout seul ?",
+        "r": "Non : Apple ne résilie pas un abonnement tout seul. Si vous aviez un abonnement mensuel ou annuel avant l’achat à vie, pensez à le résilier pour ne plus être prélevé. Ulti vous le rappelle dans Compte › Premium."
       },
       "occupee": {
         "q": "« La lecture précédente est encore ouverte » : que faire ?",
-        "r": "Votre abonnement n'autorise qu'une lecture à la fois, et votre fournisseur met souvent 1 à 2 minutes à libérer la précédente, par exemple juste après un film ou une autre chaîne. Ulti affiche un décompte sur le bouton « Réessayer » : touchez-le quand le décompte est terminé. Si un autre appareil regarde déjà avec le même abonnement, arrêtez la lecture sur cet appareil.\n\nEn multi-écran, « Plus aucune connexion libre » veut dire que toutes les connexions de vos abonnements sont déjà utilisées. Avec un abonnement à une seule connexion, un téléchargement se met en pause pendant que vous regardez, puis reprend tout seul."
+        "r": "Votre abonnement n’autorise qu’une lecture à la fois, et votre fournisseur met souvent 1 à 2 minutes à libérer la précédente, par exemple juste après un film ou une autre chaîne. Ulti affiche un décompte sur le bouton « Réessayer » : touchez-le quand le décompte est terminé. Si un autre appareil regarde déjà avec le même abonnement, arrêtez la lecture sur cet appareil.\n\nEn multi-écran, « Plus aucune connexion libre » veut dire que toutes les connexions de vos abonnements sont déjà utilisées. Avec un abonnement à une seule connexion, un téléchargement se met en pause pendant que vous regardez, puis reprend tout seul."
       },
       "refusee": {
         "q": "« Connexion refusée par le fournisseur » ou « Cet abonnement a expiré »",
@@ -478,52 +478,52 @@
       },
       "donnees": {
         "q": "Ulti collecte-t-il des données ?",
-        "r": "Non. Pas de compte à créer, pas de publicité, pas de mesure d'audience. Tout est détaillé dans [notre politique de confidentialité](privacy)."
+        "r": "Non. Pas de compte à créer, pas de publicité, pas de mesure d’audience. Tout est détaillé dans [notre politique de confidentialité](privacy)."
       },
       "coller": {
         "q": "Comment fonctionne « Coller le message reçu » ?",
-        "r": "Votre fournisseur vous a envoyé vos identifiants par SMS, WhatsApp ou e-mail ? Sur iPhone, copiez tout le message, puis, dans Compte › Abonnements › Ajouter un abonnement, touchez « Coller le message reçu ». Ulti y trouve le serveur, le nom d'utilisateur et le mot de passe, ou le lien M3U, et remplit les champs tout seul. Vérifiez, puis touchez « Continuer ».\n\nLe message est lu sur l'iPhone, jamais envoyé ni enregistré. Rien ne se connecte avant « Continuer »."
+        "r": "Votre fournisseur vous a envoyé vos identifiants par SMS, WhatsApp ou e-mail ? Sur iPhone, copiez tout le message, puis, dans Compte › Abonnements › Ajouter un abonnement, touchez « Coller le message reçu ». Ulti y trouve le serveur, le nom d’utilisateur et le mot de passe, ou le lien M3U, et remplit les champs tout seul. Vérifiez, puis touchez « Continuer ».\n\nLe message est lu sur l’iPhone, jamais envoyé ni enregistré. Rien ne se connecte avant « Continuer »."
       },
       "multi": {
         "q": "Comment fonctionne le multi-écran ?",
-        "r": "Le multi-écran fait partie de Premium : regardez jusqu'à 4 directs à la fois sur Apple TV, iPad et Mac, et 2 sur iPhone. Le nombre d'écrans dépend aussi de votre abonnement IPTV : chaque direct utilise une connexion, et beaucoup d'abonnements n'en autorisent qu'une. Si vous avez plusieurs abonnements, leurs connexions s'additionnent."
+        "r": "Le multi-écran fait partie de Premium : regardez jusqu’à 4 directs à la fois sur Apple TV, iPad et Mac, et 2 sur iPhone. Le nombre d’écrans dépend aussi de votre abonnement IPTV : chaque direct utilise une connexion, et beaucoup d’abonnements n’en autorisent qu’une. Si vous avez plusieurs abonnements, leurs connexions s’additionnent."
       },
       "partage": {
         "q": "Comment partager Premium avec ma famille ?",
-        "r": "Choisissez la formule Famille : elle se partage avec jusqu'à 6 personnes grâce au [Partage familial d'Apple](apple-partage). Chaque membre de la famille ouvre Ulti avec son propre identifiant Apple et retrouve Premium ; au besoin, il touche « Restaurer les achats » dans Compte › Premium. La formule Solo ne se partage pas."
+        "r": "Choisissez la formule Famille : elle se partage avec jusqu’à 6 personnes grâce au [Partage familial d’Apple](apple-partage). Chaque membre de la famille ouvre Ulti avec son propre identifiant Apple et retrouve Premium ; au besoin, il touche « Restaurer les achats » dans Compte › Premium. La formule Solo ne se partage pas."
       }
     },
     "contact": {
-      "titre": "Besoin d'aide ?",
-      "texte": "Écrivez-nous à [{contact}](contact). Indiquez votre appareil (iPhone, iPad, Mac ou Apple TV) et, si possible, le message affiché. N'envoyez jamais vos identifiants ni l'adresse de votre abonnement."
+      "titre": "Besoin d’aide ?",
+      "texte": "Écrivez-nous à [{contact}](contact). Indiquez votre appareil (iPhone, iPad, Mac ou Apple TV) et, si possible, le message affiché. N’envoyez jamais vos identifiants ni l’adresse de votre abonnement."
     },
-    "essentiel": "L'essentiel"
+    "essentiel": "L’essentiel"
   },
   "confidentialite": {
     "sections": {
       "bref": {
         "titre": "En bref",
-        "texte": "Ulti ne collecte aucune donnée personnelle. Pas de compte à créer, pas de publicité, pas de suivi publicitaire, pas de mesure d'audience. L'app ne contient aucun outil de statistiques ni de rapports de plantage d'une autre entreprise."
+        "texte": "Ulti ne collecte aucune donnée personnelle. Pas de compte à créer, pas de publicité, pas de suivi publicitaire, pas de mesure d’audience. L’app ne contient aucun outil de statistiques ni de rapports de plantage d’une autre entreprise."
       },
       "identifiants": {
         "titre": "Vos identifiants",
-        "texte": "Le serveur, le nom d'utilisateur et le mot de passe de votre abonnement IPTV sont stockés uniquement sur votre appareil, dans le Trousseau d'Apple, et dans votre trousseau iCloud si vous l'activez. Ils ne passent jamais par un serveur d'Ulti."
+        "texte": "Le serveur, le nom d’utilisateur et le mot de passe de votre abonnement IPTV sont stockés uniquement sur votre appareil, dans le Trousseau d’Apple, et dans votre trousseau iCloud si vous l’activez. Ils ne passent jamais par un serveur d’Ulti."
       },
       "contacts": {
-        "titre": "Ce que l'app contacte",
-        "texte": "Ulti contacte seulement :\n\n• votre fournisseur IPTV, pour lire vos chaînes, films, séries et guide TV. C'est le service que vous avez choisi : ce n'est ni le développeur ni un partenaire du développeur ;\n• le relais d'Ulti (api.ultitv.com, hébergé par Cloudflare), pour afficher les affiches et résumés de The Movie Database (TMDB). Il transmet seulement la demande à TMDB et ne garde rien : aucun journal. L'app envoie seulement le titre et l'année des œuvres affichées, ainsi que la langue et la région de l'appareil : aucun identifiant, et rien de ce que vous tapez dans la recherche. Les images sont chargées directement depuis TMDB (image.tmdb.org) ;\n• Apple, pour les achats Premium et, si vous l'activez, pour la synchronisation iCloud."
+        "titre": "Ce que l’app contacte",
+        "texte": "Ulti contacte seulement :\n\n• votre fournisseur IPTV, pour lire vos chaînes, films, séries et guide TV. C’est le service que vous avez choisi : ce n’est ni le développeur ni un partenaire du développeur ;\n• le relais d’Ulti (api.ultitv.com, hébergé par Cloudflare), pour afficher les affiches et résumés de The Movie Database (TMDB). Il transmet seulement la demande à TMDB et ne garde rien : aucun journal. L’app envoie seulement le titre et l’année des œuvres affichées, ainsi que la langue et la région de l’appareil : aucun identifiant, et rien de ce que vous tapez dans la recherche. Les images sont chargées directement depuis TMDB (image.tmdb.org) ;\n• Apple, pour les achats Premium et, si vous l’activez, pour la synchronisation iCloud."
       },
       "ip": {
         "titre": "Votre adresse IP",
-        "texte": "Comme pour tout service en ligne, votre fournisseur IPTV, le relais d'Ulti, TMDB et Apple reçoivent l'adresse IP de votre appareil quand l'app les contacte. Le relais s'en sert seulement le temps de la demande, pour limiter le nombre de demandes. Ulti n'en garde aucune trace."
+        "texte": "Comme pour tout service en ligne, votre fournisseur IPTV, le relais d’Ulti, TMDB et Apple reçoivent l’adresse IP de votre appareil quand l’app les contacte. Le relais s’en sert seulement le temps de la demande, pour limiter le nombre de demandes. Ulti n’en garde aucune trace."
       },
       "icloud": {
         "titre": "Synchronisation iCloud",
-        "texte": "Avec Ulti Premium, vos profils, abonnements (identifiants compris), Mes contenus, Ma liste, reprises, rappels, chaînes souvent regardées et réglages d'apparence peuvent être synchronisés entre vos appareils. Ils sont stockés dans la partie privée de votre propre compte iCloud, chiffrés de bout en bout : le développeur n'y a pas accès. Le code parental reste sur chaque appareil."
+        "texte": "Avec Ulti Premium, vos profils, abonnements (identifiants compris), Mes contenus, Ma liste, reprises, rappels, chaînes souvent regardées et réglages d’apparence peuvent être synchronisés entre vos appareils. Ils sont stockés dans la partie privée de votre propre compte iCloud, chiffrés de bout en bout : le développeur n’y a pas accès. Le code parental reste sur chaque appareil."
       },
       "appletv": {
-        "titre": "Envoi vers l'Apple TV",
-        "texte": "Quand vous envoyez votre abonnement de l'iPhone vers l'Apple TV par QR code, les données passent directement d'un appareil à l'autre sur votre réseau local, chiffrées. Rien ne passe par un serveur. Le code parental n'est jamais envoyé."
+        "titre": "Envoi vers l’Apple TV",
+        "texte": "Quand vous envoyez votre abonnement de l’iPhone vers l’Apple TV par QR code, les données passent directement d’un appareil à l’autre sur votre réseau local, chiffrées. Rien ne passe par un serveur. Le code parental n’est jamais envoyé."
       },
       "message": {
         "titre": "Message du fournisseur",
@@ -531,27 +531,27 @@
       },
       "fichiers": {
         "titre": "Téléchargements et pause du direct",
-        "texte": "Les vidéos téléchargées restent sur votre appareil. Pour la pause du direct, Ulti garde les dernières minutes de la chaîne sur l'appareil ; rien n'est gardé après la fermeture du lecteur."
+        "texte": "Les vidéos téléchargées restent sur votre appareil. Pour la pause du direct, Ulti garde les dernières minutes de la chaîne sur l’appareil ; rien n’est gardé après la fermeture du lecteur."
       },
       "achats": {
         "titre": "Achats",
-        "texte": "Les achats sont gérés par Apple, sur l'App Store. Ulti garde seulement, sur l'appareil, le fait que Premium est actif ou non, pour fonctionner hors connexion, et ne l'envoie nulle part."
+        "texte": "Les achats sont gérés par Apple, sur l’App Store. Ulti garde seulement, sur l’appareil, le fait que Premium est actif ou non, pour fonctionner hors connexion, et ne l’envoie nulle part."
       },
       "android": {
         "titre": "Ulti sur Android (téléphones, tablettes, Android TV)",
-        "texte": "L'app Android fonctionne comme sur iPhone, sans synchronisation : vos abonnements IPTV (adresse du serveur, identifiant, mot de passe ou lien M3U) sont chiffrés et restent sur votre appareil ; ils ne sont jamais envoyés à Ulti. Les achats Premium passent par Google Play : Google traite le paiement selon ses propres [règles de confidentialité](google-confidentialite), et l'app ne reçoit que la confirmation de l'achat (aucune donnée bancaire) ; la bibliothèque d'achat de Google Play peut envoyer à Google des informations techniques sur les achats. Pour afficher les affiches et les résumés des films et des séries, l'app envoie au relais d'Ulti (api.ultitv.com) le titre et l'année de l'œuvre et la langue de l'appareil ; le relais interroge TMDB, ne garde aucun journal et n'enregistre pas votre adresse IP. Ulti ne contient ni publicité ni outil de mesure d'audience, et ne collecte aucune donnée personnelle. Si vous l'avez accepté dans les réglages de votre appareil, Google peut transmettre au développeur des rapports techniques sur les plantages (Android vitals). Les journaux de l'app ne quittent votre appareil que si vous les envoyez vous-même au support."
+        "texte": "L’app Android fonctionne comme sur iPhone, sans synchronisation : vos abonnements IPTV (adresse du serveur, identifiant, mot de passe ou lien M3U) sont chiffrés et restent sur votre appareil ; ils ne sont jamais envoyés à Ulti. Les achats Premium passent par Google Play : Google traite le paiement selon ses propres [règles de confidentialité](google-confidentialite), et l’app ne reçoit que la confirmation de l’achat (aucune donnée bancaire) ; la bibliothèque d’achat de Google Play peut envoyer à Google des informations techniques sur les achats. Pour afficher les affiches et les résumés des films et des séries, l’app envoie au relais d’Ulti (api.ultitv.com) le titre et l’année de l’œuvre et la langue de l’appareil ; le relais interroge TMDB, ne garde aucun journal et n’enregistre pas votre adresse IP. Ulti ne contient ni publicité ni outil de mesure d’audience, et ne collecte aucune donnée personnelle. Si vous l’avez accepté dans les réglages de votre appareil, Google peut transmettre au développeur des rapports techniques sur les plantages (Android vitals). Les journaux de l’app ne quittent votre appareil que si vous les envoyez vous-même au support."
       },
       "plantages": {
         "titre": "Rapports de plantage",
-        "texte": "Ulti n'envoie aucun rapport lui-même. Si vous avez accepté, dans les réglages de votre appareil, de partager les données d'analyse avec les développeurs d'apps, Apple peut transmettre au développeur des rapports techniques sur les plantages. Pendant les versions d'essai TestFlight, les retours et rapports que vous choisissez d'envoyer sont transmis par Apple au développeur."
+        "texte": "Ulti n’envoie aucun rapport lui-même. Si vous avez accepté, dans les réglages de votre appareil, de partager les données d’analyse avec les développeurs d’apps, Apple peut transmettre au développeur des rapports techniques sur les plantages. Pendant les versions d’essai TestFlight, les retours et rapports que vous choisissez d’envoyer sont transmis par Apple au développeur."
       },
       "site": {
         "titre": "Ce site",
-        "texte": "Ce site n'utilise aucun traceur, aucun cookie et aucune mesure d'audience, et ne charge rien depuis un autre site. Seul le pays que vous choisissez est gardé dans votre navigateur (stockage local), pour vous ramener à la bonne version ; il s'efface avec les données de navigation.\n\nLe site est hébergé par GitHub Pages. Comme tout hébergeur, GitHub reçoit les données techniques de connexion, dont l'adresse IP, pour servir les pages ([politique de confidentialité de GitHub](github-confidentialite))."
+        "texte": "Ce site n’utilise aucun traceur, aucun cookie et aucune mesure d’audience, et ne charge rien depuis un autre site. Seul le pays que vous choisissez est gardé dans votre navigateur (stockage local), pour vous ramener à la bonne version ; il s’efface avec les données de navigation.\n\nLe site est hébergé par GitHub Pages. Comme tout hébergeur, GitHub reçoit les données techniques de connexion, dont l’adresse IP, pour servir les pages ([politique de confidentialité de GitHub](github-confidentialite))."
       },
       "droits": {
         "titre": "Vos données et vos droits",
-        "texte": "Comme Ulti ne détient aucune donnée vous concernant, il n'y a rien à consulter ni à effacer chez nous. Pour tout effacer de vos appareils, supprimez vos abonnements dans Compte › Abonnements (ce qui les efface aussi d'iCloud), ou supprimez l'app."
+        "texte": "Comme Ulti ne détient aucune donnée vous concernant, il n’y a rien à consulter ni à effacer chez nous. Pour tout effacer de vos appareils, supprimez vos abonnements dans Compte › Abonnements (ce qui les efface aussi d’iCloud), ou supprimez l’app."
       },
       "changements": {
         "titre": "Changements",
@@ -559,7 +559,7 @@
       },
       "contact": {
         "titre": "Contact",
-        "texte": "Une question sur la confidentialité ? Écrivez à [{contact}](contact).\n\nÉditeur de l'app et de ce site : {editeur}, {adresse}."
+        "texte": "Une question sur la confidentialité ? Écrivez à [{contact}](contact).\n\nÉditeur de l’app et de ce site : {editeur}, {adresse}."
       }
     }
   },
@@ -578,22 +578,22 @@
     },
     "sections": {
       "editeur": {
-        "titre": "Éditeur du site et de l'app"
+        "titre": "Éditeur du site et de l’app"
       },
       "directeur": {
         "titre": "Directeur de la publication"
       },
       "hebergeur": {
         "titre": "Hébergeur",
-        "texte": "Le site est hébergé par GitHub Pages. Le relais api.ultitv.com, qui permet à l'app d'afficher les affiches et résumés des films et séries, est hébergé par Cloudflare."
+        "texte": "Le site est hébergé par GitHub Pages. Le relais api.ultitv.com, qui permet à l’app d’afficher les affiches et résumés des films et séries, est hébergé par Cloudflare."
       },
       "propriete": {
         "titre": "Propriété intellectuelle",
-        "texte": "Le nom Ulti, son logo, les textes et la présentation de ce site sont la propriété de l'éditeur. Apple, Apple TV, iPhone, iPad, Mac et App Store sont des marques d'Apple Inc.\n\nLes films et séries montrés dans les écrans sont des films libres du [Blender Studio](blender) (© Blender Foundation), publiés sous licence Creative Commons (voir les crédits ci-dessous). Les chaînes montrées sont inventées."
+        "texte": "Le nom Ulti, son logo, les textes et la présentation de ce site sont la propriété de l’éditeur. Apple, Apple TV, iPhone, iPad, Mac et App Store sont des marques d’Apple Inc.\n\nLes films et séries montrés dans les écrans sont des films libres du [Blender Studio](blender) (© Blender Foundation), publiés sous licence Creative Commons (voir les crédits ci-dessous). Les chaînes montrées sont inventées."
       },
       "tmdb": {
         "titre": "Données des films et séries",
-        "texte": "Les affiches et résumés affichés dans l'app proviennent de [The Movie Database (TMDB)](tmdb). Ce produit utilise l'API TMDB mais n'est ni approuvé ni certifié par TMDB."
+        "texte": "Les affiches et résumés affichés dans l’app proviennent de [The Movie Database (TMDB)](tmdb). Ce produit utilise l’API TMDB mais n’est ni approuvé ni certifié par TMDB."
       },
       "contenus": {
         "titre": "Contenus",
@@ -601,7 +601,7 @@
       },
       "credits": {
         "titre": "Crédits des images",
-        "texte": "Les écrans montrés sur ce site sont de vraies captures de l'app, faites avec une liste de démonstration : les chaînes et leurs programmes sont inventés.\n\nLes images des directs sont des extraits de films du [Blender Studio](blender), sans autre modification :\n\n• Big Buck Bunny (2008), © Blender Foundation, www.bigbuckbunny.org, licence [CC BY 3.0](cc-by-3) ;\n• Elephants Dream (2006), © Blender Foundation / Netherlands Media Art Institute, www.elephantsdream.org, licence [CC BY 2.5](cc-by-25) ;\n• Sintel (2010), © Blender Foundation, www.sintel.org, licence [CC BY 3.0](cc-by-3) ;\n• Cosmos Laundromat (2015), © Blender Institute, gooseberry.blender.org, licence [CC BY 4.0](cc-by-4).\n\nAffiches et résumés des films : The Movie Database (TMDB)."
+        "texte": "Les écrans montrés sur ce site sont de vraies captures de l’app, faites avec une liste de démonstration : les chaînes et leurs programmes sont inventés.\n\nLes images des directs sont des extraits de films du [Blender Studio](blender), sans autre modification :\n\n• Big Buck Bunny (2008), © Blender Foundation, www.bigbuckbunny.org, licence [CC BY 3.0](cc-by-3) ;\n• Elephants Dream (2006), © Blender Foundation / Netherlands Media Art Institute, www.elephantsdream.org, licence [CC BY 2.5](cc-by-25) ;\n• Sintel (2010), © Blender Foundation, www.sintel.org, licence [CC BY 3.0](cc-by-3) ;\n• Cosmos Laundromat (2015), © Blender Institute, gooseberry.blender.org, licence [CC BY 4.0](cc-by-4).\n\nAffiches et résumés des films : The Movie Database (TMDB)."
       }
     },
     "blancs": {
@@ -618,9 +618,9 @@
   },
   "erreur": {
     "metaTitre": "Page introuvable — Ulti",
-    "titre": "Cette page n'existe pas.",
-    "texte": "L'adresse est peut-être mal écrite, ou la page a été déplacée.",
-    "accueil": "Retour à l'accueil",
+    "titre": "Cette page n’existe pas.",
+    "texte": "L’adresse est peut-être mal écrite, ou la page a été déplacée.",
+    "accueil": "Retour à l’accueil",
     "choix": "Choisir un pays ou une région"
   },
   "conditions": {

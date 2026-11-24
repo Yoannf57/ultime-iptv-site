@@ -54,7 +54,7 @@
     "collerTitre": "Indsæt. Færdig.",
     "phrase": "Har din udbyder sendt dig en besked med dine loginoplysninger? Indsæt den i Ulti: appen genkender selv formatet og udfylder det hele. Du kan også skrive oplysningerne ind manuelt.",
     "scannerTitre": "Scan. Færdig.",
-    "scannerPhrase": "På Apple TV skal du ikke skrive noget med fjernbetjeningen: scan QR-koden med din iPhone, bekræft, og dit abonnement lander på tv'et, krypteret, direkte via dit lokale netværk.",
+    "scannerPhrase": "På Apple TV skal du ikke skrive noget med fjernbetjeningen: scan QR-koden med din iPhone, bekræft, og dit abonnement lander på tv’et, krypteret, direkte via dit lokale netværk.",
     "groupe": "Trin for forbindelse",
     "etiquettes": {
       "message": "Besked",
@@ -238,8 +238,8 @@
     "q1": "Leverer Ulti kanaler?",
     "r1": "Nej. Ulti er en afspiller: Den afspiller de kilder, du selv tilføjer. Ulti leverer ingen kanaler og intet indhold. Du skal have dine egne kilder og have ret til at se dem.",
     "q2": "På hvilke enheder?",
-    "r2": "iPhone, iPad, Mac (med Apple-chip) og Apple TV. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling. En Android-version (telefoner, tablets og tv'er) er under udvikling.",
-    "r2SansAppleTv": "iPhone, iPad og Mac (med Apple-chip) allerede nu; Apple TV-versionen kommer i løbet af de næste dage. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling. En Android-version (telefoner, tablets og tv'er) er under udvikling.",
+    "r2": "iPhone, iPad, Mac (med Apple-chip) og Apple TV. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling. En Android-version (telefoner, tablets og tv’er) er under udvikling.",
+    "r2SansAppleTv": "iPhone, iPad og Mac (med Apple-chip) allerede nu; Apple TV-versionen kommer i løbet af de næste dage. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling. En Android-version (telefoner, tablets og tv’er) er under udvikling.",
     "q3": "Er mine loginoplysninger sikre?",
     "r3": "De gemmes i nøgleringen på din enhed og går aldrig via en Ulti-server.",
     "q4": "Hvilke abonnementer virker?",
@@ -255,7 +255,7 @@
   "neutralite": "Ulti leverer ingen kanaler og intet indhold. Du skal have dine egne kilder og have ret til at se dem.",
   "pied": {
     "changerPays": "Skift land eller område (nu: {pays}, {langue})",
-    "tmdb": "Dette produkt bruger TMDB's API, men er ikke godkendt eller certificeret af TMDB.",
+    "tmdb": "Dette produkt bruger TMDB’s API, men er ikke godkendt eller certificeret af TMDB.",
     "tmdbLogo": "Logo for The Movie Database (TMDB)",
     "marques": "Apple, Apple TV, iPhone, iPad og Mac er varemærker tilhørende Apple Inc.",
     "copyright": "© 2026 Ulti",
@@ -383,8 +383,8 @@
       },
       "appareils": {
         "q": "Hvilke enheder virker Ulti på?",
-        "r": "iPhone, iPad, Mac og Apple TV: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere og Mac-computere med Apple-chip, som bruger iPad-appen. Premium gælder på alle dine enheder, der er logget ind med den samme Apple-konto. En Android-version (telefoner, tablets og tv'er) er under udvikling.",
-        "rSansAppleTv": "iPhone, iPad og Mac allerede nu, Apple TV i løbet af de næste dage: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere og Mac-computere med Apple-chip, som bruger iPad-appen. Premium gælder på alle dine enheder, der er logget ind med den samme Apple-konto. En Android-version (telefoner, tablets og tv'er) er under udvikling."
+        "r": "iPhone, iPad, Mac og Apple TV: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere og Mac-computere med Apple-chip, som bruger iPad-appen. Premium gælder på alle dine enheder, der er logget ind med den samme Apple-konto. En Android-version (telefoner, tablets og tv’er) er under udvikling.",
+        "rSansAppleTv": "iPhone, iPad og Mac allerede nu, Apple TV i løbet af de næste dage: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere og Mac-computere med Apple-chip, som bruger iPad-appen. Premium gælder på alle dine enheder, der er logget ind med den samme Apple-konto. En Android-version (telefoner, tablets og tv’er) er under udvikling."
       },
       "installer": {
         "q": "Hvordan installerer jeg Ulti?",
@@ -593,7 +593,7 @@
       },
       "tmdb": {
         "titre": "Data om film og serier",
-        "texte": "Plakaterne og resuméerne i appen kommer fra [The Movie Database (TMDB)](tmdb). Dette produkt bruger TMDB's API, men er ikke godkendt eller certificeret af TMDB."
+        "texte": "Plakaterne og resuméerne i appen kommer fra [The Movie Database (TMDB)](tmdb). Dette produkt bruger TMDB’s API, men er ikke godkendt eller certificeret af TMDB."
       },
       "contenus": {
         "titre": "Indhold",

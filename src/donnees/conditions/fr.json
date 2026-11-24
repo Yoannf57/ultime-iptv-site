@@ -1,50 +1,50 @@
 {
   "_note": "Contrat de licence (EULA) repris de ~/Developer/ultime-iptv/Notes/app-store/contrat-licence.md (rédigé le 04/11/2026, à faire relire par un juriste). {editeur} et {adresse} viennent de site.config.mjs (editeur.nom, editeur.adresse) : le pays est écrit en français. Liens : [libellé](cible). Gras : **texte**.",
-  "titre": "Contrat de licence de l'utilisateur final — Ulti",
+  "titre": "Contrat de licence de l’utilisateur final — Ulti",
   "articles": [
     {
       "titre": "1. Parties et acceptation",
-      "texte": "Le présent contrat est conclu entre vous et {editeur}, éditeur de l'application Ulti (« l'Éditeur »), et non avec Apple Inc. (« Apple »). L'Éditeur, et non Apple, est seul responsable de l'application et de son contenu. En téléchargeant ou en utilisant Ulti, vous acceptez ce contrat."
+      "texte": "Le présent contrat est conclu entre vous et {editeur}, éditeur de l’application Ulti (« l’Éditeur »), et non avec Apple Inc. (« Apple »). L’Éditeur, et non Apple, est seul responsable de l’application et de son contenu. En téléchargeant ou en utilisant Ulti, vous acceptez ce contrat."
     },
     {
-      "titre": "2. Objet de l'application",
-      "texte": "Ulti est un lecteur : il lit l'abonnement IPTV que vous avez souscrit vous-même auprès d'un fournisseur (compte Xtream Codes ou lien M3U). **Ulti ne fournit aucune chaîne, aucun film, aucune série, aucune liste de lecture ni aucun logo.** Vous êtes seul responsable de la légalité de la source que vous saisissez et du respect des droits de ses contenus."
+      "titre": "2. Objet de l’application",
+      "texte": "Ulti est un lecteur : il lit l’abonnement IPTV que vous avez souscrit vous-même auprès d’un fournisseur (compte Xtream Codes ou lien M3U). **Ulti ne fournit aucune chaîne, aucun film, aucune série, aucune liste de lecture ni aucun logo.** Vous êtes seul responsable de la légalité de la source que vous saisissez et du respect des droits de ses contenus."
     },
     {
       "titre": "3. Licence",
-      "texte": "L'Éditeur vous accorde une licence personnelle, non exclusive et non transférable d'utilisation d'Ulti sur les appareils Apple que vous possédez ou contrôlez, dans les limites des Règles d'utilisation des Conditions générales des services multimédias d'Apple ; Ulti peut aussi être utilisé par les autres comptes associés à l'acheteur par le Partage familial ou l'achat en volume. Sauf ce que prévoit l'article 9 pour les bibliothèques sous licence libre, vous ne pouvez pas louer, prêter, vendre, redistribuer ou sous-licencier Ulti."
+      "texte": "L’Éditeur vous accorde une licence personnelle, non exclusive et non transférable d’utilisation d’Ulti sur les appareils Apple que vous possédez ou contrôlez, dans les limites des Règles d’utilisation des Conditions générales des services multimédias d’Apple ; Ulti peut aussi être utilisé par les autres comptes associés à l’acheteur par le Partage familial ou l’achat en volume. Sauf ce que prévoit l’article 9 pour les bibliothèques sous licence libre, vous ne pouvez pas louer, prêter, vendre, redistribuer ou sous-licencier Ulti."
     },
     {
       "titre": "4. Achats intégrés",
-      "texte": "Les formules Ulti Premium (abonnements et accès à vie, Solo ou Famille) sont vendues par l'App Store et régies par les conditions d'Apple. Les abonnements se renouvellent automatiquement, sauf résiliation au moins 24 heures avant la fin de la période, depuis les réglages de votre identifiant Apple."
+      "texte": "Les formules Ulti Premium (abonnements et accès à vie, Solo ou Famille) sont vendues par l’App Store et régies par les conditions d’Apple. Les abonnements se renouvellent automatiquement, sauf résiliation au moins 24 heures avant la fin de la période, depuis les réglages de votre identifiant Apple."
     },
     {
       "titre": "5. Maintenance et assistance",
-      "texte": "L'Éditeur est seul responsable de la maintenance et de l'assistance d'Ulti (Compte › Aide, [contact@ultitv.com](contact)). Apple n'a aucune obligation de fournir une maintenance ou une assistance."
+      "texte": "L’Éditeur est seul responsable de la maintenance et de l’assistance d’Ulti (Compte › Aide, [contact@ultitv.com](contact)). Apple n’a aucune obligation de fournir une maintenance ou une assistance."
     },
     {
       "titre": "6. Garantie",
-      "texte": "Ulti est fourni « en l'état », dans la limite permise par la loi applicable. En cas de défaut de conformité à une garantie applicable, vous pouvez en informer Apple, qui remboursera le prix d'achat éventuel ; Apple n'a, dans la mesure permise par la loi, aucune autre obligation de garantie. Toute autre réclamation relève de la seule responsabilité de l'Éditeur. Les droits que vous tenez de la loi de votre pays (notamment la garantie légale de conformité pour les consommateurs de l'Union européenne) ne sont pas affectés."
+      "texte": "Ulti est fourni « en l’état », dans la limite permise par la loi applicable. En cas de défaut de conformité à une garantie applicable, vous pouvez en informer Apple, qui remboursera le prix d’achat éventuel ; Apple n’a, dans la mesure permise par la loi, aucune autre obligation de garantie. Toute autre réclamation relève de la seule responsabilité de l’Éditeur. Les droits que vous tenez de la loi de votre pays (notamment la garantie légale de conformité pour les consommateurs de l’Union européenne) ne sont pas affectés."
     },
     {
       "titre": "7. Réclamations",
-      "texte": "L'Éditeur, et non Apple, traite toute réclamation liée à Ulti ou à son utilisation, notamment : (a) la responsabilité du fait des produits ; (b) le non-respect d'une exigence légale ou réglementaire ; (c) les réclamations fondées sur la protection des consommateurs, la vie privée ou une législation similaire."
+      "texte": "L’Éditeur, et non Apple, traite toute réclamation liée à Ulti ou à son utilisation, notamment : (a) la responsabilité du fait des produits ; (b) le non-respect d’une exigence légale ou réglementaire ; (c) les réclamations fondées sur la protection des consommateurs, la vie privée ou une législation similaire."
     },
     {
       "titre": "8. Propriété intellectuelle",
-      "texte": "Si un tiers prétend qu'Ulti ou votre utilisation d'Ulti porte atteinte à ses droits de propriété intellectuelle, l'Éditeur, et non Apple, est seul responsable de l'enquête, de la défense, du règlement et de l'extinction de cette réclamation."
+      "texte": "Si un tiers prétend qu’Ulti ou votre utilisation d’Ulti porte atteinte à ses droits de propriété intellectuelle, l’Éditeur, et non Apple, est seul responsable de l’enquête, de la défense, du règlement et de l’extinction de cette réclamation."
     },
     {
       "titre": "9. Bibliothèques sous licence libre (LGPL)",
-      "texte": "Ulti contient la bibliothèque VLCKit 3.7.3 et libVLC 3.0.23 (© VideoLAN et ses contributeurs), distribuées sous la licence publique générale limitée GNU (LGPL), version 2.1 ou ultérieure, ainsi que les bibliothèques listées en annexe. Ces bibliothèques sont fournies sous forme de bibliothèque séparée (framework dynamique), sans modification. **Par dérogation aux articles 3 et 10 et à toute autre stipulation contraire de ce contrat, pour ces bibliothèques :**\n\n• vous pouvez les modifier, et modifier Ulti pour votre usage personnel afin de le relier à une version modifiée de ces bibliothèques ;\n• vous êtes autorisé à procéder à l'ingénierie inverse d'Ulti dans la mesure nécessaire au débogage de ces modifications ;\n• le code source complet de la version utilisée est disponible : [VLCKit 3.7.3](vlckit) (étiquette 3.7.3) et [libVLC 3.0.23](vlc) (branche 3.0.x, étiquette 3.0.23) ; l'Éditeur peut aussi le fournir sur demande à [contact@ultitv.com](contact), pendant au moins trois ans ;\n• le texte complet de la LGPL 2.1 figure dans Ulti (Compte › À propos › Licences) et sur [gnu.org](lgpl).\n\nCes droits sont régis par la LGPL ; aucune stipulation du présent contrat ne les restreint."
+      "texte": "Ulti contient la bibliothèque VLCKit 3.7.3 et libVLC 3.0.23 (© VideoLAN et ses contributeurs), distribuées sous la licence publique générale limitée GNU (LGPL), version 2.1 ou ultérieure, ainsi que les bibliothèques listées en annexe. Ces bibliothèques sont fournies sous forme de bibliothèque séparée (framework dynamique), sans modification. **Par dérogation aux articles 3 et 10 et à toute autre stipulation contraire de ce contrat, pour ces bibliothèques :**\n\n• vous pouvez les modifier, et modifier Ulti pour votre usage personnel afin de le relier à une version modifiée de ces bibliothèques ;\n• vous êtes autorisé à procéder à l’ingénierie inverse d’Ulti dans la mesure nécessaire au débogage de ces modifications ;\n• le code source complet de la version utilisée est disponible : [VLCKit 3.7.3](vlckit) (étiquette 3.7.3) et [libVLC 3.0.23](vlc) (branche 3.0.x, étiquette 3.0.23) ; l’Éditeur peut aussi le fournir sur demande à [contact@ultitv.com](contact), pendant au moins trois ans ;\n• le texte complet de la LGPL 2.1 figure dans Ulti (Compte › À propos › Licences) et sur [gnu.org](lgpl).\n\nCes droits sont régis par la LGPL ; aucune stipulation du présent contrat ne les restreint."
     },
     {
       "titre": "10. Restrictions",
-      "texte": "Sous réserve de l'article 9, vous ne pouvez pas copier (sauf dans les limites de la licence), décompiler, désassembler ou modifier Ulti, ni tenter d'en obtenir le code source."
+      "texte": "Sous réserve de l’article 9, vous ne pouvez pas copier (sauf dans les limites de la licence), décompiler, désassembler ou modifier Ulti, ni tenter d’en obtenir le code source."
     },
     {
       "titre": "11. Services tiers",
-      "texte": "Ulti utilise The Movie Database (TMDB) pour enrichir les fiches de films et de séries (« This product uses the TMDB API but is not endorsed or certified by TMDB »), par l'intermédiaire d'un relais de l'Éditeur qui ne conserve aucune donnée personnelle. Vous devez respecter les conditions des services tiers que vous utilisez avec Ulti, notamment celles de votre fournisseur IPTV."
+      "texte": "Ulti utilise The Movie Database (TMDB) pour enrichir les fiches de films et de séries (« This product uses the TMDB API but is not endorsed or certified by TMDB »), par l’intermédiaire d’un relais de l’Éditeur qui ne conserve aucune donnée personnelle. Vous devez respecter les conditions des services tiers que vous utilisez avec Ulti, notamment celles de votre fournisseur IPTV."
     },
     {
       "titre": "12. Données personnelles",
@@ -56,10 +56,10 @@
     },
     {
       "titre": "14. Résiliation",
-      "texte": "Ce contrat s'applique jusqu'à sa résiliation. Il prend fin automatiquement si vous ne respectez pas ses conditions ; vous devez alors cesser d'utiliser Ulti. L'article 9 survit pour les bibliothèques sous licence libre."
+      "texte": "Ce contrat s’applique jusqu’à sa résiliation. Il prend fin automatiquement si vous ne respectez pas ses conditions ; vous devez alors cesser d’utiliser Ulti. L’article 9 survit pour les bibliothèques sous licence libre."
     },
     {
-      "titre": "15. Coordonnées de l'Éditeur",
+      "titre": "15. Coordonnées de l’Éditeur",
       "texte": "{editeur}, {adresse}, [contact@ultitv.com](contact)."
     },
     {
@@ -72,7 +72,7 @@
     },
     {
       "titre": "18. Ulti sur Android",
-      "texte": "Cet article s'applique quand vous utilisez Ulti, installé depuis Google Play, sur un appareil Android (téléphone, tablette, Android TV). Les autres articles s'appliquent aussi, sauf les clauses propres à Apple indiquées ci-dessous.\n\n• **Licence** : l'Éditeur vous accorde une licence personnelle, non exclusive et non transférable d'utilisation d'Ulti sur les appareils Android que vous possédez ou contrôlez, dans les limites des conditions d'utilisation de Google Play. Vous ne pouvez pas louer, prêter, vendre, redistribuer ou sous-licencier Ulti.\n• **Achats** : sur Android, Ulti Premium (abonnements et accès à vie) existe en formule Solo seulement. Les achats sont vendus et facturés par Google Play, avec votre compte Google, et régis par les conditions de Google Play.\n• **Renouvellement et résiliation** : les abonnements se renouvellent automatiquement à la fin de chaque période. Vous pouvez les résilier à tout moment dans Google Play ([Play Store › profil › Paiements et abonnements › Abonnements](google-resilier)) ; Premium reste actif jusqu'à la fin de la période déjà payée. Désinstaller l'app ne résilie pas l'abonnement.\n• **Essai gratuit** : un essai gratuit, s'il est proposé, devient un abonnement payant à sa fin, sauf résiliation avant la fin de l'essai.\n• **Remboursements** : selon les [règles de remboursement de Google Play](google-remboursement).\n• **Clauses propres à Apple** : les clauses qui concernent Apple (l'App Store et les conditions d'Apple, le contrat de licence d'Apple, le Partage familial et l'achat en volume, la formule Famille, ainsi que le rôle d'Apple aux articles 1 et 3 à 8 et l'article 16) ne s'appliquent qu'à Ulti sur les appareils Apple.\n• **Bibliothèques** : la version Android ne contient ni VLCKit ni libVLC ; l'article 9 et l'annexe concernent les appareils Apple. Les bibliothèques de la version Android et leurs licences figurent dans l'app (Compte › À propos › Licences).\n• **Données personnelles** : sur Android, vos identifiants sont chiffrés et restent sur votre appareil. Voir la [politique de confidentialité](privacy)."
+      "texte": "Cet article s’applique quand vous utilisez Ulti, installé depuis Google Play, sur un appareil Android (téléphone, tablette, Android TV). Les autres articles s’appliquent aussi, sauf les clauses propres à Apple indiquées ci-dessous.\n\n• **Licence** : l’Éditeur vous accorde une licence personnelle, non exclusive et non transférable d’utilisation d’Ulti sur les appareils Android que vous possédez ou contrôlez, dans les limites des conditions d’utilisation de Google Play. Vous ne pouvez pas louer, prêter, vendre, redistribuer ou sous-licencier Ulti.\n• **Achats** : sur Android, Ulti Premium (abonnements et accès à vie) existe en formule Solo seulement. Les achats sont vendus et facturés par Google Play, avec votre compte Google, et régis par les conditions de Google Play.\n• **Renouvellement et résiliation** : les abonnements se renouvellent automatiquement à la fin de chaque période. Vous pouvez les résilier à tout moment dans Google Play ([Play Store › profil › Paiements et abonnements › Abonnements](google-resilier)) ; Premium reste actif jusqu’à la fin de la période déjà payée. Désinstaller l’app ne résilie pas l’abonnement.\n• **Essai gratuit** : un essai gratuit, s’il est proposé, devient un abonnement payant à sa fin, sauf résiliation avant la fin de l’essai.\n• **Remboursements** : selon les [règles de remboursement de Google Play](google-remboursement).\n• **Clauses propres à Apple** : les clauses qui concernent Apple (l’App Store et les conditions d’Apple, le contrat de licence d’Apple, le Partage familial et l’achat en volume, la formule Famille, ainsi que le rôle d’Apple aux articles 1 et 3 à 8 et l’article 16) ne s’appliquent qu’à Ulti sur les appareils Apple.\n• **Bibliothèques** : la version Android ne contient ni VLCKit ni libVLC ; l’article 9 et l’annexe concernent les appareils Apple. Les bibliothèques de la version Android et leurs licences figurent dans l’app (Compte › À propos › Licences).\n• **Données personnelles** : sur Android, vos identifiants sont chiffrés et restent sur votre appareil. Voir la [politique de confidentialité](privacy)."
     }
   ],
   "credits": {
