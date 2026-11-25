@@ -370,6 +370,10 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 - **Domaine : ultitv.com** (acheté le 03/11/2026 chez Cloudflare ; ultitv.app, ultiptv.app et ulti-iptv.com seront
   redirigés vers lui). La valeur est prête dans `site.config` mais **inactive** : pas de fichier `CNAME`, adresse de
   base inchangée, tant que Yoann n'a pas dit que les DNS sont prêts (étape séparée).
+  **Vérifié le 25/11/2026** : aucun des quatre domaines ne répond (aucun enregistrement DNS), aucun domaine déclaré
+  dans les réglages Pages de GitHub ; la seule adresse publique est `https://yoannf57.github.io/ultime-iptv-site/`.
+  Au branchement : les adresses perdent `/ultime-iptv-site/` (vérifier celles déclarées dans App Store Connect :
+  conditions d'utilisation, confidentialité) et prévoir Google Search Console.
 - **Page stable sur téléphone** (08/11/2026, demande de Yoann) : rien ne doit dépasser la largeur de l'écran, sinon la
   page glisse sur le côté. `main` a `overflow-x: clip` (les halos débordent) ; la pastille de l'en-tête passe sur deux
   lignes sous 22 rem. Vérifié sur toutes les pages à 320 et 393 px (`scrollWidth` = largeur de l'écran).

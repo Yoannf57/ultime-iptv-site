@@ -190,7 +190,21 @@ Brésil et du Portugal.
 - **« Distribution »** n'apparaît plus sur l'accueil ; il reste dans le Support (cast, Besetzung, rollista,
   rollebesetning, medvirkende, näyttelijät, reparto, elenco).
 
+## Mise en ligne de l'étape 2 et suite (24 et 25/11/2026)
+
+- Étape 2 en ligne le 24/11 au soir, après le second « OK en ligne » et les trois réglages. Contrôle en ligne : fr-fr,
+  en-gb, de-de et `/en/` montrent la nouvelle phrase, la carte Gratuit et la dernière section ; rien ne dépasse à
+  393 px ; plus aucune apostrophe droite dans le texte visible ; le pied de page du sélecteur suit le visiteur.
+- Question de Yoann le 25/11 : le site n'est **pas encore** sur les domaines achetés. Vérifié : ultitv.com,
+  ultitv.app, ultiptv.app et ulti-iptv.com ne répondent pas (aucun DNS), et GitHub Pages n'a aucun domaine déclaré.
+  Adresse publique : `https://yoannf57.github.io/ultime-iptv-site/`.
+- Branchement d'ultitv.com (étape séparée, quand Yoann le demande) : 1. « Custom domain » dans les réglages Pages de
+  GitHub ; 2. enregistrements DNS chez Cloudflare ; 3. « Enforce HTTPS », puis `domaine.actif: true` et le fichier
+  `CNAME`. Ensuite, redirection des trois autres domaines. À prévoir : les adresses déclarées dans App Store Connect
+  et Google Search Console.
+
 ## Reste
 
+- Brancher ultitv.com.
 - Retirer la réserve Apple TV (`faq.r5`, `support.q.gratuit.r`) quand la 1.1 Apple TV est publiée.
 - Début décembre : `blackFriday.actif` à `false`.
