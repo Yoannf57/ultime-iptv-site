@@ -244,8 +244,8 @@
     "q1": "Tarjoaako Ulti kanavia?",
     "r1": "Ei. Ulti on soitin: se toistaa lähteet, jotka lisäät itse. Ulti ei tarjoa kanavia eikä sisältöä. Sinulla on oltava omat lähteesi ja oikeus katsoa niitä.",
     "q2": "Millä laitteilla?",
-    "r2": "iPhone, iPad, Mac (Apple-sirulla) ja Apple TV. Ulti Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta. Ulti on saatavilla myös Android-puhelimille ja -tableteille (Android 9 tai uudempi) Google Playsta. Premium on siellä Solo-vaihtoehtona samaan hintaan; Applelta tehty osto ei siirry Androidiin, eikä toisin päin.",
-    "r2SansAppleTv": "iPhone, iPad ja Mac (Apple-sirulla) jo nyt; Apple TV -versio tulee lähipäivinä. Ulti Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta. Ulti on saatavilla myös Android-puhelimille ja -tableteille (Android 9 tai uudempi) Google Playsta. Premium on siellä Solo-vaihtoehtona samaan hintaan; Applelta tehty osto ei siirry Androidiin, eikä toisin päin.",
+    "r2": "iPhone, iPad, Mac (Apple-sirulla) ja Apple TV. Ulti Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta. Ulti on saatavilla myös Android-puhelimille, -tableteille ja -televisioille (Android 9 tai uudempi) Google Playsta. Premium on siellä Solo-vaihtoehtona samaan hintaan; Applelta tehty osto ei siirry Androidiin, eikä toisin päin.",
+    "r2SansAppleTv": "iPhone, iPad ja Mac (Apple-sirulla) jo nyt; Apple TV -versio tulee lähipäivinä. Ulti Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta. Ulti on saatavilla myös Android-puhelimille, -tableteille ja -televisioille (Android 9 tai uudempi) Google Playsta. Premium on siellä Solo-vaihtoehtona samaan hintaan; Applelta tehty osto ei siirry Androidiin, eikä toisin päin.",
     "q3": "Ovatko kirjautumistietoni turvassa?",
     "r3": "Ne säilytetään laitteesi avainnipussa, eivätkä ne koskaan kulje Ulti-palvelimen kautta.",
     "q4": "Mitkä tilaukset toimivat?",
@@ -393,22 +393,22 @@
       },
       "appareils": {
         "q": "Millä laitteilla Ulti toimii?",
-        "r": "iPhone, iPad, Mac ja Apple TV: iPhone ja iPad, joissa on iOS 17 tai iPadOS 17 tai uudempi, Apple TV, jossa on tvOS 17 tai uudempi, sekä Apple-sirulliset Macit, jotka käyttävät iPad-sovellusta. Premium on voimassa kaikilla laitteillasi, joihin on kirjauduttu samalla Apple-tilillä. Ulti on saatavilla myös Android-puhelimille ja -tableteille (Android 9 tai uudempi) [Google Playsta](googleplay). Premium on siellä Solo-vaihtoehtona samaan hintaan; Applelta tehty osto ei siirry Androidiin, eikä toisin päin.",
-        "rSansAppleTv": "iPhone, iPad ja Mac jo nyt, Apple TV lähipäivinä: iPhone ja iPad, joissa on iOS 17 tai iPadOS 17 tai uudempi, Apple TV, jossa on tvOS 17 tai uudempi, sekä Apple-sirulliset Macit, jotka käyttävät iPad-sovellusta. Premium on voimassa kaikilla laitteillasi, joihin on kirjauduttu samalla Apple-tilillä. Ulti on saatavilla myös Android-puhelimille ja -tableteille (Android 9 tai uudempi) [Google Playsta](googleplay). Premium on siellä Solo-vaihtoehtona samaan hintaan; Applelta tehty osto ei siirry Androidiin, eikä toisin päin.",
+        "r": "iPhone, iPad, Mac ja Apple TV: iPhone ja iPad, joissa on iOS 17 tai iPadOS 17 tai uudempi, Apple TV, jossa on tvOS 17 tai uudempi, sekä Apple-sirulliset Macit, jotka käyttävät iPad-sovellusta. Premium on voimassa kaikilla laitteillasi, joihin on kirjauduttu samalla Apple-tilillä. Ulti on saatavilla myös Android-puhelimille, -tableteille ja -televisioille (Android 9 tai uudempi) [Google Playsta](googleplay). Premium on siellä Solo-vaihtoehtona samaan hintaan; Applelta tehty osto ei siirry Androidiin, eikä toisin päin.",
+        "rSansAppleTv": "iPhone, iPad ja Mac jo nyt, Apple TV lähipäivinä: iPhone ja iPad, joissa on iOS 17 tai iPadOS 17 tai uudempi, Apple TV, jossa on tvOS 17 tai uudempi, sekä Apple-sirulliset Macit, jotka käyttävät iPad-sovellusta. Premium on voimassa kaikilla laitteillasi, joihin on kirjauduttu samalla Apple-tilillä. Ulti on saatavilla myös Android-puhelimille, -tableteille ja -televisioille (Android 9 tai uudempi) [Google Playsta](googleplay). Premium on siellä Solo-vaihtoehtona samaan hintaan; Applelta tehty osto ei siirry Androidiin, eikä toisin päin.",
         "rSansGooglePlay": "iPhone, iPad, Mac ja Apple TV: iPhone ja iPad, joissa on iOS 17 tai iPadOS 17 tai uudempi, Apple TV, jossa on tvOS 17 tai uudempi, sekä Apple-sirulliset Macit, jotka käyttävät iPad-sovellusta. Premium on voimassa kaikilla laitteillasi, joihin on kirjauduttu samalla Apple-tilillä. Android-versio (puhelimille, tableteille ja televisioille) on työn alla.",
         "rSansAppleTvSansGooglePlay": "iPhone, iPad ja Mac jo nyt, Apple TV lähipäivinä: iPhone ja iPad, joissa on iOS 17 tai iPadOS 17 tai uudempi, Apple TV, jossa on tvOS 17 tai uudempi, sekä Apple-sirulliset Macit, jotka käyttävät iPad-sovellusta. Premium on voimassa kaikilla laitteillasi, joihin on kirjauduttu samalla Apple-tilillä. Android-versio (puhelimille, tableteille ja televisioille) on työn alla."
       },
       "installer": {
         "q": "Miten asennan Ultin?",
-        "r": "Lataa Ulti iPhonen, iPadin tai Macin [App Storesta](appstore) ja Apple TV:n App Storesta. Asennettuna sovelluksen nimi on ”Ulti IPTV”. Android-puhelimeen tai -tablettiin lataa Ulti [Google Playsta](googleplay).",
-        "rSansAppleTv": "Lataa Ulti iPhonen, iPadin tai Macin [App Storesta](appstore). Apple TV -versio tulee lähipäivinä. Asennettuna sovelluksen nimi on ”Ulti IPTV”. Android-puhelimeen tai -tablettiin lataa Ulti [Google Playsta](googleplay).",
+        "r": "Lataa Ulti iPhonen, iPadin tai Macin [App Storesta](appstore) ja Apple TV:n App Storesta. Asennettuna sovelluksen nimi on ”Ulti IPTV”. Android-puhelimeen, -tablettiin tai -televisioon lataa Ulti [Google Playsta](googleplay).",
+        "rSansAppleTv": "Lataa Ulti iPhonen, iPadin tai Macin [App Storesta](appstore). Apple TV -versio tulee lähipäivinä. Asennettuna sovelluksen nimi on ”Ulti IPTV”. Android-puhelimeen, -tablettiin tai -televisioon lataa Ulti [Google Playsta](googleplay).",
         "rBientot": "Ulti tulee pian App Storeen iPhonelle, iPadille, Macille ja Apple TV:lle. Asennettuna sovelluksen nimi on ”Ulti IPTV”.",
         "rSansGooglePlay": "Lataa Ulti iPhonen, iPadin tai Macin [App Storesta](appstore) ja Apple TV:n App Storesta. Asennettuna sovelluksen nimi on ”Ulti IPTV”.",
         "rSansAppleTvSansGooglePlay": "Lataa Ulti iPhonen, iPadin tai Macin [App Storesta](appstore). Apple TV -versio tulee lähipäivinä. Asennettuna sovelluksen nimi on ”Ulti IPTV”."
       },
       "android": {
         "q": "Onko Ulti saatavilla Androidille?",
-        "r": "Kyllä, Android-puhelimille ja -tableteille (Android 9 tai uudempi): lataa Ulti [Google Playsta](googleplay). Androidilla Premium on Solo-vaihtoehtona samaan hintaan kuin App Storessa, ja kuukausi- ja vuositilauksissa on 7 päivän ilmainen kokeilu. Perhe-vaihtoehto on saatavilla vain iPhonelle, iPadille, Macille ja Apple TV:lle.\n\nOstot ovat erillisiä: Applelta ostettu Premium ei siirry Androidiin, eikä toisin päin. Androidilla tilauksia hallitaan Google Playssa ([Googlen ohje](google-resilier))."
+        "r": "Kyllä, Android-puhelimille, -tableteille ja -televisioille (Android 9 tai uudempi): lataa Ulti [Google Playsta](googleplay). Androidilla Premium on Solo-vaihtoehtona samaan hintaan kuin App Storessa, ja kuukausi- ja vuositilauksissa on 7 päivän ilmainen kokeilu. Perhe-vaihtoehto on saatavilla vain iPhonelle, iPadille, Macille ja Apple TV:lle.\n\nOstot ovat erillisiä: Applelta ostettu Premium ei siirry Androidiin, eikä toisin päin. Androidilla tilauksia hallitaan Google Playssa ([Googlen ohje](google-resilier))."
       },
       "ajouter": {
         "q": "Miten lisään IPTV-tilaukseni?",
@@ -556,7 +556,7 @@
         "texte": "Ostoja hallitsee Apple App Storessa. Ulti säilyttää laitteella vain Premiumin tilan toimiakseen ilman verkkoa, eikä lähetä sitä minnekään."
       },
       "android": {
-        "titre": "Ulti Androidilla (puhelimet ja tabletit)",
+        "titre": "Ulti Androidilla (puhelimet, tabletit, Android TV)",
         "texte": "Android-sovellus toimii samoin kuin iPhonella, ilman synkronointia: IPTV-tilauksesi (palvelimen osoite, käyttäjänimi, salasana tai M3U-linkki) salataan, ja ne pysyvät laitteellasi; niitä ei koskaan lähetetä Ultille. Premium-ostot tehdään Google Playn kautta: Google käsittelee maksun omien [tietosuojakäytäntöjensä](google-confidentialite) mukaisesti, ja sovellus saa vain vahvistuksen ostosta (ei maksutietoja); Google Playn ostokirjasto voi lähettää Googlelle teknisiä tietoja ostoista. Elokuvien ja sarjojen julisteiden ja juonikuvausten näyttämiseksi sovellus lähettää teoksen nimen ja vuoden sekä laitteen kielen Ultin välityspalvelimeen (api.ultitv.com); välityspalvelin hakee tiedot TMDB:stä, ei pidä lokia eikä tallenna IP-osoitettasi. Ultissa ei ole mainoksia eikä analytiikkatyökaluja, eikä se kerää henkilötietoja. Jos olet sallinut sen laitteen asetuksissa, Google voi välittää kehittäjälle teknisiä kaatumisraportteja (Android vitals). Sovelluksen lokit lähtevät laitteeltasi vain, jos lähetät ne itse tukeen."
       },
       "plantages": {

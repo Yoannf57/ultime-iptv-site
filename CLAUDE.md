@@ -403,9 +403,10 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
   `captures/badges-blancs/` (non versionné), pour comparer, jamais sur le site.
 - **Smart App Banner** (`Base.astro`) : `<meta name="apple-itunes-app" content="app-id=…">` si `disponible`, sur les
   pages d'un pays ou d'une langue et leurs sous-pages, jamais sur la page de choix ni la 404.
-- **Android : sur Google Play depuis le 27/11/2026** (`com.yoannfebvre.ultimeiptv`, **téléphones et tablettes
-  seulement**, Android 9 ou plus récent ; case Android TV non cochée : jamais « Android TV », « télé » ni Fire TV sur le
-  site tant que Yoann ne le dit pas). Réglage `googlePlay: { disponible, id }` dans `site.config.mjs` ; une seule valeur
+- **Android : sur Google Play depuis le 27/11/2026** (`com.yoannfebvre.ultimeiptv`, **téléphones, tablettes et
+  Android TV**, Android 9 ou plus récent ; Android TV ajoutée sur le site le 27/11/2026 à la demande de Yoann, la Play
+  Console montrant la production publiée aussi pour Android TV, Android XR et ChromeOS ; ni Fire TV ni Amazon tant que
+  Yoann ne le dit pas). Réglage `googlePlay: { disponible, id }` dans `site.config.mjs` ; une seule valeur
   calculée, `googlePlayAffiche` (`src/lib/googleplay.ts`, = `disponible && googlePlay.disponible`) ; lien calculé
   `lienGooglePlay` (cible `googleplay` dans les textes).
   - **Badge officiel Google Play** (`BadgeGooglePlay.astro`), juste après celui de l'App Store dans le grand visuel,
