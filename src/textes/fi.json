@@ -153,7 +153,8 @@
     "texte": "Apple TV:ssä Ulti toistaa IPTV-tilauksesi kaukosäätimellä: vaihda kanavalta toiselle kuin ennen vanhaan, selkeissä valikoissa, jotka erottuvat kaukaakin.",
     "point1": "Kanavanvaihto kaukosäätimellä, ylös ja alas",
     "point2": "Kuva kuvassa suorien lähetysten aikana",
-    "point3": "Suuret julisteet, sohvalta katsottaviksi"
+    "point3": "Suuret julisteet, sohvalta katsottaviksi",
+    "lien": "Kaikki Ultista Apple TV:ssä"
   },
   "famille": {
     "titre": "Koko perhe, kullekin oma tila.",
@@ -273,7 +274,8 @@
       "support": "Tuki",
       "privacy": "Tietosuoja",
       "legal": "Oikeudelliset tiedot",
-      "terms": "Käyttöehdot"
+      "terms": "Käyttöehdot",
+      "apple-tv": "Apple TV"
     },
     "marquesGoogle": "Google Play ja Google Play -logo ovat Google LLC:n tavaramerkkejä."
   },
@@ -373,6 +375,36 @@
       "metaTitre": "Käyttöehdot — Ulti",
       "description": "Ultin käyttöehdot: sovelluksen loppukäyttäjän lisenssisopimus.",
       "chapeau": "Lisenssisopimus, jota sovelletaan, kun käytät Ultia, App Storen tai Google Playn ehtojen lisäksi."
+    },
+    "apple-tv": {
+      "titre": "IPTV-tilauksesi Apple TV:ssä.",
+      "metaTitre": "IPTV-soitin Apple TV:lle — Ulti",
+      "description": "Katso IPTV-tilaustasi Apple TV:ssä Ultilla: lisäys QR-koodilla iPhonesta, kanavanvaihto kaukosäätimellä, TV‑opas ja kuva kuvassa.",
+      "chapeau": "Ulti on sohvalle suunniteltu IPTV-soitin: asenna se, skannaa QR-koodi iPhonella ja vaihda kanavia kaukosäätimellä.",
+      "etapesTitre": "IPTV-tilauksen lisääminen Apple TV:hen",
+      "etape1": "Asenna Ulti Apple TV:hen ja iPhoneen App Storesta.",
+      "etape2": "Lisää tilauksesi iPhonessa: liitä palveluntarjoajasi viesti, ja Ulti täyttää kaiken.",
+      "etape3": "Avaa Ulti Apple TV:ssä, skannaa QR-koodi iPhonen kameralla ja napauta Ulti-linkkiä: tilaus siirtyy kategorioineen ja suosikkeineen.",
+      "etapesNote": "iPhonen ja Apple TV:n täytyy olla samassa Wi-Fi-verkossa. Siirto on salattu ja kulkee suoraan lähiverkkosi kautta. Ei iPhonea käsillä? Syötä tilaus kaukosäätimellä.",
+      "zapTitre": "Kanavanvaihto kuin televisiossa",
+      "zapTexte": "Ylös ja alas kaukosäätimellä vaihtaaksesi kanavaa, jokaisen ohjelman jäljellä oleva aika yhdellä silmäyksellä ja kuva kuvassa, jotta suora lähetys pysyy näkyvissä selatessasi.",
+      "guideTitre": "TV‑opas suurella näytöllä",
+      "guideTexte": "Mitä tulee nyt, tänä iltana ja seuraavina päivinä: tilauksesi ohjelmisto, luettavissa kaukaakin.",
+      "filmsTitre": "Elokuvat ja sarjat isoin julistein",
+      "filmsTexte": "Julisteet, juonikuvaukset ja näyttelijät: elokuvien ja sarjojen sivut ovat ilmaisia. Toisto jatkamisineen kuuluu Premiumiin.",
+      "multiTitre": "Jopa 4 suoraa lähetystä kerralla",
+      "multiTexte": "Premiumilla moninäyttö näyttää jopa 4 suoraa lähetystä Apple TV:ssä IPTV-tilauksesi yhteyksien rajoissa.",
+      "profilsTitre": "Oma profiili jokaiselle",
+      "profilsTexte": "Lapsiprofiili kuuluu ilmaisversioon, ei näe aikuisten sisältöä, ja siitä pääsee pois vain lapsilukon koodilla. Lisää aikuisten profiileja kuuluu Premiumiin.",
+      "questionsTitre": "Kysymyksiä Apple TV:stä",
+      "q1": "Millainen Apple TV tarvitaan?",
+      "r1": "Apple TV, jossa on tvOS 17 tai uudempi.",
+      "q2": "Mitkä IPTV-tilaukset toimivat?",
+      "r2": "Tuetut tilausmuodot kerrotaan [tuessa](support).",
+      "q3": "Eikö QR-koodi toimi?",
+      "r3": "Tarkista, että iPhone ja Apple TV ovat samassa Wi-Fi-verkossa ja että tilaus on jo lisätty iPhoneen. Lisää ratkaisuja löydät [tuesta](support).",
+      "q4": "Onko Ulti ilmainen Apple TV:ssä?",
+      "r4": "Suorat lähetykset, TV‑opas sekä elokuvien ja sarjojen sivut ovat ilmaisia. Elokuvien ja sarjojen toisto, moninäyttö, tallenteet ja suoran lähetyksen tauko kuuluvat Premiumiin, jota voi kokeilla 7 päivää kuukausi- ja vuositilauksilla."
     }
   },
   "faqPlus": "Kaikki kysymykset tukisivulla",

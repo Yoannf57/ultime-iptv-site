@@ -153,7 +153,8 @@
     "texte": "Sur l’Apple TV, Ulti lit votre abonnement IPTV à la télécommande : passez d’une chaîne à l’autre comme sur la télé d’avant, dans des menus clairs, lisibles de loin.",
     "point1": "Zapping avec la télécommande, haut et bas",
     "point2": "Image dans l’image pendant le direct",
-    "point3": "Grandes affiches, pensées pour le canapé"
+    "point3": "Grandes affiches, pensées pour le canapé",
+    "lien": "Tout sur Ulti pour Apple TV"
   },
   "famille": {
     "titre": "Toute la famille, chacun chez soi.",
@@ -273,7 +274,8 @@
       "support": "Support",
       "privacy": "Confidentialité",
       "legal": "Mentions légales",
-      "terms": "Conditions d’utilisation"
+      "terms": "Conditions d’utilisation",
+      "apple-tv": "Apple TV"
     },
     "marquesGoogle": "Google Play et le logo Google Play sont des marques de Google LLC."
   },
@@ -373,6 +375,36 @@
       "metaTitre": "Conditions d’utilisation — Ulti",
       "description": "Conditions d’utilisation d’Ulti : le contrat de licence de l’utilisateur final de l’app.",
       "chapeau": "Le contrat de licence qui s’applique quand vous utilisez Ulti, en plus des conditions de l’App Store ou de Google Play."
+    },
+    "apple-tv": {
+      "titre": "Votre abonnement IPTV sur l’Apple TV.",
+      "metaTitre": "Lecteur IPTV pour Apple TV — Ulti",
+      "description": "Regardez votre abonnement IPTV sur l’Apple TV avec Ulti : ajout par QR code depuis l’iPhone, zapping à la télécommande, guide TV et image dans l’image.",
+      "chapeau": "Ulti est un lecteur IPTV pensé pour le canapé : on l’installe, on scanne un QR code avec l’iPhone, et on zappe à la télécommande.",
+      "etapesTitre": "Ajouter son abonnement IPTV sur l’Apple TV",
+      "etape1": "Installez Ulti sur l’Apple TV et sur votre iPhone, depuis l’App Store.",
+      "etape2": "Sur l’iPhone, ajoutez votre abonnement : collez le message de votre fournisseur, Ulti remplit tout.",
+      "etape3": "Ouvrez Ulti sur l’Apple TV, scannez le QR code avec l’appareil photo de l’iPhone et touchez le lien Ulti : l’abonnement arrive avec vos catégories et vos favoris.",
+      "etapesNote": "L’iPhone et l’Apple TV doivent être sur le même réseau Wi-Fi. L’envoi est chiffré et passe directement par votre réseau local. Pas d’iPhone sous la main ? Saisissez l’abonnement à la télécommande.",
+      "zapTitre": "Zapper comme à la télé",
+      "zapTexte": "Haut et bas sur la télécommande pour passer d’une chaîne à l’autre, le temps restant de chaque programme d’un coup d’œil, et l’image dans l’image pour garder le direct pendant que vous parcourez le reste.",
+      "guideTitre": "Le guide TV sur grand écran",
+      "guideTexte": "Ce qui passe maintenant, ce soir et les jours suivants : le programme de votre abonnement, lisible de loin.",
+      "filmsTitre": "Films et séries, avec de grandes affiches",
+      "filmsTexte": "Affiches, résumés et distribution : les fiches des films et séries sont gratuites. La lecture, avec les reprises, fait partie de Premium.",
+      "multiTitre": "Jusqu’à 4 directs à la fois",
+      "multiTexte": "Avec Premium, le multi-écran affiche jusqu’à 4 directs sur l’Apple TV, dans la limite des connexions de votre abonnement IPTV.",
+      "profilsTitre": "Un profil pour chacun",
+      "profilsTexte": "Le profil Enfant, inclus dans la version gratuite, ne voit aucun contenu pour adultes et ne se quitte qu’avec le code parental. Les profils adultes supplémentaires font partie de Premium.",
+      "questionsTitre": "Questions sur l’Apple TV",
+      "q1": "Quelle Apple TV faut-il ?",
+      "r1": "Une Apple TV avec tvOS 17 ou plus récent.",
+      "q2": "Quels abonnements IPTV fonctionnent ?",
+      "r2": "Les formats d’abonnement pris en charge sont détaillés dans le [Support](support).",
+      "q3": "Le QR code ne fonctionne pas ?",
+      "r3": "Vérifiez que l’iPhone et l’Apple TV sont sur le même réseau Wi-Fi, et que l’abonnement est déjà ajouté sur l’iPhone. Les autres solutions sont dans le [Support](support).",
+      "q4": "Ulti est-il gratuit sur l’Apple TV ?",
+      "r4": "Le direct, le guide TV et les fiches des films et séries sont gratuits. La lecture des films et séries, le multi-écran, le replay et la pause du direct font partie de Premium, qui s’essaie 7 jours avec les abonnements mensuels et annuels."
     }
   },
   "faqPlus": "Toutes les questions sur la page Support",

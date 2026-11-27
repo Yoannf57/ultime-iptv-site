@@ -153,7 +153,8 @@
     "texte": "Na Apple TV, o Ulti reproduz sua assinatura IPTV pelo controle: passe de um canal para outro como na TV de sempre, com menus claros que dá para ler de longe.",
     "point1": "Troque de canal com o controle, para cima e para baixo",
     "point2": "Picture in Picture durante a TV ao vivo",
-    "point3": "Pôsteres grandes, pensados para o sofá"
+    "point3": "Pôsteres grandes, pensados para o sofá",
+    "lien": "Tudo sobre o Ulti na Apple TV"
   },
   "famille": {
     "titre": "A família toda, cada um no seu canto.",
@@ -273,7 +274,8 @@
       "support": "Suporte",
       "privacy": "Privacidade",
       "legal": "Informações legais",
-      "terms": "Termos de uso"
+      "terms": "Termos de uso",
+      "apple-tv": "Apple TV"
     },
     "marquesGoogle": "Google Play e o logotipo do Google Play são marcas comerciais da Google LLC."
   },
@@ -373,6 +375,36 @@
       "metaTitre": "Termos de uso — Ulti",
       "description": "Termos de uso do Ulti: o contrato de licença de usuário final do app.",
       "chapeau": "O contrato de licença que se aplica quando você usa o Ulti, além dos termos da App Store ou do Google Play."
+    },
+    "apple-tv": {
+      "titre": "Sua assinatura IPTV na Apple TV.",
+      "metaTitre": "Player IPTV para Apple TV — Ulti",
+      "description": "Assista à sua assinatura IPTV na Apple TV com o Ulti: adicione com um QR code pelo iPhone, troque de canal com o controle, guia de TV e Picture in Picture.",
+      "chapeau": "O Ulti é um player IPTV feito para o sofá: você instala, escaneia um QR code com o iPhone e troca de canal com o controle.",
+      "etapesTitre": "Adicionar sua assinatura IPTV na Apple TV",
+      "etape1": "Instale o Ulti na Apple TV e no seu iPhone pela App Store.",
+      "etape2": "No iPhone, adicione sua assinatura: cole a mensagem do seu provedor e o Ulti preenche tudo.",
+      "etape3": "Abra o Ulti na Apple TV, escaneie o QR code com a câmera do iPhone e toque no link do Ulti: a assinatura chega com suas categorias e seus favoritos.",
+      "etapesNote": "O iPhone e a Apple TV precisam estar na mesma rede Wi-Fi. O envio é criptografado e passa direto pela sua rede local. Sem o iPhone por perto? Digite a assinatura com o controle.",
+      "zapTitre": "Trocar de canal como na TV",
+      "zapTexte": "Para cima e para baixo no controle para trocar de canal, o tempo restante de cada programa num relance, e o Picture in Picture para manter a TV ao vivo enquanto você navega.",
+      "guideTitre": "O guia de TV na tela grande",
+      "guideTexte": "O que está passando agora, hoje à noite e nos próximos dias: a programação da sua assinatura, fácil de ler de longe.",
+      "filmsTitre": "Filmes e séries, com pôsteres grandes",
+      "filmsTexte": "Pôsteres, sinopses e elenco: as páginas dos filmes e séries são grátis. A reprodução, com retomada, faz parte do Premium.",
+      "multiTitre": "Até 4 canais ao vivo ao mesmo tempo",
+      "multiTexte": "Com o Premium, a multitela mostra até 4 canais ao vivo na Apple TV, dentro do limite de conexões da sua assinatura IPTV.",
+      "profilsTitre": "Um perfil para cada um",
+      "profilsTexte": "O perfil Infantil, incluído de graça, não vê nenhum conteúdo adulto e só pode ser deixado com o código parental. Perfis adultos extras fazem parte do Premium.",
+      "questionsTitre": "Perguntas sobre a Apple TV",
+      "q1": "Qual Apple TV eu preciso?",
+      "r1": "Uma Apple TV com tvOS 17 ou posterior.",
+      "q2": "Quais assinaturas IPTV funcionam?",
+      "r2": "Os formatos de assinatura compatíveis estão no [Suporte](support).",
+      "q3": "O QR code não funciona?",
+      "r3": "Verifique se o iPhone e a Apple TV estão na mesma rede Wi-Fi e se a assinatura já foi adicionada no iPhone. Mais soluções no [Suporte](support).",
+      "q4": "O Ulti é grátis na Apple TV?",
+      "r4": "A TV ao vivo, o guia de TV e as páginas dos filmes e séries são grátis. A reprodução de filmes e séries, a multitela, o replay e pausar a TV ao vivo fazem parte do Premium, que pode ser testado por 7 dias com as assinaturas mensais e anuais."
     }
   },
   "faqPlus": "Todas as perguntas na página de Suporte",

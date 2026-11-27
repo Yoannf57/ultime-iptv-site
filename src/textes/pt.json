@@ -153,7 +153,8 @@
     "texte": "Na Apple TV, o Ulti reproduz a sua subscrição IPTV com o comando: passe de um canal para outro como na televisão de sempre, com menus claros que se leem ao longe.",
     "point1": "Mudar de canal com o comando, para cima e para baixo",
     "point2": "Imagem na imagem durante o direto",
-    "point3": "Cartazes grandes, pensados para o sofá"
+    "point3": "Cartazes grandes, pensados para o sofá",
+    "lien": "Tudo sobre o Ulti na Apple TV"
   },
   "famille": {
     "titre": "A família toda, cada um no seu espaço.",
@@ -273,7 +274,8 @@
       "support": "Suporte",
       "privacy": "Privacidade",
       "legal": "Informações legais",
-      "terms": "Termos de utilização"
+      "terms": "Termos de utilização",
+      "apple-tv": "Apple TV"
     },
     "marquesGoogle": "Google Play e o logótipo do Google Play são marcas comerciais da Google LLC."
   },
@@ -373,6 +375,36 @@
       "metaTitre": "Termos de utilização — Ulti",
       "description": "Termos de utilização do Ulti: o contrato de licença de utilizador final da app.",
       "chapeau": "O contrato de licença que se aplica quando utiliza o Ulti, além dos termos da App Store ou do Google Play."
+    },
+    "apple-tv": {
+      "titre": "A sua subscrição IPTV na Apple TV.",
+      "metaTitre": "Leitor IPTV para Apple TV — Ulti",
+      "description": "Veja a sua subscrição IPTV na Apple TV com o Ulti: adicione-a com um código QR a partir do iPhone, mude de canal com o comando, guia de TV e imagem na imagem.",
+      "chapeau": "O Ulti é um leitor IPTV pensado para o sofá: instala-o, lê um código QR com o iPhone e muda de canal com o comando.",
+      "etapesTitre": "Adicionar a sua subscrição IPTV à Apple TV",
+      "etape1": "Instale o Ulti na Apple TV e no seu iPhone a partir da App Store.",
+      "etape2": "No iPhone, adicione a sua subscrição: cole a mensagem do seu fornecedor e o Ulti preenche tudo.",
+      "etape3": "Abra o Ulti na Apple TV, leia o código QR com a câmara do iPhone e toque na ligação do Ulti: a subscrição chega com as suas categorias e os seus favoritos.",
+      "etapesNote": "O iPhone e a Apple TV têm de estar na mesma rede Wi-Fi. O envio é cifrado e passa diretamente pela sua rede local. Não tem o iPhone à mão? Introduza a subscrição com o comando.",
+      "zapTitre": "Mudar de canal como na televisão",
+      "zapTexte": "Para cima e para baixo no comando para mudar de canal, o tempo que falta de cada programa num relance, e a imagem na imagem para manter o direto enquanto explora o resto.",
+      "guideTitre": "O guia de TV no ecrã grande",
+      "guideTexte": "O que está a dar agora, esta noite e nos próximos dias: a programação da sua subscrição, legível ao longe.",
+      "filmsTitre": "Filmes e séries, com cartazes grandes",
+      "filmsTexte": "Cartazes, sinopses e elenco: as fichas dos filmes e séries são grátis. A reprodução, com retoma, faz parte do Premium.",
+      "multiTitre": "Até 4 diretos ao mesmo tempo",
+      "multiTexte": "Com o Premium, o multiecrã mostra até 4 diretos na Apple TV, dentro do limite de ligações da sua subscrição IPTV.",
+      "profilsTitre": "Um perfil para cada um",
+      "profilsTexte": "O perfil Criança, incluído gratuitamente, não vê nenhum conteúdo para adultos e só pode ser deixado com o código parental. Os perfis de adulto adicionais fazem parte do Premium.",
+      "questionsTitre": "Perguntas sobre a Apple TV",
+      "q1": "Que Apple TV é preciso?",
+      "r1": "Uma Apple TV com tvOS 17 ou posterior.",
+      "q2": "Que subscrições IPTV funcionam?",
+      "r2": "Os formatos de subscrição compatíveis estão no [Suporte](support).",
+      "q3": "O código QR não funciona?",
+      "r3": "Verifique se o iPhone e a Apple TV estão na mesma rede Wi-Fi e se a subscrição já foi adicionada no iPhone. Encontra mais soluções no [Suporte](support).",
+      "q4": "O Ulti é grátis na Apple TV?",
+      "r4": "O direto, o guia de TV e as fichas dos filmes e séries são grátis. A reprodução de filmes e séries, o multiecrã, as gravações e pausar o direto fazem parte do Premium, que pode ser experimentado durante 7 dias com as subscrições mensais e anuais."
     }
   },
   "faqPlus": "Todas as perguntas na página de Suporte",

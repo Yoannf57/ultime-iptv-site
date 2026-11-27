@@ -153,7 +153,8 @@
     "texte": "En el Apple TV, Ulti reproduce tu suscripción IPTV con el mando: pasa de un canal a otro como en la tele de siempre, con menús claros que se leen desde lejos.",
     "point1": "Zapping con el mando, arriba y abajo",
     "point2": "Imagen dentro de imagen durante el directo",
-    "point3": "Carteles grandes, pensados para el sofá"
+    "point3": "Carteles grandes, pensados para el sofá",
+    "lien": "Todo sobre Ulti en el Apple TV"
   },
   "famille": {
     "titre": "Toda la familia, cada uno a su aire.",
@@ -273,7 +274,8 @@
       "support": "Soporte",
       "privacy": "Privacidad",
       "legal": "Aviso legal",
-      "terms": "Condiciones de uso"
+      "terms": "Condiciones de uso",
+      "apple-tv": "Apple TV"
     },
     "marquesGoogle": "Google Play y el logotipo de Google Play son marcas comerciales de Google LLC."
   },
@@ -373,6 +375,36 @@
       "metaTitre": "Condiciones de uso — Ulti",
       "description": "Condiciones de uso de Ulti: el contrato de licencia de usuario final de la app.",
       "chapeau": "El contrato de licencia que se aplica cuando usas Ulti, además de las condiciones del App Store o de Google Play."
+    },
+    "apple-tv": {
+      "titre": "Tu suscripción IPTV en el Apple TV.",
+      "metaTitre": "Reproductor IPTV para Apple TV — Ulti",
+      "description": "Mira tu suscripción IPTV en el Apple TV con Ulti: añádela con un código QR desde el iPhone, cambia de canal con el mando, guía de TV e imagen en imagen.",
+      "chapeau": "Ulti es un reproductor IPTV pensado para el sofá: lo instalas, escaneas un código QR con el iPhone y cambias de canal con el mando.",
+      "etapesTitre": "Añadir tu suscripción IPTV al Apple TV",
+      "etape1": "Instala Ulti en el Apple TV y en tu iPhone desde el App Store.",
+      "etape2": "En el iPhone, añade tu suscripción: pega el mensaje de tu proveedor y Ulti lo rellena todo.",
+      "etape3": "Abre Ulti en el Apple TV, escanea el código QR con la cámara del iPhone y toca el enlace de Ulti: la suscripción llega con tus categorías y tus favoritos.",
+      "etapesNote": "El iPhone y el Apple TV deben estar en la misma red Wi-Fi. El envío está cifrado y pasa directamente por tu red local. ¿No tienes el iPhone a mano? Introduce la suscripción con el mando.",
+      "zapTitre": "Cambiar de canal como en la tele",
+      "zapTexte": "Arriba y abajo en el mando para pasar de un canal a otro, el tiempo que le queda a cada programa de un vistazo, y la imagen en imagen para seguir viendo el directo mientras exploras.",
+      "guideTitre": "La guía de TV en pantalla grande",
+      "guideTexte": "Lo que dan ahora, esta noche y los próximos días: la programación de tu suscripción, legible desde lejos.",
+      "filmsTitre": "Películas y series, con carteles grandes",
+      "filmsTexte": "Carteles, sinopsis y reparto: las fichas de películas y series son gratis. La reproducción, con la reanudación, forma parte de Premium.",
+      "multiTitre": "Hasta 4 directos a la vez",
+      "multiTexte": "Con Premium, la multipantalla muestra hasta 4 directos en el Apple TV, dentro del límite de conexiones de tu suscripción IPTV.",
+      "profilsTitre": "Un perfil para cada uno",
+      "profilsTexte": "El perfil Infantil, incluido gratis, no ve ningún contenido para adultos y solo se puede salir de él con el código parental. Los perfiles adultos adicionales forman parte de Premium.",
+      "questionsTitre": "Preguntas sobre el Apple TV",
+      "q1": "¿Qué Apple TV necesito?",
+      "r1": "Un Apple TV con tvOS 17 o posterior.",
+      "q2": "¿Qué suscripciones IPTV funcionan?",
+      "r2": "Los formatos de suscripción compatibles se detallan en [Soporte](support).",
+      "q3": "¿No funciona el código QR?",
+      "r3": "Comprueba que el iPhone y el Apple TV están en la misma red Wi-Fi y que la suscripción ya está añadida en el iPhone. Encontrarás más soluciones en [Soporte](support).",
+      "q4": "¿Ulti es gratis en el Apple TV?",
+      "r4": "El directo, la guía de TV y las fichas de películas y series son gratis. La reproducción de películas y series, la multipantalla, la TV a la carta y pausar el directo forman parte de Premium, que se prueba 7 días con las suscripciones mensuales y anuales."
     }
   },
   "faqPlus": "Todas las preguntas en la página de soporte",

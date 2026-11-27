@@ -153,7 +153,8 @@
     "texte": "På Apple TV spiller Ulti av IPTV-abonnementet ditt med fjernkontrollen: bytt fra kanal til kanal som på TV-en før i tiden, i tydelige menyer som er lette å lese på avstand.",
     "point1": "Zap med fjernkontrollen, opp og ned",
     "point2": "Bilde-i-bilde under direkte-TV",
-    "point3": "Store plakater, laget for sofaen"
+    "point3": "Store plakater, laget for sofaen",
+    "lien": "Alt om Ulti på Apple TV"
   },
   "famille": {
     "titre": "Hele familien, hver for seg.",
@@ -273,7 +274,8 @@
       "support": "Kundestøtte",
       "privacy": "Personvern",
       "legal": "Juridisk informasjon",
-      "terms": "Bruksvilkår"
+      "terms": "Bruksvilkår",
+      "apple-tv": "Apple TV"
     },
     "marquesGoogle": "Google Play og Google Play-logoen er varemerker som tilhører Google LLC."
   },
@@ -373,6 +375,36 @@
       "metaTitre": "Bruksvilkår — Ulti",
       "description": "Bruksvilkår for Ulti: appens lisensavtale for sluttbrukere.",
       "chapeau": "Lisensavtalen som gjelder når du bruker Ulti, i tillegg til vilkårene for App Store eller Google Play."
+    },
+    "apple-tv": {
+      "titre": "IPTV-abonnementet ditt på Apple TV.",
+      "metaTitre": "IPTV-spiller for Apple TV — Ulti",
+      "description": "Se IPTV-abonnementet ditt på Apple TV med Ulti: legg det til med en QR-kode fra iPhone, zap med fjernkontrollen, TV‑guide og bilde-i-bilde.",
+      "chapeau": "Ulti er en IPTV-spiller laget for sofaen: installer den, skann en QR-kode med iPhone og zap med fjernkontrollen.",
+      "etapesTitre": "Legg til IPTV-abonnementet ditt på Apple TV",
+      "etape1": "Installer Ulti på Apple TV og iPhone fra App Store.",
+      "etape2": "Legg til abonnementet ditt på iPhone: lim inn meldingen fra leverandøren, så fyller Ulti ut alt.",
+      "etape3": "Åpne Ulti på Apple TV, skann QR-koden med iPhone-kameraet og trykk på Ulti-lenken: abonnementet kommer over med kategoriene og favorittene dine.",
+      "etapesNote": "iPhone og Apple TV må være på samme Wi-Fi-nettverk. Overføringen er kryptert og går direkte via det lokale nettverket ditt. Ingen iPhone for hånden? Skriv inn abonnementet med fjernkontrollen.",
+      "zapTitre": "Zap som på TV",
+      "zapTexte": "Opp og ned på fjernkontrollen for å bytte kanal, tiden som er igjen av hvert program med et blikk, og bilde-i-bilde for å ha direkte-TV på mens du blar.",
+      "guideTitre": "TV‑guiden på den store skjermen",
+      "guideTexte": "Hva som går nå, i kveld og de neste dagene: programmet i abonnementet ditt, lett å lese på avstand.",
+      "filmsTitre": "Filmer og serier, med store plakater",
+      "filmsTexte": "Plakater, sammendrag og rollebesetning: sidene for filmer og serier er gratis. Avspilling, med fortsett å se, er en del av Premium.",
+      "multiTitre": "Opptil 4 direktekanaler samtidig",
+      "multiTexte": "Med Premium viser flerskjerm opptil 4 direktekanaler på Apple TV, innenfor antallet tilkoblinger i IPTV-abonnementet ditt.",
+      "profilsTitre": "En profil til hver",
+      "profilsTexte": "Barneprofilen, som er gratis, ser ikke noe innhold for voksne og kan bare forlates med foreldrekoden. Flere voksenprofiler er en del av Premium.",
+      "questionsTitre": "Spørsmål om Apple TV",
+      "q1": "Hvilken Apple TV trenger jeg?",
+      "r1": "En Apple TV med tvOS 17 eller nyere.",
+      "q2": "Hvilke IPTV-abonnementer fungerer?",
+      "r2": "Abonnementsformatene som støttes, står i [Kundestøtte](support).",
+      "q3": "Fungerer ikke QR-koden?",
+      "r3": "Sjekk at iPhone og Apple TV er på samme Wi-Fi-nettverk, og at abonnementet allerede er lagt til på iPhone. Flere løsninger finner du i [Kundestøtte](support).",
+      "q4": "Er Ulti gratis på Apple TV?",
+      "r4": "Direkte-TV, TV‑guiden og sidene for filmer og serier er gratis. Avspilling av filmer og serier, flerskjerm, opptak og pause i direkte-TV er en del av Premium, som du kan prøve i 7 dager med måneds- og årsabonnementene."
     }
   },
   "faqPlus": "Alle spørsmålene på kundestøttesiden",

@@ -2,8 +2,9 @@
 import { t } from "../../lib/textes";
 import { captures } from "../../lib/captures";
 import Capture from "./Capture.astro";
-interface Props { langue: string }
-const { langue: l } = Astro.props;
+import { lienSousPage } from "../../lib/liens";
+interface Props { langue: string; codePays: string }
+const { langue: l, codePays } = Astro.props;
 const { appareil, capture } = captures.appletv;
 ---
 <section id="apple-tv" aria-labelledby="titre-tv" class="bande">
@@ -20,6 +21,8 @@ const { appareil, capture } = captures.appletv;
           </li>
         ))}
       </ul>
+      {/* Lien vers la page « Lecteur IPTV pour Apple TV » (référencement, 27/11/2026). */}
+      <p class="lien"><a href={lienSousPage(codePays, "apple-tv")}>{t(l, "appletv.lien")} <span aria-hidden="true">›</span></a></p>
     </div>
     <div class="visuel">
       <div class="ecrin-tv tele">
@@ -36,6 +39,9 @@ const { appareil, capture } = captures.appletv;
   .chapeau { margin-top: 1.5rem; }
   ul { margin: 2rem 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.875rem; font-size: 1.0625rem; }
   li { display: flex; gap: 0.75rem; align-items: baseline; }
+  .lien { margin: 2rem 0 0; font-size: 1.0625rem; font-weight: 600; }
+  .lien a { color: #f5f5f7; text-decoration: none; }
+  .lien a:hover { text-decoration: underline; }
   .visuel { flex: 1 1 27.5rem; min-width: 0; display: flex; justify-content: center; }
   .tele { width: 100%; max-width: 34rem; box-shadow: 0 0 0 1px rgba(255,255,255,0.16), 0 1.875rem 5.625rem rgba(0,0,0,0.9), 0 0 8.75rem rgba(255,255,255,0.07); }
 </style>
