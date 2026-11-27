@@ -251,7 +251,7 @@
     "q4": "Mitkä tilaukset toimivat?",
     "r4": "Tilaukset, jotka toimitetaan M3U-linkkinä tai Xtream Codes -kirjautumistietoina, eli valtaosa. Helpointa on liittää palveluntarjoajasi viesti: Ulti tunnistaa muodon itse.",
     "q5": "Voinko kokeilla ennen kuin maksan?",
-    "r5": "Kyllä. Suorat lähetykset ja TV‑opas ovat ilmaisia, samoin elokuvien ja sarjojen sivut iPhonessa, iPadissa ja Macissa; Apple TV:ssä ne muuttuvat ilmaisiksi seuraavassa päivityksessä. Elokuvien ja sarjojen toisto kuuluu Premiumiin, jota voi kokeilla ilmaiseksi 7 päivää kuukausi- ja vuositilauksilla, Solo tai Perhe.",
+    "r5": "Kyllä. Suorat lähetykset ja TV‑opas ovat ilmaisia, samoin elokuvien ja sarjojen sivut. Elokuvien ja sarjojen toisto kuuluu Premiumiin, jota voi kokeilla ilmaiseksi 7 päivää kuukausi- ja vuositilauksilla, Solo tai Perhe.",
     "r2SansGooglePlay": "iPhone, iPad, Mac (Apple-sirulla) ja Apple TV. Ulti Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta. Android-versio (puhelimille, tableteille ja televisioille) on työn alla.",
     "r2SansAppleTvSansGooglePlay": "iPhone, iPad ja Mac (Apple-sirulla) jo nyt; Apple TV -versio tulee lähipäivinä. Ulti Premium on voimassa kaikilla laitteillasi, joilla on sama Apple-tili; Perhe-vaihtoehdolla jopa 6 henkilöä voi käyttää sitä Perhejaon ansiosta. Android-versio (puhelimille, tableteille ja televisioille) on työn alla."
   },
@@ -452,7 +452,7 @@
       },
       "gratuit": {
         "q": "Mitä ilmaisversioon kuuluu?",
-        "r": "Suorat lähetykset, TV‑opas ja muistutukset, Omat sisällöt, päällekkäisten kanavien yhdistäminen, palveluntarjoajan viestin liittäminen, kuva kuvassa, siirto Apple TV:hen QR-koodilla, lapsiprofiili lapsilukon koodilla ja Musta-teema.\n\nElokuvien ja sarjojen sivut (julisteet, juonikuvaukset, näyttelijät) ovat ilmaisia myös iPhonessa, iPadissa ja Macissa; Apple TV:ssä ne muuttuvat ilmaisiksi seuraavassa päivityksessä. Elokuvien ja sarjojen toisto kuuluu Ulti Premiumiin."
+        "r": "Suorat lähetykset, TV‑opas ja muistutukset, Omat sisällöt, päällekkäisten kanavien yhdistäminen, palveluntarjoajan viestin liittäminen, kuva kuvassa, siirto Apple TV:hen QR-koodilla, lapsiprofiili lapsilukon koodilla ja Musta-teema.\n\nElokuvien ja sarjojen sivut (julisteet, juonikuvaukset, näyttelijät) ovat ilmaisia myös. Elokuvien ja sarjojen toisto kuuluu Ulti Premiumiin."
       },
       "inclus": {
         "q": "Mitä Ulti Premiumiin kuuluu?",

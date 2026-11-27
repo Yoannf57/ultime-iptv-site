@@ -251,7 +251,7 @@
     "q4": "Quais assinaturas são compatíveis?",
     "r4": "As assinaturas fornecidas como link M3U ou como dados de acesso Xtream Codes, ou seja, a grande maioria. O mais fácil: cole a mensagem do seu provedor e o Ulti reconhece o formato sozinho.",
     "q5": "Posso testar antes de pagar?",
-    "r5": "Sim. A TV ao vivo e o guia de TV são grátis, assim como as páginas dos filmes e séries no iPhone, iPad e Mac; no Apple TV, passam a ser com a próxima atualização. A reprodução de filmes e séries faz parte do Premium, que pode ser testado de graça por 7 dias com as assinaturas mensais e anuais, Individual ou Família.",
+    "r5": "Sim. A TV ao vivo e o guia de TV são grátis, assim como as páginas dos filmes e séries. A reprodução de filmes e séries faz parte do Premium, que pode ser testado de graça por 7 dias com as assinaturas mensais e anuais, Individual ou Família.",
     "r2SansGooglePlay": "iPhone, iPad, Mac (com chip da Apple) e Apple TV. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com o plano Família, até 6 pessoas aproveitam graças ao Compartilhamento Familiar. Uma versão para Android (celulares, tablets e TVs) está em preparação.",
     "r2SansAppleTvSansGooglePlay": "iPhone, iPad e Mac (com chip da Apple) desde já; a versão para Apple TV chega nos próximos dias. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com o plano Família, até 6 pessoas aproveitam graças ao Compartilhamento Familiar. Uma versão para Android (celulares, tablets e TVs) está em preparação."
   },
@@ -452,7 +452,7 @@
       },
       "gratuit": {
         "q": "O que a versão gratuita inclui?",
-        "r": "A TV ao vivo, o guia de TV e os lembretes, Meus conteúdos, o agrupamento de canais duplicados, colar a mensagem do provedor, Picture in Picture, o envio para o Apple TV por código QR, um perfil Infantil com código parental e o tema Preto.\n\nAs páginas dos filmes e séries (pôsteres, sinopses, elenco) também são grátis no iPhone, iPad e Mac; no Apple TV, passam a ser com a próxima atualização. A reprodução de filmes e séries faz parte do Ulti Premium."
+        "r": "A TV ao vivo, o guia de TV e os lembretes, Meus conteúdos, o agrupamento de canais duplicados, colar a mensagem do provedor, Picture in Picture, o envio para o Apple TV por código QR, um perfil Infantil com código parental e o tema Preto.\n\nAs páginas dos filmes e séries (pôsteres, sinopses, elenco) também são grátis. A reprodução de filmes e séries faz parte do Ulti Premium."
       },
       "inclus": {
         "q": "O que o Ulti Premium inclui?",

@@ -251,7 +251,7 @@
     "q4": "Hvilke abonnementer virker?",
     "r4": "Abonnementer, der leveres som et M3U-link eller som Xtream Codes-loginoplysninger, altså langt de fleste. Nemmest: Indsæt beskeden fra din udbyder, så genkender Ulti selv formatet.",
     "q5": "Kan jeg prøve, før jeg betaler?",
-    "r5": "Ja. Live-tv og tv‑guiden er gratis, og det er siderne for film og serier også på iPhone, iPad og Mac; på Apple TV bliver de det med den næste opdatering. Afspilning af film og serier er en del af Premium, som du kan prøve gratis i 7 dage med måneds- og årsabonnementerne, Solo eller Familie.",
+    "r5": "Ja. Live-tv og tv‑guiden er gratis, og det er siderne for film og serier også. Afspilning af film og serier er en del af Premium, som du kan prøve gratis i 7 dage med måneds- og årsabonnementerne, Solo eller Familie.",
     "r2SansGooglePlay": "iPhone, iPad, Mac (med Apple-chip) og Apple TV. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling. En Android-version (telefoner, tablets og tv’er) er under udvikling.",
     "r2SansAppleTvSansGooglePlay": "iPhone, iPad og Mac (med Apple-chip) allerede nu; Apple TV-versionen kommer i løbet af de næste dage. Ulti Premium gælder på alle dine enheder med den samme Apple-konto; med Familie-løsningen kan op til 6 personer bruge det takket være Familiedeling. En Android-version (telefoner, tablets og tv’er) er under udvikling."
   },
@@ -452,7 +452,7 @@
       },
       "gratuit": {
         "q": "Hvad er med i gratisversionen?",
-        "r": "Live-tv, tv‑guiden og påmindelser, Mit indhold, sammenlægning af dobbelte kanaler, indsættelse af beskeden fra udbyderen, billede-i-billede, overførsel til Apple TV via QR-kode, en børneprofil med forældrekode og temaet Sort.\n\nSiderne for film og serier (plakater, resuméer, medvirkende) er også gratis på iPhone, iPad og Mac; på Apple TV bliver de det med den næste opdatering. Afspilning af film og serier er en del af Ulti Premium."
+        "r": "Live-tv, tv‑guiden og påmindelser, Mit indhold, sammenlægning af dobbelte kanaler, indsættelse af beskeden fra udbyderen, billede-i-billede, overførsel til Apple TV via QR-kode, en børneprofil med forældrekode og temaet Sort.\n\nSiderne for film og serier (plakater, resuméer, medvirkende) er også gratis. Afspilning af film og serier er en del af Ulti Premium."
       },
       "inclus": {
         "q": "Hvad er med i Ulti Premium?",

@@ -251,7 +251,7 @@
     "q4": "Welke abonnementen werken?",
     "r4": "Abonnementen die je krijgt als M3U-link of als Xtream Codes-inloggegevens, dus verreweg de meeste. Het makkelijkst: plak het bericht van je aanbieder, Ulti herkent het formaat zelf.",
     "q5": "Kan ik het proberen voordat ik betaal?",
-    "r5": "Ja. Live tv en de tv‑gids zijn gratis, net als de pagina’s van films en series op iPhone, iPad en Mac; op Apple TV worden ze dat met de volgende update. Films en series afspelen hoort bij Premium, dat je 7 dagen gratis probeert met de maand- en jaarabonnementen, Solo of Gezin.",
+    "r5": "Ja. Live tv en de tv‑gids zijn gratis, net als de pagina’s van films en series. Films en series afspelen hoort bij Premium, dat je 7 dagen gratis probeert met de maand- en jaarabonnementen, Solo of Gezin.",
     "r2SansGooglePlay": "iPhone, iPad, Mac (met Apple-chip) en Apple TV. Ulti Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv’s).",
     "r2SansAppleTvSansGooglePlay": "iPhone, iPad en Mac (met Apple-chip) nu al; de Apple TV-versie volgt in de komende dagen. Ulti Premium geldt op al je apparaten met dezelfde Apple Account; met de Gezin-formule profiteren tot 6 personen dankzij Delen met gezin. Er wordt gewerkt aan een Android-versie (telefoons, tablets en tv’s)."
   },
@@ -452,7 +452,7 @@
       },
       "gratuit": {
         "q": "Wat zit er in de gratis versie?",
-        "r": "Live tv, de tv‑gids en herinneringen, Mijn content, het samenvoegen van dubbele zenders, het plakken van het bericht van je aanbieder, beeld-in-beeld, het versturen naar de Apple TV via QR-code, een Kinderprofiel met ouderlijke code en het thema Zwart.\n\nDe pagina’s van films en series (posters, samenvattingen, cast) zijn ook gratis op iPhone, iPad en Mac; op Apple TV worden ze dat met de volgende update. Films en series afspelen hoort bij Ulti Premium."
+        "r": "Live tv, de tv‑gids en herinneringen, Mijn content, het samenvoegen van dubbele zenders, het plakken van het bericht van je aanbieder, beeld-in-beeld, het versturen naar de Apple TV via QR-code, een Kinderprofiel met ouderlijke code en het thema Zwart.\n\nDe pagina’s van films en series (posters, samenvattingen, cast) zijn ook gratis. Films en series afspelen hoort bij Ulti Premium."
       },
       "inclus": {
         "q": "Wat zit er in Ulti Premium?",

@@ -251,7 +251,7 @@
     "q4": "Welche Abonnements sind kompatibel?",
     "r4": "Abonnements, die als M3U-Link oder als Xtream Codes-Zugangsdaten geliefert werden, also die allermeisten. Am einfachsten: Füge die Nachricht deines Anbieters ein, Ulti erkennt das Format von selbst.",
     "q5": "Kann ich vor dem Kauf testen?",
-    "r5": "Ja. Live-TV und der TV‑Guide sind gratis, ebenso die Seiten zu Filmen und Serien auf iPhone, iPad und Mac; auf dem Apple TV werden sie es mit dem nächsten Update. Das Abspielen von Filmen und Serien gehört zu Premium. Premium kannst du mit den Monats- und Jahresabos, Solo oder Familie, 7 Tage kostenlos testen.",
+    "r5": "Ja. Live-TV und der TV‑Guide sind gratis, ebenso die Seiten zu Filmen und Serien. Das Abspielen von Filmen und Serien gehört zu Premium. Premium kannst du mit den Monats- und Jahresabos, Solo oder Familie, 7 Tage kostenlos testen.",
     "r2SansGooglePlay": "iPhone, iPad, Mac (mit Apple Chip) und Apple TV. Ulti Premium gilt auf all deinen Geräten mit demselben Apple Account; mit der Familien-Variante profitieren bis zu 6 Personen dank der Familienfreigabe. Eine Android-Version (Smartphones, Tablets und Fernseher) ist in Vorbereitung.",
     "r2SansAppleTvSansGooglePlay": "iPhone, iPad und Mac (mit Apple Chip) ab sofort; die Apple TV-Version folgt in den nächsten Tagen. Ulti Premium gilt auf all deinen Geräten mit demselben Apple Account; mit der Familien-Variante profitieren bis zu 6 Personen dank der Familienfreigabe. Eine Android-Version (Smartphones, Tablets und Fernseher) ist in Vorbereitung."
   },
@@ -452,7 +452,7 @@
       },
       "gratuit": {
         "q": "Was ist in der Gratisversion enthalten?",
-        "r": "Live-TV, der TV‑Guide und Erinnerungen, Meine Inhalte, das Zusammenführen doppelter Sender, das Einfügen der Nachricht deines Anbieters, Bild-in-Bild, die Übertragung zum Apple TV per QR-Code, ein Kinderprofil mit Elterncode und das Design Schwarz.\n\nDie Seiten zu Filmen und Serien (Poster, Inhaltsangaben, Besetzung) sind auf iPhone, iPad und Mac ebenfalls gratis; auf dem Apple TV werden sie es mit dem nächsten Update. Das Abspielen von Filmen und Serien gehört zu Ulti Premium."
+        "r": "Live-TV, der TV‑Guide und Erinnerungen, Meine Inhalte, das Zusammenführen doppelter Sender, das Einfügen der Nachricht deines Anbieters, Bild-in-Bild, die Übertragung zum Apple TV per QR-Code, ein Kinderprofil mit Elterncode und das Design Schwarz.\n\nDie Seiten zu Filmen und Serien (Poster, Inhaltsangaben, Besetzung) sind ebenfalls gratis. Das Abspielen von Filmen und Serien gehört zu Ulti Premium."
       },
       "inclus": {
         "q": "Was ist in Ulti Premium enthalten?",
