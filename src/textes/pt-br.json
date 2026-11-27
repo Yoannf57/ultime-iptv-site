@@ -31,7 +31,9 @@
     "android": "Em breve no Android.",
     "androidSansAppleTv": "Apple TV: em poucos dias. Em breve no Android.",
     "androidAvantPublication": "Depois, no Android.",
-    "neutralite": "O Ulti não fornece nenhum canal nem nenhum conteúdo."
+    "neutralite": "O Ulti não fornece nenhum canal nem nenhum conteúdo.",
+    "badgeGooglePlay": "Baixar o Ulti no Google Play",
+    "sansAppleTv": "Apple TV: em poucos dias."
   },
   "apercu": {
     "etiquette": "Prévia do app no Apple TV, iPad e iPhone",
@@ -201,7 +203,8 @@
     "memesFonctions": "Os três planos Premium dão acesso aos mesmos recursos.",
     "noteTTC": "Preços com impostos incluídos.",
     "noteAppStore": "O preço exato para o seu país aparece na App Store.",
-    "noteHT": "Impostos aplicáveis não incluídos."
+    "noteHT": "Impostos aplicáveis não incluídos.",
+    "noteAndroid": "O Premium Individual custa o mesmo na App Store e no Google Play. O plano Família existe apenas no iPhone, iPad, Mac e Apple TV. Uma compra feita com a Apple não vale no Android, e vice-versa."
   },
   "offre": {
     "bandeauEtiquette": "Oferta de Black Friday",
@@ -226,7 +229,10 @@
     "faqQ": "Assinatura ou vitalício: qual escolher?",
     "faqR": "A assinatura é renovada todo mês ou todo ano, e você cancela quando quiser. O Premium vitalício é pago uma única vez. Até {date}, ele custa o mesmo que um ano de assinatura: {prix} no Individual, {prixFamille} no Família.",
     "faqRSansArgument": "A assinatura é renovada todo mês ou todo ano, e você cancela quando quiser. O Premium vitalício é pago uma única vez. Até {date}, ele custa {prix} no Individual e {prixFamille} no Família.",
-    "faqRSansPrix": "A assinatura é renovada todo mês ou todo ano, e você cancela quando quiser. O Premium vitalício é pago uma única vez. Até {date}, ele está com preço reduzido na App Store."
+    "faqRSansPrix": "A assinatura é renovada todo mês ou todo ano, e você cancela quando quiser. O Premium vitalício é pago uma única vez. Até {date}, ele está com preço reduzido na App Store.",
+    "googlePlay": "O Premium vitalício Individual tem o mesmo preço reduzido no Google Play. O plano Família existe apenas no iPhone, iPad, Mac e Apple TV.",
+    "googlePlaySansPrix": "O Premium vitalício Individual também está com preço reduzido no Google Play. O plano Família existe apenas no iPhone, iPad, Mac e Apple TV.",
+    "lienGooglePlay": "Também no Google Play"
   },
   "viePrivee": {
     "titre": "Nenhum dado coletado.",
@@ -238,19 +244,22 @@
     "q1": "O Ulti fornece canais?",
     "r1": "Não. O Ulti é um player: ele reproduz as fontes que você mesmo adiciona. O Ulti não fornece nenhum canal nem nenhum conteúdo. Você precisa ter suas próprias fontes e o direito de assisti-las.",
     "q2": "Em quais dispositivos?",
-    "r2": "iPhone, iPad, Mac (com chip da Apple) e Apple TV. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com o plano Família, até 6 pessoas aproveitam graças ao Compartilhamento Familiar. Uma versão para Android (celulares, tablets e TVs) está em preparação.",
-    "r2SansAppleTv": "iPhone, iPad e Mac (com chip da Apple) desde já; a versão para Apple TV chega nos próximos dias. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com o plano Família, até 6 pessoas aproveitam graças ao Compartilhamento Familiar. Uma versão para Android (celulares, tablets e TVs) está em preparação.",
+    "r2": "iPhone, iPad, Mac (com chip da Apple) e Apple TV. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com o plano Família, até 6 pessoas aproveitam graças ao Compartilhamento Familiar. O Ulti também está disponível para celulares e tablets Android (Android 9 ou posterior), no Google Play. Lá, o Premium existe no plano Individual, pelo mesmo preço; uma compra feita com a Apple não vale no Android, e vice-versa.",
+    "r2SansAppleTv": "iPhone, iPad e Mac (com chip da Apple) desde já; a versão para Apple TV chega nos próximos dias. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com o plano Família, até 6 pessoas aproveitam graças ao Compartilhamento Familiar. O Ulti também está disponível para celulares e tablets Android (Android 9 ou posterior), no Google Play. Lá, o Premium existe no plano Individual, pelo mesmo preço; uma compra feita com a Apple não vale no Android, e vice-versa.",
     "q3": "Meus dados de acesso estão seguros?",
     "r3": "Eles ficam guardados nas Chaves do seu dispositivo e nunca passam por um servidor do Ulti.",
     "q4": "Quais assinaturas são compatíveis?",
     "r4": "As assinaturas fornecidas como link M3U ou como dados de acesso Xtream Codes, ou seja, a grande maioria. O mais fácil: cole a mensagem do seu provedor e o Ulti reconhece o formato sozinho.",
     "q5": "Posso testar antes de pagar?",
-    "r5": "Sim. A TV ao vivo e o guia de TV são grátis, assim como as páginas dos filmes e séries no iPhone, iPad e Mac; no Apple TV, passam a ser com a próxima atualização. A reprodução de filmes e séries faz parte do Premium, que pode ser testado de graça por 7 dias com as assinaturas mensais e anuais, Individual ou Família."
+    "r5": "Sim. A TV ao vivo e o guia de TV são grátis, assim como as páginas dos filmes e séries no iPhone, iPad e Mac; no Apple TV, passam a ser com a próxima atualização. A reprodução de filmes e séries faz parte do Premium, que pode ser testado de graça por 7 dias com as assinaturas mensais e anuais, Individual ou Família.",
+    "r2SansGooglePlay": "iPhone, iPad, Mac (com chip da Apple) e Apple TV. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com o plano Família, até 6 pessoas aproveitam graças ao Compartilhamento Familiar. Uma versão para Android (celulares, tablets e TVs) está em preparação.",
+    "r2SansAppleTvSansGooglePlay": "iPhone, iPad e Mac (com chip da Apple) desde já; a versão para Apple TV chega nos próximos dias. O Ulti Premium vale em todos os seus dispositivos com a mesma Conta Apple; com o plano Família, até 6 pessoas aproveitam graças ao Compartilhamento Familiar. Uma versão para Android (celulares, tablets e TVs) está em preparação."
   },
   "fin": {
     "titre": "Você já tem a assinatura.\nSó falta o app.",
     "texte": "O Ulti é grátis para a TV ao vivo e o guia de TV, sem publicidade e sem conta para criar. Instale, cole a mensagem do seu provedor e assista.",
-    "bouton": "Baixar o Ulti"
+    "bouton": "Baixar o Ulti",
+    "googlePlay": "Também no Google Play"
   },
   "neutralite": "O Ulti não fornece nenhum canal nem nenhum conteúdo. Você precisa ter suas próprias fontes e o direito de assisti-las.",
   "pied": {
@@ -265,7 +274,8 @@
       "privacy": "Privacidade",
       "legal": "Informações legais",
       "terms": "Termos de uso"
-    }
+    },
+    "marquesGoogle": "Google Play e o logotipo do Google Play são marcas comerciais da Google LLC."
   },
   "bandeau": {
     "etiquette": "Escolha do país",
@@ -383,14 +393,22 @@
       },
       "appareils": {
         "q": "Em quais dispositivos o Ulti funciona?",
-        "r": "iPhone, iPad, Mac e Apple TV: iPhone e iPad com iOS 17 ou iPadOS 17 ou posterior, Apple TV com tvOS 17 ou posterior, e os Mac com chip da Apple, que usam o app do iPad. O Premium vale em todos os seus dispositivos conectados à mesma Conta Apple. Uma versão para Android (celulares, tablets e TVs) está em preparação.",
-        "rSansAppleTv": "iPhone, iPad e Mac desde já, Apple TV nos próximos dias: iPhone e iPad com iOS 17 ou iPadOS 17 ou posterior, Apple TV com tvOS 17 ou posterior, e os Mac com chip da Apple, que usam o app do iPad. O Premium vale em todos os seus dispositivos conectados à mesma Conta Apple. Uma versão para Android (celulares, tablets e TVs) está em preparação."
+        "r": "iPhone, iPad, Mac e Apple TV: iPhone e iPad com iOS 17 ou iPadOS 17 ou posterior, Apple TV com tvOS 17 ou posterior, e os Mac com chip da Apple, que usam o app do iPad. O Premium vale em todos os seus dispositivos conectados à mesma Conta Apple. O Ulti também está disponível para celulares e tablets Android (Android 9 ou posterior), no [Google Play](googleplay). Lá, o Premium existe no plano Individual, pelo mesmo preço; uma compra feita com a Apple não vale no Android, e vice-versa.",
+        "rSansAppleTv": "iPhone, iPad e Mac desde já, Apple TV nos próximos dias: iPhone e iPad com iOS 17 ou iPadOS 17 ou posterior, Apple TV com tvOS 17 ou posterior, e os Mac com chip da Apple, que usam o app do iPad. O Premium vale em todos os seus dispositivos conectados à mesma Conta Apple. O Ulti também está disponível para celulares e tablets Android (Android 9 ou posterior), no [Google Play](googleplay). Lá, o Premium existe no plano Individual, pelo mesmo preço; uma compra feita com a Apple não vale no Android, e vice-versa.",
+        "rSansGooglePlay": "iPhone, iPad, Mac e Apple TV: iPhone e iPad com iOS 17 ou iPadOS 17 ou posterior, Apple TV com tvOS 17 ou posterior, e os Mac com chip da Apple, que usam o app do iPad. O Premium vale em todos os seus dispositivos conectados à mesma Conta Apple. Uma versão para Android (celulares, tablets e TVs) está em preparação.",
+        "rSansAppleTvSansGooglePlay": "iPhone, iPad e Mac desde já, Apple TV nos próximos dias: iPhone e iPad com iOS 17 ou iPadOS 17 ou posterior, Apple TV com tvOS 17 ou posterior, e os Mac com chip da Apple, que usam o app do iPad. O Premium vale em todos os seus dispositivos conectados à mesma Conta Apple. Uma versão para Android (celulares, tablets e TVs) está em preparação."
       },
       "installer": {
         "q": "Como instalo o Ulti?",
-        "r": "Baixe o Ulti na [App Store](appstore) do seu iPhone, iPad ou Mac, e na App Store do seu Apple TV. Depois de instalado, o app se chama “Ulti IPTV”.",
-        "rSansAppleTv": "Baixe o Ulti na [App Store](appstore) do seu iPhone, iPad ou Mac. A versão para Apple TV chega nos próximos dias. Depois de instalado, o app se chama “Ulti IPTV”.",
-        "rBientot": "O Ulti chega em breve à App Store, para iPhone, iPad, Mac e Apple TV. Depois de instalado, o app se chama “Ulti IPTV”."
+        "r": "Baixe o Ulti na [App Store](appstore) do seu iPhone, iPad ou Mac, e na App Store do seu Apple TV. Depois de instalado, o app se chama “Ulti IPTV”. Em um celular ou tablet Android, baixe o Ulti no [Google Play](googleplay).",
+        "rSansAppleTv": "Baixe o Ulti na [App Store](appstore) do seu iPhone, iPad ou Mac. A versão para Apple TV chega nos próximos dias. Depois de instalado, o app se chama “Ulti IPTV”. Em um celular ou tablet Android, baixe o Ulti no [Google Play](googleplay).",
+        "rBientot": "O Ulti chega em breve à App Store, para iPhone, iPad, Mac e Apple TV. Depois de instalado, o app se chama “Ulti IPTV”.",
+        "rSansGooglePlay": "Baixe o Ulti na [App Store](appstore) do seu iPhone, iPad ou Mac, e na App Store do seu Apple TV. Depois de instalado, o app se chama “Ulti IPTV”.",
+        "rSansAppleTvSansGooglePlay": "Baixe o Ulti na [App Store](appstore) do seu iPhone, iPad ou Mac. A versão para Apple TV chega nos próximos dias. Depois de instalado, o app se chama “Ulti IPTV”."
+      },
+      "android": {
+        "q": "O Ulti está disponível para Android?",
+        "r": "Sim, para celulares e tablets Android (Android 9 ou posterior): baixe o Ulti no [Google Play](googleplay). No Android, o Premium existe no plano Individual, pelo mesmo preço da App Store, com 7 dias de teste grátis nas assinaturas mensais e anuais. O plano Família existe apenas no iPhone, iPad, Mac e Apple TV.\n\nAs compras são separadas: o Premium comprado com a Apple não vale no Android, e vice-versa. No Android, as assinaturas são gerenciadas no Google Play ([ajuda do Google](google-resilier))."
       },
       "ajouter": {
         "q": "Como adiciono minha assinatura IPTV?",
@@ -538,7 +556,7 @@
         "texte": "As compras são gerenciadas pela Apple, na App Store. O Ulti guarda só o status do Premium no dispositivo, para funcionar offline, e não o envia para lugar nenhum."
       },
       "android": {
-        "titre": "Ulti no Android (celulares, tablets, Android TV)",
+        "titre": "Ulti no Android (celulares e tablets)",
         "texte": "O app para Android funciona como no iPhone, sem sincronização: suas assinaturas IPTV (endereço do servidor, nome de usuário, senha ou link M3U) são criptografadas e ficam no seu dispositivo; elas nunca são enviadas ao Ulti. As compras do Premium passam pelo Google Play: o Google processa o pagamento segundo a própria [política de privacidade](google-confidentialite), e o app só recebe a confirmação da compra (nenhum dado bancário); a biblioteca de compras do Google Play pode enviar ao Google informações técnicas sobre as compras. Para mostrar pôsteres e sinopses de filmes e séries, o app envia ao relay do Ulti (api.ultitv.com) o título e o ano da obra e o idioma do dispositivo; o relay consulta o TMDB, não guarda nenhum registro e não armazena o seu endereço IP. O Ulti não tem publicidade nem ferramentas de medição de audiência, e não coleta nenhum dado pessoal. Se você permitiu nos ajustes do dispositivo, o Google pode repassar ao desenvolvedor relatórios técnicos de falhas (Android vitals). Os registros do app só saem do seu dispositivo se você mesmo enviá-los ao suporte."
       },
       "plantages": {

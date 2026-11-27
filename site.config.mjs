@@ -17,12 +17,13 @@ export default {
   //   Une fois l'offre finie : repasser à false, pour retirer les prix réduits du code des pages.
   // prix : prix réduits de « Premium à vie », par monnaie, relevés dans App Store Connect le 24/11/2026 (jamais
   //   calculés ni convertis). Le prix normal barré et le pourcentage viennent de src/pays.json (src/lib/offre.ts).
-  // aussiGooglePlay : l'app n'est pas sur Google Play ; l'offre ne parle que de l'App Store. Laisser à false
-  //   (réglage gardé à la demande de Yoann ; aucun texte ne le lit pour l'instant).
+  // aussiGooglePlay : true depuis le 27/11/2026 (demande de Yoann) : Premium à vie Solo est aussi en promo sur Google
+  //   Play, aux mêmes prix (Famille n'existe pas sur Android). Ajoute une phrase à la section #offre et à la question
+  //   de la FAQ (offre.googlePlay*) et un lien « Aussi sur Google Play ». À false : offre App Store seulement.
   blackFriday: {
     actif: true,
     fin: "2026-11-30",
-    aussiGooglePlay: false,
+    aussiGooglePlay: true,
     prix: {
       EUR: { solo: 19.99, famille: 29.99 },
       GBP: { solo: 17.99, famille: 24.99 },
@@ -41,6 +42,11 @@ export default {
   // Fiche App Store : https://apps.apple.com/<pays>/app/<nom>/id<id> (adresse sans pays pour les pages
   // internationales). Calculée par src/lib/appstore.ts ; une seule valeur à changer si Apple change le format.
   appStore: { id: "6829902519", nom: "ulti-iptv-player" },
+
+  // Fiche Google Play (app acceptée le 27/11/2026, téléphones et tablettes Android, formule Solo seulement).
+  // disponible: true → badge officiel Google Play à côté de celui de l'App Store, liens « Aussi sur Google Play »,
+  // phrase sous les tarifs. Adresse calculée par src/lib/googleplay.ts.
+  googlePlay: { disponible: true, id: "com.yoannfebvre.ultimeiptv" },
 
   // false = caché de Google (balise noindex + robots.txt qui interdit tout).
   // Passer à true avec le branchement d'ultitv.com (ou le jour de la publication si le domaine n'est pas branché).

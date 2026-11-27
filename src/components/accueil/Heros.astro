@@ -8,13 +8,17 @@ import Halo from "./Halo.astro";
 import Zones from "./Zones.astro";
 import BoutonLecture from "./BoutonLecture.astro";
 import BadgeAppStore from "./BadgeAppStore.astro";
+import BadgeGooglePlay from "./BadgeGooglePlay.astro";
+import { googlePlayAffiche as googlePlay } from "../../lib/googleplay";
 import type { Pays } from "../../lib/pays";
 import type { Offre } from "../../lib/offre";
 interface Props { langue: string; p: Pays; offre?: Offre | null }
 const { langue: l, p, offre = null } = Astro.props;
 // Petite ligne sous le badge : « Bientôt sur Android. », ou avec l'Apple TV quand l'app est publiée sans elle.
 // Avant la publication, sous « Bientôt sur l'App Store » : « Puis sur Android. » (évite deux « Bientôt » de suite).
-const ligneAndroid = !config.disponible ? "heros.androidAvantPublication"
+// Depuis le 27/11/2026, l'app est sur Google Play (googlePlay.disponible) : badge Google Play, et plus de ligne
+// Android (sauf « Apple TV : dans quelques jours. » si l'app est publiée sans l'Apple TV).
+const ligneAndroid = googlePlay ? (config.appleTvDisponible ? null : "heros.sansAppleTv") : !config.disponible ? "heros.androidAvantPublication"
   : config.appleTvDisponible ? "heros.android" : "heros.androidSansAppleTv";
 const { vues, ecrans } = captures.apercu;
 // Apple TV au centre (écran flottant), iPhone devant à droite dans son cadre officiel. Tailles d'affichage pour « sizes ».
@@ -31,11 +35,11 @@ const tailleTel = "min(15vw, 11rem)";
   <p class="phrase">{t(l, "heros.phrase")}</p>
   <div class="boutons">
     {config.disponible
-      ? <BadgeAppStore langue={l} p={p} />
+      ? <span class="magasins"><BadgeAppStore langue={l} p={p} />{googlePlay && <BadgeGooglePlay langue={l} p={p} />}</span>
       : <span class="bouton plein bientot">{t(l, "heros.bientot")}</span>}
     <a class="bouton contour" href="#tarifs">{t(l, "heros.voirTarifs")}</a>
   </div>
-  <p class="android">{t(l, ligneAndroid)}</p>
+  {ligneAndroid && <p class="android">{t(l, ligneAndroid)}</p>}
   <p class="neutre">{t(l, "heros.neutralite")}</p>
 </section>
 
@@ -83,6 +87,8 @@ const tailleTel = "min(15vw, 11rem)";
   .surtitre { margin: 0 0 1.25rem; font-size: 1.0625rem; font-weight: 600; color: #fff; }
   h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(3rem, 7.4vw, 6.5rem); line-height: 0.98; letter-spacing: -0.045em; font-weight: 800; white-space: pre-line; }
   .phrase { margin: 1.75rem auto 0; max-width: 40rem; text-wrap: balance; font-size: clamp(1.125rem, 1.8vw, 1.375rem); line-height: 1.45; color: #a1a1a6; }
+  /* Badges App Store puis Google Play, côte à côte (leurs marges libres font l'écart), « Voir les tarifs » après. */
+  .magasins { display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: center; }
   .boutons { margin-top: 2.25rem; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.75rem; }
   /* Même hauteur que le badge officiel (3 rem, 2,75 rem sur téléphone). */
   .bouton { display: inline-flex; align-items: center; height: 3rem; padding: 0 1.75rem; border-radius: 999px; font-size: 1.0625rem; font-weight: 600; text-decoration: none; }

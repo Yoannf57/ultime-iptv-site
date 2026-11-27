@@ -1,12 +1,15 @@
 ---
 import { t } from "../../lib/textes";
 import config from "../../../site.config.mjs";
+import { googlePlayAffiche } from "../../lib/googleplay";
 import { lienSousPage } from "../../lib/liens";
 import type { Offre } from "../../lib/offre";
 interface Props { langue: string; codePays: string; offre?: Offre | null }
 const { langue: l, codePays, offre = null } = Astro.props;
 // « Sur quels appareils ? » (r2) : autre réponse si l'app est publiée sans la version Apple TV.
-const reponse = (n: number) => `faq.r${n}${n === 2 && config.disponible && !config.appleTvDisponible ? "SansAppleTv" : ""}`;
+// Sans Google Play (googlePlayAffiche false) : l'ancienne réponse, « version Android en préparation ».
+const reponse = (n: number) => n !== 2 ? `faq.r${n}`
+  : `faq.r2${config.disponible && !config.appleTvDisponible ? "SansAppleTv" : ""}${googlePlayAffiche ? "" : "SansGooglePlay"}`;
 ---
 <section id="questions" aria-labelledby="titre-questions" class="faq apparition">
   <h2 id="titre-questions">{t(l, "faq.titre")}</h2>
@@ -22,7 +25,9 @@ const reponse = (n: number) => `faq.r${n}${n === 2 && config.disponible && !conf
       <summary>{t(l, "offre.faqQ")}<span class="plus" aria-hidden="true">+</span></summary>
       <p class="chiffres">{offre.prix
         ? t(l, offre.prixDunAn ? "offre.faqR" : "offre.faqRSansArgument", { date: offre.date, prix: offre.prix.solo.reduit, prixFamille: offre.prix.famille.reduit })
-        : t(l, "offre.faqRSansPrix", { date: offre.date })}</p>
+        : t(l, "offre.faqRSansPrix", { date: offre.date })}
+        {/* Google Play (27/11/2026) : à vie Solo aussi en promo sur Google Play ; Famille seulement sur Apple. */}
+        {config.blackFriday.aussiGooglePlay && googlePlayAffiche && ` ${t(l, offre.prix ? "offre.googlePlay" : "offre.googlePlaySansPrix")}`}</p>
     </details>
   )}
   <p class="plus-de-questions"><a href={lienSousPage(codePays, "support")}>{t(l, "faqPlus")} <span aria-hidden="true">→</span></a></p>

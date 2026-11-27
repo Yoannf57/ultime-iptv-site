@@ -1,9 +1,9 @@
-// npm run importer-badges — copie les badges officiels « Download on the App Store » d'Apple, déposés par Yoann dans
+// npm run importer-badges — copie les badges officiels « Download on the App Store » d'Apple (et, plus bas, ceux de Google Play), déposés par Yoann dans
 // Notes/badges/ (non versionné, licence acceptée par lui), vers src/assets/badges/<langue>.svg, pour les langues du
 // site seulement, en SVG NOIR. Copie à l'identique (octet pour octet) : Apple interdit toute modification du badge.
 // Les versions blanches vont dans captures/badges-blancs/ (non versionné), uniquement pour comparer en capture.
 // Affiche à la fin les langues pour lesquelles Apple n'a pas de badge : le site prend alors l'anglais.
-import { readdirSync, statSync, copyFileSync, chmodSync, mkdirSync, existsSync } from "node:fs";
+import { readdirSync, statSync, copyFileSync, chmodSync, mkdirSync, existsSync, writeFileSync } from "node:fs";
 import { join, basename, relative } from "node:path";
 
 const racine = new URL("..", import.meta.url).pathname;
@@ -67,3 +67,42 @@ if (inconnus.length) console.log(`  (codes d'Apple non utilisés : ${inconnus.so
 if (!badges.length) console.warn("⚠️ Aucun badge SVG reconnu dans le dossier (noms attendus : …_Badge_FR_RGB_blk_….svg).");
 if (manquantes.length) console.warn(`⚠️ Pas de badge chez Apple pour : ${manquantes.join(", ")} — le site affichera le badge anglais.`);
 else if (badges.length) console.log("✓ Toutes les langues du site ont leur badge.");
+
+// ── Badges officiels « Disponible sur Google Play » (27/11/2026) ─────────────────────────────────────────────────
+// Téléchargés sur https://play.google.com/intl/en_us/badges/ (fichiers « <code>_badge_web_generic.png ») et déposés
+// dans Notes/badges/google-play/ (non versionné). Copie à l'identique vers src/assets/badges/google-play/<langue>.png :
+// Google interdit de modifier le badge. Les PNG de Google ont une marge transparente qui n'est pas la même selon la
+// langue : on la mesure (sharp) et on l'écrit dans mesures.json, pour que BadgeGooglePlay.astro donne au badge visible
+// exactement la hauteur du badge App Store, sans toucher à l'image.
+const sourceGoogle = join(source, "google-play");
+const cibleGoogle = join(cible, "google-play");
+const languesGoogle = {
+  fr: "fr", en: "en", nl: "nl", de: "de", sv: "sv", nb: "no", da: "da", fi: "fi",
+  es: "es", "es-mx": "es-419", it: "it", "pt-br": "pt-br", pt: "pt",
+};
+if (!existsSync(sourceGoogle)) {
+  console.warn(`⚠️ ${relative(racine, sourceGoogle)}/ n'existe pas : badges Google Play non importés.`);
+} else {
+  // sharp : installé avec Astro (dépendance d'Astro, pas du site). Pas de nouvelle dépendance ajoutée.
+  const { default: sharp } = await import("sharp");
+  mkdirSync(cibleGoogle, { recursive: true });
+  const mesures = {};
+  const manquantesGoogle = [];
+  for (const [langue, code] of Object.entries(languesGoogle)) {
+    const fichier = join(sourceGoogle, `${code}_badge_web_generic.png`);
+    if (!existsSync(fichier)) { if (!facultatives.has(langue)) manquantesGoogle.push(langue); continue; }
+    copyFileSync(fichier, join(cibleGoogle, `${langue}.png`));
+    chmodSync(join(cibleGoogle, `${langue}.png`), 0o644);
+    // Rectangle visible (pixels non transparents) dans l'image d'origine.
+    const { data, info } = await sharp(fichier).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+    let haut = info.height, bas = -1, gauche = info.width, droite = -1;
+    for (let y = 0; y < info.height; y++) for (let x = 0; x < info.width; x++) {
+      if (data[(y * info.width + x) * 4 + 3] > 8) { haut = Math.min(haut, y); bas = Math.max(bas, y); gauche = Math.min(gauche, x); droite = Math.max(droite, x); }
+    }
+    mesures[langue] = { largeur: info.width, hauteur: info.height, haut, bas: info.height - 1 - bas, gauche, droite: info.width - 1 - droite };
+    console.log(`✓ google ${langue.padEnd(6)} ← ${code}_badge_web_generic.png`);
+  }
+  writeFileSync(join(cibleGoogle, "mesures.json"), JSON.stringify(mesures, null, 2) + "\n");
+  if (manquantesGoogle.length) console.warn(`⚠️ Pas de badge Google Play pour : ${manquantesGoogle.join(", ")} — le site affichera le badge anglais.`);
+  else console.log("✓ Toutes les langues du site ont leur badge Google Play.");
+}
