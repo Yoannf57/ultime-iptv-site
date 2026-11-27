@@ -30,8 +30,9 @@ const tailleTel = "min(15vw, 11rem)";
   {offre && (
     <p class="pastille-offre bf-offre"><a class="chiffres" href="#offre">{offre.prix ? t(l, "offre.pastille", { remise: offre.prix.solo.remise }) : t(l, "offre.pastilleSansPrix")}</a></p>
   )}
-  <p class="surtitre">{t(l, "heros.surtitre")}</p>
-  <h1 id="titre-principal">{t(l, "heros.accroche")}</h1>
+  {/* SEO : le surtitre (« Lecteur IPTV pour iPhone, iPad, Mac, Apple TV et Android ») fait partie du <h1>, pour que
+      le titre principal contienne les mots cherchés ; le rendu est le même qu'avant (petite ligne, puis l'accroche). */}
+  <h1 id="titre-principal"><span class="surtitre">{t(l, "heros.surtitre")}</span> <span class="accroche">{t(l, "heros.accroche")}</span></h1>
   <p class="phrase">{t(l, "heros.phrase")}</p>
   <div class="boutons">
     {config.disponible
@@ -84,7 +85,8 @@ const tailleTel = "min(15vw, 11rem)";
   .pastille-offre { margin: -1.5rem 0 1.25rem; }
   .pastille-offre a { display: inline-block; padding: 0.75rem 1.125rem; border: 1px solid #6e6e73; border-radius: 999px; font-size: 0.875rem; font-weight: 600; line-height: 1.3; color: #f5f5f7; text-decoration: none; text-wrap: balance; }
   .pastille-offre a:hover { border-color: #a1a1a6; }
-  .surtitre { margin: 0 0 1.25rem; font-size: 1.0625rem; font-weight: 600; color: #fff; }
+  h1 .surtitre { display: block; margin: 0 auto 1.25rem; max-width: 40rem; font-size: 1.0625rem; line-height: 1.4; letter-spacing: normal; font-weight: 600; color: #fff; white-space: normal; text-wrap: balance; }
+  h1 .accroche { display: block; }
   h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(3rem, 7.4vw, 6.5rem); line-height: 0.98; letter-spacing: -0.045em; font-weight: 800; white-space: pre-line; }
   .phrase { margin: 1.75rem auto 0; max-width: 40rem; text-wrap: balance; font-size: clamp(1.125rem, 1.8vw, 1.375rem); line-height: 1.45; color: #a1a1a6; }
   /* Badges App Store puis Google Play, côte à côte (leurs marges libres font l'écart), « Voir les tarifs » après. */

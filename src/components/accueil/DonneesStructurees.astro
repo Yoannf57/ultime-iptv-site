@@ -1,6 +1,6 @@
 ---
 // Données structurées (JSON-LD, schema.org) de l'accueil de chaque pays, pour Google et Bing :
-// - l'éditeur (Organization) et le site (WebSite) ;
+// - l'éditeur (Organization, avec le logo) et le site (WebSite), communs avec la page racine (src/lib/jsonld.ts) ;
 // - l'app (SoftwareApplication) : appareils, téléchargement gratuit, liens App Store et Google Play, capture ;
 // - la FAQ de l'accueil (FAQPage), mêmes questions et réponses que la page.
 // Règles : rien d'inventé. Aucune note ni avis (pas de « aggregateRating ») tant que le site n'en affiche pas ; le prix
@@ -10,13 +10,14 @@ import { t } from "../../lib/textes";
 import { lienAppStore } from "../../lib/appstore";
 import { lienGooglePlay, googlePlayAffiche } from "../../lib/googleplay";
 import { lienAbsolu } from "../../lib/liens";
+import { editeurEtSite, jsonPourScript } from "../../lib/jsonld";
 import { estInternational, type Pays } from "../../lib/pays";
 
 interface Props { p: Pays; image?: string | null }
 const { p, image = null } = Astro.props;
 const l = p.langue;
 const site = Astro.site!;
-const racine = lienAbsolu("", site);
+const { racine, graphe } = editeurEtSite(site);
 const accueil = lienAbsolu(`${p.code}/`, site);
 const magasins = [config.disponible && lienAppStore(p), googlePlayAffiche && lienGooglePlay(p)].filter(Boolean) as string[];
 // Même choix de réponse que la FAQ affichée (Faq.astro).
@@ -26,21 +27,7 @@ const faq = [1, 2, 3, 4, 5].map((n) => ({ q: t(l, `faq.q${n}`), r: t(l, n === 2 
 const donnees = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "Organization",
-      "@id": `${racine}#editeur`,
-      name: "Ulti",
-      url: racine,
-      email: config.contact,
-      sameAs: magasins,
-    },
-    {
-      "@type": "WebSite",
-      "@id": `${racine}#site`,
-      name: "Ulti",
-      url: racine,
-      publisher: { "@id": `${racine}#editeur` },
-    },
+    ...graphe,
     {
       "@type": "SoftwareApplication",
       "@id": `${accueil}#app`,
@@ -66,6 +53,6 @@ const donnees = {
     },
   ],
 };
-const json = JSON.stringify(donnees).replace(/</g, "\\u003c");
+const json = jsonPourScript(donnees);
 ---
 <script type="application/ld+json" set:html={json} />

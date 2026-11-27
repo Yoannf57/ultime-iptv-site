@@ -21,7 +21,7 @@
     "telecharger": "Hämta"
   },
   "heros": {
-    "surtitre": "För iPhone, iPad, Mac, Apple TV och Android",
+    "surtitre": "IPTV-spelare för iPhone, iPad, Mac, Apple TV och Android",
     "accroche": "Den ultimata\nIPTV-upplevelsen.",
     "phrase": "Du betalar redan för ditt IPTV-abonnemang. Se det äntligen i en app som gör det rättvisa: live-tv, tv‑guide, filmer och serier. Öppna och titta.",
     "bientot": "Kommer snart till App Store",
@@ -102,7 +102,7 @@
   },
   "fonctions": {
     "titre": "Ditt abonnemang, äntligen snyggt presenterat.",
-    "phrase": "Ulti ordnar de tusentals kanaler och filmer i ditt abonnemang i tydliga skärmar, som en tv-app du alltid haft.",
+    "phrase": "Ulti ordnar de tusentals kanaler och filmer i ditt IPTV-abonnemang i tydliga skärmar, som en tv-app du alltid haft.",
     "directTitre": "Live-tv i en blick",
     "directTexte": "En ring runt varje kanal visar hur långt programmet har kommit. Filtrera efter tema och zappa mellan kanalerna.",
     "guideTitre": "En riktig tv‑guide",
@@ -150,7 +150,7 @@
   "appletv": {
     "surtitre": "Apple TV",
     "titre": "Bara zappa.",
-    "texte": "På Apple TV gör du allt med fjärrkontrollen: byt från kanal till kanal som på tv:n förr, i tydliga menyer som syns på avstånd.",
+    "texte": "På Apple TV spelar Ulti upp ditt IPTV-abonnemang med fjärrkontrollen: byt från kanal till kanal som på tv:n förr, i tydliga menyer som syns på avstånd.",
     "point1": "Zappa med fjärrkontrollen, upp och ner",
     "point2": "Bild-i-bild under live-tv",
     "point3": "Stora affischer, gjorda för soffan"
@@ -352,8 +352,8 @@
     "sommaire": "På den här sidan",
     "support": {
       "titre": "Support",
-      "metaTitre": "Support — Ulti",
-      "description": "Hjälp för Ulti: installation, lägga till ett IPTV-abonnemang, Apple TV, profiler, Ulti Premium, köp och uppspelning.",
+      "metaTitre": "Ulti support — Lägg till ett IPTV-abonnemang på iPhone och Apple TV",
+      "description": "Lägg till ditt IPTV-abonnemang genom att klistra in meddelandet från din leverantör, skicka det till Apple TV med en QR-kod och hitta alla svar om Ulti Premium.",
       "chapeau": "Allt för att komma igång med Ulti, och svar på de vanligaste frågorna."
     },
     "privacy": {

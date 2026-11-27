@@ -7,14 +7,19 @@ import { t } from "../lib/textes";
 import { paysPourNavigateur } from "../lib/pays";
 import { base } from "../lib/liens";
 import code from "../scripts/deviner-pays.js?raw";
+import { editeurEtSite, jsonPourScript } from "../lib/jsonld";
 
 const script = `${code}
 (function () {
   var g = devinerPays(${JSON.stringify(paysPourNavigateur)});
   location.replace(${JSON.stringify(base)} + g.code + "/" + location.hash);
 })();`;
+// SEO : c'est la page d'accueil du domaine, celle que Google lit pour le nom du site. Titre de l'app (anglais) et
+// données de l'éditeur et du site. Googlebot (anglais, fuseau américain) est ensuite renvoyé vers /en-us/.
+const donnees = jsonPourScript({ "@context": "https://schema.org", "@graph": editeurEtSite(Astro.site!).graphe });
 ---
-<Base langue="en" titre={`${t("fr", "choix.titre")} · ${t("en", "choix.titre")}`} description={t("en", "meta.description")} chemin="" languesPied={["fr", "en"]}>
+<Base langue="en" titre={t("en", "meta.titre")} description={t("en", "meta.description")} chemin="" languesPied={["fr", "en"]}>
   <script slot="tete" is:inline set:html={script}></script>
+  <script slot="tete" type="application/ld+json" set:html={donnees} />
   <ChoixPays />
 </Base>

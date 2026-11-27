@@ -21,7 +21,7 @@
     "telecharger": "Last ned"
   },
   "heros": {
-    "surtitre": "For iPhone, iPad, Mac, Apple TV og Android",
+    "surtitre": "IPTV-spiller for iPhone, iPad, Mac, Apple TV og Android",
     "accroche": "Den ultimate\nIPTV-opplevelsen.",
     "phrase": "Du betaler allerede for IPTV-abonnementet ditt. Se det endelig i en app som yter det rettferdighet: direkte-TV, TV‑guide, filmer og serier. Åpne og se.",
     "bientot": "Kommer snart til App Store",
@@ -102,7 +102,7 @@
   },
   "fonctions": {
     "titre": "Abonnementet ditt, endelig pent presentert.",
-    "phrase": "Ulti ordner de tusenvis av kanalene og filmene i abonnementet ditt i oversiktlige skjermer, som en TV-app du alltid har hatt.",
+    "phrase": "Ulti ordner de tusenvis av kanalene og filmene i IPTV-abonnementet ditt i oversiktlige skjermer, som en TV-app du alltid har hatt.",
     "directTitre": "Direkte-TV med ett blikk",
     "directTexte": "En ring rundt hver kanal viser hvor langt programmet har kommet. Filtrer etter tema og zap fra kanal til kanal.",
     "guideTitre": "En ekte TV‑guide",
@@ -150,7 +150,7 @@
   "appletv": {
     "surtitre": "Apple TV",
     "titre": "Bare zapp.",
-    "texte": "På Apple TV gjør du alt med fjernkontrollen: bytt fra kanal til kanal som på TV-en før i tiden, i tydelige menyer som er lette å lese på avstand.",
+    "texte": "På Apple TV spiller Ulti av IPTV-abonnementet ditt med fjernkontrollen: bytt fra kanal til kanal som på TV-en før i tiden, i tydelige menyer som er lette å lese på avstand.",
     "point1": "Zap med fjernkontrollen, opp og ned",
     "point2": "Bilde-i-bilde under direkte-TV",
     "point3": "Store plakater, laget for sofaen"
@@ -352,8 +352,8 @@
     "sommaire": "På denne siden",
     "support": {
       "titre": "Kundestøtte",
-      "metaTitre": "Kundestøtte — Ulti",
-      "description": "Hjelp for Ulti: installasjon, legge til et IPTV-abonnement, Apple TV, profiler, Ulti Premium, kjøp og avspilling.",
+      "metaTitre": "Ulti kundestøtte — Legg til et IPTV-abonnement på iPhone og Apple TV",
+      "description": "Legg til IPTV-abonnementet ditt ved å lime inn meldingen fra leverandøren, send det til Apple TV med en QR-kode, og finn alle svar om Ulti Premium.",
       "chapeau": "Alt du trenger for å komme i gang med Ulti, og svar på de vanligste spørsmålene."
     },
     "privacy": {

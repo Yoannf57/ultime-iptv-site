@@ -21,7 +21,7 @@
     "telecharger": "Scarica"
   },
   "heros": {
-    "surtitre": "Per iPhone, iPad, Mac, Apple TV e Android",
+    "surtitre": "Player IPTV per iPhone, iPad, Mac, Apple TV e Android",
     "accroche": "L’esperienza\nIPTV definitiva.",
     "phrase": "Paghi già il tuo abbonamento IPTV. Guardalo finalmente in un’app alla sua altezza: diretta, guida TV, film e serie. La apri e guardi.",
     "bientot": "Presto su App Store",
@@ -102,7 +102,7 @@
   },
   "fonctions": {
     "titre": "Il tuo abbonamento, finalmente ben presentato.",
-    "phrase": "Ulti ordina le migliaia di canali e film del tuo abbonamento in schermate chiare, come un’app TV che hai sempre avuto.",
+    "phrase": "Ulti ordina le migliaia di canali e film del tuo abbonamento IPTV in schermate chiare, come un’app TV che hai sempre avuto.",
     "directTitre": "La diretta, a colpo d’occhio",
     "directTexte": "Un anello intorno a ogni canale mostra a che punto è il programma. Filtra per tema e fai zapping da un canale all’altro.",
     "guideTitre": "Una vera guida TV",
@@ -150,7 +150,7 @@
   "appletv": {
     "surtitre": "Apple TV",
     "titre": "Fai zapping, semplicemente.",
-    "texte": "Su Apple TV fai tutto con il telecomando: passa da un canale all’altro come sulla TV di una volta, con menu chiari e leggibili anche da lontano.",
+    "texte": "Su Apple TV, Ulti riproduce il tuo abbonamento IPTV con il telecomando: passa da un canale all’altro come sulla TV di una volta, con menu chiari e leggibili anche da lontano.",
     "point1": "Zapping con il telecomando, su e giù",
     "point2": "Picture in Picture durante la diretta",
     "point3": "Grandi locandine, pensate per il divano"
@@ -352,8 +352,8 @@
     "sommaire": "In questa pagina",
     "support": {
       "titre": "Supporto",
-      "metaTitre": "Supporto — Ulti",
-      "description": "Aiuto per Ulti: installazione, aggiunta di un abbonamento IPTV, Apple TV, profili, Ulti Premium, acquisti e riproduzione.",
+      "metaTitre": "Supporto Ulti — Aggiungere un abbonamento IPTV su iPhone e Apple TV",
+      "description": "Aggiungi il tuo abbonamento IPTV incollando il messaggio del tuo fornitore, invialo ad Apple TV con un codice QR e trova tutte le risposte su Ulti Premium.",
       "chapeau": "Tutto per iniziare bene con Ulti, e le risposte alle domande più frequenti."
     },
     "privacy": {

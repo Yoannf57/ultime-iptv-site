@@ -21,7 +21,7 @@
     "telecharger": "Lataa"
   },
   "heros": {
-    "surtitre": "iPhonelle, iPadille, Macille, Apple TV:lle ja Androidille",
+    "surtitre": "IPTV-soitin iPhonelle, iPadille, Macille, Apple TV:lle ja Androidille",
     "accroche": "Täydellinen\nIPTV-kokemus.",
     "phrase": "Maksat jo IPTV-tilauksestasi. Katso sitä vihdoin sovelluksessa, joka on sen arvoinen: suorat lähetykset, TV‑opas, elokuvat ja sarjat. Avaa ja katso.",
     "bientot": "Tulossa pian App Storeen",
@@ -102,7 +102,7 @@
   },
   "fonctions": {
     "titre": "Tilauksesi, vihdoin selkeästi esillä.",
-    "phrase": "Ulti järjestää tilauksesi tuhannet kanavat ja elokuvat selkeiksi näkymiksi, kuin TV-sovellus, joka sinulla olisi aina ollut.",
+    "phrase": "Ulti järjestää IPTV-tilauksesi tuhannet kanavat ja elokuvat selkeiksi näkymiksi, kuin TV-sovellus, joka sinulla olisi aina ollut.",
     "directTitre": "Suorat lähetykset yhdellä silmäyksellä",
     "directTexte": "Jokaisen kanavan ympärillä oleva rengas näyttää, missä ohjelma on menossa. Suodata aiheen mukaan ja vaihda kanavaa toiseen.",
     "guideTitre": "Oikea TV‑opas",
@@ -150,7 +150,7 @@
   "appletv": {
     "surtitre": "Apple TV",
     "titre": "Vaihda kanavaa, siinä kaikki.",
-    "texte": "Apple TV:ssä kaikki hoituu kaukosäätimellä: vaihda kanavalta toiselle kuin ennen vanhaan, selkeissä valikoissa, jotka erottuvat kaukaakin.",
+    "texte": "Apple TV:ssä Ulti toistaa IPTV-tilauksesi kaukosäätimellä: vaihda kanavalta toiselle kuin ennen vanhaan, selkeissä valikoissa, jotka erottuvat kaukaakin.",
     "point1": "Kanavanvaihto kaukosäätimellä, ylös ja alas",
     "point2": "Kuva kuvassa suorien lähetysten aikana",
     "point3": "Suuret julisteet, sohvalta katsottaviksi"
@@ -352,8 +352,8 @@
     "sommaire": "Tällä sivulla",
     "support": {
       "titre": "Tuki",
-      "metaTitre": "Tuki — Ulti",
-      "description": "Ultin ohjeet: asennus, IPTV-tilauksen lisääminen, Apple TV, profiilit, Ulti Premium, ostot ja toisto.",
+      "metaTitre": "Ultin tuki — IPTV-tilauksen lisääminen iPhoneen ja Apple TV:hen",
+      "description": "Lisää IPTV-tilauksesi liittämällä palveluntarjoajasi viesti, lähetä se Apple TV:hen QR-koodilla ja löydä kaikki vastaukset Ulti Premiumista.",
       "chapeau": "Kaikki, mitä tarvitset Ultin käytön aloittamiseen, ja vastaukset yleisimpiin kysymyksiin."
     },
     "privacy": {
