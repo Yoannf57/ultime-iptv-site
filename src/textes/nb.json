@@ -251,7 +251,7 @@
     "q4": "Hvilke abonnementer fungerer?",
     "r4": "Abonnementer som leveres som en M3U-lenke eller som Xtream Codes-påloggingsinformasjon, altså de aller fleste. Enklest: lim inn meldingen fra leverandøren din, Ulti gjenkjenner formatet selv.",
     "q5": "Kan jeg prøve før jeg betaler?",
-    "r5": "Ja. Direkte-TV og TV‑guiden er gratis, og det er også sidene for filmer og serier på iPhone, iPad og Mac; på Apple TV blir de det med neste oppdatering. Avspilling av filmer og serier er en del av Premium, som du kan prøve gratis i 7 dager med måneds- og årsabonnementene, Solo eller Familie.",
+    "r5": "Ja. Direkte-TV og TV‑guiden er gratis, og det er også sidene for filmer og serier. Avspilling av filmer og serier er en del av Premium, som du kan prøve gratis i 7 dager med måneds- og årsabonnementene, Solo eller Familie.",
     "r2SansGooglePlay": "iPhone, iPad, Mac (med Apple-brikke) og Apple TV. Ulti Premium gjelder på alle enhetene dine med samme Apple-konto; med Familie-alternativet kan opptil 6 personer bruke det takket være Familiedeling. En Android-versjon (telefoner, nettbrett og TV-er) er under arbeid.",
     "r2SansAppleTvSansGooglePlay": "iPhone, iPad og Mac (med Apple-brikke) allerede nå; Apple TV-versjonen kommer i løpet av de nærmeste dagene. Ulti Premium gjelder på alle enhetene dine med samme Apple-konto; med Familie-alternativet kan opptil 6 personer bruke det takket være Familiedeling. En Android-versjon (telefoner, nettbrett og TV-er) er under arbeid."
   },
@@ -452,7 +452,7 @@
       },
       "gratuit": {
         "q": "Hva er med i gratisversjonen?",
-        "r": "Direkte-TV, TV‑guiden og påminnelser, Mitt innhold, sammenslåing av dupliserte kanaler, innliming av meldingen fra leverandøren, bilde-i-bilde, overføring til Apple TV med QR-kode, en barneprofil med foreldrekode og temaet Svart.\n\nSidene for filmer og serier (plakater, sammendrag, rollebesetning) er også gratis på iPhone, iPad og Mac; på Apple TV blir de det med neste oppdatering. Avspilling av filmer og serier er en del av Ulti Premium."
+        "r": "Direkte-TV, TV‑guiden og påminnelser, Mitt innhold, sammenslåing av dupliserte kanaler, innliming av meldingen fra leverandøren, bilde-i-bilde, overføring til Apple TV med QR-kode, en barneprofil med foreldrekode og temaet Svart.\n\nSidene for filmer og serier (plakater, sammendrag, rollebesetning) er også gratis. Avspilling av filmer og serier er en del av Ulti Premium."
       },
       "inclus": {
         "q": "Hva er med i Ulti Premium?",

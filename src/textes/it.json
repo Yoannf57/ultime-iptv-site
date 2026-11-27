@@ -251,7 +251,7 @@
     "q4": "Quali abbonamenti sono compatibili?",
     "r4": "Gli abbonamenti forniti come link M3U o come credenziali Xtream Codes, cioè la grande maggioranza. La cosa più semplice: incolla il messaggio del tuo fornitore, Ulti riconosce il formato da solo.",
     "q5": "Posso provare prima di pagare?",
-    "r5": "Sì. La diretta e la guida TV sono gratuite, così come le schede di film e serie su iPhone, iPad e Mac; su Apple TV lo diventano con il prossimo aggiornamento. La riproduzione di film e serie fa parte di Premium, che si prova gratis per 7 giorni con gli abbonamenti mensili e annuali, Solo o Famiglia.",
+    "r5": "Sì. La diretta e la guida TV sono gratuite, così come le schede di film e serie. La riproduzione di film e serie fa parte di Premium, che si prova gratis per 7 giorni con gli abbonamenti mensili e annuali, Solo o Famiglia.",
     "r2SansGooglePlay": "iPhone, iPad, Mac (con chip Apple) e Apple TV. Ulti Premium vale su tutti i tuoi dispositivi con lo stesso Account Apple; con l’offerta Famiglia, fino a 6 persone ne approfittano grazie a In famiglia. È in preparazione una versione Android (smartphone, tablet e TV).",
     "r2SansAppleTvSansGooglePlay": "iPhone, iPad e Mac (con chip Apple) da subito; la versione per Apple TV arriverà nei prossimi giorni. Ulti Premium vale su tutti i tuoi dispositivi con lo stesso Account Apple; con l’offerta Famiglia, fino a 6 persone ne approfittano grazie a In famiglia. È in preparazione una versione Android (smartphone, tablet e TV)."
   },
@@ -452,7 +452,7 @@
       },
       "gratuit": {
         "q": "Cosa include la versione gratuita?",
-        "r": "La diretta, la guida TV e i promemoria, I miei contenuti, il raggruppamento dei canali doppi, l’incolla del messaggio del fornitore, il Picture in Picture, l’invio ad Apple TV con codice QR, un profilo Bambini con codice parentale e il tema Nero.\n\nLe schede di film e serie (locandine, trame, cast) sono gratuite anche su iPhone, iPad e Mac; su Apple TV lo diventano con il prossimo aggiornamento. La riproduzione di film e serie fa parte di Ulti Premium."
+        "r": "La diretta, la guida TV e i promemoria, I miei contenuti, il raggruppamento dei canali doppi, l’incolla del messaggio del fornitore, il Picture in Picture, l’invio ad Apple TV con codice QR, un profilo Bambini con codice parentale e il tema Nero.\n\nLe schede di film e serie (locandine, trame, cast) sono anch’esse gratuite. La riproduzione di film e serie fa parte di Ulti Premium."
       },
       "inclus": {
         "q": "Cosa include Ulti Premium?",

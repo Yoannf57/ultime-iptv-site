@@ -251,7 +251,7 @@
     "q4": "Which subscriptions are compatible?",
     "r4": "Subscriptions provided as an M3U link or Xtream Codes login details, which covers the vast majority. The easiest way: paste your provider’s message, and Ulti recognises the format on its own.",
     "q5": "Can I try before I pay?",
-    "r5": "Yes. Live TV and the TV guide are free, and so are movie and series details on iPhone, iPad and Mac; on Apple TV, they become free with the next update. Playing movies and series is part of Premium, which you can try free for 7 days with the monthly and yearly subscriptions, Solo or Family.",
+    "r5": "Yes. Live TV and the TV guide are free, and so are movie and series details. Playing movies and series is part of Premium, which you can try free for 7 days with the monthly and yearly subscriptions, Solo or Family.",
     "r2SansGooglePlay": "iPhone, iPad, Mac (with Apple silicon) and Apple TV. Ulti Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing. An Android version (phones, tablets and TVs) is in the works.",
     "r2SansAppleTvSansGooglePlay": "iPhone, iPad and Mac (with Apple silicon) now; the Apple TV version is coming in the next few days. Ulti Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing. An Android version (phones, tablets and TVs) is in the works."
   },
@@ -452,7 +452,7 @@
       },
       "gratuit": {
         "q": "What does the free version include?",
-        "r": "Live TV, the TV guide and reminders, My Content, grouping of duplicate channels, pasting your provider’s message, Picture in Picture, sending to Apple TV by QR code, a Kids profile with parental code, and the Black theme.\n\nMovie and series details (posters, summaries, cast) are free too on iPhone, iPad and Mac; on Apple TV, they become free with the next update. Playing movies and series is part of Ulti Premium."
+        "r": "Live TV, the TV guide and reminders, My Content, grouping of duplicate channels, pasting your provider’s message, Picture in Picture, sending to Apple TV by QR code, a Kids profile with parental code, and the Black theme.\n\nMovie and series details (posters, summaries, cast) are free too. Playing movies and series is part of Ulti Premium."
       },
       "inclus": {
         "q": "What does Ulti Premium include?",

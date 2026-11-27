@@ -341,10 +341,8 @@ une langue.
 écrite sur le site le 24/11/2026) : direct, guide TV et rappels, **fiches des films et séries (affiches, résumés,
 distribution)**, Mes contenus (catégories de chaînes), regroupement des doublons de chaînes, coller le message du
 fournisseur, image dans l'image, appairage Apple TV par QR code, un profil Enfant avec code parental, thème Noir.
-**Apple TV** : les fiches gratuites n'arrivent qu'avec la 1.1 pour Apple TV (pas encore publiée le 24/11/2026 ; App
-Store : 1.1 sur iPhone et iPad, 1.0 sur Apple TV). Ne jamais écrire « sur tous les appareils » pour ce point ; la FAQ
-(`faq.r5`) et le Support (`support.q.gratuit.r`) disent « sur Apple TV, avec la prochaine mise à jour » : **réserve à
-retirer quand la 1.1 Apple TV est publiée**.
+**Apple TV** : la 1.1.1 Apple TV est publiée (confirmé par Yoann le 27/11/2026) ; la réserve « sur Apple TV, avec la
+prochaine mise à jour » est retirée de `faq.r5` et `support.q.gratuit.r` (12 langues).
 
 **Premium** : **lecture des films et séries** (reprises, toutes les versions d'un film ; les fiches sont gratuites,
 voir ci-dessus), replay, pause du direct, multi-écran (dans la V1, décidé par Yoann le 03/11/2026 : jusqu'à 4 directs à la fois sur Apple TV, iPad et Mac,
@@ -482,7 +480,7 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
   `Notes/comptes-rendus/2026-11-24-black-friday.md`. Reste : `actif: false` début décembre ; traductions de l'offre à
   faire relire.
 - [x] **Étape 2 (24/11/2026)** : phrase du grand visuel, dernière section, N33, pied de page du sélecteur de pays —
-  même compte rendu. Reste : retirer la réserve Apple TV quand la 1.1 Apple TV sort ; nouvelles traductions à faire
+  même compte rendu. Réserve Apple TV retirée le 27/11/2026 (1.1.1 publiée) ; nouvelles traductions à faire
   relire ; décider d'une seule apostrophe par fichier de textes (les nouveaux textes ont « ’ », les anciens « ' »).
 
 - [x] **Android et Google Play (27/11/2026)** : badge, textes, prix Solo identiques, Black Friday Solo aussi sur Google
