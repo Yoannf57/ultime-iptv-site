@@ -7,6 +7,7 @@ import { t, tHtml } from "../../lib/textes";
 import { ciblesTextes } from "../../lib/liens";
 import type { Pays } from "../../lib/pays";
 import donnees from "../../donnees/pages.json";
+import { googlePlayAffiche } from "../../lib/googleplay";
 
 interface Props { p: Pays }
 const { p } = Astro.props;
@@ -15,11 +16,15 @@ const cibles = ciblesTextes(p.code, config.contact);
 // Tant que l'app n'est pas publiée, « Comment installer ? » dit « bientôt ». Publiée sans la version Apple TV :
 // « Comment installer ? » et « Sur quels appareils ? » disent que l'Apple TV arrive dans les jours qui viennent.
 const sansAppleTv = config.disponible && !config.appleTvDisponible;
+// Sans Google Play (googlePlayAffiche false) : anciennes réponses (« …SansGooglePlay ») et pas de question « android ».
 const reponse = (id: string) => {
   if (id === "installer" && !config.disponible) return "support.q.installer.rBientot";
-  if ((id === "installer" || id === "appareils") && sansAppleTv) return `support.q.${id}.rSansAppleTv`;
+  const suffixe = googlePlayAffiche ? "" : "SansGooglePlay";
+  if ((id === "installer" || id === "appareils") && sansAppleTv) return `support.q.${id}.rSansAppleTv${suffixe}`;
+  if (id === "installer" || id === "appareils") return `support.q.${id}.r${suffixe}`;
   return `support.q.${id}.r`;
 };
+const visible = (id: string) => id !== "android" || googlePlayAffiche;
 const sommaire = [
   ...donnees.support.map((g) => ({ ancre: g.groupe, titre: t(l, `support.groupes.${g.groupe}`) })),
   { ancre: "contact", titre: t(l, "support.contact.titre") },
@@ -34,7 +39,7 @@ const sommaire = [
   {donnees.support.map((g) => (
     <section aria-labelledby={g.groupe}>
       <h2 id={g.groupe}>{t(l, `support.groupes.${g.groupe}`)}</h2>
-      {g.questions.map((id) => (
+      {g.questions.filter(visible).map((id) => (
         <details id={`q-${id}`}>
           <summary>{t(l, `support.q.${id}.q`)}<span class="plus" aria-hidden="true">+</span></summary>
           <div class="reponse"><Paragraphes html={tHtml(l, reponse(id), cibles)} /></div>

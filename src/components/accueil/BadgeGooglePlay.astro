@@ -1,0 +1,55 @@
+---
+// Badge officiel « Disponible sur Google Play », juste après le badge App Store, quand googlePlay.disponible vaut true
+// (site.config.mjs).
+//
+// Règles de Google (Google Play badge guidelines) et d'Apple, à respecter à chaque modification :
+// - le badge n'est JAMAIS modifié : ni couleur, ni texte, ni proportions (fichier de Google servi tel quel, copié octet
+//   pour octet par « npm run importer-badges ») ; badge dans la langue de la page ;
+// - il mène uniquement à la fiche Google Play d'Ulti ;
+// - à côté du badge App Store : App Store en premier, les deux à la même hauteur visible (Apple demande que son badge
+//   ne soit pas plus petit que les autres) ; espace libre d'au moins un quart de la hauteur tout autour ;
+// - la phrase « Google Play et le logo Google Play sont des marques de Google LLC. » est dans le pied de page.
+//
+// Les PNG de Google ont une marge transparente, différente selon la langue : mesures.json (écrit par l'import) donne
+// cette marge, et des marges négatives la « rentrent » pour que la partie visible fasse exactement 3 rem (2,75 rem sur
+// téléphone), comme le badge App Store. L'image elle-même n'est pas touchée.
+import { t } from "../../lib/textes";
+import { lienGooglePlay } from "../../lib/googleplay";
+import mesures from "../../assets/badges/google-play/mesures.json";
+import type { Pays } from "../../lib/pays";
+
+interface Props { langue: string; p: Pays }
+const { langue: l, p } = Astro.props;
+
+const urls = import.meta.glob<string>("../../assets/badges/google-play/*.png", { eager: true, query: "?url", import: "default" });
+const badges = Object.fromEntries(Object.entries(urls).map(([c, url]) => [c.split("/").pop()!.replace(".png", ""), url]));
+const m = mesures as Record<string, { largeur: number; hauteur: number; haut: number; bas: number; gauche: number; droite: number }>;
+// es-mx prend le badge d'Amérique latine ; une langue sans badge prend l'anglais.
+const choix = [p.code, l, "en"].find((c) => badges[c] && m[c]);
+if (!choix) console.warn("(badge Google Play : aucun badge dans src/assets/badges/google-play/, lancer npm run importer-badges)");
+const b = choix ? m[choix] : null;
+// Tout est exprimé en fractions de la hauteur visible (variable CSS --h).
+const visible = b ? b.hauteur - b.haut - b.bas : 1;
+const style = b ? [
+  `--echelle:${(b.hauteur / visible).toFixed(4)}`,
+  `--haut:${(b.haut / visible).toFixed(4)}`, `--bas:${(b.bas / visible).toFixed(4)}`,
+  `--gauche:${(b.gauche / visible).toFixed(4)}`, `--droite:${(b.droite / visible).toFixed(4)}`,
+].join(";") : "";
+---
+{b
+  ? <a class="badge-gp" href={lienGooglePlay(p)} aria-label={t(l, "heros.badgeGooglePlay")} style={style}>
+      <img src={badges[choix!]} alt="" width={Math.round((b.largeur / visible) * 48)} height={Math.round((b.hauteur / visible) * 48)} decoding="async" />
+    </a>
+  : <a class="bouton-secours" href={lienGooglePlay(p)}>{t(l, "heros.badgeGooglePlay")}</a>}
+
+<style>
+  .badge-gp { --h: 3rem; display: inline-block; margin: 0.75rem; line-height: 0; border-radius: 0.5rem; }
+  .badge-gp img {
+    display: block; width: auto; height: calc(var(--h) * var(--echelle));
+    margin: calc(var(--h) * var(--haut) * -1) calc(var(--h) * var(--droite) * -1) calc(var(--h) * var(--bas) * -1) calc(var(--h) * var(--gauche) * -1);
+  }
+  .bouton-secours { display: inline-flex; align-items: center; height: 3rem; padding: 0 1.75rem; border-radius: 999px; background: #f5f5f7; color: #000; font-size: 1.0625rem; font-weight: 600; text-decoration: none; }
+  @media (max-width: 45rem) {
+    .badge-gp { --h: 2.75rem; margin: 0.6875rem; }
+  }
+</style>
