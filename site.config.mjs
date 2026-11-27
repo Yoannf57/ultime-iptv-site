@@ -46,9 +46,9 @@ export default {
   // Passer à true avec le branchement d'ultitv.com (ou le jour de la publication si le domaine n'est pas branché).
   indexable: true,
 
-  // Domaine définitif. Inactif tant que les DNS ne sont pas prêts (étape « Branchement de ultitv.com »).
-  // Quand actif : le site est servi à la racine de ultitv.com (base « / ») et il faut créer public/CNAME.
-  domaine: { actif: false, url: "https://ultitv.com" },
+  // Domaine définitif, actif depuis le 27/11/2026 (DNS Cloudflare posés, domaine vérifié chez GitHub) : le site est
+  // servi à la racine de ultitv.com (base « / »), avec public/CNAME. À false : retour à l'adresse github.io.
+  domaine: { actif: true, url: "https://ultitv.com" },
 
   // Adresse actuelle sur GitHub Pages.
   github: { site: "https://yoannf57.github.io", base: "/ultime-iptv-site/" },

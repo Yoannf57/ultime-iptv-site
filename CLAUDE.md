@@ -368,10 +368,10 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
   `https://yoannf57.github.io/ultime-iptv-site/` pour l'instant. Dépôt **public** (GitHub Pages gratuit ; le dépôt ne
   contient que le site, aucun secret).
 - **Domaine : ultitv.com** (acheté le 03/11/2026 chez Cloudflare ; ultitv.app, ultiptv.app et ulti-iptv.com seront
-  redirigés vers lui). La valeur est prête dans `site.config` mais **inactive** : pas de fichier `CNAME`, adresse de
-  base inchangée, tant que Yoann n'a pas dit que les DNS sont prêts (étape séparée).
-  **Vérifié le 25/11/2026** : aucun des quatre domaines ne répond (aucun enregistrement DNS), aucun domaine déclaré
-  dans les réglages Pages de GitHub ; la seule adresse publique est `https://yoannf57.github.io/ultime-iptv-site/`.
+  redirigés vers lui). **Branché le 27/11/2026** : domaine vérifié chez GitHub (TXT
+  `_github-pages-challenge-Yoannf57`), DNS chez Cloudflare en « DNS only » (4 A et 4 AAAA de GitHub Pages, `CNAME www`
+  → `yoannf57.github.io`), `domaine.actif: true` et `public/CNAME`. Les enregistrements iCloud (MX, SPF, DKIM), la
+  vérification Google et `api.ultitv.com` (Worker du relais) ne se touchent pas.
   Au branchement : les adresses perdent `/ultime-iptv-site/` (vérifier celles déclarées dans App Store Connect :
   conditions d'utilisation, confidentialité) et prévoir Google Search Console.
 - **Page stable sur téléphone** (08/11/2026, demande de Yoann) : rien ne doit dépasser la largeur de l'écran, sinon la
