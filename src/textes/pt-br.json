@@ -21,7 +21,7 @@
     "telecharger": "Baixar"
   },
   "heros": {
-    "surtitre": "Para iPhone, iPad, Mac, Apple TV e Android",
+    "surtitre": "Player IPTV para iPhone, iPad, Mac, Apple TV e Android",
     "accroche": "A experiência\nIPTV definitiva.",
     "phrase": "Você já paga pela sua assinatura IPTV. Assista enfim em um app à altura dela: TV ao vivo, guia de TV, filmes e séries. É só abrir e assistir.",
     "bientot": "Em breve na App Store",
@@ -102,7 +102,7 @@
   },
   "fonctions": {
     "titre": "Sua assinatura, enfim bem apresentada.",
-    "phrase": "O Ulti organiza os milhares de canais e filmes da sua assinatura em telas claras, como um app de TV que você sempre teve.",
+    "phrase": "O Ulti organiza os milhares de canais e filmes da sua assinatura IPTV em telas claras, como um app de TV que você sempre teve.",
     "directTitre": "A TV ao vivo, num piscar de olhos",
     "directTexte": "Um anel em volta de cada canal mostra em que ponto está o programa. Filtre por tema e mude de um canal para o outro.",
     "guideTitre": "Um guia de TV de verdade",
@@ -150,7 +150,7 @@
   "appletv": {
     "surtitre": "Apple TV",
     "titre": "É só zapear.",
-    "texte": "Na Apple TV, tudo se faz pelo controle: passe de um canal para outro como na TV de sempre, com menus claros que dá para ler de longe.",
+    "texte": "Na Apple TV, o Ulti reproduz sua assinatura IPTV pelo controle: passe de um canal para outro como na TV de sempre, com menus claros que dá para ler de longe.",
     "point1": "Troque de canal com o controle, para cima e para baixo",
     "point2": "Picture in Picture durante a TV ao vivo",
     "point3": "Pôsteres grandes, pensados para o sofá"
@@ -352,8 +352,8 @@
     "sommaire": "Nesta página",
     "support": {
       "titre": "Suporte",
-      "metaTitre": "Suporte — Ulti",
-      "description": "Ajuda do Ulti: instalação, como adicionar uma assinatura IPTV, Apple TV, perfis, Ulti Premium, compras e reprodução.",
+      "metaTitre": "Suporte do Ulti — Adicionar uma assinatura IPTV no iPhone e na Apple TV",
+      "description": "Adicione sua assinatura IPTV colando a mensagem do seu provedor, envie-a para a Apple TV com um código QR e encontre todas as respostas sobre o Ulti Premium.",
       "chapeau": "Tudo para começar bem com o Ulti, e respostas às perguntas mais frequentes."
     },
     "privacy": {

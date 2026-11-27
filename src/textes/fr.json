@@ -21,7 +21,7 @@
     "telecharger": "Télécharger"
   },
   "heros": {
-    "surtitre": "Pour iPhone, iPad, Mac, Apple TV et Android",
+    "surtitre": "Lecteur IPTV pour iPhone, iPad, Mac, Apple TV et Android",
     "accroche": "L’expérience\nIPTV ultime.",
     "phrase": "Vous payez déjà votre abonnement IPTV. Regardez‑le enfin dans une app à sa hauteur : direct, guide TV, films et séries. Vous l’ouvrez, vous regardez.",
     "bientot": "Bientôt sur l’App Store",
@@ -102,7 +102,7 @@
   },
   "fonctions": {
     "titre": "Votre abonnement, enfin bien présenté.",
-    "phrase": "Ulti range les milliers de chaînes et de films de votre abonnement en écrans clairs, comme une app de télé que vous auriez toujours eue.",
+    "phrase": "Ulti range les milliers de chaînes et de films de votre abonnement IPTV en écrans clairs, comme une app de télé que vous auriez toujours eue.",
     "directTitre": "Le direct, d’un coup d’œil",
     "directTexte": "Un anneau autour de chaque chaîne montre où en est le programme. Filtrez par thème et zappez d’une chaîne à l’autre.",
     "guideTitre": "Un vrai guide TV",
@@ -150,7 +150,7 @@
   "appletv": {
     "surtitre": "Apple TV",
     "titre": "Zappez, tout simplement.",
-    "texte": "Sur l’Apple TV, tout se fait à la télécommande : passez d’une chaîne à l’autre comme sur la télé d’avant, dans des menus clairs, lisibles de loin.",
+    "texte": "Sur l’Apple TV, Ulti lit votre abonnement IPTV à la télécommande : passez d’une chaîne à l’autre comme sur la télé d’avant, dans des menus clairs, lisibles de loin.",
     "point1": "Zapping avec la télécommande, haut et bas",
     "point2": "Image dans l’image pendant le direct",
     "point3": "Grandes affiches, pensées pour le canapé"
@@ -352,8 +352,8 @@
     "sommaire": "Sur cette page",
     "support": {
       "titre": "Support",
-      "metaTitre": "Support — Ulti",
-      "description": "Aide d’Ulti : installation, ajout d’un abonnement IPTV, Apple TV, profils, Ulti Premium, achats et lecture.",
+      "metaTitre": "Support Ulti — Ajouter un abonnement IPTV sur iPhone et Apple TV",
+      "description": "Ajoutez votre abonnement IPTV en collant le message de votre fournisseur, envoyez-le sur l’Apple TV par QR code, et trouvez toutes les réponses sur Ulti Premium.",
       "chapeau": "Tout pour bien démarrer avec Ulti, et des réponses aux questions les plus fréquentes."
     },
     "privacy": {

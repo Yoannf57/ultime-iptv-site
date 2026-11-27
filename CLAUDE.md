@@ -76,7 +76,12 @@ interdit tout. La 404 garde toujours `noindex`. **SEO (27/11/2026)** : `sitemap.
 dans `robots.txt` ; balises Open Graph et X dans `Base.astro` (image = capture de l'accueil Apple TV de la langue,
 JPEG 1200 × 675) ; données structurées JSON-LD sur chaque accueil (`DonneesStructurees.astro` : Organization,
 WebSite, SoftwareApplication, FAQPage ; jamais de note ni d'avis inventés) ; titres « Ulti — Lecteur IPTV pour iPhone,
-Apple TV et Android » (12 langues). Au branchement d'ultitv.com, Google passera des adresses
+Apple TV et Android » (12 langues). Le surtitre « Lecteur IPTV pour iPhone, iPad, Mac, Apple TV et
+Android » est dans le `<h1>` de l'accueil (rendu inchangé) ; Support titré « Support Ulti — Ajouter un abonnement IPTV
+sur iPhone et Apple TV ». **Hors index** (« noindex, follow », hors sitemap, sans hreflang) : conditions, mentions
+légales (`pagesHorsIndex`, `src/lib/liens.ts`) et `/pays/`. La racine `/` porte le titre de l'app et les données
+Organization (logo `public/logo-ulti.png`, icône de l'app) et WebSite (`src/lib/jsonld.ts`). Audit complet d'ulti-seo
+et suites prévues : `Notes/comptes-rendus/2026-11-27-android-et-domaine.md`. Au branchement d'ultitv.com, Google passera des adresses
 github.io aux nouvelles (prévoir Google Search Console à ce moment-là).
 
 ## 3. Pays et langues

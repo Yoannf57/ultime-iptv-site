@@ -24,6 +24,12 @@ export { base };
 // Sous-pages d'un pays (mêmes noms dans toutes les langues, comme apple.com).
 export const sousPages = ["support", "privacy", "terms", "legal"] as const;
 export type SousPage = (typeof sousPages)[number];
+// SEO : conditions et mentions légales restent accessibles (Apple, Google, visiteurs) mais hors de l'index de recherche
+// (« noindex, follow », absentes de sitemap.xml) : 37 copies chacune, sans valeur pour la recherche.
+export const pagesHorsIndex: readonly SousPage[] = ["terms", "legal"];
+export function pageIndexee(page: SousPage): boolean {
+  return !pagesHorsIndex.includes(page);
+}
 export function lienSousPage(code: string, page: SousPage): string {
   return lien(`${code}/${page}/`);
 }

@@ -21,7 +21,7 @@
     "telecharger": "Download"
   },
   "heros": {
-    "surtitre": "For iPhone, iPad, Mac, Apple TV and Android",
+    "surtitre": "IPTV player for iPhone, iPad, Mac, Apple TV and Android",
     "accroche": "The ultimate\nIPTV experience.",
     "phrase": "You already pay for your IPTV subscription. Watch it in an app that does it justice: live TV, guide, movies and series. Open it, and you’re watching.",
     "bientot": "Coming soon to the App Store",
@@ -102,7 +102,7 @@
   },
   "fonctions": {
     "titre": "Your subscription, beautifully presented.",
-    "phrase": "Ulti turns the thousands of channels and movies in your subscription into clear screens, like a TV app you’ve always had.",
+    "phrase": "Ulti turns the thousands of channels and movies in your IPTV subscription into clear screens, like a TV app you’ve always had.",
     "directTitre": "Live TV at a glance",
     "directTexte": "A ring around each channel shows how far the show has got. Filter by theme and flip from one channel to the next.",
     "guideTitre": "A real TV guide",
@@ -150,7 +150,7 @@
   "appletv": {
     "surtitre": "Apple TV",
     "titre": "Just flip through.",
-    "texte": "On Apple TV, everything is done with the remote: go from one channel to the next like on the TV you grew up with, in clear menus you can read from across the room.",
+    "texte": "On Apple TV, Ulti plays your IPTV subscription with just the remote: go from one channel to the next like on the TV you grew up with, in clear menus you can read from across the room.",
     "point1": "Flip channels with the remote, up and down",
     "point2": "Picture in Picture during live TV",
     "point3": "Big posters, designed for the couch"
@@ -352,8 +352,8 @@
     "sommaire": "On this page",
     "support": {
       "titre": "Support",
-      "metaTitre": "Support — Ulti",
-      "description": "Ulti help: installing, adding an IPTV subscription, Apple TV, profiles, Ulti Premium, purchases and playback.",
+      "metaTitre": "Ulti Support — Add your IPTV subscription on iPhone and Apple TV",
+      "description": "Add your IPTV subscription by pasting your provider’s message, send it to Apple TV with a QR code, and find every answer about Ulti Premium.",
       "chapeau": "Everything you need to get started with Ulti, and answers to the most common questions."
     },
     "privacy": {

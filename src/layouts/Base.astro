@@ -18,8 +18,9 @@ interface Props {
   alternatives?: boolean | string;  // balises hreflang vers les autres pays (texte = sous-page, ex. « privacy/ »)
   languesPied?: string[];  // pages bilingues : langues du pied de page
   erreur?: boolean;        // page 404 : jamais indexée, pas d'adresse canonique
+  indexer?: boolean;       // false : « noindex, follow » (pages sans valeur de recherche : choix du pays, conditions, mentions)
 }
-const { langue, lang = langue, titre, description, chemin, codePays, alternatives = false, languesPied, erreur = false } = Astro.props;
+const { langue, lang = langue, titre, description, chemin, codePays, alternatives = false, languesPied, erreur = false, indexer = true } = Astro.props;
 const direction = t(langue, "meta.direction");
 const canonique = lienAbsolu(chemin, Astro.site);
 const sousChemin = typeof alternatives === "string" ? alternatives : "";
@@ -38,11 +39,12 @@ const localeOg = lang.includes("-") ? lang.replace("-", "_") : ({ en: "en_US", f
     <title>{titre}</title>
     <meta name="description" content={description} />
     {(!config.indexable || erreur) && <meta name="robots" content="noindex" />}
+    {config.indexable && !erreur && !indexer && <meta name="robots" content="noindex, follow" />}
     {!erreur && <link rel="canonical" href={canonique} />}
-    {alternatives && pays.map((p) => (
+    {alternatives && indexer && pays.map((p) => (
       <link rel="alternate" hreflang={hreflang(p)} href={lienAbsolu(`${p.code}/${sousChemin}`, Astro.site)} />
     ))}
-    {alternatives && <link rel="alternate" hreflang="x-default" href={lienAbsolu(`en/${sousChemin}`, Astro.site)} />}
+    {alternatives && indexer && <link rel="alternate" hreflang="x-default" href={lienAbsolu(`en/${sousChemin}`, Astro.site)} />}
     {/* Smart App Banner : Safari (iPhone, iPad) affiche lui-même le bandeau « Ouvrir dans l'App Store ». Seulement une
         fois l'app publiée, et seulement sur les pages d'un pays ou d'une langue (jamais page de choix ni 404). */}
     {config.disponible && codePays && !erreur && <meta name="apple-itunes-app" content={`app-id=${config.appStore.id}`} />}
@@ -62,6 +64,7 @@ const localeOg = lang.includes("-") ? lang.replace("-", "_") : ({ en: "en_US", f
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#000000" />
     <link rel="icon" href={lien("favicon.svg")} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={lien("logo-ulti.png")} />
     <slot name="tete" />
   </head>
   <body>

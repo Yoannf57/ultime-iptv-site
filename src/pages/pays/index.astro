@@ -4,6 +4,6 @@ import Base from "../../layouts/Base.astro";
 import ChoixPays from "../../components/ChoixPays.astro";
 import { t } from "../../lib/textes";
 ---
-<Base langue="en" titre={`${t("fr", "choix.titre")} · ${t("en", "choix.titre")}`} description={t("en", "meta.description")} chemin="pays/" languesPied={["fr", "en"]}>
+<Base langue="en" titre={`${t("fr", "choix.titre")} · ${t("en", "choix.titre")}`} description={t("en", "meta.description")} chemin="pays/" languesPied={["fr", "en"]} indexer={false}>
   <ChoixPays />
 </Base>
