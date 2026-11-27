@@ -153,7 +153,8 @@
     "texte": "Op de Apple TV speelt Ulti je IPTV-abonnement af met de afstandsbediening: zap van de ene zender naar de andere zoals op de tv van vroeger, in duidelijke menu’s die je van ver kunt lezen.",
     "point1": "Zappen met de afstandsbediening, omhoog en omlaag",
     "point2": "Beeld-in-beeld tijdens live tv",
-    "point3": "Grote posters, gemaakt voor de bank"
+    "point3": "Grote posters, gemaakt voor de bank",
+    "lien": "Alles over Ulti op Apple TV"
   },
   "famille": {
     "titre": "Het hele gezin, ieder zijn eigen plek.",
@@ -273,7 +274,8 @@
       "support": "Support",
       "privacy": "Privacy",
       "legal": "Juridische informatie",
-      "terms": "Gebruiksvoorwaarden"
+      "terms": "Gebruiksvoorwaarden",
+      "apple-tv": "Apple TV"
     },
     "marquesGoogle": "Google Play en het Google Play-logo zijn handelsmerken van Google LLC."
   },
@@ -373,6 +375,36 @@
       "metaTitre": "Gebruiksvoorwaarden — Ulti",
       "description": "Gebruiksvoorwaarden van Ulti: de licentieovereenkomst voor eindgebruikers van de app.",
       "chapeau": "De licentieovereenkomst die geldt wanneer je Ulti gebruikt, naast de voorwaarden van de App Store of Google Play."
+    },
+    "apple-tv": {
+      "titre": "Je IPTV-abonnement op de Apple TV.",
+      "metaTitre": "IPTV-speler voor Apple TV — Ulti",
+      "description": "Bekijk je IPTV-abonnement op de Apple TV met Ulti: toevoegen met een QR-code vanaf je iPhone, zappen met de afstandsbediening, tv‑gids en beeld-in-beeld.",
+      "chapeau": "Ulti is een IPTV-speler voor op de bank: installeer hem, scan een QR-code met je iPhone en zap met de afstandsbediening.",
+      "etapesTitre": "Je IPTV-abonnement toevoegen op de Apple TV",
+      "etape1": "Installeer Ulti op je Apple TV en je iPhone via de App Store.",
+      "etape2": "Voeg op je iPhone je abonnement toe: plak het bericht van je aanbieder en Ulti vult alles in.",
+      "etape3": "Open Ulti op de Apple TV, scan de QR-code met de camera van je iPhone en tik op de Ulti-link: je abonnement komt over met je categorieën en favorieten.",
+      "etapesNote": "Je iPhone en Apple TV moeten op hetzelfde wifinetwerk zitten. De overdracht is versleuteld en gaat rechtstreeks via je lokale netwerk. Geen iPhone bij de hand? Voer het abonnement in met de afstandsbediening.",
+      "zapTitre": "Zappen zoals op tv",
+      "zapTexte": "Omhoog en omlaag op de afstandsbediening om van zender te wisselen, de resterende tijd van elk programma in één oogopslag, en beeld-in-beeld om live tv aan te houden terwijl je verder kijkt.",
+      "guideTitre": "De tv‑gids op het grote scherm",
+      "guideTexte": "Wat er nu, vanavond en de komende dagen op is: het programma van je abonnement, van ver leesbaar.",
+      "filmsTitre": "Films en series, met grote posters",
+      "filmsTexte": "Posters, samenvattingen en cast: de pagina’s van films en series zijn gratis. Afspelen, met hervatten, hoort bij Premium.",
+      "multiTitre": "Tot 4 livezenders tegelijk",
+      "multiTexte": "Met Premium toont multiscreen tot 4 livezenders op de Apple TV, binnen het aantal verbindingen van je IPTV-abonnement.",
+      "profilsTitre": "Een profiel voor iedereen",
+      "profilsTexte": "Het Kinderprofiel, gratis inbegrepen, ziet geen content voor volwassenen en kan alleen met de ouderlijke code worden verlaten. Extra profielen voor volwassenen horen bij Premium.",
+      "questionsTitre": "Vragen over de Apple TV",
+      "q1": "Welke Apple TV heb ik nodig?",
+      "r1": "Een Apple TV met tvOS 17 of nieuwer.",
+      "q2": "Welke IPTV-abonnementen werken?",
+      "r2": "De ondersteunde abonnementsformaten staan in [Support](support).",
+      "q3": "Werkt de QR-code niet?",
+      "r3": "Controleer of je iPhone en Apple TV op hetzelfde wifinetwerk zitten en of het abonnement al op je iPhone is toegevoegd. Meer oplossingen vind je in [Support](support).",
+      "q4": "Is Ulti gratis op de Apple TV?",
+      "r4": "Live tv, de tv‑gids en de pagina’s van films en series zijn gratis. Films en series afspelen, multiscreen, terugkijken en live tv pauzeren horen bij Premium, dat je 7 dagen probeert met de maand- en jaarabonnementen."
     }
   },
   "faqPlus": "Alle vragen op de supportpagina",

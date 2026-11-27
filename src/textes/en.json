@@ -153,7 +153,8 @@
     "texte": "On Apple TV, Ulti plays your IPTV subscription with just the remote: go from one channel to the next like on the TV you grew up with, in clear menus you can read from across the room.",
     "point1": "Flip channels with the remote, up and down",
     "point2": "Picture in Picture during live TV",
-    "point3": "Big posters, designed for the couch"
+    "point3": "Big posters, designed for the couch",
+    "lien": "More about Ulti on Apple TV"
   },
   "famille": {
     "titre": "The whole family, each in their own space.",
@@ -273,7 +274,8 @@
       "support": "Support",
       "privacy": "Privacy",
       "legal": "Legal notice",
-      "terms": "Terms of Use"
+      "terms": "Terms of Use",
+      "apple-tv": "Apple TV"
     },
     "marquesGoogle": "Google Play and the Google Play logo are trademarks of Google LLC."
   },
@@ -373,6 +375,36 @@
       "metaTitre": "Terms of Use — Ulti",
       "description": "Ulti’s Terms of Use: the end user license agreement for the app.",
       "chapeau": "The license agreement that applies when you use Ulti, in addition to the App Store or Google Play terms."
+    },
+    "apple-tv": {
+      "titre": "Your IPTV subscription on Apple TV.",
+      "metaTitre": "IPTV player for Apple TV — Ulti",
+      "description": "Watch your IPTV subscription on Apple TV with Ulti: add it with a QR code from your iPhone, flip channels with the remote, TV guide and Picture in Picture.",
+      "chapeau": "Ulti is an IPTV player made for the couch: install it, scan a QR code with your iPhone, and flip channels with the remote.",
+      "etapesTitre": "Add your IPTV subscription to Apple TV",
+      "etape1": "Install Ulti on your Apple TV and your iPhone from the App Store.",
+      "etape2": "On your iPhone, add your subscription: paste your provider’s message and Ulti fills everything in.",
+      "etape3": "Open Ulti on Apple TV, scan the QR code with your iPhone camera and tap the Ulti link: your subscription arrives with your categories and favourites.",
+      "etapesNote": "Your iPhone and Apple TV need to be on the same Wi-Fi network. The transfer is encrypted and goes straight over your local network. No iPhone at hand? Enter the subscription with the remote.",
+      "zapTitre": "Flip channels like on TV",
+      "zapTexte": "Up and down on the remote to change channels, the time left on every show at a glance, and Picture in Picture to keep live TV on while you browse.",
+      "guideTitre": "The TV guide on the big screen",
+      "guideTexte": "What’s on now, tonight and in the days ahead: your subscription’s schedule, readable from across the room.",
+      "filmsTitre": "Movies and series, with big posters",
+      "filmsTexte": "Posters, summaries and cast: movie and series details are free. Playback, with resume, is part of Premium.",
+      "multiTitre": "Up to 4 live channels at once",
+      "multiTexte": "With Premium, multi-screen shows up to 4 live channels on Apple TV, within the number of connections your IPTV subscription allows.",
+      "profilsTitre": "A profile for everyone",
+      "profilsTexte": "The Kids profile, included for free, sees no adult content and can only be left with the parental code. Extra adult profiles are part of Premium.",
+      "questionsTitre": "Apple TV questions",
+      "q1": "Which Apple TV do I need?",
+      "r1": "An Apple TV with tvOS 17 or later.",
+      "q2": "Which IPTV subscriptions work?",
+      "r2": "The supported subscription formats are listed in [Support](support).",
+      "q3": "The QR code doesn’t work?",
+      "r3": "Check that your iPhone and Apple TV are on the same Wi-Fi network, and that the subscription is already added on your iPhone. More solutions are in [Support](support).",
+      "q4": "Is Ulti free on Apple TV?",
+      "r4": "Live TV, the TV guide and movie and series details are free. Playing movies and series, multi-screen, replay and live pause are part of Premium, which you can try for 7 days with the monthly and yearly subscriptions."
     }
   },
   "faqPlus": "All questions on the Support page",

@@ -153,7 +153,8 @@
     "texte": "Su Apple TV, Ulti riproduce il tuo abbonamento IPTV con il telecomando: passa da un canale all’altro come sulla TV di una volta, con menu chiari e leggibili anche da lontano.",
     "point1": "Zapping con il telecomando, su e giù",
     "point2": "Picture in Picture durante la diretta",
-    "point3": "Grandi locandine, pensate per il divano"
+    "point3": "Grandi locandine, pensate per il divano",
+    "lien": "Tutto su Ulti per Apple TV"
   },
   "famille": {
     "titre": "Tutta la famiglia, ognuno a modo suo.",
@@ -273,7 +274,8 @@
       "support": "Supporto",
       "privacy": "Privacy",
       "legal": "Note legali",
-      "terms": "Condizioni d’uso"
+      "terms": "Condizioni d’uso",
+      "apple-tv": "Apple TV"
     },
     "marquesGoogle": "Google Play e il logo Google Play sono marchi di Google LLC."
   },
@@ -373,6 +375,36 @@
       "metaTitre": "Condizioni d’uso — Ulti",
       "description": "Condizioni d’uso di Ulti: il contratto di licenza con l’utente finale dell’app.",
       "chapeau": "Il contratto di licenza che si applica quando usi Ulti, oltre alle condizioni dell’App Store o di Google Play."
+    },
+    "apple-tv": {
+      "titre": "Il tuo abbonamento IPTV su Apple TV.",
+      "metaTitre": "Player IPTV per Apple TV — Ulti",
+      "description": "Guarda il tuo abbonamento IPTV su Apple TV con Ulti: aggiungilo con un codice QR dall’iPhone, cambia canale con il telecomando, guida TV e Picture in Picture.",
+      "chapeau": "Ulti è un player IPTV pensato per il divano: lo installi, scansioni un codice QR con l’iPhone e cambi canale con il telecomando.",
+      "etapesTitre": "Aggiungere il tuo abbonamento IPTV su Apple TV",
+      "etape1": "Installa Ulti su Apple TV e sul tuo iPhone da App Store.",
+      "etape2": "Sull’iPhone, aggiungi il tuo abbonamento: incolla il messaggio del tuo fornitore e Ulti compila tutto.",
+      "etape3": "Apri Ulti su Apple TV, scansiona il codice QR con la fotocamera dell’iPhone e tocca il link di Ulti: l’abbonamento arriva con le tue categorie e i tuoi preferiti.",
+      "etapesNote": "iPhone e Apple TV devono essere sulla stessa rete Wi-Fi. L’invio è cifrato e passa direttamente dalla tua rete locale. Non hai l’iPhone a portata di mano? Inserisci l’abbonamento con il telecomando.",
+      "zapTitre": "Cambiare canale come in TV",
+      "zapTexte": "Su e giù sul telecomando per passare da un canale all’altro, il tempo rimanente di ogni programma a colpo d’occhio, e il Picture in Picture per tenere la diretta mentre esplori il resto.",
+      "guideTitre": "La guida TV sul grande schermo",
+      "guideTexte": "Cosa c’è ora, stasera e nei prossimi giorni: il palinsesto del tuo abbonamento, leggibile da lontano.",
+      "filmsTitre": "Film e serie, con grandi locandine",
+      "filmsTexte": "Locandine, trame e cast: le schede di film e serie sono gratuite. La riproduzione, con la ripresa, fa parte di Premium.",
+      "multiTitre": "Fino a 4 dirette alla volta",
+      "multiTexte": "Con Premium, il multischermo mostra fino a 4 dirette su Apple TV, nel limite delle connessioni del tuo abbonamento IPTV.",
+      "profilsTitre": "Un profilo per ognuno",
+      "profilsTexte": "Il profilo Bambini, incluso gratis, non vede alcun contenuto per adulti e si può lasciare solo con il codice parentale. I profili adulti aggiuntivi fanno parte di Premium.",
+      "questionsTitre": "Domande su Apple TV",
+      "q1": "Quale Apple TV serve?",
+      "r1": "Una Apple TV con tvOS 17 o successivo.",
+      "q2": "Quali abbonamenti IPTV funzionano?",
+      "r2": "I formati di abbonamento supportati sono indicati nel [Supporto](support).",
+      "q3": "Il codice QR non funziona?",
+      "r3": "Verifica che iPhone e Apple TV siano sulla stessa rete Wi-Fi e che l’abbonamento sia già stato aggiunto sull’iPhone. Altre soluzioni sono nel [Supporto](support).",
+      "q4": "Ulti è gratuito su Apple TV?",
+      "r4": "La diretta, la guida TV e le schede di film e serie sono gratuite. La riproduzione di film e serie, il multischermo, il replay e la pausa della diretta fanno parte di Premium, che si prova per 7 giorni con gli abbonamenti mensili e annuali."
     }
   },
   "faqPlus": "Tutte le domande nella pagina Supporto",

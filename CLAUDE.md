@@ -224,6 +224,11 @@ une langue.
       est gratuit pour le direct et le guide TV, sans publicité et sans compte à créer. Installez-le, collez le message
       de votre fournisseur, regardez. » / bouton texte « Télécharger Ulti » vers l'App Store du pays (pas de second
       badge). « Sans publicité » vérifié dans le code de l'app le 24/11/2026 : à retirer si l'app en reçoit un jour.
+1 ter. **Lecteur IPTV pour Apple TV** (`/<pays>/apple-tv/`, 27/11/2026, référencement) : `AppleTv.astro`, textes
+   `pages.apple-tv.*` (12 langues) ; ajout par QR code en 3 étapes, zapping, guide TV, fiches, multi-écran, profils,
+   4 questions, badge App Store. Seulement des fonctions confirmées par la FAQ et le Support, ni « M3U » ni « Xtream ».
+   Liens : section Apple TV de l'accueil (`appletv.lien`) et pied de page. Prochaines pages possibles (audit ulti-seo) :
+   « … pour iPhone, iPad et Mac », puis « … pour Android et Android TV » (fonctions Android à confirmer d'abord).
 2. **Support** : FAQ complète + adresse e-mail de contact : contact@ultitv.com.
 3. **Confidentialité** : reprendre le texte du dépôt de démonstration et de `Notes/confidentialite-app-store.md` (lecture
    seule), dans chaque langue.

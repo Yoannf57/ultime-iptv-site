@@ -153,7 +153,8 @@
     "texte": "Auf dem Apple TV spielt Ulti dein IPTV-Abonnement mit der Fernbedienung ab: Zappe von Sender zu Sender wie beim Fernsehen von früher, in klaren Menüs, die du auch aus der Ferne gut lesen kannst.",
     "point1": "Zappen mit der Fernbedienung, hoch und runter",
     "point2": "Bild-in-Bild beim Live-TV",
-    "point3": "Große Poster, gemacht fürs Sofa"
+    "point3": "Große Poster, gemacht fürs Sofa",
+    "lien": "Alles über Ulti auf dem Apple TV"
   },
   "famille": {
     "titre": "Die ganze Familie, jeder für sich.",
@@ -273,7 +274,8 @@
       "support": "Support",
       "privacy": "Datenschutz",
       "legal": "Impressum",
-      "terms": "Nutzungsbedingungen"
+      "terms": "Nutzungsbedingungen",
+      "apple-tv": "Apple TV"
     },
     "marquesGoogle": "Google Play und das Google Play-Logo sind Marken von Google LLC."
   },
@@ -373,6 +375,36 @@
       "metaTitre": "Nutzungsbedingungen — Ulti",
       "description": "Nutzungsbedingungen von Ulti: der Endbenutzer-Lizenzvertrag der App.",
       "chapeau": "Der Lizenzvertrag, der gilt, wenn du Ulti nutzt, zusätzlich zu den Bedingungen des App Store oder von Google Play."
+    },
+    "apple-tv": {
+      "titre": "Dein IPTV-Abo auf dem Apple TV.",
+      "metaTitre": "IPTV-Player für Apple TV — Ulti",
+      "description": "Schau dein IPTV-Abo auf dem Apple TV mit Ulti: per QR-Code vom iPhone hinzufügen, mit der Fernbedienung zappen, TV‑Guide und Bild-in-Bild.",
+      "chapeau": "Ulti ist ein IPTV-Player fürs Sofa: installieren, einen QR-Code mit dem iPhone scannen und mit der Fernbedienung zappen.",
+      "etapesTitre": "Dein IPTV-Abo zum Apple TV hinzufügen",
+      "etape1": "Installiere Ulti auf deinem Apple TV und deinem iPhone aus dem App Store.",
+      "etape2": "Füge auf dem iPhone dein Abonnement hinzu: Füge die Nachricht deines Anbieters ein, Ulti füllt alles aus.",
+      "etape3": "Öffne Ulti auf dem Apple TV, scanne den QR-Code mit der Kamera deines iPhone und tippe auf den Ulti-Link: Dein Abonnement kommt mit deinen Kategorien und Favoriten an.",
+      "etapesNote": "iPhone und Apple TV müssen im selben WLAN sein. Die Übertragung ist verschlüsselt und läuft direkt über dein lokales Netzwerk. Kein iPhone zur Hand? Gib das Abonnement mit der Fernbedienung ein.",
+      "zapTitre": "Zappen wie beim Fernsehen",
+      "zapTexte": "Hoch und runter auf der Fernbedienung, um den Sender zu wechseln, die Restzeit jeder Sendung auf einen Blick, und Bild-in-Bild, damit Live-TV weiterläuft, während du stöberst.",
+      "guideTitre": "Der TV‑Guide auf dem großen Bildschirm",
+      "guideTexte": "Was jetzt, heute Abend und in den nächsten Tagen läuft: das Programm deines Abonnements, auch aus der Ferne gut lesbar.",
+      "filmsTitre": "Filme und Serien, mit großen Postern",
+      "filmsTexte": "Poster, Inhaltsangaben und Besetzung: Die Seiten zu Filmen und Serien sind gratis. Das Abspielen, mit Weiterschauen, gehört zu Premium.",
+      "multiTitre": "Bis zu 4 Live-Sender gleichzeitig",
+      "multiTexte": "Mit Premium zeigt Multiscreen bis zu 4 Live-Sender auf dem Apple TV, im Rahmen der Verbindungen deines IPTV-Abonnements.",
+      "profilsTitre": "Ein Profil für jeden",
+      "profilsTexte": "Das Kinderprofil, gratis enthalten, sieht keine Inhalte für Erwachsene und lässt sich nur mit dem Elterncode verlassen. Weitere Erwachsenenprofile gehören zu Premium.",
+      "questionsTitre": "Fragen zum Apple TV",
+      "q1": "Welches Apple TV brauche ich?",
+      "r1": "Ein Apple TV mit tvOS 17 oder neuer.",
+      "q2": "Welche IPTV-Abos funktionieren?",
+      "r2": "Die unterstützten Abo-Formate findest du im [Support](support).",
+      "q3": "Der QR-Code funktioniert nicht?",
+      "r3": "Prüfe, ob iPhone und Apple TV im selben WLAN sind und ob das Abonnement schon auf dem iPhone hinzugefügt ist. Weitere Lösungen findest du im [Support](support).",
+      "q4": "Ist Ulti auf dem Apple TV gratis?",
+      "r4": "Live-TV, der TV‑Guide und die Seiten zu Filmen und Serien sind gratis. Das Abspielen von Filmen und Serien, Multiscreen, Replay und Live-TV pausieren gehören zu Premium, das du mit den Monats- und Jahresabos 7 Tage testen kannst."
     }
   },
   "faqPlus": "Alle Fragen auf der Support-Seite",

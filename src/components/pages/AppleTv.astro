@@ -1,0 +1,76 @@
+---
+// Page « Lecteur IPTV pour Apple TV » (/<pays>/apple-tv/), ajoutée le 27/11/2026 pour le référencement (audit
+// ulti-seo) : elle vise « IPTV Apple TV », « lecteur IPTV Apple TV », « mettre son abonnement IPTV sur l'Apple TV ».
+// Uniquement des fonctions confirmées par la FAQ et le Support (QR code, télécommande, guide TV, image dans l'image,
+// fiches gratuites, multi-écran, profil Enfant). Ni « M3U » ni « Xtream » ici : les formats sont dans le Support.
+// Un seul badge, celui de l'App Store (c'est une page Apple TV), en bas de page.
+import config from "../../../site.config.mjs";
+import Article from "./Article.astro";
+import Paragraphes from "./Paragraphes.astro";
+import Capture from "../accueil/Capture.astro";
+import BadgeAppStore from "../accueil/BadgeAppStore.astro";
+import { t, tHtml } from "../../lib/textes";
+import { ciblesTextes } from "../../lib/liens";
+import { captures } from "../../lib/captures";
+import type { Pays } from "../../lib/pays";
+
+interface Props { p: Pays }
+const { p } = Astro.props;
+const l = p.langue;
+const cibles = ciblesTextes(p.code, config.contact);
+const k = (cle: string) => `pages.apple-tv.${cle}`;
+const sections = ["zap", "guide", "films", "multi", "profils"];
+const questions = [1, 2, 3, 4];
+---
+<Article p={p} page="apple-tv">
+  <p class="neutralite">{t(l, "neutralite")}</p>
+  <figure class="ecran">
+    <Capture langue={l} appareil="appletv" capture={captures.apercu.ecrans.appletv.accueil} sizes="(max-width: 47rem) 92vw, 44rem" prioritaire />
+  </figure>
+
+  <section aria-labelledby="ajouter">
+    <h2 id="ajouter">{t(l, k("etapesTitre"))}</h2>
+    <ol class="etapes">
+      {[1, 2, 3].map((n) => <li>{t(l, k(`etape${n}`))}</li>)}
+    </ol>
+    <p class="note">{t(l, k("etapesNote"))}</p>
+  </section>
+
+  {sections.map((s) => (
+    <section aria-labelledby={s}>
+      <h2 id={s}>{t(l, k(`${s}Titre`))}</h2>
+      <p>{t(l, k(`${s}Texte`))}</p>
+    </section>
+  ))}
+
+  <section aria-labelledby="questions">
+    <h2 id="questions">{t(l, k("questionsTitre"))}</h2>
+    {questions.map((n) => (
+      <details>
+        <summary>{t(l, k(`q${n}`))}<span class="plus" aria-hidden="true">+</span></summary>
+        <div class="reponse"><Paragraphes html={tHtml(l, k(`r${n}`), cibles)} /></div>
+      </details>
+    ))}
+  </section>
+
+  {config.disponible && <p class="action"><BadgeAppStore langue={l} p={p} /></p>}
+</Article>
+
+<style>
+  .neutralite { margin: 0 0 2.5rem; font-size: 1.0625rem; font-weight: 600; color: #f5f5f7; }
+  /* Écran flottant : coins arrondis, liseré blanc très fin, rien de dessiné autour (CLAUDE.md, section 5). */
+  .ecran { margin: 0 0 1rem; }
+  .ecran :global(img) { display: block; width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 0 0 1px rgba(255,255,255,0.14); }
+  .etapes { margin: 0 0 1rem; padding-left: 1.5rem; font-size: 1.0625rem; line-height: 1.6; color: #c7c7cc; }
+  .etapes li { margin-bottom: 0.75rem; padding-left: 0.25rem; }
+  .note { font-size: 0.9375rem !important; color: #a1a1a6 !important; }
+  details { border-top: 1px solid #242428; padding: 1.25rem 0; }
+  details:last-of-type { border-bottom: 1px solid #242428; }
+  summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 1.5rem; font-size: 1.1875rem; font-weight: 600; line-height: 1.35; }
+  summary::-webkit-details-marker { display: none; }
+  .plus { color: #8e8e93; font-size: 1.625rem; line-height: 1; transition: transform 0.2s; flex: none; }
+  details[open] .plus { transform: rotate(45deg); }
+  .reponse { margin-top: 0.875rem; }
+  .reponse :global(p:last-child) { margin-bottom: 0; }
+  .action { margin: 3.5rem 0 0; text-align: center; }
+</style>

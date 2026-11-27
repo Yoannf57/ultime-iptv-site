@@ -22,7 +22,8 @@ export function lienAbsolu(chemin: string, site: URL | undefined): string {
 export { base };
 
 // Sous-pages d'un pays (mêmes noms dans toutes les langues, comme apple.com).
-export const sousPages = ["support", "privacy", "terms", "legal"] as const;
+// « apple-tv » : page « Lecteur IPTV pour Apple TV » (référencement, 27/11/2026).
+export const sousPages = ["apple-tv", "support", "privacy", "terms", "legal"] as const;
 export type SousPage = (typeof sousPages)[number];
 // SEO : conditions et mentions légales restent accessibles (Apple, Google, visiteurs) mais hors de l'index de recherche
 // (« noindex, follow », absentes de sitemap.xml) : 37 copies chacune, sans valeur pour la recherche.
