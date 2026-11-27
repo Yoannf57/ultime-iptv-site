@@ -1,0 +1,71 @@
+---
+// Données structurées (JSON-LD, schema.org) de l'accueil de chaque pays, pour Google et Bing :
+// - l'éditeur (Organization) et le site (WebSite) ;
+// - l'app (SoftwareApplication) : appareils, téléchargement gratuit, liens App Store et Google Play, capture ;
+// - la FAQ de l'accueil (FAQPage), mêmes questions et réponses que la page.
+// Règles : rien d'inventé. Aucune note ni avis (pas de « aggregateRating ») tant que le site n'en affiche pas ; le prix
+// annoncé est celui du téléchargement (gratuit), Premium reste décrit sur la page.
+import config from "../../../site.config.mjs";
+import { t } from "../../lib/textes";
+import { lienAppStore } from "../../lib/appstore";
+import { lienGooglePlay, googlePlayAffiche } from "../../lib/googleplay";
+import { lienAbsolu } from "../../lib/liens";
+import { estInternational, type Pays } from "../../lib/pays";
+
+interface Props { p: Pays; image?: string | null }
+const { p, image = null } = Astro.props;
+const l = p.langue;
+const site = Astro.site!;
+const racine = lienAbsolu("", site);
+const accueil = lienAbsolu(`${p.code}/`, site);
+const magasins = [config.disponible && lienAppStore(p), googlePlayAffiche && lienGooglePlay(p)].filter(Boolean) as string[];
+// Même choix de réponse que la FAQ affichée (Faq.astro).
+const r2 = `faq.r2${config.disponible && !config.appleTvDisponible ? "SansAppleTv" : ""}${googlePlayAffiche ? "" : "SansGooglePlay"}`;
+const faq = [1, 2, 3, 4, 5].map((n) => ({ q: t(l, `faq.q${n}`), r: t(l, n === 2 ? r2 : `faq.r${n}`) }));
+
+const donnees = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${racine}#editeur`,
+      name: "Ulti",
+      url: racine,
+      email: config.contact,
+      sameAs: magasins,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${racine}#site`,
+      name: "Ulti",
+      url: racine,
+      publisher: { "@id": `${racine}#editeur` },
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": `${accueil}#app`,
+      name: "Ulti",
+      alternateName: "Ulti IPTV",
+      url: accueil,
+      description: t(l, "meta.description"),
+      inLanguage: p.locale,
+      applicationCategory: "MultimediaApplication",
+      applicationSubCategory: "IPTV player",
+      operatingSystem: googlePlayAffiche ? "iOS 17, iPadOS 17, tvOS 17, macOS (Apple silicon), Android 9" : "iOS 17, iPadOS 17, tvOS 17, macOS (Apple silicon)",
+      ...(image ? { screenshot: image, image } : {}),
+      ...(magasins.length ? { downloadUrl: magasins[0], installUrl: magasins[0], sameAs: magasins } : {}),
+      // Téléchargement gratuit ; une page internationale n'a pas de monnaie : on ne met pas de prix.
+      ...(!estInternational(p) && p.devise ? { offers: { "@type": "Offer", price: "0", priceCurrency: p.devise } } : {}),
+      publisher: { "@id": `${racine}#editeur` },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${accueil}#questions`,
+      inLanguage: p.locale,
+      mainEntity: faq.map(({ q, r }) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: r } })),
+    },
+  ],
+};
+const json = JSON.stringify(donnees).replace(/</g, "\\u003c");
+---
+<script type="application/ld+json" set:html={json} />

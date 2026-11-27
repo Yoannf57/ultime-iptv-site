@@ -1,8 +1,8 @@
 {
   "meta": {
     "direction": "ltr",
-    "titre": "Ulti — Täydellinen IPTV-kokemus",
-    "description": "Ulti on IPTV-soitin iPhonelle, iPadille, Macille ja Apple TV:lle: suorat lähetykset, TV‑opas, elokuvat ja sarjat yksinkertaisessa sovelluksessa, joka on heti käyttövalmis."
+    "titre": "Ulti — IPTV-soitin iPhonelle, Apple TV:lle ja Androidille",
+    "description": "Ulti on IPTV-soitin iPhonelle, iPadille, Macille, Apple TV:lle ja Androidille: suorat lähetykset, TV‑opas, elokuvat ja sarjat yksinkertaisessa sovelluksessa, joka on heti käyttövalmis."
   },
   "marque": {
     "nom": "Ulti",
@@ -21,7 +21,7 @@
     "telecharger": "Lataa"
   },
   "heros": {
-    "surtitre": "iPhonelle, iPadille, Macille ja Apple TV:lle",
+    "surtitre": "iPhonelle, iPadille, Macille, Apple TV:lle ja Androidille",
     "accroche": "Täydellinen\nIPTV-kokemus.",
     "phrase": "Maksat jo IPTV-tilauksestasi. Katso sitä vihdoin sovelluksessa, joka on sen arvoinen: suorat lähetykset, TV‑opas, elokuvat ja sarjat. Avaa ja katso.",
     "bientot": "Tulossa pian App Storeen",
@@ -643,5 +643,8 @@
   },
   "conditions": {
     "enAnglais": "Tämä sopimus on saatavilla englanniksi."
+  },
+  "partage": {
+    "imageAlt": "Ultin aloitusnäkymä Apple TV:ssä esittelyelokuvineen ja -kanavineen"
   }
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
     "direction": "ltr",
-    "titre": "Ulti — La experiencia IPTV definitiva",
-    "description": "Ulti, el reproductor IPTV para iPhone, iPad, Mac y Apple TV: TV en directo, guía de TV, películas y series en una app sencilla y lista para usar."
+    "titre": "Ulti — Reproductor IPTV para iPhone, Apple TV y Android",
+    "description": "Ulti, el reproductor IPTV para iPhone, iPad, Mac, Apple TV y Android: TV en directo, guía de TV, películas y series en una app sencilla y lista para usar."
   },
   "marque": {
     "nom": "Ulti",
@@ -21,7 +21,7 @@
     "telecharger": "Descargar"
   },
   "heros": {
-    "surtitre": "Para iPhone, iPad, Mac y Apple TV",
+    "surtitre": "Para iPhone, iPad, Mac, Apple TV y Android",
     "accroche": "La experiencia\nIPTV definitiva.",
     "phrase": "Ya pagas tu suscripción IPTV. Mírala por fin en una app a su altura: TV en directo, guía de TV, películas y series. La abres y ya estás viendo.",
     "bientot": "Muy pronto en el App Store",
@@ -643,5 +643,8 @@
   },
   "conditions": {
     "enAnglais": "Este contrato está disponible en inglés."
+  },
+  "partage": {
+    "imageAlt": "Pantalla de inicio de Ulti en el Apple TV, con películas y canales de demostración"
   }
 }
