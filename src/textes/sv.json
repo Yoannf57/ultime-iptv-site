@@ -1,8 +1,8 @@
 {
   "meta": {
     "direction": "ltr",
-    "titre": "Ulti — Den ultimata IPTV-upplevelsen",
-    "description": "Ulti, IPTV-spelaren för iPhone, iPad, Mac och Apple TV: live-tv, tv‑guide, filmer och serier i en enkel app som är klar att använda direkt."
+    "titre": "Ulti — IPTV-spelare för iPhone, Apple TV och Android",
+    "description": "Ulti, IPTV-spelaren för iPhone, iPad, Mac, Apple TV och Android: live-tv, tv‑guide, filmer och serier i en enkel app som är klar att använda direkt."
   },
   "marque": {
     "nom": "Ulti",
@@ -21,7 +21,7 @@
     "telecharger": "Hämta"
   },
   "heros": {
-    "surtitre": "För iPhone, iPad, Mac och Apple TV",
+    "surtitre": "För iPhone, iPad, Mac, Apple TV och Android",
     "accroche": "Den ultimata\nIPTV-upplevelsen.",
     "phrase": "Du betalar redan för ditt IPTV-abonnemang. Se det äntligen i en app som gör det rättvisa: live-tv, tv‑guide, filmer och serier. Öppna och titta.",
     "bientot": "Kommer snart till App Store",
@@ -643,5 +643,8 @@
   },
   "conditions": {
     "enAnglais": "Det här avtalet finns på engelska."
+  },
+  "partage": {
+    "imageAlt": "Ultis hemskärm på Apple TV, med demofilmer och -kanaler"
   }
 }

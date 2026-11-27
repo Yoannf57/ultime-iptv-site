@@ -72,8 +72,11 @@ nom }` de `site.config.mjs`).
 
 **Visible par Google depuis le 11/11/2026** (`indexable: true`, jour de la publication, ultitv.com pas encore
 branché). À `false`, balise `<meta name="robots" content="noindex">` sur toutes les pages et `robots.txt` qui
-interdit tout. La 404 garde toujours `noindex`. `robots.txt` n'annonce pas de plan du site (aucun n'est généré) ;
-un plan du site éventuel est à faire avec ultitv.com. Au branchement d'ultitv.com, Google passera des adresses
+interdit tout. La 404 garde toujours `noindex`. **SEO (27/11/2026)** : `sitemap.xml` (`src/pages/sitemap.xml.ts`, toutes les pages avec hreflang) annoncé
+dans `robots.txt` ; balises Open Graph et X dans `Base.astro` (image = capture de l'accueil Apple TV de la langue,
+JPEG 1200 × 675) ; données structurées JSON-LD sur chaque accueil (`DonneesStructurees.astro` : Organization,
+WebSite, SoftwareApplication, FAQPage ; jamais de note ni d'avis inventés) ; titres « Ulti — Lecteur IPTV pour iPhone,
+Apple TV et Android » (12 langues). Au branchement d'ultitv.com, Google passera des adresses
 github.io aux nouvelles (prévoir Google Search Console à ce moment-là).
 
 ## 3. Pays et langues
@@ -352,8 +355,10 @@ iCloud, profils adultes supplémentaires, plusieurs abonnements, téléchargemen
 séries mais la lecture demande Premium : sur le site, la mention est « Lecture avec Premium » (carte Films et séries, écran Films de la visite),
 sans jamais laisser croire que les films sont gratuits.
 
-**Appareils** (décidé par Yoann le 03/11/2026) : iPhone, iPad, Mac et Apple TV dès la V1. Écrire « iPhone, iPad, Mac
-et Apple TV » partout où on liste les appareils. Mac = Mac avec puce Apple, qui utilise l'app iPad. Vision Pro : pas
+**Appareils** (décidé par Yoann le 03/11/2026) : iPhone, iPad, Mac et Apple TV dès la V1 ; **Android** (téléphones,
+tablettes, Android TV) depuis le 27/11/2026. Écrire « iPhone, iPad, Mac, Apple TV et Android » là où on liste les
+appareils en général (surtitre du grand visuel, titre et description des pages) ; « iPhone, iPad, Mac et Apple TV »
+reste juste là où il ne s'agit que des appareils Apple (Partage familial, formule Famille). Mac = Mac avec puce Apple, qui utilise l'app iPad. Vision Pro : pas
 avant que Yoann le dise.
 
 **Mention TMDB obligatoire** dans le pied de page : « Ce produit utilise l'API TMDB mais n'est ni approuvé ni certifié

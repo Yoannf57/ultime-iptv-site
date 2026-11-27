@@ -1,8 +1,8 @@
 {
   "meta": {
     "direction": "ltr",
-    "titre": "Ulti — Den ultimative IPTV-oplevelse",
-    "description": "Ulti, IPTV-afspilleren til iPhone, iPad, Mac og Apple TV: live-tv, tv‑guide, film og serier i en enkel app, der er klar til brug med det samme."
+    "titre": "Ulti — IPTV-afspiller til iPhone, Apple TV og Android",
+    "description": "Ulti, IPTV-afspilleren til iPhone, iPad, Mac, Apple TV og Android: live-tv, tv‑guide, film og serier i en enkel app, der er klar til brug med det samme."
   },
   "marque": {
     "nom": "Ulti",
@@ -21,7 +21,7 @@
     "telecharger": "Hent"
   },
   "heros": {
-    "surtitre": "Til iPhone, iPad, Mac og Apple TV",
+    "surtitre": "Til iPhone, iPad, Mac, Apple TV og Android",
     "accroche": "Den ultimative\nIPTV-oplevelse.",
     "phrase": "Du betaler allerede for dit IPTV-abonnement. Se det endelig i en app, der yder det retfærdighed: live-tv, tv‑guide, film og serier. Åbn den, og se.",
     "bientot": "Kommer snart i App Store",
@@ -643,5 +643,8 @@
   },
   "conditions": {
     "enAnglais": "Denne aftale findes på engelsk."
+  },
+  "partage": {
+    "imageAlt": "Ultis startskærm på Apple TV med demofilm og -kanaler"
   }
 }
