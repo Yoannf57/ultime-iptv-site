@@ -1,9 +1,10 @@
 ---
-// Page « Lecteur IPTV pour Apple TV » (/<pays>/apple-tv/), ajoutée le 27/11/2026 pour le référencement (audit
-// ulti-seo) : elle vise « IPTV Apple TV », « lecteur IPTV Apple TV », « mettre son abonnement IPTV sur l'Apple TV ».
-// Uniquement des fonctions confirmées par la FAQ et le Support (QR code, télécommande, guide TV, image dans l'image,
-// fiches gratuites, multi-écran, profil Enfant). Ni « M3U » ni « Xtream » ici : les formats sont dans le Support.
-// Un seul badge, celui de l'App Store (c'est une page Apple TV), en bas de page.
+// Pages « Lecteur IPTV pour … » par appareil, ajoutées le 27/11/2026 pour le référencement (audit ulti-seo) :
+// - /<pays>/apple-tv/ : « IPTV Apple TV », « mettre son abonnement IPTV sur l'Apple TV » ;
+// - /<pays>/iphone-ipad/ : « lecteur IPTV iPhone », « appli IPTV iPad ».
+// Textes dans pages.<page>.* (12 langues) : titre, chapeau, 3 étapes et une note, des sections (<nom>Titre et
+// <nom>Texte), 4 questions. Uniquement des fonctions confirmées par la FAQ et le Support ; ni « M3U » ni « Xtream » ici
+// (les formats sont dans le Support). Un seul badge, celui de l'App Store (pages d'appareils Apple), en bas de page.
 import config from "../../../site.config.mjs";
 import Article from "./Article.astro";
 import Paragraphes from "./Paragraphes.astro";
@@ -14,18 +15,22 @@ import { ciblesTextes } from "../../lib/liens";
 import { captures } from "../../lib/captures";
 import type { Pays } from "../../lib/pays";
 
-interface Props { p: Pays }
-const { p } = Astro.props;
+const pages = {
+  "apple-tv": { appareil: "appletv", capture: captures.apercu.ecrans.appletv.accueil, sections: ["zap", "guide", "films", "multi", "profils"] },
+  "iphone-ipad": { appareil: "ipad", capture: "accueil", sections: ["direct", "guide", "films", "horsLigne", "multi", "mac", "icloud"] },
+} as const;
+interface Props { p: Pays; page: keyof typeof pages }
+const { p, page } = Astro.props;
+const { appareil, capture, sections } = pages[page];
 const l = p.langue;
 const cibles = ciblesTextes(p.code, config.contact);
-const k = (cle: string) => `pages.apple-tv.${cle}`;
-const sections = ["zap", "guide", "films", "multi", "profils"];
+const k = (cle: string) => `pages.${page}.${cle}`;
 const questions = [1, 2, 3, 4];
 ---
-<Article p={p} page="apple-tv">
+<Article p={p} page={page}>
   <p class="neutralite">{t(l, "neutralite")}</p>
   <figure class="ecran">
-    <Capture langue={l} appareil="appletv" capture={captures.apercu.ecrans.appletv.accueil} sizes="(max-width: 47rem) 92vw, 44rem" prioritaire />
+    <Capture langue={l} appareil={appareil} capture={capture} sizes="(max-width: 47rem) 92vw, 44rem" prioritaire />
   </figure>
 
   <section aria-labelledby="ajouter">

@@ -110,7 +110,8 @@
     "filmsTitre": "Film e serie, senza doppioni",
     "filmsTexte": "Locandine e trame, tutte le versioni di un film riunite in un’unica scheda, e riprendi da dove avevi interrotto.",
     "premium": "Con Premium",
-    "premiumLecture": "Riproduzione con Premium"
+    "premiumLecture": "Riproduzione con Premium",
+    "lien": "Tutto su Ulti per iPhone, iPad e Mac"
   },
   "visite": {
     "titre": "Fai un giro.",
@@ -275,7 +276,8 @@
       "privacy": "Privacy",
       "legal": "Note legali",
       "terms": "Condizioni d’uso",
-      "apple-tv": "Apple TV"
+      "apple-tv": "Apple TV",
+      "iphone-ipad": "iPhone, iPad, Mac"
     },
     "marquesGoogle": "Google Play e il logo Google Play sono marchi di Google LLC."
   },
@@ -405,6 +407,40 @@
       "r3": "Verifica che iPhone e Apple TV siano sulla stessa rete Wi-Fi e che l’abbonamento sia già stato aggiunto sull’iPhone. Altre soluzioni sono nel [Supporto](support).",
       "q4": "Ulti è gratuito su Apple TV?",
       "r4": "La diretta, la guida TV e le schede di film e serie sono gratuite. La riproduzione di film e serie, il multischermo, il replay e la pausa della diretta fanno parte di Premium, che si prova per 7 giorni con gli abbonamenti mensili e annuali."
+    },
+    "iphone-ipad": {
+      "titre": "Il tuo abbonamento IPTV su iPhone, iPad e Mac.",
+      "metaTitre": "Player IPTV per iPhone, iPad e Mac — Ulti",
+      "description": "Incolla il messaggio del tuo fornitore IPTV e Ulti compila tutto. Diretta, guida TV, film e serie su iPhone, iPad e Mac, con Picture in Picture.",
+      "chapeau": "Ulti è un player IPTV che si configura con un solo incolla: copia il messaggio del tuo fornitore e Ulti trova da solo le tue credenziali.",
+      "etapesTitre": "Aggiungere il tuo abbonamento IPTV con un solo incolla",
+      "etape1": "Installa Ulti da App Store sul tuo iPhone, iPad o Mac.",
+      "etape2": "Su iPhone, copia il messaggio del tuo fornitore (SMS, WhatsApp o e-mail), poi in Account › Abbonamenti › Aggiungi un abbonamento tocca «Incolla il messaggio ricevuto».",
+      "etape3": "Ulti compila i campi da solo. Controlla e tocca «Continua»: la diretta, la guida TV, i film e le serie del tuo abbonamento sono pronti.",
+      "etapesNote": "Il messaggio viene letto sull’iPhone, mai inviato né salvato. Puoi anche inserire server, nome utente e password, o incollare un link di playlist.",
+      "directTitre": "La diretta, a colpo d’occhio",
+      "directTexte": "Un anello intorno a ogni canale mostra a che punto è il programma. Filtra per tema, passa da un canale all’altro e tieni la diretta in Picture in Picture mentre fai altro.",
+      "guideTitre": "Una vera guida TV",
+      "guideTexte": "Stasera, domani e nei prossimi giorni. Imposta un promemoria con un gesto o usa la tua guida XMLTV.",
+      "filmsTitre": "Film e serie, senza doppioni",
+      "filmsTexte": "Locandine, trame e cast, con tutte le versioni di un film in un’unica scheda. Le schede sono gratuite; la riproduzione, con la ripresa, fa parte di Premium.",
+      "horsLigneTitre": "Offline, con Premium",
+      "horsLigneTexte": "Scarica film ed episodi su iPhone e iPad per guardarli senza connessione.",
+      "multiTitre": "Più dirette alla volta",
+      "multiTexte": "Con Premium, il multischermo mostra fino a 4 dirette su iPad e Mac, e 2 su iPhone, nel limite delle connessioni del tuo abbonamento IPTV.",
+      "macTitre": "Anche su Mac",
+      "macTexte": "Su un Mac con chip Apple, Ulti si installa da App Store: è l’app per iPad, con le stesse schermate.",
+      "icloudTitre": "I tuoi abbonamenti su tutti i tuoi dispositivi",
+      "icloudTexte": "Con Premium, la sincronizzazione iCloud porta i tuoi abbonamenti sugli altri dispositivi Apple, cifrati end-to-end nel tuo account iCloud.",
+      "questionsTitre": "Domande su iPhone, iPad e Mac",
+      "q1": "Quale versione serve?",
+      "r1": "iOS 17 o iPadOS 17 o successivo; su Mac, un Mac con chip Apple.",
+      "q2": "Quali abbonamenti IPTV funzionano?",
+      "r2": "I formati di abbonamento supportati sono indicati nel [Supporto](support).",
+      "q3": "Le mie credenziali sono al sicuro?",
+      "r3": "Sì. Sono conservate nel portachiavi del tuo dispositivo e non passano mai da un server di Ulti. Tutto è spiegato nella nostra [informativa sulla privacy](privacy).",
+      "q4": "Ulti è gratuito?",
+      "r4": "La diretta, la guida TV e le schede di film e serie sono gratuite. La riproduzione di film e serie, il multischermo, il replay, la pausa della diretta e i download fanno parte di Premium, che si prova per 7 giorni con gli abbonamenti mensili e annuali."
     }
   },
   "faqPlus": "Tutte le domande nella pagina Supporto",

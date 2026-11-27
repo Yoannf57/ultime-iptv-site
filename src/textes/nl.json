@@ -110,7 +110,8 @@
     "filmsTitre": "Films en series, zonder dubbels",
     "filmsTexte": "Posters en samenvattingen, alle versies van een film samen op één pagina, verder kijken waar je was gebleven.",
     "premium": "Met Premium",
-    "premiumLecture": "Afspelen met Premium"
+    "premiumLecture": "Afspelen met Premium",
+    "lien": "Alles over Ulti op iPhone, iPad en Mac"
   },
   "visite": {
     "titre": "Neem een kijkje.",
@@ -275,7 +276,8 @@
       "privacy": "Privacy",
       "legal": "Juridische informatie",
       "terms": "Gebruiksvoorwaarden",
-      "apple-tv": "Apple TV"
+      "apple-tv": "Apple TV",
+      "iphone-ipad": "iPhone, iPad, Mac"
     },
     "marquesGoogle": "Google Play en het Google Play-logo zijn handelsmerken van Google LLC."
   },
@@ -405,6 +407,40 @@
       "r3": "Controleer of je iPhone en Apple TV op hetzelfde wifinetwerk zitten en of het abonnement al op je iPhone is toegevoegd. Meer oplossingen vind je in [Support](support).",
       "q4": "Is Ulti gratis op de Apple TV?",
       "r4": "Live tv, de tv‑gids en de pagina’s van films en series zijn gratis. Films en series afspelen, multiscreen, terugkijken en live tv pauzeren horen bij Premium, dat je 7 dagen probeert met de maand- en jaarabonnementen."
+    },
+    "iphone-ipad": {
+      "titre": "Je IPTV-abonnement op iPhone, iPad en Mac.",
+      "metaTitre": "IPTV-speler voor iPhone, iPad en Mac — Ulti",
+      "description": "Plak het bericht van je IPTV-aanbieder en Ulti vult alles in. Live tv, tv‑gids, films en series op iPhone, iPad en Mac, met beeld-in-beeld.",
+      "chapeau": "Ulti is een IPTV-speler die je instelt met één keer plakken: kopieer het bericht van je aanbieder en Ulti vindt je inloggegevens zelf.",
+      "etapesTitre": "Je IPTV-abonnement toevoegen met één keer plakken",
+      "etape1": "Installeer Ulti via de App Store op je iPhone, iPad of Mac.",
+      "etape2": "Kopieer op iPhone het bericht van je aanbieder (sms, WhatsApp of e-mail) en tik dan in Account › Abonnementen › Abonnement toevoegen op „Ontvangen bericht plakken”.",
+      "etape3": "Ulti vult de velden zelf in. Controleer en tik op „Doorgaan”: live tv, de tv‑gids, films en series van je abonnement staan klaar.",
+      "etapesNote": "Het bericht wordt op de iPhone gelezen, nooit verstuurd of bewaard. Je kunt ook de server, gebruikersnaam en het wachtwoord invoeren, of een playlistlink plakken.",
+      "directTitre": "Live tv in één oogopslag",
+      "directTexte": "Een ring rond elke zender laat zien hoe ver het programma is. Filter op thema, zap van zender naar zender en houd live tv in beeld-in-beeld terwijl je iets anders doet.",
+      "guideTitre": "Een echte tv‑gids",
+      "guideTexte": "Vanavond, morgen en de komende dagen. Stel met één gebaar een herinnering in, of gebruik je eigen XMLTV-gids.",
+      "filmsTitre": "Films en series, zonder dubbels",
+      "filmsTexte": "Posters, samenvattingen en cast, met alle versies van een film op één pagina. De pagina’s zijn gratis; afspelen, met hervatten, hoort bij Premium.",
+      "horsLigneTitre": "Offline, met Premium",
+      "horsLigneTexte": "Download films en afleveringen op je iPhone en iPad om ze zonder verbinding te bekijken.",
+      "multiTitre": "Meerdere livezenders tegelijk",
+      "multiTexte": "Met Premium toont multiscreen tot 4 livezenders op iPad en Mac, en 2 op iPhone, binnen het aantal verbindingen van je IPTV-abonnement.",
+      "macTitre": "Ook op de Mac",
+      "macTexte": "Op een Mac met Apple-chip installeer je Ulti via de App Store: het is de iPad-app, met dezelfde schermen.",
+      "icloudTitre": "Je abonnementen op al je apparaten",
+      "icloudTexte": "Met Premium brengt iCloud-synchronisatie je abonnementen naar je andere Apple-apparaten, end-to-end versleuteld in je eigen iCloud-account.",
+      "questionsTitre": "Vragen over iPhone, iPad en Mac",
+      "q1": "Welke versie heb ik nodig?",
+      "r1": "iOS 17 of iPadOS 17 of nieuwer; op de Mac, een Mac met Apple-chip.",
+      "q2": "Welke IPTV-abonnementen werken?",
+      "r2": "De ondersteunde abonnementsformaten staan in [Support](support).",
+      "q3": "Zijn mijn inloggegevens veilig?",
+      "r3": "Ja. Ze worden bewaard in de sleutelhanger van je apparaat en gaan nooit via een server van Ulti. Alles staat in ons [privacybeleid](privacy).",
+      "q4": "Is Ulti gratis?",
+      "r4": "Live tv, de tv‑gids en de pagina’s van films en series zijn gratis. Films en series afspelen, multiscreen, terugkijken, live tv pauzeren en downloads horen bij Premium, dat je 7 dagen probeert met de maand- en jaarabonnementen."
     }
   },
   "faqPlus": "Alle vragen op de supportpagina",

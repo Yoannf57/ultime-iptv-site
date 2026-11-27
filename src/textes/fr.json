@@ -110,7 +110,8 @@
     "filmsTitre": "Films et séries, sans doublons",
     "filmsTexte": "Affiches et résumés, toutes les versions d’un même film réunies en une seule fiche, reprise là où vous vous êtes arrêté.",
     "premium": "Avec Premium",
-    "premiumLecture": "Lecture avec Premium"
+    "premiumLecture": "Lecture avec Premium",
+    "lien": "Tout sur Ulti pour iPhone, iPad et Mac"
   },
   "visite": {
     "titre": "Faites le tour.",
@@ -275,7 +276,8 @@
       "privacy": "Confidentialité",
       "legal": "Mentions légales",
       "terms": "Conditions d’utilisation",
-      "apple-tv": "Apple TV"
+      "apple-tv": "Apple TV",
+      "iphone-ipad": "iPhone, iPad, Mac"
     },
     "marquesGoogle": "Google Play et le logo Google Play sont des marques de Google LLC."
   },
@@ -405,6 +407,40 @@
       "r3": "Vérifiez que l’iPhone et l’Apple TV sont sur le même réseau Wi-Fi, et que l’abonnement est déjà ajouté sur l’iPhone. Les autres solutions sont dans le [Support](support).",
       "q4": "Ulti est-il gratuit sur l’Apple TV ?",
       "r4": "Le direct, le guide TV et les fiches des films et séries sont gratuits. La lecture des films et séries, le multi-écran, le replay et la pause du direct font partie de Premium, qui s’essaie 7 jours avec les abonnements mensuels et annuels."
+    },
+    "iphone-ipad": {
+      "titre": "Votre abonnement IPTV sur iPhone, iPad et Mac.",
+      "metaTitre": "Lecteur IPTV pour iPhone, iPad et Mac — Ulti",
+      "description": "Collez le message de votre fournisseur IPTV : Ulti remplit tout. Direct, guide TV, films et séries sur iPhone, iPad et Mac, avec image dans l’image.",
+      "chapeau": "Ulti est un lecteur IPTV qui se configure en un collage : copiez le message de votre fournisseur, Ulti trouve vos identifiants tout seul.",
+      "etapesTitre": "Ajouter son abonnement IPTV en un collage",
+      "etape1": "Installez Ulti depuis l’App Store sur votre iPhone, votre iPad ou votre Mac.",
+      "etape2": "Sur l’iPhone, copiez le message de votre fournisseur (SMS, WhatsApp ou e-mail), puis dans Compte › Abonnements › Ajouter un abonnement, touchez « Coller le message reçu ».",
+      "etape3": "Ulti remplit les champs tout seul. Vérifiez, touchez « Continuer » : le direct, le guide TV, les films et les séries de votre abonnement sont prêts.",
+      "etapesNote": "Le message est lu sur l’iPhone, jamais envoyé ni enregistré. Vous pouvez aussi saisir le serveur, le nom d’utilisateur et le mot de passe, ou coller un lien de playlist.",
+      "directTitre": "Le direct, d’un coup d’œil",
+      "directTexte": "Un anneau autour de chaque chaîne montre où en est le programme. Filtrez par thème, zappez d’une chaîne à l’autre, et gardez le direct dans l’image dans l’image pendant que vous faites autre chose.",
+      "guideTitre": "Un vrai guide TV",
+      "guideTexte": "Ce soir, demain et les jours suivants. Posez un rappel en un geste, ou utilisez votre propre guide XMLTV.",
+      "filmsTitre": "Films et séries, sans doublons",
+      "filmsTexte": "Affiches, résumés et distribution, et toutes les versions d’un même film réunies en une seule fiche. Les fiches sont gratuites ; la lecture, avec les reprises, fait partie de Premium.",
+      "horsLigneTitre": "Hors ligne, avec Premium",
+      "horsLigneTexte": "Téléchargez des films et des épisodes sur l’iPhone et l’iPad pour les regarder sans connexion.",
+      "multiTitre": "Plusieurs directs à la fois",
+      "multiTexte": "Avec Premium, le multi-écran affiche jusqu’à 4 directs sur iPad et Mac, et 2 sur iPhone, dans la limite des connexions de votre abonnement IPTV.",
+      "macTitre": "Aussi sur Mac",
+      "macTexte": "Sur un Mac avec puce Apple, Ulti s’installe depuis l’App Store : c’est l’app iPad, avec les mêmes écrans.",
+      "icloudTitre": "Vos abonnements sur tous vos appareils",
+      "icloudTexte": "Avec Premium, la synchronisation iCloud retrouve vos abonnements sur vos autres appareils Apple, chiffrés de bout en bout dans votre propre compte iCloud.",
+      "questionsTitre": "Questions sur iPhone, iPad et Mac",
+      "q1": "Quelle version faut-il ?",
+      "r1": "iOS 17 ou iPadOS 17 ou plus récent ; sur Mac, un Mac avec puce Apple.",
+      "q2": "Quels abonnements IPTV fonctionnent ?",
+      "r2": "Les formats d’abonnement pris en charge sont détaillés dans le [Support](support).",
+      "q3": "Mes identifiants sont-ils en sécurité ?",
+      "r3": "Oui. Ils sont gardés dans le Trousseau de votre appareil et ne passent jamais par un serveur Ulti. Tout est détaillé dans notre [politique de confidentialité](privacy).",
+      "q4": "Ulti est-il gratuit ?",
+      "r4": "Le direct, le guide TV et les fiches des films et séries sont gratuits. La lecture des films et séries, le multi-écran, le replay, la pause du direct et les téléchargements font partie de Premium, qui s’essaie 7 jours avec les abonnements mensuels et annuels."
     }
   },
   "faqPlus": "Toutes les questions sur la page Support",

@@ -225,10 +225,14 @@ une langue.
       de votre fournisseur, regardez. » / bouton texte « Télécharger Ulti » vers l'App Store du pays (pas de second
       badge). « Sans publicité » vérifié dans le code de l'app le 24/11/2026 : à retirer si l'app en reçoit un jour.
 1 ter. **Lecteur IPTV pour Apple TV** (`/<pays>/apple-tv/`, 27/11/2026, référencement) : `AppleTv.astro`, textes
-   `pages.apple-tv.*` (12 langues) ; ajout par QR code en 3 étapes, zapping, guide TV, fiches, multi-écran, profils,
+   `pages.apple-tv.*` (12 langues), composant commun `PageAppareil.astro` ; ajout par QR code en 3 étapes, zapping, guide TV, fiches, multi-écran, profils,
    4 questions, badge App Store. Seulement des fonctions confirmées par la FAQ et le Support, ni « M3U » ni « Xtream ».
-   Liens : section Apple TV de l'accueil (`appletv.lien`) et pied de page. Prochaines pages possibles (audit ulti-seo) :
-   « … pour iPhone, iPad et Mac », puis « … pour Android et Android TV » (fonctions Android à confirmer d'abord).
+   Liens : section Apple TV de l'accueil (`appletv.lien`) et pied de page.
+1 quater. **Lecteur IPTV pour iPhone, iPad et Mac** (`/<pays>/iphone-ipad/`, 27/11/2026) : même composant
+   (`PageAppareil.astro`, textes `pages.iphone-ipad.*`) : collage du message, direct, guide, fiches, hors ligne, multi-écran,
+   Mac, iCloud, 4 questions. Lien sous les fonctions de l'accueil (`fonctions.lien`) et pied de page. Prochaine page
+   possible : « … pour Android et Android TV », une fois les fonctions de l'app Android confirmées et des captures
+   Android faites avec la liste de démonstration.
 2. **Support** : FAQ complète + adresse e-mail de contact : contact@ultitv.com.
 3. **Confidentialité** : reprendre le texte du dépôt de démonstration et de `Notes/confidentialite-app-store.md` (lecture
    seule), dans chaque langue.

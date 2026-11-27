@@ -5,7 +5,7 @@ import Support from "../../components/pages/Support.astro";
 import Confidentialite from "../../components/pages/Confidentialite.astro";
 import Mentions from "../../components/pages/Mentions.astro";
 import Conditions from "../../components/pages/Conditions.astro";
-import AppleTv from "../../components/pages/AppleTv.astro";
+import PageAppareil from "../../components/pages/PageAppareil.astro";
 import { t } from "../../lib/textes";
 import { pays, type Pays } from "../../lib/pays";
 import { sousPages, pageIndexee, type SousPage } from "../../lib/liens";
@@ -15,8 +15,8 @@ export function getStaticPaths() {
 }
 const { p, page } = Astro.props as { p: Pays; page: SousPage };
 const l = p.langue;
-const Contenu = { "apple-tv": AppleTv, support: Support, privacy: Confidentialite, terms: Conditions, legal: Mentions }[page];
+const Contenu = { "apple-tv": PageAppareil, "iphone-ipad": PageAppareil, support: Support, privacy: Confidentialite, terms: Conditions, legal: Mentions }[page];
 ---
 <Base langue={l} lang={p.locale} titre={t(l, `pages.${page}.metaTitre`)} description={t(l, `pages.${page}.description`)} chemin={`${p.code}/${page}/`} codePays={p.code} alternatives={`${page}/`} indexer={pageIndexee(page)}>
-  <Contenu p={p} />
+  <Contenu p={p} page={page} />
 </Base>

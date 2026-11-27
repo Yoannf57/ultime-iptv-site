@@ -1,7 +1,8 @@
 ---
 import { t } from "../../lib/textes";
-interface Props { langue: string }
-const { langue: l } = Astro.props;
+import { lienSousPage } from "../../lib/liens";
+interface Props { langue: string; codePays: string }
+const { langue: l, codePays } = Astro.props;
 // Motifs décoratifs des cartes (pas des écrans de l'app). Anneau rouge seulement pour une chaîne d'info.
 const anneaux = [{ avance: 70, info: false }, { avance: 35, info: true }, { avance: 88, info: false }];
 const anneau = (avance: number, info: boolean) => `conic-gradient(${info ? "#FF3B30" : "#F5F5F7"} 0 ${avance}%, #3A3A3E ${avance}% 100%)`;
@@ -38,9 +39,14 @@ const affiches = [
       <p>{t(l, "fonctions.filmsTexte")}</p>
     </article>
   </div>
+  {/* Lien vers la page « Lecteur IPTV pour iPhone, iPad et Mac » (référencement, 27/11/2026). */}
+  <p class="lien"><a href={lienSousPage(codePays, "iphone-ipad")}>{t(l, "fonctions.lien")} <span aria-hidden="true">›</span></a></p>
 </section>
 
 <style>
+  .lien { margin: 2.5rem 0 0; text-align: center; font-size: 1.0625rem; font-weight: 600; }
+  .lien a { color: #f5f5f7; text-decoration: none; }
+  .lien a:hover { text-decoration: underline; }
   .cartes { margin-top: 3.5rem; display: flex; flex-wrap: wrap; gap: 1.25rem; }
   .carte { flex: 1 1 20rem; min-width: 0; padding: 2.25rem; display: flex; flex-direction: column; gap: 1rem; }
   h3 { margin: 0.5rem 0 0; font-size: 1.625rem; letter-spacing: -0.02em; font-weight: 700; }

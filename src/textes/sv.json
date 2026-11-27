@@ -110,7 +110,8 @@
     "filmsTitre": "Filmer och serier, utan dubbletter",
     "filmsTexte": "Affischer och sammanfattningar, alla versioner av en film på en sida, fortsätt där du slutade.",
     "premium": "Med Premium",
-    "premiumLecture": "Uppspelning med Premium"
+    "premiumLecture": "Uppspelning med Premium",
+    "lien": "Allt om Ulti på iPhone, iPad och Mac"
   },
   "visite": {
     "titre": "Ta en rundtur.",
@@ -275,7 +276,8 @@
       "privacy": "Integritet",
       "legal": "Juridisk information",
       "terms": "Användarvillkor",
-      "apple-tv": "Apple TV"
+      "apple-tv": "Apple TV",
+      "iphone-ipad": "iPhone, iPad, Mac"
     },
     "marquesGoogle": "Google Play och Google Play-logotypen är varumärken som tillhör Google LLC."
   },
@@ -405,6 +407,40 @@
       "r3": "Kontrollera att iPhone och Apple TV är på samma wifi-nätverk och att abonnemanget redan är tillagt på iPhone. Fler lösningar finns i [Support](support).",
       "q4": "Är Ulti gratis på Apple TV?",
       "r4": "Live-tv, tv‑guiden och sidorna för filmer och serier är gratis. Uppspelning av filmer och serier, flerskärm, titta i efterhand och pausa live-tv ingår i Premium, som du kan prova i 7 dagar med månads- och årsabonnemangen."
+    },
+    "iphone-ipad": {
+      "titre": "Ditt IPTV-abonnemang på iPhone, iPad och Mac.",
+      "metaTitre": "IPTV-spelare för iPhone, iPad och Mac — Ulti",
+      "description": "Klistra in meddelandet från din IPTV-leverantör, så fyller Ulti i allt. Live-tv, tv‑guide, filmer och serier på iPhone, iPad och Mac, med bild-i-bild.",
+      "chapeau": "Ulti är en IPTV-spelare som du ställer in med en inklistring: kopiera meddelandet från din leverantör, så hittar Ulti dina inloggningsuppgifter själv.",
+      "etapesTitre": "Lägg till ditt IPTV-abonnemang med en inklistring",
+      "etape1": "Installera Ulti från App Store på din iPhone, iPad eller Mac.",
+      "etape2": "Kopiera meddelandet från din leverantör (sms, WhatsApp eller e-post) på iPhone och tryck sedan på ”Klistra in mottaget meddelande” under Konto › Abonnemang › Lägg till abonnemang.",
+      "etape3": "Ulti fyller i fälten själv. Kontrollera och tryck på ”Fortsätt”: live-tv, tv‑guiden, filmer och serier från ditt abonnemang är klara.",
+      "etapesNote": "Meddelandet läses på iPhonen, skickas eller sparas aldrig. Du kan också ange server, användarnamn och lösenord, eller klistra in en spellistelänk.",
+      "directTitre": "Live-tv i en blick",
+      "directTexte": "En ring runt varje kanal visar hur långt programmet har kommit. Filtrera efter tema, zappa mellan kanalerna och ha live-tv kvar i bild-i-bild medan du gör annat.",
+      "guideTitre": "En riktig tv‑guide",
+      "guideTexte": "I kväll, i morgon och de närmaste dagarna. Ställ in en påminnelse med en gest, eller använd din egen XMLTV-guide.",
+      "filmsTitre": "Filmer och serier, utan dubbletter",
+      "filmsTexte": "Affischer, sammanfattningar och rollista, med alla versioner av en film på en sida. Sidorna är gratis; uppspelning, med fortsätt titta, ingår i Premium.",
+      "horsLigneTitre": "Offline, med Premium",
+      "horsLigneTexte": "Ladda ner filmer och avsnitt till iPhone och iPad för att titta utan anslutning.",
+      "multiTitre": "Flera livekanaler samtidigt",
+      "multiTexte": "Med Premium visar flerskärm upp till 4 livekanaler på iPad och Mac, och 2 på iPhone, inom antalet anslutningar i ditt IPTV-abonnemang.",
+      "macTitre": "Även på Mac",
+      "macTexte": "På en Mac med Apple Silicon installerar du Ulti från App Store: det är iPad-appen, med samma skärmar.",
+      "icloudTitre": "Dina abonnemang på alla dina enheter",
+      "icloudTexte": "Med Premium tar iCloud-synkning dina abonnemang till dina andra Apple-enheter, end-to-end-krypterade i ditt eget iCloud-konto.",
+      "questionsTitre": "Frågor om iPhone, iPad och Mac",
+      "q1": "Vilken version behöver jag?",
+      "r1": "iOS 17 eller iPadOS 17 eller senare; på Mac, en Mac med Apple Silicon.",
+      "q2": "Vilka IPTV-abonnemang fungerar?",
+      "r2": "De abonnemangsformat som stöds står i [Support](support).",
+      "q3": "Är mina inloggningsuppgifter säkra?",
+      "r3": "Ja. De sparas i enhetens nyckelring och går aldrig via en Ulti-server. Allt förklaras i vår [integritetspolicy](privacy).",
+      "q4": "Är Ulti gratis?",
+      "r4": "Live-tv, tv‑guiden och sidorna för filmer och serier är gratis. Uppspelning av filmer och serier, flerskärm, titta i efterhand, pausa live-tv och nedladdningar ingår i Premium, som du kan prova i 7 dagar med månads- och årsabonnemangen."
     }
   },
   "faqPlus": "Alla frågor på supportsidan",

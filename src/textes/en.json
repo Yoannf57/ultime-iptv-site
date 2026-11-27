@@ -110,7 +110,8 @@
     "filmsTitre": "Movies and series, without duplicates",
     "filmsTexte": "Posters and summaries, every version of a movie gathered in a single page, and you pick up right where you left off.",
     "premium": "With Premium",
-    "premiumLecture": "Playback with Premium"
+    "premiumLecture": "Playback with Premium",
+    "lien": "More about Ulti on iPhone, iPad and Mac"
   },
   "visite": {
     "titre": "Take the tour.",
@@ -275,7 +276,8 @@
       "privacy": "Privacy",
       "legal": "Legal notice",
       "terms": "Terms of Use",
-      "apple-tv": "Apple TV"
+      "apple-tv": "Apple TV",
+      "iphone-ipad": "iPhone, iPad, Mac"
     },
     "marquesGoogle": "Google Play and the Google Play logo are trademarks of Google LLC."
   },
@@ -405,6 +407,40 @@
       "r3": "Check that your iPhone and Apple TV are on the same Wi-Fi network, and that the subscription is already added on your iPhone. More solutions are in [Support](support).",
       "q4": "Is Ulti free on Apple TV?",
       "r4": "Live TV, the TV guide and movie and series details are free. Playing movies and series, multi-screen, replay and live pause are part of Premium, which you can try for 7 days with the monthly and yearly subscriptions."
+    },
+    "iphone-ipad": {
+      "titre": "Your IPTV subscription on iPhone, iPad and Mac.",
+      "metaTitre": "IPTV player for iPhone, iPad and Mac — Ulti",
+      "description": "Paste your IPTV provider’s message and Ulti fills everything in. Live TV, TV guide, movies and series on iPhone, iPad and Mac, with Picture in Picture.",
+      "chapeau": "Ulti is an IPTV player you set up in one paste: copy your provider’s message and Ulti finds your login details by itself.",
+      "etapesTitre": "Add your IPTV subscription in one paste",
+      "etape1": "Install Ulti from the App Store on your iPhone, iPad or Mac.",
+      "etape2": "On iPhone, copy your provider’s message (text, WhatsApp or email), then in Account › Subscriptions › Add a subscription, tap “Paste the message you received”.",
+      "etape3": "Ulti fills in the fields by itself. Check them and tap “Continue”: your subscription’s live TV, TV guide, movies and series are ready.",
+      "etapesNote": "The message is read on the iPhone, never sent or saved. You can also enter the server, username and password, or paste a playlist link.",
+      "directTitre": "Live TV at a glance",
+      "directTexte": "A ring around each channel shows how far the show has got. Filter by theme, flip from one channel to the next, and keep live TV in Picture in Picture while you do something else.",
+      "guideTitre": "A real TV guide",
+      "guideTexte": "Tonight, tomorrow and the days ahead. Set a reminder in one gesture, or use your own XMLTV guide.",
+      "filmsTitre": "Movies and series, without duplicates",
+      "filmsTexte": "Posters, summaries and cast, with every version of a movie on a single page. Details are free; playback, with resume, is part of Premium.",
+      "horsLigneTitre": "Offline, with Premium",
+      "horsLigneTexte": "Download movies and episodes to your iPhone and iPad to watch them without a connection.",
+      "multiTitre": "Several live channels at once",
+      "multiTexte": "With Premium, multi-screen shows up to 4 live channels on iPad and Mac, and 2 on iPhone, within the number of connections your IPTV subscription allows.",
+      "macTitre": "On Mac too",
+      "macTexte": "On a Mac with Apple silicon, Ulti installs from the App Store: it’s the iPad app, with the same screens.",
+      "icloudTitre": "Your subscriptions on all your devices",
+      "icloudTexte": "With Premium, iCloud sync brings your subscriptions to your other Apple devices, end-to-end encrypted in your own iCloud account.",
+      "questionsTitre": "iPhone, iPad and Mac questions",
+      "q1": "Which version do I need?",
+      "r1": "iOS 17 or iPadOS 17 or later; on Mac, a Mac with Apple silicon.",
+      "q2": "Which IPTV subscriptions work?",
+      "r2": "The supported subscription formats are listed in [Support](support).",
+      "q3": "Are my login details safe?",
+      "r3": "Yes. They are kept in your device’s Keychain and never go through an Ulti server. Everything is explained in our [privacy policy](privacy).",
+      "q4": "Is Ulti free?",
+      "r4": "Live TV, the TV guide and movie and series details are free. Playing movies and series, multi-screen, replay, live pause and downloads are part of Premium, which you can try for 7 days with the monthly and yearly subscriptions."
     }
   },
   "faqPlus": "All questions on the Support page",

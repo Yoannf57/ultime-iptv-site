@@ -110,7 +110,8 @@
     "filmsTitre": "Elokuvat ja sarjat ilman kaksoiskappaleita",
     "filmsTexte": "Julisteet ja juonikuvaukset, elokuvan kaikki versiot samalla sivulla, ja jatkat siitä, mihin jäit.",
     "premium": "Premiumilla",
-    "premiumLecture": "Toisto Premiumilla"
+    "premiumLecture": "Toisto Premiumilla",
+    "lien": "Kaikki Ultista iPhonessa, iPadissa ja Macissa"
   },
   "visite": {
     "titre": "Tutustu sovellukseen.",
@@ -275,7 +276,8 @@
       "privacy": "Tietosuoja",
       "legal": "Oikeudelliset tiedot",
       "terms": "Käyttöehdot",
-      "apple-tv": "Apple TV"
+      "apple-tv": "Apple TV",
+      "iphone-ipad": "iPhone, iPad, Mac"
     },
     "marquesGoogle": "Google Play ja Google Play -logo ovat Google LLC:n tavaramerkkejä."
   },
@@ -405,6 +407,40 @@
       "r3": "Tarkista, että iPhone ja Apple TV ovat samassa Wi-Fi-verkossa ja että tilaus on jo lisätty iPhoneen. Lisää ratkaisuja löydät [tuesta](support).",
       "q4": "Onko Ulti ilmainen Apple TV:ssä?",
       "r4": "Suorat lähetykset, TV‑opas sekä elokuvien ja sarjojen sivut ovat ilmaisia. Elokuvien ja sarjojen toisto, moninäyttö, tallenteet ja suoran lähetyksen tauko kuuluvat Premiumiin, jota voi kokeilla 7 päivää kuukausi- ja vuositilauksilla."
+    },
+    "iphone-ipad": {
+      "titre": "IPTV-tilauksesi iPhonessa, iPadissa ja Macissa.",
+      "metaTitre": "IPTV-soitin iPhonelle, iPadille ja Macille — Ulti",
+      "description": "Liitä IPTV-palveluntarjoajasi viesti, ja Ulti täyttää kaiken. Suorat lähetykset, TV‑opas, elokuvat ja sarjat iPhonessa, iPadissa ja Macissa, kuva kuvassa -tilan kanssa.",
+      "chapeau": "Ulti on IPTV-soitin, jonka otat käyttöön yhdellä liittämisellä: kopioi palveluntarjoajasi viesti, ja Ulti löytää kirjautumistietosi itse.",
+      "etapesTitre": "IPTV-tilauksen lisääminen yhdellä liittämisellä",
+      "etape1": "Asenna Ulti App Storesta iPhoneen, iPadiin tai Maciin.",
+      "etape2": "Kopioi palveluntarjoajasi viesti (tekstiviesti, WhatsApp tai sähköposti) iPhonessa ja napauta sitten kohdassa Tili › Tilaukset › Lisää tilaus ”Liitä vastaanotettu viesti”.",
+      "etape3": "Ulti täyttää kentät itse. Tarkista ja napauta ”Jatka”: tilauksesi suorat lähetykset, TV‑opas, elokuvat ja sarjat ovat valmiina.",
+      "etapesNote": "Viesti luetaan iPhonessa, eikä sitä koskaan lähetetä tai tallenneta. Voit myös syöttää palvelimen, käyttäjänimen ja salasanan tai liittää soittolistalinkin.",
+      "directTitre": "Suorat lähetykset yhdellä silmäyksellä",
+      "directTexte": "Jokaisen kanavan ympärillä oleva rengas näyttää, missä ohjelma on menossa. Suodata aiheen mukaan, vaihda kanavaa ja pidä suora lähetys kuva kuvassa -tilassa, kun teet muuta.",
+      "guideTitre": "Oikea TV‑opas",
+      "guideTexte": "Tänä iltana, huomenna ja seuraavina päivinä. Lisää muistutus yhdellä eleellä tai käytä omaa XMLTV-opastasi.",
+      "filmsTitre": "Elokuvat ja sarjat ilman kaksoiskappaleita",
+      "filmsTexte": "Julisteet, juonikuvaukset ja näyttelijät, ja elokuvan kaikki versiot yhdellä sivulla. Sivut ovat ilmaisia; toisto jatkamisineen kuuluu Premiumiin.",
+      "horsLigneTitre": "Offline-tilassa, Premiumilla",
+      "horsLigneTexte": "Lataa elokuvia ja jaksoja iPhoneen ja iPadiin katsottavaksi ilman yhteyttä.",
+      "multiTitre": "Useita suoria lähetyksiä kerralla",
+      "multiTexte": "Premiumilla moninäyttö näyttää jopa 4 suoraa lähetystä iPadissa ja Macissa ja 2 iPhonessa IPTV-tilauksesi yhteyksien rajoissa.",
+      "macTitre": "Myös Macissa",
+      "macTexte": "Apple-sirullisessa Macissa Ulti asennetaan App Storesta: se on iPad-sovellus samoine näkymineen.",
+      "icloudTitre": "Tilauksesi kaikilla laitteillasi",
+      "icloudTexte": "Premiumilla iCloud-synkronointi tuo tilauksesi muille Apple-laitteillesi päästä päähän salattuina omalla iCloud-tililläsi.",
+      "questionsTitre": "Kysymyksiä iPhonesta, iPadista ja Macista",
+      "q1": "Mikä versio tarvitaan?",
+      "r1": "iOS 17 tai iPadOS 17 tai uudempi; Macissa Apple-sirullinen Mac.",
+      "q2": "Mitkä IPTV-tilaukset toimivat?",
+      "r2": "Tuetut tilausmuodot kerrotaan [tuessa](support).",
+      "q3": "Ovatko kirjautumistietoni turvassa?",
+      "r3": "Kyllä. Ne säilytetään laitteesi avainnipussa, eivätkä ne koskaan kulje Ulti-palvelimen kautta. Kaikki on selitetty [tietosuojakäytännössämme](privacy).",
+      "q4": "Onko Ulti ilmainen?",
+      "r4": "Suorat lähetykset, TV‑opas sekä elokuvien ja sarjojen sivut ovat ilmaisia. Elokuvien ja sarjojen toisto, moninäyttö, tallenteet, suoran lähetyksen tauko ja lataukset kuuluvat Premiumiin, jota voi kokeilla 7 päivää kuukausi- ja vuositilauksilla."
     }
   },
   "faqPlus": "Kaikki kysymykset tukisivulla",
