@@ -77,8 +77,9 @@ Claude a tout fait depuis Chrome, Yoann s'étant connecté lui-même à GitHub e
   - « Site Web » de la fiche passé à `https://ultitv.com/`, publié tout de suite ;
   - règles de confidentialité passées à `https://ultitv.com/en/privacy/`, envoyées à l'examen. La publication est
     gérée (« Managed publishing on ») : **une fois l'examen accepté, il faut cliquer sur Publier**.
-- **À décider par Yoann** : la production Google Play est publiée pour les téléphones et tablettes, **Android TV,
-  Android XR et les ordinateurs (ChromeOS)**. Le site dit encore « téléphones et tablettes » seulement.
+- La production Google Play est publiée pour les téléphones et tablettes, Android TV, Android XR et ChromeOS. **Décidé
+  par Yoann (soir)** : Android TV ajoutée sur le site (« téléphones, tablettes et téléviseurs Android » dans 12
+  langues, titre Android de la confidentialité et article 18 des conditions remis avec Android TV).
 - La session Android (`android-tv-frame-rate-plan`) a été prévenue des nouvelles adresses.
 
 ## Reste à faire par Yoann

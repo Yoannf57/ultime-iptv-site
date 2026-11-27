@@ -244,8 +244,8 @@
     "q1": "Does Ulti provide channels?",
     "r1": "No. Ulti is a player: it plays the sources you add yourself. Ulti does not provide any channels or content. You must have your own sources, and the right to watch them.",
     "q2": "Which devices?",
-    "r2": "iPhone, iPad, Mac (with Apple silicon) and Apple TV. Ulti Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing. Ulti is also available on Android phones and tablets (Android 9 or later), on Google Play. Premium is available there as the Solo plan, at the same price; a purchase made with Apple doesn’t carry over to Android, and vice versa.",
-    "r2SansAppleTv": "iPhone, iPad and Mac (with Apple silicon) now; the Apple TV version is coming in the next few days. Ulti Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing. Ulti is also available on Android phones and tablets (Android 9 or later), on Google Play. Premium is available there as the Solo plan, at the same price; a purchase made with Apple doesn’t carry over to Android, and vice versa.",
+    "r2": "iPhone, iPad, Mac (with Apple silicon) and Apple TV. Ulti Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing. Ulti is also available on Android phones, tablets and TVs (Android 9 or later), on Google Play. Premium is available there as the Solo plan, at the same price; a purchase made with Apple doesn’t carry over to Android, and vice versa.",
+    "r2SansAppleTv": "iPhone, iPad and Mac (with Apple silicon) now; the Apple TV version is coming in the next few days. Ulti Premium works on all your devices with the same Apple Account; with the Family plan, up to 6 people can enjoy it through Family Sharing. Ulti is also available on Android phones, tablets and TVs (Android 9 or later), on Google Play. Premium is available there as the Solo plan, at the same price; a purchase made with Apple doesn’t carry over to Android, and vice versa.",
     "q3": "Are my login details safe?",
     "r3": "They are kept in your device’s Keychain and never go through an Ulti server.",
     "q4": "Which subscriptions are compatible?",
@@ -393,22 +393,22 @@
       },
       "appareils": {
         "q": "Which devices does Ulti work on?",
-        "r": "iPhone, iPad, Mac and Apple TV: iPhone and iPad with iOS 17 or iPadOS 17 or later, Apple TV with tvOS 17 or later, and Macs with Apple silicon, which use the iPad app. Premium works on all your devices signed in with the same Apple Account. Ulti is also available on Android phones and tablets (Android 9 or later), on [Google Play](googleplay). Premium is available there as the Solo plan, at the same price; a purchase made with Apple doesn’t carry over to Android, and vice versa.",
-        "rSansAppleTv": "iPhone, iPad and Mac now, Apple TV in the next few days: iPhone and iPad with iOS 17 or iPadOS 17 or later, Apple TV with tvOS 17 or later, and Macs with Apple silicon, which use the iPad app. Premium works on all your devices signed in with the same Apple Account. Ulti is also available on Android phones and tablets (Android 9 or later), on [Google Play](googleplay). Premium is available there as the Solo plan, at the same price; a purchase made with Apple doesn’t carry over to Android, and vice versa.",
+        "r": "iPhone, iPad, Mac and Apple TV: iPhone and iPad with iOS 17 or iPadOS 17 or later, Apple TV with tvOS 17 or later, and Macs with Apple silicon, which use the iPad app. Premium works on all your devices signed in with the same Apple Account. Ulti is also available on Android phones, tablets and TVs (Android 9 or later), on [Google Play](googleplay). Premium is available there as the Solo plan, at the same price; a purchase made with Apple doesn’t carry over to Android, and vice versa.",
+        "rSansAppleTv": "iPhone, iPad and Mac now, Apple TV in the next few days: iPhone and iPad with iOS 17 or iPadOS 17 or later, Apple TV with tvOS 17 or later, and Macs with Apple silicon, which use the iPad app. Premium works on all your devices signed in with the same Apple Account. Ulti is also available on Android phones, tablets and TVs (Android 9 or later), on [Google Play](googleplay). Premium is available there as the Solo plan, at the same price; a purchase made with Apple doesn’t carry over to Android, and vice versa.",
         "rSansGooglePlay": "iPhone, iPad, Mac and Apple TV: iPhone and iPad with iOS 17 or iPadOS 17 or later, Apple TV with tvOS 17 or later, and Macs with Apple silicon, which use the iPad app. Premium works on all your devices signed in with the same Apple Account. An Android version (phones, tablets and TVs) is in the works.",
         "rSansAppleTvSansGooglePlay": "iPhone, iPad and Mac now, Apple TV in the next few days: iPhone and iPad with iOS 17 or iPadOS 17 or later, Apple TV with tvOS 17 or later, and Macs with Apple silicon, which use the iPad app. Premium works on all your devices signed in with the same Apple Account. An Android version (phones, tablets and TVs) is in the works."
       },
       "installer": {
         "q": "How do I install Ulti?",
-        "r": "Download Ulti from the [App Store](appstore) on your iPhone, iPad or Mac, and from the App Store on your Apple TV. Once installed, the app is called “Ulti IPTV”. On an Android phone or tablet, download Ulti from [Google Play](googleplay).",
-        "rSansAppleTv": "Download Ulti from the [App Store](appstore) on your iPhone, iPad or Mac. The Apple TV version is coming in the next few days. Once installed, the app is called “Ulti IPTV”. On an Android phone or tablet, download Ulti from [Google Play](googleplay).",
+        "r": "Download Ulti from the [App Store](appstore) on your iPhone, iPad or Mac, and from the App Store on your Apple TV. Once installed, the app is called “Ulti IPTV”. On an Android phone, tablet or TV, download Ulti from [Google Play](googleplay).",
+        "rSansAppleTv": "Download Ulti from the [App Store](appstore) on your iPhone, iPad or Mac. The Apple TV version is coming in the next few days. Once installed, the app is called “Ulti IPTV”. On an Android phone, tablet or TV, download Ulti from [Google Play](googleplay).",
         "rBientot": "Ulti is coming soon to the App Store, for iPhone, iPad, Mac and Apple TV. Once installed, the app is called “Ulti IPTV”.",
         "rSansGooglePlay": "Download Ulti from the [App Store](appstore) on your iPhone, iPad or Mac, and from the App Store on your Apple TV. Once installed, the app is called “Ulti IPTV”.",
         "rSansAppleTvSansGooglePlay": "Download Ulti from the [App Store](appstore) on your iPhone, iPad or Mac. The Apple TV version is coming in the next few days. Once installed, the app is called “Ulti IPTV”."
       },
       "android": {
         "q": "Is Ulti available on Android?",
-        "r": "Yes, on Android phones and tablets (Android 9 or later): download Ulti from [Google Play](googleplay). On Android, Premium is available as the Solo plan, at the same price as on the App Store, with a 7-day free trial on monthly and yearly subscriptions. The Family plan is only available on iPhone, iPad, Mac and Apple TV.\n\nPurchases are separate: Premium bought from Apple doesn’t carry over to Android, and vice versa. On Android, subscriptions are managed in Google Play ([Google’s help](google-resilier))."
+        "r": "Yes, on Android phones, tablets and TVs (Android 9 or later): download Ulti from [Google Play](googleplay). On Android, Premium is available as the Solo plan, at the same price as on the App Store, with a 7-day free trial on monthly and yearly subscriptions. The Family plan is only available on iPhone, iPad, Mac and Apple TV.\n\nPurchases are separate: Premium bought from Apple doesn’t carry over to Android, and vice versa. On Android, subscriptions are managed in Google Play ([Google’s help](google-resilier))."
       },
       "ajouter": {
         "q": "How do I add my IPTV subscription?",
@@ -556,7 +556,7 @@
         "texte": "Purchases are handled by Apple, on the App Store. Ulti only keeps your Premium status on the device, so it works offline, and sends it nowhere."
       },
       "android": {
-        "titre": "Ulti on Android (phones and tablets)",
+        "titre": "Ulti on Android (phones, tablets, Android TV)",
         "texte": "The Android app works just like the iPhone app, without sync: your IPTV subscriptions (server address, username, password or M3U link) are encrypted and stay on your device; they are never sent to Ulti. Premium purchases go through Google Play: Google processes the payment under its own [privacy policy](google-confidentialite), and the app only receives confirmation of the purchase (no payment details); the Google Play billing library may send Google technical information about purchases. To show posters and summaries of movies and series, the app sends the title and year of the work and the device language to Ulti’s relay (api.ultitv.com); the relay queries TMDB, keeps no logs and does not store your IP address. Ulti contains no advertising or analytics tools and collects no personal data. If you have allowed it in your device settings, Google may pass technical crash reports on to the developer (Android vitals). The app’s logs only leave your device if you send them to support yourself."
       },
       "plantages": {
