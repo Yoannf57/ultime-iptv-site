@@ -2,6 +2,7 @@
 // Tarifs (CLAUDE.md, section 6) : carte Gratuit, puis choix « Pour moi » / « Pour la famille » au-dessus des offres
 // payantes. Sans JavaScript, les deux formules s'affichent l'une sous l'autre. Prix pris dans pays.json, jamais convertis.
 import { t } from "../../lib/textes";
+import { googlePlayAffiche } from "../../lib/googleplay";
 import { formaterPrix, type Pays } from "../../lib/pays";
 import type { Offre } from "../../lib/offre";
 interface Props { langue: string; pays: Pays; offre?: Offre | null }
@@ -74,6 +75,8 @@ function cartes(id: "solo" | "famille") {
   </div>
   <p class="memes">{t(l, "tarifs.memesFonctions")}</p>
   <p class="note">{p.prix && `${t(l, p.taxesEnSus ? "tarifs.noteHT" : "tarifs.noteTTC")} `}{t(l, "tarifs.noteAppStore")}</p>
+  {/* Google Play (27/11/2026) : Solo aux mêmes prix que l'App Store (vérifié dans les 11 monnaies), Famille sur Apple seulement. */}
+  {googlePlayAffiche && <p class="note">{t(l, "tarifs.noteAndroid")}</p>}
 </section>
 
 <style>

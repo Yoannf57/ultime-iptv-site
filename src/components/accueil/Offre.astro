@@ -4,7 +4,9 @@
 // « Le prix d'un an, payé une fois » n'est écrit que si c'est vrai pour ce pays (prix réduit = prix annuel).
 // Page internationale (sans prix) : l'offre sans montant ni pourcentage. Bouton texte, pas de second badge.
 import { t } from "../../lib/textes";
+import config from "../../../site.config.mjs";
 import { lienAppStore } from "../../lib/appstore";
+import { lienGooglePlay, googlePlayAffiche } from "../../lib/googleplay";
 import type { Pays } from "../../lib/pays";
 import type { Offre } from "../../lib/offre";
 interface Props { langue: string; p: Pays; offre: Offre }
@@ -12,6 +14,9 @@ const { langue: l, p, offre } = Astro.props;
 const solo = offre.prix?.solo;
 const famille = offre.prix?.famille;
 const variante = !solo ? "SansPrix" : offre.prixDunAn ? "" : "SansArgument";
+// Google Play (27/11/2026, blackFriday.aussiGooglePlay) : à vie Solo aussi en promo sur Google Play, aux mêmes prix ;
+// Famille n'existe que sur les appareils Apple.
+const aussiGooglePlay = config.blackFriday.aussiGooglePlay && googlePlayAffiche;
 const valeurs = { prix: solo?.reduit ?? "", prixNormal: solo?.normal ?? "", jourDate: offre.jourDate };
 ---
 <section id="offre" aria-labelledby="titre-offre" class="offre bf-offre">
@@ -21,6 +26,7 @@ const valeurs = { prix: solo?.reduit ?? "", prixNormal: solo?.normal ?? "", jour
       <h2 id="titre-offre">{t(l, `offre.titre${variante}`, valeurs)}</h2>
       <p class="gris chiffres">{t(l, `offre.texte${variante}`, valeurs)}</p>
       <p class="gris chiffres">{famille ? t(l, "offre.famille", { prix: famille.reduit, prixNormal: famille.normal }) : t(l, "offre.familleSansPrix")}</p>
+      {aussiGooglePlay && <p class="gris">{t(l, solo ? "offre.googlePlay" : "offre.googlePlaySansPrix")}</p>}
     </div>
     {solo && (
       <p class="prix chiffres">
@@ -29,7 +35,10 @@ const valeurs = { prix: solo?.reduit ?? "", prixNormal: solo?.normal ?? "", jour
         <span class="ligne" aria-hidden="true"><s>{solo.normal}</s><span class="remise">{solo.remise}</span></span>
       </p>
     )}
-    <p class="action"><a class="bouton" href={lienAppStore(p)}>{t(l, "offre.telecharger")}</a></p>
+    <p class="action">
+      <a class="bouton" href={lienAppStore(p)}>{t(l, "offre.telecharger")}</a>
+      {aussiGooglePlay && <a class="autre" href={lienGooglePlay(p)}>{t(l, "offre.lienGooglePlay")}</a>}
+    </p>
   </div>
 </section>
 
@@ -41,7 +50,9 @@ const valeurs = { prix: solo?.reduit ?? "", prixNormal: solo?.normal ?? "", jour
   h2 { margin: 0; max-width: 22ch; text-wrap: balance; font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.05; letter-spacing: -0.03em; font-weight: 800; }
   .texte p.gris { margin: 1.25rem 0 0; max-width: 36rem; font-size: 1.0625rem; line-height: 1.5; }
   .texte p.gris + p.gris { margin-top: 0.75rem; }
-  .action { grid-area: action; margin: 0; }
+  .action { grid-area: action; margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
+  .autre { color: #f5f5f7; font-size: 1rem; }
+  .sans-prix .action { justify-content: center; }
   .bouton { display: inline-flex; align-items: center; height: 3rem; padding: 0 1.75rem; border-radius: 999px; background: #f5f5f7; color: #000; font-size: 1.0625rem; font-weight: 600; text-decoration: none; }
   .prix { grid-area: prix; margin: 0; display: flex; flex-direction: column; gap: 0.5rem; }
   .reduit { font-size: clamp(3.25rem, 7vw, 5.5rem); font-weight: 800; letter-spacing: -0.04em; line-height: 1; white-space: nowrap; }

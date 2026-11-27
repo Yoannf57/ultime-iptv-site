@@ -31,7 +31,9 @@
     "android": "Snart på Android.",
     "androidSansAppleTv": "Apple TV: om noen dager. Snart på Android.",
     "androidAvantPublication": "Deretter også på Android.",
-    "neutralite": "Ulti leverer ingen kanaler og intet innhold."
+    "neutralite": "Ulti leverer ingen kanaler og intet innhold.",
+    "badgeGooglePlay": "Last ned Ulti fra Google Play",
+    "sansAppleTv": "Apple TV: om noen dager."
   },
   "apercu": {
     "etiquette": "Forhåndsvisning av appen på Apple TV, iPad og iPhone",
@@ -201,7 +203,8 @@
     "memesFonctions": "Alle tre Premium-alternativene gir tilgang til de samme funksjonene.",
     "noteTTC": "Priser inkl. mva.",
     "noteAppStore": "Den nøyaktige prisen for landet ditt vises i App Store.",
-    "noteHT": "Eventuelle avgifter kommer i tillegg."
+    "noteHT": "Eventuelle avgifter kommer i tillegg.",
+    "noteAndroid": "Premium Solo koster det samme i App Store og på Google Play. Alternativet Familie finnes bare på iPhone, iPad, Mac og Apple TV. Et kjøp hos Apple følger ikke med til Android, og omvendt."
   },
   "offre": {
     "bandeauEtiquette": "Black Friday-tilbud",
@@ -226,7 +229,10 @@
     "faqQ": "Abonnement eller livstid: hva bør du velge?",
     "faqR": "Abonnementet fornyes hver måned eller hvert år, og du kan si det opp når du vil. Premium livstid betaler du én gang. Til og med {date} koster det like mye som ett års abonnement: {prix} for Solo, {prixFamille} for Familie.",
     "faqRSansArgument": "Abonnementet fornyes hver måned eller hvert år, og du kan si det opp når du vil. Premium livstid betaler du én gang. Til og med {date} koster det {prix} for Solo og {prixFamille} for Familie.",
-    "faqRSansPrix": "Abonnementet fornyes hver måned eller hvert år, og du kan si det opp når du vil. Premium livstid betaler du én gang. Til og med {date} har det redusert pris i App Store."
+    "faqRSansPrix": "Abonnementet fornyes hver måned eller hvert år, og du kan si det opp når du vil. Premium livstid betaler du én gang. Til og med {date} har det redusert pris i App Store.",
+    "googlePlay": "Premium livstid Solo har samme reduserte pris på Google Play. Alternativet Familie finnes bare på iPhone, iPad, Mac og Apple TV.",
+    "googlePlaySansPrix": "Premium livstid Solo har også redusert pris på Google Play. Alternativet Familie finnes bare på iPhone, iPad, Mac og Apple TV.",
+    "lienGooglePlay": "Også på Google Play"
   },
   "viePrivee": {
     "titre": "Ingen data samles inn.",
@@ -238,19 +244,22 @@
     "q1": "Leverer Ulti kanaler?",
     "r1": "Nei. Ulti er en spiller: den spiller av kildene du selv legger til. Ulti leverer ingen kanaler og intet innhold. Du må ha dine egne kilder og ha rett til å se dem.",
     "q2": "På hvilke enheter?",
-    "r2": "iPhone, iPad, Mac (med Apple-brikke) og Apple TV. Ulti Premium gjelder på alle enhetene dine med samme Apple-konto; med Familie-alternativet kan opptil 6 personer bruke det takket være Familiedeling. En Android-versjon (telefoner, nettbrett og TV-er) er under arbeid.",
-    "r2SansAppleTv": "iPhone, iPad og Mac (med Apple-brikke) allerede nå; Apple TV-versjonen kommer i løpet av de nærmeste dagene. Ulti Premium gjelder på alle enhetene dine med samme Apple-konto; med Familie-alternativet kan opptil 6 personer bruke det takket være Familiedeling. En Android-versjon (telefoner, nettbrett og TV-er) er under arbeid.",
+    "r2": "iPhone, iPad, Mac (med Apple-brikke) og Apple TV. Ulti Premium gjelder på alle enhetene dine med samme Apple-konto; med Familie-alternativet kan opptil 6 personer bruke det takket være Familiedeling. Ulti finnes også for Android-telefoner og -nettbrett (Android 9 eller nyere), på Google Play. Premium finnes der som alternativet Solo, til samme pris; et kjøp hos Apple følger ikke med til Android, og omvendt.",
+    "r2SansAppleTv": "iPhone, iPad og Mac (med Apple-brikke) allerede nå; Apple TV-versjonen kommer i løpet av de nærmeste dagene. Ulti Premium gjelder på alle enhetene dine med samme Apple-konto; med Familie-alternativet kan opptil 6 personer bruke det takket være Familiedeling. Ulti finnes også for Android-telefoner og -nettbrett (Android 9 eller nyere), på Google Play. Premium finnes der som alternativet Solo, til samme pris; et kjøp hos Apple følger ikke med til Android, og omvendt.",
     "q3": "Er påloggingsinformasjonen min trygg?",
     "r3": "Den lagres i nøkkelringen på enheten og går aldri via en Ulti-server.",
     "q4": "Hvilke abonnementer fungerer?",
     "r4": "Abonnementer som leveres som en M3U-lenke eller som Xtream Codes-påloggingsinformasjon, altså de aller fleste. Enklest: lim inn meldingen fra leverandøren din, Ulti gjenkjenner formatet selv.",
     "q5": "Kan jeg prøve før jeg betaler?",
-    "r5": "Ja. Direkte-TV og TV‑guiden er gratis, og det er også sidene for filmer og serier på iPhone, iPad og Mac; på Apple TV blir de det med neste oppdatering. Avspilling av filmer og serier er en del av Premium, som du kan prøve gratis i 7 dager med måneds- og årsabonnementene, Solo eller Familie."
+    "r5": "Ja. Direkte-TV og TV‑guiden er gratis, og det er også sidene for filmer og serier på iPhone, iPad og Mac; på Apple TV blir de det med neste oppdatering. Avspilling av filmer og serier er en del av Premium, som du kan prøve gratis i 7 dager med måneds- og årsabonnementene, Solo eller Familie.",
+    "r2SansGooglePlay": "iPhone, iPad, Mac (med Apple-brikke) og Apple TV. Ulti Premium gjelder på alle enhetene dine med samme Apple-konto; med Familie-alternativet kan opptil 6 personer bruke det takket være Familiedeling. En Android-versjon (telefoner, nettbrett og TV-er) er under arbeid.",
+    "r2SansAppleTvSansGooglePlay": "iPhone, iPad og Mac (med Apple-brikke) allerede nå; Apple TV-versjonen kommer i løpet av de nærmeste dagene. Ulti Premium gjelder på alle enhetene dine med samme Apple-konto; med Familie-alternativet kan opptil 6 personer bruke det takket være Familiedeling. En Android-versjon (telefoner, nettbrett og TV-er) er under arbeid."
   },
   "fin": {
     "titre": "Abonnementet har du allerede.\nDet eneste som mangler, er appen.",
     "texte": "Ulti er gratis for direkte-TV og TV‑guiden, uten reklame og uten konto. Installer appen, lim inn meldingen fra leverandøren din og se.",
-    "bouton": "Last ned Ulti"
+    "bouton": "Last ned Ulti",
+    "googlePlay": "Også på Google Play"
   },
   "neutralite": "Ulti leverer ingen kanaler og intet innhold. Du må ha dine egne kilder og ha rett til å se dem.",
   "pied": {
@@ -265,7 +274,8 @@
       "privacy": "Personvern",
       "legal": "Juridisk informasjon",
       "terms": "Bruksvilkår"
-    }
+    },
+    "marquesGoogle": "Google Play og Google Play-logoen er varemerker som tilhører Google LLC."
   },
   "bandeau": {
     "etiquette": "Valg av land",
@@ -383,14 +393,22 @@
       },
       "appareils": {
         "q": "Hvilke enheter fungerer Ulti på?",
-        "r": "iPhone, iPad, Mac og Apple TV: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere, og Mac-maskiner med Apple-brikke, som bruker iPad-appen. Premium gjelder på alle enhetene dine som er koblet til samme Apple-konto. En Android-versjon (telefoner, nettbrett og TV-er) er under arbeid.",
-        "rSansAppleTv": "iPhone, iPad og Mac allerede nå, Apple TV i løpet av de nærmeste dagene: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere, og Mac-maskiner med Apple-brikke, som bruker iPad-appen. Premium gjelder på alle enhetene dine som er koblet til samme Apple-konto. En Android-versjon (telefoner, nettbrett og TV-er) er under arbeid."
+        "r": "iPhone, iPad, Mac og Apple TV: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere, og Mac-maskiner med Apple-brikke, som bruker iPad-appen. Premium gjelder på alle enhetene dine som er koblet til samme Apple-konto. Ulti finnes også for Android-telefoner og -nettbrett (Android 9 eller nyere), på [Google Play](googleplay). Premium finnes der som alternativet Solo, til samme pris; et kjøp hos Apple følger ikke med til Android, og omvendt.",
+        "rSansAppleTv": "iPhone, iPad og Mac allerede nå, Apple TV i løpet av de nærmeste dagene: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere, og Mac-maskiner med Apple-brikke, som bruker iPad-appen. Premium gjelder på alle enhetene dine som er koblet til samme Apple-konto. Ulti finnes også for Android-telefoner og -nettbrett (Android 9 eller nyere), på [Google Play](googleplay). Premium finnes der som alternativet Solo, til samme pris; et kjøp hos Apple følger ikke med til Android, og omvendt.",
+        "rSansGooglePlay": "iPhone, iPad, Mac og Apple TV: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere, og Mac-maskiner med Apple-brikke, som bruker iPad-appen. Premium gjelder på alle enhetene dine som er koblet til samme Apple-konto. En Android-versjon (telefoner, nettbrett og TV-er) er under arbeid.",
+        "rSansAppleTvSansGooglePlay": "iPhone, iPad og Mac allerede nå, Apple TV i løpet av de nærmeste dagene: iPhone og iPad med iOS 17 eller iPadOS 17 eller nyere, Apple TV med tvOS 17 eller nyere, og Mac-maskiner med Apple-brikke, som bruker iPad-appen. Premium gjelder på alle enhetene dine som er koblet til samme Apple-konto. En Android-versjon (telefoner, nettbrett og TV-er) er under arbeid."
       },
       "installer": {
         "q": "Hvordan installerer jeg Ulti?",
-        "r": "Last ned Ulti fra [App Store](appstore) på iPhone, iPad eller Mac, og fra App Store på Apple TV. Når den er installert, heter appen «Ulti IPTV».",
-        "rSansAppleTv": "Last ned Ulti fra [App Store](appstore) på iPhone, iPad eller Mac. Apple TV-versjonen kommer i løpet av de nærmeste dagene. Når den er installert, heter appen «Ulti IPTV».",
-        "rBientot": "Ulti kommer snart til App Store, for iPhone, iPad, Mac og Apple TV. Når den er installert, heter appen «Ulti IPTV»."
+        "r": "Last ned Ulti fra [App Store](appstore) på iPhone, iPad eller Mac, og fra App Store på Apple TV. Når den er installert, heter appen «Ulti IPTV». På en Android-telefon eller -nettbrett laster du ned Ulti fra [Google Play](googleplay).",
+        "rSansAppleTv": "Last ned Ulti fra [App Store](appstore) på iPhone, iPad eller Mac. Apple TV-versjonen kommer i løpet av de nærmeste dagene. Når den er installert, heter appen «Ulti IPTV». På en Android-telefon eller -nettbrett laster du ned Ulti fra [Google Play](googleplay).",
+        "rBientot": "Ulti kommer snart til App Store, for iPhone, iPad, Mac og Apple TV. Når den er installert, heter appen «Ulti IPTV».",
+        "rSansGooglePlay": "Last ned Ulti fra [App Store](appstore) på iPhone, iPad eller Mac, og fra App Store på Apple TV. Når den er installert, heter appen «Ulti IPTV».",
+        "rSansAppleTvSansGooglePlay": "Last ned Ulti fra [App Store](appstore) på iPhone, iPad eller Mac. Apple TV-versjonen kommer i løpet av de nærmeste dagene. Når den er installert, heter appen «Ulti IPTV»."
+      },
+      "android": {
+        "q": "Finnes Ulti for Android?",
+        "r": "Ja, for Android-telefoner og -nettbrett (Android 9 eller nyere): last ned Ulti fra [Google Play](googleplay). På Android finnes Premium som alternativet Solo, til samme pris som i App Store, med 7 dagers gratis prøveperiode på måneds- og årsabonnementene. Alternativet Familie finnes bare på iPhone, iPad, Mac og Apple TV.\n\nKjøpene er atskilt: Premium kjøpt hos Apple følger ikke med til Android, og omvendt. På Android administrerer du abonnementer i Google Play ([Googles hjelp](google-resilier))."
       },
       "ajouter": {
         "q": "Hvordan legger jeg til IPTV-abonnementet mitt?",
@@ -538,7 +556,7 @@
         "texte": "Kjøp administreres av Apple, i App Store. Ulti lagrer bare Premium-statusen på enheten, for å fungere uten nett, og sender den ingen steder."
       },
       "android": {
-        "titre": "Ulti på Android (telefoner, nettbrett, Android TV)",
+        "titre": "Ulti på Android (telefoner og nettbrett)",
         "texte": "Android-appen fungerer akkurat som på iPhone, uten synkronisering: IPTV-abonnementene dine (serveradresse, brukernavn, passord eller M3U-lenke) krypteres og blir på enheten din; de sendes aldri til Ulti. Premium-kjøp går gjennom Google Play: Google behandler betalingen etter sine egne [personvernregler](google-confidentialite), og appen mottar bare bekreftelsen på kjøpet (ingen betalingsopplysninger); kjøpsbiblioteket til Google Play kan sende teknisk informasjon om kjøp til Google. For å vise plakater og sammendrag av filmer og serier sender appen tittelen og året for verket og språket på enheten til Ultis relé (api.ultitv.com); reléet spør TMDB, fører ingen logg og lagrer ikke IP-adressen din. Ulti inneholder verken reklame eller analyseverktøy, og samler ikke inn personopplysninger. Hvis du har tillatt det i innstillingene på enheten, kan Google sende tekniske krasjrapporter til utvikleren (Android vitals). Loggene fra appen forlater bare enheten din hvis du selv sender dem til kundestøtte."
       },
       "plantages": {

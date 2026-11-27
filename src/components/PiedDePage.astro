@@ -1,5 +1,6 @@
 ---
 import config from "../../site.config.mjs";
+import { googlePlayAffiche } from "../lib/googleplay";
 import { t, langues as languesTextes } from "../lib/textes";
 import { trouverPays, pays as tousPays, paysPourNavigateur } from "../lib/pays";
 import code from "../scripts/deviner-pays.js?raw";
@@ -57,7 +58,7 @@ const scriptLiens = p ? "" : `${code}
     </div>
     {!p && <script is:inline set:html={scriptLiens}></script>}
     {langues.map((l) => (
-      <p class="legal" lang={l}>{t(l, "neutralite")} {t(l, "pied.tmdb")} {t(l, "pied.marques")}</p>
+      <p class="legal" lang={l}>{t(l, "neutralite")} {t(l, "pied.tmdb")} {t(l, "pied.marques")}{googlePlayAffiche && ` ${t(l, "pied.marquesGoogle")}`}</p>
     ))}
     <div class="bas">
       <img class="tmdb" src={lien("tmdb.svg")} alt={t(langue, "pied.tmdbLogo")} width="123" height="16" decoding="async" />

@@ -5,7 +5,8 @@ d'Ulti, un lecteur IPTV payant pour iPhone et Apple TV. L'app elle-même est dan
 (`~/Developer/ultime-iptv`) et ne se touche jamais depuis ici. Les noms de dépôts et de dossiers gardent « ultime » :
 ce sont des noms techniques, invisibles pour les visiteurs.
 
-Dernière mise à jour : 24/11/2026 (**étape 2** : nouvelle phrase du grand visuel, dernière section « Il vous manque l'app. », fiches des films et séries gratuites (N33), pied de page du sélecteur de pays dans la langue du visiteur ; **Black Friday** : Premium à vie à prix réduit jusqu'au 30/11/2026, réglage `blackFriday` ; avant, le 11/11/2026 : **Ulti publié sur l'App Store** : `disponible: true`, `indexable: true`, `robots.txt` sans plan du site ; avant : section « Connexion » refaite : téléphone + Apple TV par QR code ; avant : section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
+Dernière mise à jour : 27/11/2026 (**Android sur Google Play** : badge officiel, prix Solo identiques à l'App Store,
+Black Friday Solo aussi sur Google Play ; avant, le 24/11/2026 : **étape 2** : nouvelle phrase du grand visuel, dernière section « Il vous manque l'app. », fiches des films et séries gratuites (N33), pied de page du sélecteur de pays dans la langue du visiteur ; **Black Friday** : Premium à vie à prix réduit jusqu'au 30/11/2026, réglage `blackFriday` ; avant, le 11/11/2026 : **Ulti publié sur l'App Store** : `disponible: true`, `indexable: true`, `robots.txt` sans plan du site ; avant : section « Connexion » refaite : téléphone + Apple TV par QR code ; avant : section « Collez. C'est tout. » après le grand visuel ; badges d'Apple importés, 12 langues, badge noir validé ; publication préparée : badge officiel, liens App Store calculés, Smart App Banner,
 « Bientôt sur Android », `appleTvDisponible` ; avant : informations légales définitives ; page Conditions d'utilisation ; confidentialité avec le relais TMDB ; grand
 visuel Apple TV + iPhone et visite automatique sur iPad, dans les cadres officiels d'Apple ; « Ulti Premium » ; captures
 des 12 langues ; textes à faire relire).
@@ -324,7 +325,8 @@ une langue.
 - Ne jamais calculer un prix par conversion de monnaie.
 - **Black Friday 2026 (24/11/2026)** : Premium à vie à prix réduit dans l'App Store jusqu'au lundi 30/11/2026 inclus,
   sans code. Réglage unique `blackFriday` dans `site.config.mjs` (`actif`, `fin`, prix réduits par monnaie relevés
-  dans App Store Connect le 24/11, `aussiGooglePlay: false`). Prix normal barré = `vie` de `pays.json` ; pourcentage
+  dans App Store Connect le 24/11, `aussiGooglePlay: true` depuis le 27/11 : à vie **Solo** aussi en promo sur Google
+  Play, mêmes prix, phrase `offre.googlePlay*` et lien « Aussi sur Google Play » ; Famille seulement sur Apple). Prix normal barré = `vie` de `pays.json` ; pourcentage
   calculé par le site, arrondi vers le bas (`src/lib/offre.ts`). « Le prix d'un an, payé une fois » seulement si le
   prix réduit est égal au prix annuel (vrai dans les 11 monnaies ; sinon textes `offre.*SansArgument`). Pages
   internationales : offre sans montant ni pourcentage (`offre.*SansPrix`). Les pages d'accueil contiennent la version
@@ -395,12 +397,27 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
   `captures/badges-blancs/` (non versionné), pour comparer, jamais sur le site.
 - **Smart App Banner** (`Base.astro`) : `<meta name="apple-itunes-app" content="app-id=…">` si `disponible`, sur les
   pages d'un pays ou d'une langue et leurs sous-pages, jamais sur la page de choix ni la 404.
-- **Android** (sans date, téléphone, tablette et télé) : seulement une ligne grise sous le badge (`heros.android`
-  « Bientôt sur Android. » ; avant la publication `heros.androidAvantPublication` « Puis sur Android. », pour éviter
-  deux « Bientôt » de suite) et une phrase à la fin de « Sur quels appareils ? » (FAQ et Support). Jamais de badge
-  Google Play, de Fire TV, de date ni de formulaire.
+- **Android : sur Google Play depuis le 27/11/2026** (`com.yoannfebvre.ultimeiptv`, **téléphones et tablettes
+  seulement**, Android 9 ou plus récent ; case Android TV non cochée : jamais « Android TV », « télé » ni Fire TV sur le
+  site tant que Yoann ne le dit pas). Réglage `googlePlay: { disponible, id }` dans `site.config.mjs` ; une seule valeur
+  calculée, `googlePlayAffiche` (`src/lib/googleplay.ts`, = `disponible && googlePlay.disponible`) ; lien calculé
+  `lienGooglePlay` (cible `googleplay` dans les textes).
+  - **Badge officiel Google Play** (`BadgeGooglePlay.astro`), juste après celui de l'App Store dans le grand visuel,
+    même hauteur visible (marge transparente des PNG mesurée par `npm run importer-badges` dans
+    `src/assets/badges/google-play/mesures.json`), PNG de Google copiés tels quels depuis `Notes/badges/google-play/`
+    (téléchargés sur play.google.com/intl/en_us/badges/). Un seul badge de chaque magasin par page ; ailleurs, liens
+    texte « Aussi sur Google Play » (dernière section, offre).
+  - Pied de page : « Google Play et le logo Google Play sont des marques de Google LLC. » (`pied.marquesGoogle`).
+  - **Prix** : Premium sur Android = formule **Solo seulement**, aux **mêmes prix que l'App Store** dans les 11 monnaies
+    (alignés par Yoann le 27/11/2026, vérifiés contre `pays.json`) ; Famille seulement sur iPhone, iPad, Mac et Apple TV ;
+    achats séparés entre Apple et Google ; essai de 7 jours sur les abonnements des deux côtés. Aucun prix Google n'est
+    écrit dans `pays.json` : phrase `tarifs.noteAndroid` sous les tarifs. Si Google et Apple divergent un jour, cette
+    phrase devient fausse : la changer.
+  - Textes : `faq.r2`, Support `appareils`, `installer` et question `android`. À `googlePlayAffiche: false`, les
+    anciennes réponses reviennent (`…SansGooglePlay`, « version Android en préparation ») et la question `android` est
+    masquée.
 - **`appleTvDisponible`** (`site.config.mjs`, `true` par défaut) : à `false` (et `disponible: true`), la ligne devient
-  « Apple TV : dans quelques jours. Bientôt sur Android. » et la FAQ (`faq.r2SansAppleTv`) et le Support
+  « Apple TV : dans quelques jours. Bientôt sur Android. » (avec Google Play : `heros.sansAppleTv`) et la FAQ (`faq.r2SansAppleTv`) et le Support
   (`appareils`, `installer` : `rSansAppleTv`) disent que l'Apple TV arrive dans les jours qui viennent.
 
 ## 8. Façon de travailler
@@ -460,6 +477,10 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 - [x] **Étape 2 (24/11/2026)** : phrase du grand visuel, dernière section, N33, pied de page du sélecteur de pays —
   même compte rendu. Reste : retirer la réserve Apple TV quand la 1.1 Apple TV sort ; nouvelles traductions à faire
   relire ; décider d'une seule apostrophe par fichier de textes (les nouveaux textes ont « ’ », les anciens « ' »).
+
+- [x] **Android et Google Play (27/11/2026)** : badge, textes, prix Solo identiques, Black Friday Solo aussi sur Google
+  Play — compte rendu `Notes/comptes-rendus/2026-11-27-android-et-domaine.md`. Reste : branchement d'ultitv.com
+  (pull request séparée, après les réglages DNS de Yoann) ; nouvelles traductions à faire relire.
 
 ### Jour de la publication (fait le 11/11/2026 ; gardé pour mémoire)
 1. `site.config.mjs` : **la ligne `disponible: false,` devient `disponible: true,`** ; `indexable: true` si ultitv.com n'est pas encore branché (sinon c'est déjà

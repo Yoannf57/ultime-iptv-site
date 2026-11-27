@@ -5,6 +5,7 @@
 import config from "../../../site.config.mjs";
 import { t } from "../../lib/textes";
 import { lienAppStore } from "../../lib/appstore";
+import { lienGooglePlay, googlePlayAffiche } from "../../lib/googleplay";
 import type { Pays } from "../../lib/pays";
 interface Props { langue: string; p: Pays }
 const { langue: l, p } = Astro.props;
@@ -13,6 +14,7 @@ const { langue: l, p } = Astro.props;
   <h2 id="titre-fin" class="titre-section">{t(l, "fin.titre")}</h2>
   <p class="chapeau">{t(l, "fin.texte")}</p>
   {config.disponible && <p class="action"><a class="bouton" href={lienAppStore(p)}>{t(l, "fin.bouton")}</a></p>}
+  {googlePlayAffiche && <p class="autre"><a href={lienGooglePlay(p)}>{t(l, "fin.googlePlay")}</a></p>}
 </section>
 
 <style>
@@ -21,6 +23,9 @@ const { langue: l, p } = Astro.props;
   h2 { max-width: 26ch; margin: 0 auto; white-space: pre-line; text-wrap: balance; }
   .chapeau { margin: 1.5rem auto 0; max-width: 36rem; text-wrap: balance; }
   .action { margin: 2.25rem 0 0; }
+  /* Lien texte discret vers Google Play, sous le bouton (un seul badge de chaque magasin par page, dans le grand visuel). */
+  .autre { margin: 1.25rem 0 0; font-size: 1rem; }
+  .autre a { color: #f5f5f7; }
   .bouton { display: inline-flex; align-items: center; height: 3rem; padding: 0 1.75rem; border-radius: 999px; background: #f5f5f7; color: #000; font-size: 1.0625rem; font-weight: 600; text-decoration: none; }
   @media (max-width: 45rem) { .bouton { height: 2.75rem; } }
 </style>
