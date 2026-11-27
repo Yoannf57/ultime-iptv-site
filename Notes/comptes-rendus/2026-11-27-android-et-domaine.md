@@ -88,3 +88,50 @@ Claude a tout fait depuis Chrome, Yoann s'étant connecté lui-même à GitHub e
   rien ne presse.
 - Play Console : cliquer sur **Publier** quand Google aura accepté la nouvelle adresse de confidentialité.
 - **Session de l'app iOS** : `PremiumView.termsURL` vers `https://ultitv.com/…/terms/` à la prochaine version.
+
+## Soir : Android TV, Apple TV 1.1.1, SEO (Yoann : « fais tout ce qui te semble le mieux »)
+- **Android TV** sur le site (PR n° 5) : « téléphones, tablettes et téléviseurs Android » dans les 12 langues, plus la
+  confidentialité et les conditions. La Play Console montre la production publiée aussi pour Android TV, Android XR
+  et ChromeOS.
+- **Apple TV 1.1.1 publiée** (PR n° 6) : la réserve « avec la prochaine mise à jour » est retirée (FAQ et Support).
+- **SEO, base technique** (PR n° 7) :
+  - `sitemap.xml` annoncé dans `robots.txt` ;
+  - Open Graph et X, avec une image par langue (capture de l'accueil Apple TV) ;
+  - JSON-LD Organization, WebSite, SoftwareApplication et FAQPage, sans note inventée ;
+  - titres « Ulti — Lecteur IPTV pour iPhone, Apple TV et Android » et descriptions avec Android.
+- **Audit ulti-seo**, puis (PR n° 8) :
+  - « Lecteur IPTV pour … » dans le `<h1>` de l'accueil, rendu inchangé ;
+  - « abonnement IPTV » dans les phrases Fonctions et Apple TV ;
+  - Support titré « Ajouter un abonnement IPTV sur iPhone et Apple TV » ;
+  - conditions, mentions légales et `/pays/` en `noindex, follow` et hors sitemap ;
+  - racine : titre de l'app et JSON-LD de l'éditeur avec le logo (`public/logo-ulti.png`) ;
+  - sitemap sans `lastmod`.
+- **Nouvelles pages** :
+  - `/<pays>/apple-tv/` (PR n° 9, feu vert d'ulti-gardien-stores, chaque fonction vérifiée dans le code de l'app) ;
+  - `/<pays>/iphone-ipad/` (PR n° 10).
+
+  Les deux sont dans les 12 langues, avec le composant `PageAppareil.astro`. Elles sont liées depuis l'accueil et le
+  pied de page.
+- **Search Console** :
+  - plan du site soumis et relu (185 adresses) ;
+  - exploration demandée pour `/fr-fr/`, `/en/`, `/en-us/`, `/fr-fr/apple-tv/`, `/en-us/apple-tv/`,
+    `/fr-fr/iphone-ipad/` et `/en-us/iphone-ipad/`.
+- **Contrôles** : `verifier-textes`, `build` et `verifier-liens` verts ; aucun débordement à 320 et 393 px.
+
+### Laissé pour Yoann ou pour plus tard
+- **Bing Webmaster Tools** (alimente aussi DuckDuckGo et Ecosia) : il faut créer un compte et autoriser l'accès à
+  Google pour importer la propriété. Non fait sans l'accord explicite de Yoann ; 5 minutes avec lui.
+- **Page « Lecteur IPTV pour Android et Android TV »** : d'abord la liste des fonctions de l'app Android, confirmée par
+  sa session, et des captures Android avec la liste de démonstration.
+- **Dans 4 semaines (fin décembre)**, dans la Search Console :
+  - pages indexées ;
+  - requêtes « lecteur iptv », « iptv player », « iptv apple tv » ;
+  - impressions des pages Apple TV et iPhone.
+
+  Pistes à ce moment-là : titres néerlandais et nordiques en « IPTV app » ; 6ᵉ question permanente dans la FAQ.
+- **Liens honnêtes** :
+  - fiche AlternativeTo, lancement sur Product Hunt ;
+  - présentation aux sites Apple (iGeneration, MacG, 9to5Mac) ;
+  - jamais de liens achetés.
+- **Traductions** : toutes les nouvelles phrases des 10 autres langues sont à faire relire.
+- **Début décembre** : `blackFriday.actif: false`.
