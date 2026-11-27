@@ -70,9 +70,20 @@ Claude a tout fait depuis Chrome, Yoann s'étant connecté lui-même à GitHub e
 5. ultitv.app, ultiptv.app et ulti-iptv.com (DNS vides avant) : A `192.0.2.1` proxifié pour `@` et `www`, et une règle
    de redirection « Vers ultitv.com » (toutes les requêtes, 301, chemin et paramètres gardés). Vérifié pour chacun.
 
+## Google (fait par Claude, compte ultitvplayer)
+- **Search Console** : la propriété de domaine `ultitv.com` existait déjà, vérifiée par le TXT `google-site-verification`.
+  Exploration demandée pour `https://ultitv.com/fr-fr/` et `https://ultitv.com/en/`.
+- **Play Console** :
+  - « Site Web » de la fiche passé à `https://ultitv.com/`, publié tout de suite ;
+  - règles de confidentialité passées à `https://ultitv.com/en/privacy/`, envoyées à l'examen. La publication est
+    gérée (« Managed publishing on ») : **une fois l'examen accepté, il faut cliquer sur Publier**.
+- **À décider par Yoann** : la production Google Play est publiée pour les téléphones et tablettes, **Android TV,
+  Android XR et les ordinateurs (ChromeOS)**. Le site dit encore « téléphones et tablettes » seulement.
+- La session Android (`android-tv-frame-rate-plan`) a été prévenue des nouvelles adresses.
+
 ## Reste à faire par Yoann
-- **App Store Connect** : les adresses de confidentialité, de support et de marketing peuvent passer à ultitv.com.
-  Les anciennes redirigent déjà, donc rien ne presse (support et marketing changent avec une nouvelle version).
-- **Play Console** : « Site Web » et règles de confidentialité vers ultitv.com.
-- **Google Search Console** : ajouter ultitv.com.
-- **Session de l'app** : `PremiumView.termsURL` vers `https://ultitv.com/…/terms/` à la prochaine version.
+- **App Store Connect** (connexion requise, Claude ne tape pas les mots de passe) : adresse de confidentialité
+  (modifiable à tout moment), support et marketing (avec la prochaine version). Les anciennes adresses redirigent :
+  rien ne presse.
+- Play Console : cliquer sur **Publier** quand Google aura accepté la nouvelle adresse de confidentialité.
+- **Session de l'app iOS** : `PremiumView.termsURL` vers `https://ultitv.com/…/terms/` à la prochaine version.
