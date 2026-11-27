@@ -110,7 +110,8 @@
     "filmsTitre": "Filmes e séries, sem duplicatas",
     "filmsTexte": "Pôsteres e sinopses, todas as versões de um filme reunidas em uma só página, e continue de onde parou.",
     "premium": "Com Premium",
-    "premiumLecture": "Reprodução com Premium"
+    "premiumLecture": "Reprodução com Premium",
+    "lien": "Tudo sobre o Ulti no iPhone, iPad e Mac"
   },
   "visite": {
     "titre": "Faça o tour.",
@@ -275,7 +276,8 @@
       "privacy": "Privacidade",
       "legal": "Informações legais",
       "terms": "Termos de uso",
-      "apple-tv": "Apple TV"
+      "apple-tv": "Apple TV",
+      "iphone-ipad": "iPhone, iPad, Mac"
     },
     "marquesGoogle": "Google Play e o logotipo do Google Play são marcas comerciais da Google LLC."
   },
@@ -405,6 +407,40 @@
       "r3": "Verifique se o iPhone e a Apple TV estão na mesma rede Wi-Fi e se a assinatura já foi adicionada no iPhone. Mais soluções no [Suporte](support).",
       "q4": "O Ulti é grátis na Apple TV?",
       "r4": "A TV ao vivo, o guia de TV e as páginas dos filmes e séries são grátis. A reprodução de filmes e séries, a multitela, o replay e pausar a TV ao vivo fazem parte do Premium, que pode ser testado por 7 dias com as assinaturas mensais e anuais."
+    },
+    "iphone-ipad": {
+      "titre": "Sua assinatura IPTV no iPhone, iPad e Mac.",
+      "metaTitre": "Player IPTV para iPhone, iPad e Mac — Ulti",
+      "description": "Cole a mensagem do seu provedor IPTV e o Ulti preenche tudo. TV ao vivo, guia de TV, filmes e séries no iPhone, iPad e Mac, com Picture in Picture.",
+      "chapeau": "O Ulti é um player IPTV que você configura colando uma mensagem: copie a mensagem do seu provedor e o Ulti encontra seus dados de acesso sozinho.",
+      "etapesTitre": "Adicionar sua assinatura IPTV colando uma mensagem",
+      "etape1": "Instale o Ulti pela App Store no seu iPhone, iPad ou Mac.",
+      "etape2": "No iPhone, copie a mensagem do seu provedor (SMS, WhatsApp ou e-mail) e, em Conta › Assinaturas › Adicionar uma assinatura, toque em “Colar a mensagem recebida”.",
+      "etape3": "O Ulti preenche os campos sozinho. Confira e toque em “Continuar”: a TV ao vivo, o guia de TV, os filmes e as séries da sua assinatura estão prontos.",
+      "etapesNote": "A mensagem é lida no iPhone, nunca enviada nem salva. Você também pode digitar o servidor, o nome de usuário e a senha, ou colar um link de playlist.",
+      "directTitre": "A TV ao vivo num relance",
+      "directTexte": "Um anel em volta de cada canal mostra em que ponto está o programa. Filtre por tema, troque de canal e mantenha a TV ao vivo em Picture in Picture enquanto faz outra coisa.",
+      "guideTitre": "Um guia de TV de verdade",
+      "guideTexte": "Hoje à noite, amanhã e nos próximos dias. Crie um lembrete com um gesto ou use seu próprio guia XMLTV.",
+      "filmsTitre": "Filmes e séries, sem duplicatas",
+      "filmsTexte": "Pôsteres, sinopses e elenco, com todas as versões de um filme numa só página. As páginas são grátis; a reprodução, com retomada, faz parte do Premium.",
+      "horsLigneTitre": "Offline, com o Premium",
+      "horsLigneTexte": "Baixe filmes e episódios no iPhone e no iPad para assistir sem conexão.",
+      "multiTitre": "Vários canais ao vivo ao mesmo tempo",
+      "multiTexte": "Com o Premium, a multitela mostra até 4 canais ao vivo no iPad e no Mac, e 2 no iPhone, dentro do limite de conexões da sua assinatura IPTV.",
+      "macTitre": "Também no Mac",
+      "macTexte": "Num Mac com chip Apple, o Ulti é instalado pela App Store: é o app do iPad, com as mesmas telas.",
+      "icloudTitre": "Suas assinaturas em todos os seus dispositivos",
+      "icloudTexte": "Com o Premium, a sincronização com o iCloud leva suas assinaturas para seus outros dispositivos Apple, criptografadas de ponta a ponta na sua própria conta do iCloud.",
+      "questionsTitre": "Perguntas sobre iPhone, iPad e Mac",
+      "q1": "Qual versão eu preciso?",
+      "r1": "iOS 17 ou iPadOS 17 ou posterior; no Mac, um Mac com chip Apple.",
+      "q2": "Quais assinaturas IPTV funcionam?",
+      "r2": "Os formatos de assinatura compatíveis estão no [Suporte](support).",
+      "q3": "Meus dados de acesso estão seguros?",
+      "r3": "Sim. Eles ficam guardados nas Chaves do seu dispositivo e nunca passam por um servidor do Ulti. Tudo está explicado na nossa [política de privacidade](privacy).",
+      "q4": "O Ulti é grátis?",
+      "r4": "A TV ao vivo, o guia de TV e as páginas dos filmes e séries são grátis. A reprodução de filmes e séries, a multitela, o replay, pausar a TV ao vivo e os downloads fazem parte do Premium, que pode ser testado por 7 dias com as assinaturas mensais e anuais."
     }
   },
   "faqPlus": "Todas as perguntas na página de Suporte",

@@ -110,7 +110,8 @@
     "filmsTitre": "Filmes e séries, sem duplicados",
     "filmsTexte": "Cartazes e sinopses, todas as versões de um filme reunidas numa só ficha, e continue onde parou.",
     "premium": "Com Premium",
-    "premiumLecture": "Reprodução com Premium"
+    "premiumLecture": "Reprodução com Premium",
+    "lien": "Tudo sobre o Ulti no iPhone, iPad e Mac"
   },
   "visite": {
     "titre": "Faça a visita.",
@@ -275,7 +276,8 @@
       "privacy": "Privacidade",
       "legal": "Informações legais",
       "terms": "Termos de utilização",
-      "apple-tv": "Apple TV"
+      "apple-tv": "Apple TV",
+      "iphone-ipad": "iPhone, iPad, Mac"
     },
     "marquesGoogle": "Google Play e o logótipo do Google Play são marcas comerciais da Google LLC."
   },
@@ -405,6 +407,40 @@
       "r3": "Verifique se o iPhone e a Apple TV estão na mesma rede Wi-Fi e se a subscrição já foi adicionada no iPhone. Encontra mais soluções no [Suporte](support).",
       "q4": "O Ulti é grátis na Apple TV?",
       "r4": "O direto, o guia de TV e as fichas dos filmes e séries são grátis. A reprodução de filmes e séries, o multiecrã, as gravações e pausar o direto fazem parte do Premium, que pode ser experimentado durante 7 dias com as subscrições mensais e anuais."
+    },
+    "iphone-ipad": {
+      "titre": "A sua subscrição IPTV no iPhone, iPad e Mac.",
+      "metaTitre": "Leitor IPTV para iPhone, iPad e Mac — Ulti",
+      "description": "Cole a mensagem do seu fornecedor IPTV e o Ulti preenche tudo. Direto, guia de TV, filmes e séries no iPhone, iPad e Mac, com imagem na imagem.",
+      "chapeau": "O Ulti é um leitor IPTV que se configura colando uma mensagem: copie a mensagem do seu fornecedor e o Ulti encontra os seus dados de acesso sozinho.",
+      "etapesTitre": "Adicionar a sua subscrição IPTV colando uma mensagem",
+      "etape1": "Instale o Ulti a partir da App Store no seu iPhone, iPad ou Mac.",
+      "etape2": "No iPhone, copie a mensagem do seu fornecedor (SMS, WhatsApp ou e-mail) e depois, em Conta › Subscrições › Adicionar uma subscrição, toque em «Colar a mensagem recebida».",
+      "etape3": "O Ulti preenche os campos sozinho. Verifique e toque em «Continuar»: o direto, o guia de TV, os filmes e as séries da sua subscrição estão prontos.",
+      "etapesNote": "A mensagem é lida no iPhone, nunca enviada nem guardada. Também pode introduzir o servidor, o nome de utilizador e a palavra-passe, ou colar uma ligação de lista de reprodução.",
+      "directTitre": "O direto num relance",
+      "directTexte": "Um anel à volta de cada canal mostra em que ponto está o programa. Filtre por tema, mude de canal e mantenha o direto em imagem na imagem enquanto faz outra coisa.",
+      "guideTitre": "Um verdadeiro guia de TV",
+      "guideTexte": "Esta noite, amanhã e nos próximos dias. Crie um lembrete com um gesto ou use o seu próprio guia XMLTV.",
+      "filmsTitre": "Filmes e séries, sem duplicados",
+      "filmsTexte": "Cartazes, sinopses e elenco, com todas as versões de um filme numa só ficha. As fichas são grátis; a reprodução, com retoma, faz parte do Premium.",
+      "horsLigneTitre": "Sem ligação, com o Premium",
+      "horsLigneTexte": "Transfira filmes e episódios para o iPhone e o iPad para os ver sem ligação.",
+      "multiTitre": "Vários diretos ao mesmo tempo",
+      "multiTexte": "Com o Premium, o multiecrã mostra até 4 diretos no iPad e no Mac, e 2 no iPhone, dentro do limite de ligações da sua subscrição IPTV.",
+      "macTitre": "Também no Mac",
+      "macTexte": "Num Mac com chip Apple, o Ulti instala-se a partir da App Store: é a app do iPad, com os mesmos ecrãs.",
+      "icloudTitre": "As suas subscrições em todos os seus dispositivos",
+      "icloudTexte": "Com o Premium, a sincronização com o iCloud leva as suas subscrições para os seus outros dispositivos Apple, encriptadas ponto a ponto na sua própria conta iCloud.",
+      "questionsTitre": "Perguntas sobre iPhone, iPad e Mac",
+      "q1": "Que versão é preciso?",
+      "r1": "iOS 17 ou iPadOS 17 ou posterior; no Mac, um Mac com chip Apple.",
+      "q2": "Que subscrições IPTV funcionam?",
+      "r2": "Os formatos de subscrição compatíveis estão no [Suporte](support).",
+      "q3": "Os meus dados de acesso estão seguros?",
+      "r3": "Sim. Ficam guardados no porta-chaves do seu dispositivo e nunca passam por um servidor do Ulti. Tudo está explicado na nossa [política de privacidade](privacy).",
+      "q4": "O Ulti é grátis?",
+      "r4": "O direto, o guia de TV e as fichas dos filmes e séries são grátis. A reprodução de filmes e séries, o multiecrã, as gravações, pausar o direto e as transferências fazem parte do Premium, que pode ser experimentado durante 7 dias com as subscrições mensais e anuais."
     }
   },
   "faqPlus": "Todas as perguntas na página de Suporte",

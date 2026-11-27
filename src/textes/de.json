@@ -110,7 +110,8 @@
     "filmsTitre": "Filme und Serien, ohne Dubletten",
     "filmsTexte": "Poster und Inhaltsangaben, alle Versionen eines Films auf einer Seite, weiterschauen, wo du aufgehört hast.",
     "premium": "Mit Premium",
-    "premiumLecture": "Wiedergabe mit Premium"
+    "premiumLecture": "Wiedergabe mit Premium",
+    "lien": "Alles über Ulti auf iPhone, iPad und Mac"
   },
   "visite": {
     "titre": "Mach einen Rundgang.",
@@ -275,7 +276,8 @@
       "privacy": "Datenschutz",
       "legal": "Impressum",
       "terms": "Nutzungsbedingungen",
-      "apple-tv": "Apple TV"
+      "apple-tv": "Apple TV",
+      "iphone-ipad": "iPhone, iPad, Mac"
     },
     "marquesGoogle": "Google Play und das Google Play-Logo sind Marken von Google LLC."
   },
@@ -405,6 +407,40 @@
       "r3": "Prüfe, ob iPhone und Apple TV im selben WLAN sind und ob das Abonnement schon auf dem iPhone hinzugefügt ist. Weitere Lösungen findest du im [Support](support).",
       "q4": "Ist Ulti auf dem Apple TV gratis?",
       "r4": "Live-TV, der TV‑Guide und die Seiten zu Filmen und Serien sind gratis. Das Abspielen von Filmen und Serien, Multiscreen, Replay und Live-TV pausieren gehören zu Premium, das du mit den Monats- und Jahresabos 7 Tage testen kannst."
+    },
+    "iphone-ipad": {
+      "titre": "Dein IPTV-Abo auf iPhone, iPad und Mac.",
+      "metaTitre": "IPTV-Player für iPhone, iPad und Mac — Ulti",
+      "description": "Füge die Nachricht deines IPTV-Anbieters ein, Ulti füllt alles aus. Live-TV, TV‑Guide, Filme und Serien auf iPhone, iPad und Mac, mit Bild-in-Bild.",
+      "chapeau": "Ulti ist ein IPTV-Player, den du mit einem Einfügen einrichtest: Kopiere die Nachricht deines Anbieters, Ulti findet deine Zugangsdaten selbst.",
+      "etapesTitre": "Dein IPTV-Abo mit einem Einfügen hinzufügen",
+      "etape1": "Installiere Ulti aus dem App Store auf deinem iPhone, iPad oder Mac.",
+      "etape2": "Kopiere auf dem iPhone die Nachricht deines Anbieters (SMS, WhatsApp oder E-Mail) und tippe dann unter Konto › Abonnements › Abonnement hinzufügen auf „Erhaltene Nachricht einfügen“.",
+      "etape3": "Ulti füllt die Felder selbst aus. Prüfe sie und tippe auf „Weiter“: Live-TV, TV‑Guide, Filme und Serien deines Abonnements sind bereit.",
+      "etapesNote": "Die Nachricht wird auf dem iPhone gelesen, nie übertragen oder gespeichert. Du kannst auch Server, Benutzername und Passwort eingeben oder einen Playlist-Link einfügen.",
+      "directTitre": "Live-TV auf einen Blick",
+      "directTexte": "Ein Ring um jeden Sender zeigt, wie weit die Sendung ist. Filtere nach Thema, zappe von Sender zu Sender und behalte Live-TV im Bild-in-Bild, während du etwas anderes machst.",
+      "guideTitre": "Ein echter TV‑Guide",
+      "guideTexte": "Heute Abend, morgen und in den nächsten Tagen. Stelle mit einer Geste eine Erinnerung ein oder nutze deinen eigenen XMLTV-Guide.",
+      "filmsTitre": "Filme und Serien, ohne Dubletten",
+      "filmsTexte": "Poster, Inhaltsangaben und Besetzung, alle Versionen eines Films auf einer Seite. Die Seiten sind gratis; das Abspielen, mit Weiterschauen, gehört zu Premium.",
+      "horsLigneTitre": "Offline, mit Premium",
+      "horsLigneTexte": "Lade Filme und Folgen auf dein iPhone und iPad, um sie ohne Verbindung anzusehen.",
+      "multiTitre": "Mehrere Live-Sender gleichzeitig",
+      "multiTexte": "Mit Premium zeigt Multiscreen bis zu 4 Live-Sender auf iPad und Mac und 2 auf dem iPhone, im Rahmen der Verbindungen deines IPTV-Abonnements.",
+      "macTitre": "Auch auf dem Mac",
+      "macTexte": "Auf einem Mac mit Apple Chip installierst du Ulti aus dem App Store: Es ist die iPad-App, mit denselben Bildschirmen.",
+      "icloudTitre": "Deine Abonnements auf allen Geräten",
+      "icloudTexte": "Mit Premium bringt die iCloud-Synchronisierung deine Abonnements auf deine anderen Apple-Geräte, Ende-zu-Ende-verschlüsselt in deinem eigenen iCloud-Konto.",
+      "questionsTitre": "Fragen zu iPhone, iPad und Mac",
+      "q1": "Welche Version brauche ich?",
+      "r1": "iOS 17 oder iPadOS 17 oder neuer; auf dem Mac ein Mac mit Apple Chip.",
+      "q2": "Welche IPTV-Abos funktionieren?",
+      "r2": "Die unterstützten Abo-Formate findest du im [Support](support).",
+      "q3": "Sind meine Zugangsdaten sicher?",
+      "r3": "Ja. Sie werden im Schlüsselbund deines Geräts gespeichert und laufen nie über einen Ulti-Server. Alles steht in unserer [Datenschutzerklärung](privacy).",
+      "q4": "Ist Ulti gratis?",
+      "r4": "Live-TV, der TV‑Guide und die Seiten zu Filmen und Serien sind gratis. Das Abspielen von Filmen und Serien, Multiscreen, Replay, Live-TV pausieren und Downloads gehören zu Premium, das du mit den Monats- und Jahresabos 7 Tage testen kannst."
     }
   },
   "faqPlus": "Alle Fragen auf der Support-Seite",
