@@ -50,13 +50,29 @@
 - Début décembre : `blackFriday.actif: false` (retire aussi les phrases Google Play de l'offre).
 - Traductions des nouvelles phrases (10 langues) : à faire relire.
 
-## ultitv.com (pas encore fait, pull request séparée)
-Le site n'est pas basculé : si le réglage partait avant les DNS, le site serait coupé. Ordre prévu :
-1. Yoann vérifie ultitv.com dans GitHub (Settings › Pages › Add a domain, enregistrement TXT).
-2. Yoann ajoute chez Cloudflare, nuage gris : le TXT, 4 A, 4 AAAA et `CNAME www` → `yoannf57.github.io`.
-3. Claude contrôle avec `dig`, passe `domaine.actif: true`, crée `public/CNAME`, ouvre la pull request. Après la
-   fusion, il déclare le domaine (`cname`) puis active « Enforce HTTPS ».
-4. Contrôle des anciennes adresses github.io (`/fr-fr/terms/`, `/en/terms/`, `/fr/privacy/`), qui servent à l'app
-   et à App Store Connect.
-5. Ensuite, par Yoann : URL dans App Store Connect et la Play Console, Google Search Console, redirection des trois
-   autres domaines.
+## ultitv.com (fait le soir, à la demande de Yoann : « fais tout »)
+Claude a tout fait depuis Chrome, Yoann s'étant connecté lui-même à GitHub et à Cloudflare :
+1. GitHub, réglages du compte › Pages : ultitv.com **vérifié** (TXT `_github-pages-challenge-Yoannf57`).
+2. Cloudflare, ultitv.com, « DNS only » : 4 A et 4 AAAA de GitHub Pages, `CNAME www` → `yoannf57.github.io`, plus
+   le TXT. L'existant n'a pas été touché : MX, SPF et DKIM d'iCloud, vérification Google, `api.ultitv.com`.
+3. Pull requests n° 3 (Android) et n° 4 (`domaine.actif: true`, `public/CNAME`) fusionnées par Claude, à la demande de
+   Yoann. Déploiement vert, puis `cname=ultitv.com` déclaré dans le dépôt, certificat obtenu, « Enforce HTTPS »
+   activé.
+4. Contrôles en ligne :
+   - `https://ultitv.com/fr-fr/`, `/en-gb/`, `/fr-fr/support/`, `/fr-fr/terms/`, `/en/terms/`, `/fr/privacy/` et
+     `robots.txt` répondent 200 ;
+   - `http://` renvoie vers `https://`, et `www` vers la racine ;
+   - les anciennes adresses github.io renvoient en 301 vers ultitv.com, avec le même chemin. Aucune page de renvoi
+     n'était donc nécessaire ;
+   - canonique `https://ultitv.com/fr-fr/`, Smart App Banner, badge Google Play ;
+   - confidentialité du dépôt de démo inchangée ;
+   - courrier iCloud inchangé.
+5. ultitv.app, ultiptv.app et ulti-iptv.com (DNS vides avant) : A `192.0.2.1` proxifié pour `@` et `www`, et une règle
+   de redirection « Vers ultitv.com » (toutes les requêtes, 301, chemin et paramètres gardés). Vérifié pour chacun.
+
+## Reste à faire par Yoann
+- **App Store Connect** : les adresses de confidentialité, de support et de marketing peuvent passer à ultitv.com.
+  Les anciennes redirigent déjà, donc rien ne presse (support et marketing changent avec une nouvelle version).
+- **Play Console** : « Site Web » et règles de confidentialité vers ultitv.com.
+- **Google Search Console** : ajouter ultitv.com.
+- **Session de l'app** : `PremiumView.termsURL` vers `https://ultitv.com/…/terms/` à la prochaine version.

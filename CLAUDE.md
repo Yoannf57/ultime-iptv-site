@@ -372,8 +372,14 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
 - **Domaine : ultitv.com** (acheté le 03/11/2026 chez Cloudflare ; ultitv.app, ultiptv.app et ulti-iptv.com seront
   redirigés vers lui). **Branché le 27/11/2026** : domaine vérifié chez GitHub (TXT
   `_github-pages-challenge-Yoannf57`), DNS chez Cloudflare en « DNS only » (4 A et 4 AAAA de GitHub Pages, `CNAME www`
-  → `yoannf57.github.io`), `domaine.actif: true` et `public/CNAME`. Les enregistrements iCloud (MX, SPF, DKIM), la
-  vérification Google et `api.ultitv.com` (Worker du relais) ne se touchent pas.
+  → `yoannf57.github.io`), `domaine.actif: true` et `public/CNAME`, domaine déclaré dans le dépôt (`cname`) et
+  « Enforce HTTPS » actif. **Site en ligne sur https://ultitv.com**. Les anciennes adresses
+  `yoannf57.github.io/ultime-iptv-site/<chemin>` sont renvoyées par GitHub (301) vers `ultitv.com/<chemin>` (vérifié
+  pour `fr-fr/terms/`, `en/terms/` et `fr/privacy/`) ; `www.ultitv.com` → `ultitv.com`. **ultitv.app, ultiptv.app et
+  ulti-iptv.com** : A factice `192.0.2.1` proxifié (`@` et `www`) + règle de redirection Cloudflare « Vers ultitv.com »
+  (toutes les requêtes, 301, `concat("https://ultitv.com", http.request.uri.path)`, paramètres gardés). Les
+  enregistrements iCloud (MX, SPF, DKIM), la vérification Google et `api.ultitv.com` (Worker du relais) ne se touchent
+  pas. Restent à Yoann : adresses dans App Store Connect et la Play Console, Google Search Console.
   Au branchement : les adresses perdent `/ultime-iptv-site/` (vérifier celles déclarées dans App Store Connect :
   conditions d'utilisation, confidentialité) et prévoir Google Search Console.
 - **Page stable sur téléphone** (08/11/2026, demande de Yoann) : rien ne doit dépasser la largeur de l'écran, sinon la
@@ -440,7 +446,7 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
    finitions, Lighthouse (`indexable: true` : voir section 2, avec ultitv.com). Pour que les captures montrent les chaînes inventées ci-dessus, la liste de démo devra
    d'abord leur donner ces noms et logos (travail de la session de l'app dans `ultime-iptv-demo`, sur demande de
    Yoann ; jamais depuis ici).
-5. **Branchement de ultitv.com** (étape séparée, quand Yoann le demande ; le domaine est déjà acheté) : d'abord
+5. **[Fait le 27/11/2026] Branchement de ultitv.com** (étape séparée, quand Yoann le demande ; le domaine est déjà acheté) : d'abord
    « Custom domain » dans les réglages Pages de GitHub, **ensuite** les enregistrements DNS chez Cloudflare, puis
    « Enforce HTTPS » ; activer la valeur de `site.config` et créer le `CNAME` à ce moment-là ; guider Yoann clic par clic.
 6. **Au Lot 11** : **préparé le 07/11/2026** (liens App Store calculés, badge officiel et badges d'Apple importés,
@@ -479,8 +485,9 @@ Si l'un de ces points change, Yoann le dira ; en cas de doute, demande-lui plut�
   relire ; décider d'une seule apostrophe par fichier de textes (les nouveaux textes ont « ’ », les anciens « ' »).
 
 - [x] **Android et Google Play (27/11/2026)** : badge, textes, prix Solo identiques, Black Friday Solo aussi sur Google
-  Play — compte rendu `Notes/comptes-rendus/2026-11-27-android-et-domaine.md`. Reste : branchement d'ultitv.com
-  (pull request séparée, après les réglages DNS de Yoann) ; nouvelles traductions à faire relire.
+  Play — compte rendu `Notes/comptes-rendus/2026-11-27-android-et-domaine.md`. ultitv.com branché le même jour (DNS,
+  HTTPS, redirections des trois autres domaines). Reste : adresses dans App Store Connect et la Play Console, Search
+  Console ; nouvelles traductions à faire relire.
 
 ### Jour de la publication (fait le 11/11/2026 ; gardé pour mémoire)
 1. `site.config.mjs` : **la ligne `disponible: false,` devient `disponible: true,`** ; `indexable: true` si ultitv.com n'est pas encore branché (sinon c'est déjà
